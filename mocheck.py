@@ -54,6 +54,7 @@ class Mo:
         self.locale = locale
         self.path = path
         self.bad_entries = []
+        self.current_index = 1
 
 class ThreadedTreeView(Gtk.TreeView):
     def __init__(self, parent, t):
@@ -162,7 +163,7 @@ class ThreadedTreeView(Gtk.TreeView):
             self._loading_lock.acquire()
             is_loading = self._loading
             self._loading_lock.release()
-        self.model = Gtk.TreeStore(object, object, str, str, str, bool, GdkPixbuf.Pixbuf)
+        self.model = Gtk.TreeStore(object, object, str, str, str, bool, GdkPixbuf.Pixbuf, int)
         self.set_model(self.model)
 
     def _check_loading_progress(self):
@@ -187,6 +188,7 @@ class ThreadedTreeView(Gtk.TreeView):
             self.model.set_value(iter, 3, i[3])
             self.model.set_value(iter, 4, i[4])
             self.model.set_value(iter, 5, False) # dirty flag
+            self.model.set_value(iter, 7, i[5])
             self._count += 1
             self.progress.set_text(str(self._count))
         return res
@@ -243,8 +245,9 @@ class ThreadedTreeView(Gtk.TreeView):
                     if (res > GOOD and res < BAD_MISCOUNT_MAYBE_DATE) or \
                        (res > BAD_EXCLUSIONS and not exclude_dates):
                         self._loaded_data_lock.acquire()
-                        self._loaded_data.append((to_load, entry, to_load.locale, entry.msgid, entry.msgstr))
+                        self._loaded_data.append((to_load, entry, to_load.locale, entry.msgid, entry.msgstr, to_load.current_index))
                         self._loaded_data_lock.release()
+                    to_load.current_index += 1
 
         self._loading_lock.acquire()
         self._loading = False
@@ -395,7 +398,7 @@ class Main:
                     iter = self.treeview.model.get_iter(path)
                     pofile = self.treeview.model.get_value(iter, 0)
                     entry = self.treeview.model.get_value(iter, 1)
-                    number = pofile.mofile.index(entry) + 1
+                    number = self.treeview.model.get_value(iter, 7)
                     locale = pofile.locale
                     self.go_to_launchpad(pofile, locale, number)
                     return False
