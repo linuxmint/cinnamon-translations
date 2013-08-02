@@ -6,6 +6,7 @@ import os
 import subprocess
 import thread
 import time
+import urllib
 from gi.repository import Gtk, GObject, GLib, Pango, GdkPixbuf
 GObject.threads_init()
 
@@ -179,7 +180,10 @@ class ThreadedTreeView(Gtk.TreeView):
             iter = self.model.insert_before(None, None)
             self.model.set_value(iter, 0, i[0])
             self.model.set_value(iter, 1, i[1])
-            self.model.set_value(iter, 2, i[2])
+            if self.type == PO_EXT:
+                self.model.set_value(iter, 2, "<span color='#0000FF'>%s</span>" % (i[2]))
+            else:
+                self.model.set_value(iter, 2, i[2])
             self.model.set_value(iter, 3, i[3])
             self.model.set_value(iter, 4, i[4])
             self.model.set_value(iter, 5, False) # dirty flag
@@ -333,8 +337,8 @@ class Main:
         print "codes (%1$d, %2$s, etc..) or missing tokens."
         print ""
         print "Usage:"
-        print "       mocheck -po:  scan recursively from current directory for .po files"
-        print "       mocheck -mo:  scan recursively from current directory for .mo files"
+        print "       mocheck -po : scan recursively from current directory for .po files"
+        print "       mocheck -mo : scan recursively from current directory for .mo files"
         print " "
         quit()
 
@@ -359,6 +363,7 @@ class Main:
         self.treeview = ThreadedTreeView(self, t)
         self.treebox.add(self.treeview)
         self.treeview.get_selection().connect("changed", lambda x: self.selection_changed());
+        self.treeview.connect('button_press_event', self.on_button_press_event)
         self.window.show_all()
 
         thread.start_new_thread(self.treeview.load_files, ())
@@ -380,6 +385,20 @@ class Main:
                 self.status.set_text("Bad quotes")
             else:
                 self.status.set_text("")
+
+    def on_button_press_event(self, widget, event):
+        if event.button == 1 and self.treeview.type == PO_EXT:
+            data=widget.get_path_at_pos(int(event.x),int(event.y))
+            if data:
+                path, column, x, y = data
+                if column.get_property('title')=="Language":
+                    iter = self.treeview.model.get_iter(path)
+                    pofile = self.treeview.model.get_value(iter, 0)
+                    entry = self.treeview.model.get_value(iter, 1)
+                    number = pofile.mofile.index(entry) + 1
+                    locale = pofile.locale
+                    self.go_to_launchpad(pofile, locale, number)
+                    return False
 
     def on_refresh_clicked(self, button):
         if self.treeview.dirty:
@@ -408,6 +427,11 @@ class Main:
         dialog.destroy()
         return response == Gtk.ResponseType.YES
 
+    def go_to_launchpad(self, pofile, locale, number):
+        domain = locale.split("-")[0]
+        locale = locale.replace("%s-" % domain, "")
+        locale = locale.replace(".po", "")
+        os.system("xdg-open 'https://translations.launchpad.net/linuxmint/isadora/+pots/%s/%s/%s/+translate'" % (domain, locale, number))
 
 if __name__ == "__main__":
     Main()
