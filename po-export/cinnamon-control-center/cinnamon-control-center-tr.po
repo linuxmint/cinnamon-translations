@@ -12,60 +12,19 @@ msgstr ""
 "Report-Msgid-Bugs-To: "
 "http://bugzilla.gnome.org/enter_bug.cgi?product=cinnamon-control-"
 "center&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-26 13:46+0100\n"
-"PO-Revision-Date: 2013-08-26 10:56+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"POT-Creation-Date: 2013-08-30 17:55+0100\n"
+"PO-Revision-Date: 2013-09-26 10:58+0000\n"
+"Last-Translator: kelebek333 <Unknown>\n"
 "Language-Team: Turkish <cinnamon-turk@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-08-26 13:10+0000\n"
-"X-Generator: Launchpad (build 16738)\n"
+"X-Launchpad-Export-Date: 2013-10-02 15:27+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
 "X-Poedit-Country: TURKEY\n"
 "Language: tr\n"
 "X-Poedit-Language: Turkish\n"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:352
-msgid "Yes"
-msgstr "Evet"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:352
-msgid "No"
-msgstr "Hayır"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:466
-msgid "Bluetooth is disabled"
-msgstr "Bluetooth devre dışı"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:471
-msgid "Bluetooth is disabled by hardware switch"
-msgstr "Bluetooth donanım anahtarı ile kapatıldı"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:475
-msgid "No Bluetooth adapters found"
-msgstr "Bluetooth bağdaştırıcısı bulunamadı"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:602
-msgid "Visibility"
-msgstr "Görünürlük"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:606
-#, c-format
-msgid "Visibility of “%s”"
-msgstr "“%s”in görünürlüğü"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:650
-#, c-format
-msgid "Remove '%s' from the list of devices?"
-msgstr "'%s' aygıtlar listesinden kaldırılsın mı?"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:652
-msgid ""
-"If you remove the device, you will have to set it up again before next use."
-msgstr ""
-"Eğer aygıtı kaldırırsanız, sonraki kullanımdan önce yeniden kurmanız "
-"gerekecek."
 
 #: panels/color/cc-color-panel.c:106
 msgid "Other profile…"
@@ -83,7 +42,7 @@ msgstr "Colorspace: "
 msgid "Test profile: "
 msgstr "Sınama profili: "
 
-#: panels/color/cc-color-panel.c:185
+#: panels/color/cc-color-panel.c:185 panels/color/color.ui.h:11
 msgid "Set for all users"
 msgstr "Tüm kullanıcılar için ayarla"
 
@@ -127,12 +86,12 @@ msgstr "Kameralar için Kullanılabilir Profiller"
 msgid "Available Profiles for Webcams"
 msgstr "Web Kameraları için Kullanılabilir Profiller"
 
-#: panels/color/cc-color-panel.c:659
+#: panels/color/cc-color-panel.c:659 panels/color/color.ui.h:2
 msgid "Available Profiles"
 msgstr "Kullanılabilir Profiller"
 
-#: panels/color/cc-color-panel.c:935 panels/sound/gvc-mixer-dialog.c:1525
-#: panels/sound-nua/gvc-mixer-dialog.c:1598
+#: panels/color/cc-color-panel.c:935 panels/sound/gvc-mixer-dialog.c:1523
+#: panels/sound-nua/gvc-mixer-dialog.c:1596
 msgid "Device"
 msgstr "Aygıt"
 
@@ -285,29 +244,25 @@ msgstr "Bir bölge seçin"
 msgid "Unspecified"
 msgstr "Belirlenmemiş"
 
-#: panels/display/cc-display-panel.c:666 panels/display/cc-rr-labeler.c:449
+#: panels/display/cc-display-panel.c:624 panels/display/cc-rr-labeler.c:449
 msgid "Mirrored Displays"
-msgstr ""
+msgstr "Yansıtılmış Görünümler"
 
-#: panels/display/cc-display-panel.c:690
+#: panels/display/cc-display-panel.c:648 panels/display/display-capplet.ui.h:1
 msgid "Monitor"
 msgstr "Monitör"
 
-#: panels/display/cc-display-panel.c:800
+#: panels/display/cc-display-panel.c:758
 #, c-format
 msgid "%d x %d (%s)"
 msgstr "%d x %d (%s)"
 
-#: panels/display/cc-display-panel.c:802
+#: panels/display/cc-display-panel.c:760
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: panels/display/cc-display-panel.c:1712
-msgid "Drag to change primary display."
-msgstr "Birincil ekranı değiştirmek için taşıyın."
-
-#: panels/display/cc-display-panel.c:1770
+#: panels/display/cc-display-panel.c:1669
 msgid ""
 "Select a monitor to change its properties; drag it to rearrange its "
 "placement."
@@ -316,32 +271,20 @@ msgstr ""
 "taşıyın."
 
 #: panels/display/cc-display-panel.c:2185
-msgid "%a %R"
-msgstr "%a %R"
-
-#: panels/display/cc-display-panel.c:2187
-msgid "%a %l:%M %p"
-msgstr "%a %l:%M %p"
-
-#: panels/display/cc-display-panel.c:2349
-#: panels/display/cc-display-panel.c:2401
+#: panels/display/cc-display-panel.c:2237
 #, c-format
 msgid "Failed to apply configuration: %s"
 msgstr "Yapılandırmanın uygulanması başarısız oldu: %s"
 
-#: panels/display/cc-display-panel.c:2429
+#: panels/display/cc-display-panel.c:2265
 msgid "Could not save the monitor configuration"
 msgstr "Ekran yapılandırması kaydedilemedi"
 
-#: panels/display/cc-display-panel.c:2489
+#: panels/display/cc-display-panel.c:2325
 msgid "Could not detect displays"
 msgstr "Ekranlar tespit edilemedi"
 
-#: panels/display/cc-display-panel.c:2767
-msgid "All displays"
-msgstr "Tüm ekranlar"
-
-#: panels/display/cc-display-panel.c:2924
+#: panels/display/cc-display-panel.c:2563
 msgid "Could not get screen information"
 msgstr "Ekran bilgisi alınamadı"
 
@@ -421,6 +364,8 @@ msgid ""
 "Network details for %s including password and any custom configuration will "
 "be lost."
 msgstr ""
+"%s'e ait şifre ve tüm özel yapılandırmalar da dahil ağ bilgileri "
+"silinecektir."
 
 #: panels/network/net-device-wifi.c:971
 msgid "Forget"
@@ -431,6 +376,8 @@ msgid ""
 "If you have a connection to the Internet other than wireless, you can use it "
 "to share your internet connection with others."
 msgstr ""
+"Eğer kablosuz ağdan başka bir yolla internete erişiminiz varsa, internet "
+"bağlantınızı diğer kişilerle paylaşmak için onu kullanabilirsiniz."
 
 #: panels/network/net-device-wifi.c:1558
 #, c-format
@@ -477,7 +424,7 @@ msgstr "Bilinmeyen"
 msgid "Wired"
 msgstr "Kablolu"
 
-#: panels/network/panel-common.c:90
+#: panels/network/panel-common.c:90 panels/network/network-wifi.ui.h:3
 msgid "Wireless"
 msgstr "Kablosuz"
 
@@ -485,7 +432,7 @@ msgstr "Kablosuz"
 msgid "Mobile broadband"
 msgstr "Mobil geniş bant"
 
-#: panels/network/panel-common.c:102 generate_additional_files.py:50
+#: panels/network/panel-common.c:102
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -563,31 +510,31 @@ msgstr "IP yapılandırması zaman aşımına uğradı"
 
 #: panels/network/panel-common.c:313
 msgid "Secrets were required, but not provided"
-msgstr ""
+msgstr "Bilinmeyenler gerekli, ancak sağlanmamış"
 
 #: panels/network/panel-common.c:317
 msgid "802.1x supplicant disconnected"
-msgstr ""
+msgstr "802.1x Doğrulama başarısız"
 
 #: panels/network/panel-common.c:321
 msgid "802.1x supplicant configuration failed"
-msgstr ""
+msgstr "802.1x Doğrulama yapılandırması başarısız"
 
 #: panels/network/panel-common.c:325
 msgid "802.1x supplicant failed"
-msgstr ""
+msgstr "802.1x doğrulama başarısız."
 
 #: panels/network/panel-common.c:329
 msgid "802.1x supplicant took too long to authenticate"
-msgstr ""
+msgstr "802.1x doğrulaması zaman aşımına uğradı"
 
 #: panels/network/panel-common.c:333
 msgid "PPP service failed to start"
-msgstr ""
+msgstr "PPP hizmeti başlatılamadı"
 
 #: panels/network/panel-common.c:337
 msgid "PPP service disconnected"
-msgstr ""
+msgstr "PPP hizmeti kesildi"
 
 #: panels/network/panel-common.c:341
 msgid "PPP failed"
@@ -595,7 +542,7 @@ msgstr "PPP başarısız oldu"
 
 #: panels/network/panel-common.c:345
 msgid "DHCP client failed to start"
-msgstr ""
+msgstr "DHCP istemcisi başlatılmasında hata oldu"
 
 #: panels/network/panel-common.c:349
 msgid "DHCP client error"
@@ -635,39 +582,39 @@ msgstr "Çevir sesi yok"
 
 #: panels/network/panel-common.c:385
 msgid "No carrier could be established"
-msgstr ""
+msgstr "Hiçbir taşıyıcıya bağlanılamadı"
 
 #: panels/network/panel-common.c:389
 msgid "Dialing request timed out"
-msgstr ""
+msgstr "Arama isteği zaman aşımına uğradı"
 
 #: panels/network/panel-common.c:393
 msgid "Dialing attempt failed"
-msgstr ""
+msgstr "Arama denemesi başarısız"
 
 #: panels/network/panel-common.c:397
 msgid "Modem initialization failed"
-msgstr ""
+msgstr "Modem başlatma başarısız"
 
 #: panels/network/panel-common.c:401
 msgid "Failed to select the specified APN"
-msgstr ""
+msgstr "Belirtilen APN seçimi başarısız"
 
 #: panels/network/panel-common.c:405
 msgid "Not searching for networks"
-msgstr ""
+msgstr "Ağlar için arama yapılamıyor"
 
 #: panels/network/panel-common.c:409
 msgid "Network registration denied"
-msgstr ""
+msgstr "Ağ kaydı engellendi"
 
 #: panels/network/panel-common.c:413
 msgid "Network registration timed out"
-msgstr ""
+msgstr "Ağ kaydı zaman aşımına uğradı"
 
 #: panels/network/panel-common.c:417
 msgid "Failed to register with the requested network"
-msgstr ""
+msgstr "İstenilen ağa kayıt başarısız"
 
 #: panels/network/panel-common.c:421
 msgid "PIN check failed"
@@ -679,15 +626,15 @@ msgstr "Bu cihaz için ürün yazılımı eksik olabilir"
 
 #: panels/network/panel-common.c:429
 msgid "Connection disappeared"
-msgstr ""
+msgstr "Bağlantı kayboldu"
 
 #: panels/network/panel-common.c:433
 msgid "Carrier/link changed"
-msgstr ""
+msgstr "Taşıyıcı/bağlantı değişti"
 
 #: panels/network/panel-common.c:437
 msgid "Existing connection was assumed"
-msgstr ""
+msgstr "Mevcut bağlantı kabul edildi"
 
 #: panels/network/panel-common.c:441
 msgid "Modem not found"
@@ -715,21 +662,24 @@ msgstr "SIM yanlış"
 
 #: panels/network/panel-common.c:465
 msgid "InfiniBand device does not support connected mode"
-msgstr ""
+msgstr "InfiniBand cihazı bağlantı şeklini desteklemiyor."
 
 #: panels/network/panel-common.c:469
 msgid "Connection dependency failed"
-msgstr ""
+msgstr "Bağlantı bağımlılığı başarısız"
 
-#: panels/network/panel-common.c:683
+#: panels/network/panel-common.c:683 panels/network/network-wifi.ui.h:13
+#: panels/network/network-wired.ui.h:2
 msgid "IPv4 Address"
 msgstr "IPv4 Adresi"
 
-#: panels/network/panel-common.c:684
+#: panels/network/panel-common.c:684 panels/network/network-mobile.ui.h:4
+#: panels/network/network-wifi.ui.h:14 panels/network/network-wired.ui.h:3
 msgid "IPv6 Address"
 msgstr "IPv6 Adresi"
 
 #: panels/network/panel-common.c:686 panels/network/panel-common.c:688
+#: panels/network/network-mobile.ui.h:3
 msgid "IP Address"
 msgstr "İP Adresi"
 
@@ -771,17 +721,17 @@ msgstr[1] "dakika"
 #: panels/power/cc-power-panel.c:237
 #, c-format
 msgid "Charging - %s until fully charged"
-msgstr ""
+msgstr "Doluyor - tamamen dolmasına %s var."
 
 #: panels/power/cc-power-panel.c:245
 #, c-format
 msgid "Caution low battery, %s remaining"
-msgstr ""
+msgstr "Dikkat düşük pil, kalan süre %s"
 
 #: panels/power/cc-power-panel.c:253
 #, c-format
 msgid "Using battery power - %s remaining"
-msgstr ""
+msgstr "Pil gücünü kullanıyor - kalan süre %s"
 
 #: panels/power/cc-power-panel.c:270
 msgid "Charging"
@@ -802,16 +752,16 @@ msgstr "Boş"
 #: panels/power/cc-power-panel.c:351
 #, c-format
 msgid "Caution low UPS, %s remaining"
-msgstr ""
+msgstr "Dikkat düşük UPS gücü, kalan süre %s"
 
 #: panels/power/cc-power-panel.c:357
 #, c-format
 msgid "Using UPS power - %s remaining"
-msgstr ""
+msgstr "UPS gücü kullanılıyor - kalan süre %s"
 
 #: panels/power/cc-power-panel.c:375
 msgid "Caution low UPS"
-msgstr ""
+msgstr "Dikkat düşük UPS gücü"
 
 #: panels/power/cc-power-panel.c:380
 msgid "Using UPS power"
@@ -839,11 +789,11 @@ msgstr "Kesintisiz güç kaynağı"
 
 #: panels/power/cc-power-panel.c:531
 msgid "Personal digital assistant"
-msgstr ""
+msgstr "Kişisel dijital yardımcı"
 
 #: panels/power/cc-power-panel.c:535
 msgid "Cellphone"
-msgstr ""
+msgstr "Cep telefonu"
 
 #: panels/power/cc-power-panel.c:539
 msgid "Media player"
@@ -851,7 +801,7 @@ msgstr "Ortam oynatıcısı"
 
 #: panels/power/cc-power-panel.c:543
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: panels/power/cc-power-panel.c:547
 msgid "Computer"
@@ -882,6 +832,7 @@ msgstr ""
 "Bölge ve Dil ayarlarını kullanır."
 
 #: panels/region/cinnamon-region-panel-system.c:425
+#: panels/region/cinnamon-region-panel.ui.h:32
 msgid ""
 "The login screen, system accounts and new user accounts use the system-wide "
 "Region and Language settings. You may change the system settings to match "
@@ -896,6 +847,7 @@ msgid "Copy Settings"
 msgstr "Ayarları Kopyala"
 
 #: panels/region/cinnamon-region-panel-system.c:431
+#: panels/region/cinnamon-region-panel.ui.h:39
 msgid "Copy Settings..."
 msgstr "Ayarları Kopyala..."
 
@@ -904,7 +856,6 @@ msgid "Layout"
 msgstr "Düzen"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:229
-#: panels/sound/gvc-sound-theme-chooser.c:585
 msgid "Default"
 msgstr "Öntanımlı"
 
@@ -918,10 +869,10 @@ msgstr "Bu uygulamanın sürümü"
 
 #: panels/sound/applet-main.c:62
 msgid " — Cinnamon Volume Control Applet"
-msgstr ""
+msgstr " — Cinnamon Ses Kontrolü Uygulaması"
 
-#: panels/sound/gvc-applet.c:270 panels/sound/gvc-mixer-dialog.c:1656
-#: panels/sound-nua/gvc-mixer-dialog.c:1750
+#: panels/sound/gvc-applet.c:270 panels/sound/gvc-mixer-dialog.c:1654
+#: panels/sound-nua/gvc-mixer-dialog.c:1748
 msgid "Output"
 msgstr "Çıktı"
 
@@ -929,8 +880,8 @@ msgstr "Çıktı"
 msgid "Sound Output Volume"
 msgstr "Ses Çıkış Şiddeti"
 
-#: panels/sound/gvc-applet.c:276 panels/sound/gvc-mixer-dialog.c:1697
-#: panels/sound-nua/gvc-mixer-dialog.c:1883
+#: panels/sound/gvc-applet.c:276 panels/sound/gvc-mixer-dialog.c:1695
+#: panels/sound-nua/gvc-mixer-dialog.c:1881
 msgid "Input"
 msgstr "Giriş"
 
@@ -950,8 +901,8 @@ msgstr "_Kaybolma:"
 msgid "_Subwoofer:"
 msgstr "_Subwoofer:"
 
-#: panels/sound/gvc-combo-box.c:167 panels/sound/gvc-mixer-dialog.c:260
-#: panels/sound/gvc-mixer-dialog.c:521
+#: panels/sound/gvc-combo-box.c:167 panels/sound/gvc-mixer-dialog.c:258
+#: panels/sound/gvc-mixer-dialog.c:519
 msgid "_Profile:"
 msgstr "_Profil:"
 
@@ -963,108 +914,85 @@ msgstr "Devre dışı"
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
-msgstr[0] "%u Çıkış"
+msgstr[0] "%u Çıktı"
+msgstr[1] "%u Çıktı"
 
 #: panels/sound/gvc-mixer-control.c:1851
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
 msgstr[0] "%u Giriş"
+msgstr[1] "%u Girdi"
 
 #: panels/sound/gvc-mixer-control.c:2375
 msgid "System Sounds"
 msgstr "Sistem Sesleri"
 
-#: panels/sound/gvc-mixer-dialog.c:262
+#: panels/sound/gvc-mixer-dialog.c:260
 msgid "_Test Speakers"
 msgstr "Hoparlörleri _Sına"
 
-#: panels/sound/gvc-mixer-dialog.c:426 panels/sound-nua/gvc-mixer-dialog.c:343
+#: panels/sound/gvc-mixer-dialog.c:424 panels/sound-nua/gvc-mixer-dialog.c:341
 msgid "Peak detect"
 msgstr "Tepe algılama"
 
-#: panels/sound/gvc-mixer-dialog.c:1506
-#: panels/sound/gvc-sound-theme-chooser.c:595
-#: panels/sound-nua/gvc-mixer-dialog.c:1580
+#: panels/sound/gvc-mixer-dialog.c:1504
+#: panels/sound-nua/gvc-mixer-dialog.c:1578
 msgid "Name"
 msgstr "İsim"
 
-#: panels/sound/gvc-mixer-dialog.c:1588
-#: panels/sound-nua/gvc-mixer-dialog.c:1682
+#: panels/sound/gvc-mixer-dialog.c:1586
+#: panels/sound-nua/gvc-mixer-dialog.c:1680
 #, c-format
 msgid "Speaker Testing for %s"
 msgstr "%s için Hoparlör Sınaması"
 
-#: panels/sound/gvc-mixer-dialog.c:1642
-#: panels/sound-nua/gvc-mixer-dialog.c:2023
+#: panels/sound/gvc-mixer-dialog.c:1640
+#: panels/sound-nua/gvc-mixer-dialog.c:2016
 msgid "_Output volume:"
 msgstr "_Çıkış ses düzeyi:"
 
-#: panels/sound/gvc-mixer-dialog.c:1661
+#: panels/sound/gvc-mixer-dialog.c:1659
 msgid "C_hoose a device for sound output:"
 msgstr "Ses çıkışı için aygıt _seçin:"
 
-#: panels/sound/gvc-mixer-dialog.c:1686
+#: panels/sound/gvc-mixer-dialog.c:1684
 msgid "Settings for the selected device:"
 msgstr "Seçili aygıt ayarları:"
 
-#: panels/sound/gvc-mixer-dialog.c:1704
-#: panels/sound-nua/gvc-mixer-dialog.c:1930
+#: panels/sound/gvc-mixer-dialog.c:1702
+#: panels/sound-nua/gvc-mixer-dialog.c:1928
 msgid "_Input volume:"
 msgstr "_Giriş ses düzeyi:"
 
-#: panels/sound/gvc-mixer-dialog.c:1727
-#: panels/sound-nua/gvc-mixer-dialog.c:1963
+#: panels/sound/gvc-mixer-dialog.c:1725
+#: panels/sound-nua/gvc-mixer-dialog.c:1961
 msgid "Input level:"
 msgstr "Giriş seviyesi:"
 
-#: panels/sound/gvc-mixer-dialog.c:1755
+#: panels/sound/gvc-mixer-dialog.c:1753
 msgid "C_hoose a device for sound input:"
 msgstr "Ses girişi için aygıt _seçin:"
 
-#: panels/sound/gvc-mixer-dialog.c:1782
-#: panels/sound-nua/gvc-mixer-dialog.c:1984
+#: panels/sound/gvc-mixer-dialog.c:1780
+#: panels/sound-nua/gvc-mixer-dialog.c:1982
 msgid "Sound Effects"
 msgstr "Ses Efektleri"
 
-#: panels/sound/gvc-mixer-dialog.c:1789
-#: panels/sound-nua/gvc-mixer-dialog.c:1991
+#: panels/sound/gvc-mixer-dialog.c:1787
+#: panels/sound-nua/gvc-mixer-dialog.c:1989
 msgid "_Alert volume:"
 msgstr "_Uyarı ses düzeyi:"
 
-#: panels/sound/gvc-mixer-dialog.c:1802
-#: panels/sound-nua/gvc-mixer-dialog.c:2004
+#: panels/sound/gvc-mixer-dialog.c:1795
+#: panels/sound-nua/gvc-mixer-dialog.c:1997
 msgid "Applications"
 msgstr "Uygulamalar"
 
-#: panels/sound/gvc-mixer-dialog.c:1806
-#: panels/sound-nua/gvc-mixer-dialog.c:2008
+#: panels/sound/gvc-mixer-dialog.c:1799
+#: panels/sound-nua/gvc-mixer-dialog.c:2001
 msgid "No application is currently playing or recording audio."
 msgstr "Herhangi bir uygulama ses kaydı ya da yürütmesi yapmıyor."
-
-#: panels/sound/gvc-sound-theme-chooser.c:189
-msgid "Built-in"
-msgstr "Dahili"
-
-#: panels/sound/gvc-sound-theme-chooser.c:455
-#: panels/sound/gvc-sound-theme-chooser.c:467
-#: panels/sound/gvc-sound-theme-chooser.c:479
-msgid "Sound Preferences"
-msgstr "Ses Tercihleri"
-
-#: panels/sound/gvc-sound-theme-chooser.c:458
-#: panels/sound/gvc-sound-theme-chooser.c:469
-#: panels/sound/gvc-sound-theme-chooser.c:481
-msgid "Testing event sound"
-msgstr "Olay sesi deneniyor"
-
-#: panels/sound/gvc-sound-theme-chooser.c:586
-msgid "From theme"
-msgstr "Temadan"
-
-#: panels/sound/gvc-sound-theme-chooser.c:770
-msgid "C_hoose an alert sound:"
-msgstr "Uyarı sesi se_çin:"
 
 #: panels/sound/gvc-speaker-test.c:220
 msgid "Stop"
@@ -1095,41 +1023,37 @@ msgstr "S_es Tercihleri"
 msgid "Muted"
 msgstr "Sessiz"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:776
-#: panels/sound-nua/gvc-mixer-dialog.c:946
+#: panels/sound-nua/gvc-mixer-dialog.c:774
+#: panels/sound-nua/gvc-mixer-dialog.c:944
 #, c-format
 msgid "Settings for %s"
-msgstr ""
+msgstr "%s için ayarlar"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:802
-#: panels/sound-nua/gvc-mixer-dialog.c:955
+#: panels/sound-nua/gvc-mixer-dialog.c:800
+#: panels/sound-nua/gvc-mixer-dialog.c:953
 msgid "Mode:"
-msgstr ""
+msgstr "Kip:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1755
+#: panels/sound-nua/gvc-mixer-dialog.c:1753
 msgid "Play sound through"
-msgstr ""
+msgstr "Sesi şununla çal"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1780
-#: panels/sound-nua/gvc-mixer-dialog.c:1912
+#: panels/sound-nua/gvc-mixer-dialog.c:1778
+#: panels/sound-nua/gvc-mixer-dialog.c:1910
 msgid "Settings for the selected device"
-msgstr ""
+msgstr "Seçilen aygıt için ayarlar"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1853
+#: panels/sound-nua/gvc-mixer-dialog.c:1851
 msgid "Test:"
-msgstr ""
+msgstr "Sına:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1860
+#: panels/sound-nua/gvc-mixer-dialog.c:1858
 msgid "Test Sound"
-msgstr ""
+msgstr "Sınama Sesi"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1887
+#: panels/sound-nua/gvc-mixer-dialog.c:1885
 msgid "Record sound from"
-msgstr ""
-
-#: panels/sound/sound-theme-file-utils.c:292
-msgid "Custom"
-msgstr "Özel"
+msgstr "Sesi şuradan kaydet"
 
 #: panels/universal-access/cc-ua-panel.c:289
 #: panels/universal-access/cc-ua-panel.c:295
@@ -1138,7 +1062,7 @@ msgstr "Kısayol belirlenmemiş"
 
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
-msgstr ""
+msgstr "_Tüm Ayarlar"
 
 #: shell/control-center.c:58
 msgid "Enable verbose mode"
@@ -1173,142 +1097,1029 @@ msgstr ""
 
 #: shell/control-center.c:215
 msgid "Help"
-msgstr ""
+msgstr "Yardım"
 
 #: shell/control-center.c:216
 msgid "Quit"
+msgstr "Çıkış"
+
+#: panels/color/color.ui.h:3 generate_additional_files.py:83
+msgid "Color"
+msgstr "Renk"
+
+#: panels/color/color.ui.h:4
+msgid "Each device needs an up to date color profile to be color managed."
 msgstr ""
+"Her aygıt renk yönetimi için renk profilini güncelleştirmeye ihtiyaç duyar."
 
-#: panels/bluetooth/bluetooth.ui.h:1
-msgid "Set Up New Device"
-msgstr "Yeni Aygıt Kur"
+#: panels/color/color.ui.h:5
+msgid "Learn more"
+msgstr "Daha fazla bilgi"
 
-#: panels/bluetooth/bluetooth.ui.h:2
+#: panels/color/color.ui.h:6
+msgid "Learn more about color management"
+msgstr "Renk yönetimi hakkında daha fazla bilgi edinin"
+
+#: panels/color/color.ui.h:7
+msgid "Add device"
+msgstr "Aygıt Ekle"
+
+#: panels/color/color.ui.h:8
+msgid "Add a virtual device"
+msgstr "Sanal bir aygıt ekle"
+
+#: panels/color/color.ui.h:9
+msgid "Delete device"
+msgstr "Aygıtı sil"
+
+#: panels/color/color.ui.h:10
+msgid "Remove a device"
+msgstr "Bir aygıtı kaldır"
+
+#: panels/color/color.ui.h:12
+msgid "Set this profile for all users on this computer"
+msgstr "Bu profili bilgisayardaki tüm kullanıcılar için ayarla"
+
+#: panels/color/color.ui.h:13
+msgid "Add profile"
+msgstr "Profil ekle"
+
+#: panels/color/color.ui.h:14
+msgid "Calibrate…"
+msgstr "Ayarla..."
+
+#: panels/color/color.ui.h:15
+msgid "Calibrate the device"
+msgstr "Aygıtı ayarla"
+
+#: panels/color/color.ui.h:16
+msgid "Remove profile"
+msgstr "Profili kaldır"
+
+#: panels/color/color.ui.h:17
+msgid "View details"
+msgstr "Ayrıntıları görüntüle"
+
+#: panels/color/color.ui.h:18
+msgid "Device type:"
+msgstr "Aygıt türü:"
+
+#: panels/color/color.ui.h:19
+msgid "Manufacturer:"
+msgstr "Üretici:"
+
+#: panels/color/color.ui.h:20
+msgid "Model:"
+msgstr "Model:"
+
+#: panels/color/color.ui.h:21
+msgid ""
+"Image files can be dragged on this window to auto-complete the above fields."
+msgstr ""
+"Alttaki alanların otomatik tamamlanması için resim dosyaları bu pencereye "
+"sürüklenmiş olmalı."
+
+#: panels/common/language-chooser.ui.h:1
+msgid "Select a language"
+msgstr "Bir dil seçin"
+
+#: panels/common/language-chooser.ui.h:2
+msgid "_Cancel"
+msgstr "_İptal"
+
+#: panels/common/language-chooser.ui.h:3
+msgid "_Select"
+msgstr "_Seç"
+
+#: panels/display/display-capplet.ui.h:2
+msgid "Set as Primary"
+msgstr "Birincil olarak ata"
+
+#: panels/display/display-capplet.ui.h:3
+msgid "_Resolution"
+msgstr "_Çözünürlük"
+
+#: panels/display/display-capplet.ui.h:4
+msgid "R_otation"
+msgstr "D_öndürme"
+
+#: panels/display/display-capplet.ui.h:6
+msgid "_Mirror displays"
+msgstr "_Ekranları Yansıt"
+
+#: panels/display/display-capplet.ui.h:7
+msgid "Note: may limit resolution options"
+msgstr "Not: çözünürlük seçeneklerini kısıtlayabilir"
+
+#: panels/display/display-capplet.ui.h:8
+msgid "_Detect Displays"
+msgstr "Ekranları _Algıla"
+
+#: panels/network/network-mobile.ui.h:1
+msgid "IMEI"
+msgstr "IMEI"
+
+#: panels/network/network-mobile.ui.h:2
+msgid "Provider"
+msgstr "Sağlayıcı"
+
+#: panels/network/network-mobile.ui.h:5 panels/network/network-wifi.ui.h:15
+#: panels/network/network-wired.ui.h:4
+msgid "Default Route"
+msgstr "Öntanımlı Geçit"
+
+#: panels/network/network-mobile.ui.h:6 panels/network/network-wifi.ui.h:16
+#: panels/network/network-wired.ui.h:5
+msgid "DNS"
+msgstr "DNS"
+
+#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:173
+msgid "Network"
+msgstr "Ağ"
+
+#: panels/network/network-mobile.ui.h:8 panels/network/network-wired.ui.h:6
+#: panels/region/cinnamon-region-panel.ui.h:26
+msgid "_Options..."
+msgstr "_Seçenekler…"
+
+#: panels/network/network-proxy.ui.h:4
+msgid "_Method"
+msgstr "_Yöntem"
+
+#: panels/network/network-proxy.ui.h:5
+msgid "_Configuration URL"
+msgstr "_Yapılandırma URL'si"
+
+#: panels/network/network-proxy.ui.h:6
+msgid "_HTTP Proxy"
+msgstr "_HTTP Vekili"
+
+#: panels/network/network-proxy.ui.h:7
+msgid "H_TTPS Proxy"
+msgstr "H_TTPS Vekili"
+
+#: panels/network/network-proxy.ui.h:8
+msgid "_FTP Proxy"
+msgstr "_FTP Vekili"
+
+#: panels/network/network-proxy.ui.h:9
+msgid "_Socks Host"
+msgstr "_Socks Host"
+
+#: panels/network/network.ui.h:1
+msgid "Select the interface to use for the new service"
+msgstr "Yeni hizmetin kullanılacağı arayüzü seçin"
+
+#: panels/network/network.ui.h:2
+msgid "C_reate..."
+msgstr "O_luştur..."
+
+#: panels/network/network.ui.h:3
+msgid "_Interface"
+msgstr "_Arayüz"
+
+#: panels/network/network.ui.h:4 panels/network/network-vpn.ui.h:1
+msgid "VPN"
+msgstr "VPN"
+
+#: panels/network/network.ui.h:8
+msgid "Add Device"
+msgstr "Aygıt Ekle"
+
+#: panels/network/network.ui.h:9
 msgid "Remove Device"
 msgstr "Aygıtı Kaldır"
 
-#: panels/bluetooth/bluetooth.ui.h:3
-msgid "Connection"
-msgstr "Bağlantı"
+#: panels/network/network-vpn.ui.h:2
+msgid "VPN Type"
+msgstr "VPN Türü"
 
-#: panels/bluetooth/bluetooth.ui.h:4
-msgid "page 1"
+#: panels/network/network-vpn.ui.h:3
+msgid "Gateway"
+msgstr "Ağ Geçidi"
+
+#: panels/network/network-vpn.ui.h:4
+msgid "Group Name"
+msgstr "Grup Adı"
+
+#: panels/network/network-vpn.ui.h:5
+msgid "Group Password"
+msgstr "Grup Şifresi"
+
+#: panels/network/network-vpn.ui.h:6
+msgid "Username"
+msgstr "Kullanıcı Adı"
+
+#: panels/network/network-vpn.ui.h:7
+msgid "_Configure..."
+msgstr "_Yapılandır..."
+
+#: panels/network/network-wifi.ui.h:1
+msgid "Wireless Hotspot"
+msgstr "Kablosuz Ağ  Erişim Noktası"
+
+#: panels/network/network-wifi.ui.h:2
+msgid "_Turn On"
+msgstr "_Aç"
+
+#: panels/network/network-wifi.ui.h:4
+msgid "_Use as Hotspot..."
+msgstr "Erişim Noktası Olarak _Kullan"
+
+#: panels/network/network-wifi.ui.h:5
+msgid "Connect to a Hidden Network"
+msgstr "Gizli Bir Ağa Bağlan"
+
+#: panels/network/network-wifi.ui.h:6
+msgid "_Disconnect"
+msgstr "_Bağlantıyı Kes"
+
+#: panels/network/network-wifi.ui.h:7
+msgid "_Connect"
+msgstr "_Bağlan"
+
+#: panels/network/network-wifi.ui.h:8
+msgid "Last used"
+msgstr "Son Kullanılan"
+
+#: panels/network/network-wifi.ui.h:9 panels/network/network-wired.ui.h:1
+msgid "Hardware Address"
+msgstr "Donanım Adresi"
+
+#: panels/network/network-wifi.ui.h:10
+msgid "Security"
+msgstr "Güvenlik"
+
+#: panels/network/network-wifi.ui.h:11
+msgid "Strength"
+msgstr "Güç"
+
+#: panels/network/network-wifi.ui.h:12
+msgid "Link speed"
+msgstr "Bağlantı hızı"
+
+#: panels/network/network-wifi.ui.h:17
+msgid "_Forget Network"
+msgstr "_Ağı Unut"
+
+#: panels/network/network-wifi.ui.h:18
+msgid "_Settings..."
+msgstr "_Ayarlar..."
+
+#: panels/network/network-wifi.ui.h:19
+msgid "Switch off to connect to a wireless network"
+msgstr "Bir kablosuz ağa bağlanmak için kapatın"
+
+#: panels/network/network-wifi.ui.h:20
+msgid "Network Name"
+msgstr "Ağ Adı"
+
+#: panels/network/network-wifi.ui.h:21
+msgid "Connected Devices"
+msgstr "Bağlı Aygıtlar"
+
+#: panels/network/network-wifi.ui.h:22
+msgid "Security type"
+msgstr "Güvenlik tipi"
+
+#: panels/network/network-wifi.ui.h:23
+msgid "Security key"
+msgstr "Güvenlik Anahtarı"
+
+#: panels/power/power.ui.h:1
+msgid "Hibernate"
+msgstr "Uykuya Al"
+
+#: panels/power/power.ui.h:2
+msgid "Power off"
+msgstr "Kapat"
+
+#: panels/power/power.ui.h:3 panels/screen/screen.ui.h:6
+msgid "5 minutes"
+msgstr "5 dakika"
+
+#: panels/power/power.ui.h:4 panels/screen/screen.ui.h:7
+msgid "10 minutes"
+msgstr "10 dakika"
+
+#: panels/power/power.ui.h:5 panels/screen/screen.ui.h:8
+msgid "30 minutes"
+msgstr "30 dakika"
+
+#: panels/power/power.ui.h:6 panels/screen/screen.ui.h:9
+msgid "1 hour"
+msgstr "1 saat"
+
+#: panels/power/power.ui.h:7
+msgid "Don't suspend"
+msgstr "Askıya alma"
+
+#: panels/power/power.ui.h:8
+msgid "Suspend"
+msgstr "Askıya Al"
+
+#: panels/power/power.ui.h:9
+msgid "Do nothing"
+msgstr "Hiçbir şey yapma"
+
+#: panels/power/power.ui.h:10
+msgid "Lock Screen"
+msgstr "Ekranı Kilitle"
+
+#: panels/power/power.ui.h:11
+msgid "Shutdown Immediately"
+msgstr "Hemen Kapat"
+
+#: panels/power/power.ui.h:12
+msgid "Ask"
+msgstr "Sor"
+
+#: panels/power/power.ui.h:13
+msgid "When battery is present"
+msgstr "Pil şimdiki durumdayken"
+
+#: panels/power/power.ui.h:14
+msgid "When battery is charging/in use"
+msgstr "Pil şarj olurken/kullanımdayken"
+
+#: panels/power/power.ui.h:15 panels/screen/screen.ui.h:10
+msgid "Never"
+msgstr "Asla"
+
+#: panels/power/power.ui.h:16
+msgid "On battery power"
+msgstr "Pil gücünde"
+
+#: panels/power/power.ui.h:17
+msgid "When plugged in"
+msgstr "Fişe takıldığında"
+
+#: panels/power/power.ui.h:18
+msgid "Suspend when inactive for"
+msgstr "Şu kadar süre etkisiz olunca uykuya geç"
+
+#: panels/power/power.ui.h:19
+msgid "When power is _critically low"
+msgstr "Güç _kritik seviyede olduğunda"
+
+#: panels/power/power.ui.h:20
+msgid "When the lid is closed"
+msgstr "Kapak kapalı olduğunda"
+
+#: panels/power/power.ui.h:21
+msgid "Show battery status in the _menu bar"
+msgstr "_Menü çubuğunda pil durumunu göster"
+
+#: panels/power/power.ui.h:22
+msgid "Power button action"
+msgstr "Güç düğmesi eylemi"
+
+#: panels/region/cinnamon-region-panel-layout-chooser.ui.h:1
+msgid "Choose a Layout"
+msgstr "Bir Düzen Seçin"
+
+#: panels/region/cinnamon-region-panel-layout-chooser.ui.h:2
+msgid "Preview"
+msgstr "Önizleme"
+
+#: panels/region/cinnamon-region-panel-layout-chooser.ui.h:3
+msgid "Select an input source to add"
+msgstr "Eklemek için giriş kaynağı seçin"
+
+#: panels/region/cinnamon-region-panel-options-dialog.ui.h:1
+msgid "Keyboard Layout Options"
+msgstr "Klavye Düzeni Seçenekleri"
+
+#: panels/region/cinnamon-region-panel.ui.h:1
+msgid "Region and Language"
+msgstr "Bölge Ve Dil"
+
+#: panels/region/cinnamon-region-panel.ui.h:2
+msgid ""
+"Select a display language (change will be applied next time you log in)"
+msgstr "Görünüm dili seç (değişiklik bir sonraki girişinizde uygulanacak)"
+
+#: panels/region/cinnamon-region-panel.ui.h:3
+msgid "Add Language"
+msgstr "Dil Ekle"
+
+#: panels/region/cinnamon-region-panel.ui.h:4
+msgid "Remove Language"
+msgstr "Dili Kaldır"
+
+#: panels/region/cinnamon-region-panel.ui.h:5
+msgid "button"
+msgstr "düğme"
+
+#: panels/region/cinnamon-region-panel.ui.h:6
+msgid "Language"
+msgstr "Dil"
+
+#: panels/region/cinnamon-region-panel.ui.h:7
+msgid "Select a region (change will be applied the next time you log in)"
 msgstr ""
+"Bir bölge seçin (değişiklik bir sonraki oturum açılışınızda uygulanacak)"
 
-#: panels/bluetooth/bluetooth.ui.h:5
-msgid "page 2"
+#: panels/region/cinnamon-region-panel.ui.h:8
+msgid "Add Region"
+msgstr "Bölge Ekle"
+
+#: panels/region/cinnamon-region-panel.ui.h:9
+msgid "Remove Region"
+msgstr "Bölgeyi Kaldır"
+
+#: panels/region/cinnamon-region-panel.ui.h:10
+msgid "Dates"
+msgstr "Tarihler"
+
+#: panels/region/cinnamon-region-panel.ui.h:11
+msgid "Times"
+msgstr "Süreler"
+
+#: panels/region/cinnamon-region-panel.ui.h:12
+msgid "Numbers"
+msgstr "Sayılar"
+
+#: panels/region/cinnamon-region-panel.ui.h:13
+msgid "Currency"
+msgstr "Para Birimi"
+
+#: panels/region/cinnamon-region-panel.ui.h:14
+msgid "Measurement"
+msgstr "Ölçme"
+
+#: panels/region/cinnamon-region-panel.ui.h:15
+msgid "Examples"
+msgstr "Örnekler"
+
+#: panels/region/cinnamon-region-panel.ui.h:16
+msgid "Formats"
+msgstr "Biçimler"
+
+#: panels/region/cinnamon-region-panel.ui.h:17
+msgid "Add Layout"
+msgstr "Düzen Ekle"
+
+#: panels/region/cinnamon-region-panel.ui.h:18
+msgid "Remove Layout"
+msgstr "Düzeni Kaldır"
+
+#: panels/region/cinnamon-region-panel.ui.h:19
+msgid "Move Up"
+msgstr "Yukarı Taşı"
+
+#: panels/region/cinnamon-region-panel.ui.h:20
+msgid "Move Down"
+msgstr "Aşağı Taşı"
+
+#: panels/region/cinnamon-region-panel.ui.h:21
+msgid "Preview Layout"
+msgstr "Düzeni Önizle"
+
+#: panels/region/cinnamon-region-panel.ui.h:22
+msgid "Use the same layout for all windows"
+msgstr "Her pencerede aynı düzeni kullan"
+
+#: panels/region/cinnamon-region-panel.ui.h:23
+msgid "Allow different layouts for individual windows"
+msgstr "Her pencere için farklı düzene izin ver"
+
+#: panels/region/cinnamon-region-panel.ui.h:24
+msgid "New windows use the default layout"
+msgstr "Yeni pencereler öntanımlı düzeni kullanır"
+
+#: panels/region/cinnamon-region-panel.ui.h:25
+msgid "New windows use the previous window's layout"
+msgstr "Yeni pencereler, önceki pencerenin düzenini kullanır"
+
+#: panels/region/cinnamon-region-panel.ui.h:27
+msgid "View and edit keyboard layout options"
+msgstr "Klavye düzeni seçeneklerini görüntüle ve düzenle"
+
+#: panels/region/cinnamon-region-panel.ui.h:28
+msgid "Reset to De_faults"
+msgstr "Öntanımlılara Sı_fırla"
+
+#: panels/region/cinnamon-region-panel.ui.h:29
+msgid ""
+"Replace the current keyboard layout settings with the\n"
+"default settings"
 msgstr ""
+"Şuanki klavye düzen ayarlarını öntanımlı\n"
+"ayarlar ile değiştir"
 
-#: panels/bluetooth/bluetooth.ui.h:6
-msgid "Paired"
-msgstr "Eşleştirildi"
+#: panels/region/cinnamon-region-panel.ui.h:31
+msgid "Keyboard Layouts"
+msgstr "Klavye Düzenleri"
 
-#: panels/bluetooth/bluetooth.ui.h:7
-msgid "Type"
-msgstr "Tür"
+#: panels/region/cinnamon-region-panel.ui.h:34
+msgid "Display language:"
+msgstr "Görüntüleme Dili:"
 
-#: panels/bluetooth/bluetooth.ui.h:8
-msgid "Address"
-msgstr "Adres"
+#: panels/region/cinnamon-region-panel.ui.h:35
+msgid "Input source:"
+msgstr "Giriş kaynağı:"
 
-#: panels/bluetooth/bluetooth.ui.h:9
-msgid "Mouse and Touchpad Settings"
-msgstr "Fare ve Touchpad Ayarları"
+#: panels/region/cinnamon-region-panel.ui.h:36
+msgid "Format:"
+msgstr "Biçim:"
 
-#: panels/bluetooth/bluetooth.ui.h:10
-msgid "Sound Settings"
-msgstr "Ses Ayarları"
+#: panels/region/cinnamon-region-panel.ui.h:37
+msgid "Your settings"
+msgstr "Kişisel ayarlarınız"
 
-#: panels/bluetooth/bluetooth.ui.h:11
-msgid "Keyboard Settings"
-msgstr "Klavye Ayarları"
+#: panels/region/cinnamon-region-panel.ui.h:38
+msgid "System settings"
+msgstr "Sistem ayarları"
 
-#: panels/bluetooth/bluetooth.ui.h:12
-msgid "Send Files..."
-msgstr "Dosya(ları) Gönder..."
+#: panels/region/cinnamon-region-panel.ui.h:40
+msgid "System"
+msgstr "Sistem"
 
-#: panels/bluetooth/bluetooth.ui.h:13
-msgid "Browse Files..."
-msgstr "Dosyalara Gözat..."
+#: panels/screen/screen.ui.h:1
+msgid "Screen turns off"
+msgstr "Ekran kapanıyor"
 
-#: generate_additional_files.py:50
-msgid "Configure Bluetooth settings"
-msgstr ""
+#: panels/screen/screen.ui.h:2
+msgid "30 seconds"
+msgstr "30 saniye"
 
-#: generate_additional_files.py:66
+#: panels/screen/screen.ui.h:3
+msgid "1 minute"
+msgstr "1 dakika"
+
+#: panels/screen/screen.ui.h:4
+msgid "2 minutes"
+msgstr "2 dakika"
+
+#: panels/screen/screen.ui.h:5
+msgid "3 minutes"
+msgstr "3 dakika"
+
+#: panels/screen/screen.ui.h:11
+msgid "_Dim screen to save power"
+msgstr "Güç tasarrufu için ekranı _Karart"
+
+#: panels/screen/screen.ui.h:12
+msgid "Brightness"
+msgstr "Parlaklık"
+
+#: panels/screen/screen.ui.h:13
+msgid "_Turn screen off when inactive for:"
+msgstr "Şu kadar süre etkin değilse ekranı _kapat:"
+
+#: panels/screen/screen.ui.h:14
+msgid "_Lock screen after:"
+msgstr "Şu süre geçince ekranı _kilitle:"
+
+#: panels/screen/screen.ui.h:15
+msgid "Require my password when waking from suspend"
+msgstr "Uykudan uyanırken parola sorulsun"
+
+#: panels/screen/screen.ui.h:16
+msgid "Lock"
+msgstr "Kilit"
+
+#: panels/universal-access/uap.ui.h:5
+msgid "On screen keyboard"
+msgstr "Ekran Klavyesi"
+
+#: panels/universal-access/uap.ui.h:6
+msgid "GOK"
+msgstr "GOK"
+
+#: panels/universal-access/uap.ui.h:7
+msgid "OnBoard"
+msgstr "Dahili"
+
+#: panels/universal-access/uap.ui.h:8
+msgid "None"
+msgstr "Hiçbiri"
+
+#: panels/universal-access/uap.ui.h:10
+#, no-c-format
+msgid "75%"
+msgstr "%75"
+
+#: panels/universal-access/uap.ui.h:13
+#, no-c-format
+msgid "100%"
+msgstr "%100"
+
+#: panels/universal-access/uap.ui.h:16
+#, no-c-format
+msgid "125%"
+msgstr "%125"
+
+#: panels/universal-access/uap.ui.h:19
+#, no-c-format
+msgid "150%"
+msgstr "%150"
+
+#: panels/universal-access/uap.ui.h:21
+msgid "High Contrast"
+msgstr "Yüksek Karşıtlık"
+
+#: panels/universal-access/uap.ui.h:22
+msgid "Beep on Caps and Num Lock"
+msgstr "Caps Lock ve Num Lock tuşlarında sesli uyar"
+
+#: panels/universal-access/uap.ui.h:23
+msgid "Options..."
+msgstr "Seçenekler..."
+
+#: panels/universal-access/uap.ui.h:24
+msgid "Screen Reader"
+msgstr "Ekran Okuyucu"
+
+#: panels/universal-access/uap.ui.h:25
+msgid "Turn on or off:"
+msgstr "Aç ya da kapat:"
+
+#: panels/universal-access/uap.ui.h:27
+msgid "Zoom in:"
+msgstr "Yakınlaştırma"
+
+#: panels/universal-access/uap.ui.h:28
+msgid "Zoom out:"
+msgstr "Uzaklaştırma"
+
+#: panels/universal-access/uap.ui.h:29
+msgid "Large Text"
+msgstr "Büyük Metin"
+
+#: panels/universal-access/uap.ui.h:30
+msgid "Seeing"
+msgstr "Görme"
+
+#: panels/universal-access/uap.ui.h:31
+msgid "Visual Alerts"
+msgstr "Görsel Uyarılar"
+
+#: panels/universal-access/uap.ui.h:32
+msgid "Use a visual indication when an alert sound occurs"
+msgstr "Uyarı sesi çalındığında görsel uyarı kullan"
+
+#: panels/universal-access/uap.ui.h:33
+msgid "Flash the window title"
+msgstr "Pencere başlığı yanıp sönsün"
+
+#: panels/universal-access/uap.ui.h:34
+msgid "Flash the entire screen"
+msgstr "Tüm ekran yanıp sönsün"
+
+#: panels/universal-access/uap.ui.h:35
+msgid "Closed Captioning"
+msgstr "Gizli Altyazı"
+
+#: panels/universal-access/uap.ui.h:36
+msgid "Display a textual description of speech and sounds"
+msgstr "Konuşma ve sesler için yazılı açıklama göster"
+
+#: panels/universal-access/uap.ui.h:37
+msgid "_Test flash"
+msgstr "Bildiri parlamasını _testet"
+
+#: panels/universal-access/uap.ui.h:38
+msgid "Hearing"
+msgstr "İşitme"
+
+#: panels/universal-access/uap.ui.h:39
+msgid "On Screen Keyboard"
+msgstr "Ekran Klavyesi"
+
+#: panels/universal-access/uap.ui.h:40
+msgid "Sticky Keys"
+msgstr "Yapışkan Tuşlar"
+
+#: panels/universal-access/uap.ui.h:41
+msgid "Treats a sequence of modifier keys as a key combination"
+msgstr "Değiştirici tuş dizisi, tuş kombinasyonu gibi davranır"
+
+#: panels/universal-access/uap.ui.h:42
+msgid "_Disable if two keys are pressed together"
+msgstr "İki tuşa birden basıldığında _devre dışı bırak"
+
+#: panels/universal-access/uap.ui.h:43
+msgid "Beep when a _modifer key is pressed"
+msgstr "_Değiştirme tuşuna basıldığında ses çıkar"
+
+#: panels/universal-access/uap.ui.h:44
+msgid "Slow Keys"
+msgstr "Yavaş Tuşlar"
+
+#: panels/universal-access/uap.ui.h:45
+msgid "Puts a delay between when a key is pressed and when it is accepted"
+msgstr "Bir tuşa basılmasıyla kabulü arasına gecikme koyar"
+
+#: panels/universal-access/uap.ui.h:46
+msgid "A_cceptance delay:"
+msgstr "Onaylama ge_cikmesi:"
+
+#: panels/universal-access/uap.ui.h:48
+msgid "Short"
+msgstr "Kısa"
+
+#: panels/universal-access/uap.ui.h:49
+msgid "Slow keys typing delay"
+msgstr "Yavaş tuşlar yazım gecikmesi"
+
+#: panels/universal-access/uap.ui.h:51
+msgid "Long"
+msgstr "Uzun"
+
+#: panels/universal-access/uap.ui.h:53
+msgid "Beep when a key is"
+msgstr "Tuşa basıldığında Bip sesi"
+
+#: panels/universal-access/uap.ui.h:55
+msgid "pressed"
+msgstr "basılı"
+
+#: panels/universal-access/uap.ui.h:57
+msgid "accepted"
+msgstr "kabul edildi"
+
+#: panels/universal-access/uap.ui.h:59
+msgid "rejected"
+msgstr "reddedildi"
+
+#: panels/universal-access/uap.ui.h:60
+msgid "Bounce Keys"
+msgstr "Tuş tekrarlama"
+
+#: panels/universal-access/uap.ui.h:61
+msgid "Ignores fast duplicate keypresses"
+msgstr "Kısa aralıklı tuş tekrarlarını yok sayar"
+
+#: panels/universal-access/uap.ui.h:62
+msgid "Acc_eptance delay:"
+msgstr "Kabul g_ecikmesi:"
+
+#: panels/universal-access/uap.ui.h:63
+msgid "Bounce keys typing delay"
+msgstr "Tuş tekrarlama yazım gecikmesi"
+
+#: panels/universal-access/uap.ui.h:64
+msgid "Beep when a key is _rejected"
+msgstr "Bir tuş _reddedildiğinde biple"
+
+#: panels/universal-access/uap.ui.h:65
+msgid "Enable by Keyboard"
+msgstr "Klavye ile Etkinleştir"
+
+#: panels/universal-access/uap.ui.h:66
+msgid "Turn accessibility features on and off using the keyboard"
+msgstr "Erişilebilirlik özelliklerini klavyeyi kullanarak aç ve kapat"
+
+#: panels/universal-access/uap.ui.h:67
+msgid "Typing"
+msgstr "Yazma"
+
+#: panels/universal-access/uap.ui.h:68
+msgid "Mouse Keys"
+msgstr "Fare Tuşları"
+
+#: panels/universal-access/uap.ui.h:69
+msgid "Control the pointer using the keypad"
+msgstr "Belirteci klavye ile kontrol et"
+
+#: panels/universal-access/uap.ui.h:70
+msgid "Video Mouse"
+msgstr "Video Faresi"
+
+#: panels/universal-access/uap.ui.h:71
+msgid "Control the pointer using the video camera."
+msgstr "Belirteçi kamera ile yönet"
+
+#: panels/universal-access/uap.ui.h:72
+msgid "Simulated Secondary Click"
+msgstr "İkinci Tıklama Simülasyonu"
+
+#: panels/universal-access/uap.ui.h:73
+msgid "Trigger a secondary click by holding down the primary button"
+msgstr "Sol tuş basılı tutulduğunda ikinci bir tıklama yap"
+
+#: panels/universal-access/uap.ui.h:74
+msgid "Secondary click delay"
+msgstr "İkinci tıklama gecikmesi"
+
+#: panels/universal-access/uap.ui.h:75
+msgid "Hover Click"
+msgstr "Vurgulu Tıklama"
+
+#: panels/universal-access/uap.ui.h:76
+msgid "Trigger a click when the pointer hovers"
+msgstr "Belirteç nesne üstüne geldiğinde tıklama yap"
+
+#: panels/universal-access/uap.ui.h:77
+msgid "D_elay:"
+msgstr "_Gecikme:"
+
+#: panels/universal-access/uap.ui.h:78
+msgid "Motion _threshold:"
+msgstr "Hareket _eşiği:"
+
+#: panels/universal-access/uap.ui.h:80
+msgid "Small"
+msgstr "Küçük"
+
+#: panels/universal-access/uap.ui.h:82
+msgid "Large"
+msgstr "Büyük"
+
+#: panels/universal-access/uap.ui.h:83
+msgid "Mouse Settings"
+msgstr "Fare Ayarları"
+
+#: panels/universal-access/uap.ui.h:84
+msgid "Pointing and Clicking"
+msgstr "İşaretleme ve Tıklama"
+
+#: panels/universal-access/zoom-options.ui.h:1
+msgid "Full Screen"
+msgstr "Tam Ekran"
+
+#: panels/universal-access/zoom-options.ui.h:2
+msgid "Top Half"
+msgstr "Üst Yarı"
+
+#: panels/universal-access/zoom-options.ui.h:3
+msgid "Bottom Half"
+msgstr "Alt Yarı"
+
+#: panels/universal-access/zoom-options.ui.h:4
+msgid "Left Half"
+msgstr "Sol Yarı"
+
+#: panels/universal-access/zoom-options.ui.h:5
+msgid "Right Half"
+msgstr "Sağ Yarı"
+
+#: panels/universal-access/zoom-options.ui.h:6
+msgid "Zoom Options"
+msgstr "Yakınlaştırma Seçenekleri"
+
+#: panels/universal-access/zoom-options.ui.h:7
+msgid "Zoom"
+msgstr "Yakınlaştırma"
+
+#: panels/universal-access/zoom-options.ui.h:8
+msgid "Magnification:"
+msgstr "Büyütme:"
+
+#: panels/universal-access/zoom-options.ui.h:9
+msgid "Follow mouse cursor"
+msgstr "Fare imlecini izle"
+
+#: panels/universal-access/zoom-options.ui.h:10
+msgid "Screen part:"
+msgstr "Ekran bölümü:"
+
+#: panels/universal-access/zoom-options.ui.h:11
+msgid "Magnifier extends outside of screen"
+msgstr "Büyüteç ekran dışına taşıyor"
+
+#: panels/universal-access/zoom-options.ui.h:12
+msgid "Keep magnifier cursor centered"
+msgstr "Büyüteç imlecini ortala"
+
+#: panels/universal-access/zoom-options.ui.h:13
+msgid "Magnifier cursor pushes contents around"
+msgstr "Büyüteç imleci içerik etrafını çevreliyor"
+
+#: panels/universal-access/zoom-options.ui.h:14
+msgid "Magnifier cursor moves with contents"
+msgstr "Büyüteç imleci içerikle birlikte hareket ediyor"
+
+#: panels/universal-access/zoom-options.ui.h:15
+msgid "Magnifier Position:"
+msgstr "Büyüteç Konumu:"
+
+#: panels/universal-access/zoom-options.ui.h:16
+msgid "Magnifier"
+msgstr "Büyüteç"
+
+#: panels/universal-access/zoom-options.ui.h:17
+msgid "Thickness:"
+msgstr "Kalınlık:"
+
+#: panels/universal-access/zoom-options.ui.h:19
+msgid "Thin"
+msgstr "İnce"
+
+#: panels/universal-access/zoom-options.ui.h:21
+msgid "Thick"
+msgstr "Kalın"
+
+#: panels/universal-access/zoom-options.ui.h:22
+msgid "Length:"
+msgstr "Uzunluk:"
+
+#: panels/universal-access/zoom-options.ui.h:23
+msgid "Color:"
+msgstr "Renk:"
+
+#: panels/universal-access/zoom-options.ui.h:24
+msgid "Crosshairs:"
+msgstr "Hedef göstergeleri:"
+
+#: panels/universal-access/zoom-options.ui.h:25
+msgid "Overlaps mouse cursor"
+msgstr "Fare imlecinin üstünü kaplama"
+
+#: panels/universal-access/zoom-options.ui.h:26
+msgid "Crosshairs"
+msgstr "Hedef göstergeleri"
+
+#: panels/universal-access/zoom-options.ui.h:27
+msgid "White on black:"
+msgstr "Siyah üzerine beyaz:"
+
+#: panels/universal-access/zoom-options.ui.h:28
+msgid "Brightness:"
+msgstr "Parlaklık:"
+
+#: panels/universal-access/zoom-options.ui.h:29
+msgid "Contrast:"
+msgstr "Karşıtlık:"
+
+#: panels/universal-access/zoom-options.ui.h:34
+msgid "Low"
+msgstr "Düşük"
+
+#: panels/universal-access/zoom-options.ui.h:36
+msgid "High"
+msgstr "Yüksek"
+
+#: panels/universal-access/zoom-options.ui.h:37
+msgid "Color Effects:"
+msgstr "Renk Etkileri:"
+
+#: panels/universal-access/zoom-options.ui.h:38
+msgid "Color Effects"
+msgstr "Renk Etkileri"
+
+#: generate_additional_files.py:53
 msgid "Brightness & Lock"
-msgstr ""
+msgstr "Parlaklık & Kilit"
 
-#: generate_additional_files.py:66
+#: generate_additional_files.py:53
 msgid "Screen brightness and lock settings"
-msgstr ""
+msgstr "Ekran parlaklığı ve kilit ayarları"
 
-#: generate_additional_files.py:81 generate_additional_files.py:112
+#: generate_additional_files.py:68 generate_additional_files.py:99
 msgid "Sound"
-msgstr ""
+msgstr "Ses"
 
-#: generate_additional_files.py:81 generate_additional_files.py:112
+#: generate_additional_files.py:68 generate_additional_files.py:99
 msgid "Change sound volume and sound events"
-msgstr ""
+msgstr "Ses seviyesini ve ses olaylarını değiştir"
 
-#: generate_additional_files.py:96
-msgid "Color"
-msgstr ""
-
-#: generate_additional_files.py:96
+#: generate_additional_files.py:83
 msgid "Color management settings"
-msgstr ""
+msgstr "Renk yönetimi ayarları"
 
-#: generate_additional_files.py:126
+#: generate_additional_files.py:113
 msgid "Volume Control"
-msgstr ""
+msgstr "Ses Denetimi"
 
-#: generate_additional_files.py:126
+#: generate_additional_files.py:113
 msgid "Show desktop volume control"
-msgstr ""
+msgstr "Masaüstü ses denetimini göster"
 
-#: generate_additional_files.py:141
+#: generate_additional_files.py:128
 msgid "Power"
-msgstr ""
+msgstr "Güç"
 
-#: generate_additional_files.py:141
+#: generate_additional_files.py:128
 msgid "Power management settings"
-msgstr ""
+msgstr "Güç yönetimi ayarları"
 
-#: generate_additional_files.py:156
+#: generate_additional_files.py:143
 msgid "Region & Language"
-msgstr ""
+msgstr "Bölge & Dil"
 
-#: generate_additional_files.py:156
+#: generate_additional_files.py:143
 msgid "Change your region and language settings"
-msgstr ""
+msgstr "Bölge ve dil ayarlarını değiştirin"
 
-#: generate_additional_files.py:171
+#: generate_additional_files.py:158
 msgid "Displays"
-msgstr ""
+msgstr "Görüntüler"
 
-#: generate_additional_files.py:171
+#: generate_additional_files.py:158
 msgid "Change resolution and position of monitors and projectors"
-msgstr ""
+msgstr "Monitör ve projektör çözünürlüğü ve konumunu değiştir"
 
-#: generate_additional_files.py:186
-msgid "Network"
-msgstr ""
-
-#: generate_additional_files.py:186
+#: generate_additional_files.py:173
 msgid "Network settings"
-msgstr ""
+msgstr "Ağ ayarları"
 
-#: generate_additional_files.py:201
+#: generate_additional_files.py:188
 msgid "Universal Access"
-msgstr ""
+msgstr "Evrensel Erişim"
 
-#: generate_additional_files.py:201
+#: generate_additional_files.py:188
 msgid "Universal Access Preferences"
-msgstr ""
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Launchpad Contributions:\n"
-#~ "  Muhammet Kara https://launchpad.net/~muhammet-k\n"
-#~ "  kelebek333 https://launchpad.net/~kelebek333"
+msgstr "Evrensel Erişim Tercihleri"

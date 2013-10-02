@@ -45,57 +45,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-26 13:46+0100\n"
-"PO-Revision-Date: 2013-08-26 10:56+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"POT-Creation-Date: 2013-08-30 17:55+0100\n"
+"PO-Revision-Date: 2013-09-07 17:54+0000\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-08-26 13:09+0000\n"
-"X-Generator: Launchpad (build 16738)\n"
+"X-Launchpad-Export-Date: 2013-10-02 15:27+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
 "Language: da\n"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:352
-msgid "Yes"
-msgstr "Ja"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:352
-msgid "No"
-msgstr "Nej"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:466
-msgid "Bluetooth is disabled"
-msgstr "Bluetooth er slået fra"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:471
-msgid "Bluetooth is disabled by hardware switch"
-msgstr "Bluetooth er slået fra med hardwareknap"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:475
-msgid "No Bluetooth adapters found"
-msgstr "Ingen Bluetooth-adaptere fundet"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:602
-msgid "Visibility"
-msgstr "Synlighed"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:606
-#, c-format
-msgid "Visibility of “%s”"
-msgstr "Synlighed af \"%s\""
-
-#: panels/bluetooth/cc-bluetooth-panel.c:650
-#, c-format
-msgid "Remove '%s' from the list of devices?"
-msgstr "Fjern \"%s\" fra listen af enheder?"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:652
-msgid ""
-"If you remove the device, you will have to set it up again before next use."
-msgstr ""
-"Hvis du fjerner enheden, skal den sættes op igen, før den bruges næste gang."
 
 #: panels/color/cc-color-panel.c:106
 msgid "Other profile…"
@@ -103,7 +63,7 @@ msgstr "Anden profil…"
 
 #: panels/color/cc-color-panel.c:119
 msgid "Default: "
-msgstr "Forvalg: "
+msgstr "Standard: "
 
 #: panels/color/cc-color-panel.c:126
 msgid "Colorspace: "
@@ -113,7 +73,7 @@ msgstr "Farverum: "
 msgid "Test profile: "
 msgstr "Testprofil: "
 
-#: panels/color/cc-color-panel.c:185
+#: panels/color/cc-color-panel.c:185 panels/color/color.ui.h:11
 msgid "Set for all users"
 msgstr "Indstil for alle brugere"
 
@@ -158,12 +118,12 @@ msgstr "Tilgængelige profiler for kameraer"
 msgid "Available Profiles for Webcams"
 msgstr "Tilgængelige profiler for webkameraer"
 
-#: panels/color/cc-color-panel.c:659
+#: panels/color/cc-color-panel.c:659 panels/color/color.ui.h:2
 msgid "Available Profiles"
 msgstr "Tilgængelige profiler"
 
-#: panels/color/cc-color-panel.c:935 panels/sound/gvc-mixer-dialog.c:1525
-#: panels/sound-nua/gvc-mixer-dialog.c:1598
+#: panels/color/cc-color-panel.c:935 panels/sound/gvc-mixer-dialog.c:1523
+#: panels/sound-nua/gvc-mixer-dialog.c:1596
 msgid "Device"
 msgstr "Enhed"
 
@@ -189,7 +149,7 @@ msgstr "Måleinstrumentet understøtter ikke profilering af printeren."
 
 #: panels/color/cc-color-panel.c:1060
 msgid "The device type is not currently supported."
-msgstr "Enhedstypen er ikke er understøttet for øjeblikket."
+msgstr "Enhedstypen er ikke understøttet for øjeblikket."
 
 #: panels/color/cc-color-panel.c:1132
 msgid "Cannot remove automatically added profile"
@@ -318,29 +278,25 @@ msgstr "Vælg en region"
 msgid "Unspecified"
 msgstr "Ikke angivet"
 
-#: panels/display/cc-display-panel.c:666 panels/display/cc-rr-labeler.c:449
+#: panels/display/cc-display-panel.c:624 panels/display/cc-rr-labeler.c:449
 msgid "Mirrored Displays"
-msgstr "Klon skærme"
+msgstr "Klonskærme"
 
-#: panels/display/cc-display-panel.c:690
+#: panels/display/cc-display-panel.c:648 panels/display/display-capplet.ui.h:1
 msgid "Monitor"
-msgstr "Monitor"
+msgstr "Skærm"
 
-#: panels/display/cc-display-panel.c:800
+#: panels/display/cc-display-panel.c:758
 #, c-format
 msgid "%d x %d (%s)"
 msgstr "%d x %d (%s)"
 
-#: panels/display/cc-display-panel.c:802
+#: panels/display/cc-display-panel.c:760
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: panels/display/cc-display-panel.c:1712
-msgid "Drag to change primary display."
-msgstr "Træk for at ændre primær skærm."
-
-#: panels/display/cc-display-panel.c:1770
+#: panels/display/cc-display-panel.c:1669
 msgid ""
 "Select a monitor to change its properties; drag it to rearrange its "
 "placement."
@@ -349,32 +305,20 @@ msgstr ""
 "placering."
 
 #: panels/display/cc-display-panel.c:2185
-msgid "%a %R"
-msgstr "%a %R"
-
-#: panels/display/cc-display-panel.c:2187
-msgid "%a %l:%M %p"
-msgstr "%a %H:%M"
-
-#: panels/display/cc-display-panel.c:2349
-#: panels/display/cc-display-panel.c:2401
+#: panels/display/cc-display-panel.c:2237
 #, c-format
 msgid "Failed to apply configuration: %s"
 msgstr "Kunne ikke anvende konfiguration: %s"
 
-#: panels/display/cc-display-panel.c:2429
+#: panels/display/cc-display-panel.c:2265
 msgid "Could not save the monitor configuration"
-msgstr "Kunne ikke gemme monitorkonfigurationen"
+msgstr "Kunne ikke gemme skærmkonfigurationen"
 
-#: panels/display/cc-display-panel.c:2489
+#: panels/display/cc-display-panel.c:2325
 msgid "Could not detect displays"
-msgstr "Kunne ikke finde displays"
+msgstr "Kunne ikke finde skærme"
 
-#: panels/display/cc-display-panel.c:2767
-msgid "All displays"
-msgstr ""
-
-#: panels/display/cc-display-panel.c:2924
+#: panels/display/cc-display-panel.c:2563
 msgid "Could not get screen information"
 msgstr "Kunne ikke finde skærminformation"
 
@@ -515,7 +459,7 @@ msgstr "Ukendt"
 msgid "Wired"
 msgstr "Kablet"
 
-#: panels/network/panel-common.c:90
+#: panels/network/panel-common.c:90 panels/network/network-wifi.ui.h:3
 msgid "Wireless"
 msgstr "Trådløs"
 
@@ -523,7 +467,7 @@ msgstr "Trådløs"
 msgid "Mobile broadband"
 msgstr "Mobilt bredbånd"
 
-#: panels/network/panel-common.c:102 generate_additional_files.py:50
+#: panels/network/panel-common.c:102
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -602,7 +546,7 @@ msgstr "IP-konfigurationen udløb"
 
 #: panels/network/panel-common.c:313
 msgid "Secrets were required, but not provided"
-msgstr "Hemmeligheder blev påkrævet men ikke givet"
+msgstr "Hemmeligheder var påkrævede, men blev ikke angivede"
 
 #: panels/network/panel-common.c:317
 msgid "802.1x supplicant disconnected"
@@ -626,7 +570,7 @@ msgstr "PPP-tjenesten kunne ikke starte"
 
 #: panels/network/panel-common.c:337
 msgid "PPP service disconnected"
-msgstr "PPP-tjeneste frakoblede"
+msgstr "PPP-tjenesten frakoblede"
 
 #: panels/network/panel-common.c:341
 msgid "PPP failed"
@@ -634,7 +578,7 @@ msgstr "PPP fejlede"
 
 #: panels/network/panel-common.c:345
 msgid "DHCP client failed to start"
-msgstr "DHCP-klient kunne ikke starte"
+msgstr "DHCP-klienten kunne ikke starte"
 
 #: panels/network/panel-common.c:349
 msgid "DHCP client error"
@@ -642,7 +586,7 @@ msgstr "DHCP-klientfejl"
 
 #: panels/network/panel-common.c:353
 msgid "DHCP client failed"
-msgstr "DHCP-klient fejlede"
+msgstr "DHCP-klienten fejlede"
 
 #: panels/network/panel-common.c:357
 msgid "Shared connection service failed to start"
@@ -654,7 +598,7 @@ msgstr "Tjenesten til delt forbindelse fejlede"
 
 #: panels/network/panel-common.c:365
 msgid "AutoIP service failed to start"
-msgstr "AutoIP-tjeneste kunne ikke starte"
+msgstr "AutoIP-tjenesten kunne ikke starte"
 
 #: panels/network/panel-common.c:369
 msgid "AutoIP service error"
@@ -662,7 +606,7 @@ msgstr "AutoIP-tjenestefejl"
 
 #: panels/network/panel-common.c:373
 msgid "AutoIP service failed"
-msgstr "AutoIP-tjeneste fejlede"
+msgstr "AutoIP-tjenesten fejlede"
 
 #: panels/network/panel-common.c:377
 msgid "Line busy"
@@ -764,15 +708,18 @@ msgstr "InfiniBand-enhed understøtter ikke forbundet tilstand"
 msgid "Connection dependency failed"
 msgstr "Forbindelsesforudsætning mislykkedes"
 
-#: panels/network/panel-common.c:683
+#: panels/network/panel-common.c:683 panels/network/network-wifi.ui.h:13
+#: panels/network/network-wired.ui.h:2
 msgid "IPv4 Address"
 msgstr "IPv4-adresse"
 
-#: panels/network/panel-common.c:684
+#: panels/network/panel-common.c:684 panels/network/network-mobile.ui.h:4
+#: panels/network/network-wifi.ui.h:14 panels/network/network-wired.ui.h:3
 msgid "IPv6 Address"
 msgstr "IPv6-adresse"
 
 #: panels/network/panel-common.c:686 panels/network/panel-common.c:688
+#: panels/network/network-mobile.ui.h:3
 msgid "IP Address"
 msgstr "IP-adresse"
 
@@ -894,7 +841,7 @@ msgstr "Medieafspiller"
 
 #: panels/power/cc-power-panel.c:543
 msgid "Tablet"
-msgstr "Tavle-pc"
+msgstr "Tabletcomputer"
 
 #: panels/power/cc-power-panel.c:547
 msgid "Computer"
@@ -906,7 +853,7 @@ msgstr "Batteri"
 
 #: panels/region/cc-region-panel.c:178
 msgid "Get more languages..."
-msgstr ""
+msgstr "Hent flere sprog..."
 
 #: panels/region/cinnamon-region-panel-formats.c:142
 msgid "Imperial"
@@ -921,16 +868,17 @@ msgid ""
 "The login screen, system accounts and new user accounts use the system-wide "
 "Region and Language settings."
 msgstr ""
-"Logindskærm, systemkonti og nye brugerkonti bruger systemets globale regions-"
-" og sprogindstillinger."
+"Loginskærmen, systemkonti og nye brugerkonti anvender systemets globale "
+"regions- og sprogindstillinger."
 
 #: panels/region/cinnamon-region-panel-system.c:425
+#: panels/region/cinnamon-region-panel.ui.h:32
 msgid ""
 "The login screen, system accounts and new user accounts use the system-wide "
 "Region and Language settings. You may change the system settings to match "
 "yours."
 msgstr ""
-"Logindskærmen, systemkonti og nye brugerkonti bruger systemets globale "
+"Loginskærmen, systemkonti og nye brugerkonti anvender systemets globale "
 "regions- og sprogindstillinger. Du kan ændre systemindstillingerne, så de "
 "svarer til dine egne."
 
@@ -939,6 +887,7 @@ msgid "Copy Settings"
 msgstr "Kopiér indstillinger"
 
 #: panels/region/cinnamon-region-panel-system.c:431
+#: panels/region/cinnamon-region-panel.ui.h:39
 msgid "Copy Settings..."
 msgstr "Kopiér indstillinger..."
 
@@ -947,9 +896,8 @@ msgid "Layout"
 msgstr "Layout"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:229
-#: panels/sound/gvc-sound-theme-chooser.c:585
 msgid "Default"
-msgstr "Forvalg"
+msgstr "Standard"
 
 #: panels/sound/applet-main.c:49
 msgid "Enable debugging code"
@@ -961,10 +909,10 @@ msgstr "Version af dette program"
 
 #: panels/sound/applet-main.c:62
 msgid " — Cinnamon Volume Control Applet"
-msgstr ""
+msgstr " — Cinnamon panelprogram til kontrol af lydstyrke"
 
-#: panels/sound/gvc-applet.c:270 panels/sound/gvc-mixer-dialog.c:1656
-#: panels/sound-nua/gvc-mixer-dialog.c:1750
+#: panels/sound/gvc-applet.c:270 panels/sound/gvc-mixer-dialog.c:1654
+#: panels/sound-nua/gvc-mixer-dialog.c:1748
 msgid "Output"
 msgstr "Afspilning"
 
@@ -972,8 +920,8 @@ msgstr "Afspilning"
 msgid "Sound Output Volume"
 msgstr "Lydstyrke for afspilning"
 
-#: panels/sound/gvc-applet.c:276 panels/sound/gvc-mixer-dialog.c:1697
-#: panels/sound-nua/gvc-mixer-dialog.c:1883
+#: panels/sound/gvc-applet.c:276 panels/sound/gvc-mixer-dialog.c:1695
+#: panels/sound-nua/gvc-mixer-dialog.c:1881
 msgid "Input"
 msgstr "Optagelse"
 
@@ -993,8 +941,8 @@ msgstr "_Udtoning:"
 msgid "_Subwoofer:"
 msgstr "_Subwoofer:"
 
-#: panels/sound/gvc-combo-box.c:167 panels/sound/gvc-mixer-dialog.c:260
-#: panels/sound/gvc-mixer-dialog.c:521
+#: panels/sound/gvc-combo-box.c:167 panels/sound/gvc-mixer-dialog.c:258
+#: panels/sound/gvc-mixer-dialog.c:519
 msgid "_Profile:"
 msgstr "_Profil:"
 
@@ -1020,96 +968,71 @@ msgstr[1] "%u inputs"
 msgid "System Sounds"
 msgstr "Systemlyde"
 
-#: panels/sound/gvc-mixer-dialog.c:262
+#: panels/sound/gvc-mixer-dialog.c:260
 msgid "_Test Speakers"
 msgstr "_Afprøv højttalere"
 
-#: panels/sound/gvc-mixer-dialog.c:426 panels/sound-nua/gvc-mixer-dialog.c:343
+#: panels/sound/gvc-mixer-dialog.c:424 panels/sound-nua/gvc-mixer-dialog.c:341
 msgid "Peak detect"
 msgstr "Top-bestemmelse"
 
-#: panels/sound/gvc-mixer-dialog.c:1506
-#: panels/sound/gvc-sound-theme-chooser.c:595
-#: panels/sound-nua/gvc-mixer-dialog.c:1580
+#: panels/sound/gvc-mixer-dialog.c:1504
+#: panels/sound-nua/gvc-mixer-dialog.c:1578
 msgid "Name"
 msgstr "Navn"
 
-#: panels/sound/gvc-mixer-dialog.c:1588
-#: panels/sound-nua/gvc-mixer-dialog.c:1682
+#: panels/sound/gvc-mixer-dialog.c:1586
+#: panels/sound-nua/gvc-mixer-dialog.c:1680
 #, c-format
 msgid "Speaker Testing for %s"
-msgstr "Tester højttaler for %s"
+msgstr "Højttalertest for %s"
 
-#: panels/sound/gvc-mixer-dialog.c:1642
-#: panels/sound-nua/gvc-mixer-dialog.c:2023
+#: panels/sound/gvc-mixer-dialog.c:1640
+#: panels/sound-nua/gvc-mixer-dialog.c:2016
 msgid "_Output volume:"
 msgstr "Lydstyrke for _afspilning:"
 
-#: panels/sound/gvc-mixer-dialog.c:1661
+#: panels/sound/gvc-mixer-dialog.c:1659
 msgid "C_hoose a device for sound output:"
 msgstr "_Vælg en enhed til lydafspilning:"
 
-#: panels/sound/gvc-mixer-dialog.c:1686
+#: panels/sound/gvc-mixer-dialog.c:1684
 msgid "Settings for the selected device:"
 msgstr "Indstillinger for den valgte enhed:"
 
-#: panels/sound/gvc-mixer-dialog.c:1704
-#: panels/sound-nua/gvc-mixer-dialog.c:1930
+#: panels/sound/gvc-mixer-dialog.c:1702
+#: panels/sound-nua/gvc-mixer-dialog.c:1928
 msgid "_Input volume:"
 msgstr "_Optagelydstyrke:"
 
-#: panels/sound/gvc-mixer-dialog.c:1727
-#: panels/sound-nua/gvc-mixer-dialog.c:1963
+#: panels/sound/gvc-mixer-dialog.c:1725
+#: panels/sound-nua/gvc-mixer-dialog.c:1961
 msgid "Input level:"
 msgstr "Optageniveau:"
 
-#: panels/sound/gvc-mixer-dialog.c:1755
+#: panels/sound/gvc-mixer-dialog.c:1753
 msgid "C_hoose a device for sound input:"
 msgstr "_Vælg en enhed til lydoptagelse:"
 
-#: panels/sound/gvc-mixer-dialog.c:1782
-#: panels/sound-nua/gvc-mixer-dialog.c:1984
+#: panels/sound/gvc-mixer-dialog.c:1780
+#: panels/sound-nua/gvc-mixer-dialog.c:1982
 msgid "Sound Effects"
 msgstr "Lydeffekter"
 
-#: panels/sound/gvc-mixer-dialog.c:1789
-#: panels/sound-nua/gvc-mixer-dialog.c:1991
+#: panels/sound/gvc-mixer-dialog.c:1787
+#: panels/sound-nua/gvc-mixer-dialog.c:1989
 msgid "_Alert volume:"
 msgstr "_Påmindelseslydstyrke:"
 
-#: panels/sound/gvc-mixer-dialog.c:1802
-#: panels/sound-nua/gvc-mixer-dialog.c:2004
+#: panels/sound/gvc-mixer-dialog.c:1795
+#: panels/sound-nua/gvc-mixer-dialog.c:1997
 msgid "Applications"
 msgstr "Programmer"
 
-#: panels/sound/gvc-mixer-dialog.c:1806
-#: panels/sound-nua/gvc-mixer-dialog.c:2008
+#: panels/sound/gvc-mixer-dialog.c:1799
+#: panels/sound-nua/gvc-mixer-dialog.c:2001
 msgid "No application is currently playing or recording audio."
 msgstr "Intet program afspiller eller optager lyd lige nu."
-
-#: panels/sound/gvc-sound-theme-chooser.c:189
-msgid "Built-in"
-msgstr "Indbygget"
-
-#: panels/sound/gvc-sound-theme-chooser.c:455
-#: panels/sound/gvc-sound-theme-chooser.c:467
-#: panels/sound/gvc-sound-theme-chooser.c:479
-msgid "Sound Preferences"
-msgstr "Lydindstillinger"
-
-#: panels/sound/gvc-sound-theme-chooser.c:458
-#: panels/sound/gvc-sound-theme-chooser.c:469
-#: panels/sound/gvc-sound-theme-chooser.c:481
-msgid "Testing event sound"
-msgstr "Tester begivenhedslyd"
-
-#: panels/sound/gvc-sound-theme-chooser.c:586
-msgid "From theme"
-msgstr "Fra tema"
-
-#: panels/sound/gvc-sound-theme-chooser.c:770
-msgid "C_hoose an alert sound:"
-msgstr "_Vælg en påmindelseslyd:"
 
 #: panels/sound/gvc-speaker-test.c:220
 msgid "Stop"
@@ -1126,11 +1049,11 @@ msgstr "Subwoofer"
 #: panels/sound/gvc-stream-status-icon.c:236
 #, c-format
 msgid "Failed to start Sound Preferences: %s"
-msgstr "Kunne ikke starte Lydindstillinger: %s"
+msgstr "Kunne ikke starte lydindstillinger: %s"
 
 #: panels/sound/gvc-stream-status-icon.c:262
 msgid "_Mute"
-msgstr "_Stilhed"
+msgstr "_Slå lyd fra"
 
 #: panels/sound/gvc-stream-status-icon.c:271
 msgid "_Sound Preferences"
@@ -1138,56 +1061,52 @@ msgstr "_Lydindstillinger"
 
 #: panels/sound/gvc-stream-status-icon.c:416
 msgid "Muted"
-msgstr "Tavs"
+msgstr "Lydløs"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:776
-#: panels/sound-nua/gvc-mixer-dialog.c:946
+#: panels/sound-nua/gvc-mixer-dialog.c:774
+#: panels/sound-nua/gvc-mixer-dialog.c:944
 #, c-format
 msgid "Settings for %s"
-msgstr ""
+msgstr "Indstillinger for %s"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:802
-#: panels/sound-nua/gvc-mixer-dialog.c:955
+#: panels/sound-nua/gvc-mixer-dialog.c:800
+#: panels/sound-nua/gvc-mixer-dialog.c:953
 msgid "Mode:"
-msgstr ""
+msgstr "Tilstand:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1755
+#: panels/sound-nua/gvc-mixer-dialog.c:1753
 msgid "Play sound through"
-msgstr ""
+msgstr "Afspil lyd gennem"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1780
-#: panels/sound-nua/gvc-mixer-dialog.c:1912
+#: panels/sound-nua/gvc-mixer-dialog.c:1778
+#: panels/sound-nua/gvc-mixer-dialog.c:1910
 msgid "Settings for the selected device"
-msgstr ""
+msgstr "Indstillinger for den valgte enhed"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1853
+#: panels/sound-nua/gvc-mixer-dialog.c:1851
 msgid "Test:"
-msgstr ""
+msgstr "Test:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1860
+#: panels/sound-nua/gvc-mixer-dialog.c:1858
 msgid "Test Sound"
-msgstr "Test lyd"
+msgstr "Testlyd"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1887
+#: panels/sound-nua/gvc-mixer-dialog.c:1885
 msgid "Record sound from"
-msgstr ""
-
-#: panels/sound/sound-theme-file-utils.c:292
-msgid "Custom"
-msgstr "Tilpasset"
+msgstr "Optag lyd fra"
 
 #: panels/universal-access/cc-ua-panel.c:289
 #: panels/universal-access/cc-ua-panel.c:295
 msgid "No shortcut set"
-msgstr "Ingen genvej givet"
+msgstr "Ingen genvej angivet"
 
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
-msgstr ""
+msgstr "_Alle indstillinger"
 
 #: shell/control-center.c:58
 msgid "Enable verbose mode"
-msgstr "Brug uddybende tilstand"
+msgstr "Anvend uddybende tilstand"
 
 #: shell/control-center.c:59
 msgid "Show the overview"
@@ -1223,135 +1142,1024 @@ msgstr "Hjælp"
 msgid "Quit"
 msgstr "Afslut"
 
-#: panels/bluetooth/bluetooth.ui.h:1
-msgid "Set Up New Device"
-msgstr "Opsæt ny enhed"
+#: panels/color/color.ui.h:3 generate_additional_files.py:83
+msgid "Color"
+msgstr "Farve"
 
-#: panels/bluetooth/bluetooth.ui.h:2
+#: panels/color/color.ui.h:4
+msgid "Each device needs an up to date color profile to be color managed."
+msgstr "For at farvehåndteres skal hver enhed have en ajourført farveprofil."
+
+#: panels/color/color.ui.h:5
+msgid "Learn more"
+msgstr "Få mere at vide"
+
+#: panels/color/color.ui.h:6
+msgid "Learn more about color management"
+msgstr "Få mere at vide om farvehåndtering"
+
+#: panels/color/color.ui.h:7
+msgid "Add device"
+msgstr "Tilføj enhed"
+
+#: panels/color/color.ui.h:8
+msgid "Add a virtual device"
+msgstr "Tilføj en virtuel enhed"
+
+#: panels/color/color.ui.h:9
+msgid "Delete device"
+msgstr "Slet enhed"
+
+#: panels/color/color.ui.h:10
+msgid "Remove a device"
+msgstr "Fjern en enhed"
+
+#: panels/color/color.ui.h:12
+msgid "Set this profile for all users on this computer"
+msgstr "Anvend denne profil for alle brugere på denne computer"
+
+#: panels/color/color.ui.h:13
+msgid "Add profile"
+msgstr "Tilføj profil"
+
+#: panels/color/color.ui.h:14
+msgid "Calibrate…"
+msgstr "Kalibrér…"
+
+#: panels/color/color.ui.h:15
+msgid "Calibrate the device"
+msgstr "Kalibrér enheden"
+
+#: panels/color/color.ui.h:16
+msgid "Remove profile"
+msgstr "Slet profil"
+
+#: panels/color/color.ui.h:17
+msgid "View details"
+msgstr "Vis detaljer"
+
+#: panels/color/color.ui.h:18
+msgid "Device type:"
+msgstr "Enhedstype:"
+
+#: panels/color/color.ui.h:19
+msgid "Manufacturer:"
+msgstr "Producent:"
+
+#: panels/color/color.ui.h:20
+msgid "Model:"
+msgstr "Model:"
+
+#: panels/color/color.ui.h:21
+msgid ""
+"Image files can be dragged on this window to auto-complete the above fields."
+msgstr ""
+"Billedfiler kan trækkes hen på dette vindue for automatisk fuldførelse af "
+"ovenstående felter."
+
+#: panels/common/language-chooser.ui.h:1
+msgid "Select a language"
+msgstr "Vælg et sprog"
+
+#: panels/common/language-chooser.ui.h:2
+msgid "_Cancel"
+msgstr "_Annullér"
+
+#: panels/common/language-chooser.ui.h:3
+msgid "_Select"
+msgstr "_Vælg"
+
+#: panels/display/display-capplet.ui.h:2
+msgid "Set as Primary"
+msgstr "Sæt som primær"
+
+#: panels/display/display-capplet.ui.h:3
+msgid "_Resolution"
+msgstr "_Opløsning"
+
+#: panels/display/display-capplet.ui.h:4
+msgid "R_otation"
+msgstr "R_otation"
+
+#: panels/display/display-capplet.ui.h:6
+msgid "_Mirror displays"
+msgstr "_Klon skærme"
+
+#: panels/display/display-capplet.ui.h:7
+msgid "Note: may limit resolution options"
+msgstr "Bemærk: Kan begrænse valgmuligheder for opløsning"
+
+#: panels/display/display-capplet.ui.h:8
+msgid "_Detect Displays"
+msgstr "_Find skærme"
+
+#: panels/network/network-mobile.ui.h:1
+msgid "IMEI"
+msgstr "IMEI"
+
+#: panels/network/network-mobile.ui.h:2
+msgid "Provider"
+msgstr "Udbyder"
+
+#: panels/network/network-mobile.ui.h:5 panels/network/network-wifi.ui.h:15
+#: panels/network/network-wired.ui.h:4
+msgid "Default Route"
+msgstr "Standardrute"
+
+#: panels/network/network-mobile.ui.h:6 panels/network/network-wifi.ui.h:16
+#: panels/network/network-wired.ui.h:5
+msgid "DNS"
+msgstr "DNS"
+
+#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:173
+msgid "Network"
+msgstr "Netværk"
+
+#: panels/network/network-mobile.ui.h:8 panels/network/network-wired.ui.h:6
+#: panels/region/cinnamon-region-panel.ui.h:26
+msgid "_Options..."
+msgstr "_Indstillinger..."
+
+#: panels/network/network-proxy.ui.h:4
+msgid "_Method"
+msgstr "_Metode"
+
+#: panels/network/network-proxy.ui.h:5
+msgid "_Configuration URL"
+msgstr "_Konfigurationsadresse"
+
+#: panels/network/network-proxy.ui.h:6
+msgid "_HTTP Proxy"
+msgstr "_HTTP-proxy"
+
+#: panels/network/network-proxy.ui.h:7
+msgid "H_TTPS Proxy"
+msgstr "H_TTPS-proxy"
+
+#: panels/network/network-proxy.ui.h:8
+msgid "_FTP Proxy"
+msgstr "_FTP-proxy"
+
+#: panels/network/network-proxy.ui.h:9
+msgid "_Socks Host"
+msgstr "_Socks-vært"
+
+#: panels/network/network.ui.h:1
+msgid "Select the interface to use for the new service"
+msgstr "Vælg grænsefladen, der skal bruges med den nye tjeneste"
+
+#: panels/network/network.ui.h:2
+msgid "C_reate..."
+msgstr "_Opret..."
+
+#: panels/network/network.ui.h:3
+msgid "_Interface"
+msgstr "_Grænseflade"
+
+#: panels/network/network.ui.h:4 panels/network/network-vpn.ui.h:1
+msgid "VPN"
+msgstr "VPN"
+
+#: panels/network/network.ui.h:8
+msgid "Add Device"
+msgstr "Tilføj enhed"
+
+#: panels/network/network.ui.h:9
 msgid "Remove Device"
 msgstr "Fjern enhed"
 
-#: panels/bluetooth/bluetooth.ui.h:3
-msgid "Connection"
-msgstr "Forbindelse"
+#: panels/network/network-vpn.ui.h:2
+msgid "VPN Type"
+msgstr "VPN-type"
 
-#: panels/bluetooth/bluetooth.ui.h:4
-msgid "page 1"
-msgstr "side 1"
+#: panels/network/network-vpn.ui.h:3
+msgid "Gateway"
+msgstr "Adgangspunkt"
 
-#: panels/bluetooth/bluetooth.ui.h:5
-msgid "page 2"
-msgstr "side 2"
+#: panels/network/network-vpn.ui.h:4
+msgid "Group Name"
+msgstr "Gruppenavn"
 
-#: panels/bluetooth/bluetooth.ui.h:6
-msgid "Paired"
-msgstr "Parret"
+#: panels/network/network-vpn.ui.h:5
+msgid "Group Password"
+msgstr "Gruppeadgangskode"
 
-#: panels/bluetooth/bluetooth.ui.h:7
-msgid "Type"
-msgstr "Type"
+#: panels/network/network-vpn.ui.h:6
+msgid "Username"
+msgstr "Brugernavn"
 
-#: panels/bluetooth/bluetooth.ui.h:8
-msgid "Address"
-msgstr "Adresse"
+#: panels/network/network-vpn.ui.h:7
+msgid "_Configure..."
+msgstr "_Konfigurér..."
 
-#: panels/bluetooth/bluetooth.ui.h:9
-msgid "Mouse and Touchpad Settings"
-msgstr "Indstillinger for mus og pegeplade"
+#: panels/network/network-wifi.ui.h:1
+msgid "Wireless Hotspot"
+msgstr "Trådløst hotspot"
 
-#: panels/bluetooth/bluetooth.ui.h:10
-msgid "Sound Settings"
-msgstr "Lydindstillinger"
+#: panels/network/network-wifi.ui.h:2
+msgid "_Turn On"
+msgstr "_Tænd"
 
-#: panels/bluetooth/bluetooth.ui.h:11
-msgid "Keyboard Settings"
-msgstr "Tastaturindstillinger"
+#: panels/network/network-wifi.ui.h:4
+msgid "_Use as Hotspot..."
+msgstr "_Brug som Hotspot..."
 
-#: panels/bluetooth/bluetooth.ui.h:12
-msgid "Send Files..."
-msgstr "Send filer..."
+#: panels/network/network-wifi.ui.h:5
+msgid "Connect to a Hidden Network"
+msgstr "Forbind til et skjult netværk"
 
-#: panels/bluetooth/bluetooth.ui.h:13
-msgid "Browse Files..."
-msgstr "Gennemse filer..."
+#: panels/network/network-wifi.ui.h:6
+msgid "_Disconnect"
+msgstr "_Afbryd forbindelse"
 
-#: generate_additional_files.py:50
-msgid "Configure Bluetooth settings"
+#: panels/network/network-wifi.ui.h:7
+msgid "_Connect"
+msgstr "_Tilslut"
+
+#: panels/network/network-wifi.ui.h:8
+msgid "Last used"
+msgstr "Sidst anvendt"
+
+#: panels/network/network-wifi.ui.h:9 panels/network/network-wired.ui.h:1
+msgid "Hardware Address"
+msgstr "Hardwareadresse"
+
+#: panels/network/network-wifi.ui.h:10
+msgid "Security"
+msgstr "Sikkerhed"
+
+#: panels/network/network-wifi.ui.h:11
+msgid "Strength"
+msgstr "Styrke"
+
+#: panels/network/network-wifi.ui.h:12
+msgid "Link speed"
+msgstr "Forbindelseshastighed"
+
+#: panels/network/network-wifi.ui.h:17
+msgid "_Forget Network"
+msgstr "_Glem netværk"
+
+#: panels/network/network-wifi.ui.h:18
+msgid "_Settings..."
+msgstr "_Indstillinger..."
+
+#: panels/network/network-wifi.ui.h:19
+msgid "Switch off to connect to a wireless network"
+msgstr "Sluk for at forbinde til et trådløst netværk"
+
+#: panels/network/network-wifi.ui.h:20
+msgid "Network Name"
+msgstr "Netværksnavn"
+
+#: panels/network/network-wifi.ui.h:21
+msgid "Connected Devices"
+msgstr "Forbundne enheder"
+
+#: panels/network/network-wifi.ui.h:22
+msgid "Security type"
+msgstr "Sikkerhedstype"
+
+#: panels/network/network-wifi.ui.h:23
+msgid "Security key"
+msgstr "Sikkerhedsnøgle"
+
+#: panels/power/power.ui.h:1
+msgid "Hibernate"
+msgstr "Dvale"
+
+#: panels/power/power.ui.h:2
+msgid "Power off"
+msgstr "Sluk"
+
+#: panels/power/power.ui.h:3 panels/screen/screen.ui.h:6
+msgid "5 minutes"
+msgstr "5 minutter"
+
+#: panels/power/power.ui.h:4 panels/screen/screen.ui.h:7
+msgid "10 minutes"
+msgstr "10 minutter"
+
+#: panels/power/power.ui.h:5 panels/screen/screen.ui.h:8
+msgid "30 minutes"
+msgstr "30 minutter"
+
+#: panels/power/power.ui.h:6 panels/screen/screen.ui.h:9
+msgid "1 hour"
+msgstr "1 time"
+
+#: panels/power/power.ui.h:7
+msgid "Don't suspend"
+msgstr "Sæt ikke i hviletilstand"
+
+#: panels/power/power.ui.h:8
+msgid "Suspend"
+msgstr "Sæt i hviletilstand"
+
+#: panels/power/power.ui.h:9
+msgid "Do nothing"
+msgstr "Foretag intet"
+
+#: panels/power/power.ui.h:10
+msgid "Lock Screen"
+msgstr "Låseskærm"
+
+#: panels/power/power.ui.h:11
+msgid "Shutdown Immediately"
+msgstr "Afslut med det samme"
+
+#: panels/power/power.ui.h:12
+msgid "Ask"
+msgstr "Spørg"
+
+#: panels/power/power.ui.h:13
+msgid "When battery is present"
+msgstr "Når batteriet er til stede"
+
+#: panels/power/power.ui.h:14
+msgid "When battery is charging/in use"
+msgstr "Når batteriet oplader eller forbruges"
+
+#: panels/power/power.ui.h:15 panels/screen/screen.ui.h:10
+msgid "Never"
+msgstr "Aldrig"
+
+#: panels/power/power.ui.h:16
+msgid "On battery power"
+msgstr "Kører på batteri"
+
+#: panels/power/power.ui.h:17
+msgid "When plugged in"
+msgstr "Når tilsluttet"
+
+#: panels/power/power.ui.h:18
+msgid "Suspend when inactive for"
+msgstr "Gå i hviletilstand efter manglende aktivitet i"
+
+#: panels/power/power.ui.h:19
+msgid "When power is _critically low"
+msgstr "Når batteriniveauet er _kritisk lavt"
+
+#: panels/power/power.ui.h:20
+msgid "When the lid is closed"
+msgstr "Når låget lukkes"
+
+#: panels/power/power.ui.h:21
+msgid "Show battery status in the _menu bar"
+msgstr "Vis batteristatus i _menulinjen"
+
+#: panels/power/power.ui.h:22
+msgid "Power button action"
+msgstr "Slukknappens funktion"
+
+#: panels/region/cinnamon-region-panel-layout-chooser.ui.h:1
+msgid "Choose a Layout"
+msgstr "Vælg et udseende"
+
+#: panels/region/cinnamon-region-panel-layout-chooser.ui.h:2
+msgid "Preview"
+msgstr "Forhåndsvisning"
+
+#: panels/region/cinnamon-region-panel-layout-chooser.ui.h:3
+msgid "Select an input source to add"
+msgstr "Vælg en inputkilde at tilføje"
+
+#: panels/region/cinnamon-region-panel-options-dialog.ui.h:1
+msgid "Keyboard Layout Options"
+msgstr "Indstillinger for tastaturlayout"
+
+#: panels/region/cinnamon-region-panel.ui.h:1
+msgid "Region and Language"
+msgstr "Region og sprog"
+
+#: panels/region/cinnamon-region-panel.ui.h:2
+msgid ""
+"Select a display language (change will be applied next time you log in)"
 msgstr ""
+"Vælg et andet sprog (ændringen træder i kraft, når du logger ind næste gang)"
 
-#: generate_additional_files.py:66
+#: panels/region/cinnamon-region-panel.ui.h:3
+msgid "Add Language"
+msgstr "Tilføj sprog"
+
+#: panels/region/cinnamon-region-panel.ui.h:4
+msgid "Remove Language"
+msgstr "Fjern sprog"
+
+#: panels/region/cinnamon-region-panel.ui.h:5
+msgid "button"
+msgstr "knap"
+
+#: panels/region/cinnamon-region-panel.ui.h:6
+msgid "Language"
+msgstr "Sprog"
+
+#: panels/region/cinnamon-region-panel.ui.h:7
+msgid "Select a region (change will be applied the next time you log in)"
+msgstr ""
+"Vælg en region (ændringen træder i kraft, når du logger ind næste gang)"
+
+#: panels/region/cinnamon-region-panel.ui.h:8
+msgid "Add Region"
+msgstr "Tilføj region"
+
+#: panels/region/cinnamon-region-panel.ui.h:9
+msgid "Remove Region"
+msgstr "Fjern region"
+
+#: panels/region/cinnamon-region-panel.ui.h:10
+msgid "Dates"
+msgstr "Datoer"
+
+#: panels/region/cinnamon-region-panel.ui.h:11
+msgid "Times"
+msgstr "Tider"
+
+#: panels/region/cinnamon-region-panel.ui.h:12
+msgid "Numbers"
+msgstr "Tal"
+
+#: panels/region/cinnamon-region-panel.ui.h:13
+msgid "Currency"
+msgstr "Valuta"
+
+#: panels/region/cinnamon-region-panel.ui.h:14
+msgid "Measurement"
+msgstr "Mål"
+
+#: panels/region/cinnamon-region-panel.ui.h:15
+msgid "Examples"
+msgstr "Eksempler"
+
+#: panels/region/cinnamon-region-panel.ui.h:16
+msgid "Formats"
+msgstr "Formater"
+
+#: panels/region/cinnamon-region-panel.ui.h:17
+msgid "Add Layout"
+msgstr "Tilføj layout"
+
+#: panels/region/cinnamon-region-panel.ui.h:18
+msgid "Remove Layout"
+msgstr "Fjern layout"
+
+#: panels/region/cinnamon-region-panel.ui.h:19
+msgid "Move Up"
+msgstr "Flyt op"
+
+#: panels/region/cinnamon-region-panel.ui.h:20
+msgid "Move Down"
+msgstr "Flyt ned"
+
+#: panels/region/cinnamon-region-panel.ui.h:21
+msgid "Preview Layout"
+msgstr "Forhåndsvisning af layout"
+
+#: panels/region/cinnamon-region-panel.ui.h:22
+msgid "Use the same layout for all windows"
+msgstr "Brug samme layout i alle vinduer"
+
+#: panels/region/cinnamon-region-panel.ui.h:23
+msgid "Allow different layouts for individual windows"
+msgstr "Tillad forskellige layout for hvert vindue"
+
+#: panels/region/cinnamon-region-panel.ui.h:24
+msgid "New windows use the default layout"
+msgstr "Nye vinduer anvender standardlayout"
+
+#: panels/region/cinnamon-region-panel.ui.h:25
+msgid "New windows use the previous window's layout"
+msgstr "Nye vinduer anvender det foregående vindues layout"
+
+#: panels/region/cinnamon-region-panel.ui.h:27
+msgid "View and edit keyboard layout options"
+msgstr "Vis og redigér indstillinger for tastaturlayout"
+
+#: panels/region/cinnamon-region-panel.ui.h:28
+msgid "Reset to De_faults"
+msgstr "Gendan _standardværdier"
+
+#: panels/region/cinnamon-region-panel.ui.h:29
+msgid ""
+"Replace the current keyboard layout settings with the\n"
+"default settings"
+msgstr ""
+"Erstat de aktuelle indstillinger for tastaturlayout med\n"
+"standardindstillingerne"
+
+#: panels/region/cinnamon-region-panel.ui.h:31
+msgid "Keyboard Layouts"
+msgstr "Tastaturlayout"
+
+#: panels/region/cinnamon-region-panel.ui.h:34
+msgid "Display language:"
+msgstr "Sprog for visning:"
+
+#: panels/region/cinnamon-region-panel.ui.h:35
+msgid "Input source:"
+msgstr "Inputkilde:"
+
+#: panels/region/cinnamon-region-panel.ui.h:36
+msgid "Format:"
+msgstr "Format:"
+
+#: panels/region/cinnamon-region-panel.ui.h:37
+msgid "Your settings"
+msgstr "Dine indstillinger"
+
+#: panels/region/cinnamon-region-panel.ui.h:38
+msgid "System settings"
+msgstr "Systemindstillinger"
+
+#: panels/region/cinnamon-region-panel.ui.h:40
+msgid "System"
+msgstr "System"
+
+#: panels/screen/screen.ui.h:1
+msgid "Screen turns off"
+msgstr "Skærmen slukker"
+
+#: panels/screen/screen.ui.h:2
+msgid "30 seconds"
+msgstr "30 sekunder"
+
+#: panels/screen/screen.ui.h:3
+msgid "1 minute"
+msgstr "1 minut"
+
+#: panels/screen/screen.ui.h:4
+msgid "2 minutes"
+msgstr "2 minutter"
+
+#: panels/screen/screen.ui.h:5
+msgid "3 minutes"
+msgstr "3 minutter"
+
+#: panels/screen/screen.ui.h:11
+msgid "_Dim screen to save power"
+msgstr "_Dæmp skærmen for at spare strøm"
+
+#: panels/screen/screen.ui.h:12
+msgid "Brightness"
+msgstr "Lysstyrke"
+
+#: panels/screen/screen.ui.h:13
+msgid "_Turn screen off when inactive for:"
+msgstr "_Sluk skærm efter manglende aktivitet i:"
+
+#: panels/screen/screen.ui.h:14
+msgid "_Lock screen after:"
+msgstr "_Lås skærmen efter:"
+
+#: panels/screen/screen.ui.h:15
+msgid "Require my password when waking from suspend"
+msgstr "Kræv min adgangskode, når der vågnes op fra hviletilstand"
+
+#: panels/screen/screen.ui.h:16
+msgid "Lock"
+msgstr "Lås"
+
+#: panels/universal-access/uap.ui.h:5
+msgid "On screen keyboard"
+msgstr "Skærmtastatur"
+
+#: panels/universal-access/uap.ui.h:6
+msgid "GOK"
+msgstr "GOK"
+
+#: panels/universal-access/uap.ui.h:7
+msgid "OnBoard"
+msgstr "OnBoard"
+
+#: panels/universal-access/uap.ui.h:8
+msgid "None"
+msgstr "Ingen"
+
+#: panels/universal-access/uap.ui.h:10
+#, no-c-format
+msgid "75%"
+msgstr "75%"
+
+#: panels/universal-access/uap.ui.h:13
+#, no-c-format
+msgid "100%"
+msgstr "100%"
+
+#: panels/universal-access/uap.ui.h:16
+#, no-c-format
+msgid "125%"
+msgstr "125%"
+
+#: panels/universal-access/uap.ui.h:19
+#, no-c-format
+msgid "150%"
+msgstr "150%"
+
+#: panels/universal-access/uap.ui.h:21
+msgid "High Contrast"
+msgstr "Høj kontrast"
+
+#: panels/universal-access/uap.ui.h:22
+msgid "Beep on Caps and Num Lock"
+msgstr "Bip ved Caps Lock og Num Lock"
+
+#: panels/universal-access/uap.ui.h:23
+msgid "Options..."
+msgstr "Indstillinger..."
+
+#: panels/universal-access/uap.ui.h:24
+msgid "Screen Reader"
+msgstr "Skærmoplæser"
+
+#: panels/universal-access/uap.ui.h:25
+msgid "Turn on or off:"
+msgstr "Slå til eller fra:"
+
+#: panels/universal-access/uap.ui.h:27
+msgid "Zoom in:"
+msgstr "Forstør:"
+
+#: panels/universal-access/uap.ui.h:28
+msgid "Zoom out:"
+msgstr "Formindsk:"
+
+#: panels/universal-access/uap.ui.h:29
+msgid "Large Text"
+msgstr "Stor tekst"
+
+#: panels/universal-access/uap.ui.h:30
+msgid "Seeing"
+msgstr "Syn"
+
+#: panels/universal-access/uap.ui.h:31
+msgid "Visual Alerts"
+msgstr "Visuelle påmindelser"
+
+#: panels/universal-access/uap.ui.h:32
+msgid "Use a visual indication when an alert sound occurs"
+msgstr "Anvend et visuelt signal, når der er en påmindelseslyd"
+
+#: panels/universal-access/uap.ui.h:33
+msgid "Flash the window title"
+msgstr "Blink med titellinjen"
+
+#: panels/universal-access/uap.ui.h:34
+msgid "Flash the entire screen"
+msgstr "Blink med hele skærmen"
+
+#: panels/universal-access/uap.ui.h:35
+msgid "Closed Captioning"
+msgstr "Undertekster"
+
+#: panels/universal-access/uap.ui.h:36
+msgid "Display a textual description of speech and sounds"
+msgstr "Vis en tekstbeskrivelse af tale og lyde"
+
+#: panels/universal-access/uap.ui.h:37
+msgid "_Test flash"
+msgstr "_Test blink"
+
+#: panels/universal-access/uap.ui.h:38
+msgid "Hearing"
+msgstr "Hørelse"
+
+#: panels/universal-access/uap.ui.h:39
+msgid "On Screen Keyboard"
+msgstr "Skærmtastatur"
+
+#: panels/universal-access/uap.ui.h:40
+msgid "Sticky Keys"
+msgstr "Blivende taster"
+
+#: panels/universal-access/uap.ui.h:41
+msgid "Treats a sequence of modifier keys as a key combination"
+msgstr "Behandler en sekvens af modifikationstaster som en tastekombination"
+
+#: panels/universal-access/uap.ui.h:42
+msgid "_Disable if two keys are pressed together"
+msgstr "_Deaktivér hvis to taster holdes nede samtidig"
+
+#: panels/universal-access/uap.ui.h:43
+msgid "Beep when a _modifer key is pressed"
+msgstr "Bip når der trykkes på en _modifikationstast"
+
+#: panels/universal-access/uap.ui.h:44
+msgid "Slow Keys"
+msgstr "Langsomme taster"
+
+#: panels/universal-access/uap.ui.h:45
+msgid "Puts a delay between when a key is pressed and when it is accepted"
+msgstr ""
+"Indsætter forsinkelse mellem, at en tast trykkes og at den accepteres"
+
+#: panels/universal-access/uap.ui.h:46
+msgid "A_cceptance delay:"
+msgstr "Forsinkelse:"
+
+#: panels/universal-access/uap.ui.h:48
+msgid "Short"
+msgstr "Kort"
+
+#: panels/universal-access/uap.ui.h:49
+msgid "Slow keys typing delay"
+msgstr "Forsinkelse for langsomme taster"
+
+#: panels/universal-access/uap.ui.h:51
+msgid "Long"
+msgstr "Lang"
+
+#: panels/universal-access/uap.ui.h:53
+msgid "Beep when a key is"
+msgstr "Bip når en tast"
+
+#: panels/universal-access/uap.ui.h:55
+msgid "pressed"
+msgstr "trykkes"
+
+#: panels/universal-access/uap.ui.h:57
+msgid "accepted"
+msgstr "accepteres"
+
+#: panels/universal-access/uap.ui.h:59
+msgid "rejected"
+msgstr "afvist"
+
+#: panels/universal-access/uap.ui.h:60
+msgid "Bounce Keys"
+msgstr "Elastiske taster"
+
+#: panels/universal-access/uap.ui.h:61
+msgid "Ignores fast duplicate keypresses"
+msgstr "Ignorerer hurtige dobbelte tastetryk"
+
+#: panels/universal-access/uap.ui.h:62
+msgid "Acc_eptance delay:"
+msgstr "Forsinkelse:"
+
+#: panels/universal-access/uap.ui.h:63
+msgid "Bounce keys typing delay"
+msgstr "Forsinkelse med elastistiske taster"
+
+#: panels/universal-access/uap.ui.h:64
+msgid "Beep when a key is _rejected"
+msgstr "Bip når en tast _afvises"
+
+#: panels/universal-access/uap.ui.h:65
+msgid "Enable by Keyboard"
+msgstr "Slå til med tastatur"
+
+#: panels/universal-access/uap.ui.h:66
+msgid "Turn accessibility features on and off using the keyboard"
+msgstr "Slå tilgængelighedsfaciliteter til og fra ved hjælp af tastaturet"
+
+#: panels/universal-access/uap.ui.h:67
+msgid "Typing"
+msgstr "Skrivning"
+
+#: panels/universal-access/uap.ui.h:68
+msgid "Mouse Keys"
+msgstr "Musetaster"
+
+#: panels/universal-access/uap.ui.h:69
+msgid "Control the pointer using the keypad"
+msgstr "Flyt markøren med det numeriske tastatur"
+
+#: panels/universal-access/uap.ui.h:70
+msgid "Video Mouse"
+msgstr "Videomus"
+
+#: panels/universal-access/uap.ui.h:71
+msgid "Control the pointer using the video camera."
+msgstr "Flyt markøren ved hjælp af videokameraet."
+
+#: panels/universal-access/uap.ui.h:72
+msgid "Simulated Secondary Click"
+msgstr "Simuleret sekundært klik"
+
+#: panels/universal-access/uap.ui.h:73
+msgid "Trigger a secondary click by holding down the primary button"
+msgstr "Udløs et sekundært klik ved at holde den primære tast nede"
+
+#: panels/universal-access/uap.ui.h:74
+msgid "Secondary click delay"
+msgstr "Forsinkelse ved sekundært klik"
+
+#: panels/universal-access/uap.ui.h:75
+msgid "Hover Click"
+msgstr "Svæveklik"
+
+#: panels/universal-access/uap.ui.h:76
+msgid "Trigger a click when the pointer hovers"
+msgstr "Udløs et klik når markøren svæver"
+
+#: panels/universal-access/uap.ui.h:77
+msgid "D_elay:"
+msgstr "F_orsinkelse:"
+
+#: panels/universal-access/uap.ui.h:78
+msgid "Motion _threshold:"
+msgstr "_Bevægelsestærskel:"
+
+#: panels/universal-access/uap.ui.h:80
+msgid "Small"
+msgstr "Lille"
+
+#: panels/universal-access/uap.ui.h:82
+msgid "Large"
+msgstr "Stor"
+
+#: panels/universal-access/uap.ui.h:83
+msgid "Mouse Settings"
+msgstr "Museindstillinger"
+
+#: panels/universal-access/uap.ui.h:84
+msgid "Pointing and Clicking"
+msgstr "Pege og klikke"
+
+#: panels/universal-access/zoom-options.ui.h:1
+msgid "Full Screen"
+msgstr "Fuldskærm"
+
+#: panels/universal-access/zoom-options.ui.h:2
+msgid "Top Half"
+msgstr "Øverste halvdel"
+
+#: panels/universal-access/zoom-options.ui.h:3
+msgid "Bottom Half"
+msgstr "Nederste halvdel"
+
+#: panels/universal-access/zoom-options.ui.h:4
+msgid "Left Half"
+msgstr "Venstre halvdel"
+
+#: panels/universal-access/zoom-options.ui.h:5
+msgid "Right Half"
+msgstr "Højre halvdel"
+
+#: panels/universal-access/zoom-options.ui.h:6
+msgid "Zoom Options"
+msgstr "Zoomindstillinger"
+
+#: panels/universal-access/zoom-options.ui.h:7
+msgid "Zoom"
+msgstr "Forstørrelse"
+
+#: panels/universal-access/zoom-options.ui.h:8
+msgid "Magnification:"
+msgstr "Forstørrelse:"
+
+#: panels/universal-access/zoom-options.ui.h:9
+msgid "Follow mouse cursor"
+msgstr "Følg musemarkør"
+
+#: panels/universal-access/zoom-options.ui.h:10
+msgid "Screen part:"
+msgstr "Skærmdel:"
+
+#: panels/universal-access/zoom-options.ui.h:11
+msgid "Magnifier extends outside of screen"
+msgstr "Forstørrelsen går ud over skærmkanten"
+
+#: panels/universal-access/zoom-options.ui.h:12
+msgid "Keep magnifier cursor centered"
+msgstr "Behold forstørrelsesmarkøren centreret"
+
+#: panels/universal-access/zoom-options.ui.h:13
+msgid "Magnifier cursor pushes contents around"
+msgstr "Forstørrelsesmarkøren skubber indholdet omkring"
+
+#: panels/universal-access/zoom-options.ui.h:14
+msgid "Magnifier cursor moves with contents"
+msgstr "Forstørrelsesmarkøren flytter med indholdet"
+
+#: panels/universal-access/zoom-options.ui.h:15
+msgid "Magnifier Position:"
+msgstr "Position af forstørrelsesglas:"
+
+#: panels/universal-access/zoom-options.ui.h:16
+msgid "Magnifier"
+msgstr "Forstørrelsesglas"
+
+#: panels/universal-access/zoom-options.ui.h:17
+msgid "Thickness:"
+msgstr "Tykkelse:"
+
+#: panels/universal-access/zoom-options.ui.h:19
+msgid "Thin"
+msgstr "Tynd"
+
+#: panels/universal-access/zoom-options.ui.h:21
+msgid "Thick"
+msgstr "Tyk"
+
+#: panels/universal-access/zoom-options.ui.h:22
+msgid "Length:"
+msgstr "Længde:"
+
+#: panels/universal-access/zoom-options.ui.h:23
+msgid "Color:"
+msgstr "Farve:"
+
+#: panels/universal-access/zoom-options.ui.h:24
+msgid "Crosshairs:"
+msgstr "Sigtekorn:"
+
+#: panels/universal-access/zoom-options.ui.h:25
+msgid "Overlaps mouse cursor"
+msgstr "Overlapper musemarkør"
+
+#: panels/universal-access/zoom-options.ui.h:26
+msgid "Crosshairs"
+msgstr "Sigtekorn"
+
+#: panels/universal-access/zoom-options.ui.h:27
+msgid "White on black:"
+msgstr "Hvid på sort:"
+
+#: panels/universal-access/zoom-options.ui.h:28
+msgid "Brightness:"
+msgstr "Lysstyrke:"
+
+#: panels/universal-access/zoom-options.ui.h:29
+msgid "Contrast:"
+msgstr "Kontrast:"
+
+#: panels/universal-access/zoom-options.ui.h:34
+msgid "Low"
+msgstr "Lav"
+
+#: panels/universal-access/zoom-options.ui.h:36
+msgid "High"
+msgstr "Høj"
+
+#: panels/universal-access/zoom-options.ui.h:37
+msgid "Color Effects:"
+msgstr "Farveeffekter:"
+
+#: panels/universal-access/zoom-options.ui.h:38
+msgid "Color Effects"
+msgstr "Farveeffekter"
+
+#: generate_additional_files.py:53
 msgid "Brightness & Lock"
-msgstr ""
+msgstr "Lysstyrke & lås"
 
-#: generate_additional_files.py:66
+#: generate_additional_files.py:53
 msgid "Screen brightness and lock settings"
-msgstr ""
+msgstr "Indstillinger for skærmens ysstyrke og låsning"
 
-#: generate_additional_files.py:81 generate_additional_files.py:112
+#: generate_additional_files.py:68 generate_additional_files.py:99
 msgid "Sound"
-msgstr ""
+msgstr "Lyd"
 
-#: generate_additional_files.py:81 generate_additional_files.py:112
+#: generate_additional_files.py:68 generate_additional_files.py:99
 msgid "Change sound volume and sound events"
-msgstr ""
+msgstr "Ændr lydstyrke og lydhændelser"
 
-#: generate_additional_files.py:96
-msgid "Color"
-msgstr ""
-
-#: generate_additional_files.py:96
+#: generate_additional_files.py:83
 msgid "Color management settings"
-msgstr ""
+msgstr "Farvestyringsindstillinger"
 
-#: generate_additional_files.py:126
+#: generate_additional_files.py:113
 msgid "Volume Control"
-msgstr ""
+msgstr "Lydstyrkekontrol"
 
-#: generate_additional_files.py:126
+#: generate_additional_files.py:113
 msgid "Show desktop volume control"
-msgstr ""
+msgstr "Vis lydstyrkekontrol på skrivebordet"
 
-#: generate_additional_files.py:141
+#: generate_additional_files.py:128
 msgid "Power"
-msgstr ""
+msgstr "Strøm"
 
-#: generate_additional_files.py:141
+#: generate_additional_files.py:128
 msgid "Power management settings"
-msgstr ""
+msgstr "Indstillinger for strømstyring"
 
-#: generate_additional_files.py:156
+#: generate_additional_files.py:143
 msgid "Region & Language"
-msgstr ""
+msgstr "Region & sprog"
 
-#: generate_additional_files.py:156
+#: generate_additional_files.py:143
 msgid "Change your region and language settings"
-msgstr ""
+msgstr "Ændr indstillinger for sprog og region"
 
-#: generate_additional_files.py:171
+#: generate_additional_files.py:158
 msgid "Displays"
-msgstr ""
+msgstr "Skærme"
 
-#: generate_additional_files.py:171
+#: generate_additional_files.py:158
 msgid "Change resolution and position of monitors and projectors"
-msgstr ""
+msgstr "Ændr opløsning og placering af skærme og projektorer"
 
-#: generate_additional_files.py:186
-msgid "Network"
-msgstr ""
-
-#: generate_additional_files.py:186
+#: generate_additional_files.py:173
 msgid "Network settings"
-msgstr ""
+msgstr "Netværksindstillinger"
 
-#: generate_additional_files.py:201
+#: generate_additional_files.py:188
 msgid "Universal Access"
-msgstr ""
+msgstr "Tilgængelighed"
 
-#: generate_additional_files.py:201
+#: generate_additional_files.py:188
 msgid "Universal Access Preferences"
-msgstr ""
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Launchpad Contributions:\n"
-#~ "  Ask Hjorth Larsen https://launchpad.net/~askhl"
+msgstr "Indstillinger for tilgængelighed"

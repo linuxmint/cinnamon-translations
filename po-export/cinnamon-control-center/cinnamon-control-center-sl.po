@@ -13,9 +13,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: "
 "http://bugzilla.gnome.org/enter_bug.cgi?product=cinnamon-control-"
 "center&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-08-26 13:46+0100\n"
-"PO-Revision-Date: 2013-08-26 10:56+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"POT-Creation-Date: 2013-08-30 17:55+0100\n"
+"PO-Revision-Date: 2013-08-31 17:55+0000\n"
+"Last-Translator: Damir Jerovšek <Unknown>\n"
 "Language-Team: Slovenian GNOME Translation Team <cinnamon-"
 "si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -23,53 +23,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2013-08-26 13:10+0000\n"
-"X-Generator: Launchpad (build 16738)\n"
+"X-Launchpad-Export-Date: 2013-10-02 15:27+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
 "X-Poedit-Country: SLOVENIA\n"
 "Language: \n"
 "X-Poedit-Language: Slovenian\n"
 "X-Poedit-SourceCharset: utf-8\n"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:352
-msgid "Yes"
-msgstr "Da"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:352
-msgid "No"
-msgstr "Ne"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:466
-msgid "Bluetooth is disabled"
-msgstr "Vmesnik Bluetooth je onemogočen"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:471
-msgid "Bluetooth is disabled by hardware switch"
-msgstr "Naprava Bluetooth je onemogočena s strojnim stikalom"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:475
-msgid "No Bluetooth adapters found"
-msgstr "Ni navzočih naprav Bluetooth"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:602
-msgid "Visibility"
-msgstr "Vidnost"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:606
-#, c-format
-msgid "Visibility of “%s”"
-msgstr "Vidnost “%s”"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:650
-#, c-format
-msgid "Remove '%s' from the list of devices?"
-msgstr "Ali naj se naprava '%s' odstrani s seznama?"
-
-#: panels/bluetooth/cc-bluetooth-panel.c:652
-msgid ""
-"If you remove the device, you will have to set it up again before next use."
-msgstr ""
-"V primeru, da napravo odstranite, jo bo treba pred naslednjo uporabo, "
-"ponovno nastaviti."
 
 #: panels/color/cc-color-panel.c:106
 msgid "Other profile…"
@@ -87,7 +46,7 @@ msgstr "Barvni prostor: "
 msgid "Test profile: "
 msgstr "Preizkusni profil: "
 
-#: panels/color/cc-color-panel.c:185
+#: panels/color/cc-color-panel.c:185 panels/color/color.ui.h:11
 msgid "Set for all users"
 msgstr "Nastavi za vse uporabnike"
 
@@ -131,12 +90,12 @@ msgstr "Razpoložljivi profili za fotoaparate"
 msgid "Available Profiles for Webcams"
 msgstr "Razpoložljivi profili za spletne kamere"
 
-#: panels/color/cc-color-panel.c:659
+#: panels/color/cc-color-panel.c:659 panels/color/color.ui.h:2
 msgid "Available Profiles"
 msgstr "Profili na voljo"
 
-#: panels/color/cc-color-panel.c:935 panels/sound/gvc-mixer-dialog.c:1525
-#: panels/sound-nua/gvc-mixer-dialog.c:1598
+#: panels/color/cc-color-panel.c:935 panels/sound/gvc-mixer-dialog.c:1523
+#: panels/sound-nua/gvc-mixer-dialog.c:1596
 msgid "Device"
 msgstr "Naprava"
 
@@ -296,29 +255,25 @@ msgstr "Izbor območja"
 msgid "Unspecified"
 msgstr "Nedoločeno"
 
-#: panels/display/cc-display-panel.c:666 panels/display/cc-rr-labeler.c:449
+#: panels/display/cc-display-panel.c:624 panels/display/cc-rr-labeler.c:449
 msgid "Mirrored Displays"
 msgstr "Zrcaljena zaslona"
 
-#: panels/display/cc-display-panel.c:690
+#: panels/display/cc-display-panel.c:648 panels/display/display-capplet.ui.h:1
 msgid "Monitor"
 msgstr "Zaslon"
 
-#: panels/display/cc-display-panel.c:800
+#: panels/display/cc-display-panel.c:758
 #, c-format
 msgid "%d x %d (%s)"
 msgstr "%d x %d (%s)"
 
-#: panels/display/cc-display-panel.c:802
+#: panels/display/cc-display-panel.c:760
 #, c-format
 msgid "%d x %d"
 msgstr "%d x %d"
 
-#: panels/display/cc-display-panel.c:1712
-msgid "Drag to change primary display."
-msgstr "Vlecite za spremembo glavnega zaslona."
-
-#: panels/display/cc-display-panel.c:1770
+#: panels/display/cc-display-panel.c:1669
 msgid ""
 "Select a monitor to change its properties; drag it to rearrange its "
 "placement."
@@ -327,32 +282,20 @@ msgstr ""
 "njihov položaj."
 
 #: panels/display/cc-display-panel.c:2185
-msgid "%a %R"
-msgstr "%a %R"
-
-#: panels/display/cc-display-panel.c:2187
-msgid "%a %l:%M %p"
-msgstr "%a, %H:%M"
-
-#: panels/display/cc-display-panel.c:2349
-#: panels/display/cc-display-panel.c:2401
+#: panels/display/cc-display-panel.c:2237
 #, c-format
 msgid "Failed to apply configuration: %s"
 msgstr "Uveljavitev nastavitev je spodletela: %s"
 
-#: panels/display/cc-display-panel.c:2429
+#: panels/display/cc-display-panel.c:2265
 msgid "Could not save the monitor configuration"
 msgstr "Ni mogoče shraniti nastavitev zaslona"
 
-#: panels/display/cc-display-panel.c:2489
+#: panels/display/cc-display-panel.c:2325
 msgid "Could not detect displays"
 msgstr "Ni mogoče zaznati zaslonov"
 
-#: panels/display/cc-display-panel.c:2767
-msgid "All displays"
-msgstr ""
-
-#: panels/display/cc-display-panel.c:2924
+#: panels/display/cc-display-panel.c:2563
 msgid "Could not get screen information"
 msgstr "Ni mogoče dobiti podatkov zaslona"
 
@@ -495,7 +438,7 @@ msgstr "Neznano"
 msgid "Wired"
 msgstr "Žično"
 
-#: panels/network/panel-common.c:90
+#: panels/network/panel-common.c:90 panels/network/network-wifi.ui.h:3
 msgid "Wireless"
 msgstr "Brezžično"
 
@@ -503,7 +446,7 @@ msgstr "Brezžično"
 msgid "Mobile broadband"
 msgstr "Mobilni širokopasovni dostop"
 
-#: panels/network/panel-common.c:102 generate_additional_files.py:50
+#: panels/network/panel-common.c:102
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -739,15 +682,18 @@ msgstr "Naprava InfiniBand ne podpira povezanega načina"
 msgid "Connection dependency failed"
 msgstr "Odvisnost povezave je spodletela"
 
-#: panels/network/panel-common.c:683
+#: panels/network/panel-common.c:683 panels/network/network-wifi.ui.h:13
+#: panels/network/network-wired.ui.h:2
 msgid "IPv4 Address"
 msgstr "Naslov IPv4"
 
-#: panels/network/panel-common.c:684
+#: panels/network/panel-common.c:684 panels/network/network-mobile.ui.h:4
+#: panels/network/network-wifi.ui.h:14 panels/network/network-wired.ui.h:3
 msgid "IPv6 Address"
 msgstr "Naslov IPv6"
 
 #: panels/network/panel-common.c:686 panels/network/panel-common.c:688
+#: panels/network/network-mobile.ui.h:3
 msgid "IP Address"
 msgstr "IP naslov"
 
@@ -889,7 +835,7 @@ msgstr "Baterija"
 
 #: panels/region/cc-region-panel.c:178
 msgid "Get more languages..."
-msgstr ""
+msgstr "Pridobi več jezikov ..."
 
 #: panels/region/cinnamon-region-panel-formats.c:142
 msgid "Imperial"
@@ -908,6 +854,7 @@ msgstr ""
 "sistemske nastavitve področij in jezika."
 
 #: panels/region/cinnamon-region-panel-system.c:425
+#: panels/region/cinnamon-region-panel.ui.h:32
 msgid ""
 "The login screen, system accounts and new user accounts use the system-wide "
 "Region and Language settings. You may change the system settings to match "
@@ -922,6 +869,7 @@ msgid "Copy Settings"
 msgstr "Nastavitve kopiranja"
 
 #: panels/region/cinnamon-region-panel-system.c:431
+#: panels/region/cinnamon-region-panel.ui.h:39
 msgid "Copy Settings..."
 msgstr "Nastavitve kopiranja ..."
 
@@ -930,7 +878,6 @@ msgid "Layout"
 msgstr "Razporeditev"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:229
-#: panels/sound/gvc-sound-theme-chooser.c:585
 msgid "Default"
 msgstr "Privzeto"
 
@@ -944,10 +891,10 @@ msgstr "Različica programa"
 
 #: panels/sound/applet-main.c:62
 msgid " — Cinnamon Volume Control Applet"
-msgstr ""
+msgstr " — Cinnamonov aplet za nadzor glasnosti"
 
-#: panels/sound/gvc-applet.c:270 panels/sound/gvc-mixer-dialog.c:1656
-#: panels/sound-nua/gvc-mixer-dialog.c:1750
+#: panels/sound/gvc-applet.c:270 panels/sound/gvc-mixer-dialog.c:1654
+#: panels/sound-nua/gvc-mixer-dialog.c:1748
 msgid "Output"
 msgstr "Izhod"
 
@@ -955,8 +902,8 @@ msgstr "Izhod"
 msgid "Sound Output Volume"
 msgstr "Izhodna glasnost zvoka"
 
-#: panels/sound/gvc-applet.c:276 panels/sound/gvc-mixer-dialog.c:1697
-#: panels/sound-nua/gvc-mixer-dialog.c:1883
+#: panels/sound/gvc-applet.c:276 panels/sound/gvc-mixer-dialog.c:1695
+#: panels/sound-nua/gvc-mixer-dialog.c:1881
 msgid "Input"
 msgstr "Vhod"
 
@@ -976,8 +923,8 @@ msgstr "_Pojemanje:"
 msgid "_Subwoofer:"
 msgstr "_Nizkotonski zvočnik:"
 
-#: panels/sound/gvc-combo-box.c:167 panels/sound/gvc-mixer-dialog.c:260
-#: panels/sound/gvc-mixer-dialog.c:521
+#: panels/sound/gvc-combo-box.c:167 panels/sound/gvc-mixer-dialog.c:258
+#: panels/sound/gvc-mixer-dialog.c:519
 msgid "_Profile:"
 msgstr "_Profil:"
 
@@ -1007,96 +954,71 @@ msgstr[3] "%u vhodi"
 msgid "System Sounds"
 msgstr "Sistemski zvoki"
 
-#: panels/sound/gvc-mixer-dialog.c:262
+#: panels/sound/gvc-mixer-dialog.c:260
 msgid "_Test Speakers"
 msgstr "Preizkus _zvočnikov"
 
-#: panels/sound/gvc-mixer-dialog.c:426 panels/sound-nua/gvc-mixer-dialog.c:343
+#: panels/sound/gvc-mixer-dialog.c:424 panels/sound-nua/gvc-mixer-dialog.c:341
 msgid "Peak detect"
 msgstr "Zaznava vrhov"
 
-#: panels/sound/gvc-mixer-dialog.c:1506
-#: panels/sound/gvc-sound-theme-chooser.c:595
-#: panels/sound-nua/gvc-mixer-dialog.c:1580
+#: panels/sound/gvc-mixer-dialog.c:1504
+#: panels/sound-nua/gvc-mixer-dialog.c:1578
 msgid "Name"
 msgstr "Ime"
 
-#: panels/sound/gvc-mixer-dialog.c:1588
-#: panels/sound-nua/gvc-mixer-dialog.c:1682
+#: panels/sound/gvc-mixer-dialog.c:1586
+#: panels/sound-nua/gvc-mixer-dialog.c:1680
 #, c-format
 msgid "Speaker Testing for %s"
 msgstr "Preizkus zvočnikov za %s"
 
-#: panels/sound/gvc-mixer-dialog.c:1642
-#: panels/sound-nua/gvc-mixer-dialog.c:2023
+#: panels/sound/gvc-mixer-dialog.c:1640
+#: panels/sound-nua/gvc-mixer-dialog.c:2016
 msgid "_Output volume:"
 msgstr "_Glasnost izhoda:"
 
-#: panels/sound/gvc-mixer-dialog.c:1661
+#: panels/sound/gvc-mixer-dialog.c:1659
 msgid "C_hoose a device for sound output:"
 msgstr "_Izbor naprave za izhod zvoka:"
 
-#: panels/sound/gvc-mixer-dialog.c:1686
+#: panels/sound/gvc-mixer-dialog.c:1684
 msgid "Settings for the selected device:"
 msgstr "Nastavitve izbrane naprave:"
 
-#: panels/sound/gvc-mixer-dialog.c:1704
-#: panels/sound-nua/gvc-mixer-dialog.c:1930
+#: panels/sound/gvc-mixer-dialog.c:1702
+#: panels/sound-nua/gvc-mixer-dialog.c:1928
 msgid "_Input volume:"
 msgstr "_Glasnost vhoda:"
 
-#: panels/sound/gvc-mixer-dialog.c:1727
-#: panels/sound-nua/gvc-mixer-dialog.c:1963
+#: panels/sound/gvc-mixer-dialog.c:1725
+#: panels/sound-nua/gvc-mixer-dialog.c:1961
 msgid "Input level:"
 msgstr "Raven vhoda:"
 
-#: panels/sound/gvc-mixer-dialog.c:1755
+#: panels/sound/gvc-mixer-dialog.c:1753
 msgid "C_hoose a device for sound input:"
 msgstr "_Izbor naprave za vhod zvoka:"
 
-#: panels/sound/gvc-mixer-dialog.c:1782
-#: panels/sound-nua/gvc-mixer-dialog.c:1984
+#: panels/sound/gvc-mixer-dialog.c:1780
+#: panels/sound-nua/gvc-mixer-dialog.c:1982
 msgid "Sound Effects"
 msgstr "Zvočni učinki"
 
-#: panels/sound/gvc-mixer-dialog.c:1789
-#: panels/sound-nua/gvc-mixer-dialog.c:1991
+#: panels/sound/gvc-mixer-dialog.c:1787
+#: panels/sound-nua/gvc-mixer-dialog.c:1989
 msgid "_Alert volume:"
 msgstr "_Glasnost opozoril:"
 
-#: panels/sound/gvc-mixer-dialog.c:1802
-#: panels/sound-nua/gvc-mixer-dialog.c:2004
+#: panels/sound/gvc-mixer-dialog.c:1795
+#: panels/sound-nua/gvc-mixer-dialog.c:1997
 msgid "Applications"
 msgstr "Programi"
 
-#: panels/sound/gvc-mixer-dialog.c:1806
-#: panels/sound-nua/gvc-mixer-dialog.c:2008
+#: panels/sound/gvc-mixer-dialog.c:1799
+#: panels/sound-nua/gvc-mixer-dialog.c:2001
 msgid "No application is currently playing or recording audio."
 msgstr "Trenutno ni dejavnega predvajanja ali snemanja zvoka."
-
-#: panels/sound/gvc-sound-theme-chooser.c:189
-msgid "Built-in"
-msgstr "Vgrajeno"
-
-#: panels/sound/gvc-sound-theme-chooser.c:455
-#: panels/sound/gvc-sound-theme-chooser.c:467
-#: panels/sound/gvc-sound-theme-chooser.c:479
-msgid "Sound Preferences"
-msgstr "Možnosti zvoka"
-
-#: panels/sound/gvc-sound-theme-chooser.c:458
-#: panels/sound/gvc-sound-theme-chooser.c:469
-#: panels/sound/gvc-sound-theme-chooser.c:481
-msgid "Testing event sound"
-msgstr "Preizkus zvoka dogodkov"
-
-#: panels/sound/gvc-sound-theme-chooser.c:586
-msgid "From theme"
-msgstr "Iz teme"
-
-#: panels/sound/gvc-sound-theme-chooser.c:770
-msgid "C_hoose an alert sound:"
-msgstr "_Izbor zvoka opozorila:"
 
 #: panels/sound/gvc-speaker-test.c:220
 msgid "Stop"
@@ -1127,41 +1049,37 @@ msgstr "_Nastavitve zvoka"
 msgid "Muted"
 msgstr "Utišaj"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:776
-#: panels/sound-nua/gvc-mixer-dialog.c:946
+#: panels/sound-nua/gvc-mixer-dialog.c:774
+#: panels/sound-nua/gvc-mixer-dialog.c:944
 #, c-format
 msgid "Settings for %s"
-msgstr ""
+msgstr "Nastavitve za %s"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:802
-#: panels/sound-nua/gvc-mixer-dialog.c:955
+#: panels/sound-nua/gvc-mixer-dialog.c:800
+#: panels/sound-nua/gvc-mixer-dialog.c:953
 msgid "Mode:"
-msgstr ""
+msgstr "Način:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1755
+#: panels/sound-nua/gvc-mixer-dialog.c:1753
 msgid "Play sound through"
-msgstr ""
+msgstr "Predvajaj zvok na"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1780
-#: panels/sound-nua/gvc-mixer-dialog.c:1912
+#: panels/sound-nua/gvc-mixer-dialog.c:1778
+#: panels/sound-nua/gvc-mixer-dialog.c:1910
 msgid "Settings for the selected device"
-msgstr ""
+msgstr "Nastavitve za izbrano napravo"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1853
+#: panels/sound-nua/gvc-mixer-dialog.c:1851
 msgid "Test:"
-msgstr ""
+msgstr "Preizkus:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1860
+#: panels/sound-nua/gvc-mixer-dialog.c:1858
 msgid "Test Sound"
-msgstr ""
+msgstr "Preizkus zvoka"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1887
+#: panels/sound-nua/gvc-mixer-dialog.c:1885
 msgid "Record sound from"
-msgstr ""
-
-#: panels/sound/sound-theme-file-utils.c:292
-msgid "Custom"
-msgstr "Po meri"
+msgstr "Snemaj zvok iz"
 
 #: panels/universal-access/cc-ua-panel.c:289
 #: panels/universal-access/cc-ua-panel.c:295
@@ -1170,7 +1088,7 @@ msgstr "Ni nastavljene bližnjice"
 
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
-msgstr ""
+msgstr "_Vse nastavitve"
 
 #: shell/control-center.c:58
 msgid "Enable verbose mode"
@@ -1210,135 +1128,1023 @@ msgstr "Pomoč"
 msgid "Quit"
 msgstr "Končaj"
 
-#: panels/bluetooth/bluetooth.ui.h:1
-msgid "Set Up New Device"
-msgstr "Nastavi novo napravo"
+#: panels/color/color.ui.h:3 generate_additional_files.py:83
+msgid "Color"
+msgstr "Barva"
 
-#: panels/bluetooth/bluetooth.ui.h:2
+#: panels/color/color.ui.h:4
+msgid "Each device needs an up to date color profile to be color managed."
+msgstr ""
+"Vsaka naprava zahteva posodobljen barvni profil za ustrezno barvno "
+"upravljanje."
+
+#: panels/color/color.ui.h:5
+msgid "Learn more"
+msgstr "Več o tem"
+
+#: panels/color/color.ui.h:6
+msgid "Learn more about color management"
+msgstr "Več podrobnosti o upravljanju barv"
+
+#: panels/color/color.ui.h:7
+msgid "Add device"
+msgstr "Dodaj napravo"
+
+#: panels/color/color.ui.h:8
+msgid "Add a virtual device"
+msgstr "Dodaj navidezno napravo"
+
+#: panels/color/color.ui.h:9
+msgid "Delete device"
+msgstr "Izbriši napravo"
+
+#: panels/color/color.ui.h:10
+msgid "Remove a device"
+msgstr "Odstrani napravo"
+
+#: panels/color/color.ui.h:12
+msgid "Set this profile for all users on this computer"
+msgstr "Nastavi ta profil za vse uporabnike na tem računalniku"
+
+#: panels/color/color.ui.h:13
+msgid "Add profile"
+msgstr "Dodaj profil"
+
+#: panels/color/color.ui.h:14
+msgid "Calibrate…"
+msgstr "Umeri ..."
+
+#: panels/color/color.ui.h:15
+msgid "Calibrate the device"
+msgstr "Umeri napravo"
+
+#: panels/color/color.ui.h:16
+msgid "Remove profile"
+msgstr "Odstrani profil"
+
+#: panels/color/color.ui.h:17
+msgid "View details"
+msgstr "Pokaži podrobnosti"
+
+#: panels/color/color.ui.h:18
+msgid "Device type:"
+msgstr "Vrsta naprave:"
+
+#: panels/color/color.ui.h:19
+msgid "Manufacturer:"
+msgstr "Proizvajalec:"
+
+#: panels/color/color.ui.h:20
+msgid "Model:"
+msgstr "Model:"
+
+#: panels/color/color.ui.h:21
+msgid ""
+"Image files can be dragged on this window to auto-complete the above fields."
+msgstr ""
+"Slikovne datoteke je mogoče povleči v to okno za samodejno dopolnjevanje "
+"vnosnih polj."
+
+#: panels/common/language-chooser.ui.h:1
+msgid "Select a language"
+msgstr "Izberite jezik"
+
+#: panels/common/language-chooser.ui.h:2
+msgid "_Cancel"
+msgstr "_Prekliči"
+
+#: panels/common/language-chooser.ui.h:3
+msgid "_Select"
+msgstr "_Izberi"
+
+#: panels/display/display-capplet.ui.h:2
+msgid "Set as Primary"
+msgstr "Nastavi kot glavno"
+
+#: panels/display/display-capplet.ui.h:3
+msgid "_Resolution"
+msgstr "_Ločljivost"
+
+#: panels/display/display-capplet.ui.h:4
+msgid "R_otation"
+msgstr "_Vrtenje"
+
+#: panels/display/display-capplet.ui.h:6
+msgid "_Mirror displays"
+msgstr "_Zrcali zaslone"
+
+#: panels/display/display-capplet.ui.h:7
+msgid "Note: may limit resolution options"
+msgstr "Opomba: lahko omeji možnosti ločljivosti"
+
+#: panels/display/display-capplet.ui.h:8
+msgid "_Detect Displays"
+msgstr "_Zaznaj zaslone"
+
+#: panels/network/network-mobile.ui.h:1
+msgid "IMEI"
+msgstr "IMEI"
+
+#: panels/network/network-mobile.ui.h:2
+msgid "Provider"
+msgstr "Ponudnik"
+
+#: panels/network/network-mobile.ui.h:5 panels/network/network-wifi.ui.h:15
+#: panels/network/network-wired.ui.h:4
+msgid "Default Route"
+msgstr "Privzeta smer"
+
+#: panels/network/network-mobile.ui.h:6 panels/network/network-wifi.ui.h:16
+#: panels/network/network-wired.ui.h:5
+msgid "DNS"
+msgstr "DNS"
+
+#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:173
+msgid "Network"
+msgstr "Omrežje"
+
+#: panels/network/network-mobile.ui.h:8 panels/network/network-wired.ui.h:6
+#: panels/region/cinnamon-region-panel.ui.h:26
+msgid "_Options..."
+msgstr "_Možnosti ..."
+
+#: panels/network/network-proxy.ui.h:4
+msgid "_Method"
+msgstr "_Način"
+
+#: panels/network/network-proxy.ui.h:5
+msgid "_Configuration URL"
+msgstr "_Nastavitveni naslov URL"
+
+#: panels/network/network-proxy.ui.h:6
+msgid "_HTTP Proxy"
+msgstr "Posredniški strežnik _HTTP"
+
+#: panels/network/network-proxy.ui.h:7
+msgid "H_TTPS Proxy"
+msgstr "Posredniški strežnik H_TTPS"
+
+#: panels/network/network-proxy.ui.h:8
+msgid "_FTP Proxy"
+msgstr "Posredniški strežnik _FTP"
+
+#: panels/network/network-proxy.ui.h:9
+msgid "_Socks Host"
+msgstr "_Gostitelj vtičev"
+
+#: panels/network/network.ui.h:1
+msgid "Select the interface to use for the new service"
+msgstr "Izberite vmesnik za novo storitev"
+
+#: panels/network/network.ui.h:2
+msgid "C_reate..."
+msgstr "Ustva_ri ..."
+
+#: panels/network/network.ui.h:3
+msgid "_Interface"
+msgstr "_Vmesnik"
+
+#: panels/network/network.ui.h:4 panels/network/network-vpn.ui.h:1
+msgid "VPN"
+msgstr "VPN"
+
+#: panels/network/network.ui.h:8
+msgid "Add Device"
+msgstr "Dodaj napravo"
+
+#: panels/network/network.ui.h:9
 msgid "Remove Device"
 msgstr "Odstrani napravo"
 
-#: panels/bluetooth/bluetooth.ui.h:3
-msgid "Connection"
-msgstr "Povezava"
+#: panels/network/network-vpn.ui.h:2
+msgid "VPN Type"
+msgstr "Vrsto povezave VPN"
 
-#: panels/bluetooth/bluetooth.ui.h:4
-msgid "page 1"
-msgstr "stran 1"
+#: panels/network/network-vpn.ui.h:3
+msgid "Gateway"
+msgstr "Prehod"
 
-#: panels/bluetooth/bluetooth.ui.h:5
-msgid "page 2"
-msgstr "stran 2"
+#: panels/network/network-vpn.ui.h:4
+msgid "Group Name"
+msgstr "Ime skupine"
 
-#: panels/bluetooth/bluetooth.ui.h:6
-msgid "Paired"
-msgstr "Seznanjeno"
+#: panels/network/network-vpn.ui.h:5
+msgid "Group Password"
+msgstr "Geslo skupine"
 
-#: panels/bluetooth/bluetooth.ui.h:7
-msgid "Type"
-msgstr "Vrsta"
+#: panels/network/network-vpn.ui.h:6
+msgid "Username"
+msgstr "Uporabniško ime"
 
-#: panels/bluetooth/bluetooth.ui.h:8
-msgid "Address"
-msgstr "Naslov"
+#: panels/network/network-vpn.ui.h:7
+msgid "_Configure..."
+msgstr "_Nastavi ..."
 
-#: panels/bluetooth/bluetooth.ui.h:9
-msgid "Mouse and Touchpad Settings"
-msgstr "Nastavitve miške in sledilne ploščice"
+#: panels/network/network-wifi.ui.h:1
+msgid "Wireless Hotspot"
+msgstr "Brezžična dostopna točka"
 
-#: panels/bluetooth/bluetooth.ui.h:10
-msgid "Sound Settings"
-msgstr "Nastavitve zvoka"
+#: panels/network/network-wifi.ui.h:2
+msgid "_Turn On"
+msgstr "_Vklopi"
 
-#: panels/bluetooth/bluetooth.ui.h:11
-msgid "Keyboard Settings"
-msgstr "Nastavitve tipkovnice"
+#: panels/network/network-wifi.ui.h:4
+msgid "_Use as Hotspot..."
+msgstr "Uporabi kot  _dostopno točko"
 
-#: panels/bluetooth/bluetooth.ui.h:12
-msgid "Send Files..."
-msgstr "Pošiljanje datotek ..."
+#: panels/network/network-wifi.ui.h:5
+msgid "Connect to a Hidden Network"
+msgstr "Poveži se s skritim omrežjem"
 
-#: panels/bluetooth/bluetooth.ui.h:13
-msgid "Browse Files..."
-msgstr "Brskanje datotek ..."
+#: panels/network/network-wifi.ui.h:6
+msgid "_Disconnect"
+msgstr "_Prekini povezavo"
 
-#: generate_additional_files.py:50
-msgid "Configure Bluetooth settings"
+#: panels/network/network-wifi.ui.h:7
+msgid "_Connect"
+msgstr "_Poveži"
+
+#: panels/network/network-wifi.ui.h:8
+msgid "Last used"
+msgstr "Nazadnje uporabljeno"
+
+#: panels/network/network-wifi.ui.h:9 panels/network/network-wired.ui.h:1
+msgid "Hardware Address"
+msgstr "Strojni naslov"
+
+#: panels/network/network-wifi.ui.h:10
+msgid "Security"
+msgstr "Varnost"
+
+#: panels/network/network-wifi.ui.h:11
+msgid "Strength"
+msgstr "Moč"
+
+#: panels/network/network-wifi.ui.h:12
+msgid "Link speed"
+msgstr "Hitrost povezave"
+
+#: panels/network/network-wifi.ui.h:17
+msgid "_Forget Network"
+msgstr "_Pozabi omrežje"
+
+#: panels/network/network-wifi.ui.h:18
+msgid "_Settings..."
+msgstr "_Nastavitve ..."
+
+#: panels/network/network-wifi.ui.h:19
+msgid "Switch off to connect to a wireless network"
+msgstr "Izklopi za povezavo z brezžičnim omrežjem"
+
+#: panels/network/network-wifi.ui.h:20
+msgid "Network Name"
+msgstr "Ime omrežja"
+
+#: panels/network/network-wifi.ui.h:21
+msgid "Connected Devices"
+msgstr "Priklopljene naprave"
+
+#: panels/network/network-wifi.ui.h:22
+msgid "Security type"
+msgstr "Vrsta varnosti"
+
+#: panels/network/network-wifi.ui.h:23
+msgid "Security key"
+msgstr "Varnostni ključ"
+
+#: panels/power/power.ui.h:1
+msgid "Hibernate"
+msgstr "V mirovanje"
+
+#: panels/power/power.ui.h:2
+msgid "Power off"
+msgstr "Izklop"
+
+#: panels/power/power.ui.h:3 panels/screen/screen.ui.h:6
+msgid "5 minutes"
+msgstr "5 minut"
+
+#: panels/power/power.ui.h:4 panels/screen/screen.ui.h:7
+msgid "10 minutes"
+msgstr "10 minut"
+
+#: panels/power/power.ui.h:5 panels/screen/screen.ui.h:8
+msgid "30 minutes"
+msgstr "30 minut"
+
+#: panels/power/power.ui.h:6 panels/screen/screen.ui.h:9
+msgid "1 hour"
+msgstr "1 ura"
+
+#: panels/power/power.ui.h:7
+msgid "Don't suspend"
+msgstr "Ne pošlji v pripravljenost"
+
+#: panels/power/power.ui.h:8
+msgid "Suspend"
+msgstr "V pripravljenost"
+
+#: panels/power/power.ui.h:9
+msgid "Do nothing"
+msgstr "Ne stori ničesar"
+
+#: panels/power/power.ui.h:10
+msgid "Lock Screen"
+msgstr "Zakleni zaslon"
+
+#: panels/power/power.ui.h:11
+msgid "Shutdown Immediately"
+msgstr "Izklopi takoj"
+
+#: panels/power/power.ui.h:12
+msgid "Ask"
+msgstr "Vprašaj"
+
+#: panels/power/power.ui.h:13
+msgid "When battery is present"
+msgstr "Ko je baterija prisotna"
+
+#: panels/power/power.ui.h:14
+msgid "When battery is charging/in use"
+msgstr "Ko se baterija polni/je v uporabi"
+
+#: panels/power/power.ui.h:15 panels/screen/screen.ui.h:10
+msgid "Never"
+msgstr "Nikoli"
+
+#: panels/power/power.ui.h:16
+msgid "On battery power"
+msgstr "Ob napajanju iz baterije"
+
+#: panels/power/power.ui.h:17
+msgid "When plugged in"
+msgstr "Ko je vklopljen"
+
+#: panels/power/power.ui.h:18
+msgid "Suspend when inactive for"
+msgstr "Pošlji v pripravljenost ob nedejavnosti"
+
+#: panels/power/power.ui.h:19
+msgid "When power is _critically low"
+msgstr "Ko je polnost baterije _kritično nizka"
+
+#: panels/power/power.ui.h:20
+msgid "When the lid is closed"
+msgstr "Ko je pokrov zaprt"
+
+#: panels/power/power.ui.h:21
+msgid "Show battery status in the _menu bar"
+msgstr "Pokaži stanje baterije v _menijski vrstici"
+
+#: panels/power/power.ui.h:22
+msgid "Power button action"
+msgstr "Dejanje gumba za vklop/izklop"
+
+#: panels/region/cinnamon-region-panel-layout-chooser.ui.h:1
+msgid "Choose a Layout"
+msgstr "Izberite razporeditev"
+
+#: panels/region/cinnamon-region-panel-layout-chooser.ui.h:2
+msgid "Preview"
+msgstr "Predogled"
+
+#: panels/region/cinnamon-region-panel-layout-chooser.ui.h:3
+msgid "Select an input source to add"
+msgstr "Izberite izvorni vir za dodajanje"
+
+#: panels/region/cinnamon-region-panel-options-dialog.ui.h:1
+msgid "Keyboard Layout Options"
+msgstr "Možnosti razporeditve tipkovnice"
+
+#: panels/region/cinnamon-region-panel.ui.h:1
+msgid "Region and Language"
+msgstr "Področje in jezik"
+
+#: panels/region/cinnamon-region-panel.ui.h:2
+msgid ""
+"Select a display language (change will be applied next time you log in)"
+msgstr "Izbor jezika namizja (sprememba bo uporabljena ob naslednji prijavi)"
+
+#: panels/region/cinnamon-region-panel.ui.h:3
+msgid "Add Language"
+msgstr "Dodaj jezik"
+
+#: panels/region/cinnamon-region-panel.ui.h:4
+msgid "Remove Language"
+msgstr "Odstrani jezik"
+
+#: panels/region/cinnamon-region-panel.ui.h:5
+msgid "button"
+msgstr "gumb"
+
+#: panels/region/cinnamon-region-panel.ui.h:6
+msgid "Language"
+msgstr "Jezik"
+
+#: panels/region/cinnamon-region-panel.ui.h:7
+msgid "Select a region (change will be applied the next time you log in)"
+msgstr "Izbor področja (sprememba bo uporabljena ob naslednji prijavi)"
+
+#: panels/region/cinnamon-region-panel.ui.h:8
+msgid "Add Region"
+msgstr "Dodaj področje"
+
+#: panels/region/cinnamon-region-panel.ui.h:9
+msgid "Remove Region"
+msgstr "Odstrani področje"
+
+#: panels/region/cinnamon-region-panel.ui.h:10
+msgid "Dates"
+msgstr "Datumi"
+
+#: panels/region/cinnamon-region-panel.ui.h:11
+msgid "Times"
+msgstr "Čas"
+
+#: panels/region/cinnamon-region-panel.ui.h:12
+msgid "Numbers"
+msgstr "Števila"
+
+#: panels/region/cinnamon-region-panel.ui.h:13
+msgid "Currency"
+msgstr "Valuta"
+
+#: panels/region/cinnamon-region-panel.ui.h:14
+msgid "Measurement"
+msgstr "Merjenje"
+
+#: panels/region/cinnamon-region-panel.ui.h:15
+msgid "Examples"
+msgstr "Primeri"
+
+#: panels/region/cinnamon-region-panel.ui.h:16
+msgid "Formats"
+msgstr "Vrste zapisov"
+
+#: panels/region/cinnamon-region-panel.ui.h:17
+msgid "Add Layout"
+msgstr "Dodaj razporeditev"
+
+#: panels/region/cinnamon-region-panel.ui.h:18
+msgid "Remove Layout"
+msgstr "Odstrani razporeditev"
+
+#: panels/region/cinnamon-region-panel.ui.h:19
+msgid "Move Up"
+msgstr "Pomakni gor"
+
+#: panels/region/cinnamon-region-panel.ui.h:20
+msgid "Move Down"
+msgstr "Pomakni dol"
+
+#: panels/region/cinnamon-region-panel.ui.h:21
+msgid "Preview Layout"
+msgstr "Predogled razporeditve"
+
+#: panels/region/cinnamon-region-panel.ui.h:22
+msgid "Use the same layout for all windows"
+msgstr "Uporabi enako razporeditev za vsa okna"
+
+#: panels/region/cinnamon-region-panel.ui.h:23
+msgid "Allow different layouts for individual windows"
+msgstr "Dovoli različne razporeditve za posamezna okna"
+
+#: panels/region/cinnamon-region-panel.ui.h:24
+msgid "New windows use the default layout"
+msgstr "Nova okna uporabljajo privzeto razporeditev"
+
+#: panels/region/cinnamon-region-panel.ui.h:25
+msgid "New windows use the previous window's layout"
+msgstr "Nova okna uporabijo predhodno uporabljeno razporeditev"
+
+#: panels/region/cinnamon-region-panel.ui.h:27
+msgid "View and edit keyboard layout options"
+msgstr "Ogled in urejanje možnosti razporeditve tipkovnice"
+
+#: panels/region/cinnamon-region-panel.ui.h:28
+msgid "Reset to De_faults"
+msgstr "Povrni na _privzeto"
+
+#: panels/region/cinnamon-region-panel.ui.h:29
+msgid ""
+"Replace the current keyboard layout settings with the\n"
+"default settings"
 msgstr ""
+"Zamenjaj trenutne nastavitve razporeditve tipkovnice s\n"
+"privzetimi nastavitvami"
 
-#: generate_additional_files.py:66
+#: panels/region/cinnamon-region-panel.ui.h:31
+msgid "Keyboard Layouts"
+msgstr "Razporeditve tipkovnice"
+
+#: panels/region/cinnamon-region-panel.ui.h:34
+msgid "Display language:"
+msgstr "Jezik vmesnika:"
+
+#: panels/region/cinnamon-region-panel.ui.h:35
+msgid "Input source:"
+msgstr "Vir vhoda:"
+
+#: panels/region/cinnamon-region-panel.ui.h:36
+msgid "Format:"
+msgstr "Oblika:"
+
+#: panels/region/cinnamon-region-panel.ui.h:37
+msgid "Your settings"
+msgstr "Osebne nastavitve"
+
+#: panels/region/cinnamon-region-panel.ui.h:38
+msgid "System settings"
+msgstr "Sistemske nastavitve"
+
+#: panels/region/cinnamon-region-panel.ui.h:40
+msgid "System"
+msgstr "Sistem"
+
+#: panels/screen/screen.ui.h:1
+msgid "Screen turns off"
+msgstr "Zaslon se izklopi"
+
+#: panels/screen/screen.ui.h:2
+msgid "30 seconds"
+msgstr "30 sekund"
+
+#: panels/screen/screen.ui.h:3
+msgid "1 minute"
+msgstr "1 minuta"
+
+#: panels/screen/screen.ui.h:4
+msgid "2 minutes"
+msgstr "2 minuti"
+
+#: panels/screen/screen.ui.h:5
+msgid "3 minutes"
+msgstr "3 minute"
+
+#: panels/screen/screen.ui.h:11
+msgid "_Dim screen to save power"
+msgstr "_Zatemni zaslon za zmanjšanje porabe"
+
+#: panels/screen/screen.ui.h:12
+msgid "Brightness"
+msgstr "Svetlost"
+
+#: panels/screen/screen.ui.h:13
+msgid "_Turn screen off when inactive for:"
+msgstr "Ugasni zaslon ob nedejavnosti:"
+
+#: panels/screen/screen.ui.h:14
+msgid "_Lock screen after:"
+msgstr "Zakleni _zaslon po:"
+
+#: panels/screen/screen.ui.h:15
+msgid "Require my password when waking from suspend"
+msgstr "Zahtevaj moje geslo pri povrnitvi iz stanja pripravljenosti"
+
+#: panels/screen/screen.ui.h:16
+msgid "Lock"
+msgstr "Zakleni"
+
+#: panels/universal-access/uap.ui.h:5
+msgid "On screen keyboard"
+msgstr "Zaslonska tipkovnica"
+
+#: panels/universal-access/uap.ui.h:6
+msgid "GOK"
+msgstr "GOK"
+
+#: panels/universal-access/uap.ui.h:7
+msgid "OnBoard"
+msgstr "OnBoard"
+
+#: panels/universal-access/uap.ui.h:8
+msgid "None"
+msgstr "Brez"
+
+#: panels/universal-access/uap.ui.h:10
+#, no-c-format
+msgid "75%"
+msgstr "75%"
+
+#: panels/universal-access/uap.ui.h:13
+#, no-c-format
+msgid "100%"
+msgstr "100%"
+
+#: panels/universal-access/uap.ui.h:16
+#, no-c-format
+msgid "125%"
+msgstr "125 %"
+
+#: panels/universal-access/uap.ui.h:19
+#, no-c-format
+msgid "150%"
+msgstr "150%"
+
+#: panels/universal-access/uap.ui.h:21
+msgid "High Contrast"
+msgstr "Visok kontrast"
+
+#: panels/universal-access/uap.ui.h:22
+msgid "Beep on Caps and Num Lock"
+msgstr "Zapiskaj ob pritisku tipk zaklepa številčnice in velikih črk"
+
+#: panels/universal-access/uap.ui.h:23
+msgid "Options..."
+msgstr "Možnosti ..."
+
+#: panels/universal-access/uap.ui.h:24
+msgid "Screen Reader"
+msgstr "Zaslonski bralnik"
+
+#: panels/universal-access/uap.ui.h:25
+msgid "Turn on or off:"
+msgstr "Vključi ali izključi:"
+
+#: panels/universal-access/uap.ui.h:27
+msgid "Zoom in:"
+msgstr "Približaj:"
+
+#: panels/universal-access/uap.ui.h:28
+msgid "Zoom out:"
+msgstr "Oddalji:"
+
+#: panels/universal-access/uap.ui.h:29
+msgid "Large Text"
+msgstr "Veliko besedilo"
+
+#: panels/universal-access/uap.ui.h:30
+msgid "Seeing"
+msgstr "Izrisovanje"
+
+#: panels/universal-access/uap.ui.h:31
+msgid "Visual Alerts"
+msgstr "Vidna opozorila"
+
+#: panels/universal-access/uap.ui.h:32
+msgid "Use a visual indication when an alert sound occurs"
+msgstr "Uporabi vidni način zvočnih opozoril"
+
+#: panels/universal-access/uap.ui.h:33
+msgid "Flash the window title"
+msgstr "Zabliskaj naziv okna"
+
+#: panels/universal-access/uap.ui.h:34
+msgid "Flash the entire screen"
+msgstr "Zabliskaj celoten zaslon"
+
+#: panels/universal-access/uap.ui.h:35
+msgid "Closed Captioning"
+msgstr "Zaprt naslov"
+
+#: panels/universal-access/uap.ui.h:36
+msgid "Display a textual description of speech and sounds"
+msgstr "Prikaže besedni opis govora in zvokov"
+
+#: panels/universal-access/uap.ui.h:37
+msgid "_Test flash"
+msgstr "Preizkusni _blisk"
+
+#: panels/universal-access/uap.ui.h:38
+msgid "Hearing"
+msgstr "Poslušanje"
+
+#: panels/universal-access/uap.ui.h:39
+msgid "On Screen Keyboard"
+msgstr "Zaslonska tipkovnica"
+
+#: panels/universal-access/uap.ui.h:40
+msgid "Sticky Keys"
+msgstr "Lepljive tipke"
+
+#: panels/universal-access/uap.ui.h:41
+msgid "Treats a sequence of modifier keys as a key combination"
+msgstr "Zaporedje spremenilnih tipk obravnava kot kombinacijo tipk"
+
+#: panels/universal-access/uap.ui.h:42
+msgid "_Disable if two keys are pressed together"
+msgstr "_Onemogoči, če sta dve tipki pritisnjeni sočasno"
+
+#: panels/universal-access/uap.ui.h:43
+msgid "Beep when a _modifer key is pressed"
+msgstr "Zapiskaj ob pritisku na _spremenilno tipko"
+
+#: panels/universal-access/uap.ui.h:44
+msgid "Slow Keys"
+msgstr "Počasne tipke"
+
+#: panels/universal-access/uap.ui.h:45
+msgid "Puts a delay between when a key is pressed and when it is accepted"
+msgstr "Nastavi zamik med pritiskom in sprejemom tipke"
+
+#: panels/universal-access/uap.ui.h:46
+msgid "A_cceptance delay:"
+msgstr "Zamik _sprejetja:"
+
+#: panels/universal-access/uap.ui.h:48
+msgid "Short"
+msgstr "Kratek"
+
+#: panels/universal-access/uap.ui.h:49
+msgid "Slow keys typing delay"
+msgstr "Časovni zamik počasnih tipk"
+
+#: panels/universal-access/uap.ui.h:51
+msgid "Long"
+msgstr "Dolg"
+
+#: panels/universal-access/uap.ui.h:53
+msgid "Beep when a key is"
+msgstr "Zapiskaj, kadar je tipka"
+
+#: panels/universal-access/uap.ui.h:55
+msgid "pressed"
+msgstr "pritisnjena"
+
+#: panels/universal-access/uap.ui.h:57
+msgid "accepted"
+msgstr "sprejeta"
+
+#: panels/universal-access/uap.ui.h:59
+msgid "rejected"
+msgstr "zavrnjena"
+
+#: panels/universal-access/uap.ui.h:60
+msgid "Bounce Keys"
+msgstr "Odskočne tipke"
+
+#: panels/universal-access/uap.ui.h:61
+msgid "Ignores fast duplicate keypresses"
+msgstr "Prezre hitre podvojene pritiske tipk"
+
+#: panels/universal-access/uap.ui.h:62
+msgid "Acc_eptance delay:"
+msgstr "Zamik spr_ejetja:"
+
+#: panels/universal-access/uap.ui.h:63
+msgid "Bounce keys typing delay"
+msgstr "Časovni zamik podvojenih pritiskov tipk"
+
+#: panels/universal-access/uap.ui.h:64
+msgid "Beep when a key is _rejected"
+msgstr "Zapiskaj, kadar je tipka zav_rnjena"
+
+#: panels/universal-access/uap.ui.h:65
+msgid "Enable by Keyboard"
+msgstr "Omogoči s tipkovnico"
+
+#: panels/universal-access/uap.ui.h:66
+msgid "Turn accessibility features on and off using the keyboard"
+msgstr "Vklopi ali izklopi zmožnosti dostopnosti s tipkovnico"
+
+#: panels/universal-access/uap.ui.h:67
+msgid "Typing"
+msgstr "Tipkanje"
+
+#: panels/universal-access/uap.ui.h:68
+msgid "Mouse Keys"
+msgstr "Tipke miške"
+
+#: panels/universal-access/uap.ui.h:69
+msgid "Control the pointer using the keypad"
+msgstr "Kazalec je mogoče upravljati s številsko tipkovnico"
+
+#: panels/universal-access/uap.ui.h:70
+msgid "Video Mouse"
+msgstr "Video miška"
+
+#: panels/universal-access/uap.ui.h:71
+msgid "Control the pointer using the video camera."
+msgstr "Nadzor kazalca z uporabo video kamere."
+
+#: panels/universal-access/uap.ui.h:72
+msgid "Simulated Secondary Click"
+msgstr "Oponašanje drugotnega klika"
+
+#: panels/universal-access/uap.ui.h:73
+msgid "Trigger a secondary click by holding down the primary button"
+msgstr "Sproži drugotni klik s tiščanjem osnovnega gumba"
+
+#: panels/universal-access/uap.ui.h:74
+msgid "Secondary click delay"
+msgstr "Časovni zamik drugotnega klika"
+
+#: panels/universal-access/uap.ui.h:75
+msgid "Hover Click"
+msgstr "Klik z lebdenjem"
+
+#: panels/universal-access/uap.ui.h:76
+msgid "Trigger a click when the pointer hovers"
+msgstr "Sproži klik ob ledbenju kazalca nad mestom"
+
+#: panels/universal-access/uap.ui.h:77
+msgid "D_elay:"
+msgstr "_Zamik:"
+
+#: panels/universal-access/uap.ui.h:78
+msgid "Motion _threshold:"
+msgstr "_Prag premikanja:"
+
+#: panels/universal-access/uap.ui.h:80
+msgid "Small"
+msgstr "Majhen"
+
+#: panels/universal-access/uap.ui.h:82
+msgid "Large"
+msgstr "Velik"
+
+#: panels/universal-access/uap.ui.h:83
+msgid "Mouse Settings"
+msgstr "Nastavitve miške"
+
+#: panels/universal-access/uap.ui.h:84
+msgid "Pointing and Clicking"
+msgstr "Kazanje in klikanje"
+
+#: panels/universal-access/zoom-options.ui.h:1
+msgid "Full Screen"
+msgstr "Celozaslonski način"
+
+#: panels/universal-access/zoom-options.ui.h:2
+msgid "Top Half"
+msgstr "Zgornja polovica"
+
+#: panels/universal-access/zoom-options.ui.h:3
+msgid "Bottom Half"
+msgstr "Spodnja polovica"
+
+#: panels/universal-access/zoom-options.ui.h:4
+msgid "Left Half"
+msgstr "Leva polovica"
+
+#: panels/universal-access/zoom-options.ui.h:5
+msgid "Right Half"
+msgstr "Desna polovica"
+
+#: panels/universal-access/zoom-options.ui.h:6
+msgid "Zoom Options"
+msgstr "Možnosti približanja"
+
+#: panels/universal-access/zoom-options.ui.h:7
+msgid "Zoom"
+msgstr "Približanje"
+
+#: panels/universal-access/zoom-options.ui.h:8
+msgid "Magnification:"
+msgstr "Približevanje:"
+
+#: panels/universal-access/zoom-options.ui.h:9
+msgid "Follow mouse cursor"
+msgstr "Sledi kazalki miške"
+
+#: panels/universal-access/zoom-options.ui.h:10
+msgid "Screen part:"
+msgstr "Del zaslona:"
+
+#: panels/universal-access/zoom-options.ui.h:11
+msgid "Magnifier extends outside of screen"
+msgstr "Približevalnik deluje tudi izven zaslona"
+
+#: panels/universal-access/zoom-options.ui.h:12
+msgid "Keep magnifier cursor centered"
+msgstr "Ohrani kazalko približevalnika na sredini"
+
+#: panels/universal-access/zoom-options.ui.h:13
+msgid "Magnifier cursor pushes contents around"
+msgstr "Kazalka približevalnika odriva vsebino"
+
+#: panels/universal-access/zoom-options.ui.h:14
+msgid "Magnifier cursor moves with contents"
+msgstr "Kazalka približevalnika se premika z vsebino"
+
+#: panels/universal-access/zoom-options.ui.h:15
+msgid "Magnifier Position:"
+msgstr "Položaj približevalnika:"
+
+#: panels/universal-access/zoom-options.ui.h:16
+msgid "Magnifier"
+msgstr "Približevalnik"
+
+#: panels/universal-access/zoom-options.ui.h:17
+msgid "Thickness:"
+msgstr "Debelina:"
+
+#: panels/universal-access/zoom-options.ui.h:19
+msgid "Thin"
+msgstr "Tanka"
+
+#: panels/universal-access/zoom-options.ui.h:21
+msgid "Thick"
+msgstr "Debela"
+
+#: panels/universal-access/zoom-options.ui.h:22
+msgid "Length:"
+msgstr "Dolžina:"
+
+#: panels/universal-access/zoom-options.ui.h:23
+msgid "Color:"
+msgstr "Barva:"
+
+#: panels/universal-access/zoom-options.ui.h:24
+msgid "Crosshairs:"
+msgstr "Merki:"
+
+#: panels/universal-access/zoom-options.ui.h:25
+msgid "Overlaps mouse cursor"
+msgstr "Prekrivanje kazalke miške"
+
+#: panels/universal-access/zoom-options.ui.h:26
+msgid "Crosshairs"
+msgstr "Merki"
+
+#: panels/universal-access/zoom-options.ui.h:27
+msgid "White on black:"
+msgstr "Črno na belem:"
+
+#: panels/universal-access/zoom-options.ui.h:28
+msgid "Brightness:"
+msgstr "Svetlost:"
+
+#: panels/universal-access/zoom-options.ui.h:29
+msgid "Contrast:"
+msgstr "Kontrast:"
+
+#: panels/universal-access/zoom-options.ui.h:34
+msgid "Low"
+msgstr "Nizek"
+
+#: panels/universal-access/zoom-options.ui.h:36
+msgid "High"
+msgstr "Visok"
+
+#: panels/universal-access/zoom-options.ui.h:37
+msgid "Color Effects:"
+msgstr "Barvni učinki:"
+
+#: panels/universal-access/zoom-options.ui.h:38
+msgid "Color Effects"
+msgstr "Barvni učinki"
+
+#: generate_additional_files.py:53
 msgid "Brightness & Lock"
-msgstr ""
+msgstr "Zaklepanje in svetlost"
 
-#: generate_additional_files.py:66
+#: generate_additional_files.py:53
 msgid "Screen brightness and lock settings"
-msgstr ""
+msgstr "Nastavitve svetlosti zaslona in zaklepanja"
 
-#: generate_additional_files.py:81 generate_additional_files.py:112
+#: generate_additional_files.py:68 generate_additional_files.py:99
 msgid "Sound"
-msgstr ""
+msgstr "Zvok"
 
-#: generate_additional_files.py:81 generate_additional_files.py:112
+#: generate_additional_files.py:68 generate_additional_files.py:99
 msgid "Change sound volume and sound events"
-msgstr ""
+msgstr "Spreminjanje glasnosti zvoka in zvočnih dogodkov"
 
-#: generate_additional_files.py:96
-msgid "Color"
-msgstr ""
-
-#: generate_additional_files.py:96
+#: generate_additional_files.py:83
 msgid "Color management settings"
-msgstr ""
+msgstr "Nastavitve upravljanja barv"
 
-#: generate_additional_files.py:126
+#: generate_additional_files.py:113
 msgid "Volume Control"
-msgstr ""
+msgstr "Nadzor glasnosti"
 
-#: generate_additional_files.py:126
+#: generate_additional_files.py:113
 msgid "Show desktop volume control"
-msgstr ""
+msgstr "Pokaži namizni nadzornik zvoka"
 
-#: generate_additional_files.py:141
+#: generate_additional_files.py:128
 msgid "Power"
-msgstr ""
+msgstr "Poraba energije"
 
-#: generate_additional_files.py:141
+#: generate_additional_files.py:128
 msgid "Power management settings"
-msgstr ""
+msgstr "Nastavitve upravljanja napajanja"
 
-#: generate_additional_files.py:156
+#: generate_additional_files.py:143
 msgid "Region & Language"
-msgstr ""
+msgstr "Področje in jezik"
 
-#: generate_additional_files.py:156
+#: generate_additional_files.py:143
 msgid "Change your region and language settings"
-msgstr ""
+msgstr "Spremeni svoje področne in jezikovne nastavitve"
 
-#: generate_additional_files.py:171
+#: generate_additional_files.py:158
 msgid "Displays"
-msgstr ""
+msgstr "Zasloni"
 
-#: generate_additional_files.py:171
+#: generate_additional_files.py:158
 msgid "Change resolution and position of monitors and projectors"
-msgstr ""
+msgstr "Spremeni ločljivost in položaj zaslonov in projektorjev"
 
-#: generate_additional_files.py:186
-msgid "Network"
-msgstr ""
-
-#: generate_additional_files.py:186
+#: generate_additional_files.py:173
 msgid "Network settings"
-msgstr ""
+msgstr "Omrežne nastavitve"
 
-#: generate_additional_files.py:201
+#: generate_additional_files.py:188
 msgid "Universal Access"
-msgstr ""
+msgstr "Splošni dostop"
 
-#: generate_additional_files.py:201
+#: generate_additional_files.py:188
 msgid "Universal Access Preferences"
-msgstr ""
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Launchpad Contributions:\n"
-#~ "  Matej Urbančič https://launchpad.net/~mateju"
+msgstr "Možnosti splošnega dostopa"
