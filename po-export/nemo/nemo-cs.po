@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-10-01 22:08-0400\n"
-"PO-Revision-Date: 2013-04-12 14:42+0000\n"
-"Last-Translator: Jan Kudrik <jan@kudrik.cz>\n"
+"PO-Revision-Date: 2013-10-06 21:06+0000\n"
+"Last-Translator: Ondřej Kolín <ondrej.kolin@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-10-02 15:26+0000\n"
+"X-Launchpad-Export-Date: 2013-10-07 12:02+0000\n"
 "X-Generator: Launchpad (build 16791)\n"
 
 #: src/nemo-application.c:158
@@ -102,7 +102,7 @@ msgstr ""
 
 #: src/nemo-application.c:1111
 msgid "Nemo's main menu is now hidden"
-msgstr ""
+msgstr "Hlavní menu prohlížeče souborů Nemo je teď skryt"
 
 #: src/nemo-application.c:1115
 msgid ""
@@ -115,10 +115,16 @@ msgid ""
 "You can restore it permanently by selecting this option again from the View "
 "menu."
 msgstr ""
+"Rozhodli jste se skrýt hlavní menu. Zpět je můžete dočasně dostat:\n"
+"- Zmáčknutím klávesy <Alt>.\n"
+"- Klepnutím pravého tlačítka na prázdný prostor v panelu nástrojů.\n"
+"- Klepnutím pravého tlačítka na prázdný prostor ve stavovém panelu.\n"
+"\n"
+"Obnovit ho můžete trvale vybráním této možnosti v menu \"Zobrazit\"."
 
 #: src/nemo-application.c:1126
 msgid "Don't show this message again."
-msgstr ""
+msgstr "Znovu nezobrazovat tuto správu"
 
 #: src/nemo-autorun-software.c:143 src/nemo-autorun-software.c:146
 #, c-format
@@ -777,11 +783,11 @@ msgstr "(Prázdné)"
 
 #: src/nemo-list-view.c:1720
 msgid "Use Default"
-msgstr ""
+msgstr "Používat výchozí"
 
 #: src/nemo-list-view.c:1731
 msgid "Temporarily disable auto-sort"
-msgstr ""
+msgstr "Dočasně zakázat automatické řazení"
 
 #: src/nemo-list-view.c:2027 libnemo-private/nemo-column-utilities.c:43
 msgid "Name"
@@ -890,11 +896,11 @@ msgstr[2] "Toto otevře %d oddělených karet."
 
 #: src/nemo-mime-actions.c:1177 src/nemo-view.c:1294
 msgid "Open with"
-msgstr ""
+msgstr "Otevřít s"
 
 #: src/nemo-mime-actions.c:1242
 msgid "Unknown file type"
-msgstr ""
+msgstr "Neznámý typ souboru"
 
 #: src/nemo-mime-actions.c:1245
 #, c-format
@@ -904,14 +910,18 @@ msgid ""
 "executable and launch it.  Or, you can use the Open With dialog to pick a "
 "program to associate it with."
 msgstr ""
+"Soubor \"%s\" nemá žádný známý program, se kterým by byl asociovaný. Pokud "
+"věříte zdroji a máte potřebná oprávnění, můžete ho označit jako spustitelný "
+"a spustit. Také můžete použít dialog \"Otevřít s\" a vybrat program, se "
+"kterým bude asociován"
 
 #: src/nemo-mime-actions.c:1262
 msgid "Make executable and run"
-msgstr ""
+msgstr "Nastavit jako spustitelný a spustit"
 
 #: src/nemo-mime-actions.c:1264
 msgid "Choose a program"
-msgstr ""
+msgstr "Vybrat program"
 
 #: src/nemo-mime-actions.c:1342
 msgid "Untrusted application launcher"
@@ -923,6 +933,8 @@ msgid ""
 "The application launcher \"%s\" has not been marked as trusted (executable). "
 "If you do not know the source of this file, launching it may be unsafe."
 msgstr ""
+"Spouštěč aplikace \"%s\" nebyl označen jako důvěryhodný (spustitelný). Pokud "
+"neznáte zdroj tohoto souboru, spouštět ho může být nebezpečné"
 
 #: src/nemo-mime-actions.c:1361
 msgid "_Launch Anyway"
@@ -1188,8 +1200,9 @@ msgstr "_Vlastnosti"
 #, c-format
 msgid "%1$s file operation active.  %2$d%% complete."
 msgid_plural "%1$s file operations active.  %2$d%% complete."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s operace aktivní %2$d%% hotovo."
+msgstr[1] "%1$s operace aktivní %2$d%% hotovo."
+msgstr[2] "%1$s operací aktivní %2$d%% hotovo."
 
 #: src/nemo-progress-ui-handler.c:156 src/nemo-progress-ui-handler.c:201
 msgid "File Operations"
@@ -1264,15 +1277,17 @@ msgstr "nečitelné"
 #, c-format
 msgid "%1$s item (and %2$s hidden), with size %3$s"
 msgid_plural "%1$s items (and %2$s hidden), totalling %3$s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s položka (a %2$s skryto), velikost %3$s"
+msgstr[1] "%1$s položky (a %2$s skryto), velikost %3$s"
+msgstr[2] "%1$s položek (a %2$s skryto), velikost %3$s"
 
 #: src/nemo-properties-window.c:2135
 #, c-format
 msgid "%1$s item, with size %2$s"
 msgid_plural "%1$s items, totalling %2$s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s soubor s velikostí %2$s"
+msgstr[1] "%1$s soubory s velikostí %2$s"
+msgstr[2] "%1$s souborů s velikostí %2$s"
 
 #: src/nemo-properties-window.c:2144
 msgid "(some contents unreadable)"
@@ -1930,11 +1945,11 @@ msgstr[2] ""
 
 #: src/nemo-view.c:6786
 msgid "Select Target Folder For Move"
-msgstr ""
+msgstr "Zvolte složku k přesunu"
 
 #: src/nemo-view.c:6807
 msgid "Select Target Folder For Copy"
-msgstr ""
+msgstr "Zvolte složku ke kopírování"
 
 #: src/nemo-view.c:7207
 msgid "Unable to unmount location"
@@ -2339,15 +2354,15 @@ msgstr "Přesunout aktuální výběr na pracovní plochu"
 
 #: src/nemo-view.c:8252 src/nemo-view.c:8256
 msgid "Browse…"
-msgstr ""
+msgstr "Procházet…"
 
 #: src/nemo-view.c:8253
 msgid "Browse for a folder to move the selection to"
-msgstr ""
+msgstr "Vybrat složku pro přesun výběru"
 
 #: src/nemo-view.c:8257
 msgid "Browse for a folder to copy the selection to"
-msgstr ""
+msgstr "Vybrat složku pro kopírování výběru"
 
 #: src/nemo-view.c:8336
 #, c-format
@@ -3195,7 +3210,7 @@ msgstr ""
 
 #: libnemo-private/nemo-column-utilities.c:66
 msgid "The specific type of the file."
-msgstr ""
+msgstr "Přesný typ souboru."
 
 #: libnemo-private/nemo-column-utilities.c:73
 msgid "The date the file was modified."
@@ -3512,28 +3527,28 @@ msgstr "? bajtů"
 #: libnemo-private/nemo-file.c:6276 libnemo-private/nemo-file.c:6359
 #: libnemo-private/nemo-file.c:6393
 msgid "Unknown"
-msgstr ""
+msgstr "Neznámý"
 
 #: libnemo-private/nemo-file.c:6319 libnemo-private/nemo-file.c:6327
 #: libnemo-private/nemo-file.c:6419
 msgid "Program"
-msgstr ""
+msgstr "Program"
 
 #: libnemo-private/nemo-file.c:6320
 msgid "Audio"
-msgstr ""
+msgstr "Zvuk"
 
 #: libnemo-private/nemo-file.c:6321
 msgid "Font"
-msgstr ""
+msgstr "Písmo"
 
 #: libnemo-private/nemo-file.c:6323
 msgid "Archive"
-msgstr ""
+msgstr "Archivovat"
 
 #: libnemo-private/nemo-file.c:6324
 msgid "Markup"
-msgstr ""
+msgstr "Strukturovaný text"
 
 #: libnemo-private/nemo-file.c:6325 libnemo-private/nemo-file.c:6326
 #: eel/eel-editable-label.c:311
@@ -3542,24 +3557,24 @@ msgstr "Text"
 
 #: libnemo-private/nemo-file.c:6329
 msgid "Contacts"
-msgstr ""
+msgstr "Kontakty"
 
 #: libnemo-private/nemo-file.c:6330
 msgid "Calendar"
-msgstr ""
+msgstr "Kalendář"
 
 #: libnemo-private/nemo-file.c:6331
 msgid "Document"
-msgstr ""
+msgstr "Dokumenty"
 
 #: libnemo-private/nemo-file.c:6421
 #: src/nemo-file-management-properties.glade:51
 msgid "Binary"
-msgstr ""
+msgstr "Binární"
 
 #: libnemo-private/nemo-file.c:6425
 msgid "Folder"
-msgstr ""
+msgstr "Složka"
 
 #: libnemo-private/nemo-file.c:6456
 msgid "link"
@@ -3572,44 +3587,45 @@ msgstr "odkaz (neplatný)"
 #: libnemo-private/nemo-file.c:7436
 #, c-format
 msgid "Name: %s"
-msgstr ""
+msgstr "Jméno: %s"
 
 #: libnemo-private/nemo-file.c:7443
 #, c-format
 msgid "Type: %s"
-msgstr ""
+msgstr "Typ: %s"
 
 #: libnemo-private/nemo-file.c:7453
 #, c-format
 msgid "%s item"
 msgid_plural "%s items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s soubor"
+msgstr[1] "%s soubory"
+msgstr[2] "%s souborů"
 
 #: libnemo-private/nemo-file.c:7455
 #, c-format
 msgid "Contains: %s"
-msgstr ""
+msgstr "Obsahuje: %s"
 
 #: libnemo-private/nemo-file.c:7464
 #, c-format
 msgid "Size: %s"
-msgstr ""
+msgstr "Velikost: %s"
 
 #: libnemo-private/nemo-file.c:7472
 #, c-format
 msgid "Accessed: %s"
-msgstr ""
+msgstr "Přistoupenu: %s"
 
 #: libnemo-private/nemo-file.c:7480
 #, c-format
 msgid "Modified: %s"
-msgstr ""
+msgstr "Změněno: %s"
 
 #: libnemo-private/nemo-file.c:7489
 #, c-format
 msgid "Location: %s"
-msgstr ""
+msgstr "Umístění: %s"
 
 #: libnemo-private/nemo-file-conflict-dialog.c:141
 #, c-format
@@ -4794,6 +4810,8 @@ msgstr "Otevřít všechny soubory typu „%s“ pomocí:"
 msgid ""
 "Select an application in the list to open %s and other files of type \"%s\""
 msgstr ""
+"Zvolte aplikaci ze seznamu k otevření %s a otevírání dalších souborů typu "
+"\"%s\""
 
 #: libnemo-private/nemo-mime-application-chooser.c:544
 msgid ""
@@ -4801,22 +4819,25 @@ msgid ""
 "file type.  You can use this command just once, or set it as default for all "
 "files of this type."
 msgstr ""
+"Můžete zvolit vlastní spouštěcí soubor k otevření souborům tohoto typu. "
+"Tento příkaz můžete použít jednou, nebo použít jako výchozí pro všechny tyto "
+"typy."
 
 #: libnemo-private/nemo-mime-application-chooser.c:558
 msgid "Enter a custom command..."
-msgstr ""
+msgstr "Zadejte vlastní příkaz..."
 
 #: libnemo-private/nemo-mime-application-chooser.c:566
 msgid "Custom application"
-msgstr ""
+msgstr "Vlastní aplikace"
 
 #: libnemo-private/nemo-mime-application-chooser.c:585
 msgid "Executables"
-msgstr ""
+msgstr "Spustitelné"
 
 #: libnemo-private/nemo-mime-application-chooser.c:588
 msgid "Add to list"
-msgstr ""
+msgstr "Přidat do seznamu"
 
 #: libnemo-private/nemo-mime-application-chooser.c:596
 msgid "Set as default"
@@ -4824,7 +4845,7 @@ msgstr "Nastavit jako výchozí"
 
 #: libnemo-private/nemo-mime-application-chooser.c:605
 msgid "Reset to system defaults"
-msgstr ""
+msgstr "Obnovit do výchozího nastavení"
 
 #: libnemo-private/nemo-program-choosing.c:311
 msgid "Sorry, but you cannot execute commands from a remote site."
@@ -4981,139 +5002,139 @@ msgstr "<b>_Umístění</b>"
 #: src/nemo-file-management-properties.glade:195
 #: src/nemo-file-management-properties.glade:2774
 msgid "Always"
-msgstr ""
+msgstr "Vždy"
 
 #: src/nemo-file-management-properties.glade:31
 #: src/nemo-file-management-properties.glade:181
 #: src/nemo-file-management-properties.glade:198
 #: src/nemo-file-management-properties.glade:2777
 msgid "Local Files Only"
-msgstr ""
+msgstr "Jen místní soubory"
 
 #: src/nemo-file-management-properties.glade:34
 #: src/nemo-file-management-properties.glade:184
 #: src/nemo-file-management-properties.glade:201
 #: src/nemo-file-management-properties.glade:2780
 msgid "Never"
-msgstr ""
+msgstr "Nikdy"
 
 #: src/nemo-file-management-properties.glade:45
 msgid "Decimal"
-msgstr ""
+msgstr "Desetinný"
 
 #: src/nemo-file-management-properties.glade:48
 msgid "Decimal (long format)"
-msgstr ""
+msgstr "Desetinný (dlouhý formát)"
 
 #: src/nemo-file-management-properties.glade:54
 msgid "Binary (long format)"
-msgstr ""
+msgstr "Binární (dlouhý formát)"
 
 #: src/nemo-file-management-properties.glade:65
 msgid "By Name"
-msgstr ""
+msgstr "Dle názvu"
 
 #: src/nemo-file-management-properties.glade:68
 msgid "By Size"
-msgstr ""
+msgstr "Dle velikosti"
 
 #: src/nemo-file-management-properties.glade:71
 msgid "By Type"
-msgstr ""
+msgstr "Dle typu"
 
 #: src/nemo-file-management-properties.glade:74
 msgid "By Modification Date"
-msgstr ""
+msgstr "Dle data změny"
 
 #: src/nemo-file-management-properties.glade:77
 msgid "By Access Date"
-msgstr ""
+msgstr "Dle data přístupu"
 
 #: src/nemo-file-management-properties.glade:80
 msgid "By Trashed Date"
-msgstr ""
+msgstr "Dle data vyhození"
 
 #: src/nemo-file-management-properties.glade:91
 #: src/nemo-file-management-properties.glade:120
 #: src/nemo-file-management-properties.glade:149
 msgid "33%"
-msgstr ""
+msgstr "33%"
 
 #: src/nemo-file-management-properties.glade:94
 #: src/nemo-file-management-properties.glade:123
 #: src/nemo-file-management-properties.glade:152
 msgid "50%"
-msgstr ""
+msgstr "50%"
 
 #: src/nemo-file-management-properties.glade:97
 #: src/nemo-file-management-properties.glade:126
 #: src/nemo-file-management-properties.glade:155
 msgid "66%"
-msgstr ""
+msgstr "66%"
 
 #: src/nemo-file-management-properties.glade:100
 #: src/nemo-file-management-properties.glade:129
 #: src/nemo-file-management-properties.glade:158
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: src/nemo-file-management-properties.glade:103
 #: src/nemo-file-management-properties.glade:132
 #: src/nemo-file-management-properties.glade:161
 msgid "150%"
-msgstr ""
+msgstr "150%"
 
 #: src/nemo-file-management-properties.glade:106
 #: src/nemo-file-management-properties.glade:135
 #: src/nemo-file-management-properties.glade:164
 msgid "200%"
-msgstr ""
+msgstr "200%"
 
 #: src/nemo-file-management-properties.glade:109
 #: src/nemo-file-management-properties.glade:138
 #: src/nemo-file-management-properties.glade:167
 msgid "400%"
-msgstr ""
+msgstr "400%"
 
 #: src/nemo-file-management-properties.glade:212
 msgid "100 KB"
-msgstr ""
+msgstr "100 KB"
 
 #: src/nemo-file-management-properties.glade:215
 msgid "500 KB"
-msgstr ""
+msgstr "500 KB"
 
 #: src/nemo-file-management-properties.glade:218
 msgid "1 MB"
-msgstr ""
+msgstr "1 MB"
 
 #: src/nemo-file-management-properties.glade:221
 msgid "3 MB"
-msgstr ""
+msgstr "3 MB"
 
 #: src/nemo-file-management-properties.glade:224
 msgid "5 MB"
-msgstr ""
+msgstr "5 MB"
 
 #: src/nemo-file-management-properties.glade:227
 msgid "10 MB"
-msgstr ""
+msgstr "10 MB"
 
 #: src/nemo-file-management-properties.glade:230
 msgid "100 MB"
-msgstr ""
+msgstr "100 MB"
 
 #: src/nemo-file-management-properties.glade:233
 msgid "1 GB"
-msgstr ""
+msgstr "1 GB"
 
 #: src/nemo-file-management-properties.glade:236
 msgid "2 GB"
-msgstr ""
+msgstr "2 GB"
 
 #: src/nemo-file-management-properties.glade:239
 msgid "4 GB"
-msgstr ""
+msgstr "4 GB"
 
 #: src/nemo-file-management-properties.glade:246
 msgid "File Management Preferences"
@@ -5201,11 +5222,11 @@ msgstr "Otevřít každou _složku ve vlastním okně"
 
 #: src/nemo-file-management-properties.glade:952
 msgid "Always start in dual-pane view"
-msgstr ""
+msgstr "Vždy spouštět v dvoupanelovém rozložení"
 
 #: src/nemo-file-management-properties.glade:969
 msgid "Ignore per-folder view preferences"
-msgstr ""
+msgstr "Ignorovat nastavení zobrazení pro složku"
 
 #: src/nemo-file-management-properties.glade:1011
 msgid "<b>Executable Text Files</b>"
@@ -5314,23 +5335,23 @@ msgstr "_Předpony:"
 
 #: src/nemo-file-management-properties.glade:1797
 msgid "<b>File Properties</b>"
-msgstr ""
+msgstr "<b>Nastavení souboru</b>"
 
 #: src/nemo-file-management-properties.glade:1819
 msgid "Show advanced permissions in the file property dialog"
-msgstr ""
+msgstr "Zobrazit pokročilá oprávnění v dialogu vlastností souboru"
 
 #: src/nemo-file-management-properties.glade:1860
 msgid "<b>Move/Copy To Menu</b>"
-msgstr ""
+msgstr "<b>Přesunout/Kopírovat do menu</b>"
 
 #: src/nemo-file-management-properties.glade:1882
 msgid "List bookmarks in the menu"
-msgstr ""
+msgstr "Vypsat záložky v menu"
 
 #: src/nemo-file-management-properties.glade:1898
 msgid "List devices and network locations in the menu"
-msgstr ""
+msgstr "Zobrazovat zařízení a síťová umístění v menu"
 
 #: src/nemo-file-management-properties.glade:1937
 msgid "Display"
@@ -5378,19 +5399,19 @@ msgstr "Počítat _počet položek:"
 
 #: src/nemo-file-management-properties.glade:2370
 msgid "<b>Tooltips</b>"
-msgstr ""
+msgstr "<b>Bublinová nápověda</b>"
 
 #: src/nemo-file-management-properties.glade:2392
 msgid "Show tooltips in icon and compact views"
-msgstr ""
+msgstr "Zobrazovat popisky v ikonovém a kompaktním zobrazení"
 
 #: src/nemo-file-management-properties.glade:2409
 msgid "Show tooltips in list views"
-msgstr ""
+msgstr "Zobrazovat popisky v seznamovém zobrazení"
 
 #: src/nemo-file-management-properties.glade:2426
 msgid "Show tooltips on the desktop"
-msgstr ""
+msgstr "Zobrazovat popisky na ploše"
 
 #: src/nemo-file-management-properties.glade:2446
 msgid ""
@@ -5398,6 +5419,9 @@ msgid ""
 "their size.\n"
 "Select additional information to display in the tooltip:</i>"
 msgstr ""
+"<i>Ve výchozím nastavením, popisek zobrazuje počet položek ve složce, a "
+"souborům a zobrazovat velikost.\n"
+"Zvolte další informace k zobrazení v popisku:</i>"
 
 #: src/nemo-file-management-properties.glade:2470
 msgid "Detailed file type"
@@ -5405,15 +5429,15 @@ msgstr ""
 
 #: src/nemo-file-management-properties.glade:2485
 msgid "Accessed date"
-msgstr ""
+msgstr "Datum přístupu"
 
 #: src/nemo-file-management-properties.glade:2501
 msgid "Modified date"
-msgstr ""
+msgstr "Datum úpravy"
 
 #: src/nemo-file-management-properties.glade:2516
 msgid "File or folder location"
-msgstr ""
+msgstr "Umístění souboru, či složky"
 
 #: src/nemo-file-management-properties.glade:2564
 msgid "Preview"
@@ -5469,11 +5493,11 @@ msgstr "Použít vybraný obrázek jako pozadí plochy"
 
 #: data/action_i18n_strings.py:11
 msgid "Create a new l_auncher here..."
-msgstr ""
+msgstr "Vytvořit zde nový s_pouštěč..."
 
 #: data/action_i18n_strings.py:12
 msgid "Create a new launcher in this folder"
-msgstr ""
+msgstr "Vytvoří nový spouštěč v této složce"
 
 #: data/action_i18n_strings.py:13 data/action_i18n_strings.py:14
 msgid "Add Desklets"
