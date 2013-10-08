@@ -11,7 +11,7 @@ from gi.repository import Gtk, GObject, GLib, Pango, GdkPixbuf
 GObject.threads_init()
 
 ALLOWED = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-COMMON_DATE_TOKENS = "HYDMSmy"
+COMMON_DATE_TOKENS = "ABeHYDMSmyp"
 DATE_THRESHOLD = 2
 
 MO_EXT = ".mo"
@@ -434,7 +434,7 @@ class Main:
         domain = locale.split("-")[0]
         locale = locale.replace("%s-" % domain, "")
         locale = locale.replace(".po", "")
-        os.system("xdg-open 'https://translations.launchpad.net/linuxmint/isadora/+pots/%s/%s/%s/+translate'" % (domain, locale, number))
+        os.system("xdg-open 'https://translations.launchpad.net/linuxmint/latest/+pots/%s/%s/%s/+translate'" % (domain, locale, number))
 
 if __name__ == "__main__":
     Main()
