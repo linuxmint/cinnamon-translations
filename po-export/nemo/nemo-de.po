@@ -8,20 +8,20 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-10-01 22:08-0400\n"
-"PO-Revision-Date: 2013-10-09 02:38+0000\n"
-"Last-Translator: tux+ <Unknown>\n"
+"PO-Revision-Date: 2013-10-30 00:47+0000\n"
+"Last-Translator: Tobias B. <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-10-09 10:06+0000\n"
-"X-Generator: Launchpad (build 16799)\n"
+"X-Launchpad-Export-Date: 2013-11-07 10:14+0000\n"
+"X-Generator: Launchpad (build 16820)\n"
 
 #: src/nemo-application.c:158
 #, c-format
 msgid "Nemo could not create the required folder \"%s\"."
-msgstr "Nemo konnte das benötigte Verzeichnis \"%s\" nicht anlegen."
+msgstr "Nemo konnte den gewünschten Ordner »%s« nicht anlegen."
 
 #: src/nemo-application.c:160
 msgid ""
@@ -34,8 +34,7 @@ msgstr ""
 #: src/nemo-application.c:163
 #, c-format
 msgid "Nemo could not create the following required folders: %s."
-msgstr ""
-"Nemo konnte die folgenden benötigten Verzeichnisse nicht anlegen: %s."
+msgstr "Nemo konnte die folgenden gewünschten Ordner »%s« nicht anlegen."
 
 #: src/nemo-application.c:165
 msgid ""
@@ -999,7 +998,7 @@ msgstr "Geräte"
 #: src/nemo-places-sidebar.c:596 src/nemo-view.c:3060
 #, c-format
 msgid "Free space: %s"
-msgstr "Freier Platz: %s"
+msgstr "Freier Speicherplatz: %s"
 
 #: src/nemo-places-sidebar.c:690
 msgid "My Computer"
@@ -1018,7 +1017,7 @@ msgstr ""
 #: libnemo-private/nemo-bookmark.c:129 libnemo-private/nemo-desktop-link.c:118
 #: libnemo-private/nemo-file-utilities.c:66
 msgid "Home"
-msgstr "Benutzerverzeichnis"
+msgstr "Persönlicher Ordner"
 
 #: src/nemo-places-sidebar.c:720
 msgid "Open the contents of your desktop in a folder"
@@ -1170,7 +1169,7 @@ msgstr "In neuem _Fenster öffnen"
 
 #: src/nemo-places-sidebar.c:3140 src/nemo-window-menus.c:1165
 msgid "_Add Bookmark"
-msgstr "_Lesezeichen hinzufügen"
+msgstr "Lesezeichen _hinzufügen"
 
 #: src/nemo-places-sidebar.c:3146
 msgid "Remove"
@@ -1178,7 +1177,7 @@ msgstr "Entfernen"
 
 #: src/nemo-places-sidebar.c:3155
 msgid "Rename..."
-msgstr "Umbennen..."
+msgstr "Umbenennen ..."
 
 #: src/nemo-places-sidebar.c:3171 src/nemo-view.c:8104 src/nemo-view.c:8128
 #: src/nemo-view.c:8200
@@ -2076,7 +2075,7 @@ msgstr ""
 
 #: src/nemo-view.c:8010
 msgid "Open With Other _Application..."
-msgstr "Öffne mit anderer _Anwendung..."
+msgstr "Öffne mit anderer _Anwendung …"
 
 #: src/nemo-view.c:8014
 msgid "_Open Scripts Folder"
@@ -2127,7 +2126,7 @@ msgstr "Alle Objekte in diesem Fenster auswählen"
 
 #: src/nemo-view.c:8046
 msgid "Select I_tems Matching..."
-msgstr "Nach Mus_ter auswählen"
+msgstr "Nach Mus_ter auswählen …"
 
 #: src/nemo-view.c:8047
 msgid "Select items in this window matching a given pattern"
@@ -2614,7 +2613,7 @@ msgstr "Lesezeichen für nicht existierenden Ort"
 
 #: src/nemo-window-bookmarks.c:316
 msgid "Go to the location specified by this bookmark"
-msgstr "zum durch dieses Lesezeichen angegebenen Ort springen"
+msgstr "Zum durch dieses Lesezeichen angegebenen Ort gehen"
 
 #: src/nemo-window.c:1571
 #, c-format
@@ -2832,7 +2831,7 @@ msgstr "Die normale Ansichtsgröße verwenden"
 
 #: src/nemo-window-menus.c:1115
 msgid "Connect to _Server..."
-msgstr "Mit _Server verbinden..."
+msgstr "Mit _Server verbinden …"
 
 #: src/nemo-window-menus.c:1116
 msgid "Connect to a remote computer or shared disk"
@@ -2851,7 +2850,7 @@ msgstr "_Rechner"
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Durchsuche alle lokalen und entfernten Laufwerke und Ordner, die von diesem "
+"Alle lokalen und entfernten Laufwerke und Ordner durchsuchen, die von diesem "
 "Rechner aus erreichbar sind"
 
 #: src/nemo-window-menus.c:1127
@@ -2860,7 +2859,7 @@ msgstr "_Netzwerk"
 
 #: src/nemo-window-menus.c:1128
 msgid "Browse bookmarked and local network locations"
-msgstr "Durchsuche Lokale und als Lesezeichen gespeicherte Netwerke"
+msgstr "Lokale und als Lesezeichen gespeicherte Orte durchsuchen"
 
 #: src/nemo-window-menus.c:1131
 msgid "T_emplates"
@@ -3957,16 +3956,15 @@ msgstr "Alle Objekte im Papierkorb werden dauerhaft gelöscht."
 
 #: libnemo-private/nemo-file-operations.c:1379
 msgid "Are you sure you want to permanently delete \"%B\"?"
-msgstr "Soll»%B«unwiederbringlich gelöscht werden?"
+msgstr "Sind Sie sicher, dass Sie »%B« unwiderruflich löschen wollen?"
 
 #: libnemo-private/nemo-file-operations.c:1382
 #, c-format
 msgid "Are you sure you want to permanently delete the %'d selected item?"
 msgid_plural ""
 "Are you sure you want to permanently delete the %'d selected items?"
-msgstr[0] "Soll das %'d gewählte Objekt unwiederbringlich gelöscht werden?"
-msgstr[1] ""
-"Sollen die %'d gewählten Objekte unwiederbringlich gelöscht werden?"
+msgstr[0] "Soll das %'d gewählte Objekt dauerhaft gelöscht werden?"
+msgstr[1] "Sollen die %'d gewählten Objekte dauerhaft gelöscht werden?"
 
 #: libnemo-private/nemo-file-operations.c:1425
 #, c-format
@@ -4843,11 +4841,11 @@ msgstr ""
 
 #: libnemo-private/nemo-mime-application-chooser.c:558
 msgid "Enter a custom command..."
-msgstr "Eigenen Befehl eingeben..."
+msgstr "Benutzerdefinierten Befehl eingeben ..."
 
 #: libnemo-private/nemo-mime-application-chooser.c:566
 msgid "Custom application"
-msgstr "Eigene Anwendung"
+msgstr "Benutzerdefinierte Anwendung"
 
 #: libnemo-private/nemo-mime-application-chooser.c:585
 msgid "Executables"
@@ -4908,7 +4906,7 @@ msgstr "Details: "
 #: libnemo-private/nemo-progress-info.c:192
 #: libnemo-private/nemo-progress-info.c:210
 msgid "Preparing"
-msgstr "Bereite vor"
+msgstr "Vorbereitung"
 
 #: libnemo-private/nemo-query.c:133
 #, c-format
@@ -4994,7 +4992,7 @@ msgstr "Eingabemethoden"
 
 #: eel/eel-gtk-extensions.c:404
 msgid "Show more _details"
-msgstr "Weitere Details anzeigen"
+msgstr "Weitere _Details anzeigen"
 
 #: eel/eel-stock-dialogs.c:205
 msgid "You can stop this operation by clicking cancel."
@@ -5359,7 +5357,7 @@ msgstr "<b>Dateigröße</b>"
 
 #: src/nemo-file-management-properties.glade:1742
 msgid "_Prefixes:"
-msgstr "_Prefixe:"
+msgstr "_Präfixe:"
 
 #: src/nemo-file-management-properties.glade:1797
 msgid "<b>File Properties</b>"
@@ -5383,7 +5381,7 @@ msgstr "Geräte und Netzlaufwerke im Menü auflisten"
 
 #: src/nemo-file-management-properties.glade:1937
 msgid "Display"
-msgstr "Anzeige"
+msgstr "Anzeigen"
 
 #: src/nemo-file-management-properties.glade:1962
 msgid "<b>List Columns</b>"
@@ -5450,8 +5448,9 @@ msgid ""
 "Select additional information to display in the tooltip:</i>"
 msgstr ""
 "<i>Standardmäßig zeigt die Kurzinfo bei Ordnern die Anzahl der enthaltenen "
-"Objekte an, bei Dateien deren Größe. Wählen Sie zusätzliche Informationen, "
-"die in der Kurzinfo angezeigt werden soll:</i>"
+"Objekte an, bei Dateien deren Größe.\n"
+"Wählen Sie zusätzliche Informationen, die in der Kurzinfo angezeigt werden "
+"soll:</i>"
 
 #: src/nemo-file-management-properties.glade:2470
 msgid "Detailed file type"
@@ -5487,7 +5486,7 @@ msgstr "Symbol »Aktualisieren« anzeigen"
 
 #: src/nemo-file-management-properties.glade:2643
 msgid "Show location entry/breadcrumbs toggle button."
-msgstr "Umschalter zwischen Pfadeingabe und Verlaufsnavigation anzeigen"
+msgstr "Umschalter zwischen Pfadeingabe und Verlaufsnavigation anzeigen."
 
 #: src/nemo-file-management-properties.glade:2659
 msgid "Show home icon"
@@ -5516,7 +5515,7 @@ msgstr "_Hintergrund der Arbeitsfläche ändern"
 
 #: data/action_i18n_strings.py:9
 msgid "Set as Wallpaper..."
-msgstr "Als Hintergrund festlegen"
+msgstr "Als Hintergrund festlegen …"
 
 #: data/action_i18n_strings.py:10
 msgid "Set the selected image as your desktop wallpaper"
@@ -5524,11 +5523,11 @@ msgstr "Das ausgewählte Bild als HIntergrund festlegen"
 
 #: data/action_i18n_strings.py:11
 msgid "Create a new l_auncher here..."
-msgstr "Erstelle hier einen neuen Starter..."
+msgstr "Neuen _Starter hier erstellen …"
 
 #: data/action_i18n_strings.py:12
 msgid "Create a new launcher in this folder"
-msgstr "Erstelle neuen Starter in diesem Ordner"
+msgstr "Einen neuen Starter in diesem Ordner erstellen"
 
 #: data/action_i18n_strings.py:13 data/action_i18n_strings.py:14
 msgid "Add Desklets"
