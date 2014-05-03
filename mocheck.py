@@ -195,17 +195,21 @@ class ThreadedTreeView(Gtk.TreeView):
 
     def load_files(self):
         self.clear()
-        for root, subFolders, files in os.walk(os.getcwd(),topdown=False):
-            for file in files:
+        for root, subFolders, files in os.walk(os.getcwd(),topdown=False):            
+            for file in files:                
                 if self.type == MO_EXT:
                     if file.endswith(MO_EXT):
                         path, junk = os.path.split(root)
-                        path, locale = os.path.split(path)
+                        path, locale = os.path.split(path)                        
                         mo_inst = polib.mofile(os.path.join(root, file))
                         mo = Mo(mo_inst, locale, os.path.join(root, file))
                         self.check_file(mo)
                 else:
                     if file.endswith(PO_EXT):
+                        locale = file.split("-")[-1].replace(".po", "")
+                        if locale in ["yi"]:
+                            # Don't check PO files for some of the locales (right-to-left languages for instance, or languages where it's hard for us to verify the arguments)
+                            continue
                         mo_inst = polib.pofile(os.path.join(root, file))
                         mo = Mo(mo_inst, file, os.path.join(root, file))
                         self.check_file(mo)
@@ -431,9 +435,9 @@ class Main:
         return response == Gtk.ResponseType.YES
 
     def go_to_launchpad(self, pofile, locale, number):
-        domain = locale.split("-")[0]
-        locale = locale.replace("%s-" % domain, "")
         locale = locale.replace(".po", "")
+        domain = "-".join(locale.split("-")[0:-1])
+        locale = locale.split("-")[-1]        
         os.system("xdg-open 'https://translations.launchpad.net/linuxmint/latest/+pots/%s/%s/%s/+translate'" % (domain, locale, number))
 
 if __name__ == "__main__":
