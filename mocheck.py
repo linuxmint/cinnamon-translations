@@ -269,40 +269,60 @@ class ThreadedTreeView(Gtk.TreeView):
         str_date_count = 0
 
         for idx in range(len(msgid)):
-            if msgid[idx] == "%":
-                if msgid[idx-1] > -1 and msgid[idx-1] != "\\":
-                    catch = ""
-                    subidx = 0
-                    while True:
-                        subidx += 1
-                        try:
-                            catch = msgid[idx+subidx]
-                            if allowed(catch):
-                                if catch in COMMON_DATE_TOKENS:
-                                    id_date_count += 1
-                                token = msgid[idx:(idx+subidx+1)]
-                                id_tokens.add(token)
-                                break
-                        except IndexError:
-                            break
+            try:         
+                if msgid[idx] == "%":
+                    if msgid[idx-1] > -1 and msgid[idx-1] != "\\":                                                
+                        subidx = 0
+                        if msgid[idx+1] == "(":
+                            while msgid[idx+1+subidx] != ")":
+                                subidx += 1
+                            token = msgid[idx:(idx+subidx+3)]    
+                            id_tokens.add(token)
+                        else:
+                            subidx = 0
+                            catch = ""
+                            while True:
+                                subidx += 1
+                                try:
+                                    catch = msgid[idx+subidx]
+                                    if allowed(catch):
+                                        if catch in COMMON_DATE_TOKENS:
+                                            id_date_count += 1
+                                        token = msgid[idx:(idx+subidx+1)]
+                                        id_tokens.add(token)
+                                        break
+                                except IndexError:
+                                    break
+            except:
+                pass
 
         for idx in range(len(msgstr)):
-            if msgstr[idx] == "%":
-                if msgstr[idx-1] > -1 and msgstr[idx-1] != "\\":
-                    catch = ""
-                    subidx = 0
-                    while True:
-                        subidx += 1
-                        try:
-                            catch = msgstr[idx+subidx]
-                            if allowed(catch):
-                                if catch in COMMON_DATE_TOKENS:
-                                    str_date_count += 1
-                                token = msgstr[idx:idx+subidx+1]
-                                str_tokens.add(token)
-                                break
-                        except IndexError:
-                            break
+            try:   
+                if msgstr[idx] == "%":
+                    if msgstr[idx-1] > -1 and msgstr[idx-1] != "\\":
+                        subidx = 0
+                        if msgstr[idx+1] == "(":
+                            while msgstr[idx+1+subidx] != ")":
+                                subidx += 1
+                            token = msgstr[idx:(idx+subidx+3)]
+                            str_tokens.add(token)
+                        else:
+                            catch = ""
+                            subidx = 0
+                            while True:
+                                subidx += 1
+                                try:
+                                    catch = msgstr[idx+subidx]
+                                    if allowed(catch):
+                                        if catch in COMMON_DATE_TOKENS:
+                                            str_date_count += 1
+                                        token = msgstr[idx:idx+subidx+1]
+                                        str_tokens.add(token)
+                                        break
+                                except IndexError:
+                                    break
+            except:
+                pass
         if msgstr != "":
             if (len(id_tokens) != len(str_tokens)):
                 if id_date_count >= DATE_THRESHOLD or str_date_count >= DATE_THRESHOLD:
@@ -312,11 +332,16 @@ class ThreadedTreeView(Gtk.TreeView):
             else:
                 mismatch = False
                 for j in range(len(id_tokens)):
-                    if id_tokens[j] != str_tokens[j]:
+                    id_token = id_tokens[j]
+                    str_token = str_tokens[j]
+                    if id_token != str_token:
                         mismatch = True
                 if (id_date_count >= DATE_THRESHOLD or str_date_count >= DATE_THRESHOLD) and mismatch:
                     return BAD_MISMATCH_MAYBE_DATE
-                elif mismatch:
+                elif mismatch:           
+                    print id_tokens
+                    print str_tokens
+                    print ""         
                     return BAD_MISMATCH
         return GOOD
 
