@@ -349,6 +349,16 @@ class ThreadedTreeView(Gtk.TreeView):
                     if id_token != str_token:
                         if same_type(id_token, str_token):
                             print "Same type tokens: %s %s" % (id_token, str_token)
+                        elif "(" in id_token:
+                            #named token, just make sure it corresponds to one of the str_tokens
+                            found_token = False
+                            for token in str_tokens:
+                                if token == id_token:
+                                    found_token = True
+                                    break
+                            if not found_token:
+                                print "Couldn't find token: %s" % id_token
+                                mismatch = True
                         else:
                             mismatch = True
 
