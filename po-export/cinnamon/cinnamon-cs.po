@@ -7,22 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-11-19 23:55+0000\n"
-"PO-Revision-Date: 2013-11-25 13:12+0000\n"
+"POT-Creation-Date: 2014-05-01 13:37+0100\n"
+"PO-Revision-Date: 2014-05-03 08:04+0000\n"
 "Last-Translator: Ondřej Kolín <ondrej.kolin@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-11-26 11:39+0000\n"
-"X-Generator: Launchpad (build 16840)\n"
+"X-Launchpad-Export-Date: 2014-05-03 20:45+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: generate_additional_files.py:50
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:81
+#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:85
 #: files/usr/lib/cinnamon-settings/cinnamon-settings.py:37
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:244
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:532
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:228
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:485
 msgid "System Settings"
 msgstr "Nastavení systému"
 
@@ -32,8 +32,8 @@ msgid "Control Center"
 msgstr "Ovládací centrum"
 
 #: generate_additional_files.py:63
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:82
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:371
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:77
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:372
 msgid "Users and Groups"
 msgstr "Uživatelé a skupiny"
 
@@ -41,18 +41,19 @@ msgstr "Uživatelé a skupiny"
 msgid "Add or remove users and groups"
 msgstr "Přidat nebo odstranit uživatele a skupiny"
 
-#: src/cinnamon-app.c:347 src/cinnamon-app.c:355
+#: src/cinnamon-app.c:367 src/cinnamon-app.c:375
 #: js/ui/notificationDaemon.js:458
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:124
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:118
 msgid "Unknown"
 msgstr "Neznámé"
 
-#: src/cinnamon-app.c:581
+#: src/cinnamon-app.c:601
 #, c-format
 msgid "Failed to launch '%s'"
 msgstr "Nelze spustit '%s'"
 
 #: src/cinnamon-util.c:89
+#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:40
 msgid "Home"
 msgstr "Domovská složka"
 
@@ -61,7 +62,7 @@ msgid "File System"
 msgstr "Souborový systém"
 
 #: src/cinnamon-util.c:244
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:129
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:132
 msgid "Search"
 msgstr "Hledat"
 
@@ -71,8 +72,7 @@ msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
 #: src/gvc/gvc-mixer-control.c:1082
-#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:117
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:117
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:95
 msgid "Disabled"
 msgstr "Zakázáno"
 
@@ -96,24 +96,51 @@ msgstr[2] "%u vstupů"
 msgid "System Sounds"
 msgstr "Systémové zvuky"
 
-#: js/misc/util.js:89
+#: js/misc/docInfo.js:76
+msgid "Problem opening file"
+msgstr "Problém s otevíráním souboru"
+
+#: js/misc/docInfo.js:77
+msgid "There was a problem opening the selected file."
+msgstr "Vyskytl se problém s otevíráním souboru."
+
+#: js/misc/docInfo.js:78
+msgid ""
+"  Please check to see if you have the proper permissions to access this "
+"resource,"
+msgstr ""
+"  Prosím zkontrolujte jestli máte patřičná oprávnění k otevření souboru"
+
+#: js/misc/docInfo.js:79
+msgid ""
+" or try manually mounting the file's enclosing volume.\n"
+"\n"
+msgstr ""
+" nebo zkuste manuálně připojit oddíl se souborem\n"
+"\n"
+
+#: js/misc/docInfo.js:80
+msgid "The file uri is: "
+msgstr "Uri souboru je: "
+
+#: js/misc/util.js:98
 msgid "Command not found"
 msgstr "Příkaz nenalezen"
 
-#: js/misc/util.js:116
+#: js/misc/util.js:126
 msgid "Could not parse command:"
 msgstr "Nelze zpracovat příkaz:"
 
-#: js/misc/util.js:124
+#: js/misc/util.js:134
 #, c-format
 msgid "Execution of '%s' failed:"
 msgstr "Spouštění '%s' skončilo chybou:"
 
-#: js/ui/applet.js:410
+#: js/ui/applet.js:413
 msgid "Remove this applet"
 msgstr "Odstranit tento applet"
 
-#: js/ui/applet.js:423 js/ui/desklet.js:226
+#: js/ui/applet.js:426 js/ui/desklet.js:226
 msgid "Configure..."
 msgstr "Nastavit..."
 
@@ -183,8 +210,8 @@ msgid "tray"
 msgstr "oznamovací oblast"
 
 #: js/ui/keyboard.js:555
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:112
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:161
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:106
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:162
 msgid "Keyboard"
 msgstr "Klávesnice"
 
@@ -204,11 +231,11 @@ msgstr "Webová stránka"
 msgid "Reload Code"
 msgstr "Znovunačíst kód"
 
-#: js/ui/main.js:410
+#: js/ui/main.js:419
 msgid "Running in software rendering mode"
 msgstr "Režim softwarového vykreslování"
 
-#: js/ui/main.js:411
+#: js/ui/main.js:420
 msgid ""
 "Cinnamon is currently running without video hardware acceleration and, as a "
 "result, you may observe much higher than normal CPU usage.\n"
@@ -218,7 +245,7 @@ msgstr ""
 "zaznamenat větší využití CPU, než obvykle\n"
 "\n"
 
-#: js/ui/main.js:412
+#: js/ui/main.js:421
 msgid ""
 "There could be a problem with your drivers or some other issue.  For the "
 "best experience, it is recommended that you only use this mode for"
@@ -226,88 +253,68 @@ msgstr ""
 "Může se objevit problém s ovladači, či jiná obtíž. Pro lepší uživatelský "
 "zážitek je doporučeno používat tento mód pouze pro"
 
-#: js/ui/main.js:413
+#: js/ui/main.js:422
 msgid " troubleshooting purposes."
 msgstr " testovací účely"
 
-#: js/ui/main.js:468
+#: js/ui/main.js:477
 msgid "WORKSPACE"
 msgstr "PLOCHA"
 
 #: js/ui/messageTray.js:448
-#: files/usr/share/cinnamon/applets/calendar@cinnamon.org/applet.js:14
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:204
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:213
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
 
-#: js/ui/messageTray.js:1251
+#: js/ui/messageTray.js:1249
 msgid "Open"
 msgstr "Otevřít"
 
-#: js/ui/messageTray.js:1258
+#: js/ui/messageTray.js:1256
 #: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:58
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:491
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:69
 msgid "Remove"
 msgstr "Odstranit"
 
-#: js/ui/messageTray.js:1814
+#: js/ui/messageTray.js:1812
 msgid "System Information"
 msgstr "Informace o systému"
 
-#: js/ui/panel.js:426
-#: files/usr/share/cinnamon/applets/brightness@cinnamon.org/applet.js:148
-#: files/usr/share/cinnamon/applets/settings@cinnamon.org/applet.js:28
-msgid "Settings"
-msgstr "Nastavení"
+#: js/ui/panel.js:439
+msgid "Troubleshoot ..."
+msgstr "Řešení problémů ..."
 
-#: js/ui/panel.js:428 files/usr/lib/cinnamon-settings/modules/cs_themes.py:17
-msgid "Themes"
-msgstr "Motivy"
-
-#: js/ui/panel.js:431 files/usr/lib/cinnamon-settings/modules/cs_applets.py:14
-msgid "Applets"
-msgstr "Aplety"
-
-#: js/ui/panel.js:434 files/usr/lib/cinnamon-settings/modules/cs_panel.py:9
-msgid "Panel"
-msgstr "Panel"
-
-#: js/ui/panel.js:442
-msgid "All settings"
-msgstr "Všechna nastavení"
-
-#: js/ui/panel.js:447
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:147
-msgid "Troubleshoot"
-msgstr "Řešit problém"
-
-#: js/ui/panel.js:448
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:148
+#: js/ui/panel.js:440
 msgid "Restart Cinnamon"
 msgstr "Restartovat Cinnamon"
 
-#: js/ui/panel.js:452
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:152
+#: js/ui/panel.js:444
 msgid "Looking Glass"
 msgstr "Lupa"
 
-#: js/ui/panel.js:456
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:156
+#: js/ui/panel.js:448
 msgid "Restore all settings to default"
 msgstr "Obnovit vše do výchozího nastavení"
 
-#: js/ui/panel.js:466
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:166
+#: js/ui/panel.js:460
 msgid "Panel Edit mode"
 msgstr "Editační režim panelu"
 
-#: js/ui/panel.js:490
+#: js/ui/panel.js:482
+msgid "Add applets to the panel"
+msgstr "Přidat applety na panel"
+
+#: js/ui/panel.js:485
 msgid "Panel settings"
 msgstr "Nastavení panelu"
 
-#: js/ui/panel.js:493
-msgid "Add applets to the panel"
-msgstr "Přidat applety na panel"
+#: js/ui/panel.js:488 files/usr/lib/cinnamon-settings/modules/cs_themes.py:17
+msgid "Themes"
+msgstr "Motivy"
+
+#: js/ui/panel.js:491
+msgid "All settings"
+msgstr "Všechna nastavení"
 
 #: js/ui/placesManager.js:120
 #, c-format
@@ -326,64 +333,64 @@ msgstr "Připojit k..."
 msgid "Please enter a command:"
 msgstr "Prosím zadejte příkaz"
 
-#: js/ui/windowManager.js:974
+#: js/ui/windowManager.js:979
 msgid "Hold <Super> to enter snap mode"
 msgstr "Stiskněte a držte <Super> k vstoupení do příchytného módu"
 
-#: js/ui/windowManager.js:976
+#: js/ui/windowManager.js:981
 msgid "Hold <Alt> to enter snap mode"
 msgstr "Stiskněte a držte <Alt> k vstoupení do příchytného módu"
 
-#: js/ui/windowManager.js:978
+#: js/ui/windowManager.js:983
 msgid "Hold <Ctrl> to enter snap mode"
 msgstr "Stiskněte a držte <Ctrl> k vstoupení do příchytného módu"
 
-#: js/ui/windowManager.js:980
+#: js/ui/windowManager.js:985
 msgid "Hold <Shift> to enter snap mode"
 msgstr "Stiskněte a držte <Shift> k vstoupení do příchytného módu"
 
-#: js/ui/windowManager.js:982
+#: js/ui/windowManager.js:987
 msgid "Use the arrow keys to shift workspaces"
 msgstr "Použijte kurzorové šipky k změně pracovní plochy"
 
 #: js/ui/workspace.js:1492
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:44
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:208
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:88
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:108
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:80
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:209
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:153
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:109
 msgid "Close"
 msgstr "Zavřít"
 
 #: js/ui/workspace.js:1496
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:53
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:89
 msgid "Restore"
 msgstr "Obnovit"
 
 #: js/ui/workspace.js:1498
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:53
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:89
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:89
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:154
 msgid "Minimize"
 msgstr "Minimalizovat"
 
 #: js/ui/workspace.js:1501 js/ui/workspace.js:1574
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:56
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:90
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:92
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:155
 msgid "Maximize"
 msgstr "Maximalizovat"
 
 #: js/ui/workspace.js:1504
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:59
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:95
 msgid "Move to left workspace"
 msgstr "Přesunout na plochu vlevo"
 
 #: js/ui/workspace.js:1507
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:62
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:98
 msgid "Move to right workspace"
 msgstr "Přesunout na plochu vpravo"
 
 #: js/ui/workspace.js:1510 js/ui/workspace.js:1559
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:65
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:73
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:101
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:116
 msgid "Visible on all workspaces"
 msgstr "Viditelné na všech plochách"
 
@@ -392,63 +399,64 @@ msgid "Move to a new workspace"
 msgstr "Přesunout na novou plochu"
 
 #: js/ui/workspace.js:1523
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:90
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:133
 #, c-format
 msgid "Move to monitor %d"
 msgstr "Přesunout na monitor %d"
 
 #: js/ui/workspace.js:1557
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:69
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:112
 msgid "Only on this workspace"
 msgstr "Pouze na této ploše"
 
 #: js/ui/workspace.js:1572
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:56
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:92
 msgid "Unmaximize"
 msgstr "Zmenšit"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:44
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:48
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:62
 msgid "Accessibility"
 msgstr "Zpřístupnění"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:56
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:60
 #: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:34
 msgid "Zoom"
 msgstr "Přiblížit"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:67
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:71
 msgid "Screen Keyboard"
 msgstr "Klávesnice na obrazovce"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:71
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:75
 msgid "Visual Alerts"
 msgstr "Vizuální upozornění"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:74
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:78
 msgid "Sticky Keys"
 msgstr "Kombinace kláves jedním prstem"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:77
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:81
 msgid "Slow Keys"
 msgstr "Pomalé klávesy"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:80
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:84
 msgid "Bounce Keys"
 msgstr "Vícenásobné stisky kláves"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:83
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:87
 msgid "Mouse Keys"
 msgstr "Myš klávesnicí"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:87
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:91
 msgid "Universal Access Settings"
 msgstr "Nastavení zpřístupnění"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:142
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:146
 msgid "High Contrast"
 msgstr "Vysoký kontrast"
 
-#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:179
+#: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:183
 msgid "Large Text"
 msgstr "Velké písmo"
 
@@ -476,96 +484,111 @@ msgstr "Ztlumit jas monitoru při chodu na baterii"
 msgid "Brightness not available"
 msgstr "Nastavení jasu není dostupné"
 
-#: files/usr/share/cinnamon/applets/calendar@cinnamon.org/applet.js:72
+#: files/usr/share/cinnamon/applets/brightness@cinnamon.org/applet.js:148
+#: files/usr/share/cinnamon/applets/settings@cinnamon.org/applet.js:28
+msgid "Settings"
+msgstr "Nastavení"
+
+#: files/usr/share/cinnamon/applets/calendar@cinnamon.org/applet.js:77
+#: files/usr/share/cinnamon/desklets/clock@cinnamon.org/desklet.js:33
 msgid "Date and Time Settings"
 msgstr "Nastavení data a času"
 
-#: files/usr/share/cinnamon/applets/calendar@cinnamon.org/applet.js:86
+#: files/usr/share/cinnamon/applets/calendar@cinnamon.org/applet.js:90
 msgid "%A %B %e, %Y"
 msgstr "%A %B %e, %Y"
 
 #: files/usr/share/cinnamon/applets/expo@cinnamon.org/applet.js:20
-#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:118
 msgid "Expo"
 msgstr "Expo"
 
-#: files/usr/share/cinnamon/applets/keyboard@cinnamon.org/applet.js:74
+#: files/usr/share/cinnamon/applets/keyboard@cinnamon.org/applet.js:77
 msgid "Show Keyboard Layout"
 msgstr "Zobrazit rozložení klávesnice"
 
-#: files/usr/share/cinnamon/applets/keyboard@cinnamon.org/applet.js:78
+#: files/usr/share/cinnamon/applets/keyboard@cinnamon.org/applet.js:81
 msgid "Show Character Table"
 msgstr "Zobrazit tabulku se speciálními znaky"
 
-#: files/usr/share/cinnamon/applets/keyboard@cinnamon.org/applet.js:82
-msgid "Region and Language Settings"
-msgstr "Regionální a jazyková nastavení"
+#: files/usr/share/cinnamon/applets/keyboard@cinnamon.org/applet.js:85
+msgid "Keyboard Settings"
+msgstr "Nastavení klávesnice"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:221
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:172
+msgid "Please provide your password to uninstall this application"
+msgstr "Prosím poskytněte heslo k odinstalaci aplikace"
+
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:245
 msgid "Add to panel"
 msgstr "Přidat do panelu"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:224
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:248
 msgid "Add to desktop"
 msgstr "Přidat na plochu"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:228
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:252
 msgid "Remove from favorites"
 msgstr "Odebrat z oblíbených"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:231
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:255
 msgid "Add to favorites"
 msgstr "Přidat do oblíbených"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:472
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:259
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:508
+msgid "Uninstall"
+msgstr "Odebrat"
+
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:508
 #: files/usr/share/cinnamon/applets/recent@cinnamon.org/applet.js:70
 msgid "Clear list"
 msgstr "Vymazat seznam"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:509
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:546
 msgid "All Applications"
 msgstr "Všechny aplikace"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:534
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:573
 msgid "Places"
 msgstr "Místa"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:554
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:593
 msgid "Recent Files"
 msgstr "Naposledy otevřené soubory"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:798
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:87
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:840
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:152
 msgid "Menu"
 msgstr "Menu"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1571
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:120
-#: files/usr/lib/cinnamon-screensaver-lock-dialog/cinnamon-screensaver-lock-dialog.py:37
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1666
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:123
+#: files/usr/lib/cinnamon-screensaver-lock-dialog/cinnamon-screensaver-lock-dialog.py:36
 msgid "Lock screen"
 msgstr "Zamknout obrazovku"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1572
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1667
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:9
 msgid "Lock the screen"
 msgstr "Uzamknout obrazovku"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1601
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1696
 msgid "Logout"
 msgstr "Odhlásit"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1602
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1697
 msgid "Leave the session"
 msgstr "Opustit sezení"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1618
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1713
 msgid "Quit"
 msgstr "Konec"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1619
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1714
 msgid "Shutdown the computer"
 msgstr "Vypnout počítač"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1726
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1839
 msgid "Type to search..."
 msgstr "Vyhledávejte psaním..."
 
@@ -610,12 +633,12 @@ msgid "connection failed"
 msgstr "připojení se nezdařilo"
 
 #: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:596
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1553
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1569
 msgid "More..."
 msgstr "Další..."
 
 #: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:632
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1488
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1504
 msgid "Connected (private)"
 msgstr "Připojeno (osobní)"
 
@@ -623,153 +646,157 @@ msgstr "Připojeno (osobní)"
 msgid "Auto Ethernet"
 msgstr "Automatické připojení k Ethernetu"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:774
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:790
 msgid "Auto broadband"
 msgstr "Automatické připojení k mobilní síti"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:777
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:793
 msgid "Auto dial-up"
 msgstr "Automatické připojení přes vytáčení spojení"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:899
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1500
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:915
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1516
 #, c-format
 msgid "Auto %s"
 msgstr "Automaticky %s"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:901
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:917
 msgid "Auto bluetooth"
 msgstr "Automatické připojení bluetooth"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1502
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1518
 msgid "Auto wireless"
 msgstr "Automatické bezdrátové připojení"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1590
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1606
 msgid "Network Manager"
 msgstr "Správce sítí"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1623
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1642
 msgid "Enable networking"
 msgstr "Povolit síťové služby"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1635
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1654
 msgid "Wired"
 msgstr "Drátová síť"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1646
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1665
 msgid "Wireless"
 msgstr "Bezdrátová síť"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1656
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1675
 msgid "Mobile broadband"
 msgstr "Mobilní připojení"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1666
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1685
 msgid "VPN Connections"
 msgstr "VPN připojení"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1677
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1696
 msgid "Network Settings"
 msgstr "Nastavení sítě"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1828
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1697
+msgid "Network Connections"
+msgstr "Síťová spojení"
+
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1850
 msgid "Connection failed"
 msgstr "Připojení selhalo"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1829
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1851
 msgid "Activation of network connection failed"
 msgstr "Aktivace připojení selhala"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2086
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2108
 msgid "Networking is disabled"
 msgstr "Síť je vypnutá"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2105
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2127
 msgid "No connection"
 msgstr "Nepřipojen"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2111
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2133
 msgid "Connecting to the cellular network..."
 msgstr "Připojování k mobilní síti..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2115
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2137
 msgid "Connecting to the wireless network..."
 msgstr "Připojování k bezdrátové síti..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2119
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2141
 msgid "Connecting to the wired network..."
 msgstr "Připojování k drátové síti..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2123
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2145
 msgid "Connecting to the VPN..."
 msgstr "Připojování k síti VPN..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2129
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2151
 msgid "Connecting to the network..."
 msgstr "Připojování k síti..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2145
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2167
 msgid "Connected to the wireless network"
 msgstr "Připojen k bezdrátové síti"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2148
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2170
 msgid "Wireless connection"
 msgstr "Bezdrátové připojení"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2158
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2180
 msgid "Connected to the wired network"
 msgstr "Připojen k drátové síti"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2169
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2174
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2191
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2196
 msgid "Connected to the cellular network"
 msgstr "Připojen k mobilní síti"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2179
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2201
 msgid "Connected to the VPN"
 msgstr "Připojen k VPN"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2185
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2207
 msgid "Connected to the network"
 msgstr "Připojen k síti"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:36
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:63
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:39
+#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:67
 msgid "Notifications"
 msgstr "Oznámení"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:46
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:49
 msgid "Clear notifications"
 msgstr "Vymazat upozornění"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:237
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:246
 msgid "No notifications"
 msgstr "Žádná upozornění"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:240
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:249
 msgid " notification"
 msgstr " upozornění"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:243
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:252
 msgid " notifications"
 msgstr " upozornění"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:257
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:266
 msgid " (Just now)"
 msgstr " (Právě teď)"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:260
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:269
 #, c-format
 msgid " (%s seconds ago)"
 msgstr " (před %s vteřinami)"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:263
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:272
 #, c-format
 msgid " (%s minute ago)"
 msgstr " (před %s minutou)"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:266
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:275
 #, c-format
 msgid " (%s minutes ago)"
 msgstr " (před %s minutami)"
@@ -779,8 +806,8 @@ msgid "Launch"
 msgstr "Spustit"
 
 #: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:50
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:503
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:272
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:81
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:719
 msgid "Add"
 msgstr "Přidat"
 
@@ -788,74 +815,59 @@ msgstr "Přidat"
 msgid "Edit"
 msgstr "Upravit"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:102
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:96
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:249
 msgid "AC adapter"
 msgstr "Napájecí zdroj"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:104
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:98
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:252
 msgid "Laptop battery"
 msgstr "Baterie notebooku"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:106
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:100
 msgid "UPS"
 msgstr "Záložní zdroj UPS"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:108
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:102
 msgid "Monitor"
 msgstr "Monitor"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:110
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:30
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:104
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:32
 msgid "Mouse"
 msgstr "Myš"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:114
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:108
 msgid "PDA"
 msgstr "PDA"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:116
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:110
 msgid "Cell phone"
 msgstr "Mobilní telefon"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:118
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:112
 msgid "Media player"
 msgstr "Přehrávač médií"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:120
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:114
 msgid "Tablet"
 msgstr "Tablet"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:122
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:116
+#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:38
 msgid "Computer"
 msgstr "Počítač"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:180
-#: files/usr/share/cinnamon/applets/xrandr@cinnamon.org/applet.js:45
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:64
-msgid "Display"
-msgstr "Displej"
-
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:182
-msgid "Show percentage"
-msgstr "Zobrazit procenta"
-
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:187
-msgid "Show time remaining"
-msgstr "Zobrazit zbývající čas"
-
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:192
-msgid "Hide label"
-msgstr "Skrýt popisek"
-
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:200
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:176
 msgid "Power Settings"
 msgstr "Nastavení napájení"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:249
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:205
 msgid "Estimating..."
 msgstr "Odhaduje se…"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:256
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:212
 #, c-format
 msgid "%d hour remaining"
 msgid_plural "%d hours remaining"
@@ -863,26 +875,26 @@ msgstr[0] "zbývá %d hodina"
 msgstr[1] "zbývají %d hodiny"
 msgstr[2] "zbývá %d hodin"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:259
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:215
 #, c-format
 msgid "%d %s %d %s remaining"
 msgstr "Zbývá %d %s %d %s"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:261
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:217
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "hodina"
 msgstr[1] "hodiny"
 msgstr[2] "hodin"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:261
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:217
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "minuta"
 msgstr[1] "minuty"
 msgstr[2] "minut"
 
-#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:264
+#: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:220
 #, c-format
 msgid "%d minute remaining"
 msgid_plural "%d minutes remaining"
@@ -907,13 +919,12 @@ msgid "Open file manager"
 msgstr "Otevřít správce souborů"
 
 #: files/usr/share/cinnamon/applets/scale@cinnamon.org/applet.js:20
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:80
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:84
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:88
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:92
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:96
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:100
-#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:119
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:66
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:70
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:74
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:78
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:82
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:86
 msgid "Scale"
 msgstr "Změna velikosti"
 
@@ -934,93 +945,94 @@ msgstr "POUŽIL JSI KLÁVESOVOU ZKRATKU"
 msgid "Show desktop"
 msgstr "Zobrazit pracovní plochu"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:114
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:116
 msgid "Playing"
 msgstr "Přehrávání"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:115
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:117
 msgid "Paused"
 msgstr "Pozastaveno"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:116
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:118
 msgid "Stopped"
 msgstr "Zastaveno"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:394
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:575
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:396
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:574
 msgid "Unknown Artist"
 msgstr "Neznámý interpret"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:395
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:579
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:397
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:578
 msgid "Unknown Album"
 msgstr "Neznámé album"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:396
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:583
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:398
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:582
 msgid "Unknown Title"
 msgstr "Neznámý název"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:407
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:409
 msgid "Previous"
 msgstr "Předchozí"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:410
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:136
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:412
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:139
 msgid "Play"
 msgstr "Hrát"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:413
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:415
 msgid "Stop"
 msgstr "Stop"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:416
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:418
 msgid "Next"
 msgstr "Další"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:452
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:454
 msgid "Open Player"
 msgstr "Otevřít přehrávač"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:462
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:464
 msgid "Quit Player"
 msgstr "Ukončit přehrávač"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:841
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:862
 msgid "Mute output"
 msgstr "Ztlumit výstup"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:842
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:863
 msgid "Mute input"
 msgstr "Ztlumit vstup"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1009
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1095
 msgid "Launch player..."
 msgstr "Spustit přehrávač..."
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1022
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1084
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1085
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1090
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1091
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1110
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1111
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1108
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1170
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1171
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1176
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1177
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1196
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1197
 msgid "Volume"
 msgstr "Hlasitost"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1029
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1115
 msgid "Microphone"
 msgstr "Mikrofon"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1036
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1122
 msgid "Sound Settings"
 msgstr "Nastavení zvuku"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1038
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1124
 msgid "Output device..."
 msgstr "Výstupní zařízení..."
 
 #: files/usr/share/cinnamon/applets/trash@cinnamon.org/applet.js:21
+#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:42
 msgid "Trash"
 msgstr "Koš"
 
@@ -1045,7 +1057,7 @@ msgid "Empty Trash?"
 msgstr "Vysypat koš?"
 
 #: files/usr/share/cinnamon/applets/trash@cinnamon.org/applet.js:118
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:277
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:724
 msgid "Cancel"
 msgstr "Storno"
 
@@ -1053,45 +1065,50 @@ msgstr "Storno"
 msgid "Empty"
 msgstr "Prázdný"
 
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:77
+#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:81
 msgid "Account Details"
 msgstr "Podrobnosti o účtu"
 
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:87
+#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:91
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:22
 msgid "Lock Screen"
 msgstr "Zamknout obrazovku"
 
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:105
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:117
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:123
+#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:109
+#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:121
+#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:127
 msgid "Switch User"
 msgstr "Přepnout uživatele"
 
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:110
+#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:114
 msgid "Guest Session"
 msgstr "Sezení hosta"
 
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:129
+#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:133
 msgid "Log Out..."
 msgstr "Odhlásit…"
 
-#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:135
+#: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:139
 msgid "Power Off..."
 msgstr "Vypnout..."
 
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:47
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:83
 msgid "Close all"
 msgstr "Zavřít vše"
 
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:50
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:86
 msgid "Close others"
 msgstr "Zavřít ostatní"
+
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:104
+msgid "Restore to full opacity"
+msgstr "Obnovit na plnou neprůhlednost"
 
 #: files/usr/share/cinnamon/applets/windows-quick-list@cinnamon.org/applet.js:24
 msgid "All windows"
 msgstr "Všechna okna"
 
-#: files/usr/share/cinnamon/applets/windows-quick-list@cinnamon.org/applet.js:106
+#: files/usr/share/cinnamon/applets/windows-quick-list@cinnamon.org/applet.js:108
 msgid "No open windows"
 msgstr "Žádná otevřená okna"
 
@@ -1099,11 +1116,18 @@ msgstr "Žádná otevřená okna"
 msgid "Switch workspace"
 msgstr "Přepnout pracovní plochu"
 
+#. #-#-#-#-#  uniq-cinnamon-json.pot  #-#-#-#-#
+#. power@cinnamon.org->settings-schema.json->labelinfo->description
+#: files/usr/share/cinnamon/applets/xrandr@cinnamon.org/applet.js:45
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:60
+msgid "Display"
+msgstr "Displej"
+
 #: files/usr/share/cinnamon/applets/xrandr@cinnamon.org/applet.js:88
 msgid "Configure display settings..."
 msgstr "Upravit nastavení displeje..."
 
-#: files/usr/share/cinnamon/desklets/clock@cinnamon.org/desklet.js:20
+#: files/usr/share/cinnamon/desklets/clock@cinnamon.org/desklet.js:21
 msgid "Clock"
 msgstr "Hodiny"
 
@@ -1119,136 +1143,115 @@ msgstr "Upravit spouštěč"
 msgid "Photo Frame"
 msgstr "Fotorámeček"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:39
-msgid "Switch to Normal Mode"
-msgstr "Přepnout do běžného režimu"
-
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:40
-msgid "Switch to Advanced Mode"
-msgstr "Přepnout do pokročilého režimu"
-
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:55
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:51
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:56
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:52
 msgid "Preferences"
 msgstr "Nastavení"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:57
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:53
 msgid "Hardware"
 msgstr "Hardware"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:58
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:54
 msgid "Administration"
 msgstr "Správa"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:63
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:59
 msgid "Networking"
 msgstr "Síťové služby"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:63
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:59
 msgid "network, wireless, wifi, ethernet, broadband, internet"
 msgstr "sít, bezdrátové, wifi, ethernetové, širokopásmové, internet"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:64
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:60
 msgid "display, screen, monitor, layout, resolution, dual, lcd"
 msgstr "displej, obrazovka, monitor, rozvržení, rozlišení, dual, lcd"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:65
-msgid "Regional Settings"
-msgstr "Místní nastavení"
-
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:65
-msgid "region, layout, keyboard, language"
-msgstr "region, rozložení, klávesnice, jazyk"
-
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:66
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:61
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:66
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:61
 msgid "bluetooth, dongle, transfer, mobile"
 msgstr "bluetooth,  klíč, přenos, mobilní"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:67
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:474
-msgid "Universal Access"
-msgstr "Univerzální přístup"
-
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:67
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:62
 msgid "magnifier, talk, access, zoom, keys, contrast"
 msgstr "lupa, mluvení, přístup, přiblížení, kontrast"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:68
-msgid "Power Management"
-msgstr "Správa napájení"
-
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:68
-msgid "power, suspend, hibernate, laptop, desktop"
-msgstr "napájení, uspat, pozastavit, laptop, desktop"
-
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:69
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:63
 msgid "Sound"
 msgstr "Zvuk"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:69
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:63
 msgid "sound, speakers, headphones, test"
 msgstr "Zvuk, reproduktory, sluchátka, test"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:70
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:64
 msgid "Color"
 msgstr "Barevnost"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:70
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:64
 msgid "color, profile, display, printer, output"
 msgstr "Barva, profil, zobrazení, výstup"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:75
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:65
+msgid "Graphics Tablet"
+msgstr "Grafický tablet"
+
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:65
+msgid "wacom, digitize, tablet, graphics, calibrate, stylus"
+msgstr "wacom, digitalizovat, tablet, grafika, calibrace, stylus"
+
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:70
 msgid "Printers"
 msgstr "Tiskárny"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:75
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:70
 msgid "printers, laser, inkjet"
 msgstr "tiskárny, laser, inkoustové"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:76
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:71
 msgid "Firewall"
 msgstr "Firewall"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:76
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:71
 msgid "firewall, block, filter, programs"
 msgstr "firewall, blokovat, třídit, programy"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:77
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:72
 msgid "Languages"
 msgstr "Jazyky"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:77
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:72
 msgid "language, install, foreign"
 msgstr "jazyky, instalovat, cizí"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:78
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:73
 msgid "Login Screen"
 msgstr "Přihlašovací obrazovka"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:78
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:73
 msgid "login, mdm, gdm, manager, user, password, startup, switch"
 msgstr "přihlášení, mdm, gdm, správce, uživatel, heslo, zapínání, přepínání"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:79
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:74
 msgid "Startup Programs"
 msgstr "Programy při přihlášení"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:79
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:74
 msgid "startup, programs, boot, init, session"
 msgstr "zapínání, programy, boot, zahájení, sezení"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:80
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:75
 msgid "Device Drivers"
 msgstr "Ovladače zařízení"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:80
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:75
 msgid ""
 "video, driver, wifi, card, hardware, proprietary, nvidia, radeon, nouveau, "
 "fglrx"
@@ -1256,166 +1259,166 @@ msgstr ""
 "grafika, ovladač, wifi, karta, hardware, proprietní, nvidia, radeon, "
 "nouveau, fglrx"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:81
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:76
 msgid "Software Sources"
 msgstr "Zdroje softwaru"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:81
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:76
 msgid "ppa, repository, package, source, download"
 msgstr "ppa, repozitáře, balíčky, zdroje, download"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:82
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:77
 msgid "user, users, account, accounts, group, groups, password"
 msgstr "uživatel, uživatelé, účet, účty, skupina, skupiny, heslo"
 
-#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:155
+#: files/usr/lib/cinnamon-settings/cinnamon-settings.py:146
 msgid "All Settings"
 msgstr "Všechna nastavení"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:49
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:50
 msgid "The group name cannot contain space characters"
 msgstr "Jméno skupiny nemůže obsahovat mezery"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:158
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:336
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:159
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:332
 msgid "New password"
 msgstr "Nové heslo"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:158
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:340
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:159
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:336
 msgid "Confirm password"
 msgstr "Potvrďte heslo"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:162
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:351
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:163
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:347
 msgid "Generate a password"
 msgstr "Vygenerovat heslo"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:168
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:174
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:357
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:363
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:169
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:175
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:353
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:359
 msgid "Your new password needs to be at least 8 characters long"
 msgstr "Vaše nové heslo musí být dlouhé aspoň 8 znaků"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:182
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:371
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:183
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:367
 msgid "Show password"
 msgstr "Ukázat heslo"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:188
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:377
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:189
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:373
 msgid "An error occured. Your password was not changed."
 msgstr "Nastala chyba. Vaše heslo nebylo změněno"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:199
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:388
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:200
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:384
 msgid "Change"
 msgstr "Změnit"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:246
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:469
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:247
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:465
 msgid "Passwords do not match"
 msgstr "Hesla se neshodují"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:250
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:473
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:251
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:469
 msgid "Too short"
 msgstr "Příliš krátké"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:253
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:476
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:254
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:472
 msgid "OK"
 msgstr "Budiž"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:278
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:456
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:279
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:460
 msgid "Standard"
 msgstr "Standardní"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:279
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:457
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:280
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:461
 msgid "Administrator"
 msgstr "Administrátor"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:289
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:486
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:290
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:490
 msgid "Account Type"
 msgstr "Typ účtu"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:289
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:290
 msgid "Full Name"
 msgstr "Celé jméno"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:289
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:290
 msgid "Username"
 msgstr "Uživatelské jméno"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:310
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:311
 msgid "The username cannot contain space characters"
 msgstr "Uživatelské jméno nemůže obsahovat prázdné znaky"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:372
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:373
 msgid "Users"
 msgstr "Uživatelé"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:373
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:486
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:374
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:490
 msgid "Groups"
 msgstr "Skupiny"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:421
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:425
 msgid "Click to change the picture"
 msgstr "Klepněte pro změnu obrázku"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:426
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:98
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:430
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:101
 msgid "Browse for more pictures..."
 msgstr "Procházet další obrázky…"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:462
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:466
 msgid "Click to change the name"
 msgstr "Klepněte pro změnu jména"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:469
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:473
 msgid "Click to change the password"
 msgstr "Klepněte pro změnu hesla"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:479
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:483
 msgid "Click to change the groups"
 msgstr "Klepněte pro změnu skupin"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:486
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:490
 msgid "Picture"
 msgstr "Obrázek"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:486
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:241
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:490
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:247
 msgid "Name"
 msgstr "Jméno"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:486
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:490
 msgid "Password"
 msgstr "Heslo"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:553
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:239
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:557
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:235
 msgid "Images"
 msgstr "Obrázky"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:668
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:672
 msgid "No password set"
 msgstr "Heslo nenastaveno"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:670
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:674
 msgid "Set at login"
 msgstr "Nastavit při přihlášení"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:693
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:697
 msgid "This user is currently logged in"
 msgstr "Tento uživatel je právě přihlášen"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:706
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:710
 #, c-format
 msgid ""
 "Are you sure you want to permanently delete %s and all the files associated "
@@ -1424,35 +1427,43 @@ msgstr ""
 "Jste si jist, že chcete trvale odstranit %s a všechny soubory spojené s "
 "tímto uživatelem?"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:764
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:768
 #, c-format
 msgid "This group is set as %s's primary group"
 msgstr "Tato skupina je nastavena jako primární pro uživatele %s"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:776
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:780
 #, c-format
 msgid "Are you sure you want to permanently delete %s?"
 msgstr "Opravdu chcete trvale smazat %s?"
 
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:791
-#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:802
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:795
+#: files/usr/lib/cinnamon-settings-users/cinnamon-settings-users.py:806
 msgid "Group Name"
 msgstr "Název skupiny"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_applets.py:7
-#: files/usr/lib/cinnamon-settings/modules/cs_applets.py:11
+#: files/usr/lib/cinnamon-settings/modules/cs_applets.py:10
 msgid "applet"
 msgstr "applet"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_applets.py:12
+#: files/usr/lib/cinnamon-settings/modules/cs_applets.py:11
 msgid "applets"
 msgstr "applety"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_applets.py:13
+#: files/usr/lib/cinnamon-settings/modules/cs_applets.py:12
 msgid "panel"
 msgstr "panel"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_applets.py:26
+#: files/usr/lib/cinnamon-settings/modules/cs_applets.py:13
+msgid "Manage Cinnamon applets"
+msgstr "Správa Cinnamon appletů"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_applets.py:14
+msgid "Applets"
+msgstr "Aplety"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_applets.py:29
 msgid ""
 "You can remove specific instances in panel edit mode via the context menu."
 msgstr "Specifické instance můžete v režimu editování panelu odebrat"
@@ -1464,12 +1475,12 @@ msgstr "Tapeta"
 #. #-#-#-#-#  uniq-cinnamon-json.pot  #-#-#-#-#
 #. photoframe@cinnamon.org->settings-schema.json->effect->options
 #: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:23
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:80
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:84
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:88
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:92
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:96
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:100
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:66
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:70
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:74
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:78
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:82
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:86
 msgid "None"
 msgstr "Žádná"
 
@@ -1505,7 +1516,7 @@ msgstr "Roztáhnout"
 msgid "Spanned"
 msgstr "Roztaženo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:42
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:43
 msgid "background, picture, screenshot, slideshow"
 msgstr "pozadí, obrázek, screenshot, prezentace"
 
@@ -1513,122 +1524,74 @@ msgstr "pozadí, obrázek, screenshot, prezentace"
 msgid "Backgrounds"
 msgstr "Pozadí"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:352
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:510
-msgid "Add wallpapers"
-msgstr "Přidat pozadí"
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:47
+msgid "Change your desktop's background"
+msgstr "Změna pozadí plochy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:375
-msgid "Folder"
-msgstr "Složka"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:383
-msgid "Recursive listing"
-msgstr "Rekurzivní výpis"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:388
-msgid "Delay"
-msgstr "Prodleva"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:499
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:77
 msgid "Remove wallpaper"
 msgstr "Odebrat tapetu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:529
-msgid "Advanced options"
-msgstr "Pokročilá nastavení"
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:88
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:472
+msgid "Add wallpapers"
+msgstr "Přidat pozadí"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:537
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:112
 msgid "Picture aspect"
 msgstr "Vlastnosti obrázku"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:543
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:118
 msgid "Gradient"
 msgstr "Přechod"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:550
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:125
 msgid "Colors"
 msgstr "Barvy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:10
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:513
+msgid "Folder"
+msgstr "Složka"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:521
+msgid "Recursive listing"
+msgstr "Rekurzivní výpis"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_backgrounds.py:526
+msgid "Delay"
+msgstr "Prodleva"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:8
 msgid "time, date, calendar, format, network, sync"
 msgstr "čas, datum, kalendář, formát, sítě, synchronizace"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:12
+#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:9
 msgid "Date & Time"
 msgstr "Datum a čas"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:21
-msgid "Use network time"
-msgstr "Použít čas ze sítě"
+#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:12
+msgid "Manage date and time settings"
+msgstr "Nastavení data a času"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:94
-msgid "Region"
-msgstr "Oblast"
+#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:25
+msgid "Date Settings"
+msgstr "Nastavení data"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:116
-msgid "City"
-msgstr "Město"
+#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:33
+msgid "Date Format"
+msgstr "Formát data"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "January"
-msgstr "Leden"
+#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:34
+msgid "Use 24h clock"
+msgstr "Použít 24h formát"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "February"
-msgstr "Únor"
+#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:35
+msgid "Display the date"
+msgstr "Zobrazovat datum"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "March"
-msgstr "Březen"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "April"
-msgstr "Duben"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "May"
-msgstr "Květen"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "June"
-msgstr "Červen"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "July"
-msgstr "Červenec"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "August"
-msgstr "Srpen"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "September"
-msgstr "Září"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "October"
-msgstr "Říjen"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "November"
-msgstr "Listopad"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:178
-msgid "December"
-msgstr "Prosinec"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:222
-msgid ":"
-msgstr ":"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:229
-msgid "Date : "
-msgstr "Datum: "
-
-#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:231
-msgid "Time : "
-msgstr "Čas: "
+#: files/usr/lib/cinnamon-settings/modules/cs_calendar.py:36
+msgid "Display seconds"
+msgstr "Zobrazovat vteřiny"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_default.py:28
 msgid "_Web"
@@ -1638,9 +1601,11 @@ msgstr "_Web"
 msgid "_Mail"
 msgstr "_Pošta"
 
+#. #-#-#-#-#  uniq-cinnamon-json.pot  #-#-#-#-#
+#. menu@cinnamon.org->settings-schema.json->menu-label->description
 #: files/usr/lib/cinnamon-settings/modules/cs_default.py:30
-msgid "_Calendar"
-msgstr "_Kalendář"
+msgid "Text"
+msgstr "Text"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_default.py:34
 msgid "M_usic"
@@ -1651,158 +1616,169 @@ msgid "_Video"
 msgstr "_Video"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_default.py:36
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:43
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:44
 msgid "_Photos"
 msgstr "_Fotografie"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:40
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:41
 msgid "CD _audio"
 msgstr "Zvukové _CD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:40
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:41
 msgid "Select an application for audio CDs"
 msgstr "Vyberte aplikaci pro zvuková CD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:41
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:42
 msgid "_DVD video"
 msgstr "_DVD video"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:41
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:42
 msgid "Select an application for video DVDs"
 msgstr "Vyberte aplikaci pro DVD s videem"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:42
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:43
 msgid "_Music player"
 msgstr "_Hudební přehrávač"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:42
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:43
 msgid "Select an application to run when a music player is connected"
 msgstr ""
 "Vyberte aplikaci, která má být spuštěna po připojení hudebního přehrávače"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:43
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:44
 msgid "Select an application to run when a camera is connected"
 msgstr "Vyberte aplikaci, která má být spuštěna po připojení fotoaparátu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:44
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:45
 msgid "_Software"
 msgstr "_Software"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:44
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:45
 msgid "Select an application for software CDs"
 msgstr "Vyberte aplikaci pro CD se softwarem"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:52
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:53
 msgid "audio DVD"
 msgstr "zvukové DVD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:53
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:54
 msgid "blank Blu-ray disc"
 msgstr "prázdný disk Blu-ray"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:54
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:55
 msgid "blank CD disc"
 msgstr "prázdný disk CD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:55
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:56
 msgid "blank DVD disc"
 msgstr "prázdný disk DVD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:56
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:57
 msgid "blank HD DVD disc"
 msgstr "prázdný disk HD DVD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:57
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:58
 msgid "Blu-ray video disc"
 msgstr "videodisk Blu-ray"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:58
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:59
 msgid "e-book reader"
 msgstr "Čtečka elektronických knih"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:59
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:60
 msgid "HD DVD video disc"
 msgstr "videodisk HD DVD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:60
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:61
 msgid "Picture CD"
 msgstr "Picture CD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:61
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:62
 msgid "Super Video CD"
 msgstr "Super Video CD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:62
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:63
 msgid "Video CD"
 msgstr "Video CD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:63
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:64
 msgid "Windows software"
 msgstr "Software Windows"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:64
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:65
 msgid "Software"
 msgstr "Software"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:143
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:144
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:13
 msgid "Ask what to do"
 msgstr "Zeptat se, co dělat"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:145
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:146
 msgid "Open folder"
 msgstr "Otevřít složku"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:147
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:148
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:14
 msgid "Do nothing"
 msgstr "Nedělat nic"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:205
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:206
 msgid "Other Media"
 msgstr "Ostatní média"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:231
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:232
 msgid "_Type:"
 msgstr "_Typ:"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:234
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:235
 msgid "Select how other media should be handled"
 msgstr "Vyberte jak by měla být obsluhována ostatní média"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:306
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:307
 msgid "_Action:"
 msgstr "_Akce:"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_default.py:311
 msgid ""
 "media, defaults, applications, programs, removable, browser, email, "
-"calendar, music, videos, photos, images, cd, autostart"
+"calendar, music, videos, photos, images, cd, autostart, autoplay"
 msgstr ""
-"media, výchozí, aplikace, programy, odpojitelná, prohlížeč, email, kalendář, "
-"hudba, videa, fotky, obrázky, cd, autostart"
+"média, výchozí, aplikace, programy, odpojitelný, prohlížeč, email, kalendář, "
+"hudba, video, fotky, obrázky, cd, automatický start, automatické přehrávání"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:313
-msgid "Applications & Removable Media"
-msgstr "Aplikace & Odpojitelná média"
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:312
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:332
+msgid "Preferred Applications"
+msgstr "Preferované aplikace"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:330
-msgid "Default Applications"
-msgstr "Výchozí aplikace"
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:333
+msgid "Removable Media"
+msgstr "Vyměnitelná média"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:350
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:351
+msgid "Select preferred applications for file types"
+msgstr "Zvolit preferované aplikace pro typ souborů"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:372
 msgid "_Other Media..."
 msgstr "_Ostatní média…"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:354
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:376
 msgid "_Never prompt or start programs on media insertion"
 msgstr "_Nikdy se nedotazovat nebo spouštět programy na vloženém médiu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_default.py:359
+#: files/usr/lib/cinnamon-settings/modules/cs_default.py:381
 msgid "Select how media should be handled"
 msgstr "Vyberte jak budou média obsluhována"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:9
 msgid "desklet, desktop, slideshow"
 msgstr "desklet, plocha, prezentace"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:11
+msgid "Manage your Cinnamon desklets"
+msgstr "Správa Cinnamon deskletů"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:13
 msgid "desklet"
@@ -1820,7 +1796,7 @@ msgstr "plocha"
 msgid "Desklets"
 msgstr "Desklety"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:27
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:32
 msgid ""
 "You can remove specific instances from the desktop via that desklet's "
 "context menu"
@@ -1828,41 +1804,41 @@ msgstr ""
 "Specifické instance můžete z pracovní plochy odebrat prostřednictvím "
 "kontextového menu pro desklety"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:39
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:44
 msgid "General Desklets Settings"
 msgstr "Hlavní nastavení deskletů"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:44
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:49
 msgid "No decoration"
 msgstr "Bez dekorace"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:44
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:49
 msgid "Border only"
 msgstr "Pouze okraje"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:44
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:49
 msgid "Border and header"
 msgstr "Okraje a hlavička"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:45
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:50
 msgid "Decoration of desklets"
 msgstr "Dekorace deskletů"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:48
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:53
 msgid "Note: Some desklets require the border/header to be always present"
 msgstr ""
 "Poznámka: Některé desklety vyžadují rámeček / hlavičku, aby byli vždy "
 "přítomny."
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:48
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:53
 msgid "Such requirements override the settings selected here"
 msgstr "Takové požadavky přehlíží nastavení zvolená  zde"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:50
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:55
 msgid "Snap desklets to grid"
 msgstr "Přichytit deskelty k mřížce"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:51
+#: files/usr/lib/cinnamon-settings/modules/cs_desklets.py:56
 msgid "Width of desklet snap grid"
 msgstr "Velikost mřížky pro desklety"
 
@@ -1870,101 +1846,117 @@ msgstr "Velikost mřížky pro desklety"
 msgid "desktop, home, button, trash"
 msgstr "plocha, domů, tlačítko, koš"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:10
+#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:9
 msgid "Desktop"
 msgstr "Pracovní plocha"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:20
-msgid "Show a computer icon"
-msgstr "Zobrazovat ikonu počítače"
+#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:13
+msgid "Manage your desktop icons"
+msgstr "Správa ikon na ploše"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:22
-msgid "Show a home icon"
-msgstr "Zobrazovat ikonu Domů"
+#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:32
+msgid "Desktop Icons"
+msgstr "Ikony na ploše"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:24
-msgid "Show the trash"
-msgstr "Zobrazovat koš"
+#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:34
+msgid "Select the items you want to see on the desktop:"
+msgstr "Vyberte položky, které chcete vidět na ploše:"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:26
-msgid "Show mounted volumes"
-msgstr "Ukazovat připojená zařízení"
+#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:44
+msgid "Mounted volumes"
+msgstr "Připojené jednotky"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:28
-msgid "Show network servers"
-msgstr "Zobrazovat síťové servery"
+#: files/usr/lib/cinnamon-settings/modules/cs_desktop.py:46
+msgid "Network"
+msgstr "Síť"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_effects.py:8
 msgid "effects, fancy, window"
 msgstr "efekty, fantazie, okna"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:10
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:9
 msgid "Effects"
 msgstr "Efekty"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:14
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:13
+msgid "Control Cinnamon visual effects."
+msgstr "Nastavení Cinnamon vizuálních efektů"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:56
+msgid "Enable Effects"
+msgstr "Povolit efekty"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:57
 msgid "Enable desktop effects"
 msgstr "Povolit efekty plochy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:17
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:58
 msgid "Enable desktop effects on dialog boxes"
 msgstr "Povolit efekty plochy na dialogová okna"
 
-#. #-#-#-#-#  uniq-cinnamon-json.pot  #-#-#-#-#
-#. menu@cinnamon.org->settings-schema.json->hover-delay->units
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:73
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:26
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:29
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:34
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:37
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:41
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:44
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:16
-msgid "milliseconds"
-msgstr "milisekund"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:80
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:84
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:88
-msgid "Fade"
-msgstr "Slábnutí"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:81
-msgid "Closing windows:"
-msgstr "Zavírání oken"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:85
-msgid "Mapping windows:"
-msgstr "Mapování oken"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:88
-msgid "Traditional"
-msgstr "Tradiční"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:89
-msgid "Minimizing windows:"
-msgstr "Minimalizování oken:"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:93
-msgid "Maximizing windows:"
-msgstr "Maximalizování oken:"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:97
-msgid "Unmaximizing windows:"
-msgstr "Obnovit okna"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:101
-msgid "Tiling and snapping windows:"
-msgstr "Dláždění a přichytání oken"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:103
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:59
 msgid ""
 "Enable fade effect on Cinnamon scrollboxes (like the Menu application list)"
 msgstr "Povolit efekt slábnutí na Cinnamon scrollboxy (jako je hlavní menu)"
 
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:64
+msgid "Customize Effects"
+msgstr "Nastavit efekty"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:66
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:70
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:74
+msgid "Fade"
+msgstr "Slábnutí"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:67
+msgid "Closing windows:"
+msgstr "Zavírání oken"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:71
+msgid "Mapping windows:"
+msgstr "Mapování oken"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:74
+msgid "Traditional"
+msgstr "Tradiční"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:75
+msgid "Minimizing windows:"
+msgstr "Minimalizování oken:"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:79
+msgid "Maximizing windows:"
+msgstr "Maximalizování oken:"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:83
+msgid "Unmaximizing windows:"
+msgstr "Obnovit okna"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:87
+msgid "Tiling and snapping windows:"
+msgstr "Dláždění a přichytání oken"
+
+#. #-#-#-#-#  uniq-cinnamon-json.pot  #-#-#-#-#
+#. menu@cinnamon.org->settings-schema.json->hover-delay->units
+#: files/usr/lib/cinnamon-settings/modules/cs_effects.py:109
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:40
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:41
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:44
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:45
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:47
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:48
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:27
+msgid "milliseconds"
+msgstr "milisekund"
+
 #: files/usr/lib/cinnamon-settings/modules/cs_extensions.py:7
 msgid "extension, addon"
 msgstr "rozšíření, addon"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_extensions.py:9
+msgid "Manage your Cinnamon extensions"
+msgstr "Správa Cinnamon rozšíření"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_extensions.py:11
 msgid "extension"
@@ -1978,60 +1970,109 @@ msgstr "rozšíření"
 msgid "Extensions"
 msgstr "Rozšíření"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:7
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:9
 msgid "font, size, small, large"
 msgstr "font, velikost, malý, velký"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:9
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:10
 msgid "Fonts"
 msgstr "Písma"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:13
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:14
+msgid "Configure system fonts"
+msgstr "Nastavení systémových písem"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:24
+msgid "Font Selection"
+msgstr "Výběr písma"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:25
 msgid "Default font"
 msgstr "Výchozí písmo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:14
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:26
 msgid "Document font"
 msgstr "Písmo dokumentu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:15
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:27
 msgid "Monospace font"
 msgstr "Písmo s pevnou šířkou"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:16
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:28
 msgid "Window title font"
 msgstr "Písmo záhlaví oken"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:17
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:33
+msgid "Font Settings"
+msgstr "Nastavení písma"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:34
 msgid "Text scaling factor"
 msgstr "Faktor škálování textu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:18
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:35
 msgid "Antialiasing"
 msgstr "Vyhlazování"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:19
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:36
 msgid "Hinting"
 msgstr "Korekce"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:53
+msgid "Antialiasing makes on screen text smoother and easier to read"
+msgstr "Vyhlazování zobrazuje text hladší a lze ho snadněji číst."
+
+#: files/usr/lib/cinnamon-settings/modules/cs_fonts.py:56
+msgid "Hinting allows for producing clear, legible text on screen."
+msgstr "Hinting umožňuje zobrazovat jasný a čitelný text."
 
 #: files/usr/lib/cinnamon-settings/modules/cs_general.py:7
 msgid "logging, click, notifications"
 msgstr "přihlašování, klepnutí, upozornění"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_general.py:9
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:36
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:97
+#: files/usr/lib/cinnamon-settings/modules/cs_general.py:8
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:40
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:86
 msgid "General"
 msgstr "Obecné"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_general.py:13
+#: files/usr/lib/cinnamon-settings/modules/cs_general.py:11
+msgid "Miscellaneous Cinnamon preferences"
+msgstr "Ostatní nastavení Cinnamonu"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_general.py:22
+msgid "Desktop Scaling"
+msgstr "Škálování plochy"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_general.py:23
+msgid "Auto"
+msgstr "Automaticky"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_general.py:23
+msgid "Normal"
+msgstr "Normální"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_general.py:23
+msgid "Double (Hi-DPI)"
+msgstr "Dvojité (Hi-DPI)"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_general.py:24
+msgid "User interface scaling:"
+msgstr "Škálováni uživatelského prostředí"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_general.py:30
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:34
+msgid "Miscellaneous Options"
+msgstr "Různé volby"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_general.py:31
 msgid ""
 "Log LookingGlass output to ~/.cinnamon/glass.log (Requires Cinnamon restart)"
 msgstr ""
 "Zaznamenávat výstup z LookingGlass do ~/.cinnamon/glass.log (Vyžaduje "
 "restart Cinnamonu)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_general.py:14
+#: files/usr/lib/cinnamon-settings/modules/cs_general.py:32
 msgid "Display notifications"
 msgstr "Zobrazovat upozornění"
 
@@ -2039,17 +2080,37 @@ msgstr "Zobrazovat upozornění"
 msgid "hotcorner, overview, scale, expo"
 msgstr "aktivní roh, přehled, scale, expo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:17
+#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:16
 msgid "Hot Corners"
 msgstr "Aktivní rohy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:120
-msgid "Custom"
-msgstr "Vlastní"
+#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:18
+msgid "Manage hotcorner settings"
+msgstr "Nastavení horkých rohů"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:132
+#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:205
+msgid "Show all workspaces"
+msgstr "Zobrazit všechny pracovní plochy"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:206
+msgid "Show all windows"
+msgstr "Zobrazit všechna okna"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:207
+msgid "Show the desktop"
+msgstr "Zobrazit pracovní plochu"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:208
+msgid "Run a command"
+msgstr "Spustit příkaz"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:222
 msgid "Icon visible"
 msgstr "Viditelná ikona"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_hotcorner.py:224
+msgid "Hover enabled"
+msgstr "Najetí povoleno"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_info.py:83
 #: files/usr/lib/cinnamon-settings/modules/cs_info.py:85
@@ -2093,9 +2154,13 @@ msgstr "Grafická karta"
 msgid "system, information, details, graphic, sound, kernel, version"
 msgstr "system, informace, detaily, grafika, hudba, jádro, verze"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_info.py:106
+#: files/usr/lib/cinnamon-settings/modules/cs_info.py:105
 msgid "System Info"
 msgstr "Systémové informace"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_info.py:109
+msgid "Display system information"
+msgstr "Zobrazit systémové informace"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:46
 msgid "Toggle Scale"
@@ -2154,411 +2219,379 @@ msgid "Toggle shaded state"
 msgstr "Přepnout stav svinutí"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:63
+msgid "Increase opacity"
+msgstr "Zvýšit neprůhlednost"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:64
+msgid "Decrease opacity"
+msgstr "Snížit neprůhlednost"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:65
 msgid "Maximize vertically"
 msgstr "Maximalizovat vertikálně"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:64
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:66
 msgid "Maximize horizontally"
 msgstr "Maximovat horizontálně"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:65
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:67
 msgid "Resize window"
 msgstr "Změnit velikost okna"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:66
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:68
 msgid "Move window"
 msgstr "Přesunout okno"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:67
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:69
 msgid "Center window in screen"
 msgstr "Vycentrovat okno na obrazovce"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:68
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:70
 msgid "Move window to upper-right"
 msgstr "Přesunout okno do horního pravého rohu."
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:69
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:71
 msgid "Move window to upper-left"
 msgstr "Přesunout okno do horního levého rohu."
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:70
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:72
 msgid "Move window to lower-right"
 msgstr "Přesunout okno do spodního pravého rohu."
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:71
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:73
 msgid "Move window to lower-left"
 msgstr "Přesunout okno do spodního levého rohu."
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:72
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:74
 msgid "Move window to right edge"
 msgstr "Přesunout okno do pravého rohu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:73
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:75
 msgid "Move window to top edge"
 msgstr "Přesunout okno do horního rohu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:74
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:76
 msgid "Move window to bottom edge"
 msgstr "Přesunout okno do spodního rohu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:75
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:77
 msgid "Move window to left edge"
 msgstr "Přesunout okno do levého rohu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:78
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:80
 msgid "Push tile left"
 msgstr "Posunout dlaždici vlevo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:79
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:81
 msgid "Push tile right"
 msgstr "Posunout dlaždici vpravo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:80
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:82
 msgid "Push tile up"
 msgstr "Posunout dlaždici nahoru"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:81
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:83
 msgid "Push tile down"
 msgstr "Posunout dlaždici dolu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:82
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:84
 msgid "Push snap left"
 msgstr "Posunout přichycení vlevo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:83
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:85
 msgid "Push snap right"
 msgstr "Posunout přichycení vpravo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:84
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:86
 msgid "Push snap up"
 msgstr "Posunout přichycení vpravo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:85
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:87
 msgid "Push snap down"
 msgstr "Posunout přichycení vpravo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:88
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:90
 msgid "Toggle showing window on all workspaces"
 msgstr "Zapnout zobrazování okna na všech plochách"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:89
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:91
 msgid "Switch to left workspace"
 msgstr "Přepnout na plochu vlevo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:90
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:92
 msgid "Switch to right workspace"
 msgstr "Přepnout na plochu vpravo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:91
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:93
 msgid "Switch to workspace 1"
 msgstr "Přepnout na plochu 1"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:92
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:94
 msgid "Switch to workspace 2"
 msgstr "Přepnout na plochu 2"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:93
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:95
 msgid "Switch to workspace 3"
 msgstr "Přepnout na plochu 3"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:94
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:96
 msgid "Switch to workspace 4"
 msgstr "Přepnout na plochu 4"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:95
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:97
 msgid "Switch to workspace 5"
 msgstr "Přepnout na plochu 5"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:96
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:98
 msgid "Switch to workspace 6"
 msgstr "Přepnout na plochu 6"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:97
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:99
 msgid "Switch to workspace 7"
 msgstr "Přepnout na plochu 7"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:98
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:100
 msgid "Switch to workspace 8"
 msgstr "Přepnout na plochu 8"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:99
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:101
 msgid "Switch to workspace 9"
 msgstr "Přepnout na plochu 9"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:100
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:102
 msgid "Switch to workspace 10"
 msgstr "Přepnout na plochu 10"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:101
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:103
 msgid "Switch to workspace 11"
 msgstr "Přepnout na plochu 11"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:102
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:104
 msgid "Switch to workspace 12"
 msgstr "Přepnout na plochu 12"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:103
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:105
 msgid "Move window to left workspace"
 msgstr "Přesunout okno na levou pracovní plochu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:104
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:106
 msgid "Move window to right workspace"
 msgstr "Přesunout okno na pravou pracovní plochu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:105
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:107
 msgid "Move window to workspace 1"
 msgstr "Přesunout okno na plochu 1"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:106
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:108
 msgid "Move window to workspace 2"
 msgstr "Přesunout okno na plochu 2"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:107
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:109
 msgid "Move window to workspace 3"
 msgstr "Přesunout okno na plochu 3"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:108
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:110
 msgid "Move window to workspace 4"
 msgstr "Přesunout okno na plochu 4"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:109
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:111
 msgid "Move window to workspace 5"
 msgstr "Přesunout okno na plochu 5"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:110
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:112
 msgid "Move window to workspace 6"
 msgstr "Přesunout okno na plochu 6"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:111
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:113
 msgid "Move window to workspace 7"
 msgstr "Přesunout okno na plochu 7"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:112
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:114
 msgid "Move window to workspace 8"
 msgstr "Přesunout okno na plochu 8"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:113
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:115
 msgid "Move window to workspace 9"
 msgstr "Přesunout okno na plochu 9"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:114
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:116
 msgid "Move window to workspace 10"
 msgstr "Přesunout okno na plochu 10"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:115
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:117
 msgid "Move window to workspace 11"
 msgstr "Přesunout okno na plochu 11"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:116
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:118
 msgid "Move window to workspace 12"
 msgstr "Přesunout okno na plochu 12"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:119
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:121
 msgid "Log out"
 msgstr "Odhlásit se"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:121
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:122
+msgid "Shut down"
+msgstr "Vypnout"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:124
 msgid "Toggle recording desktop (must restart Cinnamon)"
 msgstr "Zapnout zaznamenávání plochy (vyžaduje restart Cinnamonu)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:124
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:127
 msgid "Launch help browser"
 msgstr "Spustit prohlížeč nápovědy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:125
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:128
 msgid "Launch calculator"
 msgstr "Spustit kalkulačku"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:126
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:129
 msgid "Launch email client"
 msgstr "Spustit poštovního klienta"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:127
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:130
 msgid "Launch web browser"
 msgstr "Spustit webový prohlížeč"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:128
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:131
 msgid "Home folder"
 msgstr "Domovská složka"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:132
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:135
 msgid "Volume mute"
 msgstr "Ztlumit zvuk"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:133
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:136
 msgid "Volume down"
 msgstr "Snížit hlasitost"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:134
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:137
 msgid "Volume up"
 msgstr "Zvýšit hlasitost"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:135
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:138
 msgid "Launch media player"
 msgstr "Spustit multimediální přehrávač"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:137
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:140
 msgid "Pause playback"
 msgstr "Pozastavit přehrávání"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:138
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:141
 msgid "Stop playback"
 msgstr "Zastavit přehrávání"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:139
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:142
 msgid "Previous track"
 msgstr "Předchozí skladba"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:140
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:143
 msgid "Next track"
 msgstr "Další skladba"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:141
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:144
 msgid "Eject"
 msgstr "Vysunout"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:144
-msgid "Turn zoom on or off"
-msgstr "Zapnout nebo vypnout zvětšení"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:145
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:147
 msgid "Zoom in"
 msgstr "Přiblížit"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:146
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:148
 msgid "Zoom out"
 msgstr "Oddálit"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:147
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:149
 msgid "Turn screen reader on or off"
 msgstr "Zapnout nebo vypnout čtení obrazovky"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:148
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:150
 msgid "Turn on-screen keyboard on or off"
 msgstr "Zapnout nebo vypnout klávesnici na obrazovce"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:149
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:151
 msgid "Increase text size"
 msgstr "Zvětšit velikost textu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:150
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:152
 msgid "Decrease text size"
 msgstr "Zmenšit velikost textu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:151
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:153
 msgid "High contrast on or off"
 msgstr "Zapnout nebo vypnout vysoký kontrast"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:155
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:157
 msgid "Launch terminal"
 msgstr "Spustit terminál"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:159
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:161
 msgid "keyboard, shortcut, hotkey"
 msgstr "klávesnice, zkratky, horké klávesy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:259
-msgid "unassigned"
-msgstr "nepřiřazeno"
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:164
+msgid "Manage keyboard settings and shortcuts"
+msgstr "Nastavení klásenice a klávesových zkratek"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:260
-msgid "Super-"
-msgstr "Super-"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:261
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:264
-msgid "Ctrl-"
-msgstr "Ctrl-"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:262
-msgid "Shift-"
-msgstr "Shift-"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:263
-msgid "Alt-"
-msgstr "Alt-"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:270
-msgid "Update"
-msgstr "Aktualizovat"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:273
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:408
-msgid "Add custom shortcut"
-msgstr "Přiřadit vlastní klávesovou zkratku"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:281
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:146
-msgid "Name:"
-msgstr "Název:"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:282
-msgid "Command:"
-msgstr "Příkaz:"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:290
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:783
-msgid "Select a file"
-msgstr "Vybrat soubor"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:342
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:175
 msgid "Typing"
 msgstr "Psaní"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:343
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:176
 msgid "Enable key repeat"
 msgstr "Povolit opakování klávesy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:345
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:178
 msgid "Repeat delay:"
 msgstr "Zpoždění pro opakování:"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:345
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:73
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:178
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:67
 msgid "Short"
 msgstr "Krátký"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:345
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:73
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:178
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:67
 msgid "Long"
 msgstr "Dlouhý"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:350
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:183
 msgid "Repeat speed:"
 msgstr "Rychlost opakování:"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:350
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:358
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:58
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:134
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:183
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:191
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:60
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:105
 msgid "Slow"
 msgstr "Pomalu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:350
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:358
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:58
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:134
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:183
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:191
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:60
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:105
 msgid "Fast"
 msgstr "Rychle"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:356
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:189
 msgid "Text cursor blinks"
 msgstr "Blikání textového kurzoru"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:358
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:191
 msgid "Blink speed:"
 msgstr "Rychlost blikání"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:363
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:196
 msgid "Test Box"
 msgstr "Testovací box"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:367
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:444
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:200
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:277
 msgid "Keyboard shortcuts"
 msgstr "Klávesové zkratky"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:372
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:205
 msgid ""
 "To edit a keyboard binding, click it and press the new keys, or press "
 "backspace to clear it."
@@ -2566,48 +2599,71 @@ msgstr ""
 "Zkratku upravíte klepnutím a zmáčknutím nové kombinace, případně můžete "
 "zkratku pomocí backspace smazat"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:410
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:241
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:720
+msgid "Add custom shortcut"
+msgstr "Přiřadit vlastní klávesovou zkratku"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:243
 msgid "Remove custom shortcut"
 msgstr "Odstranit vlastní klávesovou zkratku"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:435
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:268
 msgid "Categories"
 msgstr "Kategorie"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:460
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:288
 msgid "Keyboard bindings"
 msgstr "Klávesové zkratky"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:468
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:10
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:292
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:1035
+msgid "Click to set a new accelerator key."
+msgstr "Klepněte k určení nové klávesové zkratky"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:293
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:1036
+msgid "  Press Escape or click again to cancel the operation."
+msgstr "  Zmáčkněte Escape, či klepněte znovu k ukončení operace."
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:300
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:11
 msgid "Windows"
 msgstr "Okna"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:469
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:301
 msgid "Window Tiling"
 msgstr "Dláždění oken"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:470
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:302
 msgid "Workspace Management"
 msgstr "Správa pracovních ploch"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:471
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:303
 msgid "System"
 msgstr "Systém"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:472
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:304
 msgid "Launchers"
 msgstr "Spouštěče"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:473
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:305
 msgid "Sound and Media"
 msgstr "Zvuk a média"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:475
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:306
+msgid "Universal Access"
+msgstr "Univerzální přístup"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:307
 msgid "Custom Shortcuts"
 msgstr "Vlastní zkratky"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:579
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:326
+msgid "Keyboard layouts"
+msgstr "Rozložení klávesnice"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:425
 #, c-format
 msgid ""
 "\n"
@@ -2620,7 +2676,7 @@ msgstr ""
 "nedalo s touto klávesou psát.\n"
 "\n"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:580
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:426
 msgid ""
 "Please try again with a modifier key such as Control, Alt or Super (Windows "
 "key) at the same time.\n"
@@ -2628,14 +2684,14 @@ msgstr ""
 "Zkuste prosím použít některé modifikující klávesy jako Control, Alt či Super "
 "(Windows tlačítko) ve stejnou dobu\n"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:598
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:450
 #, c-format
 msgid ""
 "This key combination, '<b>%s</b>' is currently in use by '<b>%s</b>'.  "
 msgstr ""
 "Tato kombinace kláves, '<b>%s</b>' je aktuálně použitá u '<b>%s</b>'.  "
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:599
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:451
 #, c-format
 msgid ""
 "If you continue, the combination will be reassigned to '<b>%s</b>.'\n"
@@ -2644,23 +2700,72 @@ msgstr ""
 "Pokud budete pokračovat, kombinace bude přeřazena k '<b>%s</b>.'\n"
 "\n"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:600
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:452
 msgid "Do you want to continue with this operation?"
 msgstr "Chcete pokračovat s touto akcí?"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:749
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:601
 msgid "Reset to default"
 msgstr "Obnovit výchozí hodnotu"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:706
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:805
+msgid "unassigned"
+msgstr "nepřiřazeno"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:707
+msgid "Super-"
+msgstr "Super-"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:708
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:711
+msgid "Ctrl-"
+msgstr "Ctrl-"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:709
+msgid "Shift-"
+msgstr "Shift-"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:710
+msgid "Alt-"
+msgstr "Alt-"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:717
+msgid "Update"
+msgstr "Aktualizovat"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:728
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:148
+msgid "Name:"
+msgstr "Název:"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:729
+msgid "Command:"
+msgstr "Příkaz:"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:737
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:826
+msgid "Select a file"
+msgstr "Vybrat soubor"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_keyboard.py:825
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:1058
+msgid "Pick an accelerator"
+msgstr "Zvolte zkratku"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:9
 msgid "mouse, touchpad, synaptic, double-click"
 msgstr "myš, touchpad, synaptic, dvojklik"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:11
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:10
 msgid "Mouse and Touchpad"
 msgstr "Myš a touchpad"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:31
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:12
+msgid "Control mouse and touchpad settings"
+msgstr "Nastavení myši a touchpadu"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:33
 msgid "Touchpad"
 msgstr "Touchpad"
 
@@ -2668,136 +2773,171 @@ msgstr "Touchpad"
 msgid "Left handed (mouse buttons inverted)"
 msgstr "Levoruký (přehozená tlačítka myši)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:45
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:42
 msgid "Show position of pointer when the Control key is pressed"
 msgstr "Zobrazit pozici ukazatele po stisku tlačítka Control"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:49
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:43
 msgid "Emulate middle click by clicking both left and right buttons"
 msgstr "Při zmáčknutí levého i pravého tlačítka simulovat stisk prostředního"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:53
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:130
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:48
+msgid "Pointer Size"
+msgstr "Velikost ukazatele"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:50
+msgid "Note: All sizes may not be available on certain icon themes"
+msgstr ""
+"Poznámka: Ne všechny ikony mohou být dostupné na různých tématech ikon"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:52
+msgid "Size:"
+msgstr "Velikost:"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:52
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:56
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:59
+msgid "Smaller"
+msgstr "Menší"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:52
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:56
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:59
+msgid "Larger"
+msgstr "Větší"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:59
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:104
 msgid "Pointer Speed"
 msgstr "Rychlost ukazatele"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:58
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:134
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:60
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:105
 msgid "Acceleration:"
 msgstr "Zrychlení:"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:63
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:139
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:61
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:106
 msgid "Sensitivity:"
 msgstr "Citlivost:"
 
 #. #-#-#-#-#  uniq-cinnamon-json.pot  #-#-#-#-#
 #. photoframe@cinnamon.org->settings-schema.json->quality->options
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:63
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:139
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:61
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:106
 msgid "Low"
 msgstr "Nízká"
 
 #. #-#-#-#-#  uniq-cinnamon-json.pot  #-#-#-#-#
 #. photoframe@cinnamon.org->settings-schema.json->quality->options
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:63
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:139
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:61
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:106
 msgid "High"
 msgstr "Vysoká"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:68
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:66
 msgid "Double-Click Timeout"
 msgstr "Interval dvojitého kliknutí"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:73
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:67
 msgid "Timeout:"
 msgstr "Prodlení:"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:77
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:176
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:68
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:120
 msgid "Double-click test"
 msgstr "Test dvojkliknutí"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:82
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:75
 msgid "Drag and drop"
 msgstr "Táhni a pusť"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:87
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:76
 msgid "Cinnamon drag threshold"
 msgstr "Práh tažení Cinnamonu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:87
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:91
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:54
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:58
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:17
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:32
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:76
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:77
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:25
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:76
 msgid "Pixels"
 msgstr "pixelů"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:91
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:77
 msgid "GTK drag threshold"
 msgstr "Práh tažení GTK"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:102
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:87
 msgid "Enable touchpad"
 msgstr "Zapnout zařízení touchpad"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:106
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:88
 msgid "Disable touchpad while typing"
 msgstr "Vypnutí touchpadu během psaní"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:109
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:89
 msgid "Enable mouseclicks with touchpad"
 msgstr "Povolit klepnutí s touchpadem"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:113
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:94
 msgid "Scrolling"
 msgstr "Posouvání"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:117
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:95
 msgid "Edge Scrolling"
 msgstr "Posouvání po okraji"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:117
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:95
 msgid "Two-finger scrolling"
 msgstr "Posouvání dvěma prsty"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:118
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:15
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:96
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:25
 msgid "Panel layout"
 msgstr "Rozvržení panelu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:123
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:98
 msgid "Enable natural scrolling"
 msgstr "Povolit přirozené posouvání"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:126
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:99
 msgid "Enable horizontal scrolling"
 msgstr "Povolit vodorovné posunování"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:171
-msgid "DOUBLE-CLICK"
-msgstr "DVOJKLIK"
+#: files/usr/lib/cinnamon-settings/modules/cs_mouse.py:115
+msgid "Success!"
+msgstr "Povedlo se!"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_panel.py:7
 msgid "panel, height, bottom, top, autohide, size, traditional, layout"
 msgstr ""
 "panel, výška, dole, nahoře, automaticky skrýt, velikost, tradiční, rozložení"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:14
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:8
+msgid "Panel"
+msgstr "Panel"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:12
+msgid "Manage Cinnamon panel settings"
+msgstr "Správa Cinnamon panelu"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:23
+msgid "Layout Options"
+msgstr "Možnosti rozložení"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:24
 msgid "Traditional (panel at the bottom)"
 msgstr "Tradiční (panel dole)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:14
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:24
 msgid "Flipped (panel at the top)"
 msgstr "Převrácené (panel nahoře)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:14
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:24
 msgid "Classic (panels at the top and at the bottom)"
 msgstr "Klasické  (panel nahoře i dole)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:18
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:28
 msgid ""
 "Note: If you change the layout you will need to restart Cinnamon and "
 "Cinnamon Settings."
@@ -2805,70 +2945,266 @@ msgstr ""
 "Poznámka: Pokud změní rozvržení, budete nutné restartovat Cinnamon a "
 "Cinnamon Settings"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:24
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:35
+msgid "Auto Hide Options"
+msgstr "Možnosti automatického skrývání"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:39
 msgid "Auto-hide panel"
 msgstr "Automaticky skrýt panel"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:26
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:34
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:41
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:40
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:44
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:47
 msgid "Show delay"
 msgstr "Prodleva pro zobrazení"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:29
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:37
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:44
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:41
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:45
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:48
 msgid "Hide delay"
 msgstr "Prodleva pro skrytí"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:32
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:43
 msgid "Auto-hide top panel"
 msgstr "Automaticky skrývat horní panel"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:39
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:46
 msgid "Auto-hide bottom panel"
 msgstr "Automaticky skrývat spodní panel"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:47
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:53
+msgid "Size Options"
+msgstr "Možnosti velikosti"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:54
 msgid "Use customized panel size (otherwise it's defined by the theme)"
 msgstr "Použít vlastní výšku (jinak je definována vzhledem)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:50
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:55
 msgid ""
 "Allow Cinnamon to scale panel text and icons according to the panel heights"
 msgstr "Povolit Cinnamonu přizpůsobit text a ikonu na panelu jeho výšce"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:54
-msgid "Top panel height"
-msgstr "Výška horního panelu"
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:56
+msgid "Top panel height:"
+msgstr "Výška horního panelu:"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:58
-msgid "Bottom panel height"
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:59
+msgid "Bottom panel height:"
 msgstr "Výška spodního panelu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:61
+#: files/usr/lib/cinnamon-settings/modules/cs_panel.py:68
 msgid "Panel edit mode"
 msgstr "Režim úprav panelu"
 
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:10
+msgid "Suspend"
+msgstr "Uspat do paměti"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:11
+msgid "Shutdown immediately"
+msgstr "Vypnout ihned"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:12
+msgid "Hibernate"
+msgstr "Uspat na disk"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:18
+msgid "5%"
+msgstr "5%"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:19
+msgid "10%"
+msgstr "10%"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:20
+msgid "30%"
+msgstr "30%"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:21
+msgid "50%"
+msgstr "50%"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:22
+msgid "75%"
+msgstr "75%"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:26
+msgid "30 seconds"
+msgstr "30 sekundách"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:27
+msgid "60 seconds"
+msgstr "60 sekundách"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:28
+msgid "90 seconds"
+msgstr "90 sekundách"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:29
+msgid "2 minutes"
+msgstr "2 minutách"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:30
+msgid "5 minutes"
+msgstr "5 minutách"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:31
+msgid "10 minutes"
+msgstr "10 minutách"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:36
+msgid "power, suspend, hibernate, laptop, desktop, brightness, screensaver"
+msgstr "energie, uspat, hibernovat, laptop, desktop, jas, spořič"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:37
+msgid "Power Management"
+msgstr "Správa napájení"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:41
+msgid "Manage power settings"
+msgstr "Správa nastavení napájení"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:74
+msgid "Screen Brightness"
+msgstr "Jas obrazovky"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:93
+msgid "Sets the brightness level of the screen"
+msgstr "Nastavení jasu obrazovky"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:100
+msgid "On battery, dim screen to"
+msgstr "Při napájení z baterii, ztmavit obrazovku na"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:101
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:105
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:109
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:113
+msgid ""
+"Save battery power by reducing the brightness of the screen when inactive"
+msgstr "Šetří baterii snížením jasu obrazovky při nečinnosti"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_power.py:108
+msgid "after"
+msgstr "po"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:7
+msgid "Immediately"
+msgstr "Okamžitě"
+
 #: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:8
-msgid "screensaver, brightness, lock, password, away, message"
-msgstr "spořič, jas, zamknout, heslo, pryč, zpráva"
+msgid "After 15 seconds"
+msgstr "Po 15 sekund"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:9
+msgid "After 30 seconds"
+msgstr "Po 30 sekundách"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:10
-msgid "Screensaver & Lock Settings"
-msgstr "Nastavení spořiče a zamknuté obrazovky"
+msgid "After 1 minute"
+msgstr "Po 1 minutě"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:11
+msgid "After 2 minutes"
+msgstr "Po 2 minutách"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:12
+msgid "After 3 minutes"
+msgstr "Po 3 minutách"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:13
+msgid "After 5 minutes"
+msgstr "Po 5 minutách"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:14
+msgid "After 10 minutes"
+msgstr "Po 10 minutách"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:15
-msgid "Ask for an away message when locking the screen from the menu"
-msgstr "Žádat o zprávu v nepřítomnosti, pokud zamykám obrazovku"
+msgid "After 30 minutes"
+msgstr "Po 30 minutách"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:16
-msgid "Default away message"
-msgstr "Výchozí zpráva v nepřítomnosti"
+msgid "After 1 hour"
+msgstr "Po 1 hodině"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:21
+msgid "screensaver, lock, password, away, message"
+msgstr "spořič, zámek, heslo, nepřítomnost, zpráva"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:26
+msgid "Manage screen lock settings"
+msgstr "Nastavení zamykací obrazovky"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:36
+msgid "Lock Settings"
+msgstr "Nastavení zamykání"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:37
+msgid "Lock the computer when put to sleep"
+msgstr "Zamknout počítač, pokud je uspán"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:38
+msgid ""
+"Enable this option to require a password when the computer wakes up from "
+"suspend"
+msgstr "Povolte tuto možnost, aby bylo vyžadováno heslo po uspání počítače"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:40
+msgid "Lock the computer when the screen turns off"
+msgstr "Zamknout počítač, pokud je vypnuta obrazovka"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:41
+msgid ""
+"Enable this option to require a password when the screen turns itself off, "
+"or when the screensaver activates after a period of inactivity"
+msgstr ""
+"Zvolte tuto možnost pro vyžadování hesla, pokud se vypne monitor, nebo se "
+"zapne spořič po nějaké době neaktivity"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:46
+msgid ""
+"This option defines the amount of time to wait before locking the screen, "
+"after showing the screensaver or after turning off the screen"
+msgstr ""
+"Tato volba určuje jakou dobu čekat mezi zapnutím spořiče, nebo vypnutím "
+"obrazovky, a zamknutím sezení"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:53
+msgid "Away Message"
+msgstr "Zpráva o nepřítomnosti"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:54
+msgid "Show this message when the screen is locked: "
+msgstr "Zobrazovat tuto zprávu, když je monitor zamknutý: "
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:55
+msgid "This is the default message displayed on your lock screen"
+msgstr "Toto je výchozí zpráva zobrazená na uzamčené obrazovce"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:57
+msgid "Ask for a custom message when locking the screen from the menu"
+msgstr ""
+"Ptát se na vlastní zprávu o nepřítomnosti, pokud je zamykána obrazovka z "
+"hlavního menu"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_screensaver.py:58
+msgid ""
+"This option allows you to type a message each time you lock the screen from "
+"the menu"
+msgstr ""
+"Tato možnost vám umožní napsat vlastní zprávu o nepřítomnosti při zamykání "
+"obrazovky z hlavního menu"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_themes.py:9
 msgid "themes, style"
 msgstr "motivy, styl"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:10
+msgid "Manage themes to change how your desktop looks"
+msgstr "Nastavení témat, která mění vzhled vašeho prostředí"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_themes.py:13
 msgid "theme"
@@ -2878,35 +3214,35 @@ msgstr "motiv"
 msgid "themes"
 msgstr "motivy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:40
+#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:61
 msgid "Other settings"
 msgstr "Jiné nastavení"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:46
+#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:68
 msgid "Controls"
 msgstr "Ovládání"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:49
+#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:69
 msgid "Icons"
 msgstr "Ikony"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:52
+#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:70
 msgid "Window borders"
 msgstr "Ohraničení okna"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:55
-msgid "Mouse pointer"
+#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:71
+msgid "Mouse Pointer"
 msgstr "Ukazatel myši"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:58
+#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:72
 msgid "Keybindings"
 msgstr "Klávesové zkratky"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:61
+#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:74
 msgid "Show icons in menus"
 msgstr "Zobrazovat ikony v nabídkách"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:64
+#: files/usr/lib/cinnamon-settings/modules/cs_themes.py:77
 msgid "Show icons on buttons"
 msgstr "Zobrazovat ikony na tlačítkách"
 
@@ -2914,59 +3250,75 @@ msgstr "Zobrazovat ikony na tlačítkách"
 msgid "window, tile, flip, tiling, snap, snapping"
 msgstr "okno, dlaždice, přetočení, dláždění, přichytit, přichycení"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:10
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:9
 msgid "Window Tiling and Edge Flip"
 msgstr "Dláždění oken a přetočení přes roh"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:15
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:12
+msgid "Manage window tiling preferences"
+msgstr "Nastavení dláždění oken"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:23
+msgid "Tiling and Snapping Settings"
+msgstr "Nastavení přichytávání a dláždění"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:24
 msgid "Enable Window Tiling and Snapping"
 msgstr "Povolit dláždění a přichytávání"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:17
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:25
 msgid "Tiling HUD visibility threshold"
 msgstr "Zobrazit HUD viditelně"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:21
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:26
 msgid "Super (Windows)"
 msgstr "Super (Windows)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:21
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:26
 msgid "Alt"
 msgstr "Alt"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:21
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:26
 msgid "Shift"
 msgstr "Shift"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:21
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:26
 msgid "Control"
 msgstr "Control"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:22
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:27
 msgid "Modifier to use for toggling between tile and snap mode"
 msgstr "Klávesa k přepínání mezi režimem přichytávání a dláždění"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:26
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:28
 msgid "Maximize, instead of tile, when dragging a window to the top edge"
 msgstr "Maximalizovat, místo dláždění, při přetažení okna do horního rohu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:30
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:29
 msgid "Prevent the snap on-screen-display from showing"
 msgstr "Zabránit zobrazování okna upozornění"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:33
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:34
+msgid "Edge Flip Settings"
+msgstr "Nastavení přetočení přes roh"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:35
 msgid "Enable Edge Flip"
 msgstr "Povolit přetočení přes hranu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:35
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:36
 msgid "Edge Flip delay"
 msgstr "Zpomalení přetočení přes roh"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:35
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:36
 msgid "ms"
 msgstr "ms"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:38
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:41
+msgid "Miscellaneous Settings"
+msgstr "Různá nastavení"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:42
 msgid ""
 "Invert the left and right arrow key directions used to shift workspaces "
 "during a window drag"
@@ -2974,7 +3326,7 @@ msgstr ""
 "Prohodit směr levé a pravé směrové klávesy používané k změně pracovní plochy "
 "v průběhu přetahování okna"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:40
+#: files/usr/lib/cinnamon-settings/modules/cs_tiling.py:43
 msgid "Enable legacy window snapping (hold <Shift> while dragging a window)"
 msgstr ""
 "Povolit zachytávání odkazu okna  (během přetahování okna stisknout <shift> )"
@@ -2983,122 +3335,133 @@ msgstr ""
 msgid "user, account, information, details"
 msgstr "uživatel, účet, informace, detaily"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:79
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:78
 msgid "Account details"
 msgstr "Podrobnosti o účtu"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:89
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:82
+msgid "Change your user preferences and password"
+msgstr "Změnit nastavení uživatele a hesla"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:93
 msgid "Click to change your picture"
 msgstr "Klepněte k změně vašeho obrázku"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:94
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:97
 msgid "Take a photo..."
 msgstr "Pořídit fotografii…"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:125
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:127
 msgid "Click to change your name"
 msgstr "Klepněte k změně vašeho jména"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:132
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:134
 msgid "Picture:"
 msgstr "Obrázek:"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:142
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:144
 msgid "Click to change your password"
 msgstr "Klepněte k změně hesla"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:151
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:153
 msgid "Password:"
 msgstr "Heslo:"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:332
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:328
 msgid "Current password"
 msgstr "Současné heslo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_user.py:454
+#: files/usr/lib/cinnamon-settings/modules/cs_user.py:450
 msgid "Wrong password"
 msgstr "Špatné heslo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:8
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:10
 msgid "windows, titlebar, edge, switcher, window list, attention, focus"
 msgstr "okna, nadpisy, strany, přepínáč, seznam oken, pozornost, zaměřit"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:14
-msgid "Action on title bar double-click"
-msgstr "Akce při dvojitém kliknutí na záhlaví"
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:15
+msgid "Manage window preferences"
+msgstr "Změnit nastavení chování oken"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:17
-msgid "Action on title bar middle-click"
-msgstr "Akce při kliknutí prostředním tlačítkem na záhlaví"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:20
-msgid "Action on title bar right-click"
-msgstr "Akce při kliknutí pravým tlačítkem na záhlaví"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:23
-msgid "Window focus mode"
-msgstr "Režim zaměřování oken"
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:25
+msgid "Alt-Tab"
+msgstr "Alt-Tab"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_windows.py:26
-msgid "Modifier to use for modified window click actions"
-msgstr ""
-"Modifikátor, který se má použít pro změnu akcí vyvolaných kliknutím na okno"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:32
-msgid "Window drag/resize threshold"
-msgstr "Práh při přetažení/zvětšení okna"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:34
-msgid "Attach dialog windows to their parent window's titlebar"
-msgstr "Přichytit dialogová okna k záhlaví mateřského okna"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:35
 msgid "Icons only"
 msgstr "Pouze Ikony"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:35
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:26
+msgid "Thumbnails only"
+msgstr "Pouze náhled"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:26
 msgid "Icons and thumbnails"
 msgstr "Ikony a náhledy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:35
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:26
 msgid "Icons and window preview"
 msgstr "Ikony a náhledy oken"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:35
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:26
 msgid "Window preview (no icons)"
 msgstr "Přehled oken (bez ikon)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:35
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:26
 msgid "Coverflow (3D)"
 msgstr "Coverflow (3D)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:35
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:26
 msgid "Timeline (3D)"
 msgstr "Časová osa (3D)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:36
-msgid "ALT-tab switcher style"
-msgstr "Styl přepínače oken (Alt-Tab)"
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:27
+msgid "Alt-Tab switcher style"
+msgstr "Vzhled Alt-Tab přepínače oken"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:29
+msgid ""
+"Display the alt-tab switcher on the primary monitor instead of the active one"
+msgstr ""
+"Zobrazovat alt-tab přepínač místo na aktivním monitoru na monitoru primárním"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:34
+msgid "Titlebar"
+msgstr "Záhlaví"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_windows.py:38
-msgid ""
-"Enforce displaying the alt-tab switcher on the primary monitor instead of "
-"the active one"
-msgstr "Zobrazovat přepínač oken na primárním monitoru, místo aktivního"
-
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:39
-msgid "Enable mouse-wheel scrolling in Window List applet"
-msgstr "Povolit posouvání kolečkem myši v appletu \"Seznam oken\""
-
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:40
-msgid ""
-"Bring windows which require attention to the current workspace (instead of "
-"switching to the window's workspace)"
-msgstr ""
-"Okna, která vyžadují pozornost přesunout na současnou pracovní plochu (místo "
-"přepnutí na pracovní plochu okna)"
+msgid "Action on title bar double-click"
+msgstr "Akce při dvojitém kliknutí na záhlaví"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_windows.py:41
+msgid "Action on title bar middle-click"
+msgstr "Akce při kliknutí prostředním tlačítkem na záhlaví"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:44
+msgid "Action on title bar right-click"
+msgstr "Akce při kliknutí pravým tlačítkem na záhlaví"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:48
+msgid "Nothing"
+msgstr "Nic"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:48
+msgid "Shade and unshade"
+msgstr ""
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:48
+msgid "Adjust opacity"
+msgstr "Přizpůsobit neprůhlednost"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:50
+msgid "Action on title bar with mouse scroll"
+msgstr ""
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:57
+msgid "Window List"
+msgstr "Seznam oken"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:58
 msgid ""
 "Show an alert in the window list when a window from another workspace "
 "requires attention"
@@ -3106,66 +3469,118 @@ msgstr ""
 "Zobrazit upozornění v seznamu oken, pokud okno z jiné pracovní plochy "
 "vyžaduje pozornost"
 
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:59
+msgid "Enable mouse-wheel scrolling in the window list"
+msgstr "Povolit rolování kolečkem myši v seznamu oken"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:64
+msgid "Window Focus"
+msgstr "Aktivace okna"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:65
+msgid "Window focus mode"
+msgstr "Režim zaměřování oken"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:66
+msgid "Automatically raise focused windows"
+msgstr "Automaticky povýšit aktivovaná okna"
+
 #: files/usr/lib/cinnamon-settings/modules/cs_windows.py:67
+msgid "Bring windows which require attention to the current workspace"
+msgstr "Přenést okna vyžadující pozornost na aktivní plochu"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:68
+msgid "Prevent focus stealing"
+msgstr "Zabránit odebrání zaměření"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:69
+msgid "Attach dialog windows to their parent window's titlebar"
+msgstr "Přichytit dialogová okna k záhlaví mateřského okna"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:74
+msgid "Moving and Resizing Windows"
+msgstr "Přesouvání a zvětšování oken"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:75
+msgid "Special key to move windows"
+msgstr "Klávesa k přesouvání oken"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:76
+msgid "Window drag/resize threshold"
+msgstr "Práh při přetažení/zvětšení okna"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:132
 msgid "Left side title bar buttons"
 msgstr "Tlačítka na záhlaví vlevo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:73
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:138
 msgid "Right side title bar buttons"
 msgstr "Tlačítka na záhlaví vpravo"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:91
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:156
 msgid "Sticky"
 msgstr "Lepivý"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_windows.py:157
+msgid "Shade"
+msgstr "Stín"
 
 #: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:7
 msgid "workspace, osd, expo, monitor"
 msgstr "pracovní plocha, osd, expo, monitor"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:9
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:8
 msgid "Workspaces"
 msgstr "Pracovní plochy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:13
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:12
+msgid "Manage workspace preferences"
+msgstr "Spravovat nastavení pracovních ploch"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:25
+msgid "On-Screen Display (OSD)"
+msgstr "On-Screen Display (OSD)"
+
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:26
 msgid "Enable workspace OSD"
 msgstr "Povolit OSD pracovní plochy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:16
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:27
 msgid "Workspace OSD duration"
 msgstr "Doba zobrazení OSD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:20
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:28
 msgid "Workspace OSD horizontal position"
 msgstr "Horizontální pozice OSD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:20
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:28
 msgid "percent of the monitor's width"
 msgstr "procent šířky monitoru"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:24
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:29
 msgid "Workspace OSD vertical position"
 msgstr "Vertikální pozice OSD"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:24
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:29
 msgid "percent of the monitor's height"
 msgstr "procent výšky monitoru"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:27
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:35
 msgid "Allow cycling through workspaces"
 msgstr "Povolit cyklické procházení skrze pracovní plochy"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:28
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:36
 msgid "Only use workspaces on primary monitor (requires Cinnamon restart)"
 msgstr ""
 "Používat pracovní plochy pouze na hlavním monitoru (vyžaduje restart "
 "Cinnamonu)"
 
-#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:29
+#: files/usr/lib/cinnamon-settings/modules/cs_workspaces.py:37
 msgid "Display Expo view as a grid"
 msgstr "Zobrazit Expo náhled jako mřížku"
 
 #: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:68
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:263
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:269
 #, c-format
 msgid "Search %s"
 msgstr "Hledat %s"
@@ -3174,19 +3589,19 @@ msgstr "Hledat %s"
 msgid "Installed"
 msgstr "Nainstalováno"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:141
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:487
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:492
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:147
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:496
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:501
 #, c-format
 msgid "Add to %s"
 msgstr "Přiřadit %s"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:143
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:494
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:149
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:503
 msgid "Apply theme"
 msgstr "Použít motiv"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:146
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:152
 #, c-format
 msgid ""
 "Some %s can be added multiple times.\n"
@@ -3197,93 +3612,97 @@ msgstr ""
 " Použijte toto k přidání další instance. Použijte \"Editační režim panelu\" "
 "k odstranění jednotlivých instancí"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:148
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:965
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:154
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:974
 #, c-format
 msgid "Click to enable this %s"
 msgstr "Klepnutím povolte %s"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:150
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:967
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:156
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:976
 #, c-format
 msgid "Click to apply this %s"
 msgstr "Klepně k potvrzení %s"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:153
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:157
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:465
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:472
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:159
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:163
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:474
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:481
 msgid "Configure"
 msgstr "Nastavit"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:155
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:159
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:161
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:165
 #, c-format
 msgid "Configure this %s"
 msgstr "Nastavit %s"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:162
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:168
 msgid "Restore to default"
 msgstr "Obnovit výchozí"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:164
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:170
 msgid "Restore default theme"
 msgstr "Obnovit výchozí vzhled"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:172
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:178
 #, c-format
 msgid "All %s"
 msgstr "Všechny %s"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:173
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:179
 #, c-format
 msgid "Active %s"
 msgstr "Aktivní %s"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:174
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:180
 #, c-format
 msgid "Inactive %s"
 msgstr "Neaktivní %s"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:183
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:189
 msgid "Show"
 msgstr "Zobrazit"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:233
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:239
 msgid "Get more online"
 msgstr "Získat více online"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:242
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:248
 msgid "Most popular"
 msgstr "Nejpopulárnější"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:243
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:249
 msgid "Latest"
 msgstr "Nejnovější"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:254
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:260
 msgid "Sort by"
 msgstr "Řadit podle"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:335
-msgid "  Install or update selected"
-msgstr "  Instalovat nebo aktualizovat vybrané"
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:344
+msgid "Install or update selected"
+msgstr "Instalovat, nebo aktualizovat vybrané"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:343
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:346
+msgid "Select updated"
+msgstr "Vybrat aktualizované"
+
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:348
 msgid "Refresh list"
 msgstr "Obnovit seznam"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:401
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:410
 #, c-format
 msgid "This %s is read-only, and cannot be uninstalled"
 msgstr "Nelze odinstalovat %s, protože je pouze ke čtení"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:409
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:418
 #, c-format
 msgid "This %s is currently active."
 msgstr "%s je právě aktivní"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:411
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:420
 #, c-format
 msgid ""
 "\n"
@@ -3294,47 +3713,43 @@ msgstr ""
 "\n"
 "Počet instancí: %d"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:427
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:436
 #, c-format
 msgid "An update is available for this %s"
 msgstr "Existuje aktualizace pro %s"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:429
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:438
 #, c-format
 msgid "This %s is installed and up-to-date"
 msgstr "%s je instalované a aktuální"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:480
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:489
 #, c-format
 msgid "Remove from %s"
 msgstr "Odstranit z %s"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:499
-msgid "Uninstall"
-msgstr "Odebrat"
-
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:585
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:595
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:594
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:604
 msgid "Action"
 msgstr "Činnost"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:623
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:632
 msgid "Unmark"
 msgstr "Zrušit označení"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:629
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:638
 msgid "Mark for upgrade"
 msgstr "Označit pro aktualizaci"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:631
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:640
 msgid "Mark for installation"
 msgstr "Označit pro instalaci"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:635
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:644
 msgid "More info"
 msgstr "Více informací"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:777
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:776
 #, c-format
 msgid ""
 "One or more active %s may have been updated.  You probably need to restart "
@@ -3342,7 +3757,7 @@ msgid ""
 msgstr ""
 "Pravděpodobně se zaktualizovali %s. Zřejmě bude nutné restartovat Cinnamon"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:833
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:843
 #, c-format
 msgid ""
 "There are multiple instances of this %s, do you want to remove them all?\n"
@@ -3351,12 +3766,12 @@ msgstr ""
 "%s má více aktivních instancí, chcete je všechny odebrat?\n"
 "\n"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:854
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:864
 #, c-format
 msgid "Are you sure you want to completely remove %s?"
 msgstr "Určitě chcete úplně odebrat %s?"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:928
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:938
 #, c-format
 msgid ""
 "This operation will update %d installed %s.\n"
@@ -3367,17 +3782,17 @@ msgstr ""
 "\n"
 "Přejete si pokračovat?"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:943
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:953
 #, c-format
 msgid "%d updates available!"
 msgstr "%d aktualizací je připravených"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:945
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:955
 #, c-format
 msgid "%d update available!"
 msgstr "%d aktualizace připravena!"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:963
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:972
 #, c-format
 msgid ""
 "Some %s can be added multiple times.\n"
@@ -3388,7 +3803,7 @@ msgstr ""
 "Použijte toto k přidání další instance. Použijte Editační režim panelu k "
 "odstranění jednotlivých instancí"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:974
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:983
 #, c-format
 msgid ""
 "\n"
@@ -3397,7 +3812,7 @@ msgstr ""
 "\n"
 "%s nepodporuje více instancí"
 
-#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:976
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:985
 #, c-format
 msgid ""
 "\n"
@@ -3405,6 +3820,15 @@ msgid ""
 msgstr ""
 "\n"
 "%s podporuje maximálně %d instancí"
+
+#: files/usr/lib/cinnamon-settings/bin/ExtensionCore.py:1027
+#, c-format
+msgid ""
+"This will restore the default set of enabled %s.  Are you sure you want to "
+"do this?"
+msgstr ""
+"Toto obnoví povolená rozšíření ze současných %s. Jste si jisti, že chcete "
+"pokračovat?"
 
 #: files/usr/lib/cinnamon-settings/bin/eyedropper.py:13
 msgid ""
@@ -3418,49 +3842,49 @@ msgstr ""
 msgid "Applet info"
 msgstr "Info o appletu"
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:106
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:107
 msgid "Select and Close"
 msgstr "Vybrat a zavřít"
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:182
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:183
 msgid "Downloading screenshot"
 msgstr "Stahování snímků obrazovky"
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:245
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:246
 #, c-format
 msgid "Refreshing %s index..."
 msgstr "Aktualizování %s seznamu..."
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:276
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:277
 msgid ""
 "Something went wrong with the spices download.  Please try refreshing the "
 "list again."
 msgstr "Při stahování rozšíření nastala chyba. Prosím aktualizujte seznam."
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:279
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:280
 #, c-format
 msgid "Refreshing %s cache..."
 msgstr "Obnovuji cache od %s..."
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:384
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:410
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:385
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:411
 #, c-format
 msgid "Installing %s..."
 msgstr "Instaluji %s..."
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:406
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:407
 #, c-format
 msgid "Installing translations for %s..."
 msgstr "Instaluji překlady pro %s..."
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:412
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:413
 #, c-format
 msgid ""
 "Please enter your password to install the required settings schema for %s"
 msgstr ""
 "Prosím zadejte své heslo k instalaci vyžadovaných nastavení schémat pro %s"
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:420
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:421
 #, c-format
 msgid ""
 "Could not install the settings schema for %s.  You will have to perform this "
@@ -3468,8 +3892,8 @@ msgid ""
 msgstr ""
 "Nelze nainstalovat nastavení schémat pro %s. Tyto kroky musíte provést osobně"
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:446
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:495
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:447
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:496
 #, c-format
 msgid ""
 "An error occurred during installation or updating.  You may wish to report "
@@ -3482,17 +3906,17 @@ msgstr ""
 "\n"
 "Pokud se jednalo o aktualizaci, je původní verze netknutá"
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:503
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:504
 #, c-format
 msgid "Uninstalling %s..."
 msgstr "Odinstalovává se %s..."
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:510
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:511
 #, c-format
 msgid "Please enter your password to remove the settings schema for %s"
 msgstr "Vložte prosím své heslo k odebrání nastavení schémat pro %s"
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:517
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:518
 #, c-format
 msgid ""
 "Could not remove the settings schema for %s.  You will have to perform this "
@@ -3501,12 +3925,12 @@ msgstr ""
 "Nelze odebrat nastavení schémat pro %s. Tento krok budete muset provést "
 "osobně. Nejedná se o závažnou chybu"
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:536
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:537
 #, c-format
 msgid "Problem uninstalling %s.  You may need to manually remove it."
 msgstr "Problém s odinstalací %s. Budete muset provést manuální odebrání.."
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:591
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:592
 msgid ""
 "An error occurred while trying to access the server.  Please try again in a "
 "little while."
@@ -3514,11 +3938,11 @@ msgstr ""
 "Došlo k chybě při pokusu o přístup k serveru. Zkuste to prosím za chvíli "
 "znovu."
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:592
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:593
 msgid "Download aborted."
 msgstr "Stahování přerušeno."
 
-#: files/usr/lib/cinnamon-settings/bin/Spices.py:684
+#: files/usr/lib/cinnamon-settings/bin/Spices.py:688
 #, c-format
 msgid ""
 "\n"
@@ -3547,49 +3971,49 @@ msgstr "Odebírám současnou instanci od %s"
 msgid "Momentarily highlight the %s on your desktop"
 msgstr "Dočasně zvýraznit %s na ploše"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:173
+#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:178
 #, c-format
-msgid "Instance %s"
-msgstr "Instance %s"
+msgid "Instance %d"
+msgstr "Instance %d"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:231
+#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:243
 msgid "Reset to defaults"
 msgstr "Obnovit výchozí hodnoty"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:236
+#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:248
 msgid "Import from a file"
 msgstr "Importovat ze souboru"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:241
+#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:253
 msgid "Export to a file"
 msgstr "Exportovat do souboru"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:252
+#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:264
 msgid "Select a JSON file to import"
 msgstr "Vyberte soubor typu JSON pro import"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:259
-#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:279
+#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:271
+#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:291
 msgid "JSON files"
 msgstr "JSON soubory"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:271
+#: files/usr/lib/cinnamon-settings/bin/XletSettings.py:283
 msgid "Select or enter file to export to"
 msgstr "Vyberte nebo zadejte soubor, do něhož se bude exportovat"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:93
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:92
 msgid "Error saving file"
 msgstr "Chyba při ukládání souboru"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:94
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:93
 msgid "There was a problem exporting the file to the selected location."
 msgstr "Nastal problém při exportu souboru do zvoleného umístění."
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:106
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:105
 msgid "Error importing file"
 msgstr "Chyba při importování souboru"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:107
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:106
 msgid ""
 "There was a problem importing the configuration file.\n"
 "Please check that it is a valid JSON file, and is appropriate for this "
@@ -3601,11 +4025,11 @@ msgstr ""
 "tento applet/desklet/rozšíření.\n"
 "Původní konfigurace nebyla změněna."
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:177
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:205
 msgid "Possible incompatible versions"
 msgstr "Pravděpodobně nekompatibilní verze"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:181
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:209
 msgid ""
 "The MD5 tags for the file you are trying to import and the existing file do "
 "not match.\n"
@@ -3625,39 +4049,27 @@ msgstr ""
 "\n"
 "Jste si jisti, že chcete pokračovat?"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:780
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:823
 msgid "Select a directory to use"
 msgstr "Zvolte adresář k použití"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:791
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:834
 msgid "Directories"
 msgstr "Adresáře"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:864
-msgid "Pick a new icon file"
-msgstr "Zvolte nový soubor s ikonou"
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:907
+msgid "Choose an Icon"
+msgstr "Zvolte ikonu"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:871
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:914
 msgid "Image files"
 msgstr "Obrázkové soubory"
 
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:960
-msgid "Click to set a new accelerator key."
-msgstr "Klepněte k určení nové klávesové zkratky"
-
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:961
-msgid "  Press Escape or click again to cancel the operation."
-msgstr "  Zmáčkněte Escape, či klepněte znovu k ukončení operace."
-
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:983
-msgid "Pick an accelerator"
-msgstr "Zvolte zkratku"
-
-#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:1025
+#: files/usr/lib/cinnamon-settings/bin/XletSettingsWidgets.py:1100
 msgid "<not set>"
 msgstr "<nenastaveno>"
 
-#: files/usr/lib/cinnamon-screensaver-lock-dialog/cinnamon-screensaver-lock-dialog.py:40
+#: files/usr/lib/cinnamon-screensaver-lock-dialog/cinnamon-screensaver-lock-dialog.py:39
 msgid "Please type an away message for the lock screen"
 msgstr "Prosím zadejte zprávu pro zamykací obrazovku, pokud budete pryč"
 
@@ -3733,16 +4145,28 @@ msgstr "Střední"
 msgid "Font size:"
 msgstr "Velikost fontu:"
 
+#. clock@cinnamon.org->settings-schema.json->font-size->units
+msgid " "
+msgstr " "
+
+#. #-#-#-#-#  cinnamon-json.pot  #-#-#-#-#
+#. clock@cinnamon.org->settings-schema.json->use-custom-format->description
+#. #-#-#-#-#  cinnamon-json.pot  #-#-#-#-#
+#. calendar@cinnamon.org->settings-schema.json->use-custom-format->description
+msgid "Use a custom date format"
+msgstr "Použít vlastní datový formát"
+
+#. clock@cinnamon.org->settings-schema.json->use-custom-format->tooltip
+msgid ""
+"Check this to define a custom format for the time in the clock desklet."
+msgstr "Zde se dozvíte jak nastavit vlastní formát času v deskletu hodiny."
+
 #. #-#-#-#-#  cinnamon-json.pot  #-#-#-#-#
 #. clock@cinnamon.org->settings-schema.json->date-format->description
 #. #-#-#-#-#  cinnamon-json.pot  #-#-#-#-#
 #. calendar@cinnamon.org->settings-schema.json->custom-format->description
 msgid "Date format:"
 msgstr "Formát data:"
-
-#. calendar@cinnamon.org->settings-schema.json->use-custom-format->description
-msgid "Use a custom date format"
-msgstr "Použít vlastní datový formát"
 
 #. calendar@cinnamon.org->settings-schema.json->use-custom-format->tooltip
 msgid ""
@@ -3770,6 +4194,46 @@ msgstr "Zaškrněte toto, pokud chcete zobrazit čísla týdnů v kálendáři"
 msgid "Set your custom format here."
 msgstr "Nastavte si zde vlastní formát"
 
+#. power@cinnamon.org->settings-schema.json->labelinfo->options
+msgid "Hide label"
+msgstr "Skrýt popisek"
+
+#. power@cinnamon.org->settings-schema.json->labelinfo->options
+msgid "Show time remaining"
+msgstr "Zobrazit zbývající čas"
+
+#. power@cinnamon.org->settings-schema.json->labelinfo->options
+msgid "Show percentage and time remaining"
+msgstr "Zobrazit procenta a zbývající čas"
+
+#. power@cinnamon.org->settings-schema.json->labelinfo->options
+msgid "Show percentage"
+msgstr "Zobrazit procenta"
+
+#. sound@cinnamon.org->settings-schema.json->hideSystray->description
+msgid "Hide system tray icons for compatible players"
+msgstr "Skrýt v systémové oblasti ikony kompatibilních přehrávačů"
+
+#. sound@cinnamon.org->settings-schema.json->showtrack->description
+msgid "Show song information on the panel"
+msgstr "Zobrazit informace o skladbě na panelu"
+
+#. sound@cinnamon.org->settings-schema.json->showalbum->description
+msgid "Show album art as icon"
+msgstr "Zobrazit obal alba jako ikonu"
+
+#. sound@cinnamon.org->settings-schema.json->truncatetext->description
+msgid "Limit song information to"
+msgstr "Omezit informace o skladbě na"
+
+#. sound@cinnamon.org->settings-schema.json->truncatetext->units
+msgid "characters"
+msgstr "znaků"
+
+#. user@cinnamon.org->settings-schema.json->display-name->description
+msgid "Display user name on panel"
+msgstr "Zobrazovat užitelské jméno na panelu"
+
 #. menu@cinnamon.org->settings-schema.json->menu-editor-button->description
 msgid "Open the menu editor"
 msgstr "Otevřít menu editor"
@@ -3777,6 +4241,14 @@ msgstr "Otevřít menu editor"
 #. menu@cinnamon.org->settings-schema.json->menu-editor-button->tooltip
 msgid "Press this button to customize your menu entries."
 msgstr "Stiskněte toto tlačítko, pokud chcete upravit vaše menu"
+
+#. menu@cinnamon.org->settings-schema.json->menu-icon-custom->description
+msgid "Use a custom icon"
+msgstr "Použít vlastní ikonu"
+
+#. menu@cinnamon.org->settings-schema.json->menu-icon-custom->tooltip
+msgid "Unchecking this allows the theme to set the icon"
+msgstr "Odškrtnutí tohoto umožní tématu nastavit ikonu"
 
 #. menu@cinnamon.org->settings-schema.json->show-recent->description
 msgid "Show recent files"
@@ -3810,13 +4282,9 @@ msgstr "Ikona"
 msgid "Select an icon to show in the panel."
 msgstr "Zvolte ikonu, která se zobrazí na panelu."
 
-#. menu@cinnamon.org->settings-schema.json->menu-label->description
-msgid "Text"
-msgstr "Text"
-
 #. menu@cinnamon.org->settings-schema.json->menu-label->tooltip
 msgid "Enter custom text to show in the panel."
-msgstr ""
+msgstr "Vložte text, který se zobrazí na panelu"
 
 #. menu@cinnamon.org->settings-schema.json->activate-on-hover->description
 msgid "Open the menu when I move my mouse over it"
@@ -3833,7 +4301,7 @@ msgstr "Povolit automatický posun v seznamu aplikací"
 #. menu@cinnamon.org->settings-schema.json->enable-autoscroll->tooltip
 msgid ""
 "Choose whether or not to enable smooth autoscrolling in the application list."
-msgstr ""
+msgstr "Vyberte, pokud chcete povolit automatický posun v seznamu aplikací."
 
 #. menu@cinnamon.org->settings-schema.json->show-places->description
 msgid "Show bookmarks and places"
@@ -3841,7 +4309,7 @@ msgstr "Zobrazit záložky a místa"
 
 #. menu@cinnamon.org->settings-schema.json->show-places->tooltip
 msgid "Choose whether or not to show bookmarks and places in the menu."
-msgstr ""
+msgstr "Vyberte, pokud chcete zobrazovat místa a záložky v menu"
 
 #. settings-example@cinnamon.org->settings-schema.json->head->description
 msgid "First Section"
@@ -3976,6 +4444,11 @@ msgid ""
 msgstr ""
 "Navýšením nebo snížením hodnoty tohoto posuvníku se applet v panelu zúží "
 "nebo rozšíří."
+
+#. notifications@cinnamon.org->settings-
+#. schema.json->ignoreTransientNotifications->description
+msgid "Ignore transient notifications"
+msgstr ""
 
 #. spacer@cinnamon.org->settings-schema.json->width->description
 msgid "Amount of space in pixels"
