@@ -12,6 +12,9 @@ GObject.threads_init()
 
 ALLOWED = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 COMMON_DATE_TOKENS = "ABeHYDMSmyp"
+COMMON_INT_TOKENS = ["d", "'d", "ld", "B", "I"]
+COMMON_STR_TOKENS = ["s", "B"]
+COMMON_I_TOKENS = ["i", "li", "I"]
 DATE_THRESHOLD = 2
 
 MO_EXT = ".mo"
@@ -29,6 +32,15 @@ BAD_MISMATCH_MAYBE_DATE = 100
 
 def allowed(char):
     return char in ALLOWED
+
+def same_type(token1, token2):    
+    if (token1[1:] in COMMON_INT_TOKENS and token2[1:] in COMMON_INT_TOKENS):
+        return True
+    if (token1[1:] in COMMON_STR_TOKENS and token2[1:] in COMMON_STR_TOKENS):
+        return True
+    if (token1[1:] in COMMON_I_TOKENS and token2[1:] in COMMON_I_TOKENS):
+        return True
+    return False
 
 class TokenList(list):
     def __init__(self):
@@ -335,10 +347,14 @@ class ThreadedTreeView(Gtk.TreeView):
                     id_token = id_tokens[j]
                     str_token = str_tokens[j]
                     if id_token != str_token:
-                        mismatch = True
+                        if same_type(id_token, str_token):
+                            print "Same type tokens: %s %s" % (id_token, str_token)
+                        else:
+                            mismatch = True
+
                 if (id_date_count >= DATE_THRESHOLD or str_date_count >= DATE_THRESHOLD) and mismatch:
                     return BAD_MISMATCH_MAYBE_DATE
-                elif mismatch:           
+                elif mismatch:       
                     print id_tokens
                     print str_tokens
                     print ""         
