@@ -1,12 +1,13 @@
 Source: cinnamon-translations
-Section: admin
+Section: localization
 Priority: optional
 Maintainer: Clement Lefebvre <root@linuxmint.com>
-Build-Depends: debhelper (>= 5)
-Standards-Version: 3.7.2
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
 
 Package: cinnamon-translations
-Replaces: cinnamon-common
 Architecture: all
+Replaces: cinnamon-common (<< 2.0)
+Breaks: cinnamon-common (<< 2.0)
 Description: Translation files for the Cinnamon desktop
- Translation files for the Cinnamon desktop.
+ The package contains the translation files for the Cinnamon packages.
