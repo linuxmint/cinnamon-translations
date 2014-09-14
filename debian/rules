@@ -7,9 +7,6 @@
 %:
 	dh $@ --parallel
 
-override_dh_auto_clean:
-	./cleanup.sh
-
-override_dh_auto_configure override_dh_auto_build:
+override_dh_auto_configure override_dh_auto_test:
 
 
