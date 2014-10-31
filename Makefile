@@ -7,8 +7,8 @@ buildmo:
 	for dir in `ls po-export`; do \
 		for file in `ls po-export/$$dir/*.po`; do \
 			lang=`echo $$file | sed 's/\.po$$//' | sed 's/.*\-//'`; \
-			install -d usr/share/cinnamon/locale/$$lang/LC_MESSAGES/; \
-			msgfmt -o usr/share/cinnamon/locale/$$lang/LC_MESSAGES/$$dir.mo $$file; \
+			install -d usr/share/locale/$$lang/LC_MESSAGES/; \
+			msgfmt -o usr/share/locale/$$lang/LC_MESSAGES/$$dir.mo $$file; \
 		done \
 	 done
 
