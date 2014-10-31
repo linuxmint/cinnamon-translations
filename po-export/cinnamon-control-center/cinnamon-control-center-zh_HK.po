@@ -13,25 +13,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center 3.3.91\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-29 10:54+0000\n"
-"PO-Revision-Date: 2014-05-24 10:49+0000\n"
-"Last-Translator: KL <sumoisrock@gmail.com>\n"
+"POT-Creation-Date: 2014-10-31 01:28+0100\n"
+"PO-Revision-Date: 2014-10-29 18:57+0000\n"
+"Last-Translator: tomoe_musashi <hkg.musashi@gmail.com>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2014-05-25 11:55+0000\n"
-"X-Generator: Launchpad (build 17017)\n"
+"X-Launchpad-Export-Date: 2014-10-31 00:59+0000\n"
+"X-Generator: Launchpad (build 17211)\n"
 "Language: \n"
 
 #: panels/color/cc-color-panel.c:106
 msgid "Other profile…"
-msgstr "其他個人資料..."
+msgstr "其他設定組合..."
 
 #: panels/color/cc-color-panel.c:119
 msgid "Default: "
-msgstr "默認值： "
+msgstr "預設值： "
 
 #: panels/color/cc-color-panel.c:126
 msgid "Colorspace: "
@@ -55,7 +55,7 @@ msgstr "選擇 ICC 設定檔案"
 
 #: panels/color/cc-color-panel.c:230
 msgid "_Import"
-msgstr "進口(_I)"
+msgstr "匯入(_I)"
 
 #: panels/color/cc-color-panel.c:241
 msgid "Supported ICC profiles"
@@ -63,7 +63,7 @@ msgstr "支援的 ICC 設定組合"
 
 #: panels/color/cc-color-panel.c:248
 msgid "All files"
-msgstr "全部檔案"
+msgstr "所有檔案"
 
 #: panels/color/cc-color-panel.c:638
 msgid "Available Profiles for Displays"
@@ -87,10 +87,10 @@ msgstr "可用的網絡攝影機描述檔"
 
 #: panels/color/cc-color-panel.c:659 panels/color/color.ui.h:2
 msgid "Available Profiles"
-msgstr "可用的設定檔"
+msgstr "可用的設定組合"
 
 #: panels/color/cc-color-panel.c:935 panels/sound/gvc-mixer-dialog.c:1523
-#: panels/sound-nua/gvc-mixer-dialog.c:1600
+#: panels/sound-nua/gvc-mixer-dialog.c:1605
 msgid "Device"
 msgstr "所用裝置"
 
@@ -128,7 +128,7 @@ msgstr "沒有設定組合"
 #, c-format
 msgid "%i year"
 msgid_plural "%i years"
-msgstr[0] "%i 個年"
+msgstr[0] "%i 年"
 
 #: panels/color/cc-color-panel.c:1505
 #, c-format
@@ -140,7 +140,7 @@ msgstr[0] "%i 個月"
 #, c-format
 msgid "%i week"
 msgid_plural "%i weeks"
-msgstr[0] "%i 個週"
+msgstr[0] "%i 週"
 
 #: panels/color/cc-color-panel.c:1523
 msgid "Less than 1 week"
@@ -149,7 +149,7 @@ msgstr "少於1週"
 #: panels/color/cc-color-panel.c:1713 panels/color/cc-color-panel.c:1754
 #: panels/color/cc-color-panel.c:1765 panels/color/cc-color-panel.c:1776
 msgid "Uncalibrated"
-msgstr "未經校準"
+msgstr "未經校正"
 
 #: panels/color/cc-color-panel.c:1716
 msgid "This device is not color managed."
@@ -279,110 +279,224 @@ msgstr "無法偵測顯示器"
 msgid "Could not get screen information"
 msgstr "無法取得螢幕資訊"
 
-#: panels/network/cc-network-panel.c:661
-msgid "Network proxy"
-msgstr "網絡代理伺服器"
+#: panels/network/cc-network-panel.c:368
+msgid "Air_plane Mode"
+msgstr "飛安模式(_P)"
 
-#: panels/network/cc-network-panel.c:853 panels/network/net-vpn.c:278
+#: panels/network/cc-network-panel.c:968
+msgid "Network Proxy"
+msgstr ""
+
+#: panels/network/cc-network-panel.c:1147 panels/network/net-vpn.c:278
+#: panels/network/net-vpn.c:431
 #, c-format
 msgid "%s VPN"
 msgstr "%s VPN"
 
-#: panels/network/cc-network-panel.c:920
+#: panels/network/cc-network-panel.c:1292
 msgid "The system network services are not compatible with this version."
 msgstr "系統網絡服務與這個版本不兼容。"
 
-#: panels/network/cc-network-panel.c:1108
-msgid "Air_plane Mode"
-msgstr "飛安模式(_P)"
+#: panels/network/net-device-bond.c:77
+msgid "Bond slaves"
+msgstr ""
 
-#: panels/network/net-device-mobile.c:222
-msgid "Add new connection"
-msgstr "加入新連線"
+#: panels/network/net-device-bond.c:102 panels/network/net-device-bridge.c:102
+#: panels/network/net-device-team.c:102
+msgid "(none)"
+msgstr ""
 
-#: panels/network/net-device-mobile.c:261 panels/network/net-device-wifi.c:725
-#: panels/network/net-device-wired.c:126
+#: panels/network/net-device-bridge.c:77
+msgid "Bridge slaves"
+msgstr ""
+
+#: panels/network/net-device-ethernet.c:54
+#: panels/network/net-device-wifi.c:529
 #, c-format
 msgid "%d Mb/s"
 msgstr "%d Mb/s"
 
-#: panels/network/net-device-wifi.c:258 panels/network/net-device-wifi.c:437
-msgid "WEP"
-msgstr "WEP"
-
-#: panels/network/net-device-wifi.c:262 panels/network/net-device-wifi.c:441
-msgid "WPA"
-msgstr "WPA"
-
-#: panels/network/net-device-wifi.c:266
-msgid "WPA2"
-msgstr "WPA2"
-
-#: panels/network/net-device-wifi.c:271
-msgid "Enterprise"
-msgstr "企業版"
-
-#: panels/network/net-device-wifi.c:652
+#: panels/network/net-device-ethernet.c:112
+#: panels/network/net-device-wifi.c:458
 msgid "never"
 msgstr "永不"
 
-#: panels/network/net-device-wifi.c:662
+#: panels/network/net-device-ethernet.c:122
+#: panels/network/net-device-wifi.c:468
 msgid "today"
 msgstr "今日"
 
-#: panels/network/net-device-wifi.c:664
+#: panels/network/net-device-ethernet.c:124
+#: panels/network/net-device-wifi.c:470
 msgid "yesterday"
 msgstr "昨日"
 
-#: panels/network/net-device-wifi.c:666
+#: panels/network/net-device-ethernet.c:126
+#: panels/network/net-device-wifi.c:472
 #, c-format
 msgid "%i day ago"
 msgid_plural "%i days ago"
-msgstr[0] "%i 天以前"
+msgstr[0] "%i 天前"
 
-#: panels/network/net-device-wifi.c:735 panels/network/panel-common.c:277
-msgid "Not connected"
-msgstr "未連線"
+#: panels/network/net-device-ethernet.c:159 panels/network/panel-common.c:693
+#: panels/network/network-simple.ui.h:3 panels/network/network-wifi.ui.h:11
+#: panels/network/connection-editor/details-page.ui.h:4
+msgid "IPv4 Address"
+msgstr "IPv4 位址"
 
-#: panels/network/net-device-wifi.c:737 panels/network/net-device-wifi.c:2108
-msgid "Out of range"
-msgstr "超過範圍"
+#: panels/network/net-device-ethernet.c:160
+#: panels/network/net-device-ethernet.c:164 panels/network/panel-common.c:694
+#: panels/network/network-mobile.ui.h:4 panels/network/network-simple.ui.h:4
+#: panels/network/network-wifi.ui.h:12
+#: panels/network/connection-editor/details-page.ui.h:5
+msgid "IPv6 Address"
+msgstr "IPv6 位址"
 
-#: panels/network/net-device-wifi.c:960
+#: panels/network/net-device-ethernet.c:162 panels/network/panel-common.c:696
+#: panels/network/panel-common.c:698 panels/network/network-mobile.ui.h:3
+msgid "IP Address"
+msgstr "IP 位址"
+
+#: panels/network/net-device-ethernet.c:167
+#: panels/network/network-simple.ui.h:2 panels/network/network-wifi.ui.h:13
+#: panels/network/connection-editor/details-page.ui.h:6
+msgid "Hardware Address"
+msgstr "硬件位址"
+
+#: panels/network/net-device-ethernet.c:171
+#: panels/network/network-mobile.ui.h:5 panels/network/network-simple.ui.h:5
+#: panels/network/network-wifi.ui.h:14
+#: panels/network/connection-editor/details-page.ui.h:7
+msgid "Default Route"
+msgstr "預設路由"
+
+#: panels/network/net-device-ethernet.c:173
+#: panels/network/network-mobile.ui.h:6 panels/network/network-simple.ui.h:6
+#: panels/network/network-wifi.ui.h:15
+#: panels/network/connection-editor/details-page.ui.h:8
+#: panels/network/connection-editor/ip4-page.ui.h:3
+#: panels/network/connection-editor/ip6-page.ui.h:3
+msgid "DNS"
+msgstr "DNS"
+
+#: panels/network/net-device-ethernet.c:178
+#: panels/network/network-wifi.ui.h:16
+msgid "Last used"
+msgstr "最後使用的"
+
+#: panels/network/net-device-ethernet.c:283
+#: panels/network/network-ethernet.ui.h:1
+msgid "Wired"
+msgstr "有線"
+
+#: panels/network/net-device-ethernet.c:351
+#: panels/network/network-ethernet.ui.h:3 panels/network/network-mobile.ui.h:8
+#: panels/network/network-vpn.ui.h:8
+msgid "Options…"
+msgstr ""
+
+#: panels/network/net-device-ethernet.c:469
 #, c-format
+msgid "Profile %d"
+msgstr ""
+
+#: panels/network/net-device-mobile.c:232
+msgid "Add new connection"
+msgstr "加入新連線"
+
+#: panels/network/net-device-team.c:77
+msgid "Team slaves"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:217 panels/network/net-device-wifi.c:378
+msgid "WEP"
+msgstr "WEP"
+
+#: panels/network/net-device-wifi.c:221 panels/network/net-device-wifi.c:383
+#: panels/network/network-wifi.ui.h:23
+msgid "WPA"
+msgstr "WPA"
+
+#: panels/network/net-device-wifi.c:225
+msgid "WPA2"
+msgstr "WPA2"
+
+#: panels/network/net-device-wifi.c:230
+msgid "Enterprise"
+msgstr "企業版"
+
+#: panels/network/net-device-wifi.c:1153
 msgid ""
-"Network details for %s including password and any custom configuration will "
-"be lost."
-msgstr "%s 的網絡詳細資料包含密碼及任何自選的組態都會消失。"
+"If you have a connection to the Internet other than wireless, you can set up "
+"a wireless hotspot to share the connection with others."
+msgstr ""
 
-#: panels/network/net-device-wifi.c:971
-msgid "Forget"
-msgstr "遺忘"
-
-#: panels/network/net-device-wifi.c:1554
-msgid ""
-"If you have a connection to the Internet other than wireless, you can use it "
-"to share your internet connection with others."
-msgstr "如果有無線網絡以外的方式連接互聯網，可以使用它來與其他人共用互聯網連線。"
-
-#: panels/network/net-device-wifi.c:1558
+#: panels/network/net-device-wifi.c:1157
 #, c-format
 msgid "Switching on the wireless hotspot will disconnect you from <b>%s</b>."
-msgstr "切換無線網絡熱點會讓你從 <b>%s</b> 斷線。"
+msgstr "切換無線基地台會讓你從 <b>%s</b> 斷線。"
 
-#: panels/network/net-device-wifi.c:1562
+#: panels/network/net-device-wifi.c:1161
 msgid ""
-"It is not possible to access the internet through your wireless while the "
+"It is not possible to access the Internet through your wireless while the "
 "hotspot is active."
-msgstr "當熱點在使用中時是沒有辦法透過無線網絡存取互聯網的。"
+msgstr ""
 
-#: panels/network/net-device-wifi.c:1636
+#: panels/network/net-device-wifi.c:1238
 msgid "Stop hotspot and disconnect any users?"
-msgstr "停止熱點並中斷任何使用者的連線？"
+msgstr "停止基地台並中斷任何使用者的連線？"
 
-#: panels/network/net-device-wifi.c:1639
+#: panels/network/net-device-wifi.c:1240 panels/network/net-device-wifi.c:1448
+#: panels/common/language-chooser.ui.h:2
+msgid "_Cancel"
+msgstr "取消(_C)"
+
+#: panels/network/net-device-wifi.c:1241
 msgid "_Stop Hotspot"
-msgstr "停止熱點(_S)"
+msgstr "停止基地台(_S)"
+
+#: panels/network/net-device-wifi.c:1313
+msgid "System policy prohibits use as a Hotspot"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1316
+msgid "Wireless device does not support Hotspot mode"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1445
+msgid ""
+"Network details for the selected networks, including passwords and any "
+"custom configuration will be lost."
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1449 panels/network/network-wifi.ui.h:46
+#: panels/network/connection-editor/reset-page.ui.h:2
+msgid "_Forget"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1603
+msgid "Preferences"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1609
+msgid "Options"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1627
+msgid "Connect"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1650
+msgid "Disconnect"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1864
+msgid "Known Networks"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1868
+msgid "_Close"
+msgstr ""
 
 #: panels/network/net-proxy.c:67
 msgid ""
@@ -393,276 +507,237 @@ msgstr "當沒有提供組態 URL 時會使用網頁代理伺服器自動發現�
 msgid "This is not recommended for untrusted public networks."
 msgstr "這不建議用於不信任的公用網絡。"
 
-#: panels/network/net-proxy.c:368
+#: panels/network/net-proxy.c:405
 msgid "Proxy"
 msgstr "代理伺服器"
 
-#: panels/network/panel-common.c:82 panels/network/panel-common.c:162
+#: panels/network/panel-common.c:127
 msgid "Unknown"
 msgstr "不明"
 
-#: panels/network/panel-common.c:86
-msgid "Wired"
-msgstr "有線"
-
-#: panels/network/panel-common.c:90 panels/network/network-wifi.ui.h:3
-msgid "Wireless"
-msgstr "無線"
-
-#: panels/network/panel-common.c:97
-msgid "Mobile broadband"
-msgstr "流動寬頻"
-
-#: panels/network/panel-common.c:102
-msgid "Bluetooth"
-msgstr "藍牙"
-
-#: panels/network/panel-common.c:106
-msgid "Mesh"
-msgstr "網格"
-
-#: panels/network/panel-common.c:166
+#: panels/network/panel-common.c:131
 msgid "Ad-hoc"
 msgstr "Ad-hoc"
 
-#: panels/network/panel-common.c:170
+#: panels/network/panel-common.c:135
 msgid "Infrastructure"
 msgstr "基礎架構"
 
-#: panels/network/panel-common.c:194 panels/network/panel-common.c:255
+#: panels/network/panel-common.c:151 panels/network/panel-common.c:205
 msgid "Status unknown"
 msgstr "狀態不明"
 
-#: panels/network/panel-common.c:198
+#: panels/network/panel-common.c:155
 msgid "Unmanaged"
 msgstr "未管理"
 
-#: panels/network/panel-common.c:203
-msgid "Firmware missing"
-msgstr "缺少韌體"
-
-#: panels/network/panel-common.c:206
-msgid "Cable unplugged"
-msgstr "纜線已拔除"
-
-#: panels/network/panel-common.c:208
+#: panels/network/panel-common.c:159
 msgid "Unavailable"
 msgstr "無法使用"
 
-#: panels/network/panel-common.c:212
-msgid "Disconnected"
-msgstr "已斷線"
-
-#: panels/network/panel-common.c:219 panels/network/panel-common.c:261
+#: panels/network/panel-common.c:169 panels/network/panel-common.c:211
 msgid "Connecting"
 msgstr "連線中"
 
-#: panels/network/panel-common.c:223 panels/network/panel-common.c:265
+#: panels/network/panel-common.c:173 panels/network/panel-common.c:215
 msgid "Authentication required"
 msgstr "需要驗證"
 
-#: panels/network/panel-common.c:227 panels/network/panel-common.c:269
+#: panels/network/panel-common.c:177 panels/network/panel-common.c:219
 msgid "Connected"
 msgstr "已連線"
 
-#: panels/network/panel-common.c:231
+#: panels/network/panel-common.c:181
 msgid "Disconnecting"
 msgstr "斷線"
 
-#: panels/network/panel-common.c:235 panels/network/panel-common.c:273
+#: panels/network/panel-common.c:185 panels/network/panel-common.c:223
 msgid "Connection failed"
 msgstr "連線失敗"
 
-#: panels/network/panel-common.c:239 panels/network/panel-common.c:281
+#: panels/network/panel-common.c:189 panels/network/panel-common.c:231
 msgid "Status unknown (missing)"
-msgstr "狀態不詳（缺乏）"
+msgstr "狀態不詳 (缺少)"
 
-#: panels/network/panel-common.c:301
+#: panels/network/panel-common.c:227
+msgid "Not connected"
+msgstr "未連線"
+
+#: panels/network/panel-common.c:252
 msgid "Configuration failed"
 msgstr "設定失敗"
 
-#: panels/network/panel-common.c:305
+#: panels/network/panel-common.c:256
 msgid "IP configuration failed"
 msgstr "IP 組態失敗"
 
-#: panels/network/panel-common.c:309
+#: panels/network/panel-common.c:260
 msgid "IP configuration expired"
 msgstr "IP 組態過期"
 
-#: panels/network/panel-common.c:313
+#: panels/network/panel-common.c:264
 msgid "Secrets were required, but not provided"
 msgstr "需要機密，但沒有提供"
 
-#: panels/network/panel-common.c:317
+#: panels/network/panel-common.c:268
 msgid "802.1x supplicant disconnected"
 msgstr "802.1x 請求已斷線"
 
-#: panels/network/panel-common.c:321
+#: panels/network/panel-common.c:272
 msgid "802.1x supplicant configuration failed"
 msgstr "802.1x 請求組態失敗"
 
-#: panels/network/panel-common.c:325
+#: panels/network/panel-common.c:276
 msgid "802.1x supplicant failed"
 msgstr "802.1x 請求已失敗"
 
-#: panels/network/panel-common.c:329
+#: panels/network/panel-common.c:280
 msgid "802.1x supplicant took too long to authenticate"
 msgstr "802.1x 請求花了太長時間驗證"
 
-#: panels/network/panel-common.c:333
+#: panels/network/panel-common.c:284
 msgid "PPP service failed to start"
 msgstr "無法啟動 PPP 服務"
 
-#: panels/network/panel-common.c:337
+#: panels/network/panel-common.c:288
 msgid "PPP service disconnected"
 msgstr "PPP 服務已斷線"
 
-#: panels/network/panel-common.c:341
+#: panels/network/panel-common.c:292
 msgid "PPP failed"
 msgstr "PPP 失敗"
 
-#: panels/network/panel-common.c:345
+#: panels/network/panel-common.c:296
 msgid "DHCP client failed to start"
 msgstr "DHCP 客戶端啟動失敗"
 
-#: panels/network/panel-common.c:349
+#: panels/network/panel-common.c:300
 msgid "DHCP client error"
 msgstr "DHCP 客戶端錯誤"
 
-#: panels/network/panel-common.c:353
+#: panels/network/panel-common.c:304
 msgid "DHCP client failed"
 msgstr "DHCP 客戶端失敗"
 
-#: panels/network/panel-common.c:357
+#: panels/network/panel-common.c:308
 msgid "Shared connection service failed to start"
 msgstr "分享的連線服務啟動失敗"
 
-#: panels/network/panel-common.c:361
+#: panels/network/panel-common.c:312
 msgid "Shared connection service failed"
 msgstr "分享的連線服務失敗"
 
-#: panels/network/panel-common.c:365
+#: panels/network/panel-common.c:316
 msgid "AutoIP service failed to start"
 msgstr "無法啟動 AutoIP 服務"
 
-#: panels/network/panel-common.c:369
+#: panels/network/panel-common.c:320
 msgid "AutoIP service error"
 msgstr "AutoIP 服務錯誤"
 
-#: panels/network/panel-common.c:373
+#: panels/network/panel-common.c:324
 msgid "AutoIP service failed"
 msgstr "AutoIP 服務失敗"
 
-#: panels/network/panel-common.c:377
+#: panels/network/panel-common.c:328
 msgid "Line busy"
 msgstr "線路忙碌"
 
-#: panels/network/panel-common.c:381
+#: panels/network/panel-common.c:332
 msgid "No dial tone"
 msgstr "沒有撥號音"
 
-#: panels/network/panel-common.c:385
+#: panels/network/panel-common.c:336
 msgid "No carrier could be established"
 msgstr "無法建立載體"
 
-#: panels/network/panel-common.c:389
+#: panels/network/panel-common.c:340
 msgid "Dialing request timed out"
 msgstr "撥號要求逾時"
 
-#: panels/network/panel-common.c:393
+#: panels/network/panel-common.c:344
 msgid "Dialing attempt failed"
 msgstr "嘗試撥號失敗"
 
-#: panels/network/panel-common.c:397
+#: panels/network/panel-common.c:348
 msgid "Modem initialization failed"
 msgstr "數據機初始化失敗"
 
-#: panels/network/panel-common.c:401
+#: panels/network/panel-common.c:352
 msgid "Failed to select the specified APN"
 msgstr "無法選擇指定的 APN"
 
-#: panels/network/panel-common.c:405
+#: panels/network/panel-common.c:356
 msgid "Not searching for networks"
 msgstr "不要搜尋網絡"
 
-#: panels/network/panel-common.c:409
+#: panels/network/panel-common.c:360
 msgid "Network registration denied"
 msgstr "網絡登記被禁止"
 
-#: panels/network/panel-common.c:413
+#: panels/network/panel-common.c:364
 msgid "Network registration timed out"
 msgstr "網絡登記逾時"
 
-#: panels/network/panel-common.c:417
+#: panels/network/panel-common.c:368
 msgid "Failed to register with the requested network"
 msgstr "無法向要求的網絡登記"
 
-#: panels/network/panel-common.c:421
+#: panels/network/panel-common.c:372
 msgid "PIN check failed"
 msgstr "PIN 檢查失敗"
 
-#: panels/network/panel-common.c:425
+#: panels/network/panel-common.c:376
 msgid "Firmware for the device may be missing"
 msgstr "可能缺少裝置的韌體"
 
-#: panels/network/panel-common.c:429
+#: panels/network/panel-common.c:380
 msgid "Connection disappeared"
 msgstr "連線已消失"
 
-#: panels/network/panel-common.c:433
-msgid "Carrier/link changed"
-msgstr "載體/連結已更改"
-
-#: panels/network/panel-common.c:437
+#: panels/network/panel-common.c:384
 msgid "Existing connection was assumed"
 msgstr "優先使用現有的連線"
 
-#: panels/network/panel-common.c:441
+#: panels/network/panel-common.c:388
 msgid "Modem not found"
 msgstr "找不到數據機"
 
-#: panels/network/panel-common.c:445
+#: panels/network/panel-common.c:392
 msgid "Bluetooth connection failed"
 msgstr "藍牙連線失敗"
 
-#: panels/network/panel-common.c:449
+#: panels/network/panel-common.c:396
 msgid "SIM Card not inserted"
-msgstr "SIM 卡尚未插入"
+msgstr "尚未插入 SIM 卡"
 
-#: panels/network/panel-common.c:453
+#: panels/network/panel-common.c:400
 msgid "SIM Pin required"
 msgstr "需要 SIM PIN 碼"
 
-#: panels/network/panel-common.c:457
+#: panels/network/panel-common.c:404
 msgid "SIM Puk required"
 msgstr "需要 SIM PUK 碼"
 
-#: panels/network/panel-common.c:461
+#: panels/network/panel-common.c:408
 msgid "SIM wrong"
 msgstr "SIM 錯誤"
 
-#: panels/network/panel-common.c:465
+#: panels/network/panel-common.c:412
 msgid "InfiniBand device does not support connected mode"
 msgstr "InfiniBand 裝置不支援已連接模式"
 
-#: panels/network/panel-common.c:469
+#: panels/network/panel-common.c:416
 msgid "Connection dependency failed"
 msgstr "連線相根據性解析失敗"
 
-#: panels/network/panel-common.c:683 panels/network/network-wifi.ui.h:13
-#: panels/network/network-wired.ui.h:2
-msgid "IPv4 Address"
-msgstr "IPv4 位址"
+#: panels/network/panel-common.c:440
+msgid "Firmware missing"
+msgstr "缺少韌體"
 
-#: panels/network/panel-common.c:684 panels/network/network-mobile.ui.h:4
-#: panels/network/network-wifi.ui.h:14 panels/network/network-wired.ui.h:3
-msgid "IPv6 Address"
-msgstr "IPv6 位址"
-
-#: panels/network/panel-common.c:686 panels/network/panel-common.c:688
-#: panels/network/network-mobile.ui.h:3
-msgid "IP Address"
-msgstr "IP 位址"
+#: panels/network/panel-common.c:444 panels/network/panel-common.c:447
+msgid "Cable unplugged"
+msgstr "纜線已拔除"
 
 #: panels/power/cc-power-panel.c:160
 msgid "Unknown time"
@@ -698,12 +773,12 @@ msgstr[0] "分鐘"
 #: panels/power/cc-power-panel.c:230
 #, c-format
 msgid "Charging - %s until fully charged"
-msgstr "充電 - 到完全充飽前還有 %s"
+msgstr "充電中 - 直至完全充滿之前尚餘 %s"
 
 #: panels/power/cc-power-panel.c:238
 #, c-format
 msgid "Caution low battery, %s remaining"
-msgstr "注意電池電力低落，剩下 %s"
+msgstr "注意電池電力低下，剩下 %s"
 
 #: panels/power/cc-power-panel.c:246
 #, c-format
@@ -712,15 +787,15 @@ msgstr "使用電池電力 - 剩下 %s"
 
 #: panels/power/cc-power-panel.c:263
 msgid "Charging"
-msgstr "充電"
+msgstr "充電中"
 
 #: panels/power/cc-power-panel.c:268
 msgid "Using battery power"
-msgstr "使用電池電力"
+msgstr "正在使用電池電力"
 
 #: panels/power/cc-power-panel.c:272
 msgid "Charging - fully charged"
-msgstr "充電 - 已完全充飽"
+msgstr "充電 - 已經完全充滿"
 
 #: panels/power/cc-power-panel.c:276
 msgid "Empty"
@@ -729,24 +804,24 @@ msgstr "沒電"
 #: panels/power/cc-power-panel.c:340
 #, c-format
 msgid "Caution low UPS, %s remaining"
-msgstr "注意 UPS 電力低落，剩下 %s"
+msgstr "注意 UPS 電力低下，剩下 %s"
 
 #: panels/power/cc-power-panel.c:346
 #, c-format
 msgid "Using UPS power - %s remaining"
-msgstr "使用 UPS 電力 - 剩下 %s"
+msgstr "正在使用 UPS 電力 - 剩下 %s"
 
 #: panels/power/cc-power-panel.c:364
 msgid "Caution low UPS"
-msgstr "注意 UPS 電力低落"
+msgstr "注意 UPS 電力低下"
 
 #: panels/power/cc-power-panel.c:369
 msgid "Using UPS power"
-msgstr "使用 UPS 電力"
+msgstr "正在使用 UPS 電力"
 
 #: panels/power/cc-power-panel.c:418
 msgid "Your secondary battery is fully charged"
-msgstr "你的第二電池已完全充飽"
+msgstr "你的第二電池已經完全充滿"
 
 #: panels/power/cc-power-panel.c:422
 msgid "Your secondary battery is empty"
@@ -770,7 +845,7 @@ msgstr "個人數碼助理"
 
 #: panels/power/cc-power-panel.c:519
 msgid "Cellphone"
-msgstr "手機"
+msgstr "手提電話"
 
 #: panels/power/cc-power-panel.c:523
 msgid "Media player"
@@ -790,7 +865,7 @@ msgstr "電池"
 
 #: panels/region/cinnamon-region-panel-xkblt.c:210
 msgid "Layout"
-msgstr "配置"
+msgstr "佈局"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:229
 msgid "Default"
@@ -802,14 +877,14 @@ msgstr "啟用除錯碼"
 
 #: panels/sound/applet-main.c:50
 msgid "Version of this application"
-msgstr "這個程式的版本"
+msgstr "應用程式版本"
 
 #: panels/sound/applet-main.c:62
 msgid " — Cinnamon Volume Control Applet"
-msgstr ""
+msgstr " — Cinnamon 音量控制台"
 
 #: panels/sound/gvc-applet.c:270 panels/sound/gvc-mixer-dialog.c:1654
-#: panels/sound-nua/gvc-mixer-dialog.c:1811
+#: panels/sound-nua/gvc-mixer-dialog.c:1816
 msgid "Output"
 msgstr "輸出"
 
@@ -818,13 +893,13 @@ msgid "Sound Output Volume"
 msgstr "音效輸出音量"
 
 #: panels/sound/gvc-applet.c:276 panels/sound/gvc-mixer-dialog.c:1695
-#: panels/sound-nua/gvc-mixer-dialog.c:1944
+#: panels/sound-nua/gvc-mixer-dialog.c:1949
 msgid "Input"
 msgstr "輸入"
 
 #: panels/sound/gvc-applet.c:278
 msgid "Microphone Volume"
-msgstr "麥克風音量"
+msgstr "咪高峰音量"
 
 #: panels/sound/gvc-balance-bar.c:295 panels/sound-nua/gvc-balance-bar.c:295
 msgid "_Balance:"
@@ -843,7 +918,7 @@ msgstr "重低音(_S)："
 msgid "_Profile:"
 msgstr "設定組合(_P):"
 
-#: panels/sound/gvc-mixer-control.c:1834
+#: panels/sound/gvc-mixer-control.c:1834 panels/network/network-wifi.ui.h:35
 msgid "Disabled"
 msgstr "已停用"
 
@@ -872,18 +947,18 @@ msgid "Peak detect"
 msgstr "峰值檢測"
 
 #: panels/sound/gvc-mixer-dialog.c:1504
-#: panels/sound-nua/gvc-mixer-dialog.c:1582
+#: panels/sound-nua/gvc-mixer-dialog.c:1587
 msgid "Name"
 msgstr "名稱"
 
 #: panels/sound/gvc-mixer-dialog.c:1586
-#: panels/sound-nua/gvc-mixer-dialog.c:1684
+#: panels/sound-nua/gvc-mixer-dialog.c:1689
 #, c-format
 msgid "Speaker Testing for %s"
 msgstr "%s 的喇叭測試"
 
 #: panels/sound/gvc-mixer-dialog.c:1640
-#: panels/sound-nua/gvc-mixer-dialog.c:2106
+#: panels/sound-nua/gvc-mixer-dialog.c:2111
 msgid "_Output volume:"
 msgstr "輸出音量(_O)："
 
@@ -893,15 +968,15 @@ msgstr "選擇聲音輸出的裝置(_H)："
 
 #: panels/sound/gvc-mixer-dialog.c:1684
 msgid "Settings for the selected device:"
-msgstr "已選取裝置的設定值："
+msgstr "已選取裝置的設定："
 
 #: panels/sound/gvc-mixer-dialog.c:1702
-#: panels/sound-nua/gvc-mixer-dialog.c:1991
+#: panels/sound-nua/gvc-mixer-dialog.c:1996
 msgid "_Input volume:"
 msgstr "輸入音量(_I)："
 
 #: panels/sound/gvc-mixer-dialog.c:1725
-#: panels/sound-nua/gvc-mixer-dialog.c:2024
+#: panels/sound-nua/gvc-mixer-dialog.c:2029
 msgid "Input level:"
 msgstr "輸入等級："
 
@@ -910,22 +985,22 @@ msgid "C_hoose a device for sound input:"
 msgstr "選擇聲音輸入的裝置(_H)："
 
 #: panels/sound/gvc-mixer-dialog.c:1780
-#: panels/sound-nua/gvc-mixer-dialog.c:2050
+#: panels/sound-nua/gvc-mixer-dialog.c:2055
 msgid "Sound Effects"
 msgstr "聲音效果"
 
 #: panels/sound/gvc-mixer-dialog.c:1787
-#: panels/sound-nua/gvc-mixer-dialog.c:2057
+#: panels/sound-nua/gvc-mixer-dialog.c:2062
 msgid "_Alert volume:"
 msgstr "警示音量(_A)："
 
 #: panels/sound/gvc-mixer-dialog.c:1795
-#: panels/sound-nua/gvc-mixer-dialog.c:2087
+#: panels/sound-nua/gvc-mixer-dialog.c:2092
 msgid "Applications"
 msgstr "程式集"
 
 #: panels/sound/gvc-mixer-dialog.c:1799
-#: panels/sound-nua/gvc-mixer-dialog.c:2091
+#: panels/sound-nua/gvc-mixer-dialog.c:2096
 msgid "No application is currently playing or recording audio."
 msgstr "沒有應用程式目前正在播放或錄製音效。"
 
@@ -958,91 +1033,90 @@ msgstr "音效偏好設定(_S)"
 msgid "Muted"
 msgstr "已靜音"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:778
+#: panels/sound-nua/gvc-mixer-dialog.c:777
 #: panels/sound-nua/gvc-mixer-dialog.c:948
 #, c-format
 msgid "Settings for %s"
-msgstr ""
+msgstr "%s 的設定"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:804
-#: panels/sound-nua/gvc-mixer-dialog.c:957
+#: panels/sound-nua/gvc-mixer-dialog.c:805
+#: panels/sound-nua/gvc-mixer-dialog.c:960
 msgid "Mode:"
-msgstr ""
+msgstr "模式："
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1736
+#: panels/sound-nua/gvc-mixer-dialog.c:1741
 msgid "Choose an audio file"
-msgstr "選擇一個音頻文件"
+msgstr "選擇一個音訊檔案"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1816
+#: panels/sound-nua/gvc-mixer-dialog.c:1821
 msgid "Play sound through"
-msgstr "播放聲音於"
+msgstr "播放音效於"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1841
-#: panels/sound-nua/gvc-mixer-dialog.c:1973
+#: panels/sound-nua/gvc-mixer-dialog.c:1846
+#: panels/sound-nua/gvc-mixer-dialog.c:1978
 msgid "Settings for the selected device"
 msgstr "用於選擇裝置的設置"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1914
+#: panels/sound-nua/gvc-mixer-dialog.c:1919
 msgid "Test:"
 msgstr "測試："
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1921
+#: panels/sound-nua/gvc-mixer-dialog.c:1926
 msgid "Test Sound"
 msgstr "測試音效"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1948
+#: panels/sound-nua/gvc-mixer-dialog.c:1953
 msgid "Record sound from"
-msgstr ""
+msgstr "從哪裏錄製聲音"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:2069
+#: panels/sound-nua/gvc-mixer-dialog.c:2074
 msgid "Starting Cinnamon:"
 msgstr "啟動 Cinnamon："
 
-#: panels/sound-nua/gvc-mixer-dialog.c:2070
+#: panels/sound-nua/gvc-mixer-dialog.c:2075
 msgid "Switching workspace:"
 msgstr "切換工作區："
 
-#: panels/sound-nua/gvc-mixer-dialog.c:2071
-msgid "Mapping windows:"
-msgstr "映射窗口："
-
-#: panels/sound-nua/gvc-mixer-dialog.c:2072
-msgid "Closing windows:"
-msgstr "關閉窗口："
-
-#: panels/sound-nua/gvc-mixer-dialog.c:2073
-msgid "Minimizing windows:"
-msgstr "最小化窗口："
-
-#: panels/sound-nua/gvc-mixer-dialog.c:2074
-msgid "Maximizing windows:"
-msgstr "最大化窗口："
-
-#: panels/sound-nua/gvc-mixer-dialog.c:2075
-msgid "Unmaximizing windows:"
-msgstr "不最大化窗口："
-
 #: panels/sound-nua/gvc-mixer-dialog.c:2076
-msgid "Tiling and snapping windows:"
-msgstr "平鋪和捕捉窗口："
+msgid "Opening new windows:"
+msgstr ""
 
 #: panels/sound-nua/gvc-mixer-dialog.c:2077
-msgid "Inserting a device:"
-msgstr "插入設備："
+msgid "Closing windows:"
+msgstr "關閉視窗："
 
 #: panels/sound-nua/gvc-mixer-dialog.c:2078
-msgid "Removing a device:"
-msgstr "刪除設備："
+msgid "Minimizing windows:"
+msgstr "最小化視窗："
 
 #: panels/sound-nua/gvc-mixer-dialog.c:2079
+msgid "Maximizing windows:"
+msgstr "最大化視窗："
+
+#: panels/sound-nua/gvc-mixer-dialog.c:2080
+msgid "Unmaximizing windows:"
+msgstr "取消最大化視窗："
+
+#: panels/sound-nua/gvc-mixer-dialog.c:2081
+msgid "Tiling and snapping windows:"
+msgstr "平鋪和捕捉視窗："
+
+#: panels/sound-nua/gvc-mixer-dialog.c:2082
+msgid "Inserting a device:"
+msgstr "插入裝置："
+
+#: panels/sound-nua/gvc-mixer-dialog.c:2083
+msgid "Removing a device:"
+msgstr "移除裝置："
+
+#: panels/sound-nua/gvc-mixer-dialog.c:2084
 msgid "Changing the sound volume:"
 msgstr "改變音量："
 
-#: panels/sound-nua/gvc-mixer-dialog.c:2080
+#: panels/sound-nua/gvc-mixer-dialog.c:2085
 msgid "Leaving Cinnamon:"
 msgstr "離開 Cinnamon："
 
-#: panels/universal-access/cc-ua-panel.c:289
 #: panels/universal-access/cc-ua-panel.c:295
 msgid "No shortcut set"
 msgstr "沒有設定捷徑鍵"
@@ -1053,7 +1127,7 @@ msgstr "輸出："
 
 #: panels/wacom/cc-wacom-mapping-panel.c:287
 msgid "Keep aspect ratio (letterbox):"
-msgstr "保持縱橫比（信箱）："
+msgstr "維持長闊比 (letterbox)："
 
 #: panels/wacom/cc-wacom-mapping-panel.c:298
 msgid "Map to single monitor"
@@ -1084,86 +1158,86 @@ msgstr "動作"
 msgid "Display Mapping"
 msgstr "顯示映射"
 
-#: panels/wacom/csd-wacom-device.c:1076
+#: panels/wacom/csd-wacom-device.c:1082
 msgid "Left Ring"
 msgstr "左環"
 
-#: panels/wacom/csd-wacom-device.c:1086
+#: panels/wacom/csd-wacom-device.c:1092
 #, c-format
 msgid "Left Ring Mode #%d"
 msgstr "左觸控環模式 #%d"
 
-#: panels/wacom/csd-wacom-device.c:1105
+#: panels/wacom/csd-wacom-device.c:1111
 msgid "Right Ring"
 msgstr "右環"
 
-#: panels/wacom/csd-wacom-device.c:1115
+#: panels/wacom/csd-wacom-device.c:1121
 #, c-format
 msgid "Right Ring Mode #%d"
 msgstr "右觸控環模式 #%d"
 
-#: panels/wacom/csd-wacom-device.c:1156
+#: panels/wacom/csd-wacom-device.c:1162
 msgid "Left Touchstrip"
 msgstr "左觸控列"
 
-#: panels/wacom/csd-wacom-device.c:1166
+#: panels/wacom/csd-wacom-device.c:1172
 #, c-format
 msgid "Left Touchstrip Mode #%d"
 msgstr "左觸控列模式 #%d"
 
-#: panels/wacom/csd-wacom-device.c:1185
+#: panels/wacom/csd-wacom-device.c:1191
 msgid "Right Touchstrip"
 msgstr "右觸控列"
 
-#: panels/wacom/csd-wacom-device.c:1195
+#: panels/wacom/csd-wacom-device.c:1201
 #, c-format
 msgid "Right Touchstrip Mode #%d"
 msgstr "右觸控列模式 #%d"
 
-#: panels/wacom/csd-wacom-device.c:1220
+#: panels/wacom/csd-wacom-device.c:1226
 msgid "Left Touchring Mode Switch"
 msgstr "左觸控環模式切換"
 
-#: panels/wacom/csd-wacom-device.c:1222
+#: panels/wacom/csd-wacom-device.c:1228
 msgid "Right Touchring Mode Switch"
 msgstr "右觸控環模式切換"
 
-#: panels/wacom/csd-wacom-device.c:1225
+#: panels/wacom/csd-wacom-device.c:1231
 msgid "Left Touchstrip Mode Switch"
 msgstr "左觸控列模式切換"
 
-#: panels/wacom/csd-wacom-device.c:1227
+#: panels/wacom/csd-wacom-device.c:1233
 msgid "Right Touchstrip Mode Switch"
 msgstr "右觸控列模式切換"
 
-#: panels/wacom/csd-wacom-device.c:1232
+#: panels/wacom/csd-wacom-device.c:1238
 #, c-format
 msgid "Mode Switch #%d"
-msgstr ""
+msgstr "模式切換 #%d"
 
-#: panels/wacom/csd-wacom-device.c:1336
+#: panels/wacom/csd-wacom-device.c:1342
 #, c-format
 msgid "Left Button #%d"
 msgstr "左側按鈕 #%d"
 
-#: panels/wacom/csd-wacom-device.c:1339
+#: panels/wacom/csd-wacom-device.c:1345
 #, c-format
 msgid "Right Button #%d"
 msgstr "右側按鈕 #%d"
 
-#: panels/wacom/csd-wacom-device.c:1342
+#: panels/wacom/csd-wacom-device.c:1348
 #, c-format
 msgid "Top Button #%d"
 msgstr "頂端按鈕 #%d"
 
-#: panels/wacom/csd-wacom-device.c:1345
+#: panels/wacom/csd-wacom-device.c:1351
 #, c-format
 msgid "Bottom Button #%d"
 msgstr "底部按鈕 #%d"
 
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
-msgstr "_所有設置"
+msgstr "所有設定(_A)"
 
 #: shell/control-center.c:58
 msgid "Enable verbose mode"
@@ -1184,7 +1258,7 @@ msgstr "要顯示的面板"
 
 #: shell/control-center.c:85
 msgid "- System Settings"
-msgstr "- 系統設定值"
+msgstr "- 系統設定"
 
 #: shell/control-center.c:93
 #, c-format
@@ -1193,17 +1267,17 @@ msgid ""
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "%s\n"
-"執行 「%s --help」以查看完整的命令列可用選項清單。\n"
+"執行 '%s --help' 以顯示完整的命令列可用選項清單。\n"
 
 #: shell/control-center.c:215
 msgid "Help"
-msgstr "求助"
+msgstr "說明"
 
 #: shell/control-center.c:216
 msgid "Quit"
-msgstr "結束"
+msgstr "退出"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:85
+#: panels/color/color.ui.h:3 generate_additional_files.py:57
 msgid "Color"
 msgstr "顏色"
 
@@ -1237,7 +1311,7 @@ msgstr "移除裝置"
 
 #: panels/color/color.ui.h:12
 msgid "Set this profile for all users on this computer"
-msgstr ""
+msgstr "將這個描述檔給此電腦上的所有使用者使用"
 
 #: panels/color/color.ui.h:13
 msgid "Add profile"
@@ -1245,11 +1319,11 @@ msgstr "加入設定組合"
 
 #: panels/color/color.ui.h:14 panels/wacom/cinnamon-wacom-properties.ui.h:10
 msgid "Calibrate…"
-msgstr "校準..."
+msgstr "校正…"
 
 #: panels/color/color.ui.h:15
 msgid "Calibrate the device"
-msgstr "校準裝置"
+msgstr "校正裝置"
 
 #: panels/color/color.ui.h:16
 msgid "Remove profile"
@@ -1257,11 +1331,11 @@ msgstr "移除設定組合"
 
 #: panels/color/color.ui.h:17
 msgid "View details"
-msgstr "查看詳細信息"
+msgstr "檢視詳細資料"
 
 #: panels/color/color.ui.h:18
 msgid "Device type:"
-msgstr "設備類型："
+msgstr "裝置類型："
 
 #: panels/color/color.ui.h:19
 msgid "Manufacturer:"
@@ -1274,15 +1348,11 @@ msgstr "型號："
 #: panels/color/color.ui.h:21
 msgid ""
 "Image files can be dragged on this window to auto-complete the above fields."
-msgstr ""
+msgstr "可以將圖片檔案拖放到這個視窗以自動完成上列欄位。"
 
 #: panels/common/language-chooser.ui.h:1
 msgid "Select a language"
-msgstr ""
-
-#: panels/common/language-chooser.ui.h:2
-msgid "_Cancel"
-msgstr "取消(_C)"
+msgstr "選擇語言"
 
 #: panels/common/language-chooser.ui.h:3
 msgid "_Select"
@@ -1306,19 +1376,19 @@ msgstr ":"
 
 #: panels/datetime/datetime.ui.h:6
 msgid "Set the time one hour ahead."
-msgstr "將時刻延後一小時。"
+msgstr "將時間延後一小時。"
 
 #: panels/datetime/datetime.ui.h:7
 msgid "Set the time one hour back."
-msgstr "將時刻提早一小時。"
+msgstr "將時間提早一小時。"
 
 #: panels/datetime/datetime.ui.h:8
 msgid "Set the time one minute ahead."
-msgstr "將時刻延後一分鐘。"
+msgstr "將時間延後一分鐘。"
 
 #: panels/datetime/datetime.ui.h:9
 msgid "Set the time one minute back."
-msgstr "將時刻提早一分鐘。"
+msgstr "將時間提早一分鐘。"
 
 #: panels/datetime/datetime.ui.h:10
 msgid "Month"
@@ -1382,54 +1452,43 @@ msgstr "十二月"
 
 #: panels/display/display-capplet.ui.h:2
 msgid "Set as Primary"
-msgstr ""
+msgstr "設定為主要的"
 
 #: panels/display/display-capplet.ui.h:3
 msgid "_Resolution"
-msgstr ""
+msgstr "解像度(_R)"
 
 #: panels/display/display-capplet.ui.h:4
 msgid "R_otation"
-msgstr "迴轉(_O)"
+msgstr "旋轉(_O)"
 
 #: panels/display/display-capplet.ui.h:6
 msgid "_Mirror displays"
-msgstr ""
+msgstr "鏡射顯示器(_M)"
 
 #: panels/display/display-capplet.ui.h:7
 msgid "Note: may limit resolution options"
-msgstr ""
+msgstr "注意：可能會限制解像度選項"
 
 #: panels/display/display-capplet.ui.h:8
 msgid "_Detect Displays"
+msgstr "偵測顯示器(_D)"
+
+#: panels/network/network-ethernet.ui.h:2
+msgid "_Add Profile…"
 msgstr ""
 
 #: panels/network/network-mobile.ui.h:1
 msgid "IMEI"
-msgstr ""
+msgstr "IMEI"
 
 #: panels/network/network-mobile.ui.h:2
 msgid "Provider"
 msgstr "供應商"
 
-#: panels/network/network-mobile.ui.h:5 panels/network/network-wifi.ui.h:15
-#: panels/network/network-wired.ui.h:4
-msgid "Default Route"
-msgstr "默認路由"
-
-#: panels/network/network-mobile.ui.h:6 panels/network/network-wifi.ui.h:16
-#: panels/network/network-wired.ui.h:5
-msgid "DNS"
-msgstr "DNS"
-
-#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:175
+#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:149
 msgid "Network"
 msgstr "網絡"
-
-#: panels/network/network-mobile.ui.h:8 panels/network/network-wired.ui.h:6
-#: panels/region/cinnamon-region-panel.ui.h:11
-msgid "_Options..."
-msgstr "選項(_O)…"
 
 #: panels/network/network-proxy.ui.h:4
 msgid "_Method"
@@ -1455,33 +1514,45 @@ msgstr "_FTP 代理伺服器"
 msgid "_Socks Host"
 msgstr "Socks 主機(_S)"
 
-#: panels/network/network.ui.h:1
-msgid "Select the interface to use for the new service"
-msgstr "選擇要用於新服務的介面"
+#: panels/network/network-proxy.ui.h:10
+msgid "_Ignore Hosts"
+msgstr ""
 
-#: panels/network/network.ui.h:2
-msgid "C_reate..."
-msgstr "建立(_R)…"
+#: panels/network/network-proxy.ui.h:11
+msgid "HTTP proxy port"
+msgstr ""
 
-#: panels/network/network.ui.h:3
-msgid "_Interface"
-msgstr "介面(_I)"
+#: panels/network/network-proxy.ui.h:12
+msgid "HTTPS proxy port"
+msgstr ""
 
-#: panels/network/network.ui.h:4 panels/network/network-vpn.ui.h:1
+#: panels/network/network-proxy.ui.h:13
+msgid "FTP proxy port"
+msgstr ""
+
+#: panels/network/network-proxy.ui.h:14
+msgid "Socks proxy port"
+msgstr ""
+
+#: panels/network/network-simple.ui.h:1
+msgid "Connection"
+msgstr ""
+
+#: panels/network/network.ui.h:1 panels/network/network-vpn.ui.h:1
 msgid "VPN"
 msgstr "VPN"
 
-#: panels/network/network.ui.h:8
+#: panels/network/network.ui.h:2
 msgid "Add Device"
-msgstr "添加设备"
+msgstr "新增裝置"
 
-#: panels/network/network.ui.h:9
+#: panels/network/network.ui.h:3
 msgid "Remove Device"
 msgstr "移除裝置"
 
 #: panels/network/network-vpn.ui.h:2
 msgid "VPN Type"
-msgstr ""
+msgstr "VPN 類型"
 
 #: panels/network/network-vpn.ui.h:3
 msgid "Gateway"
@@ -1497,828 +1568,1270 @@ msgstr "羣組密碼"
 
 #: panels/network/network-vpn.ui.h:6
 msgid "Username"
-msgstr "用戶名"
+msgstr "使用者名稱"
 
 #: panels/network/network-vpn.ui.h:7
-msgid "_Configure..."
-msgstr "設定(_C)…"
+msgid "Turn VPN connection off"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:1
-msgid "Wireless Hotspot"
-msgstr "無線熱點"
+msgid "Details"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:2
-msgid "_Turn On"
-msgstr "開啟(_T)"
+msgid "Identity"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:3
+msgid "IPv4"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:4
-msgid "_Use as Hotspot..."
+msgid "IPv6"
 msgstr ""
 
 #: panels/network/network-wifi.ui.h:5
-msgid "Connect to a Hidden Network"
-msgstr "連接到隱藏的無線網絡"
+msgid "Hardware"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:6
-msgid "_Disconnect"
+msgid "Reset"
 msgstr ""
 
 #: panels/network/network-wifi.ui.h:7
-msgid "_Connect"
+msgid "Automatic _Connect"
 msgstr ""
 
 #: panels/network/network-wifi.ui.h:8
-msgid "Last used"
+#: panels/network/connection-editor/details-page.ui.h:1
+msgid "Signal Strength"
 msgstr ""
 
-#: panels/network/network-wifi.ui.h:9 panels/network/network-wired.ui.h:1
-msgid "Hardware Address"
-msgstr ""
+#: panels/network/network-wifi.ui.h:9
+#: panels/network/connection-editor/details-page.ui.h:2
+msgid "Link speed"
+msgstr "連線速度"
 
 #: panels/network/network-wifi.ui.h:10
+#: panels/network/connection-editor/details-page.ui.h:3
 msgid "Security"
-msgstr ""
-
-#: panels/network/network-wifi.ui.h:11
-msgid "Strength"
-msgstr ""
-
-#: panels/network/network-wifi.ui.h:12
-msgid "Link speed"
-msgstr ""
+msgstr "安全性"
 
 #: panels/network/network-wifi.ui.h:17
-msgid "_Forget Network"
-msgstr "忘卻網絡(_F)"
+msgid "details"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:18
-msgid "_Settings..."
+#: panels/network/connection-editor/wifi-page.ui.h:1
+msgid "_SSID"
 msgstr ""
 
 #: panels/network/network-wifi.ui.h:19
-msgid "Switch off to connect to a wireless network"
-msgstr "關閉連線到無線網絡"
+#: panels/network/connection-editor/wifi-page.ui.h:2
+msgid "_BSSID"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:20
-msgid "Network Name"
-msgstr "網絡名稱"
+#: panels/network/connection-editor/security-page.ui.h:1
+msgid "S_ecurity"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:21
-msgid "Connected Devices"
+#: panels/network/wireless-security/eap-method-leap.ui.h:2
+#: panels/network/wireless-security/eap-method-simple.ui.h:2
+#: panels/network/wireless-security/ws-leap.ui.h:2
+#: panels/network/wireless-security/ws-wpa-psk.ui.h:1
+msgid "_Password"
 msgstr ""
 
 #: panels/network/network-wifi.ui.h:22
-msgid "Security type"
+#: panels/network/connection-editor/wifi-page.ui.h:3
+msgid "My Home Network"
 msgstr ""
 
-#: panels/network/network-wifi.ui.h:23
-msgid "Security key"
+#: panels/network/network-wifi.ui.h:24 panels/universal-access/uap.ui.h:8
+msgid "None"
+msgstr "無"
+
+#: panels/network/network-wifi.ui.h:25
+msgid "Show P_assword"
 msgstr ""
+
+#: panels/network/network-wifi.ui.h:26
+msgid "Make available to other users"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:27
+msgid "identity"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:28
+#: panels/network/connection-editor/ip4-page.ui.h:1
+msgid "IPv_4"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:29
+#: panels/network/connection-editor/ip4-page.ui.h:2
+#: panels/network/connection-editor/ip6-page.ui.h:2
+msgid "_Addresses"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:30
+msgid "Manual"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:31
+msgid "Automatic (DHCP)"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:32
+msgid "Automatic (DHCP) addresses only"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:33
+msgid "Link-local only"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:34
+msgid "Shared with other computers"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:36
+#: panels/network/connection-editor/ip4-page.ui.h:6
+#: panels/network/connection-editor/ip6-page.ui.h:6
+msgid "Routes"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:37
+msgid "_Ignore automatically obtained routes"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:38
+#: panels/network/connection-editor/ip4-page.ui.h:8
+#: panels/network/connection-editor/ip6-page.ui.h:8
+msgid "Use this connection _only for resources on its network"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:39
+msgid "ipv4"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:40
+#: panels/network/connection-editor/ip6-page.ui.h:1
+msgid "IPv_6"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:41
+msgid "ipv6"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:42
+#: panels/network/connection-editor/ethernet-page.ui.h:11
+#: panels/network/connection-editor/wifi-page.ui.h:4
+msgid "_MAC Address"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:43
+msgid "_Cloned MAC Address"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:44
+msgid "hardware"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:45
+#: panels/network/connection-editor/reset-page.ui.h:1
+msgid "_Reset"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:47
+msgid ""
+"Reset the settings for this connection to their defaults, but remember as a "
+"preferred connection."
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:48
+msgid ""
+"Remove all details relating to this network and do not try to automatically "
+"connect to it."
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:49
+msgid "reset"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:50
+msgid "Create a Wireless Hotspot"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:51
+msgid "Wi-Fi Hotspot"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:52
+msgid "_Turn On"
+msgstr "開啟(_T)"
+
+#: panels/network/network-wifi.ui.h:53
+msgid "Wi-Fi"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:54
+msgid "_Known Networks"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:55
+msgid "_Create a Wireless Hotspot"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:56
+msgid "Connect to a Hidden Network"
+msgstr "連接到隱藏的無線網絡"
+
+#: panels/network/network-wifi.ui.h:57
+msgid "Switch off to connect to a Wi-Fi network"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:58
+msgid "Network Name"
+msgstr "網絡名稱"
+
+#: panels/network/network-wifi.ui.h:59
+msgid "Connected Devices"
+msgstr "已連線的裝置"
+
+#: panels/network/network-wifi.ui.h:60
+msgid "Security type"
+msgstr "安全性類型"
+
+#: panels/network/network-wifi.ui.h:61
+msgid "Security key"
+msgstr "安全金鑰"
 
 #: panels/power/power.ui.h:1
 msgid "Hibernate"
-msgstr ""
+msgstr "休眠"
 
 #: panels/power/power.ui.h:2
 msgid "Power off"
-msgstr ""
+msgstr "關閉電源"
 
 #: panels/power/power.ui.h:3
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分鐘"
 
 #: panels/power/power.ui.h:4
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分鐘"
 
 #: panels/power/power.ui.h:5
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分鐘"
 
 #: panels/power/power.ui.h:6
 msgid "1 hour"
-msgstr ""
+msgstr "1 小時"
 
 #: panels/power/power.ui.h:7
 msgid "Never"
-msgstr ""
+msgstr "永不"
 
 #: panels/power/power.ui.h:8
 msgid "When battery is present"
-msgstr ""
+msgstr "當電池存在時"
 
 #: panels/power/power.ui.h:9
 msgid "When battery is charging/in use"
-msgstr ""
+msgstr "當電池正在充電/使用時"
 
 #: panels/power/power.ui.h:10
 msgid "Suspend"
-msgstr ""
+msgstr "暫停"
 
 #: panels/power/power.ui.h:11
 msgid "Do nothing"
-msgstr ""
+msgstr "什麼都不做"
 
 #: panels/power/power.ui.h:12
 msgid "Lock Screen"
-msgstr ""
+msgstr "鎖定螢幕"
 
 #: panels/power/power.ui.h:13
 msgid "Shutdown Immediately"
-msgstr ""
+msgstr "立即關閉"
 
 #: panels/power/power.ui.h:14
 msgid "Ask"
-msgstr ""
+msgstr "詢問"
 
 #: panels/power/power.ui.h:15
 msgid "On battery power"
-msgstr ""
+msgstr "使用電池電源"
 
 #: panels/power/power.ui.h:16
 msgid "On A/C power"
-msgstr ""
+msgstr "使用 A/C 電源"
 
 #: panels/power/power.ui.h:17
 msgid "When the lid is closed"
-msgstr ""
+msgstr "當電腦上蓋闔上時"
 
 #: panels/power/power.ui.h:18
 msgid "When the power button is pressed"
-msgstr ""
+msgstr "按下電源鍵時"
 
 #: panels/power/power.ui.h:19
-msgid "When battery power is critically low"
+msgid "When the battery is critically low"
 msgstr ""
 
 #: panels/power/power.ui.h:20
 msgid "Suspend when inactive for"
-msgstr ""
+msgstr "閒置多久後暫停："
 
 #: panels/power/power.ui.h:21
 msgid "Turn off the screen when inactive for"
-msgstr ""
+msgstr "閒置多久後關閉螢幕："
 
 #: panels/power/power.ui.h:22
-msgid "Start the screensaver when inactive for"
-msgstr ""
+msgid "<b>Power Options</b>"
+msgstr "<b>電源選項</b>"
 
 #: panels/power/power.ui.h:23
-msgid "<b>Power Options</b>"
-msgstr ""
-
-#: panels/power/power.ui.h:24
 msgid "<b>Battery Status</b>"
-msgstr ""
+msgstr "<b>電池狀態</b>"
 
 #: panels/region/cinnamon-region-panel-layout-chooser.ui.h:1
 msgid "Choose a Layout"
-msgstr ""
+msgstr "選擇佈局"
 
 #: panels/region/cinnamon-region-panel-layout-chooser.ui.h:2
 msgid "Preview"
-msgstr ""
+msgstr "預覽"
 
 #: panels/region/cinnamon-region-panel-layout-chooser.ui.h:3
 msgid "Select an input source to add"
-msgstr ""
+msgstr "選擇要新增的輸入來源"
 
 #: panels/region/cinnamon-region-panel-options-dialog.ui.h:1
 msgid "Keyboard Layout Options"
-msgstr ""
+msgstr "鍵盤佈局選項"
 
 #: panels/region/cinnamon-region-panel.ui.h:1
 msgid "Region and Language"
-msgstr ""
+msgstr "地區和語言"
 
 #: panels/region/cinnamon-region-panel.ui.h:2
 msgid "Add Layout"
-msgstr ""
+msgstr "新增佈局"
 
 #: panels/region/cinnamon-region-panel.ui.h:3
 msgid "Remove Layout"
-msgstr ""
+msgstr "移除佈局"
 
 #: panels/region/cinnamon-region-panel.ui.h:4
 msgid "Move Up"
-msgstr ""
+msgstr "向上移"
 
 #: panels/region/cinnamon-region-panel.ui.h:5
 msgid "Move Down"
-msgstr ""
+msgstr "向下移"
 
 #: panels/region/cinnamon-region-panel.ui.h:6
 msgid "Preview Layout"
-msgstr ""
+msgstr "預覽佈局"
 
 #: panels/region/cinnamon-region-panel.ui.h:7
 msgid "Use the same layout for all windows"
-msgstr ""
+msgstr "在所有視窗中使用相同的佈局"
 
 #: panels/region/cinnamon-region-panel.ui.h:8
 msgid "Allow different layouts for individual windows"
-msgstr ""
+msgstr "允許每個獨立視窗擁有不同的佈局"
 
 #: panels/region/cinnamon-region-panel.ui.h:9
 msgid "New windows use the default layout"
-msgstr ""
+msgstr "在新視窗中使用的預設佈局"
 
 #: panels/region/cinnamon-region-panel.ui.h:10
 msgid "New windows use the previous window's layout"
-msgstr ""
+msgstr "在新視窗使用前一個視窗的佈局"
+
+#: panels/region/cinnamon-region-panel.ui.h:11
+msgid "_Options..."
+msgstr "選項(_O)..."
 
 #: panels/region/cinnamon-region-panel.ui.h:12
 msgid "View and edit keyboard layout options"
-msgstr ""
+msgstr "檢視並編輯鍵盤佈局選項"
 
 #: panels/region/cinnamon-region-panel.ui.h:13
 msgid "Reset to De_faults"
-msgstr ""
+msgstr "重設為預設值(_F)"
 
 #: panels/region/cinnamon-region-panel.ui.h:14
 msgid ""
 "Replace the current keyboard layout settings with the\n"
 "default settings"
 msgstr ""
+"取代目前的鍵盤佈局，使用：\n"
+"預設值"
 
 #: panels/universal-access/uap.ui.h:5
 msgid "On screen keyboard"
-msgstr ""
+msgstr "螢幕鍵盤"
 
 #: panels/universal-access/uap.ui.h:6
 msgid "GOK"
-msgstr ""
+msgstr "GOK"
 
 #: panels/universal-access/uap.ui.h:7
 msgid "OnBoard"
-msgstr ""
-
-#: panels/universal-access/uap.ui.h:8
-msgid "None"
-msgstr ""
+msgstr "OnBoard"
 
 #: panels/universal-access/uap.ui.h:10
 #, no-c-format
 msgid "75%"
-msgstr ""
+msgstr "75%"
 
 #: panels/universal-access/uap.ui.h:13
 #, no-c-format
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: panels/universal-access/uap.ui.h:16
 #, no-c-format
 msgid "125%"
-msgstr ""
+msgstr "125%"
 
 #: panels/universal-access/uap.ui.h:19
 #, no-c-format
 msgid "150%"
-msgstr ""
+msgstr "150%"
 
 #: panels/universal-access/uap.ui.h:21
 msgid "High Contrast"
-msgstr ""
+msgstr "高對比度"
 
 #: panels/universal-access/uap.ui.h:22
 msgid "Beep on Caps and Num Lock"
-msgstr ""
+msgstr "當 Caps 和 Num Lock 啟用時發出聲響"
 
 #: panels/universal-access/uap.ui.h:23
 msgid "Options..."
-msgstr ""
+msgstr "選項..."
 
 #: panels/universal-access/uap.ui.h:24
 msgid "Screen Reader"
-msgstr ""
+msgstr "螢幕閱讀器"
 
 #: panels/universal-access/uap.ui.h:25
 msgid "Turn on or off:"
-msgstr ""
+msgstr "開啟或關閉："
 
 #: panels/universal-access/uap.ui.h:27
 msgid "Zoom in:"
-msgstr ""
+msgstr "放大："
 
 #: panels/universal-access/uap.ui.h:28
 msgid "Zoom out:"
-msgstr ""
+msgstr "縮小："
 
 #: panels/universal-access/uap.ui.h:29
 msgid "Large Text"
-msgstr ""
+msgstr "大型文字"
 
 #: panels/universal-access/uap.ui.h:30
 msgid "Seeing"
-msgstr ""
+msgstr "視覺"
 
 #: panels/universal-access/uap.ui.h:31
 msgid "Visual Alerts"
-msgstr ""
+msgstr "視覺警示"
 
 #: panels/universal-access/uap.ui.h:32
 msgid "Use a visual indication when an alert sound occurs"
-msgstr ""
+msgstr "當發出警示音效時使用視覺化的指示"
 
 #: panels/universal-access/uap.ui.h:33
 msgid "Flash the window title"
-msgstr ""
+msgstr "令視窗標題閃爍"
 
 #: panels/universal-access/uap.ui.h:34
 msgid "Flash the entire screen"
-msgstr ""
+msgstr "閃爍整個螢幕"
 
 #: panels/universal-access/uap.ui.h:35
 msgid "Closed Captioning"
-msgstr ""
+msgstr "關閉說明"
 
 #: panels/universal-access/uap.ui.h:36
 msgid "Display a textual description of speech and sounds"
-msgstr ""
+msgstr "顯示語音和音效的文字描述"
 
 #: panels/universal-access/uap.ui.h:37
 msgid "_Test flash"
-msgstr ""
+msgstr "測試閃爍(_T)"
 
 #: panels/universal-access/uap.ui.h:38
 msgid "Hearing"
-msgstr ""
+msgstr "聽覺"
 
 #: panels/universal-access/uap.ui.h:39
 msgid "On Screen Keyboard"
-msgstr ""
+msgstr "螢幕鍵盤"
 
 #: panels/universal-access/uap.ui.h:40
 msgid "Sticky Keys"
-msgstr ""
+msgstr "黏性特殊鍵"
 
 #: panels/universal-access/uap.ui.h:41
 msgid "Treats a sequence of modifier keys as a key combination"
-msgstr ""
+msgstr "將連續按的特殊鍵視為按鍵組合"
 
 #: panels/universal-access/uap.ui.h:42
 msgid "_Disable if two keys are pressed together"
-msgstr ""
+msgstr "如果同時按下任何兩鍵則停用(_D)"
 
 #: panels/universal-access/uap.ui.h:43
 msgid "Beep when a _modifer key is pressed"
-msgstr ""
+msgstr "當按下特殊按鍵時發出聲響(_M)"
 
 #: panels/universal-access/uap.ui.h:44
 msgid "Slow Keys"
-msgstr ""
+msgstr "遲緩按鍵"
 
 #: panels/universal-access/uap.ui.h:45
 msgid "Puts a delay between when a key is pressed and when it is accepted"
-msgstr ""
+msgstr "在按鍵被按下到它被接受之間置入延遲"
 
 #: panels/universal-access/uap.ui.h:46
 msgid "A_cceptance delay:"
-msgstr ""
+msgstr "接受時間延遲(_C)："
 
 #: panels/universal-access/uap.ui.h:48
 msgid "Short"
-msgstr ""
+msgstr "短"
 
 #: panels/universal-access/uap.ui.h:49
 msgid "Slow keys typing delay"
-msgstr ""
+msgstr "降低按鍵輸入延遲"
 
 #: panels/universal-access/uap.ui.h:51
 msgid "Long"
-msgstr ""
+msgstr "長"
 
 #: panels/universal-access/uap.ui.h:53
 msgid "Beep when a key is"
-msgstr ""
+msgstr "發出聲響條件為按鍵"
 
 #: panels/universal-access/uap.ui.h:55
 msgid "pressed"
-msgstr ""
+msgstr "已按下"
 
 #: panels/universal-access/uap.ui.h:57
 msgid "accepted"
-msgstr ""
+msgstr "已接受"
 
 #: panels/universal-access/uap.ui.h:59
 msgid "rejected"
-msgstr ""
+msgstr "已拒絕"
 
 #: panels/universal-access/uap.ui.h:60
 msgid "Bounce Keys"
-msgstr ""
+msgstr "反彈鍵"
 
 #: panels/universal-access/uap.ui.h:61
 msgid "Ignores fast duplicate keypresses"
-msgstr ""
+msgstr "忽略快速重複按鍵"
 
 #: panels/universal-access/uap.ui.h:62
 msgid "Acc_eptance delay:"
-msgstr ""
+msgstr "接受時間延遲(_E)："
 
 #: panels/universal-access/uap.ui.h:63
 msgid "Bounce keys typing delay"
-msgstr ""
+msgstr "回彈鍵輸入延遲"
 
 #: panels/universal-access/uap.ui.h:64
 msgid "Beep when a key is _rejected"
-msgstr ""
+msgstr "當拒絕按鍵動作時發出聲響(_R)"
 
 #: panels/universal-access/uap.ui.h:65
 msgid "Enable by Keyboard"
-msgstr ""
+msgstr "由鍵盤啟用"
 
 #: panels/universal-access/uap.ui.h:66
 msgid "Turn accessibility features on and off using the keyboard"
-msgstr ""
+msgstr "以鍵盤開啟和關閉無障礙存取功能"
 
 #: panels/universal-access/uap.ui.h:67
 msgid "Typing"
-msgstr ""
+msgstr "輸入中"
 
 #: panels/universal-access/uap.ui.h:68
 msgid "Mouse Keys"
-msgstr ""
+msgstr "滑鼠控制鍵"
 
 #: panels/universal-access/uap.ui.h:69
 msgid "Control the pointer using the keypad"
-msgstr ""
+msgstr "使用鍵盤控制游標"
 
 #: panels/universal-access/uap.ui.h:70
 msgid "Video Mouse"
-msgstr ""
+msgstr "視像滑鼠"
 
 #: panels/universal-access/uap.ui.h:71
 msgid "Control the pointer using the video camera."
-msgstr ""
+msgstr "使用視像攝影機控制游標"
 
 #: panels/universal-access/uap.ui.h:72
 msgid "Simulated Secondary Click"
-msgstr ""
+msgstr "模擬第二下點擊"
 
 #: panels/universal-access/uap.ui.h:73
 msgid "Trigger a secondary click by holding down the primary button"
-msgstr ""
+msgstr "按住主要鍵時觸發第二下點擊"
 
 #: panels/universal-access/uap.ui.h:74
 msgid "Secondary click delay"
-msgstr ""
+msgstr "第二次點擊延遲"
 
 #: panels/universal-access/uap.ui.h:75
 msgid "Hover Click"
-msgstr ""
+msgstr "停駐即點擊"
 
 #: panels/universal-access/uap.ui.h:76
 msgid "Trigger a click when the pointer hovers"
-msgstr ""
+msgstr "當停止游標移動時觸發點擊"
 
 #: panels/universal-access/uap.ui.h:77
 msgid "D_elay:"
-msgstr ""
+msgstr "延遲(_E)："
 
 #: panels/universal-access/uap.ui.h:78
 msgid "Motion _threshold:"
-msgstr ""
+msgstr "移動速度(_M)："
 
 #: panels/universal-access/uap.ui.h:80
 msgid "Small"
-msgstr ""
+msgstr "小"
 
 #: panels/universal-access/uap.ui.h:82
 msgid "Large"
-msgstr ""
+msgstr "大"
 
 #: panels/universal-access/uap.ui.h:83
 msgid "Mouse Settings"
-msgstr ""
+msgstr "滑鼠設定"
 
 #: panels/universal-access/uap.ui.h:84
 msgid "Pointing and Clicking"
-msgstr ""
+msgstr "指標和點擊"
 
 #: panels/universal-access/zoom-options.ui.h:1
 msgid "Full Screen"
-msgstr ""
+msgstr "全螢幕"
 
 #: panels/universal-access/zoom-options.ui.h:2
 msgid "Top Half"
-msgstr ""
+msgstr "上半部"
 
 #: panels/universal-access/zoom-options.ui.h:3
 msgid "Bottom Half"
-msgstr ""
+msgstr "下半部"
 
 #: panels/universal-access/zoom-options.ui.h:4
 msgid "Left Half"
-msgstr ""
+msgstr "左半部"
 
 #: panels/universal-access/zoom-options.ui.h:5
 msgid "Right Half"
-msgstr ""
+msgstr "右半部"
 
 #: panels/universal-access/zoom-options.ui.h:6
 msgid "Zoom Options"
-msgstr ""
+msgstr "放大鏡選項"
 
 #: panels/universal-access/zoom-options.ui.h:7
 msgid "Zoom"
-msgstr ""
+msgstr "縮放"
 
 #: panels/universal-access/zoom-options.ui.h:8
 msgid "Magnification:"
-msgstr ""
+msgstr "放大率："
 
 #: panels/universal-access/zoom-options.ui.h:9
 msgid "Follow mouse cursor"
-msgstr ""
+msgstr "跟隨滑鼠游標"
 
 #: panels/universal-access/zoom-options.ui.h:10
 msgid "Screen part:"
-msgstr ""
+msgstr "螢幕部分："
 
 #: panels/universal-access/zoom-options.ui.h:11
 msgid "Magnifier extends outside of screen"
-msgstr ""
+msgstr "放大鏡延伸到螢幕外"
 
 #: panels/universal-access/zoom-options.ui.h:12
 msgid "Keep magnifier cursor centered"
-msgstr ""
+msgstr "保持放大鏡游標置中"
 
 #: panels/universal-access/zoom-options.ui.h:13
 msgid "Magnifier cursor pushes contents around"
-msgstr ""
+msgstr "放大鏡游標將內容推到周圍"
 
 #: panels/universal-access/zoom-options.ui.h:14
 msgid "Magnifier cursor moves with contents"
-msgstr ""
+msgstr "放大鏡游標隨內容移動"
 
 #: panels/universal-access/zoom-options.ui.h:15
 msgid "Magnifier Position:"
-msgstr ""
+msgstr "放大鏡位置："
 
 #: panels/universal-access/zoom-options.ui.h:16
 msgid "Magnifier"
-msgstr ""
+msgstr "放大鏡"
 
 #: panels/universal-access/zoom-options.ui.h:17
 msgid "Thickness:"
-msgstr ""
+msgstr "厚度："
 
 #: panels/universal-access/zoom-options.ui.h:19
 msgid "Thin"
-msgstr ""
+msgstr "薄"
 
 #: panels/universal-access/zoom-options.ui.h:21
 msgid "Thick"
-msgstr ""
+msgstr "厚"
 
 #: panels/universal-access/zoom-options.ui.h:22
 msgid "Length:"
-msgstr ""
+msgstr "長度："
 
 #: panels/universal-access/zoom-options.ui.h:23
 msgid "Color:"
-msgstr ""
+msgstr "顏色："
 
 #: panels/universal-access/zoom-options.ui.h:24
 msgid "Crosshairs:"
-msgstr ""
+msgstr "十字準星："
 
 #: panels/universal-access/zoom-options.ui.h:25
 msgid "Overlaps mouse cursor"
-msgstr ""
+msgstr "重疊滑鼠游標"
 
 #: panels/universal-access/zoom-options.ui.h:26
 msgid "Crosshairs"
-msgstr ""
+msgstr "十字準星"
 
 #: panels/universal-access/zoom-options.ui.h:27
 msgid "White on black:"
-msgstr ""
+msgstr "黑底白字："
 
 #: panels/universal-access/zoom-options.ui.h:28
 msgid "Brightness:"
-msgstr ""
+msgstr "亮度："
 
 #: panels/universal-access/zoom-options.ui.h:29
 msgid "Contrast:"
-msgstr ""
+msgstr "對比度："
 
 #: panels/universal-access/zoom-options.ui.h:34
 msgid "Low"
-msgstr ""
+msgstr "低"
 
 #: panels/universal-access/zoom-options.ui.h:36
 msgid "High"
-msgstr ""
+msgstr "高"
 
 #: panels/universal-access/zoom-options.ui.h:37
 msgid "Color Effects:"
-msgstr ""
+msgstr "顏色效果："
 
 #: panels/universal-access/zoom-options.ui.h:38
 msgid "Color Effects"
-msgstr ""
+msgstr "顏色效果"
 
 #: panels/wacom/button-mapping.ui.h:1
 msgid "Map Buttons"
-msgstr ""
+msgstr "對應按鈕"
 
 #: panels/wacom/button-mapping.ui.h:2
 msgid "Map buttons to functions"
-msgstr ""
+msgstr "對應按鈕到功能"
 
 #: panels/wacom/button-mapping.ui.h:3
 msgid ""
 "To edit a shortcut, click the row and hold down the new keys or press "
 "Backspace to clear."
-msgstr ""
+msgstr "要編輯捷徑鍵，點選相應的列並按下新的按鍵組合，或以 Backspace 鍵來清除。"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:1
 msgid "Tablet (absolute)"
-msgstr ""
+msgstr "繪圖板 (絕對位置)"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:2
 msgid "Touchpad (relative)"
-msgstr ""
+msgstr "觸控板 (相對位置)"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Tablet Preferences"
-msgstr ""
+msgstr "繪圖板偏好設定"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:4
 msgid "No tablet detected"
-msgstr ""
+msgstr "未偵測到繪圖板"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:5
 msgid "Please plug in or turn on your graphics tablet"
-msgstr ""
+msgstr "請插入或啟動您的繪圖板"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:6
 msgid "Bluetooth Settings"
-msgstr ""
+msgstr "藍牙設定"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Graphics Tablet"
-msgstr ""
+msgstr "繪圖板"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map to Monitor…"
-msgstr ""
+msgstr "對應至顯示器…"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Map Buttons…"
-msgstr ""
+msgstr "對應按鈕…"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
-msgstr ""
+msgstr "調整顯示解像度"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:12
 msgid "Tracking Mode"
-msgstr ""
+msgstr "追蹤模式"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
 msgid "Left-Handed Orientation"
-msgstr ""
+msgstr "慣用左手方向"
 
 #: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "No Action"
-msgstr ""
+msgstr "沒有動作"
 
 #: panels/wacom/wacom-stylus-page.ui.h:2
 msgid "Left Mouse Button Click"
-msgstr ""
+msgstr "滑鼠左鍵點擊"
 
 #: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Middle Mouse Button Click"
-msgstr ""
+msgstr "滑鼠中鍵點擊"
 
 #: panels/wacom/wacom-stylus-page.ui.h:4
 msgid "Right Mouse Button Click"
-msgstr ""
+msgstr "滑鼠右鍵點擊"
 
 #: panels/wacom/wacom-stylus-page.ui.h:5
 msgid "Scroll Up"
-msgstr ""
+msgstr "向上捲動"
 
 #: panels/wacom/wacom-stylus-page.ui.h:6
 msgid "Scroll Down"
-msgstr ""
+msgstr "向下捲動"
 
 #: panels/wacom/wacom-stylus-page.ui.h:7
 msgid "Scroll Left"
-msgstr ""
+msgstr "向左捲動"
 
 #: panels/wacom/wacom-stylus-page.ui.h:8
 msgid "Scroll Right"
-msgstr ""
+msgstr "向右捲動"
 
 #: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Back"
-msgstr ""
+msgstr "返回"
 
 #: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Forward"
-msgstr ""
+msgstr "前進"
 
 #: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Stylus"
-msgstr ""
+msgstr "觸控筆"
 
 #: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Eraser Pressure Feel"
-msgstr ""
+msgstr "橡皮擦壓力感應"
 
 #: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Soft"
-msgstr ""
+msgstr "輕"
 
 #: panels/wacom/wacom-stylus-page.ui.h:14
 msgid "Firm"
-msgstr ""
+msgstr "重"
 
 #: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Top Button"
-msgstr ""
+msgstr "頂端按鈕"
 
 #: panels/wacom/wacom-stylus-page.ui.h:16
 msgid "Lower Button"
-msgstr ""
+msgstr "較低的按鈕"
 
 #: panels/wacom/wacom-stylus-page.ui.h:17
 msgid "Tip Pressure Feel"
+msgstr "點選壓力感應"
+
+#: panels/network/connection-editor/8021x-security-page.ui.h:1
+msgid "802.1x _Security"
 msgstr ""
 
-#: generate_additional_files.py:55
+#: panels/network/connection-editor/8021x-security-page.ui.h:2
+#: panels/network/connection-editor/security-page.ui.h:2
+msgid "page 1"
+msgstr ""
+
+#: panels/network/connection-editor/8021x-security-page.ui.h:3
+#: panels/network/connection-editor/security-page.ui.h:3
+#: panels/network/wireless-security/eap-method-fast.ui.h:1
+#: panels/network/wireless-security/eap-method-peap.ui.h:5
+#: panels/network/wireless-security/eap-method-ttls.ui.h:2
+msgid "Anony_mous identity"
+msgstr ""
+
+#: panels/network/connection-editor/8021x-security-page.ui.h:4
+#: panels/network/connection-editor/security-page.ui.h:4
+msgid "Inner _authentication"
+msgstr ""
+
+#: panels/network/connection-editor/8021x-security-page.ui.h:5
+#: panels/network/connection-editor/security-page.ui.h:5
+msgid "page 2"
+msgstr ""
+
+#: panels/network/connection-editor/connection-editor.ui.h:1
+msgid "_Apply"
+msgstr ""
+
+#: panels/network/connection-editor/details-page.ui.h:9
+msgid "Last Used"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:1
+#: panels/network/connection-editor/ip4-page.ui.h:4
+#: panels/network/connection-editor/ip6-page.ui.h:4
+#: panels/network/wireless-security/eap-method-peap.ui.h:2
+msgid "Automatic"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:2
+msgid "Twisted Pair (TP)"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:3
+msgid "Attachment Unit Interface (AUI)"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:4
+msgid "BNC"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:5
+msgid "Media Independent Interface (MII)"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:6
+msgid "10 Mb/s"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:7
+msgid "100 Mb/s"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:8
+msgid "1 Gb/s"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:9
+msgid "10 Gb/s"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:10
+#: panels/network/connection-editor/vpn-page.ui.h:1
+msgid "_Name"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:12
+msgid "M_TU"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:13
+#: panels/network/connection-editor/wifi-page.ui.h:5
+msgid "_Cloned Address"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:14
+msgid "bytes"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:15
+#: panels/network/connection-editor/vpn-page.ui.h:3
+msgid "Make available to other _users"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:16
+#: panels/network/connection-editor/wifi-page.ui.h:7
+msgid "Connect _automatically"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:17
+#: panels/network/connection-editor/vpn-page.ui.h:2
+#: panels/network/connection-editor/wifi-page.ui.h:8
+msgid "Firewall _Zone"
+msgstr ""
+
+#: panels/network/connection-editor/ip4-page.ui.h:5
+#: panels/network/connection-editor/ip6-page.ui.h:5
+msgid "Automatic DNS"
+msgstr ""
+
+#: panels/network/connection-editor/ip4-page.ui.h:7
+#: panels/network/connection-editor/ip6-page.ui.h:7
+msgid "Automatic Routes"
+msgstr ""
+
+#: panels/network/connection-editor/reset-page.ui.h:3
+msgid ""
+"Reset the settings for this network, including passwords, but remember it as "
+"a preferred network"
+msgstr ""
+
+#: panels/network/connection-editor/reset-page.ui.h:4
+msgid ""
+"Remove all details relating to this network and do not try to automatically "
+"connect"
+msgstr ""
+
+#: panels/network/connection-editor/vpn-page.ui.h:4
+msgid "(Error: unable to load VPN connection editor)"
+msgstr ""
+
+#: panels/network/connection-editor/wifi-page.ui.h:6
+msgid "Make available to _other users"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:2
+msgid "PAC _file"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:3
+#: panels/network/wireless-security/eap-method-peap.ui.h:7
+#: panels/network/wireless-security/eap-method-ttls.ui.h:4
+msgid "_Inner authentication"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:4
+msgid "PAC pro_visioning"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:5
+#: panels/network/wireless-security/eap-method-peap.ui.h:1
+#: panels/network/wireless-security/eap-method-ttls.ui.h:1
+#: panels/network/wireless-security/ws-dynamic-wep.ui.h:1
+#: panels/network/wireless-security/ws-wpa-eap.ui.h:1
+msgid " "
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:6
+msgid "Anonymous"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:7
+msgid "Authenticated"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:8
+msgid "Both"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-leap.ui.h:1
+#: panels/network/wireless-security/eap-method-simple.ui.h:1
+#: panels/network/wireless-security/ws-leap.ui.h:1
+msgid "_Username"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-leap.ui.h:3
+#: panels/network/wireless-security/eap-method-simple.ui.h:4
+#: panels/network/wireless-security/eap-method-tls.ui.h:6
+#: panels/network/wireless-security/ws-leap.ui.h:3
+#: panels/network/wireless-security/ws-wpa-psk.ui.h:3
+msgid "Sho_w password"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-peap.ui.h:3
+msgid "Version 0"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-peap.ui.h:4
+msgid "Version 1"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-peap.ui.h:6
+#: panels/network/wireless-security/eap-method-tls.ui.h:3
+#: panels/network/wireless-security/eap-method-ttls.ui.h:3
+msgid "C_A certificate"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-peap.ui.h:8
+msgid "PEAP _version"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-simple.ui.h:3
+msgid "As_k for this password every time"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-tls.ui.h:1
+msgid "I_dentity"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-tls.ui.h:2
+msgid "_User certificate"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-tls.ui.h:4
+msgid "Private _key"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-tls.ui.h:5
+msgid "_Private key password"
+msgstr ""
+
+#: panels/network/wireless-security/nag-user-dialog.ui.h:1
+msgid "Don't _warn me again"
+msgstr ""
+
+#: panels/network/wireless-security/nag-user-dialog.ui.h:2
+msgid "No"
+msgstr ""
+
+#: panels/network/wireless-security/nag-user-dialog.ui.h:3
+msgid "Yes"
+msgstr ""
+
+#: panels/network/wireless-security/ws-dynamic-wep.ui.h:2
+#: panels/network/wireless-security/ws-wep-key.ui.h:9
+#: panels/network/wireless-security/ws-wpa-eap.ui.h:2
+msgid "Au_thentication"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:1
+msgid "1 (Default)"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:2
+msgid "2"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:3
+msgid "3"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:4
+msgid "4"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:5
+msgid "Open System"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:6
+msgid "Shared Key"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:7
+msgid "_Key"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:8
+msgid "Sho_w key"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:10
+msgid "WEP inde_x"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wpa-psk.ui.h:2
+msgid "_Type"
+msgstr ""
+
+#: generate_additional_files.py:27
 msgid "Brightness & Lock"
-msgstr ""
+msgstr "亮度與鎖定"
 
-#: generate_additional_files.py:55
+#: generate_additional_files.py:27
 msgid "Screen brightness and lock settings"
-msgstr ""
+msgstr "螢幕亮度與鎖定設定"
 
-#: generate_additional_files.py:70 generate_additional_files.py:101
+#: generate_additional_files.py:42 generate_additional_files.py:73
 msgid "Sound"
-msgstr ""
+msgstr "音效"
 
-#: generate_additional_files.py:70 generate_additional_files.py:101
+#: generate_additional_files.py:42 generate_additional_files.py:73
 msgid "Change sound volume and sound events"
-msgstr ""
+msgstr "改變音效的音量和音效事件"
 
-#: generate_additional_files.py:85
+#: generate_additional_files.py:57
 msgid "Color management settings"
-msgstr ""
+msgstr "顏色管理設定"
 
-#: generate_additional_files.py:115
+#: generate_additional_files.py:87
 msgid "Volume Control"
-msgstr ""
+msgstr "音量控制"
 
-#: generate_additional_files.py:115
+#: generate_additional_files.py:87
 msgid "Show desktop volume control"
-msgstr ""
+msgstr "顯示桌面音量控制"
 
-#: generate_additional_files.py:130
+#: generate_additional_files.py:103
 msgid "Power"
-msgstr ""
+msgstr "電源"
 
-#: generate_additional_files.py:130
+#: generate_additional_files.py:103
 msgid "Power management settings"
-msgstr ""
+msgstr "電源管理設定"
 
-#: generate_additional_files.py:145
+#: generate_additional_files.py:119
 msgid "Region & Language"
-msgstr ""
+msgstr "地區和語言"
 
-#: generate_additional_files.py:145
+#: generate_additional_files.py:119
 msgid "Change your region and language settings"
-msgstr ""
+msgstr "改變您的地區和語言設定"
 
-#: generate_additional_files.py:160
+#: generate_additional_files.py:134
 msgid "Displays"
-msgstr ""
+msgstr "顯示器"
 
-#: generate_additional_files.py:160
+#: generate_additional_files.py:134
 msgid "Change resolution and position of monitors and projectors"
-msgstr ""
+msgstr "改變顯示器和投影機的解像度和位置"
 
-#: generate_additional_files.py:175
+#: generate_additional_files.py:149
 msgid "Network settings"
 msgstr "網絡設定"
 
-#: generate_additional_files.py:190
+#: generate_additional_files.py:164
 msgid "Universal Access"
-msgstr ""
+msgstr "無障礙存取"
 
-#: generate_additional_files.py:190
+#: generate_additional_files.py:164
 msgid "Universal Access Preferences"
-msgstr ""
+msgstr "無障礙存取偏好設定"
 
-#: generate_additional_files.py:205
+#: generate_additional_files.py:179
 msgid "Date & Time"
-msgstr ""
+msgstr "日期與時間"
 
-#: generate_additional_files.py:205
+#: generate_additional_files.py:179
 msgid "Date and Time preferences"
-msgstr ""
+msgstr "日期與時間偏好設定"

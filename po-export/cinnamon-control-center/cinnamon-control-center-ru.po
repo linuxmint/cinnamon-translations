@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-03-29 10:54+0000\n"
-"PO-Revision-Date: 2014-05-11 12:54+0000\n"
-"Last-Translator: Monsta <Unknown>\n"
+"POT-Creation-Date: 2014-10-31 01:28+0100\n"
+"PO-Revision-Date: 2014-10-29 07:31+0000\n"
+"Last-Translator: segray <segray@tut.by>\n"
 "Language-Team: Yuriy end Company\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2014-05-25 11:55+0000\n"
-"X-Generator: Launchpad (build 17017)\n"
+"X-Launchpad-Export-Date: 2014-10-31 00:59+0000\n"
+"X-Generator: Launchpad (build 17211)\n"
 "Language: ru\n"
 
 #: panels/color/cc-color-panel.c:106
@@ -85,7 +85,7 @@ msgid "Available Profiles"
 msgstr "Доступные профили"
 
 #: panels/color/cc-color-panel.c:935 panels/sound/gvc-mixer-dialog.c:1523
-#: panels/sound-nua/gvc-mixer-dialog.c:1600
+#: panels/sound-nua/gvc-mixer-dialog.c:1605
 msgid "Device"
 msgstr "Устройство"
 
@@ -286,62 +286,60 @@ msgstr "Не удалось определить экраны"
 msgid "Could not get screen information"
 msgstr "Не удалось получить информацию об экране"
 
-#: panels/network/cc-network-panel.c:661
-msgid "Network proxy"
-msgstr "Сетевая прокси-служба"
+#: panels/network/cc-network-panel.c:368
+msgid "Air_plane Mode"
+msgstr "Режим для _авиаперелётов"
 
-#: panels/network/cc-network-panel.c:853 panels/network/net-vpn.c:278
+#: panels/network/cc-network-panel.c:968
+msgid "Network Proxy"
+msgstr ""
+
+#: panels/network/cc-network-panel.c:1147 panels/network/net-vpn.c:278
+#: panels/network/net-vpn.c:431
 #, c-format
 msgid "%s VPN"
 msgstr "VPN %s"
 
-#: panels/network/cc-network-panel.c:920
+#: panels/network/cc-network-panel.c:1292
 msgid "The system network services are not compatible with this version."
 msgstr "Системные сетевые службы несовместимы с этой версией."
 
-#: panels/network/cc-network-panel.c:1108
-msgid "Air_plane Mode"
-msgstr "Режим для _авиаперелётов"
+#: panels/network/net-device-bond.c:77
+msgid "Bond slaves"
+msgstr ""
 
-#: panels/network/net-device-mobile.c:222
-msgid "Add new connection"
-msgstr "Добавить новое подключение"
+#: panels/network/net-device-bond.c:102 panels/network/net-device-bridge.c:102
+#: panels/network/net-device-team.c:102
+msgid "(none)"
+msgstr ""
 
-#: panels/network/net-device-mobile.c:261 panels/network/net-device-wifi.c:725
-#: panels/network/net-device-wired.c:126
+#: panels/network/net-device-bridge.c:77
+msgid "Bridge slaves"
+msgstr ""
+
+#: panels/network/net-device-ethernet.c:54
+#: panels/network/net-device-wifi.c:529
 #, c-format
 msgid "%d Mb/s"
 msgstr "%d Мб/с"
 
-#: panels/network/net-device-wifi.c:258 panels/network/net-device-wifi.c:437
-msgid "WEP"
-msgstr "WEP"
-
-#: panels/network/net-device-wifi.c:262 panels/network/net-device-wifi.c:441
-msgid "WPA"
-msgstr "WPA"
-
-#: panels/network/net-device-wifi.c:266
-msgid "WPA2"
-msgstr "WPA2"
-
-#: panels/network/net-device-wifi.c:271
-msgid "Enterprise"
-msgstr "Предприятие"
-
-#: panels/network/net-device-wifi.c:652
+#: panels/network/net-device-ethernet.c:112
+#: panels/network/net-device-wifi.c:458
 msgid "never"
 msgstr "никогда"
 
-#: panels/network/net-device-wifi.c:662
+#: panels/network/net-device-ethernet.c:122
+#: panels/network/net-device-wifi.c:468
 msgid "today"
 msgstr "сегодня"
 
-#: panels/network/net-device-wifi.c:664
+#: panels/network/net-device-ethernet.c:124
+#: panels/network/net-device-wifi.c:470
 msgid "yesterday"
 msgstr "вчера"
 
-#: panels/network/net-device-wifi.c:666
+#: panels/network/net-device-ethernet.c:126
+#: panels/network/net-device-wifi.c:472
 #, c-format
 msgid "%i day ago"
 msgid_plural "%i days ago"
@@ -349,58 +347,167 @@ msgstr[0] "%i день назад"
 msgstr[1] "%i дня назад"
 msgstr[2] "%i дней назад"
 
-#: panels/network/net-device-wifi.c:735 panels/network/panel-common.c:277
-msgid "Not connected"
-msgstr "Не подключено"
+#: panels/network/net-device-ethernet.c:159 panels/network/panel-common.c:693
+#: panels/network/network-simple.ui.h:3 panels/network/network-wifi.ui.h:11
+#: panels/network/connection-editor/details-page.ui.h:4
+msgid "IPv4 Address"
+msgstr "Адрес IPv4"
 
-#: panels/network/net-device-wifi.c:737 panels/network/net-device-wifi.c:2108
-msgid "Out of range"
-msgstr "Вне зоны доступа"
+#: panels/network/net-device-ethernet.c:160
+#: panels/network/net-device-ethernet.c:164 panels/network/panel-common.c:694
+#: panels/network/network-mobile.ui.h:4 panels/network/network-simple.ui.h:4
+#: panels/network/network-wifi.ui.h:12
+#: panels/network/connection-editor/details-page.ui.h:5
+msgid "IPv6 Address"
+msgstr "Адрес IPv6"
 
-#: panels/network/net-device-wifi.c:960
+#: panels/network/net-device-ethernet.c:162 panels/network/panel-common.c:696
+#: panels/network/panel-common.c:698 panels/network/network-mobile.ui.h:3
+msgid "IP Address"
+msgstr "Адрес IP"
+
+#: panels/network/net-device-ethernet.c:167
+#: panels/network/network-simple.ui.h:2 panels/network/network-wifi.ui.h:13
+#: panels/network/connection-editor/details-page.ui.h:6
+msgid "Hardware Address"
+msgstr "Аппаратный адрес"
+
+#: panels/network/net-device-ethernet.c:171
+#: panels/network/network-mobile.ui.h:5 panels/network/network-simple.ui.h:5
+#: panels/network/network-wifi.ui.h:14
+#: panels/network/connection-editor/details-page.ui.h:7
+msgid "Default Route"
+msgstr "Маршрут по умолчанию"
+
+#: panels/network/net-device-ethernet.c:173
+#: panels/network/network-mobile.ui.h:6 panels/network/network-simple.ui.h:6
+#: panels/network/network-wifi.ui.h:15
+#: panels/network/connection-editor/details-page.ui.h:8
+#: panels/network/connection-editor/ip4-page.ui.h:3
+#: panels/network/connection-editor/ip6-page.ui.h:3
+msgid "DNS"
+msgstr "DNS"
+
+#: panels/network/net-device-ethernet.c:178
+#: panels/network/network-wifi.ui.h:16
+msgid "Last used"
+msgstr "Последнее использование"
+
+#: panels/network/net-device-ethernet.c:283
+#: panels/network/network-ethernet.ui.h:1
+msgid "Wired"
+msgstr "Проводная сеть"
+
+#: panels/network/net-device-ethernet.c:351
+#: panels/network/network-ethernet.ui.h:3 panels/network/network-mobile.ui.h:8
+#: panels/network/network-vpn.ui.h:8
+msgid "Options…"
+msgstr ""
+
+#: panels/network/net-device-ethernet.c:469
 #, c-format
-msgid ""
-"Network details for %s including password and any custom configuration will "
-"be lost."
+msgid "Profile %d"
 msgstr ""
-"Сетевые данные для %s, включая пароль и любые пользовательские настройки, "
-"будут утеряны."
 
-#: panels/network/net-device-wifi.c:971
-msgid "Forget"
-msgstr "Забыть"
+#: panels/network/net-device-mobile.c:232
+msgid "Add new connection"
+msgstr "Добавить новое подключение"
 
-#: panels/network/net-device-wifi.c:1554
-msgid ""
-"If you have a connection to the Internet other than wireless, you can use it "
-"to share your internet connection with others."
+#: panels/network/net-device-team.c:77
+msgid "Team slaves"
 msgstr ""
-"Если помимо беспроводного доступа в Интернет имеется ещё какое-либо "
-"подключение к Интернету, вы можете использовать это подключение для "
-"предоставления Интернет-канала другим пользователям."
 
-#: panels/network/net-device-wifi.c:1558
+#: panels/network/net-device-wifi.c:217 panels/network/net-device-wifi.c:378
+msgid "WEP"
+msgstr "WEP"
+
+#: panels/network/net-device-wifi.c:221 panels/network/net-device-wifi.c:383
+#: panels/network/network-wifi.ui.h:23
+msgid "WPA"
+msgstr "WPA"
+
+#: panels/network/net-device-wifi.c:225
+msgid "WPA2"
+msgstr "WPA2"
+
+#: panels/network/net-device-wifi.c:230
+msgid "Enterprise"
+msgstr "Предприятие"
+
+#: panels/network/net-device-wifi.c:1153
+msgid ""
+"If you have a connection to the Internet other than wireless, you can set up "
+"a wireless hotspot to share the connection with others."
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1157
 #, c-format
 msgid "Switching on the wireless hotspot will disconnect you from <b>%s</b>."
 msgstr ""
 "Переключение на беспроводную точку доступа приведёт к отключению от "
 "<b>%s</b>."
 
-#: panels/network/net-device-wifi.c:1562
+#: panels/network/net-device-wifi.c:1161
 msgid ""
-"It is not possible to access the internet through your wireless while the "
+"It is not possible to access the Internet through your wireless while the "
 "hotspot is active."
 msgstr ""
-"Доступ к Интернету по беспроводному каналу возможен только при отключённой "
-"точке доступа."
 
-#: panels/network/net-device-wifi.c:1636
+#: panels/network/net-device-wifi.c:1238
 msgid "Stop hotspot and disconnect any users?"
 msgstr "Остановить точку доступа и отключить всех пользователей?"
 
-#: panels/network/net-device-wifi.c:1639
+#: panels/network/net-device-wifi.c:1240 panels/network/net-device-wifi.c:1448
+#: panels/common/language-chooser.ui.h:2
+msgid "_Cancel"
+msgstr "_Отмена"
+
+#: panels/network/net-device-wifi.c:1241
 msgid "_Stop Hotspot"
 msgstr "_Остановить точку доступа"
+
+#: panels/network/net-device-wifi.c:1313
+msgid "System policy prohibits use as a Hotspot"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1316
+msgid "Wireless device does not support Hotspot mode"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1445
+msgid ""
+"Network details for the selected networks, including passwords and any "
+"custom configuration will be lost."
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1449 panels/network/network-wifi.ui.h:46
+#: panels/network/connection-editor/reset-page.ui.h:2
+msgid "_Forget"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1603
+msgid "Preferences"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1609
+msgid "Options"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1627
+msgid "Connect"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1650
+msgid "Disconnect"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1864
+msgid "Known Networks"
+msgstr ""
+
+#: panels/network/net-device-wifi.c:1868
+msgid "_Close"
+msgstr ""
 
 #: panels/network/net-proxy.c:67
 msgid ""
@@ -413,276 +520,237 @@ msgstr ""
 msgid "This is not recommended for untrusted public networks."
 msgstr "Не рекомендуется для непроверенных общедоступных сетей."
 
-#: panels/network/net-proxy.c:368
+#: panels/network/net-proxy.c:405
 msgid "Proxy"
 msgstr "Прокси"
 
-#: panels/network/panel-common.c:82 panels/network/panel-common.c:162
+#: panels/network/panel-common.c:127
 msgid "Unknown"
 msgstr "Неизвестное устройство"
 
-#: panels/network/panel-common.c:86
-msgid "Wired"
-msgstr "Проводная сеть"
-
-#: panels/network/panel-common.c:90 panels/network/network-wifi.ui.h:3
-msgid "Wireless"
-msgstr "Беспроводная сеть"
-
-#: panels/network/panel-common.c:97
-msgid "Mobile broadband"
-msgstr "Мобильная широкополосная сеть"
-
-#: panels/network/panel-common.c:102
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: panels/network/panel-common.c:106
-msgid "Mesh"
-msgstr "Сетевое"
-
-#: panels/network/panel-common.c:166
+#: panels/network/panel-common.c:131
 msgid "Ad-hoc"
 msgstr "Ad-hoc"
 
-#: panels/network/panel-common.c:170
+#: panels/network/panel-common.c:135
 msgid "Infrastructure"
 msgstr "Инфраструктура"
 
-#: panels/network/panel-common.c:194 panels/network/panel-common.c:255
+#: panels/network/panel-common.c:151 panels/network/panel-common.c:205
 msgid "Status unknown"
 msgstr "Состояние неизвестно"
 
-#: panels/network/panel-common.c:198
+#: panels/network/panel-common.c:155
 msgid "Unmanaged"
 msgstr "Неуправляемое"
 
-#: panels/network/panel-common.c:203
-msgid "Firmware missing"
-msgstr "Отсутствует прошивка"
-
-#: panels/network/panel-common.c:206
-msgid "Cable unplugged"
-msgstr "Кабель не подключён"
-
-#: panels/network/panel-common.c:208
+#: panels/network/panel-common.c:159
 msgid "Unavailable"
 msgstr "Недоступно"
 
-#: panels/network/panel-common.c:212
-msgid "Disconnected"
-msgstr "Отключено"
-
-#: panels/network/panel-common.c:219 panels/network/panel-common.c:261
+#: panels/network/panel-common.c:169 panels/network/panel-common.c:211
 msgid "Connecting"
 msgstr "Подключение"
 
-#: panels/network/panel-common.c:223 panels/network/panel-common.c:265
+#: panels/network/panel-common.c:173 panels/network/panel-common.c:215
 msgid "Authentication required"
 msgstr "Требуется аутентификация"
 
-#: panels/network/panel-common.c:227 panels/network/panel-common.c:269
+#: panels/network/panel-common.c:177 panels/network/panel-common.c:219
 msgid "Connected"
 msgstr "Подключено"
 
-#: panels/network/panel-common.c:231
+#: panels/network/panel-common.c:181
 msgid "Disconnecting"
 msgstr "Отключение"
 
-#: panels/network/panel-common.c:235 panels/network/panel-common.c:273
+#: panels/network/panel-common.c:185 panels/network/panel-common.c:223
 msgid "Connection failed"
 msgstr "Сбой подключения"
 
-#: panels/network/panel-common.c:239 panels/network/panel-common.c:281
+#: panels/network/panel-common.c:189 panels/network/panel-common.c:231
 msgid "Status unknown (missing)"
 msgstr "Состояние неизвестно (отсутствует)"
 
-#: panels/network/panel-common.c:301
+#: panels/network/panel-common.c:227
+msgid "Not connected"
+msgstr "Не подключено"
+
+#: panels/network/panel-common.c:252
 msgid "Configuration failed"
 msgstr "Сбой настройки"
 
-#: panels/network/panel-common.c:305
+#: panels/network/panel-common.c:256
 msgid "IP configuration failed"
 msgstr "Сбой настройки IP"
 
-#: panels/network/panel-common.c:309
+#: panels/network/panel-common.c:260
 msgid "IP configuration expired"
 msgstr "Истёк срок настроек IP"
 
-#: panels/network/panel-common.c:313
+#: panels/network/panel-common.c:264
 msgid "Secrets were required, but not provided"
 msgstr "Требуется пароль, но он не задан"
 
-#: panels/network/panel-common.c:317
+#: panels/network/panel-common.c:268
 msgid "802.1x supplicant disconnected"
 msgstr "Клиент 802.1x отключён"
 
-#: panels/network/panel-common.c:321
+#: panels/network/panel-common.c:272
 msgid "802.1x supplicant configuration failed"
 msgstr "Сбой настройки клиента 802.1x"
 
-#: panels/network/panel-common.c:325
+#: panels/network/panel-common.c:276
 msgid "802.1x supplicant failed"
 msgstr "Сбой клиента 802.1x"
 
-#: panels/network/panel-common.c:329
+#: panels/network/panel-common.c:280
 msgid "802.1x supplicant took too long to authenticate"
 msgstr "Клиент 802.1x слишком долго ожидал аутентификации"
 
-#: panels/network/panel-common.c:333
+#: panels/network/panel-common.c:284
 msgid "PPP service failed to start"
 msgstr "Не удалось запустить службу PPP"
 
-#: panels/network/panel-common.c:337
+#: panels/network/panel-common.c:288
 msgid "PPP service disconnected"
 msgstr "Служба PPP отключена"
 
-#: panels/network/panel-common.c:341
+#: panels/network/panel-common.c:292
 msgid "PPP failed"
 msgstr "Сбой PPP"
 
-#: panels/network/panel-common.c:345
+#: panels/network/panel-common.c:296
 msgid "DHCP client failed to start"
 msgstr "Не удалось запустить клиент DHCP"
 
-#: panels/network/panel-common.c:349
+#: panels/network/panel-common.c:300
 msgid "DHCP client error"
 msgstr "Ошибка клиента DHCP"
 
-#: panels/network/panel-common.c:353
+#: panels/network/panel-common.c:304
 msgid "DHCP client failed"
 msgstr "Сбой клиента DHCP"
 
-#: panels/network/panel-common.c:357
+#: panels/network/panel-common.c:308
 msgid "Shared connection service failed to start"
 msgstr "Не удалось запустить службу общего подключения"
 
-#: panels/network/panel-common.c:361
+#: panels/network/panel-common.c:312
 msgid "Shared connection service failed"
 msgstr "Сбой службы общего подключения"
 
-#: panels/network/panel-common.c:365
+#: panels/network/panel-common.c:316
 msgid "AutoIP service failed to start"
 msgstr "Не удалось запустить службу AutoIP"
 
-#: panels/network/panel-common.c:369
+#: panels/network/panel-common.c:320
 msgid "AutoIP service error"
 msgstr "Ошибка службы AutoIP"
 
-#: panels/network/panel-common.c:373
+#: panels/network/panel-common.c:324
 msgid "AutoIP service failed"
 msgstr "Сбой службы AutoIP"
 
-#: panels/network/panel-common.c:377
+#: panels/network/panel-common.c:328
 msgid "Line busy"
 msgstr "Линия занята"
 
-#: panels/network/panel-common.c:381
+#: panels/network/panel-common.c:332
 msgid "No dial tone"
 msgstr "Нет гудка в линии"
 
-#: panels/network/panel-common.c:385
+#: panels/network/panel-common.c:336
 msgid "No carrier could be established"
 msgstr "Невозможно установить несущую"
 
-#: panels/network/panel-common.c:389
+#: panels/network/panel-common.c:340
 msgid "Dialing request timed out"
 msgstr "Время, отведённое на звонок, истекло"
 
-#: panels/network/panel-common.c:393
+#: panels/network/panel-common.c:344
 msgid "Dialing attempt failed"
 msgstr "Не удалось дозвониться"
 
-#: panels/network/panel-common.c:397
+#: panels/network/panel-common.c:348
 msgid "Modem initialization failed"
 msgstr "Не удалось инициализировать модем"
 
-#: panels/network/panel-common.c:401
+#: panels/network/panel-common.c:352
 msgid "Failed to select the specified APN"
 msgstr "Не удалось выбрать указанный APN"
 
-#: panels/network/panel-common.c:405
+#: panels/network/panel-common.c:356
 msgid "Not searching for networks"
 msgstr "Нет сетей для поиска"
 
-#: panels/network/panel-common.c:409
+#: panels/network/panel-common.c:360
 msgid "Network registration denied"
 msgstr "Отказано в регистрации в сети"
 
-#: panels/network/panel-common.c:413
+#: panels/network/panel-common.c:364
 msgid "Network registration timed out"
 msgstr "Время в регистрации сети истекло"
 
-#: panels/network/panel-common.c:417
+#: panels/network/panel-common.c:368
 msgid "Failed to register with the requested network"
 msgstr "Не удалось зарегистрироваться в запрошенной сети"
 
-#: panels/network/panel-common.c:421
+#: panels/network/panel-common.c:372
 msgid "PIN check failed"
 msgstr "Сбой проверки PIN"
 
-#: panels/network/panel-common.c:425
+#: panels/network/panel-common.c:376
 msgid "Firmware for the device may be missing"
 msgstr "Возможно, отсутствует микропрограмма устройства"
 
-#: panels/network/panel-common.c:429
+#: panels/network/panel-common.c:380
 msgid "Connection disappeared"
 msgstr "Подключение пропало"
 
-#: panels/network/panel-common.c:433
-msgid "Carrier/link changed"
-msgstr "Изменена несущая/связь"
-
-#: panels/network/panel-common.c:437
+#: panels/network/panel-common.c:384
 msgid "Existing connection was assumed"
 msgstr "Предполагалось, что соединение существует"
 
-#: panels/network/panel-common.c:441
+#: panels/network/panel-common.c:388
 msgid "Modem not found"
 msgstr "Модем не найден"
 
-#: panels/network/panel-common.c:445
+#: panels/network/panel-common.c:392
 msgid "Bluetooth connection failed"
 msgstr "Сбой подключения по Bluetooth"
 
-#: panels/network/panel-common.c:449
+#: panels/network/panel-common.c:396
 msgid "SIM Card not inserted"
 msgstr "Не вставлена SIM-карта"
 
-#: panels/network/panel-common.c:453
+#: panels/network/panel-common.c:400
 msgid "SIM Pin required"
 msgstr "Требуется SIM Pin"
 
-#: panels/network/panel-common.c:457
+#: panels/network/panel-common.c:404
 msgid "SIM Puk required"
 msgstr "Требуется SIM Puk"
 
-#: panels/network/panel-common.c:461
+#: panels/network/panel-common.c:408
 msgid "SIM wrong"
 msgstr "Некорректный SIM"
 
-#: panels/network/panel-common.c:465
+#: panels/network/panel-common.c:412
 msgid "InfiniBand device does not support connected mode"
 msgstr "Устройство InfiniBand не поддерживает режим подключения"
 
-#: panels/network/panel-common.c:469
+#: panels/network/panel-common.c:416
 msgid "Connection dependency failed"
 msgstr "Сбой зависимости подключения"
 
-#: panels/network/panel-common.c:683 panels/network/network-wifi.ui.h:13
-#: panels/network/network-wired.ui.h:2
-msgid "IPv4 Address"
-msgstr "Адрес IPv4"
+#: panels/network/panel-common.c:440
+msgid "Firmware missing"
+msgstr "Отсутствует прошивка"
 
-#: panels/network/panel-common.c:684 panels/network/network-mobile.ui.h:4
-#: panels/network/network-wifi.ui.h:14 panels/network/network-wired.ui.h:3
-msgid "IPv6 Address"
-msgstr "Адрес IPv6"
-
-#: panels/network/panel-common.c:686 panels/network/panel-common.c:688
-#: panels/network/network-mobile.ui.h:3
-msgid "IP Address"
-msgstr "Адрес IP"
+#: panels/network/panel-common.c:444 panels/network/panel-common.c:447
+msgid "Cable unplugged"
+msgstr "Кабель не подключён"
 
 #: panels/power/cc-power-panel.c:160
 msgid "Unknown time"
@@ -837,7 +905,7 @@ msgid " — Cinnamon Volume Control Applet"
 msgstr " — Апплет контроля звука в Cinnamon"
 
 #: panels/sound/gvc-applet.c:270 panels/sound/gvc-mixer-dialog.c:1654
-#: panels/sound-nua/gvc-mixer-dialog.c:1811
+#: panels/sound-nua/gvc-mixer-dialog.c:1816
 msgid "Output"
 msgstr "Выход"
 
@@ -846,7 +914,7 @@ msgid "Sound Output Volume"
 msgstr "Громкость звука на выходе"
 
 #: panels/sound/gvc-applet.c:276 panels/sound/gvc-mixer-dialog.c:1695
-#: panels/sound-nua/gvc-mixer-dialog.c:1944
+#: panels/sound-nua/gvc-mixer-dialog.c:1949
 msgid "Input"
 msgstr "Вход"
 
@@ -871,7 +939,7 @@ msgstr "_Сабвуфер:"
 msgid "_Profile:"
 msgstr "_Профиль:"
 
-#: panels/sound/gvc-mixer-control.c:1834
+#: panels/sound/gvc-mixer-control.c:1834 panels/network/network-wifi.ui.h:35
 msgid "Disabled"
 msgstr "Отключено"
 
@@ -904,18 +972,18 @@ msgid "Peak detect"
 msgstr "Пиковый детектор"
 
 #: panels/sound/gvc-mixer-dialog.c:1504
-#: panels/sound-nua/gvc-mixer-dialog.c:1582
+#: panels/sound-nua/gvc-mixer-dialog.c:1587
 msgid "Name"
 msgstr "Название"
 
 #: panels/sound/gvc-mixer-dialog.c:1586
-#: panels/sound-nua/gvc-mixer-dialog.c:1684
+#: panels/sound-nua/gvc-mixer-dialog.c:1689
 #, c-format
 msgid "Speaker Testing for %s"
 msgstr "Проверка динамиков для %s"
 
 #: panels/sound/gvc-mixer-dialog.c:1640
-#: panels/sound-nua/gvc-mixer-dialog.c:2106
+#: panels/sound-nua/gvc-mixer-dialog.c:2111
 msgid "_Output volume:"
 msgstr "Громкость _воспроизведения:"
 
@@ -928,12 +996,12 @@ msgid "Settings for the selected device:"
 msgstr "Настройки выбранного устройства:"
 
 #: panels/sound/gvc-mixer-dialog.c:1702
-#: panels/sound-nua/gvc-mixer-dialog.c:1991
+#: panels/sound-nua/gvc-mixer-dialog.c:1996
 msgid "_Input volume:"
 msgstr "Громкость _записи:"
 
 #: panels/sound/gvc-mixer-dialog.c:1725
-#: panels/sound-nua/gvc-mixer-dialog.c:2024
+#: panels/sound-nua/gvc-mixer-dialog.c:2029
 msgid "Input level:"
 msgstr "Уровень записи:"
 
@@ -942,22 +1010,22 @@ msgid "C_hoose a device for sound input:"
 msgstr "_Выберите устройство для вывода звука:"
 
 #: panels/sound/gvc-mixer-dialog.c:1780
-#: panels/sound-nua/gvc-mixer-dialog.c:2050
+#: panels/sound-nua/gvc-mixer-dialog.c:2055
 msgid "Sound Effects"
 msgstr "Звуковые эффекты"
 
 #: panels/sound/gvc-mixer-dialog.c:1787
-#: panels/sound-nua/gvc-mixer-dialog.c:2057
+#: panels/sound-nua/gvc-mixer-dialog.c:2062
 msgid "_Alert volume:"
 msgstr "Громкость _уведомлений:"
 
 #: panels/sound/gvc-mixer-dialog.c:1795
-#: panels/sound-nua/gvc-mixer-dialog.c:2087
+#: panels/sound-nua/gvc-mixer-dialog.c:2092
 msgid "Applications"
 msgstr "Приложения"
 
 #: panels/sound/gvc-mixer-dialog.c:1799
-#: panels/sound-nua/gvc-mixer-dialog.c:2091
+#: panels/sound-nua/gvc-mixer-dialog.c:2096
 msgid "No application is currently playing or recording audio."
 msgstr ""
 "В данный момент ни одно приложение не воспроизводит и не записывает звук."
@@ -991,98 +1059,97 @@ msgstr "_Параметры звука"
 msgid "Muted"
 msgstr "Приглушено"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:778
+#: panels/sound-nua/gvc-mixer-dialog.c:777
 #: panels/sound-nua/gvc-mixer-dialog.c:948
 #, c-format
 msgid "Settings for %s"
 msgstr "Настройки для %s"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:804
-#: panels/sound-nua/gvc-mixer-dialog.c:957
+#: panels/sound-nua/gvc-mixer-dialog.c:805
+#: panels/sound-nua/gvc-mixer-dialog.c:960
 msgid "Mode:"
 msgstr "Режим:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1736
+#: panels/sound-nua/gvc-mixer-dialog.c:1741
 msgid "Choose an audio file"
 msgstr "Выберите звуковой файл"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1816
+#: panels/sound-nua/gvc-mixer-dialog.c:1821
 msgid "Play sound through"
 msgstr "Воспроизведение звука через"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1841
-#: panels/sound-nua/gvc-mixer-dialog.c:1973
+#: panels/sound-nua/gvc-mixer-dialog.c:1846
+#: panels/sound-nua/gvc-mixer-dialog.c:1978
 msgid "Settings for the selected device"
 msgstr "Настройки для выбранного устройства"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1914
+#: panels/sound-nua/gvc-mixer-dialog.c:1919
 msgid "Test:"
 msgstr "Проверка:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1921
+#: panels/sound-nua/gvc-mixer-dialog.c:1926
 msgid "Test Sound"
 msgstr "Проверить звук"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:1948
+#: panels/sound-nua/gvc-mixer-dialog.c:1953
 msgid "Record sound from"
 msgstr "Запись звука с"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:2069
+#: panels/sound-nua/gvc-mixer-dialog.c:2074
 msgid "Starting Cinnamon:"
 msgstr "Запуск Cinnamon:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:2070
+#: panels/sound-nua/gvc-mixer-dialog.c:2075
 msgid "Switching workspace:"
 msgstr "Переключение рабочих столов:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:2071
-msgid "Mapping windows:"
-msgstr ""
-
-#: panels/sound-nua/gvc-mixer-dialog.c:2072
-msgid "Closing windows:"
-msgstr "Закрытие окон:"
-
-#: panels/sound-nua/gvc-mixer-dialog.c:2073
-msgid "Minimizing windows:"
-msgstr "Сворачивание окон:"
-
-#: panels/sound-nua/gvc-mixer-dialog.c:2074
-msgid "Maximizing windows:"
-msgstr "Разворачивание окон:"
-
-#: panels/sound-nua/gvc-mixer-dialog.c:2075
-msgid "Unmaximizing windows:"
-msgstr "Сворачивание в окно:"
-
 #: panels/sound-nua/gvc-mixer-dialog.c:2076
-msgid "Tiling and snapping windows:"
+msgid "Opening new windows:"
 msgstr ""
 
 #: panels/sound-nua/gvc-mixer-dialog.c:2077
+msgid "Closing windows:"
+msgstr "Закрытие окон:"
+
+#: panels/sound-nua/gvc-mixer-dialog.c:2078
+msgid "Minimizing windows:"
+msgstr "Сворачивание окон:"
+
+#: panels/sound-nua/gvc-mixer-dialog.c:2079
+msgid "Maximizing windows:"
+msgstr "Разворачивание окон:"
+
+#: panels/sound-nua/gvc-mixer-dialog.c:2080
+msgid "Unmaximizing windows:"
+msgstr "Сворачивание в окно:"
+
+#: panels/sound-nua/gvc-mixer-dialog.c:2081
+msgid "Tiling and snapping windows:"
+msgstr "Управление размещением и прикреплением окон:"
+
+#: panels/sound-nua/gvc-mixer-dialog.c:2082
 msgid "Inserting a device:"
 msgstr "Подключение устройства:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:2078
+#: panels/sound-nua/gvc-mixer-dialog.c:2083
 msgid "Removing a device:"
 msgstr "Извлечение устройства:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:2079
+#: panels/sound-nua/gvc-mixer-dialog.c:2084
 msgid "Changing the sound volume:"
 msgstr "Изменение громкости:"
 
-#: panels/sound-nua/gvc-mixer-dialog.c:2080
+#: panels/sound-nua/gvc-mixer-dialog.c:2085
 msgid "Leaving Cinnamon:"
 msgstr "Выход из Cinnamon:"
 
-#: panels/universal-access/cc-ua-panel.c:289
 #: panels/universal-access/cc-ua-panel.c:295
 msgid "No shortcut set"
 msgstr "Комбинация не установлена"
 
 #: panels/wacom/cc-wacom-mapping-panel.c:275
 msgid "Output:"
-msgstr ""
+msgstr "Вывод:"
 
 #: panels/wacom/cc-wacom-mapping-panel.c:287
 msgid "Keep aspect ratio (letterbox):"
@@ -1115,81 +1182,81 @@ msgstr "Действие"
 
 #: panels/wacom/cc-wacom-page.c:921
 msgid "Display Mapping"
-msgstr ""
+msgstr "Отображение на экран"
 
-#: panels/wacom/csd-wacom-device.c:1076
+#: panels/wacom/csd-wacom-device.c:1082
 msgid "Left Ring"
-msgstr ""
+msgstr "Кольцо слева"
 
-#: panels/wacom/csd-wacom-device.c:1086
+#: panels/wacom/csd-wacom-device.c:1092
 #, c-format
 msgid "Left Ring Mode #%d"
-msgstr ""
+msgstr "Режим левого кольца #%d"
 
-#: panels/wacom/csd-wacom-device.c:1105
+#: panels/wacom/csd-wacom-device.c:1111
 msgid "Right Ring"
-msgstr ""
+msgstr "Кольцо справа"
 
-#: panels/wacom/csd-wacom-device.c:1115
+#: panels/wacom/csd-wacom-device.c:1121
 #, c-format
 msgid "Right Ring Mode #%d"
-msgstr ""
+msgstr "Режим правого кольца #%d"
 
-#: panels/wacom/csd-wacom-device.c:1156
+#: panels/wacom/csd-wacom-device.c:1162
 msgid "Left Touchstrip"
-msgstr ""
+msgstr "Левая сенсорная полоса"
 
-#: panels/wacom/csd-wacom-device.c:1166
+#: panels/wacom/csd-wacom-device.c:1172
 #, c-format
 msgid "Left Touchstrip Mode #%d"
-msgstr ""
+msgstr "Режим левой сенсорной полосы #%d"
 
-#: panels/wacom/csd-wacom-device.c:1185
+#: panels/wacom/csd-wacom-device.c:1191
 msgid "Right Touchstrip"
-msgstr ""
+msgstr "Правая сенсорная полоса"
 
-#: panels/wacom/csd-wacom-device.c:1195
+#: panels/wacom/csd-wacom-device.c:1201
 #, c-format
 msgid "Right Touchstrip Mode #%d"
-msgstr ""
+msgstr "Режим правой сенсорной полосы: #%d"
 
-#: panels/wacom/csd-wacom-device.c:1220
+#: panels/wacom/csd-wacom-device.c:1226
 msgid "Left Touchring Mode Switch"
-msgstr ""
+msgstr "Переключение режима левого сенсорного кольца"
 
-#: panels/wacom/csd-wacom-device.c:1222
+#: panels/wacom/csd-wacom-device.c:1228
 msgid "Right Touchring Mode Switch"
-msgstr ""
+msgstr "Переключение режима правого сенсорного кольца"
 
-#: panels/wacom/csd-wacom-device.c:1225
+#: panels/wacom/csd-wacom-device.c:1231
 msgid "Left Touchstrip Mode Switch"
-msgstr ""
+msgstr "Переключение режима левой сенсорной полосы"
 
-#: panels/wacom/csd-wacom-device.c:1227
+#: panels/wacom/csd-wacom-device.c:1233
 msgid "Right Touchstrip Mode Switch"
-msgstr ""
+msgstr "Переключение режима правой сенсорной полосы"
 
-#: panels/wacom/csd-wacom-device.c:1232
+#: panels/wacom/csd-wacom-device.c:1238
 #, c-format
 msgid "Mode Switch #%d"
 msgstr "Переключение режима #%d"
 
-#: panels/wacom/csd-wacom-device.c:1336
+#: panels/wacom/csd-wacom-device.c:1342
 #, c-format
 msgid "Left Button #%d"
 msgstr "Левая кнопка #%d"
 
-#: panels/wacom/csd-wacom-device.c:1339
+#: panels/wacom/csd-wacom-device.c:1345
 #, c-format
 msgid "Right Button #%d"
 msgstr "Правая кнопка #%d"
 
-#: panels/wacom/csd-wacom-device.c:1342
+#: panels/wacom/csd-wacom-device.c:1348
 #, c-format
 msgid "Top Button #%d"
 msgstr "Верхняя кнопка #%d"
 
-#: panels/wacom/csd-wacom-device.c:1345
+#: panels/wacom/csd-wacom-device.c:1351
 #, c-format
 msgid "Bottom Button #%d"
 msgstr "Нижняя кнопка #%d"
@@ -1237,7 +1304,7 @@ msgstr "Справка"
 msgid "Quit"
 msgstr "Выход"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:85
+#: panels/color/color.ui.h:3 generate_additional_files.py:57
 msgid "Color"
 msgstr "Цвет"
 
@@ -1317,10 +1384,6 @@ msgstr ""
 msgid "Select a language"
 msgstr "Выберите язык"
 
-#: panels/common/language-chooser.ui.h:2
-msgid "_Cancel"
-msgstr "_Отмена"
-
 #: panels/common/language-chooser.ui.h:3
 msgid "_Select"
 msgstr "_Выбрать"
@@ -1339,23 +1402,23 @@ msgstr "_Сетевое время"
 
 #: panels/datetime/datetime.ui.h:5
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: panels/datetime/datetime.ui.h:6
 msgid "Set the time one hour ahead."
-msgstr ""
+msgstr "Перевести часы на один час вперёд."
 
 #: panels/datetime/datetime.ui.h:7
 msgid "Set the time one hour back."
-msgstr ""
+msgstr "Перевести часы на один час назад."
 
 #: panels/datetime/datetime.ui.h:8
 msgid "Set the time one minute ahead."
-msgstr ""
+msgstr "Перевести часы на одну минуту вперёд."
 
 #: panels/datetime/datetime.ui.h:9
 msgid "Set the time one minute back."
-msgstr ""
+msgstr "Перевести часы на одну минуту назад."
 
 #: panels/datetime/datetime.ui.h:10
 msgid "Month"
@@ -1371,51 +1434,51 @@ msgstr "Год"
 
 #: panels/datetime/datetime.ui.h:13
 msgid "January"
-msgstr ""
+msgstr "Январь"
 
 #: panels/datetime/datetime.ui.h:14
 msgid "February"
-msgstr ""
+msgstr "Февраль"
 
 #: panels/datetime/datetime.ui.h:15
 msgid "March"
-msgstr ""
+msgstr "Март"
 
 #: panels/datetime/datetime.ui.h:16
 msgid "April"
-msgstr ""
+msgstr "Апрель"
 
 #: panels/datetime/datetime.ui.h:17
 msgid "May"
-msgstr ""
+msgstr "Май"
 
 #: panels/datetime/datetime.ui.h:18
 msgid "June"
-msgstr ""
+msgstr "Июнь"
 
 #: panels/datetime/datetime.ui.h:19
 msgid "July"
-msgstr ""
+msgstr "Июль"
 
 #: panels/datetime/datetime.ui.h:20
 msgid "August"
-msgstr ""
+msgstr "Август"
 
 #: panels/datetime/datetime.ui.h:21
 msgid "September"
-msgstr ""
+msgstr "Сентябрь"
 
 #: panels/datetime/datetime.ui.h:22
 msgid "October"
-msgstr ""
+msgstr "Октябрь"
 
 #: panels/datetime/datetime.ui.h:23
 msgid "November"
-msgstr ""
+msgstr "Ноябрь"
 
 #: panels/datetime/datetime.ui.h:24
 msgid "December"
-msgstr ""
+msgstr "Декабрь"
 
 #: panels/display/display-capplet.ui.h:2
 msgid "Set as Primary"
@@ -1441,6 +1504,10 @@ msgstr "Примечание: может ограничить параметры
 msgid "_Detect Displays"
 msgstr "_Определить экраны"
 
+#: panels/network/network-ethernet.ui.h:2
+msgid "_Add Profile…"
+msgstr ""
+
 #: panels/network/network-mobile.ui.h:1
 msgid "IMEI"
 msgstr "IMEI"
@@ -1449,24 +1516,9 @@ msgstr "IMEI"
 msgid "Provider"
 msgstr "Провайдер"
 
-#: panels/network/network-mobile.ui.h:5 panels/network/network-wifi.ui.h:15
-#: panels/network/network-wired.ui.h:4
-msgid "Default Route"
-msgstr "Маршрут по умолчанию"
-
-#: panels/network/network-mobile.ui.h:6 panels/network/network-wifi.ui.h:16
-#: panels/network/network-wired.ui.h:5
-msgid "DNS"
-msgstr "DNS"
-
-#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:175
+#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:149
 msgid "Network"
 msgstr "Сеть"
-
-#: panels/network/network-mobile.ui.h:8 panels/network/network-wired.ui.h:6
-#: panels/region/cinnamon-region-panel.ui.h:11
-msgid "_Options..."
-msgstr "_Параметры…"
 
 #: panels/network/network-proxy.ui.h:4
 msgid "_Method"
@@ -1492,27 +1544,39 @@ msgstr "Прокси для _FTP"
 msgid "_Socks Host"
 msgstr "Узел S_ocks"
 
-#: panels/network/network.ui.h:1
-msgid "Select the interface to use for the new service"
-msgstr "Выберите интерфейс для использования с новой службой"
+#: panels/network/network-proxy.ui.h:10
+msgid "_Ignore Hosts"
+msgstr ""
 
-#: panels/network/network.ui.h:2
-msgid "C_reate..."
-msgstr "_Создать…"
+#: panels/network/network-proxy.ui.h:11
+msgid "HTTP proxy port"
+msgstr ""
 
-#: panels/network/network.ui.h:3
-msgid "_Interface"
-msgstr "_Интерфейс"
+#: panels/network/network-proxy.ui.h:12
+msgid "HTTPS proxy port"
+msgstr ""
 
-#: panels/network/network.ui.h:4 panels/network/network-vpn.ui.h:1
+#: panels/network/network-proxy.ui.h:13
+msgid "FTP proxy port"
+msgstr ""
+
+#: panels/network/network-proxy.ui.h:14
+msgid "Socks proxy port"
+msgstr ""
+
+#: panels/network/network-simple.ui.h:1
+msgid "Connection"
+msgstr ""
+
+#: panels/network/network.ui.h:1 panels/network/network-vpn.ui.h:1
 msgid "VPN"
 msgstr "VPN"
 
-#: panels/network/network.ui.h:8
+#: panels/network/network.ui.h:2
 msgid "Add Device"
 msgstr "Добавить устройство"
 
-#: panels/network/network.ui.h:9
+#: panels/network/network.ui.h:3
 msgid "Remove Device"
 msgstr "Удалить устройство"
 
@@ -1537,78 +1601,240 @@ msgid "Username"
 msgstr "Имя пользователя"
 
 #: panels/network/network-vpn.ui.h:7
-msgid "_Configure..."
-msgstr "_Настроить…"
+msgid "Turn VPN connection off"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:1
-msgid "Wireless Hotspot"
-msgstr "Беспроводная точка доступа"
+msgid "Details"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:2
-msgid "_Turn On"
-msgstr "_Включить"
+msgid "Identity"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:3
+msgid "IPv4"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:4
-msgid "_Use as Hotspot..."
-msgstr "_Использовать в качестве точки доступа…"
+msgid "IPv6"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:5
-msgid "Connect to a Hidden Network"
-msgstr "Подключиться к скрытой сети"
+msgid "Hardware"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:6
-msgid "_Disconnect"
-msgstr "_Отключиться"
+msgid "Reset"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:7
-msgid "_Connect"
-msgstr "_Подключиться"
+msgid "Automatic _Connect"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:8
-msgid "Last used"
-msgstr "Последнее использование"
+#: panels/network/connection-editor/details-page.ui.h:1
+msgid "Signal Strength"
+msgstr ""
 
-#: panels/network/network-wifi.ui.h:9 panels/network/network-wired.ui.h:1
-msgid "Hardware Address"
-msgstr "Аппаратный адрес"
-
-#: panels/network/network-wifi.ui.h:10
-msgid "Security"
-msgstr "Безопасность"
-
-#: panels/network/network-wifi.ui.h:11
-msgid "Strength"
-msgstr "Уровень сигнала"
-
-#: panels/network/network-wifi.ui.h:12
+#: panels/network/network-wifi.ui.h:9
+#: panels/network/connection-editor/details-page.ui.h:2
 msgid "Link speed"
 msgstr "Скорость передачи данных"
 
+#: panels/network/network-wifi.ui.h:10
+#: panels/network/connection-editor/details-page.ui.h:3
+msgid "Security"
+msgstr "Безопасность"
+
 #: panels/network/network-wifi.ui.h:17
-msgid "_Forget Network"
-msgstr "_Забыть сеть"
+msgid "details"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:18
-msgid "_Settings..."
-msgstr "_Настройки..."
+#: panels/network/connection-editor/wifi-page.ui.h:1
+msgid "_SSID"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:19
-msgid "Switch off to connect to a wireless network"
-msgstr "Выключите, если хотите подключиться к беспроводной сети"
+#: panels/network/connection-editor/wifi-page.ui.h:2
+msgid "_BSSID"
+msgstr ""
 
 #: panels/network/network-wifi.ui.h:20
+#: panels/network/connection-editor/security-page.ui.h:1
+msgid "S_ecurity"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:21
+#: panels/network/wireless-security/eap-method-leap.ui.h:2
+#: panels/network/wireless-security/eap-method-simple.ui.h:2
+#: panels/network/wireless-security/ws-leap.ui.h:2
+#: panels/network/wireless-security/ws-wpa-psk.ui.h:1
+msgid "_Password"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:22
+#: panels/network/connection-editor/wifi-page.ui.h:3
+msgid "My Home Network"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:24 panels/universal-access/uap.ui.h:8
+msgid "None"
+msgstr "Не задан"
+
+#: panels/network/network-wifi.ui.h:25
+msgid "Show P_assword"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:26
+msgid "Make available to other users"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:27
+msgid "identity"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:28
+#: panels/network/connection-editor/ip4-page.ui.h:1
+msgid "IPv_4"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:29
+#: panels/network/connection-editor/ip4-page.ui.h:2
+#: panels/network/connection-editor/ip6-page.ui.h:2
+msgid "_Addresses"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:30
+msgid "Manual"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:31
+msgid "Automatic (DHCP)"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:32
+msgid "Automatic (DHCP) addresses only"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:33
+msgid "Link-local only"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:34
+msgid "Shared with other computers"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:36
+#: panels/network/connection-editor/ip4-page.ui.h:6
+#: panels/network/connection-editor/ip6-page.ui.h:6
+msgid "Routes"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:37
+msgid "_Ignore automatically obtained routes"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:38
+#: panels/network/connection-editor/ip4-page.ui.h:8
+#: panels/network/connection-editor/ip6-page.ui.h:8
+msgid "Use this connection _only for resources on its network"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:39
+msgid "ipv4"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:40
+#: panels/network/connection-editor/ip6-page.ui.h:1
+msgid "IPv_6"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:41
+msgid "ipv6"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:42
+#: panels/network/connection-editor/ethernet-page.ui.h:11
+#: panels/network/connection-editor/wifi-page.ui.h:4
+msgid "_MAC Address"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:43
+msgid "_Cloned MAC Address"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:44
+msgid "hardware"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:45
+#: panels/network/connection-editor/reset-page.ui.h:1
+msgid "_Reset"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:47
+msgid ""
+"Reset the settings for this connection to their defaults, but remember as a "
+"preferred connection."
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:48
+msgid ""
+"Remove all details relating to this network and do not try to automatically "
+"connect to it."
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:49
+msgid "reset"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:50
+msgid "Create a Wireless Hotspot"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:51
+msgid "Wi-Fi Hotspot"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:52
+msgid "_Turn On"
+msgstr "_Включить"
+
+#: panels/network/network-wifi.ui.h:53
+msgid "Wi-Fi"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:54
+msgid "_Known Networks"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:55
+msgid "_Create a Wireless Hotspot"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:56
+msgid "Connect to a Hidden Network"
+msgstr "Подключиться к скрытой сети"
+
+#: panels/network/network-wifi.ui.h:57
+msgid "Switch off to connect to a Wi-Fi network"
+msgstr ""
+
+#: panels/network/network-wifi.ui.h:58
 msgid "Network Name"
 msgstr "Название сети"
 
-#: panels/network/network-wifi.ui.h:21
+#: panels/network/network-wifi.ui.h:59
 msgid "Connected Devices"
 msgstr "Подключённые устройства"
 
-#: panels/network/network-wifi.ui.h:22
+#: panels/network/network-wifi.ui.h:60
 msgid "Security type"
 msgstr "Тип безопасности"
 
-#: panels/network/network-wifi.ui.h:23
+#: panels/network/network-wifi.ui.h:61
 msgid "Security key"
 msgstr "Ключ безопасности"
 
@@ -1674,7 +1900,7 @@ msgstr "При работе от батареи"
 
 #: panels/power/power.ui.h:16
 msgid "On A/C power"
-msgstr "A/C питание вкл."
+msgstr "Питание от переменного тока включено"
 
 #: panels/power/power.ui.h:17
 msgid "When the lid is closed"
@@ -1685,8 +1911,8 @@ msgid "When the power button is pressed"
 msgstr "Когда кнопка питания нажата"
 
 #: panels/power/power.ui.h:19
-msgid "When battery power is critically low"
-msgstr "Когда заряд батареи критически низкий"
+msgid "When the battery is critically low"
+msgstr ""
 
 #: panels/power/power.ui.h:20
 msgid "Suspend when inactive for"
@@ -1697,14 +1923,10 @@ msgid "Turn off the screen when inactive for"
 msgstr "Выключить экран, если бездействует"
 
 #: panels/power/power.ui.h:22
-msgid "Start the screensaver when inactive for"
-msgstr "Запустить экранную заставку, если бездействует"
-
-#: panels/power/power.ui.h:23
 msgid "<b>Power Options</b>"
 msgstr "<b>Параметры питания</b>"
 
-#: panels/power/power.ui.h:24
+#: panels/power/power.ui.h:23
 msgid "<b>Battery Status</b>"
 msgstr "<b>Статус батареи</b>"
 
@@ -1764,6 +1986,10 @@ msgstr "Использовать раскладку по умолчанию в �
 msgid "New windows use the previous window's layout"
 msgstr "Использовать раскладку предыдущего окна в новых окнах"
 
+#: panels/region/cinnamon-region-panel.ui.h:11
+msgid "_Options..."
+msgstr "_Параметры…"
+
 #: panels/region/cinnamon-region-panel.ui.h:12
 msgid "View and edit keyboard layout options"
 msgstr "Просмотр и изменение параметров раскладки"
@@ -1791,10 +2017,6 @@ msgstr "GOK"
 #: panels/universal-access/uap.ui.h:7
 msgid "OnBoard"
 msgstr "Встроенная"
-
-#: panels/universal-access/uap.ui.h:8
-msgid "None"
-msgstr "Не задан"
 
 #: panels/universal-access/uap.ui.h:10
 #, no-c-format
@@ -2162,37 +2384,39 @@ msgstr "Цветовые эффекты"
 
 #: panels/wacom/button-mapping.ui.h:1
 msgid "Map Buttons"
-msgstr ""
+msgstr "Отображение кнопок"
 
 #: panels/wacom/button-mapping.ui.h:2
 msgid "Map buttons to functions"
-msgstr ""
+msgstr "Назначить кнопки функциям"
 
 #: panels/wacom/button-mapping.ui.h:3
 msgid ""
 "To edit a shortcut, click the row and hold down the new keys or press "
 "Backspace to clear."
 msgstr ""
+"Для изменения комбинации клавиш выберите строку и нажмите новую комбинацию "
+"клавиш; для очистки нажмите Backspace."
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:1
 msgid "Tablet (absolute)"
-msgstr ""
+msgstr "Планшет (абсолютный)"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:2
 msgid "Touchpad (relative)"
-msgstr ""
+msgstr "Тачпад (относительный)"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Tablet Preferences"
-msgstr ""
+msgstr "Настройки планшета"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:4
 msgid "No tablet detected"
-msgstr ""
+msgstr "Планшет не обнаружен"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:5
 msgid "Please plug in or turn on your graphics tablet"
-msgstr ""
+msgstr "Подключите или включите графический планшет"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:6
 msgid "Bluetooth Settings"
@@ -2200,15 +2424,15 @@ msgstr "Параметры Bluetooth"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Graphics Tablet"
-msgstr ""
+msgstr "Графический планшет"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map to Monitor…"
-msgstr ""
+msgstr "Отображение на экран…"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Map Buttons…"
-msgstr ""
+msgstr "Отображение кнопок…"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
@@ -2220,11 +2444,11 @@ msgstr "Режим отслеживания"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
 msgid "Left-Handed Orientation"
-msgstr ""
+msgstr "Настроить под левую руку"
 
 #: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "No Action"
-msgstr ""
+msgstr "Бездействие"
 
 #: panels/wacom/wacom-stylus-page.ui.h:2
 msgid "Left Mouse Button Click"
@@ -2268,15 +2492,15 @@ msgstr "Стилус"
 
 #: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Eraser Pressure Feel"
-msgstr ""
+msgstr "Чувствительность нажатия ластика"
 
 #: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Soft"
-msgstr ""
+msgstr "Мягкий"
 
 #: panels/wacom/wacom-stylus-page.ui.h:14
 msgid "Firm"
-msgstr ""
+msgstr "Производитель"
 
 #: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Top Button"
@@ -2288,76 +2512,358 @@ msgstr "Нижняя кнопка"
 
 #: panels/wacom/wacom-stylus-page.ui.h:17
 msgid "Tip Pressure Feel"
+msgstr "Чувствительность нажатия пера"
+
+#: panels/network/connection-editor/8021x-security-page.ui.h:1
+msgid "802.1x _Security"
 msgstr ""
 
-#: generate_additional_files.py:55
+#: panels/network/connection-editor/8021x-security-page.ui.h:2
+#: panels/network/connection-editor/security-page.ui.h:2
+msgid "page 1"
+msgstr ""
+
+#: panels/network/connection-editor/8021x-security-page.ui.h:3
+#: panels/network/connection-editor/security-page.ui.h:3
+#: panels/network/wireless-security/eap-method-fast.ui.h:1
+#: panels/network/wireless-security/eap-method-peap.ui.h:5
+#: panels/network/wireless-security/eap-method-ttls.ui.h:2
+msgid "Anony_mous identity"
+msgstr ""
+
+#: panels/network/connection-editor/8021x-security-page.ui.h:4
+#: panels/network/connection-editor/security-page.ui.h:4
+msgid "Inner _authentication"
+msgstr ""
+
+#: panels/network/connection-editor/8021x-security-page.ui.h:5
+#: panels/network/connection-editor/security-page.ui.h:5
+msgid "page 2"
+msgstr ""
+
+#: panels/network/connection-editor/connection-editor.ui.h:1
+msgid "_Apply"
+msgstr ""
+
+#: panels/network/connection-editor/details-page.ui.h:9
+msgid "Last Used"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:1
+#: panels/network/connection-editor/ip4-page.ui.h:4
+#: panels/network/connection-editor/ip6-page.ui.h:4
+#: panels/network/wireless-security/eap-method-peap.ui.h:2
+msgid "Automatic"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:2
+msgid "Twisted Pair (TP)"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:3
+msgid "Attachment Unit Interface (AUI)"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:4
+msgid "BNC"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:5
+msgid "Media Independent Interface (MII)"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:6
+msgid "10 Mb/s"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:7
+msgid "100 Mb/s"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:8
+msgid "1 Gb/s"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:9
+msgid "10 Gb/s"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:10
+#: panels/network/connection-editor/vpn-page.ui.h:1
+msgid "_Name"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:12
+msgid "M_TU"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:13
+#: panels/network/connection-editor/wifi-page.ui.h:5
+msgid "_Cloned Address"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:14
+msgid "bytes"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:15
+#: panels/network/connection-editor/vpn-page.ui.h:3
+msgid "Make available to other _users"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:16
+#: panels/network/connection-editor/wifi-page.ui.h:7
+msgid "Connect _automatically"
+msgstr ""
+
+#: panels/network/connection-editor/ethernet-page.ui.h:17
+#: panels/network/connection-editor/vpn-page.ui.h:2
+#: panels/network/connection-editor/wifi-page.ui.h:8
+msgid "Firewall _Zone"
+msgstr ""
+
+#: panels/network/connection-editor/ip4-page.ui.h:5
+#: panels/network/connection-editor/ip6-page.ui.h:5
+msgid "Automatic DNS"
+msgstr ""
+
+#: panels/network/connection-editor/ip4-page.ui.h:7
+#: panels/network/connection-editor/ip6-page.ui.h:7
+msgid "Automatic Routes"
+msgstr ""
+
+#: panels/network/connection-editor/reset-page.ui.h:3
+msgid ""
+"Reset the settings for this network, including passwords, but remember it as "
+"a preferred network"
+msgstr ""
+
+#: panels/network/connection-editor/reset-page.ui.h:4
+msgid ""
+"Remove all details relating to this network and do not try to automatically "
+"connect"
+msgstr ""
+
+#: panels/network/connection-editor/vpn-page.ui.h:4
+msgid "(Error: unable to load VPN connection editor)"
+msgstr ""
+
+#: panels/network/connection-editor/wifi-page.ui.h:6
+msgid "Make available to _other users"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:2
+msgid "PAC _file"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:3
+#: panels/network/wireless-security/eap-method-peap.ui.h:7
+#: panels/network/wireless-security/eap-method-ttls.ui.h:4
+msgid "_Inner authentication"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:4
+msgid "PAC pro_visioning"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:5
+#: panels/network/wireless-security/eap-method-peap.ui.h:1
+#: panels/network/wireless-security/eap-method-ttls.ui.h:1
+#: panels/network/wireless-security/ws-dynamic-wep.ui.h:1
+#: panels/network/wireless-security/ws-wpa-eap.ui.h:1
+msgid " "
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:6
+msgid "Anonymous"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:7
+msgid "Authenticated"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-fast.ui.h:8
+msgid "Both"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-leap.ui.h:1
+#: panels/network/wireless-security/eap-method-simple.ui.h:1
+#: panels/network/wireless-security/ws-leap.ui.h:1
+msgid "_Username"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-leap.ui.h:3
+#: panels/network/wireless-security/eap-method-simple.ui.h:4
+#: panels/network/wireless-security/eap-method-tls.ui.h:6
+#: panels/network/wireless-security/ws-leap.ui.h:3
+#: panels/network/wireless-security/ws-wpa-psk.ui.h:3
+msgid "Sho_w password"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-peap.ui.h:3
+msgid "Version 0"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-peap.ui.h:4
+msgid "Version 1"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-peap.ui.h:6
+#: panels/network/wireless-security/eap-method-tls.ui.h:3
+#: panels/network/wireless-security/eap-method-ttls.ui.h:3
+msgid "C_A certificate"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-peap.ui.h:8
+msgid "PEAP _version"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-simple.ui.h:3
+msgid "As_k for this password every time"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-tls.ui.h:1
+msgid "I_dentity"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-tls.ui.h:2
+msgid "_User certificate"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-tls.ui.h:4
+msgid "Private _key"
+msgstr ""
+
+#: panels/network/wireless-security/eap-method-tls.ui.h:5
+msgid "_Private key password"
+msgstr ""
+
+#: panels/network/wireless-security/nag-user-dialog.ui.h:1
+msgid "Don't _warn me again"
+msgstr ""
+
+#: panels/network/wireless-security/nag-user-dialog.ui.h:2
+msgid "No"
+msgstr ""
+
+#: panels/network/wireless-security/nag-user-dialog.ui.h:3
+msgid "Yes"
+msgstr ""
+
+#: panels/network/wireless-security/ws-dynamic-wep.ui.h:2
+#: panels/network/wireless-security/ws-wep-key.ui.h:9
+#: panels/network/wireless-security/ws-wpa-eap.ui.h:2
+msgid "Au_thentication"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:1
+msgid "1 (Default)"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:2
+msgid "2"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:3
+msgid "3"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:4
+msgid "4"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:5
+msgid "Open System"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:6
+msgid "Shared Key"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:7
+msgid "_Key"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:8
+msgid "Sho_w key"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wep-key.ui.h:10
+msgid "WEP inde_x"
+msgstr ""
+
+#: panels/network/wireless-security/ws-wpa-psk.ui.h:2
+msgid "_Type"
+msgstr ""
+
+#: generate_additional_files.py:27
 msgid "Brightness & Lock"
 msgstr "Яркость и блокировка"
 
-#: generate_additional_files.py:55
+#: generate_additional_files.py:27
 msgid "Screen brightness and lock settings"
 msgstr "Яркость экрана и параметры блокировки"
 
-#: generate_additional_files.py:70 generate_additional_files.py:101
+#: generate_additional_files.py:42 generate_additional_files.py:73
 msgid "Sound"
 msgstr "Звук"
 
-#: generate_additional_files.py:70 generate_additional_files.py:101
+#: generate_additional_files.py:42 generate_additional_files.py:73
 msgid "Change sound volume and sound events"
 msgstr "Изменить громкость звука и звук событий"
 
-#: generate_additional_files.py:85
+#: generate_additional_files.py:57
 msgid "Color management settings"
 msgstr "Настройки управления цветом"
 
-#: generate_additional_files.py:115
+#: generate_additional_files.py:87
 msgid "Volume Control"
 msgstr "Управление громкостью"
 
-#: generate_additional_files.py:115
+#: generate_additional_files.py:87
 msgid "Show desktop volume control"
 msgstr "Показать настройки громкости"
 
-#: generate_additional_files.py:130
+#: generate_additional_files.py:103
 msgid "Power"
 msgstr "Питание"
 
-#: generate_additional_files.py:130
+#: generate_additional_files.py:103
 msgid "Power management settings"
 msgstr "Настройки управления питанием"
 
-#: generate_additional_files.py:145
+#: generate_additional_files.py:119
 msgid "Region & Language"
 msgstr "Регион и язык"
 
-#: generate_additional_files.py:145
+#: generate_additional_files.py:119
 msgid "Change your region and language settings"
 msgstr "Изменить региональные и языковые настройки"
 
-#: generate_additional_files.py:160
+#: generate_additional_files.py:134
 msgid "Displays"
 msgstr "Мониторы"
 
-#: generate_additional_files.py:160
+#: generate_additional_files.py:134
 msgid "Change resolution and position of monitors and projectors"
 msgstr "Изменить разрешение и положение мониторов и проекторов"
 
-#: generate_additional_files.py:175
+#: generate_additional_files.py:149
 msgid "Network settings"
 msgstr "Настройки сети"
 
-#: generate_additional_files.py:190
+#: generate_additional_files.py:164
 msgid "Universal Access"
 msgstr "Специальные возможности"
 
-#: generate_additional_files.py:190
+#: generate_additional_files.py:164
 msgid "Universal Access Preferences"
 msgstr "Параметры специальных возможностей"
 
-#: generate_additional_files.py:205
+#: generate_additional_files.py:179
 msgid "Date & Time"
 msgstr "Дата и время"
 
-#: generate_additional_files.py:205
+#: generate_additional_files.py:179
 msgid "Date and Time preferences"
 msgstr "Настройки даты и времени"
