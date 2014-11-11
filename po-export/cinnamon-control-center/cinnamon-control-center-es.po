@@ -18,16 +18,16 @@ msgstr ""
 "Report-Msgid-Bugs-To: "
 "http://bugzilla.gnome.org/enter_bug.cgi?product=cinnamon-control-"
 "center&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-10-31 01:28+0100\n"
-"PO-Revision-Date: 2014-03-30 21:18+0000\n"
+"POT-Creation-Date: 2014-11-03 12:35+0100\n"
+"PO-Revision-Date: 2014-11-03 14:54+0000\n"
 "Last-Translator: Isidro Pisa <isidro@utils.info>\n"
 "Language-Team: Español <cinnamon-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2014-10-31 00:59+0000\n"
-"X-Generator: Launchpad (build 17211)\n"
+"X-Launchpad-Export-Date: 2014-11-11 11:35+0000\n"
+"X-Generator: Launchpad (build 17241)\n"
 "Language: \n"
 
 #: panels/color/cc-color-panel.c:106
@@ -156,6 +156,21 @@ msgstr[1] "%i semanas"
 msgid "Less than 1 week"
 msgstr "Menos de una semana"
 
+#: panels/color/cc-color-panel.c:1585
+msgctxt "Colorspace fallback"
+msgid "Default RGB"
+msgstr "RGB predeterminado"
+
+#: panels/color/cc-color-panel.c:1590
+msgctxt "Colorspace fallback"
+msgid "Default CMYK"
+msgstr "CMYK predeterminado"
+
+#: panels/color/cc-color-panel.c:1595
+msgctxt "Colorspace fallback"
+msgid "Default Gray"
+msgstr "Gris predeterminado"
+
 #: panels/color/cc-color-panel.c:1713 panels/color/cc-color-panel.c:1754
 #: panels/color/cc-color-panel.c:1765 panels/color/cc-color-panel.c:1776
 msgid "Uncalibrated"
@@ -189,6 +204,31 @@ msgstr "Sin especificar"
 #: panels/color/cc-color-panel.c:2014
 msgid "No devices supporting color management detected"
 msgstr "No se ha detectado ningún dispositivo que tenga gestión de color"
+
+#: panels/color/cc-color-panel.c:2243
+msgctxt "Device kind"
+msgid "Display"
+msgstr "Pantalla"
+
+#: panels/color/cc-color-panel.c:2245
+msgctxt "Device kind"
+msgid "Scanner"
+msgstr "Escáner"
+
+#: panels/color/cc-color-panel.c:2247
+msgctxt "Device kind"
+msgid "Printer"
+msgstr "Impresora"
+
+#: panels/color/cc-color-panel.c:2249
+msgctxt "Device kind"
+msgid "Camera"
+msgstr "Cámara"
+
+#: panels/color/cc-color-panel.c:2251
+msgctxt "Device kind"
+msgid "Webcam"
+msgstr "Cámara web"
 
 #: panels/common/cc-common-language.c:533
 msgid "English"
@@ -250,6 +290,26 @@ msgstr "Seleccionar una región"
 msgid "Unspecified"
 msgstr "Sin especificar"
 
+#: panels/display/cc-display-panel.c:482
+msgctxt "display panel, rotation"
+msgid "Normal"
+msgstr "Normal"
+
+#: panels/display/cc-display-panel.c:483
+msgctxt "display panel, rotation"
+msgid "Counterclockwise"
+msgstr "Sentido antihorario"
+
+#: panels/display/cc-display-panel.c:484
+msgctxt "display panel, rotation"
+msgid "Clockwise"
+msgstr "Sentido horario"
+
+#: panels/display/cc-display-panel.c:485
+msgctxt "display panel, rotation"
+msgid "180 Degrees"
+msgstr "180 grados"
+
 #: panels/display/cc-display-panel.c:624 panels/display/cc-rr-labeler.c:449
 msgid "Mirrored Displays"
 msgstr "Pantallas en espejo"
@@ -299,7 +359,7 @@ msgstr "Modo a_vión"
 
 #: panels/network/cc-network-panel.c:968
 msgid "Network Proxy"
-msgstr ""
+msgstr "Proxy de red"
 
 #: panels/network/cc-network-panel.c:1147 panels/network/net-vpn.c:278
 #: panels/network/net-vpn.c:431
@@ -314,16 +374,16 @@ msgstr ""
 
 #: panels/network/net-device-bond.c:77
 msgid "Bond slaves"
-msgstr ""
+msgstr "Esclavos de enlace"
 
 #: panels/network/net-device-bond.c:102 panels/network/net-device-bridge.c:102
 #: panels/network/net-device-team.c:102
 msgid "(none)"
-msgstr ""
+msgstr "(ninguno)"
 
 #: panels/network/net-device-bridge.c:77
 msgid "Bridge slaves"
-msgstr ""
+msgstr "Esclavos de puente"
 
 #: panels/network/net-device-ethernet.c:54
 #: panels/network/net-device-wifi.c:529
@@ -409,12 +469,12 @@ msgstr "Cableada"
 #: panels/network/network-ethernet.ui.h:3 panels/network/network-mobile.ui.h:8
 #: panels/network/network-vpn.ui.h:8
 msgid "Options…"
-msgstr ""
+msgstr "Opciones..."
 
 #: panels/network/net-device-ethernet.c:469
 #, c-format
 msgid "Profile %d"
-msgstr ""
+msgstr "Perfil %d"
 
 #: panels/network/net-device-mobile.c:232
 msgid "Add new connection"
@@ -422,7 +482,7 @@ msgstr "Añadir una conexión nueva"
 
 #: panels/network/net-device-team.c:77
 msgid "Team slaves"
-msgstr ""
+msgstr "Esclavos de equipo"
 
 #: panels/network/net-device-wifi.c:217 panels/network/net-device-wifi.c:378
 msgid "WEP"
@@ -441,11 +501,43 @@ msgstr "WPA2"
 msgid "Enterprise"
 msgstr "Empresa"
 
+#: panels/network/net-device-wifi.c:235 panels/network/net-device-wifi.c:368
+msgctxt "Wifi security"
+msgid "None"
+msgstr "Ninguna"
+
+#: panels/network/net-device-wifi.c:558
+msgctxt "Signal strength"
+msgid "Terrible"
+msgstr "Pésima"
+
+#: panels/network/net-device-wifi.c:560
+msgctxt "Signal strength"
+msgid "Weak"
+msgstr "Débil"
+
+#: panels/network/net-device-wifi.c:562
+msgctxt "Signal strength"
+msgid "Ok"
+msgstr "Correcta"
+
+#: panels/network/net-device-wifi.c:564
+msgctxt "Signal strength"
+msgid "Good"
+msgstr "Buena"
+
+#: panels/network/net-device-wifi.c:566
+msgctxt "Signal strength"
+msgid "Excellent"
+msgstr "Excelente"
+
 #: panels/network/net-device-wifi.c:1153
 msgid ""
 "If you have a connection to the Internet other than wireless, you can set up "
 "a wireless hotspot to share the connection with others."
 msgstr ""
+"Si se dispone de una conexión a Internet no inalámbrica, puede configurar un "
+"punto de acceso inalámbrico para compartir la conexión con los demás."
 
 #: panels/network/net-device-wifi.c:1157
 #, c-format
@@ -457,6 +549,8 @@ msgid ""
 "It is not possible to access the Internet through your wireless while the "
 "hotspot is active."
 msgstr ""
+"No se puede acceder a Internet mediante la red inalámbrica mientras el punto "
+"de acceso esté activo."
 
 #: panels/network/net-device-wifi.c:1238
 msgid "Stop hotspot and disconnect any users?"
@@ -473,46 +567,53 @@ msgstr "_Detener «hotspot»"
 
 #: panels/network/net-device-wifi.c:1313
 msgid "System policy prohibits use as a Hotspot"
-msgstr ""
+msgstr "Las políticas del sistema impiden el uso como punto de acceso"
 
 #: panels/network/net-device-wifi.c:1316
 msgid "Wireless device does not support Hotspot mode"
-msgstr ""
+msgstr "El dispositivo inalámbrico puede funcionar como punto acceso"
 
 #: panels/network/net-device-wifi.c:1445
 msgid ""
 "Network details for the selected networks, including passwords and any "
 "custom configuration will be lost."
 msgstr ""
+"Se perderán los detalles de las redes seleccionadas, incluyendo las "
+"contraseñas y la configuración personalizada."
 
 #: panels/network/net-device-wifi.c:1449 panels/network/network-wifi.ui.h:46
 #: panels/network/connection-editor/reset-page.ui.h:2
 msgid "_Forget"
-msgstr ""
+msgstr "_Olvidar"
 
 #: panels/network/net-device-wifi.c:1603
 msgid "Preferences"
-msgstr ""
+msgstr "Preferencias"
 
 #: panels/network/net-device-wifi.c:1609
 msgid "Options"
-msgstr ""
+msgstr "Opciones"
 
 #: panels/network/net-device-wifi.c:1627
 msgid "Connect"
-msgstr ""
+msgstr "Conectar"
 
 #: panels/network/net-device-wifi.c:1650
 msgid "Disconnect"
-msgstr ""
+msgstr "Desconectar"
 
 #: panels/network/net-device-wifi.c:1864
 msgid "Known Networks"
-msgstr ""
+msgstr "Redes conocidas"
 
 #: panels/network/net-device-wifi.c:1868
 msgid "_Close"
-msgstr ""
+msgstr "_Cerrar"
+
+#: panels/network/net-device-wifi.c:1876
+msgctxt "Wi-Fi Network"
+msgid "_Forget"
+msgstr "_Olvidar"
 
 #: panels/network/net-proxy.c:67
 msgid ""
@@ -885,6 +986,36 @@ msgstr "Equipo"
 msgid "Battery"
 msgstr "Batería"
 
+#: panels/power/cc-power-panel.c:546
+msgctxt "Battery power"
+msgid "Charging"
+msgstr "En carga"
+
+#: panels/power/cc-power-panel.c:553
+msgctxt "Battery power"
+msgid "Caution"
+msgstr "Precaución"
+
+#: panels/power/cc-power-panel.c:558
+msgctxt "Battery power"
+msgid "Low"
+msgstr "Baja"
+
+#: panels/power/cc-power-panel.c:563
+msgctxt "Battery power"
+msgid "Good"
+msgstr "Buena"
+
+#: panels/power/cc-power-panel.c:568
+msgctxt "Battery power"
+msgid "Charging - fully charged"
+msgstr "Cargando – carga completa"
+
+#: panels/power/cc-power-panel.c:572
+msgctxt "Battery power"
+msgid "Empty"
+msgstr "Vacía"
+
 #: panels/region/cinnamon-region-panel-xkblt.c:210
 msgid "Layout"
 msgstr "Distribución"
@@ -923,6 +1054,36 @@ msgstr "Entrada"
 msgid "Microphone Volume"
 msgstr "Volumen del micrófono"
 
+#: panels/sound/gvc-balance-bar.c:111 panels/sound-nua/gvc-balance-bar.c:111
+msgctxt "balance"
+msgid "Left"
+msgstr "Izquierda"
+
+#: panels/sound/gvc-balance-bar.c:112 panels/sound-nua/gvc-balance-bar.c:112
+msgctxt "balance"
+msgid "Right"
+msgstr "Derecha"
+
+#: panels/sound/gvc-balance-bar.c:115 panels/sound-nua/gvc-balance-bar.c:115
+msgctxt "balance"
+msgid "Rear"
+msgstr "Atrás"
+
+#: panels/sound/gvc-balance-bar.c:116 panels/sound-nua/gvc-balance-bar.c:116
+msgctxt "balance"
+msgid "Front"
+msgstr "Frente"
+
+#: panels/sound/gvc-balance-bar.c:119 panels/sound-nua/gvc-balance-bar.c:119
+msgctxt "balance"
+msgid "Minimum"
+msgstr "Mínimo"
+
+#: panels/sound/gvc-balance-bar.c:120 panels/sound-nua/gvc-balance-bar.c:120
+msgctxt "balance"
+msgid "Maximum"
+msgstr "Máximo"
+
 #: panels/sound/gvc-balance-bar.c:295 panels/sound-nua/gvc-balance-bar.c:295
 msgid "_Balance:"
 msgstr "_Balance:"
@@ -934,6 +1095,16 @@ msgstr "_Desvanecimiento:"
 #: panels/sound/gvc-balance-bar.c:301 panels/sound-nua/gvc-balance-bar.c:301
 msgid "_Subwoofer:"
 msgstr "_Subwoofer:"
+
+#: panels/sound/gvc-channel-bar.c:613 panels/sound/gvc-channel-bar.c:623
+msgctxt "volume"
+msgid "100%"
+msgstr "100%"
+
+#: panels/sound/gvc-channel-bar.c:617
+msgctxt "volume"
+msgid "Unamplified"
+msgstr "No amplificado"
 
 #: panels/sound/gvc-combo-box.c:167 panels/sound/gvc-mixer-dialog.c:258
 #: panels/sound/gvc-mixer-dialog.c:519
@@ -1104,7 +1275,7 @@ msgstr "Intercambiando espacio de trabajo:"
 
 #: panels/sound-nua/gvc-mixer-dialog.c:2076
 msgid "Opening new windows:"
-msgstr ""
+msgstr "Abrir nuevas ventanas:"
 
 #: panels/sound-nua/gvc-mixer-dialog.c:2077
 msgid "Closing windows:"
@@ -1146,6 +1317,31 @@ msgstr "Saliendo de Cinnamon:"
 msgid "No shortcut set"
 msgstr "No existe ningún atajo configurado"
 
+#: panels/universal-access/zoom-options.c:358
+msgctxt "Distance"
+msgid "Short"
+msgstr "Corta"
+
+#: panels/universal-access/zoom-options.c:359
+msgctxt "Distance"
+msgid "¼ Screen"
+msgstr "¼ pantalla"
+
+#: panels/universal-access/zoom-options.c:360
+msgctxt "Distance"
+msgid "½ Screen"
+msgstr "½ pantalla"
+
+#: panels/universal-access/zoom-options.c:361
+msgctxt "Distance"
+msgid "¾ Screen"
+msgstr "¾ pantalla"
+
+#: panels/universal-access/zoom-options.c:362
+msgctxt "Distance"
+msgid "Long"
+msgstr "Larga"
+
 #: panels/wacom/cc-wacom-mapping-panel.c:275
 msgid "Output:"
 msgstr "Salida:"
@@ -1163,6 +1359,36 @@ msgstr "Asignar a un monitor único"
 msgid "%d of %d"
 msgstr "%d de %d"
 
+#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
+msgctxt "Wacom action-type"
+msgid "None"
+msgstr "Ninguno"
+
+#: panels/wacom/cc-wacom-page.c:119
+msgctxt "Wacom action-type"
+msgid "Send Keystroke"
+msgstr "Enviar pulsación de tecla"
+
+#: panels/wacom/cc-wacom-page.c:120
+msgctxt "Wacom action-type"
+msgid "Switch Monitor"
+msgstr "Cambiar monitor"
+
+#: panels/wacom/cc-wacom-page.c:121
+msgctxt "Wacom action-type"
+msgid "Show On-Screen Help"
+msgstr "Mostrar la ayuda en pantalla"
+
+#: panels/wacom/cc-wacom-page.c:622
+msgctxt "Wacom tablet button"
+msgid "Up"
+msgstr "Arriba"
+
+#: panels/wacom/cc-wacom-page.c:622
+msgctxt "Wacom tablet button"
+msgid "Down"
+msgstr "Abajo"
+
 #: panels/wacom/cc-wacom-page.c:663
 msgid "Switch Modes"
 msgstr "Cambiar modos"
@@ -1179,7 +1405,7 @@ msgstr "Tipo"
 msgid "Action"
 msgstr "Acción"
 
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:922
 msgid "Display Mapping"
 msgstr "Mostrar asignación"
 
@@ -1506,7 +1732,7 @@ msgstr "_Detectar monitores"
 
 #: panels/network/network-ethernet.ui.h:2
 msgid "_Add Profile…"
-msgstr ""
+msgstr "_Añadir perfil..."
 
 #: panels/network/network-mobile.ui.h:1
 msgid "IMEI"
@@ -1519,6 +1745,21 @@ msgstr "Proveedor"
 #: panels/network/network-mobile.ui.h:7 generate_additional_files.py:149
 msgid "Network"
 msgstr "Red"
+
+#: panels/network/network-proxy.ui.h:1 panels/network/network.ui.h:4
+msgctxt "proxy method"
+msgid "None"
+msgstr "Ninguno"
+
+#: panels/network/network-proxy.ui.h:2 panels/network/network.ui.h:5
+msgctxt "proxy method"
+msgid "Manual"
+msgstr "Manual"
+
+#: panels/network/network-proxy.ui.h:3 panels/network/network.ui.h:6
+msgctxt "proxy method"
+msgid "Automatic"
+msgstr "Automático"
 
 #: panels/network/network-proxy.ui.h:4
 msgid "_Method"
@@ -1546,27 +1787,27 @@ msgstr "_Servidor socks"
 
 #: panels/network/network-proxy.ui.h:10
 msgid "_Ignore Hosts"
-msgstr ""
+msgstr "_Ignorar anfitriones"
 
 #: panels/network/network-proxy.ui.h:11
 msgid "HTTP proxy port"
-msgstr ""
+msgstr "Puerto del proxy HTTP"
 
 #: panels/network/network-proxy.ui.h:12
 msgid "HTTPS proxy port"
-msgstr ""
+msgstr "Puerto del proxy HTTPS"
 
 #: panels/network/network-proxy.ui.h:13
 msgid "FTP proxy port"
-msgstr ""
+msgstr "Puerto del proxy FTP"
 
 #: panels/network/network-proxy.ui.h:14
 msgid "Socks proxy port"
-msgstr ""
+msgstr "Puerto del proxy SOCKS"
 
 #: panels/network/network-simple.ui.h:1
 msgid "Connection"
-msgstr ""
+msgstr "Conexión"
 
 #: panels/network/network.ui.h:1 panels/network/network-vpn.ui.h:1
 msgid "VPN"
@@ -1602,40 +1843,40 @@ msgstr "Usuario"
 
 #: panels/network/network-vpn.ui.h:7
 msgid "Turn VPN connection off"
-msgstr ""
+msgstr "Apagar la conexión VPN"
 
 #: panels/network/network-wifi.ui.h:1
 msgid "Details"
-msgstr ""
+msgstr "Detalles"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Identity"
-msgstr ""
+msgstr "Identidad"
 
 #: panels/network/network-wifi.ui.h:3
 msgid "IPv4"
-msgstr ""
+msgstr "IPv4"
 
 #: panels/network/network-wifi.ui.h:4
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Hardware"
-msgstr ""
+msgstr "Hardware"
 
 #: panels/network/network-wifi.ui.h:6
 msgid "Reset"
-msgstr ""
+msgstr "Restablecer"
 
 #: panels/network/network-wifi.ui.h:7
 msgid "Automatic _Connect"
-msgstr ""
+msgstr "_Conexión automática"
 
 #: panels/network/network-wifi.ui.h:8
 #: panels/network/connection-editor/details-page.ui.h:1
 msgid "Signal Strength"
-msgstr ""
+msgstr "Intensidad de señal"
 
 #: panels/network/network-wifi.ui.h:9
 #: panels/network/connection-editor/details-page.ui.h:2
@@ -1649,22 +1890,22 @@ msgstr "Seguridad"
 
 #: panels/network/network-wifi.ui.h:17
 msgid "details"
-msgstr ""
+msgstr "detalles"
 
 #: panels/network/network-wifi.ui.h:18
 #: panels/network/connection-editor/wifi-page.ui.h:1
 msgid "_SSID"
-msgstr ""
+msgstr "_SSID"
 
 #: panels/network/network-wifi.ui.h:19
 #: panels/network/connection-editor/wifi-page.ui.h:2
 msgid "_BSSID"
-msgstr ""
+msgstr "_BSSID"
 
 #: panels/network/network-wifi.ui.h:20
 #: panels/network/connection-editor/security-page.ui.h:1
 msgid "S_ecurity"
-msgstr ""
+msgstr "S_eguridad"
 
 #: panels/network/network-wifi.ui.h:21
 #: panels/network/wireless-security/eap-method-leap.ui.h:2
@@ -1672,12 +1913,12 @@ msgstr ""
 #: panels/network/wireless-security/ws-leap.ui.h:2
 #: panels/network/wireless-security/ws-wpa-psk.ui.h:1
 msgid "_Password"
-msgstr ""
+msgstr "_Contraseña"
 
 #: panels/network/network-wifi.ui.h:22
 #: panels/network/connection-editor/wifi-page.ui.h:3
 msgid "My Home Network"
-msgstr ""
+msgstr "Mi red doméstica"
 
 #: panels/network/network-wifi.ui.h:24 panels/universal-access/uap.ui.h:8
 msgid "None"
@@ -1685,118 +1926,122 @@ msgstr "Ninguno"
 
 #: panels/network/network-wifi.ui.h:25
 msgid "Show P_assword"
-msgstr ""
+msgstr "Mostrar contr_aseña"
 
 #: panels/network/network-wifi.ui.h:26
 msgid "Make available to other users"
-msgstr ""
+msgstr "Poner a disposición de otros usuarios"
 
 #: panels/network/network-wifi.ui.h:27
 msgid "identity"
-msgstr ""
+msgstr "identidad"
 
 #: panels/network/network-wifi.ui.h:28
 #: panels/network/connection-editor/ip4-page.ui.h:1
 msgid "IPv_4"
-msgstr ""
+msgstr "IPv_4"
 
 #: panels/network/network-wifi.ui.h:29
 #: panels/network/connection-editor/ip4-page.ui.h:2
 #: panels/network/connection-editor/ip6-page.ui.h:2
 msgid "_Addresses"
-msgstr ""
+msgstr "_Direcciones"
 
 #: panels/network/network-wifi.ui.h:30
 msgid "Manual"
-msgstr ""
+msgstr "Manual"
 
 #: panels/network/network-wifi.ui.h:31
 msgid "Automatic (DHCP)"
-msgstr ""
+msgstr "Automático (DHCP)"
 
 #: panels/network/network-wifi.ui.h:32
 msgid "Automatic (DHCP) addresses only"
-msgstr ""
+msgstr "Sólo direcciones automáticas (DHCP)"
 
 #: panels/network/network-wifi.ui.h:33
 msgid "Link-local only"
-msgstr ""
+msgstr "Solo enlace local"
 
 #: panels/network/network-wifi.ui.h:34
 msgid "Shared with other computers"
-msgstr ""
+msgstr "Compartido con otros equipos"
 
 #: panels/network/network-wifi.ui.h:36
 #: panels/network/connection-editor/ip4-page.ui.h:6
 #: panels/network/connection-editor/ip6-page.ui.h:6
 msgid "Routes"
-msgstr ""
+msgstr "Rutas"
 
 #: panels/network/network-wifi.ui.h:37
 msgid "_Ignore automatically obtained routes"
-msgstr ""
+msgstr "_Ignorar las rutas obtenidas automáticamente"
 
 #: panels/network/network-wifi.ui.h:38
 #: panels/network/connection-editor/ip4-page.ui.h:8
 #: panels/network/connection-editor/ip6-page.ui.h:8
 msgid "Use this connection _only for resources on its network"
-msgstr ""
+msgstr "Usar esta conexión _solo para recursos en su red"
 
 #: panels/network/network-wifi.ui.h:39
 msgid "ipv4"
-msgstr ""
+msgstr "ipv4"
 
 #: panels/network/network-wifi.ui.h:40
 #: panels/network/connection-editor/ip6-page.ui.h:1
 msgid "IPv_6"
-msgstr ""
+msgstr "IPv_6"
 
 #: panels/network/network-wifi.ui.h:41
 msgid "ipv6"
-msgstr ""
+msgstr "ipv6"
 
 #: panels/network/network-wifi.ui.h:42
 #: panels/network/connection-editor/ethernet-page.ui.h:11
 #: panels/network/connection-editor/wifi-page.ui.h:4
 msgid "_MAC Address"
-msgstr ""
+msgstr "Dirección _MAC"
 
 #: panels/network/network-wifi.ui.h:43
 msgid "_Cloned MAC Address"
-msgstr ""
+msgstr "Dirección MAC _clonada"
 
 #: panels/network/network-wifi.ui.h:44
 msgid "hardware"
-msgstr ""
+msgstr "hardware"
 
 #: panels/network/network-wifi.ui.h:45
 #: panels/network/connection-editor/reset-page.ui.h:1
 msgid "_Reset"
-msgstr ""
+msgstr "_Restablecer"
 
 #: panels/network/network-wifi.ui.h:47
 msgid ""
 "Reset the settings for this connection to their defaults, but remember as a "
 "preferred connection."
 msgstr ""
+"Restablecer los valores predeterminados de esta conexión, pero recordarla "
+"como una conexión preferida."
 
 #: panels/network/network-wifi.ui.h:48
 msgid ""
 "Remove all details relating to this network and do not try to automatically "
 "connect to it."
 msgstr ""
+"Eliminar todos los detalles relativos a esta red y no conectarse "
+"automáticamente a ella."
 
 #: panels/network/network-wifi.ui.h:49
 msgid "reset"
-msgstr ""
+msgstr "restablecer"
 
 #: panels/network/network-wifi.ui.h:50
 msgid "Create a Wireless Hotspot"
-msgstr ""
+msgstr "Crear un punto de acceso inalámbrico"
 
 #: panels/network/network-wifi.ui.h:51
 msgid "Wi-Fi Hotspot"
-msgstr ""
+msgstr "Punto de acceso Wifi"
 
 #: panels/network/network-wifi.ui.h:52
 msgid "_Turn On"
@@ -1804,15 +2049,15 @@ msgstr "_Activar"
 
 #: panels/network/network-wifi.ui.h:53
 msgid "Wi-Fi"
-msgstr ""
+msgstr "Wifi"
 
 #: panels/network/network-wifi.ui.h:54
 msgid "_Known Networks"
-msgstr ""
+msgstr "Redes c_onocidas"
 
 #: panels/network/network-wifi.ui.h:55
 msgid "_Create a Wireless Hotspot"
-msgstr ""
+msgstr "_Crear un punto de acceso inalámbrico"
 
 #: panels/network/network-wifi.ui.h:56
 msgid "Connect to a Hidden Network"
@@ -1820,7 +2065,7 @@ msgstr "Conectar a una red oculta"
 
 #: panels/network/network-wifi.ui.h:57
 msgid "Switch off to connect to a Wi-Fi network"
-msgstr ""
+msgstr "Desactivar para conectarse a una red inalámbrica"
 
 #: panels/network/network-wifi.ui.h:58
 msgid "Network Name"
@@ -1855,78 +2100,86 @@ msgid "10 minutes"
 msgstr "10 minutos"
 
 #: panels/power/power.ui.h:5
+msgid "15 minutes"
+msgstr "15 minutos"
+
+#: panels/power/power.ui.h:6
 msgid "30 minutes"
 msgstr "30 minutos"
 
-#: panels/power/power.ui.h:6
+#: panels/power/power.ui.h:7
+msgid "45 minutes"
+msgstr "45 minutos"
+
+#: panels/power/power.ui.h:8
 msgid "1 hour"
 msgstr "1 hora"
 
-#: panels/power/power.ui.h:7
+#: panels/power/power.ui.h:9
 msgid "Never"
 msgstr "Nunca"
 
-#: panels/power/power.ui.h:8
+#: panels/power/power.ui.h:10
 msgid "When battery is present"
 msgstr "Cuando esté presente la batería"
 
-#: panels/power/power.ui.h:9
+#: panels/power/power.ui.h:11
 msgid "When battery is charging/in use"
 msgstr "Cuando la batería está cargándose/en uso"
 
-#: panels/power/power.ui.h:10
+#: panels/power/power.ui.h:12
 msgid "Suspend"
 msgstr "Suspender"
 
-#: panels/power/power.ui.h:11
+#: panels/power/power.ui.h:13
 msgid "Do nothing"
 msgstr "No hacer nada"
 
-#: panels/power/power.ui.h:12
+#: panels/power/power.ui.h:14
 msgid "Lock Screen"
 msgstr "Bloquear pantalla"
 
-#: panels/power/power.ui.h:13
+#: panels/power/power.ui.h:15
 msgid "Shutdown Immediately"
 msgstr "Cerrar de inmediato"
 
-#: panels/power/power.ui.h:14
+#: panels/power/power.ui.h:16
 msgid "Ask"
 msgstr "Preguntar"
 
-#: panels/power/power.ui.h:15
+#: panels/power/power.ui.h:17
 msgid "On battery power"
 msgstr "Con batería"
 
-#: panels/power/power.ui.h:16
+#: panels/power/power.ui.h:18
 msgid "On A/C power"
 msgstr "Al conectar a la corriente"
 
-#: panels/power/power.ui.h:17
+#: panels/power/power.ui.h:19
 msgid "When the lid is closed"
 msgstr "Con la tapa cerrada"
 
-#: panels/power/power.ui.h:18
+#: panels/power/power.ui.h:20
 msgid "When the power button is pressed"
 msgstr "Al pulsar el botón de encendido"
 
-#: panels/power/power.ui.h:19
+#: panels/power/power.ui.h:21
 msgid "When the battery is critically low"
-msgstr ""
+msgstr "Con la batería en nivel crítico"
 
-#: panels/power/power.ui.h:20
+#: panels/power/power.ui.h:22
 msgid "Suspend when inactive for"
 msgstr "Suspender cuando esté inactivo"
 
-#: panels/power/power.ui.h:21
+#: panels/power/power.ui.h:23
 msgid "Turn off the screen when inactive for"
 msgstr "Apagar la pantalla si está inactivo más de"
 
-#: panels/power/power.ui.h:22
+#: panels/power/power.ui.h:24
 msgid "<b>Power Options</b>"
 msgstr "<b>Opciones de energía</b>"
 
-#: panels/power/power.ui.h:23
+#: panels/power/power.ui.h:25
 msgid "<b>Battery Status</b>"
 msgstr "<b>Estado de la batería</b>"
 
@@ -2006,6 +2259,26 @@ msgstr ""
 "Reemplazar los ajustes de distribución de teclado actual\n"
 "con los predeterminados"
 
+#: panels/universal-access/uap.ui.h:1
+msgctxt "universal access, contrast"
+msgid "Low"
+msgstr "Bajo"
+
+#: panels/universal-access/uap.ui.h:2
+msgctxt "universal access, contrast"
+msgid "Normal"
+msgstr "Normal"
+
+#: panels/universal-access/uap.ui.h:3
+msgctxt "universal access, contrast"
+msgid "High"
+msgstr "Alto"
+
+#: panels/universal-access/uap.ui.h:4
+msgctxt "universal access, contrast"
+msgid "High/Inverse"
+msgstr "Alto/inverso"
+
 #: panels/universal-access/uap.ui.h:5
 msgid "On screen keyboard"
 msgstr "Teclado en pantalla"
@@ -2023,20 +2296,40 @@ msgstr "Integrado"
 msgid "75%"
 msgstr "75%"
 
+#: panels/universal-access/uap.ui.h:11
+msgctxt "universal access, text size"
+msgid "Small"
+msgstr "Pequeño"
+
 #: panels/universal-access/uap.ui.h:13
 #, no-c-format
 msgid "100%"
 msgstr "100 %"
+
+#: panels/universal-access/uap.ui.h:14
+msgctxt "universal access, text size"
+msgid "Normal"
+msgstr "Normal"
 
 #: panels/universal-access/uap.ui.h:16
 #, no-c-format
 msgid "125%"
 msgstr "125 %"
 
+#: panels/universal-access/uap.ui.h:17
+msgctxt "universal access, text size"
+msgid "Large"
+msgstr "Grande"
+
 #: panels/universal-access/uap.ui.h:19
 #, no-c-format
 msgid "150%"
 msgstr "150 %"
+
+#: panels/universal-access/uap.ui.h:20
+msgctxt "universal access, text size"
+msgid "Larger"
+msgstr "Más grande"
 
 #: panels/universal-access/uap.ui.h:21
 msgid "High Contrast"
@@ -2057,6 +2350,11 @@ msgstr "Lector de pantalla"
 #: panels/universal-access/uap.ui.h:25
 msgid "Turn on or off:"
 msgstr "Activar o desactivar:"
+
+#: panels/universal-access/uap.ui.h:26
+msgctxt "universal access, zoom"
+msgid "Zoom"
+msgstr "Zoom"
 
 #: panels/universal-access/uap.ui.h:27
 msgid "Zoom in:"
@@ -2367,6 +2665,21 @@ msgstr "Brillo:"
 msgid "Contrast:"
 msgstr "Contraste:"
 
+#: panels/universal-access/zoom-options.ui.h:30
+msgctxt "Zoom Grayscale"
+msgid "Color"
+msgstr "Color"
+
+#: panels/universal-access/zoom-options.ui.h:31
+msgctxt "Zoom Grayscale"
+msgid "None"
+msgstr "Ninguno"
+
+#: panels/universal-access/zoom-options.ui.h:32
+msgctxt "Zoom Grayscale"
+msgid "Full"
+msgstr "Completo"
+
 #: panels/universal-access/zoom-options.ui.h:34
 msgid "Low"
 msgstr "Bajo"
@@ -2424,6 +2737,7 @@ msgid "Bluetooth Settings"
 msgstr "Configuración de Bluetooth"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:7
+#: generate_additional_files.py:194
 msgid "Graphics Tablet"
 msgstr "Tableta gràfica"
 
@@ -2517,12 +2831,12 @@ msgstr "Sensibilidad de presión del lápiz"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
-msgstr ""
+msgstr "_Seguridad 802.1x"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:2
 #: panels/network/connection-editor/security-page.ui.h:2
 msgid "page 1"
-msgstr ""
+msgstr "página 1"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:3
 #: panels/network/connection-editor/security-page.ui.h:3
@@ -2530,142 +2844,146 @@ msgstr ""
 #: panels/network/wireless-security/eap-method-peap.ui.h:5
 #: panels/network/wireless-security/eap-method-ttls.ui.h:2
 msgid "Anony_mous identity"
-msgstr ""
+msgstr "Identidad anóni_ma"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:4
 #: panels/network/connection-editor/security-page.ui.h:4
 msgid "Inner _authentication"
-msgstr ""
+msgstr "_Autenticación interna"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:5
 #: panels/network/connection-editor/security-page.ui.h:5
 msgid "page 2"
-msgstr ""
+msgstr "página 2"
 
 #: panels/network/connection-editor/connection-editor.ui.h:1
 msgid "_Apply"
-msgstr ""
+msgstr "_Aplicar"
 
 #: panels/network/connection-editor/details-page.ui.h:9
 msgid "Last Used"
-msgstr ""
+msgstr "Último usado"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:1
 #: panels/network/connection-editor/ip4-page.ui.h:4
 #: panels/network/connection-editor/ip6-page.ui.h:4
 #: panels/network/wireless-security/eap-method-peap.ui.h:2
 msgid "Automatic"
-msgstr ""
+msgstr "Automático"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:2
 msgid "Twisted Pair (TP)"
-msgstr ""
+msgstr "Par cruzado (TP)"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:3
 msgid "Attachment Unit Interface (AUI)"
-msgstr ""
+msgstr "Interfaz de unidad de acoplamiento (AUI)"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:4
 msgid "BNC"
-msgstr ""
+msgstr "BNC"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:5
 msgid "Media Independent Interface (MII)"
-msgstr ""
+msgstr "Interfaz independiente de medios (MII)"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:6
 msgid "10 Mb/s"
-msgstr ""
+msgstr "10 Mb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:7
 msgid "100 Mb/s"
-msgstr ""
+msgstr "100 Mb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:8
 msgid "1 Gb/s"
-msgstr ""
+msgstr "1 Gb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:9
 msgid "10 Gb/s"
-msgstr ""
+msgstr "10 Gb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:10
 #: panels/network/connection-editor/vpn-page.ui.h:1
 msgid "_Name"
-msgstr ""
+msgstr "_Nombre"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:12
 msgid "M_TU"
-msgstr ""
+msgstr "M_TU"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:13
 #: panels/network/connection-editor/wifi-page.ui.h:5
 msgid "_Cloned Address"
-msgstr ""
+msgstr "Dirección _clonada"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:14
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:15
 #: panels/network/connection-editor/vpn-page.ui.h:3
 msgid "Make available to other _users"
-msgstr ""
+msgstr "Hacer disponible para otros _usuarios"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:16
 #: panels/network/connection-editor/wifi-page.ui.h:7
 msgid "Connect _automatically"
-msgstr ""
+msgstr "Conectar _automáticamente"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:17
 #: panels/network/connection-editor/vpn-page.ui.h:2
 #: panels/network/connection-editor/wifi-page.ui.h:8
 msgid "Firewall _Zone"
-msgstr ""
+msgstr "_Zona de cortafuegos"
 
 #: panels/network/connection-editor/ip4-page.ui.h:5
 #: panels/network/connection-editor/ip6-page.ui.h:5
 msgid "Automatic DNS"
-msgstr ""
+msgstr "DNS automático"
 
 #: panels/network/connection-editor/ip4-page.ui.h:7
 #: panels/network/connection-editor/ip6-page.ui.h:7
 msgid "Automatic Routes"
-msgstr ""
+msgstr "Rutas automáticas"
 
 #: panels/network/connection-editor/reset-page.ui.h:3
 msgid ""
 "Reset the settings for this network, including passwords, but remember it as "
 "a preferred network"
 msgstr ""
+"Restablecer la configuración de esta red, incluyendo contraseñas, pero "
+"recordarla como red preferida"
 
 #: panels/network/connection-editor/reset-page.ui.h:4
 msgid ""
 "Remove all details relating to this network and do not try to automatically "
 "connect"
 msgstr ""
+"Eliminar todos los detalles de esta red y no conectarse automáticamente a "
+"ella"
 
 #: panels/network/connection-editor/vpn-page.ui.h:4
 msgid "(Error: unable to load VPN connection editor)"
-msgstr ""
+msgstr "(Error: no se puede cargar el editor de conexión VPN)"
 
 #: panels/network/connection-editor/wifi-page.ui.h:6
 msgid "Make available to _other users"
-msgstr ""
+msgstr "Poner a disposición de _otros usuarios"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:2
 msgid "PAC _file"
-msgstr ""
+msgstr "_Archivo PAC"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:3
 #: panels/network/wireless-security/eap-method-peap.ui.h:7
 #: panels/network/wireless-security/eap-method-ttls.ui.h:4
 msgid "_Inner authentication"
-msgstr ""
+msgstr "Autenticación _interna"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:4
 msgid "PAC pro_visioning"
-msgstr ""
+msgstr "Apro_visionamiento PAC"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:5
 #: panels/network/wireless-security/eap-method-peap.ui.h:1
@@ -2673,25 +2991,25 @@ msgstr ""
 #: panels/network/wireless-security/ws-dynamic-wep.ui.h:1
 #: panels/network/wireless-security/ws-wpa-eap.ui.h:1
 msgid " "
-msgstr ""
+msgstr " "
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:6
 msgid "Anonymous"
-msgstr ""
+msgstr "Anónimo"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:7
 msgid "Authenticated"
-msgstr ""
+msgstr "Autenticado"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:8
 msgid "Both"
-msgstr ""
+msgstr "Ambos"
 
 #: panels/network/wireless-security/eap-method-leap.ui.h:1
 #: panels/network/wireless-security/eap-method-simple.ui.h:1
 #: panels/network/wireless-security/ws-leap.ui.h:1
 msgid "_Username"
-msgstr ""
+msgstr "_Usuario"
 
 #: panels/network/wireless-security/eap-method-leap.ui.h:3
 #: panels/network/wireless-security/eap-method-simple.ui.h:4
@@ -2699,103 +3017,103 @@ msgstr ""
 #: panels/network/wireless-security/ws-leap.ui.h:3
 #: panels/network/wireless-security/ws-wpa-psk.ui.h:3
 msgid "Sho_w password"
-msgstr ""
+msgstr "_Mostrar la contraseña"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:3
 msgid "Version 0"
-msgstr ""
+msgstr "Versión 0"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:4
 msgid "Version 1"
-msgstr ""
+msgstr "Versión 1"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:6
 #: panels/network/wireless-security/eap-method-tls.ui.h:3
 #: panels/network/wireless-security/eap-method-ttls.ui.h:3
 msgid "C_A certificate"
-msgstr ""
+msgstr "Certificado C_A"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:8
 msgid "PEAP _version"
-msgstr ""
+msgstr "_Versión PEAP"
 
 #: panels/network/wireless-security/eap-method-simple.ui.h:3
 msgid "As_k for this password every time"
-msgstr ""
+msgstr "_Pedir esta contraseña cada vez"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:1
 msgid "I_dentity"
-msgstr ""
+msgstr "I_dentidad"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:2
 msgid "_User certificate"
-msgstr ""
+msgstr "Certificado de _Usuario"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:4
 msgid "Private _key"
-msgstr ""
+msgstr "_Clave privada"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:5
 msgid "_Private key password"
-msgstr ""
+msgstr "contraseña de clave _Privada"
 
 #: panels/network/wireless-security/nag-user-dialog.ui.h:1
 msgid "Don't _warn me again"
-msgstr ""
+msgstr "No a_visarme de nuevo"
 
 #: panels/network/wireless-security/nag-user-dialog.ui.h:2
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: panels/network/wireless-security/nag-user-dialog.ui.h:3
 msgid "Yes"
-msgstr ""
+msgstr "Sí"
 
 #: panels/network/wireless-security/ws-dynamic-wep.ui.h:2
 #: panels/network/wireless-security/ws-wep-key.ui.h:9
 #: panels/network/wireless-security/ws-wpa-eap.ui.h:2
 msgid "Au_thentication"
-msgstr ""
+msgstr "Au_tenticación"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:1
 msgid "1 (Default)"
-msgstr ""
+msgstr "1 (predeterminado)"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:2
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:3
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:4
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:5
 msgid "Open System"
-msgstr ""
+msgstr "Sistema abierto"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:6
 msgid "Shared Key"
-msgstr ""
+msgstr "Clave compartida"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:7
 msgid "_Key"
-msgstr ""
+msgstr "_Clave"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:8
 msgid "Sho_w key"
-msgstr ""
+msgstr "_Mostrar la clave"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:10
 msgid "WEP inde_x"
-msgstr ""
+msgstr "Í_ndice WEP"
 
 #: panels/network/wireless-security/ws-wpa-psk.ui.h:2
 msgid "_Type"
-msgstr ""
+msgstr "_Tipo"
 
 #: generate_additional_files.py:27
 msgid "Brightness & Lock"
@@ -2842,8 +3160,8 @@ msgid "Change your region and language settings"
 msgstr "Cambiar su configuración de región e idioma"
 
 #: generate_additional_files.py:134
-msgid "Displays"
-msgstr "Pantallas"
+msgid "Display"
+msgstr "Mostrar"
 
 #: generate_additional_files.py:134
 msgid "Change resolution and position of monitors and projectors"
@@ -2854,8 +3172,8 @@ msgid "Network settings"
 msgstr "Configuración de red"
 
 #: generate_additional_files.py:164
-msgid "Universal Access"
-msgstr "Acceso universal"
+msgid "Accessibility"
+msgstr "Accesibilidad"
 
 #: generate_additional_files.py:164
 msgid "Universal Access Preferences"
@@ -2868,3 +3186,9 @@ msgstr "Fecha y hora"
 #: generate_additional_files.py:179
 msgid "Date and Time preferences"
 msgstr "Preferencias de fecha y hora"
+
+#: generate_additional_files.py:194
+msgid ""
+"Set button mappings and adjust stylus sensitivity for graphics tablets"
+msgstr ""
+"Asignar botones y ajustar la sensibilidad del lápiz en tabletas gráficas"

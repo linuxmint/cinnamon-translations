@@ -22,16 +22,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-31 01:28+0100\n"
-"PO-Revision-Date: 2014-10-26 09:52+0000\n"
+"POT-Creation-Date: 2014-11-03 12:35+0100\n"
+"PO-Revision-Date: 2014-11-03 16:39+0000\n"
 "Last-Translator: Pjotr12345 <Unknown>\n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2014-10-31 00:59+0000\n"
-"X-Generator: Launchpad (build 17211)\n"
+"X-Launchpad-Export-Date: 2014-11-11 11:34+0000\n"
+"X-Generator: Launchpad (build 17241)\n"
 "X-Project-Style: gnome\n"
 "Language: nl\n"
 
@@ -161,6 +161,21 @@ msgstr[1] "%i weken"
 msgid "Less than 1 week"
 msgstr "Minder dan een week"
 
+#: panels/color/cc-color-panel.c:1585
+msgctxt "Colorspace fallback"
+msgid "Default RGB"
+msgstr "Standaard RGB"
+
+#: panels/color/cc-color-panel.c:1590
+msgctxt "Colorspace fallback"
+msgid "Default CMYK"
+msgstr "Standaard CMYK"
+
+#: panels/color/cc-color-panel.c:1595
+msgctxt "Colorspace fallback"
+msgid "Default Gray"
+msgstr "Standaard grijs"
+
 #: panels/color/cc-color-panel.c:1713 panels/color/cc-color-panel.c:1754
 #: panels/color/cc-color-panel.c:1765 panels/color/cc-color-panel.c:1776
 msgid "Uncalibrated"
@@ -194,6 +209,31 @@ msgstr "Niet opgegeven"
 #: panels/color/cc-color-panel.c:2014
 msgid "No devices supporting color management detected"
 msgstr "Er zijn geen apparaten gedetecteerd die kleurbeheer ondersteunen"
+
+#: panels/color/cc-color-panel.c:2243
+msgctxt "Device kind"
+msgid "Display"
+msgstr "Beeldscherm"
+
+#: panels/color/cc-color-panel.c:2245
+msgctxt "Device kind"
+msgid "Scanner"
+msgstr "Scanner"
+
+#: panels/color/cc-color-panel.c:2247
+msgctxt "Device kind"
+msgid "Printer"
+msgstr "Printer"
+
+#: panels/color/cc-color-panel.c:2249
+msgctxt "Device kind"
+msgid "Camera"
+msgstr "Camera"
+
+#: panels/color/cc-color-panel.c:2251
+msgctxt "Device kind"
+msgid "Webcam"
+msgstr "Webcam"
 
 #: panels/common/cc-common-language.c:533
 msgid "English"
@@ -257,6 +297,26 @@ msgstr "Regio selecteren"
 msgid "Unspecified"
 msgstr "Niet opgegeven"
 
+#: panels/display/cc-display-panel.c:482
+msgctxt "display panel, rotation"
+msgid "Normal"
+msgstr "Normaal"
+
+#: panels/display/cc-display-panel.c:483
+msgctxt "display panel, rotation"
+msgid "Counterclockwise"
+msgstr "Tegen de klok in"
+
+#: panels/display/cc-display-panel.c:484
+msgctxt "display panel, rotation"
+msgid "Clockwise"
+msgstr "Met de klok mee"
+
+#: panels/display/cc-display-panel.c:485
+msgctxt "display panel, rotation"
+msgid "180 Degrees"
+msgstr "180 graden"
+
 #: panels/display/cc-display-panel.c:624 panels/display/cc-rr-labeler.c:449
 msgid "Mirrored Displays"
 msgstr "Gespiegelde schermen"
@@ -308,7 +368,7 @@ msgstr "_Vliegtuigmodus"
 
 #: panels/network/cc-network-panel.c:968
 msgid "Network Proxy"
-msgstr ""
+msgstr "Netwerkproxy"
 
 #: panels/network/cc-network-panel.c:1147 panels/network/net-vpn.c:278
 #: panels/network/net-vpn.c:431
@@ -323,16 +383,16 @@ msgstr ""
 
 #: panels/network/net-device-bond.c:77
 msgid "Bond slaves"
-msgstr ""
+msgstr "Bond-slaves"
 
 #: panels/network/net-device-bond.c:102 panels/network/net-device-bridge.c:102
 #: panels/network/net-device-team.c:102
 msgid "(none)"
-msgstr ""
+msgstr "(geen)"
 
 #: panels/network/net-device-bridge.c:77
 msgid "Bridge slaves"
-msgstr ""
+msgstr "Bridge-slaves"
 
 #: panels/network/net-device-ethernet.c:54
 #: panels/network/net-device-wifi.c:529
@@ -418,12 +478,12 @@ msgstr "Bekabeld"
 #: panels/network/network-ethernet.ui.h:3 panels/network/network-mobile.ui.h:8
 #: panels/network/network-vpn.ui.h:8
 msgid "Options…"
-msgstr ""
+msgstr "Opties…"
 
 #: panels/network/net-device-ethernet.c:469
 #, c-format
 msgid "Profile %d"
-msgstr ""
+msgstr "Profiel %d"
 
 #: panels/network/net-device-mobile.c:232
 msgid "Add new connection"
@@ -431,7 +491,7 @@ msgstr "Nieuwe verbinding toevoegen"
 
 #: panels/network/net-device-team.c:77
 msgid "Team slaves"
-msgstr ""
+msgstr "Team-slaves"
 
 #: panels/network/net-device-wifi.c:217 panels/network/net-device-wifi.c:378
 msgid "WEP"
@@ -450,11 +510,43 @@ msgstr "WPA2"
 msgid "Enterprise"
 msgstr "Enterprise"
 
+#: panels/network/net-device-wifi.c:235 panels/network/net-device-wifi.c:368
+msgctxt "Wifi security"
+msgid "None"
+msgstr "Geen"
+
+#: panels/network/net-device-wifi.c:558
+msgctxt "Signal strength"
+msgid "Terrible"
+msgstr "Zeer slecht"
+
+#: panels/network/net-device-wifi.c:560
+msgctxt "Signal strength"
+msgid "Weak"
+msgstr "Zwak"
+
+#: panels/network/net-device-wifi.c:562
+msgctxt "Signal strength"
+msgid "Ok"
+msgstr "Voldoende"
+
+#: panels/network/net-device-wifi.c:564
+msgctxt "Signal strength"
+msgid "Good"
+msgstr "Goed"
+
+#: panels/network/net-device-wifi.c:566
+msgctxt "Signal strength"
+msgid "Excellent"
+msgstr "Uitmuntend"
+
 #: panels/network/net-device-wifi.c:1153
 msgid ""
 "If you have a connection to the Internet other than wireless, you can set up "
 "a wireless hotspot to share the connection with others."
 msgstr ""
+"Als u een verbinding met het internet heeft die niet draadloos is, kunt u "
+"een draadloos toegangspunt instellen om deze verbinding met anderen te delen."
 
 #: panels/network/net-device-wifi.c:1157
 #, c-format
@@ -468,6 +560,8 @@ msgid ""
 "It is not possible to access the Internet through your wireless while the "
 "hotspot is active."
 msgstr ""
+"U heeft geen toegang tot het internet via uw draadloze verbinding wanneer "
+"het toegangspunt is geactiveerd."
 
 #: panels/network/net-device-wifi.c:1238
 msgid "Stop hotspot and disconnect any users?"
@@ -485,46 +579,53 @@ msgstr "Draadloos toegangspunt _uitschakelen"
 
 #: panels/network/net-device-wifi.c:1313
 msgid "System policy prohibits use as a Hotspot"
-msgstr ""
+msgstr "Systeembeleid staat gebruik als toegangspunt niet toe"
 
 #: panels/network/net-device-wifi.c:1316
 msgid "Wireless device does not support Hotspot mode"
-msgstr ""
+msgstr "Draadloos apparaat ondersteunt de toegangspunt-modus niet"
 
 #: panels/network/net-device-wifi.c:1445
 msgid ""
 "Network details for the selected networks, including passwords and any "
 "custom configuration will be lost."
 msgstr ""
+"Netwerkdetails voor de geselecteerde netwerken, inclusief wachtwoorden en "
+"aangepaste instellingen, zullen verloren gaan."
 
 #: panels/network/net-device-wifi.c:1449 panels/network/network-wifi.ui.h:46
 #: panels/network/connection-editor/reset-page.ui.h:2
 msgid "_Forget"
-msgstr ""
+msgstr "_Vergeten"
 
 #: panels/network/net-device-wifi.c:1603
 msgid "Preferences"
-msgstr ""
+msgstr "Voorkeuren"
 
 #: panels/network/net-device-wifi.c:1609
 msgid "Options"
-msgstr ""
+msgstr "Opties"
 
 #: panels/network/net-device-wifi.c:1627
 msgid "Connect"
-msgstr ""
+msgstr "Verbinding maken"
 
 #: panels/network/net-device-wifi.c:1650
 msgid "Disconnect"
-msgstr ""
+msgstr "Verbinding verbreken"
 
 #: panels/network/net-device-wifi.c:1864
 msgid "Known Networks"
-msgstr ""
+msgstr "Bekende netwerken"
 
 #: panels/network/net-device-wifi.c:1868
 msgid "_Close"
-msgstr ""
+msgstr "_Sluiten"
+
+#: panels/network/net-device-wifi.c:1876
+msgctxt "Wi-Fi Network"
+msgid "_Forget"
+msgstr "_Vergeten"
 
 #: panels/network/net-proxy.c:67
 msgid ""
@@ -897,6 +998,36 @@ msgstr "Computer"
 msgid "Battery"
 msgstr "Accu"
 
+#: panels/power/cc-power-panel.c:546
+msgctxt "Battery power"
+msgid "Charging"
+msgstr "Opladen…"
+
+#: panels/power/cc-power-panel.c:553
+msgctxt "Battery power"
+msgid "Caution"
+msgstr "Waarschuwing"
+
+#: panels/power/cc-power-panel.c:558
+msgctxt "Battery power"
+msgid "Low"
+msgstr "Laag"
+
+#: panels/power/cc-power-panel.c:563
+msgctxt "Battery power"
+msgid "Good"
+msgstr "Goed"
+
+#: panels/power/cc-power-panel.c:568
+msgctxt "Battery power"
+msgid "Charging - fully charged"
+msgstr "Opladen — volledig opgeladen"
+
+#: panels/power/cc-power-panel.c:572
+msgctxt "Battery power"
+msgid "Empty"
+msgstr "Leeg"
+
 #: panels/region/cinnamon-region-panel-xkblt.c:210
 msgid "Layout"
 msgstr "Indeling"
@@ -935,6 +1066,36 @@ msgstr "Invoer"
 msgid "Microphone Volume"
 msgstr "Microfoonvolume"
 
+#: panels/sound/gvc-balance-bar.c:111 panels/sound-nua/gvc-balance-bar.c:111
+msgctxt "balance"
+msgid "Left"
+msgstr "Links"
+
+#: panels/sound/gvc-balance-bar.c:112 panels/sound-nua/gvc-balance-bar.c:112
+msgctxt "balance"
+msgid "Right"
+msgstr "Rechts"
+
+#: panels/sound/gvc-balance-bar.c:115 panels/sound-nua/gvc-balance-bar.c:115
+msgctxt "balance"
+msgid "Rear"
+msgstr "Achter"
+
+#: panels/sound/gvc-balance-bar.c:116 panels/sound-nua/gvc-balance-bar.c:116
+msgctxt "balance"
+msgid "Front"
+msgstr "Voor"
+
+#: panels/sound/gvc-balance-bar.c:119 panels/sound-nua/gvc-balance-bar.c:119
+msgctxt "balance"
+msgid "Minimum"
+msgstr "Minimum"
+
+#: panels/sound/gvc-balance-bar.c:120 panels/sound-nua/gvc-balance-bar.c:120
+msgctxt "balance"
+msgid "Maximum"
+msgstr "Maximum"
+
 #: panels/sound/gvc-balance-bar.c:295 panels/sound-nua/gvc-balance-bar.c:295
 msgid "_Balance:"
 msgstr "_Balans:"
@@ -946,6 +1107,16 @@ msgstr "_Wegsterven:"
 #: panels/sound/gvc-balance-bar.c:301 panels/sound-nua/gvc-balance-bar.c:301
 msgid "_Subwoofer:"
 msgstr "_Subwoofer:"
+
+#: panels/sound/gvc-channel-bar.c:613 panels/sound/gvc-channel-bar.c:623
+msgctxt "volume"
+msgid "100%"
+msgstr "100%"
+
+#: panels/sound/gvc-channel-bar.c:617
+msgctxt "volume"
+msgid "Unamplified"
+msgstr "Onversterkt"
 
 #: panels/sound/gvc-combo-box.c:167 panels/sound/gvc-mixer-dialog.c:258
 #: panels/sound/gvc-mixer-dialog.c:519
@@ -1115,7 +1286,7 @@ msgstr "Werkblad wisselen:"
 
 #: panels/sound-nua/gvc-mixer-dialog.c:2076
 msgid "Opening new windows:"
-msgstr ""
+msgstr "Nieuwe vensters openen:"
 
 #: panels/sound-nua/gvc-mixer-dialog.c:2077
 msgid "Closing windows:"
@@ -1157,6 +1328,31 @@ msgstr "Cinnamon verlaten:"
 msgid "No shortcut set"
 msgstr "Geen sneltoets ingesteld"
 
+#: panels/universal-access/zoom-options.c:358
+msgctxt "Distance"
+msgid "Short"
+msgstr "Kort"
+
+#: panels/universal-access/zoom-options.c:359
+msgctxt "Distance"
+msgid "¼ Screen"
+msgstr "¼ scherm"
+
+#: panels/universal-access/zoom-options.c:360
+msgctxt "Distance"
+msgid "½ Screen"
+msgstr "½ scherm"
+
+#: panels/universal-access/zoom-options.c:361
+msgctxt "Distance"
+msgid "¾ Screen"
+msgstr "¾ scherm"
+
+#: panels/universal-access/zoom-options.c:362
+msgctxt "Distance"
+msgid "Long"
+msgstr "Lang"
+
 #: panels/wacom/cc-wacom-mapping-panel.c:275
 msgid "Output:"
 msgstr "Uitvoer:"
@@ -1174,6 +1370,36 @@ msgstr "Aan één enkel beeldscherm toewijzen"
 msgid "%d of %d"
 msgstr "%d van %d"
 
+#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
+msgctxt "Wacom action-type"
+msgid "None"
+msgstr "Geen"
+
+#: panels/wacom/cc-wacom-page.c:119
+msgctxt "Wacom action-type"
+msgid "Send Keystroke"
+msgstr "Toetsaanslag versturen"
+
+#: panels/wacom/cc-wacom-page.c:120
+msgctxt "Wacom action-type"
+msgid "Switch Monitor"
+msgstr "Beeldscherm wisselen"
+
+#: panels/wacom/cc-wacom-page.c:121
+msgctxt "Wacom action-type"
+msgid "Show On-Screen Help"
+msgstr "Schermhulp tonen"
+
+#: panels/wacom/cc-wacom-page.c:622
+msgctxt "Wacom tablet button"
+msgid "Up"
+msgstr "Omhoog"
+
+#: panels/wacom/cc-wacom-page.c:622
+msgctxt "Wacom tablet button"
+msgid "Down"
+msgstr "Omlaag"
+
 #: panels/wacom/cc-wacom-page.c:663
 msgid "Switch Modes"
 msgstr "Modi omschakelen"
@@ -1190,7 +1416,7 @@ msgstr "Soort"
 msgid "Action"
 msgstr "Actie"
 
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:922
 msgid "Display Mapping"
 msgstr "Toewijzingen tonen"
 
@@ -1517,7 +1743,7 @@ msgstr "Schermen detecteren"
 
 #: panels/network/network-ethernet.ui.h:2
 msgid "_Add Profile…"
-msgstr ""
+msgstr "Profiel toevoegen…"
 
 #: panels/network/network-mobile.ui.h:1
 msgid "IMEI"
@@ -1530,6 +1756,21 @@ msgstr "Internetaanbieder"
 #: panels/network/network-mobile.ui.h:7 generate_additional_files.py:149
 msgid "Network"
 msgstr "Netwerk"
+
+#: panels/network/network-proxy.ui.h:1 panels/network/network.ui.h:4
+msgctxt "proxy method"
+msgid "None"
+msgstr "Geen"
+
+#: panels/network/network-proxy.ui.h:2 panels/network/network.ui.h:5
+msgctxt "proxy method"
+msgid "Manual"
+msgstr "Handmatig"
+
+#: panels/network/network-proxy.ui.h:3 panels/network/network.ui.h:6
+msgctxt "proxy method"
+msgid "Automatic"
+msgstr "Automatisch"
 
 #: panels/network/network-proxy.ui.h:4
 msgid "_Method"
@@ -1557,27 +1798,27 @@ msgstr "S_ocks-host"
 
 #: panels/network/network-proxy.ui.h:10
 msgid "_Ignore Hosts"
-msgstr ""
+msgstr "Hostcomputers negeren"
 
 #: panels/network/network-proxy.ui.h:11
 msgid "HTTP proxy port"
-msgstr ""
+msgstr "Poort HTTP-proxy"
 
 #: panels/network/network-proxy.ui.h:12
 msgid "HTTPS proxy port"
-msgstr ""
+msgstr "Poort HTTPS-proxy"
 
 #: panels/network/network-proxy.ui.h:13
 msgid "FTP proxy port"
-msgstr ""
+msgstr "Poort FTP-proxy"
 
 #: panels/network/network-proxy.ui.h:14
 msgid "Socks proxy port"
-msgstr ""
+msgstr "Poort Socks-proxy"
 
 #: panels/network/network-simple.ui.h:1
 msgid "Connection"
-msgstr ""
+msgstr "Verbinding"
 
 #: panels/network/network.ui.h:1 panels/network/network-vpn.ui.h:1
 msgid "VPN"
@@ -1615,40 +1856,40 @@ msgstr "Gebruikersnaam"
 
 #: panels/network/network-vpn.ui.h:7
 msgid "Turn VPN connection off"
-msgstr ""
+msgstr "VPN-verbinding uitschakelen"
 
 #: panels/network/network-wifi.ui.h:1
 msgid "Details"
-msgstr ""
+msgstr "Bijzonderheden"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Identity"
-msgstr ""
+msgstr "Identiteit"
 
 #: panels/network/network-wifi.ui.h:3
 msgid "IPv4"
-msgstr ""
+msgstr "IPv4"
 
 #: panels/network/network-wifi.ui.h:4
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Hardware"
-msgstr ""
+msgstr "Apparatuur"
 
 #: panels/network/network-wifi.ui.h:6
 msgid "Reset"
-msgstr ""
+msgstr "Terugzetten op standaardwaarden"
 
 #: panels/network/network-wifi.ui.h:7
 msgid "Automatic _Connect"
-msgstr ""
+msgstr "Automatisch ver_binden"
 
 #: panels/network/network-wifi.ui.h:8
 #: panels/network/connection-editor/details-page.ui.h:1
 msgid "Signal Strength"
-msgstr ""
+msgstr "Signaalsterkte"
 
 #: panels/network/network-wifi.ui.h:9
 #: panels/network/connection-editor/details-page.ui.h:2
@@ -1662,22 +1903,22 @@ msgstr "Beveiliging"
 
 #: panels/network/network-wifi.ui.h:17
 msgid "details"
-msgstr ""
+msgstr "bijzonderheden"
 
 #: panels/network/network-wifi.ui.h:18
 #: panels/network/connection-editor/wifi-page.ui.h:1
 msgid "_SSID"
-msgstr ""
+msgstr "SSID"
 
 #: panels/network/network-wifi.ui.h:19
 #: panels/network/connection-editor/wifi-page.ui.h:2
 msgid "_BSSID"
-msgstr ""
+msgstr "BSSID"
 
 #: panels/network/network-wifi.ui.h:20
 #: panels/network/connection-editor/security-page.ui.h:1
 msgid "S_ecurity"
-msgstr ""
+msgstr "_Beveiliging"
 
 #: panels/network/network-wifi.ui.h:21
 #: panels/network/wireless-security/eap-method-leap.ui.h:2
@@ -1685,12 +1926,12 @@ msgstr ""
 #: panels/network/wireless-security/ws-leap.ui.h:2
 #: panels/network/wireless-security/ws-wpa-psk.ui.h:1
 msgid "_Password"
-msgstr ""
+msgstr "_Wachtwoord"
 
 #: panels/network/network-wifi.ui.h:22
 #: panels/network/connection-editor/wifi-page.ui.h:3
 msgid "My Home Network"
-msgstr ""
+msgstr "Mijn thuisnetwerk"
 
 #: panels/network/network-wifi.ui.h:24 panels/universal-access/uap.ui.h:8
 msgid "None"
@@ -1698,118 +1939,122 @@ msgstr "Geen"
 
 #: panels/network/network-wifi.ui.h:25
 msgid "Show P_assword"
-msgstr ""
+msgstr "Wachtwoord _tonen"
 
 #: panels/network/network-wifi.ui.h:26
 msgid "Make available to other users"
-msgstr ""
+msgstr "Beschikbaar maken voor andere gebruikers"
 
 #: panels/network/network-wifi.ui.h:27
 msgid "identity"
-msgstr ""
+msgstr "identiteit"
 
 #: panels/network/network-wifi.ui.h:28
 #: panels/network/connection-editor/ip4-page.ui.h:1
 msgid "IPv_4"
-msgstr ""
+msgstr "IPv_4"
 
 #: panels/network/network-wifi.ui.h:29
 #: panels/network/connection-editor/ip4-page.ui.h:2
 #: panels/network/connection-editor/ip6-page.ui.h:2
 msgid "_Addresses"
-msgstr ""
+msgstr "_Adressen"
 
 #: panels/network/network-wifi.ui.h:30
 msgid "Manual"
-msgstr ""
+msgstr "Handmatig"
 
 #: panels/network/network-wifi.ui.h:31
 msgid "Automatic (DHCP)"
-msgstr ""
+msgstr "Automatisch (DHCP)"
 
 #: panels/network/network-wifi.ui.h:32
 msgid "Automatic (DHCP) addresses only"
-msgstr ""
+msgstr "Alleen automatische (DHCP) adressen"
 
 #: panels/network/network-wifi.ui.h:33
 msgid "Link-local only"
-msgstr ""
+msgstr "Alleen Link-Local"
 
 #: panels/network/network-wifi.ui.h:34
 msgid "Shared with other computers"
-msgstr ""
+msgstr "Gedeeld met andere computers"
 
 #: panels/network/network-wifi.ui.h:36
 #: panels/network/connection-editor/ip4-page.ui.h:6
 #: panels/network/connection-editor/ip6-page.ui.h:6
 msgid "Routes"
-msgstr ""
+msgstr "Routes"
 
 #: panels/network/network-wifi.ui.h:37
 msgid "_Ignore automatically obtained routes"
-msgstr ""
+msgstr "Automatisch verkregen routes _negeren"
 
 #: panels/network/network-wifi.ui.h:38
 #: panels/network/connection-editor/ip4-page.ui.h:8
 #: panels/network/connection-editor/ip6-page.ui.h:8
 msgid "Use this connection _only for resources on its network"
-msgstr ""
+msgstr "Gebruik deze verbinding alleen voor bronnen op zijn netwerk"
 
 #: panels/network/network-wifi.ui.h:39
 msgid "ipv4"
-msgstr ""
+msgstr "ipv4"
 
 #: panels/network/network-wifi.ui.h:40
 #: panels/network/connection-editor/ip6-page.ui.h:1
 msgid "IPv_6"
-msgstr ""
+msgstr "IPv_6"
 
 #: panels/network/network-wifi.ui.h:41
 msgid "ipv6"
-msgstr ""
+msgstr "ipv6"
 
 #: panels/network/network-wifi.ui.h:42
 #: panels/network/connection-editor/ethernet-page.ui.h:11
 #: panels/network/connection-editor/wifi-page.ui.h:4
 msgid "_MAC Address"
-msgstr ""
+msgstr "_MAC-adres"
 
 #: panels/network/network-wifi.ui.h:43
 msgid "_Cloned MAC Address"
-msgstr ""
+msgstr "Ge_kloond MAC-adres"
 
 #: panels/network/network-wifi.ui.h:44
 msgid "hardware"
-msgstr ""
+msgstr "apparatuur"
 
 #: panels/network/network-wifi.ui.h:45
 #: panels/network/connection-editor/reset-page.ui.h:1
 msgid "_Reset"
-msgstr ""
+msgstr "Te_rugzetten op standaardwaarden"
 
 #: panels/network/network-wifi.ui.h:47
 msgid ""
 "Reset the settings for this connection to their defaults, but remember as a "
 "preferred connection."
 msgstr ""
+"Zet de instellingen voor deze verbinding terug naar de "
+"standaardinstellingen, maar onthoud haar wel als een voorkeursnetwerk."
 
 #: panels/network/network-wifi.ui.h:48
 msgid ""
 "Remove all details relating to this network and do not try to automatically "
 "connect to it."
 msgstr ""
+"Verwijder alle bijzonderheden met betrekking tot dit netwerk, en probeer "
+"niet om er automatisch verbinding mee te maken."
 
 #: panels/network/network-wifi.ui.h:49
 msgid "reset"
-msgstr ""
+msgstr "terugzetten op standaardwaarden"
 
 #: panels/network/network-wifi.ui.h:50
 msgid "Create a Wireless Hotspot"
-msgstr ""
+msgstr "Een draadloos toegangspunt maken"
 
 #: panels/network/network-wifi.ui.h:51
 msgid "Wi-Fi Hotspot"
-msgstr ""
+msgstr "Draadloos toegangspunt"
 
 #: panels/network/network-wifi.ui.h:52
 msgid "_Turn On"
@@ -1817,15 +2062,15 @@ msgstr "_Aanzetten"
 
 #: panels/network/network-wifi.ui.h:53
 msgid "Wi-Fi"
-msgstr ""
+msgstr "Wi-Fi"
 
 #: panels/network/network-wifi.ui.h:54
 msgid "_Known Networks"
-msgstr ""
+msgstr "Bekende netwerken"
 
 #: panels/network/network-wifi.ui.h:55
 msgid "_Create a Wireless Hotspot"
-msgstr ""
+msgstr "Een draadloos toegangspunt maken"
 
 #: panels/network/network-wifi.ui.h:56
 msgid "Connect to a Hidden Network"
@@ -1833,7 +2078,7 @@ msgstr "Verbinden met een verborgen netwerk"
 
 #: panels/network/network-wifi.ui.h:57
 msgid "Switch off to connect to a Wi-Fi network"
-msgstr ""
+msgstr "Uitschakelen om te verbinden met een WiFi-netwerk"
 
 #: panels/network/network-wifi.ui.h:58
 msgid "Network Name"
@@ -1868,78 +2113,86 @@ msgid "10 minutes"
 msgstr "10 minuten"
 
 #: panels/power/power.ui.h:5
+msgid "15 minutes"
+msgstr "15 minuten"
+
+#: panels/power/power.ui.h:6
 msgid "30 minutes"
 msgstr "30 minuten"
 
-#: panels/power/power.ui.h:6
+#: panels/power/power.ui.h:7
+msgid "45 minutes"
+msgstr "45 minuten"
+
+#: panels/power/power.ui.h:8
 msgid "1 hour"
 msgstr "1 uur"
 
-#: panels/power/power.ui.h:7
+#: panels/power/power.ui.h:9
 msgid "Never"
 msgstr "Nooit"
 
-#: panels/power/power.ui.h:8
+#: panels/power/power.ui.h:10
 msgid "When battery is present"
 msgstr "Indien accu aanwezig is"
 
-#: panels/power/power.ui.h:9
+#: panels/power/power.ui.h:11
 msgid "When battery is charging/in use"
 msgstr "Wanneer accu aan het opladen/in gebruik is"
 
-#: panels/power/power.ui.h:10
+#: panels/power/power.ui.h:12
 msgid "Suspend"
 msgstr "Pauzestand"
 
-#: panels/power/power.ui.h:11
+#: panels/power/power.ui.h:13
 msgid "Do nothing"
 msgstr "Niets doen"
 
-#: panels/power/power.ui.h:12
+#: panels/power/power.ui.h:14
 msgid "Lock Screen"
 msgstr "Scherm vergrendelen"
 
-#: panels/power/power.ui.h:13
+#: panels/power/power.ui.h:15
 msgid "Shutdown Immediately"
 msgstr "Direct afsluiten"
 
-#: panels/power/power.ui.h:14
+#: panels/power/power.ui.h:16
 msgid "Ask"
 msgstr "Vragen"
 
-#: panels/power/power.ui.h:15
+#: panels/power/power.ui.h:17
 msgid "On battery power"
 msgstr "Op accustroom"
 
-#: panels/power/power.ui.h:16
+#: panels/power/power.ui.h:18
 msgid "On A/C power"
 msgstr "Op netstroom"
 
-#: panels/power/power.ui.h:17
+#: panels/power/power.ui.h:19
 msgid "When the lid is closed"
 msgstr "Als het scherm wordt dichtgeklapt"
 
-#: panels/power/power.ui.h:18
+#: panels/power/power.ui.h:20
 msgid "When the power button is pressed"
 msgstr "Wanneer de aan/uit-knop wordt ingedrukt"
 
-#: panels/power/power.ui.h:19
+#: panels/power/power.ui.h:21
 msgid "When the battery is critically low"
-msgstr ""
+msgstr "Wanneer de acculading kritiek laag is"
 
-#: panels/power/power.ui.h:20
+#: panels/power/power.ui.h:22
 msgid "Suspend when inactive for"
 msgstr "Pauzestand inschakelen bij inactiviteit gedurende"
 
-#: panels/power/power.ui.h:21
+#: panels/power/power.ui.h:23
 msgid "Turn off the screen when inactive for"
 msgstr "Schakel het scherm uit wanneer inactief gedurende"
 
-#: panels/power/power.ui.h:22
+#: panels/power/power.ui.h:24
 msgid "<b>Power Options</b>"
 msgstr "<b>Energie-opties</b>"
 
-#: panels/power/power.ui.h:23
+#: panels/power/power.ui.h:25
 msgid "<b>Battery Status</b>"
 msgstr "<b>Accustatus</b>"
 
@@ -2019,6 +2272,26 @@ msgstr ""
 "Vervang de huidige toetsenbordinstellingen door de\n"
 "standaardinstellingen"
 
+#: panels/universal-access/uap.ui.h:1
+msgctxt "universal access, contrast"
+msgid "Low"
+msgstr "Laag"
+
+#: panels/universal-access/uap.ui.h:2
+msgctxt "universal access, contrast"
+msgid "Normal"
+msgstr "Normaal"
+
+#: panels/universal-access/uap.ui.h:3
+msgctxt "universal access, contrast"
+msgid "High"
+msgstr "Hoog"
+
+#: panels/universal-access/uap.ui.h:4
+msgctxt "universal access, contrast"
+msgid "High/Inverse"
+msgstr "Hoog/omgekeerd"
+
 #: panels/universal-access/uap.ui.h:5
 msgid "On screen keyboard"
 msgstr "Toetsenbord op scherm"
@@ -2036,20 +2309,40 @@ msgstr "AanBoord"
 msgid "75%"
 msgstr "75%"
 
+#: panels/universal-access/uap.ui.h:11
+msgctxt "universal access, text size"
+msgid "Small"
+msgstr "Klein"
+
 #: panels/universal-access/uap.ui.h:13
 #, no-c-format
 msgid "100%"
 msgstr "100%"
+
+#: panels/universal-access/uap.ui.h:14
+msgctxt "universal access, text size"
+msgid "Normal"
+msgstr "Normaal"
 
 #: panels/universal-access/uap.ui.h:16
 #, no-c-format
 msgid "125%"
 msgstr "125%"
 
+#: panels/universal-access/uap.ui.h:17
+msgctxt "universal access, text size"
+msgid "Large"
+msgstr "Groot"
+
 #: panels/universal-access/uap.ui.h:19
 #, no-c-format
 msgid "150%"
 msgstr "150%"
+
+#: panels/universal-access/uap.ui.h:20
+msgctxt "universal access, text size"
+msgid "Larger"
+msgstr "Groter"
 
 #: panels/universal-access/uap.ui.h:21
 msgid "High Contrast"
@@ -2070,6 +2363,11 @@ msgstr "Schermlezer"
 #: panels/universal-access/uap.ui.h:25
 msgid "Turn on or off:"
 msgstr "In- of uitschakelen:"
+
+#: panels/universal-access/uap.ui.h:26
+msgctxt "universal access, zoom"
+msgid "Zoom"
+msgstr "Vergroten/verkleinen"
 
 #: panels/universal-access/uap.ui.h:27
 msgid "Zoom in:"
@@ -2382,6 +2680,21 @@ msgstr "Helderheid:"
 msgid "Contrast:"
 msgstr "Contrast:"
 
+#: panels/universal-access/zoom-options.ui.h:30
+msgctxt "Zoom Grayscale"
+msgid "Color"
+msgstr "Kleur"
+
+#: panels/universal-access/zoom-options.ui.h:31
+msgctxt "Zoom Grayscale"
+msgid "None"
+msgstr "Geen"
+
+#: panels/universal-access/zoom-options.ui.h:32
+msgctxt "Zoom Grayscale"
+msgid "Full"
+msgstr "Volledig"
+
 #: panels/universal-access/zoom-options.ui.h:34
 msgid "Low"
 msgstr "Laag"
@@ -2439,6 +2752,7 @@ msgid "Bluetooth Settings"
 msgstr "Bluetooth-instellingen"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:7
+#: generate_additional_files.py:194
 msgid "Graphics Tablet"
 msgstr "Grafische tablet"
 
@@ -2532,12 +2846,12 @@ msgstr "Gedrag puntdruk"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
-msgstr ""
+msgstr "802.1x _beveiliging"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:2
 #: panels/network/connection-editor/security-page.ui.h:2
 msgid "page 1"
-msgstr ""
+msgstr "bladzijde 1"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:3
 #: panels/network/connection-editor/security-page.ui.h:3
@@ -2545,142 +2859,146 @@ msgstr ""
 #: panels/network/wireless-security/eap-method-peap.ui.h:5
 #: panels/network/wireless-security/eap-method-ttls.ui.h:2
 msgid "Anony_mous identity"
-msgstr ""
+msgstr "Anonie_me identiteit"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:4
 #: panels/network/connection-editor/security-page.ui.h:4
 msgid "Inner _authentication"
-msgstr ""
+msgstr "Interne _aanmeldingscontrole"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:5
 #: panels/network/connection-editor/security-page.ui.h:5
 msgid "page 2"
-msgstr ""
+msgstr "bladzijde 2"
 
 #: panels/network/connection-editor/connection-editor.ui.h:1
 msgid "_Apply"
-msgstr ""
+msgstr "Toepassen"
 
 #: panels/network/connection-editor/details-page.ui.h:9
 msgid "Last Used"
-msgstr ""
+msgstr "Laatst gebruikt"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:1
 #: panels/network/connection-editor/ip4-page.ui.h:4
 #: panels/network/connection-editor/ip6-page.ui.h:4
 #: panels/network/wireless-security/eap-method-peap.ui.h:2
 msgid "Automatic"
-msgstr ""
+msgstr "Automatisch"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:2
 msgid "Twisted Pair (TP)"
-msgstr ""
+msgstr "Twisted Pair (TP)"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:3
 msgid "Attachment Unit Interface (AUI)"
-msgstr ""
+msgstr "Attachment Unit Interface (AUI)"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:4
 msgid "BNC"
-msgstr ""
+msgstr "BNC"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:5
 msgid "Media Independent Interface (MII)"
-msgstr ""
+msgstr "Media Independent Interface (MII)"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:6
 msgid "10 Mb/s"
-msgstr ""
+msgstr "10 Mb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:7
 msgid "100 Mb/s"
-msgstr ""
+msgstr "100 Mb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:8
 msgid "1 Gb/s"
-msgstr ""
+msgstr "1 Gb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:9
 msgid "10 Gb/s"
-msgstr ""
+msgstr "10 Gb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:10
 #: panels/network/connection-editor/vpn-page.ui.h:1
 msgid "_Name"
-msgstr ""
+msgstr "_Naam"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:12
 msgid "M_TU"
-msgstr ""
+msgstr "M_TU"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:13
 #: panels/network/connection-editor/wifi-page.ui.h:5
 msgid "_Cloned Address"
-msgstr ""
+msgstr "Ge_kloond adres"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:14
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:15
 #: panels/network/connection-editor/vpn-page.ui.h:3
 msgid "Make available to other _users"
-msgstr ""
+msgstr "Beschikbaar maken voor andere _gebruikers"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:16
 #: panels/network/connection-editor/wifi-page.ui.h:7
 msgid "Connect _automatically"
-msgstr ""
+msgstr "_Automatisch verbinden"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:17
 #: panels/network/connection-editor/vpn-page.ui.h:2
 #: panels/network/connection-editor/wifi-page.ui.h:8
 msgid "Firewall _Zone"
-msgstr ""
+msgstr "Firewall-_zone"
 
 #: panels/network/connection-editor/ip4-page.ui.h:5
 #: panels/network/connection-editor/ip6-page.ui.h:5
 msgid "Automatic DNS"
-msgstr ""
+msgstr "Automatische DNS"
 
 #: panels/network/connection-editor/ip4-page.ui.h:7
 #: panels/network/connection-editor/ip6-page.ui.h:7
 msgid "Automatic Routes"
-msgstr ""
+msgstr "Automatische routes"
 
 #: panels/network/connection-editor/reset-page.ui.h:3
 msgid ""
 "Reset the settings for this network, including passwords, but remember it as "
 "a preferred network"
 msgstr ""
+"Zet de instellingen voor dit netwerk terug op de standaardwaarden, inclusief "
+"wachtwoorden, maar onthoud het als een voorkeursnetwerk"
 
 #: panels/network/connection-editor/reset-page.ui.h:4
 msgid ""
 "Remove all details relating to this network and do not try to automatically "
 "connect"
 msgstr ""
+"Verwijder alle bijzonderheden met betrekking tot dit netwerk en probeer niet "
+"om er automatisch verbinding mee te maken"
 
 #: panels/network/connection-editor/vpn-page.ui.h:4
 msgid "(Error: unable to load VPN connection editor)"
-msgstr ""
+msgstr "(Fout: kan VPN-verbindingsbewerker niet laden)"
 
 #: panels/network/connection-editor/wifi-page.ui.h:6
 msgid "Make available to _other users"
-msgstr ""
+msgstr "Beschikbaar maken voor andere _gebruikers"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:2
 msgid "PAC _file"
-msgstr ""
+msgstr "PAC-_bestand"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:3
 #: panels/network/wireless-security/eap-method-peap.ui.h:7
 #: panels/network/wireless-security/eap-method-ttls.ui.h:4
 msgid "_Inner authentication"
-msgstr ""
+msgstr "I_nterne aanmeldingscontrole"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:4
 msgid "PAC pro_visioning"
-msgstr ""
+msgstr "PAC-_voorziening"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:5
 #: panels/network/wireless-security/eap-method-peap.ui.h:1
@@ -2688,25 +3006,25 @@ msgstr ""
 #: panels/network/wireless-security/ws-dynamic-wep.ui.h:1
 #: panels/network/wireless-security/ws-wpa-eap.ui.h:1
 msgid " "
-msgstr ""
+msgstr " "
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:6
 msgid "Anonymous"
-msgstr ""
+msgstr "Anoniem"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:7
 msgid "Authenticated"
-msgstr ""
+msgstr "Authenticatie gelukt"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:8
 msgid "Both"
-msgstr ""
+msgstr "Beide"
 
 #: panels/network/wireless-security/eap-method-leap.ui.h:1
 #: panels/network/wireless-security/eap-method-simple.ui.h:1
 #: panels/network/wireless-security/ws-leap.ui.h:1
 msgid "_Username"
-msgstr ""
+msgstr "Gebruikersnaam"
 
 #: panels/network/wireless-security/eap-method-leap.ui.h:3
 #: panels/network/wireless-security/eap-method-simple.ui.h:4
@@ -2714,103 +3032,103 @@ msgstr ""
 #: panels/network/wireless-security/ws-leap.ui.h:3
 #: panels/network/wireless-security/ws-wpa-psk.ui.h:3
 msgid "Sho_w password"
-msgstr ""
+msgstr "Wachtwoord weergeven"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:3
 msgid "Version 0"
-msgstr ""
+msgstr "Versie 0"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:4
 msgid "Version 1"
-msgstr ""
+msgstr "Versie 1"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:6
 #: panels/network/wireless-security/eap-method-tls.ui.h:3
 #: panels/network/wireless-security/eap-method-ttls.ui.h:3
 msgid "C_A certificate"
-msgstr ""
+msgstr "C_A-certificaat"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:8
 msgid "PEAP _version"
-msgstr ""
+msgstr "PEAP-_versie"
 
 #: panels/network/wireless-security/eap-method-simple.ui.h:3
 msgid "As_k for this password every time"
-msgstr ""
+msgstr "_Vraag elke keer om dit wachtwoord"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:1
 msgid "I_dentity"
-msgstr ""
+msgstr "I_dentiteit"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:2
 msgid "_User certificate"
-msgstr ""
+msgstr "_Gebruikerscertificaat"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:4
 msgid "Private _key"
-msgstr ""
+msgstr "Privé_sleutel"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:5
 msgid "_Private key password"
-msgstr ""
+msgstr "Wachtwoord _privésleutel"
 
 #: panels/network/wireless-security/nag-user-dialog.ui.h:1
 msgid "Don't _warn me again"
-msgstr ""
+msgstr "Mij niet meer _waarschuwen"
 
 #: panels/network/wireless-security/nag-user-dialog.ui.h:2
 msgid "No"
-msgstr ""
+msgstr "Nee"
 
 #: panels/network/wireless-security/nag-user-dialog.ui.h:3
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: panels/network/wireless-security/ws-dynamic-wep.ui.h:2
 #: panels/network/wireless-security/ws-wep-key.ui.h:9
 #: panels/network/wireless-security/ws-wpa-eap.ui.h:2
 msgid "Au_thentication"
-msgstr ""
+msgstr "Authenticatie"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:1
 msgid "1 (Default)"
-msgstr ""
+msgstr "1 (standaard)"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:2
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:3
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:4
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:5
 msgid "Open System"
-msgstr ""
+msgstr "Open systeem"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:6
 msgid "Shared Key"
-msgstr ""
+msgstr "Gedeelde sleutel"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:7
 msgid "_Key"
-msgstr ""
+msgstr "_Sleutel"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:8
 msgid "Sho_w key"
-msgstr ""
+msgstr "Sleutel _weergeven"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:10
 msgid "WEP inde_x"
-msgstr ""
+msgstr "WEP-inde_x"
 
 #: panels/network/wireless-security/ws-wpa-psk.ui.h:2
 msgid "_Type"
-msgstr ""
+msgstr "_Type"
 
 #: generate_additional_files.py:27
 msgid "Brightness & Lock"
@@ -2857,8 +3175,8 @@ msgid "Change your region and language settings"
 msgstr "Instellingen wijzigen voor regio en taal"
 
 #: generate_additional_files.py:134
-msgid "Displays"
-msgstr "Beeldschermen"
+msgid "Display"
+msgstr "Beeldscherm"
 
 #: generate_additional_files.py:134
 msgid "Change resolution and position of monitors and projectors"
@@ -2869,7 +3187,7 @@ msgid "Network settings"
 msgstr "Netwerkinstellingen"
 
 #: generate_additional_files.py:164
-msgid "Universal Access"
+msgid "Accessibility"
 msgstr "Toegankelijkheid"
 
 #: generate_additional_files.py:164
@@ -2883,3 +3201,10 @@ msgstr "Datum & tijd"
 #: generate_additional_files.py:179
 msgid "Date and Time preferences"
 msgstr "Voorkeuren voor datum en tijd"
+
+#: generate_additional_files.py:194
+msgid ""
+"Set button mappings and adjust stylus sensitivity for graphics tablets"
+msgstr ""
+"Knoptoewijzingen instellen en gevoeligheid bijstellen van stylus voor "
+"grafische tabletten"

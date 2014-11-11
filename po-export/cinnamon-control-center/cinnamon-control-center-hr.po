@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-31 01:28+0100\n"
-"PO-Revision-Date: 2014-05-25 20:20+0000\n"
+"POT-Creation-Date: 2014-11-03 12:35+0100\n"
+"PO-Revision-Date: 2014-11-04 12:02+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
@@ -14,8 +14,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2014-10-31 00:59+0000\n"
-"X-Generator: Launchpad (build 17211)\n"
+"X-Launchpad-Export-Date: 2014-11-11 11:34+0000\n"
+"X-Generator: Launchpad (build 17241)\n"
 
 #: panels/color/cc-color-panel.c:106
 msgid "Other profile…"
@@ -145,6 +145,21 @@ msgstr[2] "%i tjedana"
 msgid "Less than 1 week"
 msgstr "Manje od jednog tjedna"
 
+#: panels/color/cc-color-panel.c:1585
+msgctxt "Colorspace fallback"
+msgid "Default RGB"
+msgstr "Uobičajeni RGB"
+
+#: panels/color/cc-color-panel.c:1590
+msgctxt "Colorspace fallback"
+msgid "Default CMYK"
+msgstr "Uobičajeni CMYK"
+
+#: panels/color/cc-color-panel.c:1595
+msgctxt "Colorspace fallback"
+msgid "Default Gray"
+msgstr "Uobičajeno sivo"
+
 #: panels/color/cc-color-panel.c:1713 panels/color/cc-color-panel.c:1754
 #: panels/color/cc-color-panel.c:1765 panels/color/cc-color-panel.c:1776
 msgid "Uncalibrated"
@@ -177,6 +192,31 @@ msgstr "Nije određeno"
 #: panels/color/cc-color-panel.c:2014
 msgid "No devices supporting color management detected"
 msgstr "Nisu pronađeni uređaji koji podržavaju upravljanje bojama."
+
+#: panels/color/cc-color-panel.c:2243
+msgctxt "Device kind"
+msgid "Display"
+msgstr "Zaslon"
+
+#: panels/color/cc-color-panel.c:2245
+msgctxt "Device kind"
+msgid "Scanner"
+msgstr "Skener"
+
+#: panels/color/cc-color-panel.c:2247
+msgctxt "Device kind"
+msgid "Printer"
+msgstr "Pisač"
+
+#: panels/color/cc-color-panel.c:2249
+msgctxt "Device kind"
+msgid "Camera"
+msgstr "Kamera"
+
+#: panels/color/cc-color-panel.c:2251
+msgctxt "Device kind"
+msgid "Webcam"
+msgstr "Web kamera"
 
 #: panels/common/cc-common-language.c:533
 msgid "English"
@@ -238,6 +278,26 @@ msgstr "Odaberite regiju"
 msgid "Unspecified"
 msgstr "Neodređeno"
 
+#: panels/display/cc-display-panel.c:482
+msgctxt "display panel, rotation"
+msgid "Normal"
+msgstr "Normalno"
+
+#: panels/display/cc-display-panel.c:483
+msgctxt "display panel, rotation"
+msgid "Counterclockwise"
+msgstr "Obrnuti smjer kazaljke sata"
+
+#: panels/display/cc-display-panel.c:484
+msgctxt "display panel, rotation"
+msgid "Clockwise"
+msgstr "U smjeru kazaljke sata"
+
+#: panels/display/cc-display-panel.c:485
+msgctxt "display panel, rotation"
+msgid "180 Degrees"
+msgstr "Za 180 stupnjeva"
+
 #: panels/display/cc-display-panel.c:624 panels/display/cc-rr-labeler.c:449
 msgid "Mirrored Displays"
 msgstr "Zrcalni zasloni"
@@ -288,7 +348,7 @@ msgstr "Način _rada u zrakoplovu"
 
 #: panels/network/cc-network-panel.c:968
 msgid "Network Proxy"
-msgstr ""
+msgstr "Mrežni proxy"
 
 #: panels/network/cc-network-panel.c:1147 panels/network/net-vpn.c:278
 #: panels/network/net-vpn.c:431
@@ -307,7 +367,7 @@ msgstr ""
 #: panels/network/net-device-bond.c:102 panels/network/net-device-bridge.c:102
 #: panels/network/net-device-team.c:102
 msgid "(none)"
-msgstr ""
+msgstr "(nijedan)"
 
 #: panels/network/net-device-bridge.c:77
 msgid "Bridge slaves"
@@ -398,12 +458,12 @@ msgstr "Žično"
 #: panels/network/network-ethernet.ui.h:3 panels/network/network-mobile.ui.h:8
 #: panels/network/network-vpn.ui.h:8
 msgid "Options…"
-msgstr ""
+msgstr "Mogućnosti…"
 
 #: panels/network/net-device-ethernet.c:469
 #, c-format
 msgid "Profile %d"
-msgstr ""
+msgstr "Profil %d"
 
 #: panels/network/net-device-mobile.c:232
 msgid "Add new connection"
@@ -430,11 +490,43 @@ msgstr "WPA2"
 msgid "Enterprise"
 msgstr "Enterprise"
 
+#: panels/network/net-device-wifi.c:235 panels/network/net-device-wifi.c:368
+msgctxt "Wifi security"
+msgid "None"
+msgstr "Nikakva"
+
+#: panels/network/net-device-wifi.c:558
+msgctxt "Signal strength"
+msgid "Terrible"
+msgstr "Loša"
+
+#: panels/network/net-device-wifi.c:560
+msgctxt "Signal strength"
+msgid "Weak"
+msgstr "Slaba"
+
+#: panels/network/net-device-wifi.c:562
+msgctxt "Signal strength"
+msgid "Ok"
+msgstr "Zadovoljavajuća"
+
+#: panels/network/net-device-wifi.c:564
+msgctxt "Signal strength"
+msgid "Good"
+msgstr "Dobra"
+
+#: panels/network/net-device-wifi.c:566
+msgctxt "Signal strength"
+msgid "Excellent"
+msgstr "Izvrsna"
+
 #: panels/network/net-device-wifi.c:1153
 msgid ""
 "If you have a connection to the Internet other than wireless, you can set up "
 "a wireless hotspot to share the connection with others."
 msgstr ""
+"Ako niste povezani na Internet bežičnim putem, možete postaviti bežičnu "
+"pristupnu točku za dijeljenje veze s ostalim korisnicima."
 
 #: panels/network/net-device-wifi.c:1157
 #, c-format
@@ -447,6 +539,8 @@ msgid ""
 "It is not possible to access the Internet through your wireless while the "
 "hotspot is active."
 msgstr ""
+"Pristup Internetu nije moguć putem vaše bežične veze dok je pristupna točka "
+"aktivna."
 
 #: panels/network/net-device-wifi.c:1238
 msgid "Stop hotspot and disconnect any users?"
@@ -463,46 +557,53 @@ msgstr "_Zaustavi pristupnu točku"
 
 #: panels/network/net-device-wifi.c:1313
 msgid "System policy prohibits use as a Hotspot"
-msgstr ""
+msgstr "Pravila sustava ne dozvoljavaju korištenje kao pristupne točke"
 
 #: panels/network/net-device-wifi.c:1316
 msgid "Wireless device does not support Hotspot mode"
-msgstr ""
+msgstr "Bežični uređaj ne podržava način pristupne točke"
 
 #: panels/network/net-device-wifi.c:1445
 msgid ""
 "Network details for the selected networks, including passwords and any "
 "custom configuration will be lost."
 msgstr ""
+"Mrežne pojedinosti za odabrane mreže, uključujući lozinke i sve prilagođene "
+"postavke će biti izgubljene."
 
 #: panels/network/net-device-wifi.c:1449 panels/network/network-wifi.ui.h:46
 #: panels/network/connection-editor/reset-page.ui.h:2
 msgid "_Forget"
-msgstr ""
+msgstr "_Zaboravi"
 
 #: panels/network/net-device-wifi.c:1603
 msgid "Preferences"
-msgstr ""
+msgstr "Osobitosti"
 
 #: panels/network/net-device-wifi.c:1609
 msgid "Options"
-msgstr ""
+msgstr "Mogućnosti"
 
 #: panels/network/net-device-wifi.c:1627
 msgid "Connect"
-msgstr ""
+msgstr "Poveži se"
 
 #: panels/network/net-device-wifi.c:1650
 msgid "Disconnect"
-msgstr ""
+msgstr "Odspoji se"
 
 #: panels/network/net-device-wifi.c:1864
 msgid "Known Networks"
-msgstr ""
+msgstr "Poznate mreže"
 
 #: panels/network/net-device-wifi.c:1868
 msgid "_Close"
-msgstr ""
+msgstr "_Zatvori"
+
+#: panels/network/net-device-wifi.c:1876
+msgctxt "Wi-Fi Network"
+msgid "_Forget"
+msgstr "_Zaboravi"
 
 #: panels/network/net-proxy.c:67
 msgid ""
@@ -879,6 +980,36 @@ msgstr "Računalo"
 msgid "Battery"
 msgstr "Baterija"
 
+#: panels/power/cc-power-panel.c:546
+msgctxt "Battery power"
+msgid "Charging"
+msgstr "Punjenje"
+
+#: panels/power/cc-power-panel.c:553
+msgctxt "Battery power"
+msgid "Caution"
+msgstr "Oprez"
+
+#: panels/power/cc-power-panel.c:558
+msgctxt "Battery power"
+msgid "Low"
+msgstr "Niska"
+
+#: panels/power/cc-power-panel.c:563
+msgctxt "Battery power"
+msgid "Good"
+msgstr "Dobra"
+
+#: panels/power/cc-power-panel.c:568
+msgctxt "Battery power"
+msgid "Charging - fully charged"
+msgstr "Punjenje - potpuno napunjena"
+
+#: panels/power/cc-power-panel.c:572
+msgctxt "Battery power"
+msgid "Empty"
+msgstr "Prazna"
+
 #: panels/region/cinnamon-region-panel-xkblt.c:210
 msgid "Layout"
 msgstr "Izgled"
@@ -917,6 +1048,36 @@ msgstr "Ulaz"
 msgid "Microphone Volume"
 msgstr "Glasnoća zvuka mikrofona"
 
+#: panels/sound/gvc-balance-bar.c:111 panels/sound-nua/gvc-balance-bar.c:111
+msgctxt "balance"
+msgid "Left"
+msgstr "Lijevo"
+
+#: panels/sound/gvc-balance-bar.c:112 panels/sound-nua/gvc-balance-bar.c:112
+msgctxt "balance"
+msgid "Right"
+msgstr "Desno"
+
+#: panels/sound/gvc-balance-bar.c:115 panels/sound-nua/gvc-balance-bar.c:115
+msgctxt "balance"
+msgid "Rear"
+msgstr "Straga"
+
+#: panels/sound/gvc-balance-bar.c:116 panels/sound-nua/gvc-balance-bar.c:116
+msgctxt "balance"
+msgid "Front"
+msgstr "Sprijeda"
+
+#: panels/sound/gvc-balance-bar.c:119 panels/sound-nua/gvc-balance-bar.c:119
+msgctxt "balance"
+msgid "Minimum"
+msgstr "Najmanje"
+
+#: panels/sound/gvc-balance-bar.c:120 panels/sound-nua/gvc-balance-bar.c:120
+msgctxt "balance"
+msgid "Maximum"
+msgstr "Najviše"
+
 #: panels/sound/gvc-balance-bar.c:295 panels/sound-nua/gvc-balance-bar.c:295
 msgid "_Balance:"
 msgstr "_Uravnoteženje:"
@@ -928,6 +1089,16 @@ msgstr "_Iščezavanje"
 #: panels/sound/gvc-balance-bar.c:301 panels/sound-nua/gvc-balance-bar.c:301
 msgid "_Subwoofer:"
 msgstr "_Subwoofer:"
+
+#: panels/sound/gvc-channel-bar.c:613 panels/sound/gvc-channel-bar.c:623
+msgctxt "volume"
+msgid "100%"
+msgstr "100%"
+
+#: panels/sound/gvc-channel-bar.c:617
+msgctxt "volume"
+msgid "Unamplified"
+msgstr "Nepojačano"
 
 #: panels/sound/gvc-combo-box.c:167 panels/sound/gvc-mixer-dialog.c:258
 #: panels/sound/gvc-mixer-dialog.c:519
@@ -1099,7 +1270,7 @@ msgstr "Prebacivanje radnog prostora::"
 
 #: panels/sound-nua/gvc-mixer-dialog.c:2076
 msgid "Opening new windows:"
-msgstr ""
+msgstr "Otvaranje novog prozora:"
 
 #: panels/sound-nua/gvc-mixer-dialog.c:2077
 msgid "Closing windows:"
@@ -1141,6 +1312,31 @@ msgstr "Napuštanje Cinnamona:"
 msgid "No shortcut set"
 msgstr "Nije postavljen prečac"
 
+#: panels/universal-access/zoom-options.c:358
+msgctxt "Distance"
+msgid "Short"
+msgstr "Kratka"
+
+#: panels/universal-access/zoom-options.c:359
+msgctxt "Distance"
+msgid "¼ Screen"
+msgstr "¼ zaslona"
+
+#: panels/universal-access/zoom-options.c:360
+msgctxt "Distance"
+msgid "½ Screen"
+msgstr "½ zaslona"
+
+#: panels/universal-access/zoom-options.c:361
+msgctxt "Distance"
+msgid "¾ Screen"
+msgstr "¾ zaslona"
+
+#: panels/universal-access/zoom-options.c:362
+msgctxt "Distance"
+msgid "Long"
+msgstr "Duga"
+
 #: panels/wacom/cc-wacom-mapping-panel.c:275
 msgid "Output:"
 msgstr "Izlaz:"
@@ -1158,6 +1354,36 @@ msgstr "Mapiraj na jedan monitor"
 msgid "%d of %d"
 msgstr "%d od %d"
 
+#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
+msgctxt "Wacom action-type"
+msgid "None"
+msgstr "Nikakva"
+
+#: panels/wacom/cc-wacom-page.c:119
+msgctxt "Wacom action-type"
+msgid "Send Keystroke"
+msgstr "Pošalji pritisak tipke"
+
+#: panels/wacom/cc-wacom-page.c:120
+msgctxt "Wacom action-type"
+msgid "Switch Monitor"
+msgstr "Prebaci monitor"
+
+#: panels/wacom/cc-wacom-page.c:121
+msgctxt "Wacom action-type"
+msgid "Show On-Screen Help"
+msgstr "Prikaži zaslonsku pomoć"
+
+#: panels/wacom/cc-wacom-page.c:622
+msgctxt "Wacom tablet button"
+msgid "Up"
+msgstr "Gore"
+
+#: panels/wacom/cc-wacom-page.c:622
+msgctxt "Wacom tablet button"
+msgid "Down"
+msgstr "Dolje"
+
 #: panels/wacom/cc-wacom-page.c:663
 msgid "Switch Modes"
 msgstr "Prebaci načine rada"
@@ -1174,7 +1400,7 @@ msgstr "Vrsta"
 msgid "Action"
 msgstr "Radnja"
 
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:922
 msgid "Display Mapping"
 msgstr "Prikaži mapiranje"
 
@@ -1500,7 +1726,7 @@ msgstr "_Otkrij zaslone"
 
 #: panels/network/network-ethernet.ui.h:2
 msgid "_Add Profile…"
-msgstr ""
+msgstr "_Dodaj profil…"
 
 #: panels/network/network-mobile.ui.h:1
 msgid "IMEI"
@@ -1513,6 +1739,21 @@ msgstr "Pružatelj usluge"
 #: panels/network/network-mobile.ui.h:7 generate_additional_files.py:149
 msgid "Network"
 msgstr "Mreža"
+
+#: panels/network/network-proxy.ui.h:1 panels/network/network.ui.h:4
+msgctxt "proxy method"
+msgid "None"
+msgstr "Nijedan"
+
+#: panels/network/network-proxy.ui.h:2 panels/network/network.ui.h:5
+msgctxt "proxy method"
+msgid "Manual"
+msgstr "Ručno"
+
+#: panels/network/network-proxy.ui.h:3 panels/network/network.ui.h:6
+msgctxt "proxy method"
+msgid "Automatic"
+msgstr "Automatski"
 
 #: panels/network/network-proxy.ui.h:4
 msgid "_Method"
@@ -1540,27 +1781,27 @@ msgstr "_Socks računalo"
 
 #: panels/network/network-proxy.ui.h:10
 msgid "_Ignore Hosts"
-msgstr ""
+msgstr "_Zanemari računala"
 
 #: panels/network/network-proxy.ui.h:11
 msgid "HTTP proxy port"
-msgstr ""
+msgstr "HTTP proxy ulaz"
 
 #: panels/network/network-proxy.ui.h:12
 msgid "HTTPS proxy port"
-msgstr ""
+msgstr "HTTPS proxy ulaz"
 
 #: panels/network/network-proxy.ui.h:13
 msgid "FTP proxy port"
-msgstr ""
+msgstr "FTP proxy ulaz"
 
 #: panels/network/network-proxy.ui.h:14
 msgid "Socks proxy port"
-msgstr ""
+msgstr "Socks proxy ulaz"
 
 #: panels/network/network-simple.ui.h:1
 msgid "Connection"
-msgstr ""
+msgstr "Povezivanje"
 
 #: panels/network/network.ui.h:1 panels/network/network-vpn.ui.h:1
 msgid "VPN"
@@ -1596,40 +1837,40 @@ msgstr "Korisničko ime"
 
 #: panels/network/network-vpn.ui.h:7
 msgid "Turn VPN connection off"
-msgstr ""
+msgstr "Isključi VPN povezivanje"
 
 #: panels/network/network-wifi.ui.h:1
 msgid "Details"
-msgstr ""
+msgstr "Pojedinosti"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Identity"
-msgstr ""
+msgstr "Identitet"
 
 #: panels/network/network-wifi.ui.h:3
 msgid "IPv4"
-msgstr ""
+msgstr "IPv4"
 
 #: panels/network/network-wifi.ui.h:4
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Hardware"
-msgstr ""
+msgstr "Hardver"
 
 #: panels/network/network-wifi.ui.h:6
 msgid "Reset"
-msgstr ""
+msgstr "Vrati izvorno"
 
 #: panels/network/network-wifi.ui.h:7
 msgid "Automatic _Connect"
-msgstr ""
+msgstr "Automatsko _povezivanje"
 
 #: panels/network/network-wifi.ui.h:8
 #: panels/network/connection-editor/details-page.ui.h:1
 msgid "Signal Strength"
-msgstr ""
+msgstr "Jačina signala"
 
 #: panels/network/network-wifi.ui.h:9
 #: panels/network/connection-editor/details-page.ui.h:2
@@ -1643,22 +1884,22 @@ msgstr "Sigurnost"
 
 #: panels/network/network-wifi.ui.h:17
 msgid "details"
-msgstr ""
+msgstr "pojedinosti"
 
 #: panels/network/network-wifi.ui.h:18
 #: panels/network/connection-editor/wifi-page.ui.h:1
 msgid "_SSID"
-msgstr ""
+msgstr "_SSID"
 
 #: panels/network/network-wifi.ui.h:19
 #: panels/network/connection-editor/wifi-page.ui.h:2
 msgid "_BSSID"
-msgstr ""
+msgstr "_BSSID"
 
 #: panels/network/network-wifi.ui.h:20
 #: panels/network/connection-editor/security-page.ui.h:1
 msgid "S_ecurity"
-msgstr ""
+msgstr "S_igurnost"
 
 #: panels/network/network-wifi.ui.h:21
 #: panels/network/wireless-security/eap-method-leap.ui.h:2
@@ -1666,12 +1907,12 @@ msgstr ""
 #: panels/network/wireless-security/ws-leap.ui.h:2
 #: panels/network/wireless-security/ws-wpa-psk.ui.h:1
 msgid "_Password"
-msgstr ""
+msgstr "_Lozinka"
 
 #: panels/network/network-wifi.ui.h:22
 #: panels/network/connection-editor/wifi-page.ui.h:3
 msgid "My Home Network"
-msgstr ""
+msgstr "Moja kućna mreža"
 
 #: panels/network/network-wifi.ui.h:24 panels/universal-access/uap.ui.h:8
 msgid "None"
@@ -1679,118 +1920,122 @@ msgstr "Nikakvo"
 
 #: panels/network/network-wifi.ui.h:25
 msgid "Show P_assword"
-msgstr ""
+msgstr "Prikaži l_ozinku"
 
 #: panels/network/network-wifi.ui.h:26
 msgid "Make available to other users"
-msgstr ""
+msgstr "Učini dostupnim ostalim korisnicima"
 
 #: panels/network/network-wifi.ui.h:27
 msgid "identity"
-msgstr ""
+msgstr "identitet"
 
 #: panels/network/network-wifi.ui.h:28
 #: panels/network/connection-editor/ip4-page.ui.h:1
 msgid "IPv_4"
-msgstr ""
+msgstr "IPv_4"
 
 #: panels/network/network-wifi.ui.h:29
 #: panels/network/connection-editor/ip4-page.ui.h:2
 #: panels/network/connection-editor/ip6-page.ui.h:2
 msgid "_Addresses"
-msgstr ""
+msgstr "_Adrese"
 
 #: panels/network/network-wifi.ui.h:30
 msgid "Manual"
-msgstr ""
+msgstr "Ručno"
 
 #: panels/network/network-wifi.ui.h:31
 msgid "Automatic (DHCP)"
-msgstr ""
+msgstr "Automatski (DHCP)"
 
 #: panels/network/network-wifi.ui.h:32
 msgid "Automatic (DHCP) addresses only"
-msgstr ""
+msgstr "Samo automatske (DHCP) adrese"
 
 #: panels/network/network-wifi.ui.h:33
 msgid "Link-local only"
-msgstr ""
+msgstr "Samo poveži lokalno"
 
 #: panels/network/network-wifi.ui.h:34
 msgid "Shared with other computers"
-msgstr ""
+msgstr "Podijeli s ostalim računalima"
 
 #: panels/network/network-wifi.ui.h:36
 #: panels/network/connection-editor/ip4-page.ui.h:6
 #: panels/network/connection-editor/ip6-page.ui.h:6
 msgid "Routes"
-msgstr ""
+msgstr "Rute"
 
 #: panels/network/network-wifi.ui.h:37
 msgid "_Ignore automatically obtained routes"
-msgstr ""
+msgstr "_Zanemari automatski dobivene rute"
 
 #: panels/network/network-wifi.ui.h:38
 #: panels/network/connection-editor/ip4-page.ui.h:8
 #: panels/network/connection-editor/ip6-page.ui.h:8
 msgid "Use this connection _only for resources on its network"
-msgstr ""
+msgstr "Koristi ovo povezivanje _samo za resurse na svojoj mreži"
 
 #: panels/network/network-wifi.ui.h:39
 msgid "ipv4"
-msgstr ""
+msgstr "ipv4"
 
 #: panels/network/network-wifi.ui.h:40
 #: panels/network/connection-editor/ip6-page.ui.h:1
 msgid "IPv_6"
-msgstr ""
+msgstr "IPv_6"
 
 #: panels/network/network-wifi.ui.h:41
 msgid "ipv6"
-msgstr ""
+msgstr "ipv6"
 
 #: panels/network/network-wifi.ui.h:42
 #: panels/network/connection-editor/ethernet-page.ui.h:11
 #: panels/network/connection-editor/wifi-page.ui.h:4
 msgid "_MAC Address"
-msgstr ""
+msgstr "_MAC adresa"
 
 #: panels/network/network-wifi.ui.h:43
 msgid "_Cloned MAC Address"
-msgstr ""
+msgstr "_Klonirana MAC adresa"
 
 #: panels/network/network-wifi.ui.h:44
 msgid "hardware"
-msgstr ""
+msgstr "hardver"
 
 #: panels/network/network-wifi.ui.h:45
 #: panels/network/connection-editor/reset-page.ui.h:1
 msgid "_Reset"
-msgstr ""
+msgstr "_Vrati izvorno"
 
 #: panels/network/network-wifi.ui.h:47
 msgid ""
 "Reset the settings for this connection to their defaults, but remember as a "
 "preferred connection."
 msgstr ""
+"Vraćanje postavki za ovu mrežu na izvorne vrijednosti, ali kao prioritetnu "
+"mrežu."
 
 #: panels/network/network-wifi.ui.h:48
 msgid ""
 "Remove all details relating to this network and do not try to automatically "
 "connect to it."
 msgstr ""
+"Uklanjanje svih pojedinosti povezanih s ovom mrežom i nemojte se pokušati "
+"automatski povezati s njom."
 
 #: panels/network/network-wifi.ui.h:49
 msgid "reset"
-msgstr ""
+msgstr "vrati izvorno"
 
 #: panels/network/network-wifi.ui.h:50
 msgid "Create a Wireless Hotspot"
-msgstr ""
+msgstr "Stvori bežičnu pristupnu točku"
 
 #: panels/network/network-wifi.ui.h:51
 msgid "Wi-Fi Hotspot"
-msgstr ""
+msgstr "Wi-Fi pristupna točka"
 
 #: panels/network/network-wifi.ui.h:52
 msgid "_Turn On"
@@ -1798,15 +2043,15 @@ msgstr "_Uključi"
 
 #: panels/network/network-wifi.ui.h:53
 msgid "Wi-Fi"
-msgstr ""
+msgstr "Wi-Fi"
 
 #: panels/network/network-wifi.ui.h:54
 msgid "_Known Networks"
-msgstr ""
+msgstr "_Poznate mreže"
 
 #: panels/network/network-wifi.ui.h:55
 msgid "_Create a Wireless Hotspot"
-msgstr ""
+msgstr "_Stvori bežičnu pristupnu točku"
 
 #: panels/network/network-wifi.ui.h:56
 msgid "Connect to a Hidden Network"
@@ -1814,7 +2059,7 @@ msgstr "Poveži se na skrivenu mrežu"
 
 #: panels/network/network-wifi.ui.h:57
 msgid "Switch off to connect to a Wi-Fi network"
-msgstr ""
+msgstr "Isključi povezivanje s Wi-Fi mrežom"
 
 #: panels/network/network-wifi.ui.h:58
 msgid "Network Name"
@@ -1849,78 +2094,86 @@ msgid "10 minutes"
 msgstr "10 minuta"
 
 #: panels/power/power.ui.h:5
+msgid "15 minutes"
+msgstr "15 minuta"
+
+#: panels/power/power.ui.h:6
 msgid "30 minutes"
 msgstr "30 minuta"
 
-#: panels/power/power.ui.h:6
+#: panels/power/power.ui.h:7
+msgid "45 minutes"
+msgstr "45 minuta"
+
+#: panels/power/power.ui.h:8
 msgid "1 hour"
 msgstr "1 sat"
 
-#: panels/power/power.ui.h:7
+#: panels/power/power.ui.h:9
 msgid "Never"
 msgstr "Nikada"
 
-#: panels/power/power.ui.h:8
+#: panels/power/power.ui.h:10
 msgid "When battery is present"
 msgstr "Kada je baterija prisutna"
 
-#: panels/power/power.ui.h:9
+#: panels/power/power.ui.h:11
 msgid "When battery is charging/in use"
 msgstr "Kada se baterija puni/koristi"
 
-#: panels/power/power.ui.h:10
+#: panels/power/power.ui.h:12
 msgid "Suspend"
 msgstr "Suspendiraj"
 
-#: panels/power/power.ui.h:11
+#: panels/power/power.ui.h:13
 msgid "Do nothing"
 msgstr "Ne čini ništa"
 
-#: panels/power/power.ui.h:12
+#: panels/power/power.ui.h:14
 msgid "Lock Screen"
 msgstr "Zaključaj zaslon"
 
-#: panels/power/power.ui.h:13
+#: panels/power/power.ui.h:15
 msgid "Shutdown Immediately"
 msgstr "Odmah isključi"
 
-#: panels/power/power.ui.h:14
+#: panels/power/power.ui.h:16
 msgid "Ask"
 msgstr "Upitaj"
 
-#: panels/power/power.ui.h:15
+#: panels/power/power.ui.h:17
 msgid "On battery power"
 msgstr "Na bateriji"
 
-#: panels/power/power.ui.h:16
+#: panels/power/power.ui.h:18
 msgid "On A/C power"
 msgstr "Na napajanju"
 
-#: panels/power/power.ui.h:17
+#: panels/power/power.ui.h:19
 msgid "When the lid is closed"
 msgstr "Kad se spusti zaslon"
 
-#: panels/power/power.ui.h:18
+#: panels/power/power.ui.h:20
 msgid "When the power button is pressed"
 msgstr "Kada je tipka isključivanja pritisnuta"
 
-#: panels/power/power.ui.h:19
+#: panels/power/power.ui.h:21
 msgid "When the battery is critically low"
-msgstr ""
+msgstr "Kada je baterija kritično prazna"
 
-#: panels/power/power.ui.h:20
+#: panels/power/power.ui.h:22
 msgid "Suspend when inactive for"
 msgstr "Suspendiraj kada je neaktivno"
 
-#: panels/power/power.ui.h:21
+#: panels/power/power.ui.h:23
 msgid "Turn off the screen when inactive for"
 msgstr "Isključi zaslon kada je neaktivan"
 
-#: panels/power/power.ui.h:22
+#: panels/power/power.ui.h:24
 msgid "<b>Power Options</b>"
 msgstr "<b>Mogućnosti energije</b>"
 
-#: panels/power/power.ui.h:23
+#: panels/power/power.ui.h:25
 msgid "<b>Battery Status</b>"
 msgstr "<b>Stanje baterije</b>"
 
@@ -2000,6 +2253,26 @@ msgstr ""
 "Zamjeni trenutni raspored tipkovnice s\n"
 "uobičajenim postavkama"
 
+#: panels/universal-access/uap.ui.h:1
+msgctxt "universal access, contrast"
+msgid "Low"
+msgstr "Nizak"
+
+#: panels/universal-access/uap.ui.h:2
+msgctxt "universal access, contrast"
+msgid "Normal"
+msgstr "Normalan"
+
+#: panels/universal-access/uap.ui.h:3
+msgctxt "universal access, contrast"
+msgid "High"
+msgstr "Visok"
+
+#: panels/universal-access/uap.ui.h:4
+msgctxt "universal access, contrast"
+msgid "High/Inverse"
+msgstr "Visoki/Obrnuti"
+
 #: panels/universal-access/uap.ui.h:5
 msgid "On screen keyboard"
 msgstr "Zaslonska tipkovnica"
@@ -2017,20 +2290,40 @@ msgstr "OnBoard"
 msgid "75%"
 msgstr "75%"
 
+#: panels/universal-access/uap.ui.h:11
+msgctxt "universal access, text size"
+msgid "Small"
+msgstr "Mala"
+
 #: panels/universal-access/uap.ui.h:13
 #, no-c-format
 msgid "100%"
 msgstr "100%"
+
+#: panels/universal-access/uap.ui.h:14
+msgctxt "universal access, text size"
+msgid "Normal"
+msgstr "Normalna"
 
 #: panels/universal-access/uap.ui.h:16
 #, no-c-format
 msgid "125%"
 msgstr "125%"
 
+#: panels/universal-access/uap.ui.h:17
+msgctxt "universal access, text size"
+msgid "Large"
+msgstr "Velika"
+
 #: panels/universal-access/uap.ui.h:19
 #, no-c-format
 msgid "150%"
 msgstr "150%"
+
+#: panels/universal-access/uap.ui.h:20
+msgctxt "universal access, text size"
+msgid "Larger"
+msgstr "Veća"
 
 #: panels/universal-access/uap.ui.h:21
 msgid "High Contrast"
@@ -2051,6 +2344,11 @@ msgstr "Čitač zaslona"
 #: panels/universal-access/uap.ui.h:25
 msgid "Turn on or off:"
 msgstr "Uključi ili isključi:"
+
+#: panels/universal-access/uap.ui.h:26
+msgctxt "universal access, zoom"
+msgid "Zoom"
+msgstr "Zumiranje"
 
 #: panels/universal-access/uap.ui.h:27
 msgid "Zoom in:"
@@ -2364,6 +2662,21 @@ msgstr "Svjetlina:"
 msgid "Contrast:"
 msgstr "Kontrast:"
 
+#: panels/universal-access/zoom-options.ui.h:30
+msgctxt "Zoom Grayscale"
+msgid "Color"
+msgstr "Boja"
+
+#: panels/universal-access/zoom-options.ui.h:31
+msgctxt "Zoom Grayscale"
+msgid "None"
+msgstr "Nijedna"
+
+#: panels/universal-access/zoom-options.ui.h:32
+msgctxt "Zoom Grayscale"
+msgid "Full"
+msgstr "Potpuna"
+
 #: panels/universal-access/zoom-options.ui.h:34
 msgid "Low"
 msgstr "Nisko"
@@ -2421,6 +2734,7 @@ msgid "Bluetooth Settings"
 msgstr "Bluetooth postavke"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:7
+#: generate_additional_files.py:194
 msgid "Graphics Tablet"
 msgstr "Grafički tablet"
 
@@ -2514,12 +2828,12 @@ msgstr "Osjet pritiska vrha"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
-msgstr ""
+msgstr "802.1x _sigurnost"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:2
 #: panels/network/connection-editor/security-page.ui.h:2
 msgid "page 1"
-msgstr ""
+msgstr "stranica 1"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:3
 #: panels/network/connection-editor/security-page.ui.h:3
@@ -2527,142 +2841,144 @@ msgstr ""
 #: panels/network/wireless-security/eap-method-peap.ui.h:5
 #: panels/network/wireless-security/eap-method-ttls.ui.h:2
 msgid "Anony_mous identity"
-msgstr ""
+msgstr "Anoni_man identitet"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:4
 #: panels/network/connection-editor/security-page.ui.h:4
 msgid "Inner _authentication"
-msgstr ""
+msgstr "Unutarnja _autentifikacija"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:5
 #: panels/network/connection-editor/security-page.ui.h:5
 msgid "page 2"
-msgstr ""
+msgstr "stranica 2"
 
 #: panels/network/connection-editor/connection-editor.ui.h:1
 msgid "_Apply"
-msgstr ""
+msgstr "_Primijeni"
 
 #: panels/network/connection-editor/details-page.ui.h:9
 msgid "Last Used"
-msgstr ""
+msgstr "Zadnje korišteno"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:1
 #: panels/network/connection-editor/ip4-page.ui.h:4
 #: panels/network/connection-editor/ip6-page.ui.h:4
 #: panels/network/wireless-security/eap-method-peap.ui.h:2
 msgid "Automatic"
-msgstr ""
+msgstr "Automatski"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:2
 msgid "Twisted Pair (TP)"
-msgstr ""
+msgstr "Upleteni par (TP)"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:3
 msgid "Attachment Unit Interface (AUI)"
-msgstr ""
+msgstr "Dodatna jedinica sučelja (AUI)"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:4
 msgid "BNC"
-msgstr ""
+msgstr "BNC"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:5
 msgid "Media Independent Interface (MII)"
-msgstr ""
+msgstr "Medijski nezavisno sučelje (MII)"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:6
 msgid "10 Mb/s"
-msgstr ""
+msgstr "10 Mb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:7
 msgid "100 Mb/s"
-msgstr ""
+msgstr "100 Mb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:8
 msgid "1 Gb/s"
-msgstr ""
+msgstr "1 Gb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:9
 msgid "10 Gb/s"
-msgstr ""
+msgstr "10 Gb/s"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:10
 #: panels/network/connection-editor/vpn-page.ui.h:1
 msgid "_Name"
-msgstr ""
+msgstr "_Naziv"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:12
 msgid "M_TU"
-msgstr ""
+msgstr "M_TU"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:13
 #: panels/network/connection-editor/wifi-page.ui.h:5
 msgid "_Cloned Address"
-msgstr ""
+msgstr "_Klonirana adresa"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:14
 msgid "bytes"
-msgstr ""
+msgstr "bajta"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:15
 #: panels/network/connection-editor/vpn-page.ui.h:3
 msgid "Make available to other _users"
-msgstr ""
+msgstr "Učini dostupnim ostalim _korisnicima"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:16
 #: panels/network/connection-editor/wifi-page.ui.h:7
 msgid "Connect _automatically"
-msgstr ""
+msgstr "Poveži _automatski"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:17
 #: panels/network/connection-editor/vpn-page.ui.h:2
 #: panels/network/connection-editor/wifi-page.ui.h:8
 msgid "Firewall _Zone"
-msgstr ""
+msgstr "Vatrozid _zona"
 
 #: panels/network/connection-editor/ip4-page.ui.h:5
 #: panels/network/connection-editor/ip6-page.ui.h:5
 msgid "Automatic DNS"
-msgstr ""
+msgstr "Automatski DNS"
 
 #: panels/network/connection-editor/ip4-page.ui.h:7
 #: panels/network/connection-editor/ip6-page.ui.h:7
 msgid "Automatic Routes"
-msgstr ""
+msgstr "Automatske rute"
 
 #: panels/network/connection-editor/reset-page.ui.h:3
 msgid ""
 "Reset the settings for this network, including passwords, but remember it as "
 "a preferred network"
 msgstr ""
+"Vraćanje izvornih postavki za ovu mrežu, uključujući lozinke, ali kao "
+"prioritetnu mrežu."
 
 #: panels/network/connection-editor/reset-page.ui.h:4
 msgid ""
 "Remove all details relating to this network and do not try to automatically "
 "connect"
-msgstr ""
+msgstr "Ukloni sve pojedinosti ove mreže i nemoj se povezati automatski"
 
 #: panels/network/connection-editor/vpn-page.ui.h:4
 msgid "(Error: unable to load VPN connection editor)"
-msgstr ""
+msgstr "(Greška: nemoguće učitavanje uređivača VPN povezivanja)"
 
 #: panels/network/connection-editor/wifi-page.ui.h:6
 msgid "Make available to _other users"
-msgstr ""
+msgstr "Učini dostupnim _ostalim korisnicima"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:2
 msgid "PAC _file"
-msgstr ""
+msgstr "PAC _datoteka"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:3
 #: panels/network/wireless-security/eap-method-peap.ui.h:7
 #: panels/network/wireless-security/eap-method-ttls.ui.h:4
 msgid "_Inner authentication"
-msgstr ""
+msgstr "_Unutarnja autentifikacija"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:4
 msgid "PAC pro_visioning"
-msgstr ""
+msgstr "PAC dod_jeljivanje"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:5
 #: panels/network/wireless-security/eap-method-peap.ui.h:1
@@ -2670,25 +2986,25 @@ msgstr ""
 #: panels/network/wireless-security/ws-dynamic-wep.ui.h:1
 #: panels/network/wireless-security/ws-wpa-eap.ui.h:1
 msgid " "
-msgstr ""
+msgstr " "
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:6
 msgid "Anonymous"
-msgstr ""
+msgstr "Anonimno"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:7
 msgid "Authenticated"
-msgstr ""
+msgstr "Autentificirano"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:8
 msgid "Both"
-msgstr ""
+msgstr "Oboje"
 
 #: panels/network/wireless-security/eap-method-leap.ui.h:1
 #: panels/network/wireless-security/eap-method-simple.ui.h:1
 #: panels/network/wireless-security/ws-leap.ui.h:1
 msgid "_Username"
-msgstr ""
+msgstr "_Korisničko ime"
 
 #: panels/network/wireless-security/eap-method-leap.ui.h:3
 #: panels/network/wireless-security/eap-method-simple.ui.h:4
@@ -2696,103 +3012,103 @@ msgstr ""
 #: panels/network/wireless-security/ws-leap.ui.h:3
 #: panels/network/wireless-security/ws-wpa-psk.ui.h:3
 msgid "Sho_w password"
-msgstr ""
+msgstr "Pri_kaži lozinku"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:3
 msgid "Version 0"
-msgstr ""
+msgstr "Inačica 0"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:4
 msgid "Version 1"
-msgstr ""
+msgstr "Inačica 1"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:6
 #: panels/network/wireless-security/eap-method-tls.ui.h:3
 #: panels/network/wireless-security/eap-method-ttls.ui.h:3
 msgid "C_A certificate"
-msgstr ""
+msgstr "C_A certifikat"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:8
 msgid "PEAP _version"
-msgstr ""
+msgstr "PEAP _inačica"
 
 #: panels/network/wireless-security/eap-method-simple.ui.h:3
 msgid "As_k for this password every time"
-msgstr ""
+msgstr "Pit_aj za ovu lozinku svaki put"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:1
 msgid "I_dentity"
-msgstr ""
+msgstr "I_dentitet"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:2
 msgid "_User certificate"
-msgstr ""
+msgstr "_Korisnikov certifikat"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:4
 msgid "Private _key"
-msgstr ""
+msgstr "Privatni _ključ"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:5
 msgid "_Private key password"
-msgstr ""
+msgstr "_Lozinka privatnog ključa"
 
 #: panels/network/wireless-security/nag-user-dialog.ui.h:1
 msgid "Don't _warn me again"
-msgstr ""
+msgstr "Ne _upozoravaj me ponovno"
 
 #: panels/network/wireless-security/nag-user-dialog.ui.h:2
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: panels/network/wireless-security/nag-user-dialog.ui.h:3
 msgid "Yes"
-msgstr ""
+msgstr "Da"
 
 #: panels/network/wireless-security/ws-dynamic-wep.ui.h:2
 #: panels/network/wireless-security/ws-wep-key.ui.h:9
 #: panels/network/wireless-security/ws-wpa-eap.ui.h:2
 msgid "Au_thentication"
-msgstr ""
+msgstr "Au_tentifikacija"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:1
 msgid "1 (Default)"
-msgstr ""
+msgstr "1 (Uobičajeno)"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:2
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:3
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:4
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:5
 msgid "Open System"
-msgstr ""
+msgstr "Otvoreni sustav"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:6
 msgid "Shared Key"
-msgstr ""
+msgstr "Dijeljeni ključ"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:7
 msgid "_Key"
-msgstr ""
+msgstr "_Ključ"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:8
 msgid "Sho_w key"
-msgstr ""
+msgstr "Prika_ži ključ"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:10
 msgid "WEP inde_x"
-msgstr ""
+msgstr "WEP inde_ks"
 
 #: panels/network/wireless-security/ws-wpa-psk.ui.h:2
 msgid "_Type"
-msgstr ""
+msgstr "_Vrsta"
 
 #: generate_additional_files.py:27
 msgid "Brightness & Lock"
@@ -2839,8 +3155,8 @@ msgid "Change your region and language settings"
 msgstr "Promijenite vašu regiju i jezične postavke"
 
 #: generate_additional_files.py:134
-msgid "Displays"
-msgstr "Zasloni"
+msgid "Display"
+msgstr "Zaslon"
 
 #: generate_additional_files.py:134
 msgid "Change resolution and position of monitors and projectors"
@@ -2851,8 +3167,8 @@ msgid "Network settings"
 msgstr "Mrežne postavke"
 
 #: generate_additional_files.py:164
-msgid "Universal Access"
-msgstr "Univerzalni pristup"
+msgid "Accessibility"
+msgstr "Pristupačnost"
 
 #: generate_additional_files.py:164
 msgid "Universal Access Preferences"
@@ -2865,3 +3181,9 @@ msgstr "Datum i Vrijeme"
 #: generate_additional_files.py:179
 msgid "Date and Time preferences"
 msgstr "Osobitosti datuma i vremena"
+
+#: generate_additional_files.py:194
+msgid ""
+"Set button mappings and adjust stylus sensitivity for graphics tablets"
+msgstr ""
+"Postavi tipke mapiranja i prilagodi osjetljivost igle grafičkih tableta"
