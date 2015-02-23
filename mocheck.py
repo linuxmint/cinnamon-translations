@@ -256,6 +256,8 @@ class ThreadedTreeView(Gtk.TreeView):
             self._loading_queue_lock.release()
             if not finished:
                 for entry in to_load.mofile:
+                    if entry.obsolete:
+                        continue # skip obsolete translations (prefixed with #~ in po file)
                     res = self.check_entry(entry)
                     exclude_dates = self.datecheck.get_active()
                     if (res > GOOD and res < BAD_MISCOUNT_MAYBE_DATE) or \
