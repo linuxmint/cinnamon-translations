@@ -12,7 +12,7 @@ GObject.threads_init()
 
 ALLOWED = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 COMMON_DATE_TOKENS = "ABeHYDMSmyp"
-COMMON_INT_TOKENS = ["d", "'d", "ld", "B", "I"]
+COMMON_INT_TOKENS = ["d", "'d", "ld", "I"]
 COMMON_STR_TOKENS = ["s", "B"]
 COMMON_I_TOKENS = ["i", "li", "I"]
 DATE_THRESHOLD = 2
