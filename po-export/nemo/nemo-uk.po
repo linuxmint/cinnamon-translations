@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-21 11:02+0200\n"
-"PO-Revision-Date: 2015-05-30 15:22+0000\n"
+"PO-Revision-Date: 2015-06-14 11:33+0000\n"
 "Last-Translator: Микола Ткач <Stuartlittle1970@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2015-06-02 10:12+0000\n"
-"X-Generator: Launchpad (build 17532)\n"
+"X-Launchpad-Export-Date: 2015-06-26 13:19+0000\n"
+"X-Generator: Launchpad (build 17578)\n"
 
 #: src/nemo-action-config-widget.c:224
 msgid "No actions found"
@@ -90,13 +90,15 @@ msgid ""
 "Do not manage the desktop (ignore the preference set in the preferences "
 "dialog)."
 msgstr ""
-"Не керувати стільницею (ігнорувати параметр встановлений у вікні параметрів)"
+"Не керувати стільницею (нехтувати параметр встановлений у вікні параметрів)"
 
 #: src/nemo-application.c:893
 msgid ""
 "Repair the user thumbnail cache - this can be useful if you're having "
 "trouble with file thumbnails.  Must be run as root"
 msgstr ""
+"Відновлення користувацького кешу мініатюр може допомогти при проблемах з "
+"ними. Запускати від root"
 
 #: src/nemo-application.c:895
 msgid "Quit Nemo."
@@ -500,7 +502,7 @@ msgstr "Розширення"
 
 #: src/nemo-extension-config-widget.c:345
 msgid "Extensions changed.  Restart required."
-msgstr ""
+msgstr "Розширення змінені. Потрібен перезапуск"
 
 #: src/nemo-file-management-properties.c:279 src/nemo-properties-window.c:3945
 #: src/nemo-properties-window.c:3956
@@ -704,7 +706,7 @@ msgstr "Тип зображення"
 msgid "%d pixel"
 msgid_plural "%d pixels"
 msgstr[0] "%d піксель"
-msgstr[1] "%d пікселя"
+msgstr[1] "%d пікселі"
 msgstr[2] "%d пікселів"
 
 #: src/nemo-image-properties-page.c:337
@@ -835,7 +837,7 @@ msgstr "Зображення"
 msgid ""
 "Actions: Action files can be added to this folder and will appear in the "
 "menu."
-msgstr ""
+msgstr "Дії: файли дій у цій теці з’являться у меню"
 
 #: src/nemo-interesting-folder-bar.c:127 src/nemo-interesting-folder-bar.c:135
 msgid "More info"
@@ -843,16 +845,16 @@ msgstr "Додаткова інформація"
 
 #: src/nemo-interesting-folder-bar.c:129
 msgid "View a sample action file with documentation"
-msgstr ""
+msgstr "Перегляд прикладу файлу дій з коментарями"
 
 #: src/nemo-interesting-folder-bar.c:132
 msgid ""
 "Scripts: All executable files in this folder will appear in the Scripts menu."
-msgstr ""
+msgstr "Сценарії: виконувані файли у цій теці з’являться у меню сценаріїв"
 
 #: src/nemo-interesting-folder-bar.c:137
 msgid "View additional information about creating scripts"
-msgstr ""
+msgstr "Перегляд додаткових відомостей про створення сценаріїв"
 
 #: src/nemo-list-model.c:429 src/nemo-tree-sidebar-model.c:1242
 msgid "(Empty)"
@@ -1057,6 +1059,9 @@ msgid ""
 "Show an open-with dialog given a uri, to allow the user to change the "
 "default mimetype handler."
 msgstr ""
+"\n"
+"\n"
+"Відкрити діялоґ вибору проґрами з оглядом URI для вибору типових"
 
 #: src/nemo-places-sidebar.c:404
 msgid "Devices"
@@ -1605,7 +1610,7 @@ msgstr "Не вдається визначити права доступу \"%s\
 
 #: src/nemo-properties-window.c:4557
 msgid "The permissions of the selected file could not be determined."
-msgstr "Не вдалося визначити визначити права доступу на вибраний файл."
+msgstr "Не вдалося визначити права доступу на вибраний файл."
 
 #: src/nemo-properties-window.c:4791
 msgid "Open With"
@@ -1753,10 +1758,12 @@ msgid ""
 "A problem has been detected with your thumbnail cache.  Fixing it will "
 "require administrative privileges."
 msgstr ""
+"Виникла проблема з кешем значків. Для виправлення необхідні права "
+"адміністратора."
 
 #: src/nemo-thumbnail-problem-bar.c:115
 msgid "Fix now"
-msgstr ""
+msgstr "Виправити"
 
 #: src/nemo-thumbnail-problem-bar.c:118
 msgid "Dismiss"
@@ -2106,7 +2113,7 @@ msgstr "Відкрити теку, що містить"
 
 #: src/nemo-view.c:8081
 msgid "Navigate to the folder that the selected item is stored in"
-msgstr ""
+msgstr "Перейти до теки збереження виділеного об’єкту"
 
 #: src/nemo-view.c:8084
 msgid "Other _Application..."
@@ -3985,52 +3992,58 @@ msgstr " (%'d"
 #, c-format
 msgid "Waiting to copy a file from '%1$s' to '%2$s'"
 msgid_plural "Waiting to copy files from '%1$s' to '%2$s'"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Очікування копіювання файлу з '%1$s' у '%2$s'"
+msgstr[1] "Очікування копіювання файлів з '%1$s' у '%2$s'"
+msgstr[2] "Очікування копіювання файлів з '%1$s' у '%2$s'"
 
 #: libnemo-private/nemo-file-operations.c:994
 #, c-format
 msgid "Waiting to move a file from '%1$s' to '%2$s'"
 msgid_plural "Waiting to move files from '%1$s' to '%2$s'"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Очікування переміщення файлу з '%1$s' у '%2$s'"
+msgstr[1] "Очікування переміщення файлів з '%1$s' у '%2$s'"
+msgstr[2] "Очікування переміщення файлів з '%1$s' у '%2$s'"
 
 #: libnemo-private/nemo-file-operations.c:1002
 #, c-format
 msgid "Waiting to permanently delete a file from '%s'"
 msgid_plural "Waiting to permanently delete files from '%s'"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Очікування вилучення файлу з '%s'"
+msgstr[1] "Очікування вилучення файлів з '%s'"
+msgstr[2] "Очікування вилучення файлів з '%s'"
 
 #: libnemo-private/nemo-file-operations.c:1010
 #, c-format
 msgid "Waiting to trash a file in '%s'"
 msgid_plural "Waiting to trash files in '%s'"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Очікування вилучення файлу у смітник з '%s'"
+msgstr[1] "Очікування вилучення файлів у смітник з '%s'"
+msgstr[2] "Очікування вилучення файлів у смітник з '%s'"
 
 #: libnemo-private/nemo-file-operations.c:1016
 msgid "Waiting to empty the trash"
-msgstr ""
+msgstr "Очікування спорожнення смітника"
 
 #: libnemo-private/nemo-file-operations.c:1022
 #, c-format
 msgid "Waiting to duplicate a file in '%s'"
 msgid_plural "Waiting to duplicate files in '%s'"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Очікування дублювання об’єкту у \"%s\""
+msgstr[1] "Очікування дублювання об’єктів у \"%s\""
+msgstr[2] "Очікування дублювання об’єктів у \"%s\""
 
 #: libnemo-private/nemo-file-operations.c:1030
 #, c-format
 msgid "Waiting to change permissions of files in '%s'"
-msgstr ""
+msgstr "Очікування змінення прав файлів у \"%s\""
 
 #: libnemo-private/nemo-file-operations.c:1036
 #, c-format
 msgid "Waiting to link a file from '%1$s' to '%2$s'"
 msgid_plural "Waiting to link files from '%1$s' to '%2$s'"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Очікування створення посилання на файл з '%1$s' у '%2$s'"
+msgstr[1] "Очікування створення посилання на файли з '%1$s' у '%2$s'"
+msgstr[2] "Очікування створення посилання на файли з '%1$s' у '%2$s'"
 
 #: libnemo-private/nemo-file-operations.c:1447
 msgid "Are you sure you want to permanently delete \"%B\" from the trash?"
@@ -4934,13 +4947,15 @@ msgstr "Забути асоціяцію"
 
 #: libnemo-private/nemo-mime-application-chooser.c:265
 msgid "Valid executable."
-msgstr ""
+msgstr "Вірний виконуваний файл"
 
 #: libnemo-private/nemo-mime-application-chooser.c:272
 msgid ""
 "Not a valid executable.  Spaces in the file path must be escaped with "
 "backslash (\\)."
 msgstr ""
+"Невірний виконуваний файл. Пробіли у шляху повинні бути екрановані "
+"зворотньою косою рискою (\\)"
 
 #: libnemo-private/nemo-mime-application-chooser.c:402
 #: libnemo-private/nemo-mime-application-chooser.c:420
@@ -5518,7 +5533,7 @@ msgstr "<b>Контекстні меню</b>"
 msgid ""
 "Show all available actions in context menus (restart Nemo if you change this "
 "option)"
-msgstr ""
+msgstr "Показати усі доступні дії (потрібен перезапуск)"
 
 #: src/nemo-file-management-properties.glade:2211
 msgid "Display"
@@ -5587,6 +5602,8 @@ msgid ""
 "their size.\n"
 "    Select additional information to display in the tooltip:</i>"
 msgstr ""
+"<i>Для теки відображається лічильник об’єктів, для файлу розмір. Додатково "
+"показати:</i>"
 
 #: src/nemo-file-management-properties.glade:2785
 msgid "Detailed file type"
@@ -5614,19 +5631,19 @@ msgstr "<b>Опції</b>"
 
 #: src/nemo-file-management-properties.glade:2927
 msgid "Show previous button"
-msgstr ""
+msgstr "Показати кнопку 'Назад'"
 
 #: src/nemo-file-management-properties.glade:2944
 msgid "Show next button"
-msgstr ""
+msgstr "Показати кнопку 'Вперед'"
 
 #: src/nemo-file-management-properties.glade:2960
 msgid "Show up button"
-msgstr ""
+msgstr "Показати кнопку 'Вверх'"
 
 #: src/nemo-file-management-properties.glade:2976
 msgid "Show refresh button"
-msgstr ""
+msgstr "Показати кнопку 'Оновити'"
 
 #: src/nemo-file-management-properties.glade:2992
 msgid "Show computer button"
@@ -5638,31 +5655,31 @@ msgstr "Відображати кнопку \"Домівка\""
 
 #: src/nemo-file-management-properties.glade:3024
 msgid "Show location entry/breadcrumbs toggle button"
-msgstr ""
+msgstr "Показати кнопку перемикання відображення шляху"
 
 #: src/nemo-file-management-properties.glade:3040
 msgid "Show open in terminal button"
-msgstr ""
+msgstr "Показати кнопку 'Термінал'"
 
 #: src/nemo-file-management-properties.glade:3056
 msgid "Show new folder button"
-msgstr ""
+msgstr "Показати кнопку 'Нова тека'"
 
 #: src/nemo-file-management-properties.glade:3072
 msgid "Show search button"
-msgstr ""
+msgstr "Показати кнопку 'Пошук'"
 
 #: src/nemo-file-management-properties.glade:3088
 msgid "Show icon view button"
-msgstr ""
+msgstr "Кнопка 'перегляд піктограмами'"
 
 #: src/nemo-file-management-properties.glade:3104
 msgid "Show list view button"
-msgstr ""
+msgstr "Кнопка 'перегляд списком'"
 
 #: src/nemo-file-management-properties.glade:3120
 msgid "Show compact view button"
-msgstr ""
+msgstr "Кнопка 'компактний вид'"
 
 #: src/nemo-file-management-properties.glade:3157
 msgid "Toolbar"
@@ -5678,7 +5695,7 @@ msgstr "Керування робочими просторами (Expo)"
 
 #: data/action_i18n_strings.py:10
 msgid "Open Expo to add, remove, or organize workspaces"
-msgstr ""
+msgstr "Відкрити Expo для керування робочими просторами"
 
 #: data/action_i18n_strings.py:11
 msgid "Set as Wallpaper..."
@@ -5706,15 +5723,15 @@ msgstr "Вилучити робочий простір"
 
 #: data/action_i18n_strings.py:18
 msgid "Remove the currently active workspace"
-msgstr ""
+msgstr "Вилучити поточний робочий простір"
 
 #: data/action_i18n_strings.py:19
 msgid "Jump to new workspace"
-msgstr ""
+msgstr "Перейти на новий робочий простір"
 
 #: data/action_i18n_strings.py:20
 msgid "Create a new workspace and activate it"
-msgstr ""
+msgstr "Створити й активувати новий робочий простір"
 
 #: data/action_i18n_strings.py:21
 msgid "Mount archive"
