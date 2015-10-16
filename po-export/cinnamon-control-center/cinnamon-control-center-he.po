@@ -11,16 +11,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-19 17:13+0200\n"
-"PO-Revision-Date: 2014-05-03 18:45+0000\n"
-"Last-Translator: levi <levi0x0x@gmail.com>\n"
+"POT-Creation-Date: 2015-10-16 14:26+0100\n"
+"PO-Revision-Date: 2015-10-16 16:34+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2015-06-26 13:20+0000\n"
-"X-Generator: Launchpad (build 17578)\n"
+"X-Launchpad-Export-Date: 2015-10-16 17:39+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 "Language: he\n"
 "X-Poedit-Language: Hebrew\n"
 
@@ -127,21 +127,21 @@ msgstr "אין פרופיל"
 #, c-format
 msgid "%i year"
 msgid_plural "%i years"
-msgstr[0] "שנה אחת"
+msgstr[0] "%i שנים"
 msgstr[1] "%i שנים"
 
 #: panels/color/cc-color-panel.c:1496
 #, c-format
 msgid "%i month"
 msgid_plural "%i months"
-msgstr[0] "חודש אחד"
+msgstr[0] "%i חודשים"
 msgstr[1] "%i חודשים"
 
 #: panels/color/cc-color-panel.c:1507
 #, c-format
 msgid "%i week"
 msgid_plural "%i weeks"
-msgstr[0] "שבוע אחד"
+msgstr[0] "%i שבועות"
 msgstr[1] "%i שבועות"
 
 #: panels/color/cc-color-panel.c:1514
@@ -324,21 +324,20 @@ msgid ""
 msgstr ""
 "יש לבחור את הצג כדי לשנות את מאפייניו; יש לגרור אותו כדי לשנות את מיקומו."
 
-#: panels/display/cc-display-panel.c:2185
-#: panels/display/cc-display-panel.c:2237
-#, c-format
-msgid "Failed to apply configuration: %s"
-msgstr "החלת התצורה נכשלה: %s"
+#: panels/display/cc-display-panel.c:2192
+#: panels/display/cc-display-panel.c:2244
+msgid "Failed to apply configuration"
+msgstr ""
 
-#: panels/display/cc-display-panel.c:2265
+#: panels/display/cc-display-panel.c:2272
 msgid "Could not save the monitor configuration"
 msgstr "לא ניתן לשמור את תצורת הצג"
 
-#: panels/display/cc-display-panel.c:2325
+#: panels/display/cc-display-panel.c:2332
 msgid "Could not detect displays"
 msgstr "לא ניתן לזהות את הצגים"
 
-#: panels/display/cc-display-panel.c:2533
+#: panels/display/cc-display-panel.c:2540
 msgid "Could not get screen information"
 msgstr "לא ניתן לקבל את פרטי הצג"
 
@@ -399,7 +398,7 @@ msgstr "אתמול"
 #, c-format
 msgid "%i day ago"
 msgid_plural "%i days ago"
-msgstr[0] "אתמול"
+msgstr[0] "לפני %i ימים"
 msgstr[1] "לפני %i ימים"
 
 #: panels/network/net-device-ethernet.c:159 panels/network/panel-common.c:693
@@ -941,14 +940,14 @@ msgstr "מנוטרל"
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
-msgstr[0] "ערוץ פלט אחד"
+msgstr[0] "%u ערוצי פלט"
 msgstr[1] "%u ערוצי פלט"
 
 #: panels/sound/gvc-mixer-control.c:1851
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
-msgstr[0] "ערוץ קלט אחד"
+msgstr[0] "%u ערוצי קלט"
 msgstr[1] "%u ערוצי קלט"
 
 #: panels/sound/gvc-mixer-control.c:2375
@@ -1349,7 +1348,7 @@ msgstr "עזרה"
 msgid "Quit"
 msgstr "יציאה"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:57
+#: panels/color/color.ui.h:3 generate_additional_files.py:41
 msgid "Color"
 msgstr "צבע"
 
@@ -1558,7 +1557,7 @@ msgstr ""
 msgid "Provider"
 msgstr ""
 
-#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:149
+#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:117
 msgid "Network"
 msgstr ""
 
@@ -2456,7 +2455,7 @@ msgid "Bluetooth Settings"
 msgstr ""
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:194
+#: generate_additional_files.py:162
 msgid "Graphics Tablet"
 msgstr ""
 
@@ -2830,79 +2829,67 @@ msgstr ""
 msgid "_Type"
 msgstr ""
 
-#: generate_additional_files.py:27
-msgid "Brightness & Lock"
-msgstr ""
-
-#: generate_additional_files.py:27
-msgid "Screen brightness and lock settings"
-msgstr ""
-
-#: generate_additional_files.py:42 generate_additional_files.py:73
+#: generate_additional_files.py:26 generate_additional_files.py:57
 msgid "Sound"
 msgstr ""
 
-#: generate_additional_files.py:42 generate_additional_files.py:73
+#: generate_additional_files.py:26 generate_additional_files.py:57
 msgid "Change sound volume and sound events"
 msgstr ""
 
-#: generate_additional_files.py:57
+#: generate_additional_files.py:41
 msgid "Color management settings"
 msgstr ""
 
-#: generate_additional_files.py:87
+#: generate_additional_files.py:71
 msgid "Volume Control"
 msgstr ""
 
-#: generate_additional_files.py:87
+#: generate_additional_files.py:71
 msgid "Show desktop volume control"
 msgstr ""
 
-#: generate_additional_files.py:103
-msgid "Power"
-msgstr ""
-
-#: generate_additional_files.py:103
-msgid "Power management settings"
-msgstr ""
-
-#: generate_additional_files.py:119
+#: generate_additional_files.py:87
 msgid "Region & Language"
 msgstr ""
 
-#: generate_additional_files.py:119
+#: generate_additional_files.py:87
 msgid "Change your region and language settings"
 msgstr ""
 
-#: generate_additional_files.py:134
+#: generate_additional_files.py:102
 msgid "Display"
 msgstr ""
 
-#: generate_additional_files.py:134
+#: generate_additional_files.py:102
 msgid "Change resolution and position of monitors and projectors"
 msgstr ""
 
-#: generate_additional_files.py:149
+#: generate_additional_files.py:117
 msgid "Network settings"
 msgstr ""
 
-#: generate_additional_files.py:164
+#: generate_additional_files.py:132
 msgid "Accessibility"
 msgstr ""
 
-#: generate_additional_files.py:164
+#: generate_additional_files.py:132
 msgid "Universal Access Preferences"
 msgstr ""
 
-#: generate_additional_files.py:179
+#: generate_additional_files.py:147
 msgid "Date & Time"
 msgstr ""
 
-#: generate_additional_files.py:179
+#: generate_additional_files.py:147
 msgid "Date and Time preferences"
 msgstr ""
 
-#: generate_additional_files.py:194
+#: generate_additional_files.py:162
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
+
+#, c-format
+#~ msgid "Failed to apply configuration: %s"
+#~ msgstr "החלת התצורה נכשלה: %s"

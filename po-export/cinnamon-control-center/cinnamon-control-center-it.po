@@ -11,16 +11,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-19 17:13+0200\n"
-"PO-Revision-Date: 2015-05-29 14:47+0000\n"
-"Last-Translator: lang-it <Unknown>\n"
+"POT-Creation-Date: 2015-10-16 14:26+0100\n"
+"PO-Revision-Date: 2015-10-11 10:22+0000\n"
+"Last-Translator: Giacomo Viganò <vigano.giacomo@gmail.com>\n"
 "Language-Team: Italiano <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-06-26 13:20+0000\n"
-"X-Generator: Launchpad (build 17578)\n"
+"X-Launchpad-Export-Date: 2015-10-16 17:39+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 "Language: it\n"
 
 #: panels/color/cc-color-panel.c:106
@@ -336,21 +336,20 @@ msgstr ""
 "Selezionare un monitor per cambiare le sue proprietà; trascinarlo per "
 "risistemare il suo posizionamento."
 
-#: panels/display/cc-display-panel.c:2185
-#: panels/display/cc-display-panel.c:2237
-#, c-format
-msgid "Failed to apply configuration: %s"
-msgstr "Impostazione della configurazione non riuscita: %s"
+#: panels/display/cc-display-panel.c:2192
+#: panels/display/cc-display-panel.c:2244
+msgid "Failed to apply configuration"
+msgstr ""
 
-#: panels/display/cc-display-panel.c:2265
+#: panels/display/cc-display-panel.c:2272
 msgid "Could not save the monitor configuration"
 msgstr "Impossibile salvare la configurazione del monitor"
 
-#: panels/display/cc-display-panel.c:2325
+#: panels/display/cc-display-panel.c:2332
 msgid "Could not detect displays"
 msgstr "Impossibile rilevare i monitor"
 
-#: panels/display/cc-display-panel.c:2533
+#: panels/display/cc-display-panel.c:2540
 msgid "Could not get screen information"
 msgstr "Impossibile ottenere informazioni sullo schermo"
 
@@ -375,7 +374,7 @@ msgstr ""
 
 #: panels/network/net-device-bond.c:77
 msgid "Bond slaves"
-msgstr ""
+msgstr "Bond slave"
 
 #: panels/network/net-device-bond.c:102 panels/network/net-device-bridge.c:102
 #: panels/network/net-device-team.c:102
@@ -384,7 +383,7 @@ msgstr "(nessuno)"
 
 #: panels/network/net-device-bridge.c:77
 msgid "Bridge slaves"
-msgstr ""
+msgstr "Bridge slave"
 
 #: panels/network/net-device-ethernet.c:54
 #: panels/network/net-device-wifi.c:529
@@ -482,7 +481,7 @@ msgstr "Aggiungi una nuova connessione"
 
 #: panels/network/net-device-team.c:77
 msgid "Team slaves"
-msgstr ""
+msgstr "Team slave"
 
 #: panels/network/net-device-wifi.c:217 panels/network/net-device-wifi.c:378
 msgid "WEP"
@@ -1376,7 +1375,7 @@ msgstr "Aiuto"
 msgid "Quit"
 msgstr "Esci"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:57
+#: panels/color/color.ui.h:3 generate_additional_files.py:41
 msgid "Color"
 msgstr "Colore"
 
@@ -1589,7 +1588,7 @@ msgstr "IMEI"
 msgid "Provider"
 msgstr "Operatore"
 
-#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:149
+#: panels/network/network-mobile.ui.h:7 generate_additional_files.py:117
 msgid "Network"
 msgstr "Rete"
 
@@ -2102,7 +2101,7 @@ msgstr "Zoom"
 
 #: panels/universal-access/uap.ui.h:27
 msgid "Mouse wheel modifier:"
-msgstr ""
+msgstr "Preferenze rotellina mouse"
 
 #: panels/universal-access/uap.ui.h:29
 msgid "<Alt>"
@@ -2498,7 +2497,7 @@ msgid "Bluetooth Settings"
 msgstr "Impostazioni Bluetooth"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:194
+#: generate_additional_files.py:162
 msgid "Graphics Tablet"
 msgstr "Tavoletta grafica"
 
@@ -2588,7 +2587,7 @@ msgstr "Pulsante inferiore"
 
 #: panels/wacom/wacom-stylus-page.ui.h:17
 msgid "Tip Pressure Feel"
-msgstr ""
+msgstr "Sensibilità pressione pennino"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
@@ -2854,7 +2853,7 @@ msgstr "4"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:5
 msgid "Open System"
-msgstr ""
+msgstr "Open System"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:6
 msgid "Shared Key"
@@ -2876,79 +2875,81 @@ msgstr "Indi_ce WEP"
 msgid "_Type"
 msgstr "_Tipo"
 
-#: generate_additional_files.py:27
-msgid "Brightness & Lock"
-msgstr "Luminosità e blocco"
-
-#: generate_additional_files.py:27
-msgid "Screen brightness and lock settings"
-msgstr "Impostazioni di luminosità e blocco dello schermo"
-
-#: generate_additional_files.py:42 generate_additional_files.py:73
+#: generate_additional_files.py:26 generate_additional_files.py:57
 msgid "Sound"
 msgstr "Audio"
 
-#: generate_additional_files.py:42 generate_additional_files.py:73
+#: generate_additional_files.py:26 generate_additional_files.py:57
 msgid "Change sound volume and sound events"
 msgstr "Regola il volume dell'audio e quello degli eventi sonori"
 
-#: generate_additional_files.py:57
+#: generate_additional_files.py:41
 msgid "Color management settings"
 msgstr "Impostazioni di gestione del colore"
 
-#: generate_additional_files.py:87
+#: generate_additional_files.py:71
 msgid "Volume Control"
 msgstr "Controllo del volume"
 
-#: generate_additional_files.py:87
+#: generate_additional_files.py:71
 msgid "Show desktop volume control"
 msgstr "Mostra il controllo del volume"
 
-#: generate_additional_files.py:103
-msgid "Power"
-msgstr "Alimentazione"
-
-#: generate_additional_files.py:103
-msgid "Power management settings"
-msgstr "Impostazioni di gestione dell'alimentazione"
-
-#: generate_additional_files.py:119
+#: generate_additional_files.py:87
 msgid "Region & Language"
 msgstr "Regione e lingua"
 
-#: generate_additional_files.py:119
+#: generate_additional_files.py:87
 msgid "Change your region and language settings"
 msgstr "Cambia le impostazioni della tua regione e della lingua"
 
-#: generate_additional_files.py:134
+#: generate_additional_files.py:102
 msgid "Display"
-msgstr ""
+msgstr "Monitor"
 
-#: generate_additional_files.py:134
+#: generate_additional_files.py:102
 msgid "Change resolution and position of monitors and projectors"
 msgstr "Cambia la risoluzione e la posizione dei monitor e dei proiettori"
 
-#: generate_additional_files.py:149
+#: generate_additional_files.py:117
 msgid "Network settings"
 msgstr "Impostazioni di rete"
 
-#: generate_additional_files.py:164
+#: generate_additional_files.py:132
 msgid "Accessibility"
 msgstr "Accessibilità"
 
-#: generate_additional_files.py:164
+#: generate_additional_files.py:132
 msgid "Universal Access Preferences"
 msgstr "Preferenze di accesso universale"
 
-#: generate_additional_files.py:179
+#: generate_additional_files.py:147
 msgid "Date & Time"
 msgstr "Data & Ora"
 
-#: generate_additional_files.py:179
+#: generate_additional_files.py:147
 msgid "Date and Time preferences"
 msgstr "Preferenze Data e Ora"
 
-#: generate_additional_files.py:194
+#: generate_additional_files.py:162
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
+"Imposta la mappatura dei pulsanti e regola la sensibilità  del pennino per "
+"tavolette grafiche"
+
+#, c-format
+#~ msgid "Failed to apply configuration: %s"
+#~ msgstr "Impostazione della configurazione non riuscita: %s"
+
+#~ msgid "Screen brightness and lock settings"
+#~ msgstr "Impostazioni di luminosità e blocco dello schermo"
+
+#~ msgid "Brightness & Lock"
+#~ msgstr "Luminosità e blocco"
+
+#~ msgid "Power management settings"
+#~ msgstr "Impostazioni di gestione dell'alimentazione"
+
+#~ msgid "Power"
+#~ msgstr "Alimentazione"
