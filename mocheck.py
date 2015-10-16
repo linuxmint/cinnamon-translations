@@ -15,6 +15,7 @@ COMMON_DATE_TOKENS = "ABeHYDMSmyp"
 COMMON_INT_TOKENS = ["d", "'d", "ld", "I"]
 COMMON_STR_TOKENS = ["s", "B"]
 COMMON_I_TOKENS = ["i", "li", "I"]
+COMMON_U_TOKENS = ["%'u", "%u", "%Iu"]
 DATE_THRESHOLD = 2
 
 MO_EXT = ".mo"
@@ -39,6 +40,8 @@ def same_type(token1, token2):
     if (token1[1:] in COMMON_STR_TOKENS and token2[1:] in COMMON_STR_TOKENS):
         return True
     if (token1[1:] in COMMON_I_TOKENS and token2[1:] in COMMON_I_TOKENS):
+        return True
+    if (token1 in COMMON_U_TOKENS and token2 in COMMON_U_TOKENS):
         return True
     return False
 
