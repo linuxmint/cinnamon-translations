@@ -266,14 +266,20 @@ class ThreadedTreeView(Gtk.TreeView):
                         self._loaded_data.append((to_load, entry, to_load.locale, entry.msgid, entry.msgstr, to_load.current_index))
                         self._loaded_data_lock.release()
                     to_load.current_index += 1
-                    if (len(entry.msgid_plural) > 0):
-                        res = self.check_entry(entry.msgid_plural, entry.msgstr_plural[0])
-                        exclude_dates = self.datecheck.get_active()
-                        if (res > GOOD and res < BAD_MISCOUNT_MAYBE_DATE) or \
-                           (res > BAD_EXCLUSIONS and not exclude_dates):
-                            self._loaded_data_lock.acquire()
-                            self._loaded_data.append((to_load, entry, to_load.locale, entry.msgid_plural, entry.msgstr_plural[0], to_load.current_index))
-                            self._loaded_data_lock.release()
+                    if (len(entry.msgstr_plural) > 0):
+                        for plurality in entry.msgstr_plural.keys():
+                            msgstr = entry.msgstr_plural[plurality]
+                            if plurality > 0:
+                                msgid = entry.msgid_plural
+                            else:
+                                msgid = entry.msgid
+                            res = self.check_entry(msgid, msgstr)
+                            exclude_dates = self.datecheck.get_active()
+                            if (res > GOOD and res < BAD_MISCOUNT_MAYBE_DATE) or \
+                               (res > BAD_EXCLUSIONS and not exclude_dates):
+                                self._loaded_data_lock.acquire()
+                                self._loaded_data.append((to_load, entry, to_load.locale, msgid, msgstr, to_load.current_index))
+                                self._loaded_data_lock.release()
 
         self._loading_lock.acquire()
         self._loading = False
