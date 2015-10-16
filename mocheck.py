@@ -219,7 +219,7 @@ class ThreadedTreeView(Gtk.TreeView):
                 else:
                     if file.endswith(PO_EXT):
                         locale = file.split("-")[-1].replace(".po", "")
-                        if locale in ["yi"]:
+                        if locale in ["yi", "ar", "he"]:
                             # Don't check PO files for some of the locales (right-to-left languages for instance, or languages where it's hard for us to verify the arguments)
                             continue
                         mo_inst = polib.pofile(os.path.join(root, file))
