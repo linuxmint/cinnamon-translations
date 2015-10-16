@@ -265,7 +265,6 @@ class ThreadedTreeView(Gtk.TreeView):
                         self._loaded_data_lock.acquire()
                         self._loaded_data.append((to_load, entry, to_load.locale, entry.msgid, entry.msgstr, to_load.current_index))
                         self._loaded_data_lock.release()
-                    to_load.current_index += 1
                     if (len(entry.msgstr_plural) > 0):
                         for plurality in entry.msgstr_plural.keys():
                             msgstr = entry.msgstr_plural[plurality]
@@ -280,6 +279,7 @@ class ThreadedTreeView(Gtk.TreeView):
                                 self._loaded_data_lock.acquire()
                                 self._loaded_data.append((to_load, entry, to_load.locale, msgid, msgstr, to_load.current_index))
                                 self._loaded_data_lock.release()
+                    to_load.current_index += 1
 
         self._loading_lock.acquire()
         self._loading = False
