@@ -219,7 +219,7 @@ class ThreadedTreeView(Gtk.TreeView):
                 else:
                     if file.endswith(PO_EXT):
                         locale = file.split("-")[-1].replace(".po", "")
-                        if locale in ["yi", "ar", "he"]:
+                        if locale in ["yi"]:
                             # Don't check PO files for some of the locales (right-to-left languages for instance, or languages where it's hard for us to verify the arguments)
                             continue
                         mo_inst = polib.pofile(os.path.join(root, file))
@@ -272,7 +272,7 @@ class ThreadedTreeView(Gtk.TreeView):
                                 msgid = entry.msgid_plural
                             else:
                                 msgid = entry.msgid
-                            res = self.check_entry(msgid, msgstr)
+                            res = self.check_entry(msgid, msgstr, is_plural=True)
                             exclude_dates = self.datecheck.get_active()
                             if (res > GOOD and res < BAD_MISCOUNT_MAYBE_DATE) or \
                                (res > BAD_EXCLUSIONS and not exclude_dates):
@@ -285,7 +285,7 @@ class ThreadedTreeView(Gtk.TreeView):
         self._loading = False
         self._loading_lock.release()
 
-    def check_entry(self, msgid, msgstr):
+    def check_entry(self, msgid, msgstr, is_plural=False):
         msgid = msgid.replace("%%", " ")
         msgstr = msgstr.replace("%%", " ")
         id_tokens = TokenList()
@@ -349,7 +349,13 @@ class ThreadedTreeView(Gtk.TreeView):
             except:
                 pass
         if msgstr != "":
-            if (len(id_tokens) != len(str_tokens)):
+            if (not is_plural and len(id_tokens) != len(str_tokens)):
+                if id_date_count >= DATE_THRESHOLD or str_date_count >= DATE_THRESHOLD:
+                    return BAD_MISCOUNT_MAYBE_DATE
+                else:
+                    print "Miscount: %s -- %s" % (id_tokens, str_tokens)
+                    return BAD_MISCOUNT
+            elif (is_plural and len(id_tokens) < len(str_tokens)):
                 if id_date_count >= DATE_THRESHOLD or str_date_count >= DATE_THRESHOLD:
                     return BAD_MISCOUNT_MAYBE_DATE
                 else:
@@ -357,7 +363,7 @@ class ThreadedTreeView(Gtk.TreeView):
                     return BAD_MISCOUNT
             else:
                 mismatch = False
-                for j in range(len(id_tokens)):
+                for j in range(len(str_tokens)):
                     id_token = id_tokens[j]
                     str_token = str_tokens[j]
                     if id_token != str_token:
