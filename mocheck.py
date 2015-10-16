@@ -121,7 +121,7 @@ class ThreadedTreeView(Gtk.TreeView):
     def dirty_pixbuf_func(self, col, cell, model, iter, data):
         dirty = model.get_value(iter, 5)
         if dirty:
-            if self.check_entry(model.get_value(iter, 1), model.get_value(iter, 4)) == GOOD:
+            if self.check_entry(model.get_value(iter, 3), model.get_value(iter, 4)) == GOOD:
                 cell.set_property("stock-id", "gtk-yes")
             else:
                 cell.set_property("stock-id", "gtk-no")
@@ -258,7 +258,7 @@ class ThreadedTreeView(Gtk.TreeView):
                 for entry in to_load.mofile:
                     if entry.obsolete:
                         continue # skip obsolete translations (prefixed with #~ in po file)
-                    res = self.check_entry(entry)
+                    res = self.check_entry(entry.msgid, entry.msgstr)
                     exclude_dates = self.datecheck.get_active()
                     if (res > GOOD and res < BAD_MISCOUNT_MAYBE_DATE) or \
                        (res > BAD_EXCLUSIONS and not exclude_dates):
@@ -266,19 +266,22 @@ class ThreadedTreeView(Gtk.TreeView):
                         self._loaded_data.append((to_load, entry, to_load.locale, entry.msgid, entry.msgstr, to_load.current_index))
                         self._loaded_data_lock.release()
                     to_load.current_index += 1
+                    if (len(entry.msgid_plural) > 0):
+                        res = self.check_entry(entry.msgid_plural, entry.msgstr_plural[0])
+                        exclude_dates = self.datecheck.get_active()
+                        if (res > GOOD and res < BAD_MISCOUNT_MAYBE_DATE) or \
+                           (res > BAD_EXCLUSIONS and not exclude_dates):
+                            self._loaded_data_lock.acquire()
+                            self._loaded_data.append((to_load, entry, to_load.locale, entry.msgid_plural, entry.msgstr_plural[0], to_load.current_index))
+                            self._loaded_data_lock.release()
 
         self._loading_lock.acquire()
         self._loading = False
         self._loading_lock.release()
 
-    def check_entry(self, entry, updated_val = None):
+    def check_entry(self, msgid, msgstr):
         id_tokens = TokenList()
         str_tokens = TokenList()
-        msgid = entry.msgid
-        if updated_val:
-            msgstr = updated_val
-        else:
-            msgstr = entry.msgstr
         id_date_count = 0
         str_date_count = 0
 
@@ -432,7 +435,7 @@ class Main:
         model, treeiter = self.treeview.get_selection().get_selected()
         if treeiter:
             entry = self.treeview.model.get_value(treeiter, 1)
-            status = self.treeview.check_entry(entry)
+            status = self.treeview.check_entry(entry.msgid, entry.msgstr)
             if status == BAD_MISCOUNT:
                 self.status.set_text("Number of tokens does not match")
             elif status == BAD_MISCOUNT_MAYBE_DATE:
