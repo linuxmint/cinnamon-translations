@@ -7,51 +7,52 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-08-27 18:27+0100\n"
-"PO-Revision-Date: 2013-09-13 12:47+0000\n"
-"Last-Translator: francheu <francheu@caramail.com>\n"
+"POT-Creation-Date: 2015-10-17 11:53+0100\n"
+"PO-Revision-Date: 2015-10-17 11:09+0000\n"
+"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-16 17:39+0000\n"
+"X-Launchpad-Export-Date: 2015-10-17 11:58+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
-#: panels/bluetooth/cc-bluetooth-panel.c:352
+#: panels/bluetooth/cc-bluetooth-panel.c:355
 msgid "Yes"
 msgstr "Oui"
 
-#: panels/bluetooth/cc-bluetooth-panel.c:352
+#: panels/bluetooth/cc-bluetooth-panel.c:355
 msgid "No"
 msgstr "Non"
 
-#: panels/bluetooth/cc-bluetooth-panel.c:466
+#: panels/bluetooth/cc-bluetooth-panel.c:469
 msgid "Bluetooth is disabled"
 msgstr "Le bluetooth est désactivé"
 
-#: panels/bluetooth/cc-bluetooth-panel.c:471
+#: panels/bluetooth/cc-bluetooth-panel.c:474
 msgid "Bluetooth is disabled by hardware switch"
 msgstr "Le Bluetooth est désactivé par un interrupteur matériel"
 
-#: panels/bluetooth/cc-bluetooth-panel.c:475
+#: panels/bluetooth/cc-bluetooth-panel.c:478
 msgid "No Bluetooth adapters found"
 msgstr "Aucun adaptateur Bluetooth détecté"
 
-#: panels/bluetooth/cc-bluetooth-panel.c:602
+#: panels/bluetooth/cc-bluetooth-panel.c:599
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:247
 msgid "Visibility"
 msgstr "Visibilité"
 
-#: panels/bluetooth/cc-bluetooth-panel.c:606
+#: panels/bluetooth/cc-bluetooth-panel.c:603
 #, c-format
 msgid "Visibility of “%s”"
 msgstr "Visibilité de « %s »"
 
-#: panels/bluetooth/cc-bluetooth-panel.c:650
+#: panels/bluetooth/cc-bluetooth-panel.c:647
 #, c-format
 msgid "Remove '%s' from the list of devices?"
 msgstr "Retirer « %s » de la liste des périphériques ?"
 
-#: panels/bluetooth/cc-bluetooth-panel.c:652
+#: panels/bluetooth/cc-bluetooth-panel.c:649
 msgid ""
 "If you remove the device, you will have to set it up again before next use."
 msgstr ""
@@ -67,6 +68,7 @@ msgid "Remove Device"
 msgstr "Retirer le périphérique"
 
 #: panels/bluetooth/bluetooth.ui.h:3
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:423
 msgid "Connection"
 msgstr "Connexion"
 
@@ -95,25 +97,139 @@ msgid "Mouse and Touchpad Settings"
 msgstr "Paramètres de la souris et du pavé tactile"
 
 #: panels/bluetooth/bluetooth.ui.h:10
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:495
 msgid "Sound Settings"
 msgstr "Paramètres du son"
 
 #: panels/bluetooth/bluetooth.ui.h:11
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:487
 msgid "Keyboard Settings"
 msgstr "Paramètres du clavier"
 
 #: panels/bluetooth/bluetooth.ui.h:12
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:464
 msgid "Send Files..."
 msgstr "Envoyer des fichiers..."
 
 #: panels/bluetooth/bluetooth.ui.h:13
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:469
 msgid "Browse Files..."
 msgstr "Parcourir les fichiers..."
 
-#: generate_additional_files.py:50
+#: generate_additional_files.py:24
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:37
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:71
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:111
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:144
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:219
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:223
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:477
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: generate_additional_files.py:50
+#: generate_additional_files.py:24
 msgid "Configure Bluetooth settings"
 msgstr "Configurer les paramètres Bluetooth"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:72
+#, c-format
+msgid "Authorization request from %s"
+msgstr "Demande d'autorisation de %s"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:78
+#, c-format
+msgid "Device %s wants access to the service '%s'"
+msgstr "Le périphérique %s souhaite accéder au service '%s'"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:80
+msgid "Always grant access"
+msgstr "Toujours autoriser l'accès"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:81
+msgid "Grant this time only"
+msgstr "Autoriser cette fois-ci seulement"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:82
+msgid "Reject"
+msgstr "Refuser"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:112
+#, c-format
+msgid "Pairing confirmation for %s"
+msgstr "Confirmation de pairage pour %s"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:118
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:152
+#, c-format
+msgid "Device %s wants to pair with this computer"
+msgstr ""
+"Le périphérique %s a effectué une demande de pairage avec cet ordinateur"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:119
+#, c-format
+msgid "Please confirm whether the PIN '%s' matches the one on the device."
+msgstr ""
+"Veuillez confirmer que le PIN '%s' correspond à celui affiché sur le "
+"périphérique."
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:121
+msgid "Matches"
+msgstr "Correspond"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:122
+msgid "Does not match"
+msgstr "Ne correspond pas"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:145
+#, c-format
+msgid "Pairing request for %s"
+msgstr "Requête de pairage pour %s"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:153
+msgid "Please enter the PIN mentioned on the device."
+msgstr "Veuillez entrer le code PIN affiché sur le périphérique"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:169
+msgid "OK"
+msgstr "Ok"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:170
+msgid "Cancel"
+msgstr "Annuler"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:261
+msgid "Send Files to Device..."
+msgstr "Envoyer des fichiers ..."
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:262
+msgid "Set up a New Device..."
+msgstr "Ajouter un périphérique ..."
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:286
+msgid "Bluetooth Settings"
+msgstr "Paramètres Bluetooth"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:325
+msgid "hardware disabled"
+msgstr "matériel désactivé"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:433
+msgid "disconnecting..."
+msgstr "déconnexion en cours..."
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:446
+msgid "connecting..."
+msgstr "connexion en cours..."
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:478
+msgid "Error browsing device"
+msgstr "Une erreur est survenue lors de la navigation"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:479
+#, c-format
+msgid "The requested device cannot be browsed, error is '%s'"
+msgstr "La navigation n'est pas possible pour ce périphérique : '%s'"
+
+#: files/usr/share/cinnamon/applets/bluetooth@cinnamon.org/applet.js:490
+msgid "Mouse Settings"
+msgstr "Paramètres de la souris"
