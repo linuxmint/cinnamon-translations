@@ -9,3 +9,4 @@ rm -rf po-export/nemo-*
 rm -rf po-export/slideshow*
 rm -rf po-export/user-guide*
 rm -rf po-export/blueberry*
+rm -rf po-export/x*
