@@ -7,6 +7,8 @@ import subprocess
 import thread
 import time
 import urllib
+import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GObject, GLib, Pango, GdkPixbuf
 GObject.threads_init()
 
