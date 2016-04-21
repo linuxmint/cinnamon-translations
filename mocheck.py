@@ -160,7 +160,7 @@ class ThreadedTreeView(Gtk.TreeView):
         while iter != None:
             if self.model.get_value(iter, 5):
                 entry = self.model.get_value(iter, 1)
-                self.model.set_value(iter, 4, entry.msgstr) 
+                self.model.set_value(iter, 4, entry.msgstr)
                 self.model.set_value(iter, 5, False)
             iter = self.model.iter_next(iter)
         self.update_buttons()
@@ -171,7 +171,7 @@ class ThreadedTreeView(Gtk.TreeView):
         self._loading_queue_lock.acquire()
         self._loading_queue = []
         self._loading_queue_lock.release()
-        
+
         self._loading_lock.acquire()
         is_loading = self._loading
         self._loading_lock.release()
@@ -212,12 +212,12 @@ class ThreadedTreeView(Gtk.TreeView):
 
     def load_files(self):
         self.clear()
-        for root, subFolders, files in os.walk(os.getcwd(),topdown=False):            
-            for file in files:                
+        for root, subFolders, files in os.walk(os.getcwd(),topdown=False):
+            for file in files:
                 if self.type == MO_EXT:
                     if file.endswith(MO_EXT):
                         path, junk = os.path.split(root)
-                        path, locale = os.path.split(path)                        
+                        path, locale = os.path.split(path)
                         mo_inst = polib.mofile(os.path.join(root, file))
                         mo = Mo(mo_inst, locale, os.path.join(root, file))
                         self.check_file(mo)
@@ -236,14 +236,14 @@ class ThreadedTreeView(Gtk.TreeView):
         self._loading_queue_lock.acquire()
         self._loading_queue.append(mofile)
         self._loading_queue_lock.release()
-        
+
         start_loading = False
         self._loading_lock.acquire()
         if not self._loading:
             self._loading = True
             start_loading = True
         self._loading_lock.release()
-        
+
         if start_loading:
             self.progress.pulse()
             GObject.timeout_add(100, self._check_loading_progress)
@@ -299,14 +299,14 @@ class ThreadedTreeView(Gtk.TreeView):
         str_date_count = 0
 
         for idx in range(len(msgid)):
-            try:         
+            try:
                 if msgid[idx] == "%":
-                    if msgid[idx-1] > -1 and msgid[idx-1] != "\\":                                                
+                    if msgid[idx-1] > -1 and msgid[idx-1] != "\\":
                         subidx = 0
                         if msgid[idx+1] == "(":
                             while msgid[idx+1+subidx] != ")":
                                 subidx += 1
-                            token = msgid[idx:(idx+subidx+3)]    
+                            token = msgid[idx:(idx+subidx+3)]
                             id_tokens.add(token)
                         else:
                             subidx = 0
@@ -327,7 +327,7 @@ class ThreadedTreeView(Gtk.TreeView):
                 pass
 
         for idx in range(len(msgstr)):
-            try:   
+            try:
                 if msgstr[idx] == "%":
                     if msgstr[idx-1] > -1 and msgstr[idx-1] != "\\":
                         subidx = 0
@@ -511,7 +511,7 @@ class Main:
     def go_to_launchpad(self, pofile, locale, number):
         locale = locale.replace(".po", "")
         domain = "-".join(locale.split("-")[0:-1])
-        locale = locale.split("-")[-1]        
+        locale = locale.split("-")[-1]
         os.system("xdg-open 'https://translations.launchpad.net/linuxmint/latest/+pots/%s/%s/%s/+translate'" % (domain, locale, number))
 
 if __name__ == "__main__":
