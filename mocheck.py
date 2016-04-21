@@ -12,12 +12,14 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GObject, GLib, Pango, GdkPixbuf
 GObject.threads_init()
 
+DIGITS = "01234567890"
 ALLOWED = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 COMMON_DATE_TOKENS = "ABeHYDMSmyp"
-COMMON_INT_TOKENS = ["d", "'d", "ld", "I"]
+COMMON_INT_TOKENS = ["d", "'d", "ld", "I", "Id", "3d", "I3d", "02d", "I02d", "0d", "N", "Q"]
+COMMON_FLOAT_TOKENS = ["f", "I", "If", ".0f", ".1f", ".2f"]
 COMMON_STR_TOKENS = ["s", "B"]
 COMMON_I_TOKENS = ["i", "li", "I"]
-COMMON_U_TOKENS = ["%'u", "%u", "%Iu"]
+COMMON_U_TOKENS = ["%'u", "%u", "%Iu", "%I"]
 DATE_THRESHOLD = 2
 
 MO_EXT = ".mo"
@@ -38,6 +40,8 @@ def allowed(char):
 
 def same_type(token1, token2):
     if (token1[1:] in COMMON_INT_TOKENS and token2[1:] in COMMON_INT_TOKENS):
+        return True
+    if (token1[1:] in COMMON_FLOAT_TOKENS and token2[1:] in COMMON_FLOAT_TOKENS):
         return True
     if (token1[1:] in COMMON_STR_TOKENS and token2[1:] in COMMON_STR_TOKENS):
         return True
@@ -301,6 +305,12 @@ class ThreadedTreeView(Gtk.TreeView):
         for idx in range(len(msgid)):
             try:
                 if msgid[idx] == "%":
+                    if idx > 0 and msgid[idx-1] in DIGITS:
+                        # ignore this token, it's probably a percentage
+                        continue
+                    if idx > 1 and msgid[idx-1] == " " and msgid[idx-2] in DIGITS:
+                        # ignore this token, it's probably a percentage
+                        continue
                     if msgid[idx-1] > -1 and msgid[idx-1] != "\\":
                         subidx = 0
                         if msgid[idx+1] == "(":
@@ -329,6 +339,12 @@ class ThreadedTreeView(Gtk.TreeView):
         for idx in range(len(msgstr)):
             try:
                 if msgstr[idx] == "%":
+                    if idx > 0 and msgstr[idx-1] in DIGITS:
+                        # ignore this token, it's probably a percentage
+                        continue
+                    if idx > 1 and msgstr[idx-1] == " " and msgstr[idx-2] in DIGITS:
+                        # ignore this token, it's probably a percentage
+                        continue
                     if msgstr[idx-1] > -1 and msgstr[idx-1] != "\\":
                         subidx = 0
                         if msgstr[idx+1] == "(":
@@ -373,7 +389,8 @@ class ThreadedTreeView(Gtk.TreeView):
                     str_token = str_tokens[j]
                     if id_token != str_token:
                         if same_type(id_token, str_token):
-                            print "Same type tokens: %s %s" % (id_token, str_token)
+                            pass
+                            #print "Same type tokens: %s %s" % (id_token, str_token)
                         elif "(" in id_token:
                             #named token, just make sure it corresponds to one of the str_tokens
                             found_token = False
@@ -390,7 +407,7 @@ class ThreadedTreeView(Gtk.TreeView):
                 if (id_date_count >= DATE_THRESHOLD or str_date_count >= DATE_THRESHOLD) and mismatch:
                     return BAD_MISMATCH_MAYBE_DATE
                 elif mismatch:
-                    print "Mismatch %s -- %s" % (id_tokens, str_tokens)
+                    print "Mismatch %s: %s -- %s" % (msgid, id_tokens, str_tokens)
                     return BAD_MISMATCH
         return GOOD
 
