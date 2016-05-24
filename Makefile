@@ -14,5 +14,4 @@ buildmo:
 
 clean:
 	rm -rf usr
-	./cleanup.sh
 
