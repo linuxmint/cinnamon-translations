@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-11-11 18:45+0000\n"
+"POT-Creation-Date: 2016-05-20 13:14+0100\n"
 "PO-Revision-Date: 2014-06-28 22:07+0000\n"
 "Last-Translator: segray <segray@tut.by>\n"
 "Language-Team: Belarusian <be@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2016-04-21 14:41+0000\n"
-"X-Generator: Launchpad (build 17995)\n"
+"X-Launchpad-Export-Date: 2016-05-24 09:33+0000\n"
+"X-Generator: Launchpad (build 18053)\n"
 
 #: src/nemo-action-config-widget.c:231
 msgid "No actions found"
@@ -53,59 +53,61 @@ msgstr ""
 "Перад запускам Nemo, калі ласка, стварыце гэтыя папкі ці пастаўце правы "
 "доступу такім чынам, каб Nemo змог ствараць іх."
 
-#: src/nemo-application.c:752
+#: src/nemo-application.c:619
 msgid "--check cannot be used with other options."
 msgstr "Нельга выкарыстоўваць опцыю --check з іншымі опцыямі."
 
-#: src/nemo-application.c:758
+#: src/nemo-application.c:625
 msgid "--quit cannot be used with URIs."
 msgstr "Нельга выкарыстоўваць опцыю --quit з URI-адрасамі."
 
-#: src/nemo-application.c:765
+#: src/nemo-application.c:632
 msgid "--geometry cannot be used with more than one URI."
 msgstr "Нельга выкарыстоўваць опцыю --geometry з больш як адным URI-адрасам."
 
-#: src/nemo-application.c:823
+#: src/nemo-application.c:690
 msgid "Perform a quick set of self-check tests."
 msgstr "Выканаць хуткую самаправерку."
 
-#: src/nemo-application.c:829
+#: src/nemo-application.c:696
 msgid "Show the version of the program."
 msgstr "Паказаць вэрсію праграмы."
 
-#: src/nemo-application.c:831
+#: src/nemo-application.c:698
 msgid "Create the initial window with the given geometry."
 msgstr "Стварыць першапачатковае акно з пазначанай геамэтрыяй."
 
-#: src/nemo-application.c:831
+#: src/nemo-application.c:698
 msgid "GEOMETRY"
 msgstr "ГЕАМЕТРЫЯ"
 
-#: src/nemo-application.c:833
+#: src/nemo-application.c:700
 msgid "Only create windows for explicitly specified URIs."
 msgstr "Толькі стварыць вокны для непасрэдна вызначаных URI-адрасоў."
 
-#: src/nemo-application.c:835
-msgid ""
-"Do not manage the desktop (ignore the preference set in the preferences "
-"dialog)."
-msgstr "Не кіраваць сталом (праігнараваць настройкі з дыялогу)"
+#: src/nemo-application.c:702
+msgid "Never manage the desktop (ignore the GSettings preference)."
+msgstr ""
 
-#: src/nemo-application.c:837
+#: src/nemo-application.c:704
+msgid "Always manage the desktop (ignore the GSettings preference)."
+msgstr ""
+
+#: src/nemo-application.c:706
 msgid ""
 "Repair the user thumbnail cache - this can be useful if you're having "
 "trouble with file thumbnails.  Must be run as root"
 msgstr ""
 
-#: src/nemo-application.c:839
+#: src/nemo-application.c:708
 msgid "Quit Nemo."
 msgstr "Выйсці з Nemo."
 
-#: src/nemo-application.c:840
+#: src/nemo-application.c:709
 msgid "[URI...]"
 msgstr "[URI...]"
 
-#: src/nemo-application.c:851
+#: src/nemo-application.c:720
 msgid ""
 "\n"
 "\n"
@@ -115,11 +117,11 @@ msgstr ""
 "\n"
 "Агляд файлавай сістэмы з дапамогай кіраўніка файлаў"
 
-#: src/nemo-application.c:1131
+#: src/nemo-application.c:992
 msgid "Nemo's main menu is now hidden"
 msgstr "Асноўнае меню Nemo зараз утоена"
 
-#: src/nemo-application.c:1134
+#: src/nemo-application.c:995
 msgid ""
 "You have chosen to hide the main menu.  You can get it back temporarily by:\n"
 "\n"
@@ -140,7 +142,7 @@ msgstr ""
 "Вы можаце аднавіць пастаяннае адлюстраванне асноўнага меню выбраўшы опцыю ў "
 "меню Выгляд."
 
-#: src/nemo-application.c:1145
+#: src/nemo-application.c:1006
 msgid "Don't show this message again."
 msgstr "Больш не паказваць гэтае паведамленне зноў."
 
@@ -181,6 +183,12 @@ msgstr ""
 #: src/nemo-autorun-software.c:234 src/nemo-mime-actions.c:728
 msgid "_Run"
 msgstr "_Выканаць"
+
+#: src/nemo-blank-desktop-window.c:203 src/nemo-desktop-window.c:103
+#: src/nemo-desktop-window.c:292 src/nemo-pathbar.c:1497
+#: src/nemo-places-sidebar.c:773 libnemo-private/nemo-action.c:947
+msgid "Desktop"
+msgstr "Працоўны стол"
 
 #: src/nemo-bookmarks-window.c:162 src/nemo-window-menus.c:379
 #, c-format
@@ -261,8 +269,8 @@ msgstr "Спраўдзіце параметры ўваходу."
 msgid "Continue"
 msgstr "Працягнуць"
 
-#: src/nemo-connect-server-dialog.c:698 src/nemo-properties-window.c:5149
-#: src/nemo-view.c:1578
+#: src/nemo-connect-server-dialog.c:698 src/nemo-properties-window.c:5180
+#: src/nemo-view.c:1573
 msgid "There was an error displaying help."
 msgstr "Узнікла памылка паказу даведкі."
 
@@ -294,7 +302,7 @@ msgstr "_Тып:"
 msgid "Sh_are:"
 msgstr "_Рэсурс:"
 
-#: src/nemo-connect-server-dialog.c:1011 src/nemo-view.c:1772
+#: src/nemo-connect-server-dialog.c:1011 src/nemo-view.c:1767
 msgid "_Folder:"
 msgstr "_Папка:"
 
@@ -336,24 +344,24 @@ msgstr ""
 "\n"
 "Дадаць злучэнне з супольным рэсурсам сервера"
 
-#: src/nemo-desktop-icon-view.c:695 src/nemo-view.c:8312 src/nemo-view.c:9924
+#: src/nemo-desktop-icon-view.c:502 src/nemo-view.c:8181 src/nemo-view.c:9818
 msgid "E_mpty Trash"
 msgstr "_Ачысціць сметніцу"
 
-#: src/nemo-desktop-icon-view.c:708
+#: src/nemo-desktop-icon-view.c:515
 msgid "Empty Trash"
 msgstr "Ачысціць сметніцу"
 
-#: src/nemo-desktop-icon-view.c:710 src/nemo-trash-bar.c:207
-#: src/nemo-view.c:8313
+#: src/nemo-desktop-icon-view.c:517 src/nemo-trash-bar.c:218
+#: src/nemo-view.c:8182
 msgid "Delete all items in the Trash"
 msgstr "Выдаліць усё змесціва сметніцы"
 
-#: src/nemo-desktop-icon-view.c:773
+#: src/nemo-desktop-icon-view.c:580
 msgid "The desktop view encountered an error."
 msgstr "Узнікла памылка рэжыму працоўнага стала."
 
-#: src/nemo-desktop-icon-view.c:774
+#: src/nemo-desktop-icon-view.c:581
 msgid "The desktop view encountered an error while starting up."
 msgstr "Падчас запуску ўзнікла памылка рэжыму працоўнага стала."
 
@@ -375,12 +383,6 @@ msgstr "Апісанне"
 #: src/nemo-desktop-item-properties.c:421
 msgid "Command"
 msgstr "Загад"
-
-#: src/nemo-desktop-window.c:92 src/nemo-desktop-window.c:305
-#: src/nemo-pathbar.c:1497 src/nemo-places-sidebar.c:770
-#: libnemo-private/nemo-action.c:932
-msgid "Desktop"
-msgstr "Працоўны стол"
 
 #: src/nemo-error-reporting.c:68
 #, c-format
@@ -503,196 +505,196 @@ msgstr ""
 msgid "Extensions changed.  Restart required."
 msgstr ""
 
-#: src/nemo-file-management-properties.c:281 src/nemo-properties-window.c:3945
-#: src/nemo-properties-window.c:3956
+#: src/nemo-file-management-properties.c:282 src/nemo-properties-window.c:3941
+#: src/nemo-properties-window.c:3952
 msgid "None"
 msgstr "Не вызначаны"
 
-#: src/nemo-file-management-properties.c:464 libnemo-private/nemo-file.c:4492
+#: src/nemo-file-management-properties.c:463 libnemo-private/nemo-file.c:4494
 msgid "today at %-I:%M:%S %p"
 msgstr "сёньня ў %-H:%M:%S"
 
-#: src/nemo-icon-view.c:133
+#: src/nemo-icon-view.c:135
 msgid "by _Name"
 msgstr "па _назве"
 
-#: src/nemo-icon-view.c:134 src/nemo-icon-view.c:1449
+#: src/nemo-icon-view.c:136 src/nemo-icon-view.c:1478
 msgid "Keep icons sorted by name in rows"
 msgstr "Упарадкоўваць значкі ў радкі па назве"
 
-#: src/nemo-icon-view.c:140
+#: src/nemo-icon-view.c:142
 msgid "by _Size"
 msgstr "па _памеры"
 
-#: src/nemo-icon-view.c:141 src/nemo-icon-view.c:1453
+#: src/nemo-icon-view.c:143 src/nemo-icon-view.c:1482
 msgid "Keep icons sorted by size in rows"
 msgstr "Упарадкоўваць значкі ў радкі па памеры"
 
-#: src/nemo-icon-view.c:147
+#: src/nemo-icon-view.c:149
 msgid "by _Type"
 msgstr "па _тыпу"
 
-#: src/nemo-icon-view.c:148 src/nemo-icon-view.c:1457
+#: src/nemo-icon-view.c:150 src/nemo-icon-view.c:1486
 msgid "Keep icons sorted by type in rows"
 msgstr "Упарадкоўваць значкі ў радкі па тыпу"
 
-#: src/nemo-icon-view.c:154
+#: src/nemo-icon-view.c:156
 msgid "by _Detailed Type"
 msgstr "падрабязным выглядам"
 
-#: src/nemo-icon-view.c:155 src/nemo-icon-view.c:1461
+#: src/nemo-icon-view.c:157 src/nemo-icon-view.c:1490
 msgid "Keep icons sorted by detailed type in rows"
 msgstr "Захоўваць значкі разсартаванымi падрабязным выглядам у шэрагах"
 
-#: src/nemo-icon-view.c:161
+#: src/nemo-icon-view.c:163
 msgid "by Modification _Date"
 msgstr "па _даце мадыфікацыі"
 
-#: src/nemo-icon-view.c:162 src/nemo-icon-view.c:1465
+#: src/nemo-icon-view.c:164 src/nemo-icon-view.c:1494
 msgid "Keep icons sorted by modification date in rows"
 msgstr "Упарадкоўваць значкі ў радкі паводле даты апошняй мадыфікацыі"
 
-#: src/nemo-icon-view.c:168
+#: src/nemo-icon-view.c:170
 msgid "by T_rash Time"
 msgstr "паводле _часу выкіду ў сметніцу"
 
-#: src/nemo-icon-view.c:169 src/nemo-icon-view.c:1469
+#: src/nemo-icon-view.c:171 src/nemo-icon-view.c:1498
 msgid "Keep icons sorted by trash time in rows"
 msgstr "Упарадкоўваць значкі ў радкі паводле часу выкіду ў сметніцу"
 
-#: src/nemo-icon-view.c:682
+#: src/nemo-icon-view.c:711
 msgid "_Organize Desktop by Name"
 msgstr "_Упарадкаваць назвы са стала"
 
-#: src/nemo-icon-view.c:1408
+#: src/nemo-icon-view.c:1437
 msgid "Arran_ge Items"
 msgstr "_Упарадкаваць элементы"
 
-#: src/nemo-icon-view.c:1410
+#: src/nemo-icon-view.c:1439
 msgid "Resize Icon..."
 msgstr "Змяніць памер значка..."
 
-#: src/nemo-icon-view.c:1411
+#: src/nemo-icon-view.c:1440
 msgid "Make the selected icon resizable"
 msgstr "Дазволіць змяненне памеру вылучанага значка"
 
-#: src/nemo-icon-view.c:1414 src/nemo-icon-view.c:1588
+#: src/nemo-icon-view.c:1443 src/nemo-icon-view.c:1617
 msgid "Restore Icons' Original Si_zes"
 msgstr "_Аднавіць арыгінальныя памеры значкоў"
 
-#: src/nemo-icon-view.c:1415
+#: src/nemo-icon-view.c:1444
 msgid "Restore each selected icon to its original size"
 msgstr "Аднавіць арыгінальны памер для ўсіх вылучаных значкоў"
 
-#: src/nemo-icon-view.c:1418
+#: src/nemo-icon-view.c:1447
 msgid "_Organize by Name"
 msgstr "_Упарадкаваць паводле назваў"
 
-#: src/nemo-icon-view.c:1419
+#: src/nemo-icon-view.c:1448
 msgid "Reposition icons to better fit in the window and avoid overlapping"
 msgstr ""
 "Упарадкаваць значкі для лепшага запаўнення акна і прадухілення заслоны "
 "аднаго значка іншым"
 
-#: src/nemo-icon-view.c:1426
+#: src/nemo-icon-view.c:1455
 msgid "Compact _Layout"
 msgstr "_Шчыльнае разьмяшчэнне"
 
-#: src/nemo-icon-view.c:1427
+#: src/nemo-icon-view.c:1456
 msgid "Toggle using a tighter layout scheme"
 msgstr "Пераключыць выкарыстаньне схемы поўнага разьмяшчэння элемэнтаў"
 
-#: src/nemo-icon-view.c:1431
+#: src/nemo-icon-view.c:1460
 msgid "Re_versed Order"
 msgstr "У _адваротным парадку"
 
-#: src/nemo-icon-view.c:1432
+#: src/nemo-icon-view.c:1461
 msgid "Display icons in the opposite order"
 msgstr "Паказваць значкі ў адваротным парадку"
 
-#: src/nemo-icon-view.c:1436
+#: src/nemo-icon-view.c:1465
 msgid "_Keep Aligned"
 msgstr "_Трымаць выраўненымі"
 
-#: src/nemo-icon-view.c:1437
+#: src/nemo-icon-view.c:1466
 msgid "Keep icons lined up on a grid"
 msgstr "Трымаць значкі ўпарадкаванымі ў сетцы"
 
-#: src/nemo-icon-view.c:1444
+#: src/nemo-icon-view.c:1473
 msgid "_Manually"
 msgstr "_Самастойна"
 
-#: src/nemo-icon-view.c:1445
+#: src/nemo-icon-view.c:1474
 msgid "Leave icons wherever they are dropped"
 msgstr "Дазволіць вольнае размяшчэнне значкоў"
 
-#: src/nemo-icon-view.c:1448
+#: src/nemo-icon-view.c:1477
 msgid "By _Name"
 msgstr "Паводле _назвы"
 
-#: src/nemo-icon-view.c:1452
+#: src/nemo-icon-view.c:1481
 msgid "By _Size"
 msgstr "Паводле _памеру"
 
-#: src/nemo-icon-view.c:1456
+#: src/nemo-icon-view.c:1485
 msgid "By _Type"
 msgstr "Паводле _тыпу"
 
-#: src/nemo-icon-view.c:1460
+#: src/nemo-icon-view.c:1489
 msgid "By _Detailed Type"
 msgstr "падрабязным выглядам"
 
-#: src/nemo-icon-view.c:1464
+#: src/nemo-icon-view.c:1493
 msgid "By Modification _Date"
 msgstr "Паводле _даты мадыфікацыі"
 
-#: src/nemo-icon-view.c:1468
+#: src/nemo-icon-view.c:1497
 msgid "By T_rash Time"
 msgstr "Паводле _часу выкіду ў сметніцу"
 
-#: src/nemo-icon-view.c:1589
+#: src/nemo-icon-view.c:1618
 msgid "Restore Icon's Original Si_ze"
 msgstr "_Аднавіць арыгінальны памер значка"
 
-#: src/nemo-icon-view.c:2881 src/nemo-icon-view-container.c:590
+#: src/nemo-icon-view.c:2901 src/nemo-icon-view-container.c:610
 #: src/nemo-window-menus.c:1439 src/nemo-file-management-properties.glade:12
 msgid "Icon View"
 msgstr "Рэжым значкоў"
 
-#: src/nemo-icon-view.c:2883
+#: src/nemo-icon-view.c:2903
 msgid "_Icons"
 msgstr "_Значкі"
 
-#: src/nemo-icon-view.c:2884
+#: src/nemo-icon-view.c:2904
 msgid "The icon view encountered an error."
 msgstr "Узнікла памылка рэжыму значкоў."
 
-#: src/nemo-icon-view.c:2885
+#: src/nemo-icon-view.c:2905
 msgid "The icon view encountered an error while starting up."
 msgstr "Пры запуску ўзнікла памылка рэжыму значкоў."
 
-#: src/nemo-icon-view.c:2886
+#: src/nemo-icon-view.c:2906
 msgid "Display this location with the icon view."
 msgstr "Паказаць гэтае месца ў рэжыме значкоў."
 
-#: src/nemo-icon-view.c:2895 src/nemo-window-menus.c:1462
+#: src/nemo-icon-view.c:2915 src/nemo-window-menus.c:1462
 #: src/nemo-file-management-properties.glade:18
 msgid "Compact View"
 msgstr "Кампактны выгляд"
 
-#: src/nemo-icon-view.c:2897
+#: src/nemo-icon-view.c:2917
 msgid "_Compact"
 msgstr "_Кампактна"
 
-#: src/nemo-icon-view.c:2898
+#: src/nemo-icon-view.c:2918
 msgid "The compact view encountered an error."
 msgstr "Узнікла памылка кампактнага рэжыму."
 
-#: src/nemo-icon-view.c:2899
+#: src/nemo-icon-view.c:2919
 msgid "The compact view encountered an error while starting up."
 msgstr "Пры запуску ўзнікла памылка кампактнага рэжыму."
 
-#: src/nemo-icon-view.c:2900
+#: src/nemo-icon-view.c:2920
 msgid "Display this location with the compact view."
 msgstr "Паказаць гэтае месца ў кампактным рэжыме."
 
@@ -824,7 +826,7 @@ msgstr "Не ўдалося прачытаць звесткі аб выяве"
 
 #: src/nemo-image-properties-page.c:706 src/nemo-list-model.c:431
 #: src/nemo-tree-sidebar-model.c:1242 src/nemo-window-manage-views.c:1169
-#: src/nemo-window-slot.c:296
+#: src/nemo-window-slot.c:297
 msgid "Loading..."
 msgstr "Загрузка..."
 
@@ -859,36 +861,36 @@ msgstr ""
 msgid "(Empty)"
 msgstr "(Пуста)"
 
-#: src/nemo-list-view.c:1876
+#: src/nemo-list-view.c:1891
 msgid "Use Default"
 msgstr "Выкарыстоўваць па змаўчанні"
 
-#: src/nemo-list-view.c:1887
+#: src/nemo-list-view.c:1902
 msgid "Temporarily disable auto-sort"
 msgstr "Часова адключыць аўта-сартаванне"
 
-#: src/nemo-list-view.c:2196 libnemo-private/nemo-column-utilities.c:43
+#: src/nemo-list-view.c:2234 libnemo-private/nemo-column-utilities.c:43
 msgid "Name"
 msgstr "Імя"
 
-#: src/nemo-list-view.c:2270 src/nemo-list-view.c:3830
+#: src/nemo-list-view.c:2312 src/nemo-list-view.c:3872
 #: src/nemo-window-menus.c:1450 src/nemo-file-management-properties.glade:15
 msgid "List View"
 msgstr "Рэжым спіса"
 
-#: src/nemo-list-view.c:3832
+#: src/nemo-list-view.c:3874
 msgid "_List"
 msgstr "_Спіс"
 
-#: src/nemo-list-view.c:3833
+#: src/nemo-list-view.c:3875
 msgid "The list view encountered an error."
 msgstr "Узнікла памылка рэжыму спіса."
 
-#: src/nemo-list-view.c:3834
+#: src/nemo-list-view.c:3876
 msgid "The list view encountered an error while starting up."
 msgstr "Пры запуску ўзнікла памылка рэжыму спіса."
 
-#: src/nemo-list-view.c:3835
+#: src/nemo-list-view.c:3877
 msgid "Display this location with the list view."
 msgstr "Паказаць гэтае месца ў рэжыме спіса."
 
@@ -928,8 +930,8 @@ msgid "This link cannot be used, because its target \"%s\" doesn't exist."
 msgstr "Гэтая спасылка бескарысная, бо яе месца прызначэння \"%s\" не існуе."
 
 #: src/nemo-mime-actions.c:656 src/nemo-tree-sidebar.c:1339
-#: src/nemo-view.c:8364 src/nemo-view.c:8482 src/nemo-view.c:9520
-#: src/nemo-view.c:9847
+#: src/nemo-view.c:8233 src/nemo-view.c:8351 src/nemo-view.c:9403
+#: src/nemo-view.c:9741
 msgid "Mo_ve to Trash"
 msgstr "_Выкінуць у сметніцу"
 
@@ -952,7 +954,7 @@ msgid "_Display"
 msgstr "Па_казаць"
 
 #: src/nemo-mime-actions.c:1051 src/nemo-mime-actions.c:1571
-#: src/nemo-view.c:1058
+#: src/nemo-view.c:1053
 msgid "Are you sure you want to open all files?"
 msgstr "Вы сапраўды жадаеце адчыніць усе гэтыя файлы?"
 
@@ -965,7 +967,7 @@ msgstr[1] "Гэта дзеянне адкрые %d асобныя карткі."
 msgstr[2] "Гэта дзеянне адкрые %d асобных картак."
 
 #: src/nemo-mime-actions.c:1155 src/nemo-open-with-main.c:144
-#: src/nemo-view.c:1323
+#: src/nemo-view.c:1318
 msgid "Open with"
 msgstr "Адкрыць з"
 
@@ -1024,11 +1026,11 @@ msgstr[1] "Гэта дзеянне адкрые %d асобныя праграм
 msgstr[2] "Гэта дзеянне адкрые %d асобных праграм."
 
 #: src/nemo-mime-actions.c:1649 src/nemo-mime-actions.c:1923
-#: src/nemo-view.c:7482
+#: src/nemo-view.c:7351
 msgid "Unable to mount location"
 msgstr "Немагчыма змантаваць месца"
 
-#: src/nemo-mime-actions.c:2002 src/nemo-view.c:7629
+#: src/nemo-mime-actions.c:2002 src/nemo-view.c:7498
 msgid "Unable to start location"
 msgstr "Не ўдалося запусціць адрас"
 
@@ -1045,7 +1047,7 @@ msgstr[0] "Адкрываецца %d элемэнт."
 msgstr[1] "Адкрываецца %d элемэнты."
 msgstr[2] "Адкрываецца %d элемэнтаў."
 
-#: src/nemo-notebook.c:390
+#: src/nemo-notebook.c:392
 msgid "Close tab"
 msgstr "Закрыць картку"
 
@@ -1057,20 +1059,20 @@ msgid ""
 "default mimetype handler."
 msgstr ""
 
-#: src/nemo-places-sidebar.c:404
+#: src/nemo-places-sidebar.c:408
 msgid "Devices"
 msgstr "Прылады"
 
-#: src/nemo-places-sidebar.c:622 src/nemo-view.c:3139
+#: src/nemo-places-sidebar.c:626 src/nemo-view.c:3127
 #, c-format
 msgid "Free space: %s"
 msgstr "Вольна: %s"
 
-#: src/nemo-places-sidebar.c:742
+#: src/nemo-places-sidebar.c:745
 msgid "My Computer"
 msgstr "Мой кампутар"
 
-#: src/nemo-places-sidebar.c:749
+#: src/nemo-places-sidebar.c:752
 #, c-format
 msgid ""
 "Open your personal folder\n"
@@ -1079,26 +1081,26 @@ msgstr ""
 "Адкрыць вашу персанальную папку\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:753 src/nemo-query-editor.c:1109
+#: src/nemo-places-sidebar.c:756 src/nemo-query-editor.c:1167
 #: src/nemo-tree-sidebar.c:1475 libnemo-private/nemo-bookmark.c:130
 #: libnemo-private/nemo-desktop-link.c:118
 #: libnemo-private/nemo-file-utilities.c:66
 msgid "Home"
 msgstr "Дом"
 
-#: src/nemo-places-sidebar.c:772
+#: src/nemo-places-sidebar.c:775
 msgid "Open the contents of your desktop in a folder"
 msgstr "Адкрыць змесціва працоўнага стала як папку"
 
-#: src/nemo-places-sidebar.c:821
+#: src/nemo-places-sidebar.c:825
 msgid "Recent"
 msgstr "Нядаўнія"
 
-#: src/nemo-places-sidebar.c:823
+#: src/nemo-places-sidebar.c:827
 msgid "Recent files"
 msgstr "Нядаўнія файлы"
 
-#: src/nemo-places-sidebar.c:832
+#: src/nemo-places-sidebar.c:836
 #, c-format
 msgid ""
 "Open the contents of the File System\n"
@@ -1107,24 +1109,24 @@ msgstr ""
 "Адкрыць змесціва файлавай сістэмы\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:836 src/nemo-tree-sidebar.c:1479
+#: src/nemo-places-sidebar.c:840 src/nemo-tree-sidebar.c:1479
 msgid "File System"
 msgstr "Файлавая сістэма"
 
-#: src/nemo-places-sidebar.c:851 src/nemo-trash-bar.c:191
+#: src/nemo-places-sidebar.c:855 src/nemo-trash-bar.c:202
 #: libnemo-private/nemo-desktop-link.c:135
 msgid "Trash"
 msgstr "Сметніца"
 
-#: src/nemo-places-sidebar.c:853
+#: src/nemo-places-sidebar.c:857
 msgid "Open the trash"
 msgstr "Адкрыць сметніцу"
 
-#: src/nemo-places-sidebar.c:858
+#: src/nemo-places-sidebar.c:862
 msgid "Bookmarks"
 msgstr ""
 
-#: src/nemo-places-sidebar.c:978
+#: src/nemo-places-sidebar.c:979
 #, c-format
 msgid ""
 "%s (%s)\n"
@@ -1133,17 +1135,17 @@ msgstr ""
 "%s (%s)\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:1007
+#: src/nemo-places-sidebar.c:1008
 #, c-format
 msgid "Mount and open %s (%s)"
 msgstr "Далучыць і адкрыць %s (%s)"
 
-#: src/nemo-places-sidebar.c:1035 src/nemo-places-sidebar.c:1124
+#: src/nemo-places-sidebar.c:1036 src/nemo-places-sidebar.c:1125
 #, c-format
 msgid "Mount and open %s"
 msgstr "Прымацаваць і адкрыць %s"
 
-#: src/nemo-places-sidebar.c:1077
+#: src/nemo-places-sidebar.c:1078
 #, c-format
 msgid ""
 "%s\n"
@@ -1152,139 +1154,140 @@ msgstr ""
 "%s\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:1111 src/nemo-places-sidebar.c:1166
+#: src/nemo-places-sidebar.c:1112 src/nemo-places-sidebar.c:1167
 #: src/nemo-tree-sidebar.c:1483 libnemo-private/nemo-desktop-link.c:147
 msgid "Network"
 msgstr "Сетка"
 
-#: src/nemo-places-sidebar.c:1168
+#: src/nemo-places-sidebar.c:1169
 msgid "Browse the contents of the network"
 msgstr "Агляд змесціва сеткі"
 
-#: src/nemo-places-sidebar.c:2245 src/nemo-places-sidebar.c:3425
-#: src/nemo-view.c:8410 src/nemo-view.c:8434 src/nemo-view.c:8506
-#: src/nemo-view.c:9143 src/nemo-view.c:9147 src/nemo-view.c:9230
-#: src/nemo-view.c:9234 src/nemo-view.c:9334 src/nemo-view.c:9338
+#: src/nemo-places-sidebar.c:2246 src/nemo-places-sidebar.c:3426
+#: src/nemo-view.c:8279 src/nemo-view.c:8303 src/nemo-view.c:8375
+#: src/nemo-view.c:9026 src/nemo-view.c:9030 src/nemo-view.c:9113
+#: src/nemo-view.c:9117 src/nemo-view.c:9217 src/nemo-view.c:9221
 msgid "_Start"
 msgstr "_Запусціць"
 
-#: src/nemo-places-sidebar.c:2246 src/nemo-places-sidebar.c:3432
-#: src/nemo-view.c:8414 src/nemo-view.c:8438 src/nemo-view.c:8510
-#: src/nemo-view.c:9172 src/nemo-view.c:9259 src/nemo-view.c:9363
+#: src/nemo-places-sidebar.c:2247 src/nemo-places-sidebar.c:3433
+#: src/nemo-view.c:8283 src/nemo-view.c:8307 src/nemo-view.c:8379
+#: src/nemo-view.c:9055 src/nemo-view.c:9142 src/nemo-view.c:9246
 #: src/nemo-window-menus.c:1125
 msgid "_Stop"
 msgstr "_Спыніць"
 
-#: src/nemo-places-sidebar.c:2251
+#: src/nemo-places-sidebar.c:2252
 msgid "_Power On"
 msgstr "_Уключыць"
 
-#: src/nemo-places-sidebar.c:2252 src/nemo-view.c:9176 src/nemo-view.c:9263
-#: src/nemo-view.c:9367
+#: src/nemo-places-sidebar.c:2253 src/nemo-view.c:9059 src/nemo-view.c:9146
+#: src/nemo-view.c:9250
 msgid "_Safely Remove Drive"
 msgstr "_Карэктна адлучыць прывад"
 
-#: src/nemo-places-sidebar.c:2255
+#: src/nemo-places-sidebar.c:2256
 msgid "_Connect Drive"
 msgstr "_Далучыць прывад"
 
-#: src/nemo-places-sidebar.c:2256
+#: src/nemo-places-sidebar.c:2257
 msgid "_Disconnect Drive"
 msgstr "_Адлучыць прывад"
 
-#: src/nemo-places-sidebar.c:2259
+#: src/nemo-places-sidebar.c:2260
 msgid "_Start Multi-disk Device"
 msgstr "_Запусціць шматдыскавае прыстасаванне"
 
-#: src/nemo-places-sidebar.c:2260
+#: src/nemo-places-sidebar.c:2261
 msgid "_Stop Multi-disk Device"
 msgstr "_Спыніць шматдыскавае прыстасаванне"
 
-#: src/nemo-places-sidebar.c:2264 src/nemo-view.c:9246 src/nemo-view.c:9350
+#: src/nemo-places-sidebar.c:2265 src/nemo-view.c:9129 src/nemo-view.c:9233
 msgid "_Unlock Drive"
 msgstr "_Разблакіраваць прывад"
 
-#: src/nemo-places-sidebar.c:2265 src/nemo-view.c:9188 src/nemo-view.c:9275
-#: src/nemo-view.c:9379
+#: src/nemo-places-sidebar.c:2266 src/nemo-view.c:9071 src/nemo-view.c:9158
+#: src/nemo-view.c:9262
 msgid "_Lock Drive"
 msgstr "_Заблакіраваць прывад"
 
-#: src/nemo-places-sidebar.c:2371 src/nemo-places-sidebar.c:2979
+#: src/nemo-places-sidebar.c:2372 src/nemo-places-sidebar.c:2980
 #, c-format
 msgid "Unable to start %s"
 msgstr "Не ўдалося запусціць %s"
 
-#: src/nemo-places-sidebar.c:2739 src/nemo-places-sidebar.c:2767
-#: src/nemo-places-sidebar.c:2795
+#: src/nemo-places-sidebar.c:2740 src/nemo-places-sidebar.c:2768
+#: src/nemo-places-sidebar.c:2796
 #, c-format
 msgid "Unable to eject %s"
 msgstr "Не ўдалося выняць %s"
 
-#: src/nemo-places-sidebar.c:2934
+#: src/nemo-places-sidebar.c:2935
 #, c-format
 msgid "Unable to poll %s for media changes"
 msgstr "Не ўдалося апытаць %s наконт зменах носьбіта"
 
-#: src/nemo-places-sidebar.c:3034
+#: src/nemo-places-sidebar.c:3035
 #, c-format
 msgid "Unable to stop %s"
 msgstr "Немагчыма спыніць %s"
 
-#: src/nemo-places-sidebar.c:3337 src/nemo-tree-sidebar.c:1250
-#: src/nemo-view.c:8271 src/nemo-view.c:9762
+#: src/nemo-places-sidebar.c:3338 src/nemo-tree-sidebar.c:1250
+#: src/nemo-view.c:8140 src/nemo-view.c:8480 src/nemo-view.c:9650
+#: src/nemo-view.c:9661
 msgid "_Open"
 msgstr "_Адкрыць"
 
-#: src/nemo-places-sidebar.c:3345 src/nemo-tree-sidebar.c:1261
-#: src/nemo-view.c:8283 src/nemo-view.c:8464 src/nemo-view.c:9467
-#: src/nemo-view.c:9824
+#: src/nemo-places-sidebar.c:3346 src/nemo-tree-sidebar.c:1261
+#: src/nemo-view.c:8152 src/nemo-view.c:8333 src/nemo-view.c:9350
+#: src/nemo-view.c:9718
 msgid "Open in New _Tab"
 msgstr "Адкрыць у новай _картцы"
 
-#: src/nemo-places-sidebar.c:3355 src/nemo-tree-sidebar.c:1275
-#: src/nemo-view.c:9458 src/nemo-view.c:9804
+#: src/nemo-places-sidebar.c:3356 src/nemo-tree-sidebar.c:1275
+#: src/nemo-view.c:9341 src/nemo-view.c:9698
 msgid "Open in New _Window"
 msgstr "Адкрыць у новым _акне"
 
-#: src/nemo-places-sidebar.c:3366 src/nemo-window-menus.c:1231
+#: src/nemo-places-sidebar.c:3367 src/nemo-window-menus.c:1231
 msgid "_Add Bookmark"
 msgstr "_Дадаць закладку"
 
-#: src/nemo-places-sidebar.c:3372
+#: src/nemo-places-sidebar.c:3373
 msgid "Remove"
 msgstr "Выдаліць"
 
-#: src/nemo-places-sidebar.c:3381
+#: src/nemo-places-sidebar.c:3382
 msgid "Rename..."
 msgstr "Пераназваць..."
 
-#: src/nemo-places-sidebar.c:3397 src/nemo-view.c:8398 src/nemo-view.c:8422
-#: src/nemo-view.c:8494
+#: src/nemo-places-sidebar.c:3398 src/nemo-view.c:8267 src/nemo-view.c:8291
+#: src/nemo-view.c:8363
 msgid "_Mount"
 msgstr "Пры_мантаваць"
 
-#: src/nemo-places-sidebar.c:3404 src/nemo-tree-sidebar.c:1371
-#: src/nemo-view.c:8402 src/nemo-view.c:8426 src/nemo-view.c:8498
+#: src/nemo-places-sidebar.c:3405 src/nemo-tree-sidebar.c:1371
+#: src/nemo-view.c:8271 src/nemo-view.c:8295 src/nemo-view.c:8367
 msgid "_Unmount"
 msgstr "Ад_мантаваць"
 
-#: src/nemo-places-sidebar.c:3411 src/nemo-tree-sidebar.c:1380
-#: src/nemo-view.c:8406 src/nemo-view.c:8430 src/nemo-view.c:8502
+#: src/nemo-places-sidebar.c:3412 src/nemo-tree-sidebar.c:1380
+#: src/nemo-view.c:8275 src/nemo-view.c:8299 src/nemo-view.c:8371
 msgid "_Eject"
 msgstr "_Выняць"
 
-#: src/nemo-places-sidebar.c:3418 src/nemo-view.c:8418 src/nemo-view.c:8442
-#: src/nemo-view.c:8514
+#: src/nemo-places-sidebar.c:3419 src/nemo-view.c:8287 src/nemo-view.c:8311
+#: src/nemo-view.c:8383
 msgid "_Detect Media"
 msgstr "_Апазнаць носьбіт"
 
-#: src/nemo-places-sidebar.c:3441 src/nemo-trash-bar.c:204
-#: libnemo-private/nemo-file-operations.c:1495
-#: libnemo-private/nemo-file-operations.c:2371
+#: src/nemo-places-sidebar.c:3442 src/nemo-trash-bar.c:215
+#: libnemo-private/nemo-file-operations.c:1506
+#: libnemo-private/nemo-file-operations.c:2382
 msgid "Empty _Trash"
 msgstr "Спустошыць _сметніцу"
 
-#: src/nemo-places-sidebar.c:3453 src/nemo-view.c:8253 src/nemo-view.c:8519
+#: src/nemo-places-sidebar.c:3454 src/nemo-view.c:8122 src/nemo-view.c:8388
 msgid "_Properties"
 msgstr "_Уласцівасці"
 
@@ -1313,63 +1316,63 @@ msgstr "Усе аперацыі з файламі паспяхова сконч�
 msgid "%d%% %s"
 msgstr "%d%% %s"
 
-#: src/nemo-properties-window.c:492
+#: src/nemo-properties-window.c:494
 msgid "You cannot assign more than one custom icon at a time!"
 msgstr "Нельга прызначыць больш за адзін уласны значок!"
 
-#: src/nemo-properties-window.c:493
+#: src/nemo-properties-window.c:495
 msgid "Please drag just one image to set a custom icon."
 msgstr "Перацягніце адзін значок, каб ужыць яго."
 
-#: src/nemo-properties-window.c:504
+#: src/nemo-properties-window.c:506
 msgid "The file that you dropped is not local."
 msgstr "Файл, які вы перацягнулі, немясцовы."
 
-#: src/nemo-properties-window.c:505 src/nemo-properties-window.c:511
+#: src/nemo-properties-window.c:507 src/nemo-properties-window.c:513
 msgid "You can only use local images as custom icons."
 msgstr "Для ўласных значкоў можна выкарыстоўваць толькі мясцовыя выявы."
 
-#: src/nemo-properties-window.c:510
+#: src/nemo-properties-window.c:512
 msgid "The file that you dropped is not an image."
 msgstr "Кінуты файл не зьяўляецца відарысам."
 
-#: src/nemo-properties-window.c:640
+#: src/nemo-properties-window.c:642
 msgid "_Name:"
 msgid_plural "_Names:"
 msgstr[0] "_Iмя:"
 msgstr[1] "_Назвы:"
 msgstr[2] "_Назваў:"
 
-#: src/nemo-properties-window.c:835
+#: src/nemo-properties-window.c:837
 msgid "Properties"
 msgstr "Уласцівасці"
 
-#: src/nemo-properties-window.c:843
+#: src/nemo-properties-window.c:845
 #, c-format
 msgid "%s Properties"
 msgstr "Уласцівасці %s"
 
-#: src/nemo-properties-window.c:1125 libnemo-private/nemo-file.c:6385
+#: src/nemo-properties-window.c:1119 libnemo-private/nemo-file.c:6385
 msgid "unknown"
 msgstr "невядомы"
 
-#: src/nemo-properties-window.c:1357
+#: src/nemo-properties-window.c:1351
 msgid "Cancel Group Change?"
 msgstr "Адмяніць змену групы?"
 
-#: src/nemo-properties-window.c:1772
+#: src/nemo-properties-window.c:1766
 msgid "Cancel Owner Change?"
 msgstr "Адмяніць змену ўладальніка?"
 
-#: src/nemo-properties-window.c:2093
+#: src/nemo-properties-window.c:2087
 msgid "nothing"
 msgstr "нічога"
 
-#: src/nemo-properties-window.c:2095
+#: src/nemo-properties-window.c:2089
 msgid "unreadable"
 msgstr "нечытальны"
 
-#: src/nemo-properties-window.c:2108
+#: src/nemo-properties-window.c:2102
 #, c-format
 msgid "%1$s item (and %2$s hidden), with size %3$s"
 msgid_plural "%1$s items (and %2$s hidden), totalling %3$s"
@@ -1377,7 +1380,7 @@ msgstr[0] "%1$s аб'ект (а так сама %2$s схаваных), паме
 msgstr[1] "%1$s аб'екта (а так сама %2$s схаваных), агульным памерам %3$s"
 msgstr[2] "%1$s аб'ектаў (а так сама %2$s схаваных), агульным памерам %3$s"
 
-#: src/nemo-properties-window.c:2113
+#: src/nemo-properties-window.c:2107
 #, c-format
 msgid "%1$s item, with size %2$s"
 msgid_plural "%1$s items, totalling %2$s"
@@ -1385,236 +1388,236 @@ msgstr[0] "%1$s аб'ект, памерам %2$s"
 msgstr[1] "%1$s аб'екта, агульным памерам %2$s"
 msgstr[2] "%1$s аб'ектаў, агульным памерам %2$s"
 
-#: src/nemo-properties-window.c:2122
+#: src/nemo-properties-window.c:2116
 msgid "(some contents unreadable)"
 msgstr "(некаторыя элементы нечытальны)"
 
-#: src/nemo-properties-window.c:2139
+#: src/nemo-properties-window.c:2133
 msgid "Contents:"
 msgstr "Змест:"
 
-#: src/nemo-properties-window.c:2940
+#: src/nemo-properties-window.c:2937
 msgid "used"
 msgstr "выкарыстоўваецца"
 
-#: src/nemo-properties-window.c:2947
+#: src/nemo-properties-window.c:2944
 msgid "free"
 msgstr "свабодны"
 
-#: src/nemo-properties-window.c:2949
+#: src/nemo-properties-window.c:2946
 msgid "Total capacity:"
 msgstr "Агульная ёмістасць:"
 
-#: src/nemo-properties-window.c:2958
+#: src/nemo-properties-window.c:2955
 msgid "Filesystem type:"
 msgstr "Тып файлавай сістэмы:"
 
-#: src/nemo-properties-window.c:3044
+#: src/nemo-properties-window.c:3040
 msgid "Basic"
 msgstr "Агульнае"
 
-#: src/nemo-properties-window.c:3101
+#: src/nemo-properties-window.c:3097
 #: libnemo-private/nemo-file-conflict-dialog.c:260
 #: libnemo-private/nemo-file-conflict-dialog.c:291
 msgid "Type:"
 msgstr "Від:"
 
-#: src/nemo-properties-window.c:3110 libnemo-private/nemo-file.c:7608
+#: src/nemo-properties-window.c:3106 libnemo-private/nemo-file.c:7604
 msgid "Link target:"
 msgstr "Спасылка да:"
 
-#: src/nemo-properties-window.c:3121
+#: src/nemo-properties-window.c:3117
 #: libnemo-private/nemo-file-conflict-dialog.c:257
 #: libnemo-private/nemo-file-conflict-dialog.c:288
 msgid "Size:"
 msgstr "Памер:"
 
-#: src/nemo-properties-window.c:3130
+#: src/nemo-properties-window.c:3126
 msgid "Location:"
 msgstr "Месцазнаходжанне:"
 
-#: src/nemo-properties-window.c:3137
+#: src/nemo-properties-window.c:3133
 msgid "Volume:"
 msgstr "Дыскавы том:"
 
-#: src/nemo-properties-window.c:3147
+#: src/nemo-properties-window.c:3143
 msgid "Accessed:"
 msgstr "Апошні доступ:"
 
-#: src/nemo-properties-window.c:3151
+#: src/nemo-properties-window.c:3147
 msgid "Modified:"
 msgstr "Зменены:"
 
-#: src/nemo-properties-window.c:3160
+#: src/nemo-properties-window.c:3156
 msgid "Free space:"
 msgstr "Вольная прастора:"
 
-#: src/nemo-properties-window.c:3581
+#: src/nemo-properties-window.c:3577
 msgid "_Read"
 msgstr "_Прачытаныя"
 
-#: src/nemo-properties-window.c:3583
+#: src/nemo-properties-window.c:3579
 msgid "_Write"
 msgstr "_Запісаць"
 
-#: src/nemo-properties-window.c:3585
+#: src/nemo-properties-window.c:3581
 msgid "E_xecute"
 msgstr "В_ыкананне"
 
-#: src/nemo-properties-window.c:3853 src/nemo-properties-window.c:3864
-#: src/nemo-properties-window.c:3876
+#: src/nemo-properties-window.c:3849 src/nemo-properties-window.c:3860
+#: src/nemo-properties-window.c:3872
 msgid "no "
 msgstr "няма "
 
-#: src/nemo-properties-window.c:3856
+#: src/nemo-properties-window.c:3852
 msgid "list"
 msgstr "спіс"
 
-#: src/nemo-properties-window.c:3858
+#: src/nemo-properties-window.c:3854
 msgid "read"
 msgstr "чытаць"
 
-#: src/nemo-properties-window.c:3867
+#: src/nemo-properties-window.c:3863
 msgid "create/delete"
 msgstr "стварыць/выдаліць"
 
-#: src/nemo-properties-window.c:3869
+#: src/nemo-properties-window.c:3865
 msgid "write"
 msgstr "пісаць"
 
-#: src/nemo-properties-window.c:3878
+#: src/nemo-properties-window.c:3874
 msgid "access"
 msgstr "доступ"
 
-#: src/nemo-properties-window.c:3926
+#: src/nemo-properties-window.c:3922
 msgid "Access:"
 msgstr "Доступ:"
 
-#: src/nemo-properties-window.c:3928
+#: src/nemo-properties-window.c:3924
 msgid "Folder access:"
 msgstr "Доступ да папкі:"
 
-#: src/nemo-properties-window.c:3930
+#: src/nemo-properties-window.c:3926
 msgid "File access:"
 msgstr "Доступ да файла:"
 
-#: src/nemo-properties-window.c:3948
+#: src/nemo-properties-window.c:3944
 msgid "List files only"
 msgstr "Толькі прагляд спіса файлаў"
 
-#: src/nemo-properties-window.c:3950
+#: src/nemo-properties-window.c:3946
 msgid "Access files"
 msgstr "Доступ да файлаў"
 
-#: src/nemo-properties-window.c:3952
+#: src/nemo-properties-window.c:3948
 msgid "Create and delete files"
 msgstr "Стварэнне і выдаленне файлаў"
 
-#: src/nemo-properties-window.c:3959
+#: src/nemo-properties-window.c:3955
 msgid "Read-only"
 msgstr "Толькі чытаць"
 
-#: src/nemo-properties-window.c:3961
+#: src/nemo-properties-window.c:3957
 msgid "Read and write"
 msgstr "Чытаць і пісаць"
 
-#: src/nemo-properties-window.c:4026
+#: src/nemo-properties-window.c:4022
 msgid "Special flags:"
 msgstr "Спецыяльныя сцягі:"
 
-#: src/nemo-properties-window.c:4028
+#: src/nemo-properties-window.c:4024
 msgid "Set _user ID"
 msgstr "Усталяваць ID _карыстальніка"
 
-#: src/nemo-properties-window.c:4029
+#: src/nemo-properties-window.c:4025
 msgid "Set gro_up ID"
 msgstr "Усталяваць ID _групы"
 
-#: src/nemo-properties-window.c:4030
+#: src/nemo-properties-window.c:4026
 msgid "_Sticky"
 msgstr "_Ліпучы біт"
 
-#: src/nemo-properties-window.c:4104 src/nemo-properties-window.c:4296
+#: src/nemo-properties-window.c:4100 src/nemo-properties-window.c:4292
 msgid "_Owner:"
 msgstr "_Уласнік:"
 
-#: src/nemo-properties-window.c:4112 src/nemo-properties-window.c:4201
-#: src/nemo-properties-window.c:4306
+#: src/nemo-properties-window.c:4108 src/nemo-properties-window.c:4197
+#: src/nemo-properties-window.c:4302
 msgid "Owner:"
 msgstr "Уласнік:"
 
-#: src/nemo-properties-window.c:4134 src/nemo-properties-window.c:4318
+#: src/nemo-properties-window.c:4130 src/nemo-properties-window.c:4314
 msgid "_Group:"
 msgstr "_Група:"
 
-#: src/nemo-properties-window.c:4142 src/nemo-properties-window.c:4202
-#: src/nemo-properties-window.c:4326
+#: src/nemo-properties-window.c:4138 src/nemo-properties-window.c:4198
+#: src/nemo-properties-window.c:4322
 msgid "Group:"
 msgstr "Група:"
 
-#: src/nemo-properties-window.c:4181
+#: src/nemo-properties-window.c:4177
 msgid "Execute:"
 msgstr "Выкананне:"
 
-#: src/nemo-properties-window.c:4184
+#: src/nemo-properties-window.c:4180
 msgid "Allow _executing file as program"
 msgstr "Дазволіць _выкананне файла як праграмы"
 
-#: src/nemo-properties-window.c:4203
+#: src/nemo-properties-window.c:4199
 msgid "Others:"
 msgstr "Іншыя:"
 
-#: src/nemo-properties-window.c:4342
+#: src/nemo-properties-window.c:4338
 msgid "Folder Permissions:"
 msgstr "Дазволы на працу з папкай:"
 
-#: src/nemo-properties-window.c:4350
+#: src/nemo-properties-window.c:4346
 msgid "File Permissions:"
 msgstr "Дазволы на працу з файлам:"
 
-#: src/nemo-properties-window.c:4359
+#: src/nemo-properties-window.c:4355
 msgid "Text view:"
 msgstr "У тэкставай форме:"
 
-#: src/nemo-properties-window.c:4493
+#: src/nemo-properties-window.c:4489
 #: libnemo-private/nemo-column-utilities.c:104
 msgid "Permissions"
 msgstr "Правы"
 
-#: src/nemo-properties-window.c:4507
+#: src/nemo-properties-window.c:4503
 msgid "You are not the owner, so you cannot change these permissions."
 msgstr "Вы не ўласнік файла, таму не можаце змяняць дазволы на яго."
 
-#: src/nemo-properties-window.c:4527
+#: src/nemo-properties-window.c:4523
 msgid "SELinux context:"
 msgstr "Кантэкст SELinux:"
 
-#: src/nemo-properties-window.c:4532
+#: src/nemo-properties-window.c:4528
 msgid "Last changed:"
 msgstr "Час апошняга змянення:"
 
-#: src/nemo-properties-window.c:4544
+#: src/nemo-properties-window.c:4540
 msgid "Apply Permissions to Enclosed Files"
 msgstr "Ужыць дазволы для файлаў, змешчаных унутры"
 
-#: src/nemo-properties-window.c:4554
+#: src/nemo-properties-window.c:4550
 #, c-format
 msgid "The permissions of \"%s\" could not be determined."
 msgstr "Не ўдалося вызначыць дазволы на \"%s\"."
 
-#: src/nemo-properties-window.c:4557
+#: src/nemo-properties-window.c:4553
 msgid "The permissions of the selected file could not be determined."
 msgstr "Не ўдалося вызначыць дазволы на вылучаны файл."
 
-#: src/nemo-properties-window.c:4791
+#: src/nemo-properties-window.c:4792
 msgid "Open With"
 msgstr "Адкрыць з дапамогай"
 
-#: src/nemo-properties-window.c:5117
+#: src/nemo-properties-window.c:5149
 msgid "Creating Properties window."
 msgstr "Стварэнне акна ўласцівасцяў."
 
-#: src/nemo-properties-window.c:5403
+#: src/nemo-properties-window.c:5434
 msgid "Select Custom Icon"
 msgstr "Вылучэнне ўласнага значка"
 
@@ -1622,71 +1625,75 @@ msgstr "Вылучэнне ўласнага значка"
 msgid "File Type"
 msgstr "Тып файла"
 
-#: src/nemo-query-editor.c:262
+#: src/nemo-query-editor.c:386
 msgid "Documents"
 msgstr "Дакументы"
 
-#: src/nemo-query-editor.c:280
+#: src/nemo-query-editor.c:404
 msgid "Music"
 msgstr "Музыка"
 
-#: src/nemo-query-editor.c:295 libnemo-private/nemo-file.c:6423
+#: src/nemo-query-editor.c:419 libnemo-private/nemo-file.c:6423
 msgid "Video"
 msgstr "Відэа"
 
-#: src/nemo-query-editor.c:311
+#: src/nemo-query-editor.c:435
 msgid "Picture"
 msgstr "Выява"
 
-#: src/nemo-query-editor.c:331
+#: src/nemo-query-editor.c:455
 msgid "Illustration"
 msgstr "Ілюстрацыя"
 
-#: src/nemo-query-editor.c:345 libnemo-private/nemo-file.c:6428
+#: src/nemo-query-editor.c:469 libnemo-private/nemo-file.c:6428
 msgid "Spreadsheet"
 msgstr "Электронная табліца"
 
-#: src/nemo-query-editor.c:361 libnemo-private/nemo-file.c:6427
+#: src/nemo-query-editor.c:485 libnemo-private/nemo-file.c:6427
 msgid "Presentation"
 msgstr "Прэзентацыя"
 
-#: src/nemo-query-editor.c:370
+#: src/nemo-query-editor.c:494
 msgid "Pdf / Postscript"
 msgstr "Pdf / Postscript"
 
-#: src/nemo-query-editor.c:378
+#: src/nemo-query-editor.c:502
 msgid "Text File"
 msgstr "Тэкставы файл"
 
-#: src/nemo-query-editor.c:457
+#: src/nemo-query-editor.c:581
 msgid "Select type"
 msgstr "Выберыце тып"
 
-#: src/nemo-query-editor.c:541
+#: src/nemo-query-editor.c:585
+msgid "Select"
+msgstr ""
+
+#: src/nemo-query-editor.c:666
 msgid "Any"
 msgstr "Любы"
 
-#: src/nemo-query-editor.c:556
+#: src/nemo-query-editor.c:681
 msgid "Other Type..."
 msgstr "Іншы тып..."
 
-#: src/nemo-query-editor.c:836
+#: src/nemo-query-editor.c:961
 msgid "Remove this criterion from the search"
 msgstr "Выдаліць гэты крытэрый пошуку"
 
-#: src/nemo-query-editor.c:913
+#: src/nemo-query-editor.c:1028
 msgid "Add a new criterion to this search"
 msgstr "Дадаць новы крытэрый для гэтага пошуку"
 
-#: src/nemo-query-editor.c:915
+#: src/nemo-query-editor.c:1030
 msgid "Current"
 msgstr ""
 
-#: src/nemo-query-editor.c:919
+#: src/nemo-query-editor.c:1034
 msgid "All Files"
 msgstr ""
 
-#: src/nemo-query-editor.c:944
+#: src/nemo-query-editor.c:1059
 msgid "_Search for:"
 msgstr "_Шукаць:"
 
@@ -1736,38 +1743,38 @@ msgstr ""
 msgid "Elevated Privileges"
 msgstr "Павышаныя прывілеі"
 
-#: src/nemo-trash-bar.c:198
+#: src/nemo-trash-bar.c:209
 msgid "Restore Selected Items"
 msgstr "Аднавіць абраныя элементы"
 
-#: src/nemo-trash-bar.c:201
+#: src/nemo-trash-bar.c:212
 msgid "Restore selected items to their original position"
 msgstr "Аднавіць абраныя элементы ў арыгінальным месцы"
 
-#: src/nemo-tree-sidebar.c:951 src/nemo-view.c:6850
+#: src/nemo-tree-sidebar.c:951 src/nemo-view.c:6710
 #, c-format
 msgid "\"%s\" will be moved if you select the Paste command"
 msgstr "Калі задзейнічаць загад \"Уставіць\", адбудзецца перамяшчэнне \"%s\""
 
-#: src/nemo-tree-sidebar.c:955 src/nemo-view.c:6854
+#: src/nemo-tree-sidebar.c:955 src/nemo-view.c:6714
 #, c-format
 msgid "\"%s\" will be copied if you select the Paste command"
 msgstr "Калі задзейнічаць загад \"Уставіць\", адбудзецца капіраванне \"%s\""
 
-#: src/nemo-tree-sidebar.c:994 src/nemo-view.c:7100
+#: src/nemo-tree-sidebar.c:994 src/nemo-view.c:6960
 msgid "There is nothing on the clipboard to paste."
 msgstr "У буферы абмену нічога няма."
 
-#: src/nemo-tree-sidebar.c:1291 src/nemo-view.c:8261
+#: src/nemo-tree-sidebar.c:1291 src/nemo-view.c:8130
 msgid "Create New _Folder"
 msgstr "Стварыць новую _папку"
 
-#: src/nemo-tree-sidebar.c:1323 src/nemo-view.c:8330 src/nemo-view.c:8477
+#: src/nemo-tree-sidebar.c:1323 src/nemo-view.c:8199 src/nemo-view.c:8346
 msgid "_Paste Into Folder"
 msgstr "_Уставіць у папку"
 
-#: src/nemo-tree-sidebar.c:1353 src/nemo-view.c:8368 src/nemo-view.c:8486
-#: src/nemo-view.c:9870
+#: src/nemo-tree-sidebar.c:1353 src/nemo-view.c:8237 src/nemo-view.c:8355
+#: src/nemo-view.c:9764
 msgid "_Delete"
 msgstr "_Выдаліць"
 
@@ -1775,7 +1782,7 @@ msgstr "_Выдаліць"
 msgid "Computer"
 msgstr "Кампутар"
 
-#: src/nemo-view.c:1060
+#: src/nemo-view.c:1055
 #, c-format
 msgid "This will open %'d separate tab."
 msgid_plural "This will open %'d separate tabs."
@@ -1783,7 +1790,7 @@ msgstr[0] "Гэта дзеянне адкрые %d асобную картку."
 msgstr[1] "Гэта дзеянне адкрые %d асобныя карткі."
 msgstr[2] "Гэта дзеянне адкрые %d асобных картак."
 
-#: src/nemo-view.c:1063
+#: src/nemo-view.c:1058
 #, c-format
 msgid "This will open %'d separate window."
 msgid_plural "This will open %'d separate windows."
@@ -1791,60 +1798,60 @@ msgstr[0] "Гэта дзеянне адкрые %d асобнае акно."
 msgstr[1] "Гэта дзеянне адкрые %d асобныя акны."
 msgstr[2] "Гэта дзеянне адкрые %d асобных вокнаў."
 
-#: src/nemo-view.c:1598
+#: src/nemo-view.c:1593
 msgid "Select Items Matching"
 msgstr "Выбраць адпаведныя элементы"
 
-#: src/nemo-view.c:1613
+#: src/nemo-view.c:1608
 msgid "_Pattern:"
 msgstr "_Шаблон:"
 
-#: src/nemo-view.c:1619
+#: src/nemo-view.c:1614
 msgid "Examples: "
 msgstr "Напрыклад: "
 
-#: src/nemo-view.c:1732
+#: src/nemo-view.c:1727
 msgid "Save Search as"
 msgstr "Захаваць пошук як"
 
-#: src/nemo-view.c:1755
+#: src/nemo-view.c:1750
 msgid "Search _name:"
 msgstr "_Назва пошуку:"
 
-#: src/nemo-view.c:1777
+#: src/nemo-view.c:1772
 msgid "Select Folder to Save Search In"
 msgstr "Выбраць папку, каб захаваць пошук"
 
-#: src/nemo-view.c:2586 libnemo-private/nemo-file-undo-operations.c:135
+#: src/nemo-view.c:2581 libnemo-private/nemo-file-undo-operations.c:135
 msgid "Undo"
 msgstr "Адкаціць"
 
-#: src/nemo-view.c:2587 libnemo-private/nemo-file-undo-operations.c:138
+#: src/nemo-view.c:2582 libnemo-private/nemo-file-undo-operations.c:138
 msgid "Undo last action"
 msgstr "Адмяніць апошняе дзеяньне"
 
-#: src/nemo-view.c:2605 libnemo-private/nemo-file-undo-operations.c:142
+#: src/nemo-view.c:2600 libnemo-private/nemo-file-undo-operations.c:142
 msgid "Redo"
 msgstr "Паўтарыць"
 
-#: src/nemo-view.c:2606 libnemo-private/nemo-file-undo-operations.c:145
+#: src/nemo-view.c:2601 libnemo-private/nemo-file-undo-operations.c:145
 msgid "Redo last undone action"
 msgstr "Паўтарыць апошняе скасаванае дзеянне"
 
-#: src/nemo-view.c:2790
+#: src/nemo-view.c:2784
 msgid "Content View"
 msgstr "Прагляд змесціва"
 
-#: src/nemo-view.c:2791
+#: src/nemo-view.c:2785
 msgid "View of the current folder"
 msgstr "Прагляд гэтай папкі"
 
-#: src/nemo-view.c:3062 src/nemo-view.c:3099
+#: src/nemo-view.c:3050 src/nemo-view.c:3087
 #, c-format
 msgid "\"%s\" selected"
 msgstr "\"%s\" вылучаныя"
 
-#: src/nemo-view.c:3064
+#: src/nemo-view.c:3052
 #, c-format
 msgid "%'d folder selected"
 msgid_plural "%'d folders selected"
@@ -1852,7 +1859,7 @@ msgstr[0] "%'d папка вылучана"
 msgstr[1] "%'d папкі вылучаны"
 msgstr[2] "%'d папак вылучаны"
 
-#: src/nemo-view.c:3074
+#: src/nemo-view.c:3062
 #, c-format
 msgid " (containing %'d item)"
 msgid_plural " (containing %'d items)"
@@ -1860,7 +1867,7 @@ msgstr[0] " (змяшчае %'d элемент)"
 msgstr[1] " (змяшчае %'d элементы)"
 msgstr[2] " (змяшчае %'d элементаў)"
 
-#: src/nemo-view.c:3085
+#: src/nemo-view.c:3073
 #, c-format
 msgid " (containing a total of %'d item)"
 msgid_plural " (containing a total of %'d items)"
@@ -1868,7 +1875,7 @@ msgstr[0] " (змяшчаюць %'d элемент)"
 msgstr[1] " (змяшчаюць %'d элементы)"
 msgstr[2] " (змяшчаюць %'d элементаў)"
 
-#: src/nemo-view.c:3102
+#: src/nemo-view.c:3090
 #, c-format
 msgid "%'d item selected"
 msgid_plural "%'d items selected"
@@ -1876,7 +1883,7 @@ msgstr[0] "%'d элемент вылучаны"
 msgstr[1] "%'d элементы вылучаны"
 msgstr[2] "%'d элементаў вылучаны"
 
-#: src/nemo-view.c:3109
+#: src/nemo-view.c:3097
 #, c-format
 msgid "%'d other item selected"
 msgid_plural "%'d other items selected"
@@ -1884,12 +1891,12 @@ msgstr[0] "%'d іншы элемент вылучаны"
 msgstr[1] "%'d іншыя элементы вылучаны"
 msgstr[2] "%'d іншых элементаў вылучаны"
 
-#: src/nemo-view.c:3126
+#: src/nemo-view.c:3114
 #, c-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: src/nemo-view.c:3147 libnemo-private/nemo-file.c:5951
+#: src/nemo-view.c:3135 libnemo-private/nemo-file.c:5951
 #, c-format
 msgid "%'u item"
 msgid_plural "%'u items"
@@ -1897,32 +1904,32 @@ msgstr[0] "%'u элемент"
 msgstr[1] "%'u элементы"
 msgstr[2] "%'u элемэнтаў"
 
-#: src/nemo-view.c:3150
+#: src/nemo-view.c:3138
 #, c-format
 msgid "%s, Free space: %s"
 msgstr "%s, вольная прастора: %s"
 
-#: src/nemo-view.c:3165
+#: src/nemo-view.c:3153
 #, c-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: src/nemo-view.c:3184 src/nemo-view.c:3197
+#: src/nemo-view.c:3172 src/nemo-view.c:3185
 #, c-format
 msgid "%s%s, %s"
 msgstr "%s%s, %s"
 
-#: src/nemo-view.c:3211
+#: src/nemo-view.c:3199
 #, c-format
 msgid "%s%s, %s, %s"
 msgstr "%s%s, %s, %s"
 
-#: src/nemo-view.c:4693
+#: src/nemo-view.c:4691
 #, c-format
 msgid "Open With %s"
 msgstr "Адкрыць з дапамогай %s"
 
-#: src/nemo-view.c:4695
+#: src/nemo-view.c:4693
 #, c-format
 msgid "Use \"%s\" to open the selected item"
 msgid_plural "Use \"%s\" to open the selected items"
@@ -1930,25 +1937,17 @@ msgstr[0] "Ужыць \"%s\", каб адкрыць выбраны элемен�
 msgstr[1] "Ужыць \"%s\", каб адкрыць выбраныя элементы"
 msgstr[2] "Ужыць \"%s\", каб адкрыць выбраных элементаў"
 
-#: src/nemo-view.c:6014
+#: src/nemo-view.c:6038
 #, c-format
 msgid "Run \"%s\" on any selected items"
 msgstr "Запусціць \"%s\" для ўсіх выбраных элементаў"
 
-#: src/nemo-view.c:6397
+#: src/nemo-view.c:6421
 #, c-format
 msgid "Create a new document from template \"%s\""
 msgstr "Стварыць новы дакумент з шаблону \"%s\""
 
-#: src/nemo-view.c:6718
-msgid "Show less actions"
-msgstr ""
-
-#: src/nemo-view.c:6718
-msgid "Show more actions"
-msgstr ""
-
-#: src/nemo-view.c:6861
+#: src/nemo-view.c:6721
 #, c-format
 msgid "The %'d selected item will be moved if you select the Paste command"
 msgid_plural ""
@@ -1962,7 +1961,7 @@ msgstr[2] ""
 "Калі задзейнічаць загад \"Уставіць\", %'d вылучаных элементаў будуць "
 "перамешчаны"
 
-#: src/nemo-view.c:6868
+#: src/nemo-view.c:6728
 #, c-format
 msgid "The %'d selected item will be copied if you select the Paste command"
 msgid_plural ""
@@ -1976,150 +1975,150 @@ msgstr[2] ""
 "Калі задзейнічаць загад \"Уставіць\", %'d вылучаных элементаў будуць "
 "скапіраваны"
 
-#: src/nemo-view.c:7038
+#: src/nemo-view.c:6898
 msgid "Select Target Folder For Move"
 msgstr "Выберыце папку для перамяшчэння"
 
-#: src/nemo-view.c:7059
+#: src/nemo-view.c:6919
 msgid "Select Target Folder For Copy"
 msgstr "Выберыце папку для капіяваньня"
 
-#: src/nemo-view.c:7502
+#: src/nemo-view.c:7371
 msgid "Unable to unmount location"
 msgstr "Не ўдалося адмантаваць месцапалажэнне"
 
-#: src/nemo-view.c:7522
+#: src/nemo-view.c:7391
 msgid "Unable to eject location"
 msgstr "Не ўдалося выняць"
 
-#: src/nemo-view.c:7537
+#: src/nemo-view.c:7406
 msgid "Unable to stop drive"
 msgstr "Не ўдалося спыніць прывад"
 
-#: src/nemo-view.c:8023
+#: src/nemo-view.c:7892
 #, c-format
 msgid "Connect to Server %s"
 msgstr "Злучэнне з серверам %s"
 
-#: src/nemo-view.c:8028 src/nemo-view.c:9151 src/nemo-view.c:9238
-#: src/nemo-view.c:9342
+#: src/nemo-view.c:7897 src/nemo-view.c:9034 src/nemo-view.c:9121
+#: src/nemo-view.c:9225
 msgid "_Connect"
 msgstr "_Злучыцца"
 
-#: src/nemo-view.c:8042
+#: src/nemo-view.c:7911
 msgid "Link _name:"
 msgstr "Назва _спасылкі:"
 
-#: src/nemo-view.c:8249
+#: src/nemo-view.c:8118
 msgid "Create New _Document"
 msgstr "Стварыць новы _дакумент"
 
-#: src/nemo-view.c:8250
+#: src/nemo-view.c:8119
 msgid "Open Wit_h"
 msgstr "_Адкрыць з дапамогай"
 
-#: src/nemo-view.c:8251
+#: src/nemo-view.c:8120
 msgid "Choose a program with which to open the selected item"
 msgstr "Выбраць праграму, у якой трэба адкрыць вылучаны элемент"
 
-#: src/nemo-view.c:8254 src/nemo-view.c:9911
+#: src/nemo-view.c:8123 src/nemo-view.c:9805
 msgid "View or modify the properties of each selected item"
 msgstr "Паглядзець ці змяніць уласьцівасьці кожнага вылучанага элемента"
 
-#: src/nemo-view.c:8262
+#: src/nemo-view.c:8131
 msgid "Create a new empty folder inside this folder"
 msgstr "Стварыць новую пустую папку ўнутры гэтай папкі"
 
-#: src/nemo-view.c:8264
+#: src/nemo-view.c:8133
 msgid "No templates installed"
 msgstr "Шаблоны не ўсталяваныя"
 
-#: src/nemo-view.c:8267
+#: src/nemo-view.c:8136
 msgid "_Empty Document"
 msgstr "_Пусты дакумент"
 
-#: src/nemo-view.c:8268
+#: src/nemo-view.c:8137
 msgid "Create a new empty document inside this folder"
 msgstr "Стварыць новы пусты дакумент унутры гэтай папкі"
 
-#: src/nemo-view.c:8272
+#: src/nemo-view.c:8141 src/nemo-view.c:8481
 msgid "Open the selected item in this window"
 msgstr "Адкрыць вылучаны элемент у гэтым акне"
 
-#: src/nemo-view.c:8279 src/nemo-view.c:8460
+#: src/nemo-view.c:8148 src/nemo-view.c:8329
 msgid "Open in Navigation Window"
 msgstr "Адкрыць у акне навігацыі"
 
-#: src/nemo-view.c:8280
+#: src/nemo-view.c:8149
 msgid "Open each selected item in a navigation window"
 msgstr "Адкрыць кожны вылучаны элемент у акне навігацыі"
 
-#: src/nemo-view.c:8284
+#: src/nemo-view.c:8153
 msgid "Open each selected item in a new tab"
 msgstr "Адкрыць кожны вылучаны элемент у новай картцы"
 
-#: src/nemo-view.c:8287 src/nemo-window-menus.c:1427
+#: src/nemo-view.c:8156 src/nemo-window-menus.c:1427
 msgid "Open in Terminal"
 msgstr "Адкрыць у Тэрмінале"
 
-#: src/nemo-view.c:8288
+#: src/nemo-view.c:8157
 msgid "Open terminal in the selected folder"
 msgstr "Адкрыць тэрмінал у выбраным каталоге"
 
-#: src/nemo-view.c:8291
+#: src/nemo-view.c:8160
 msgid "Open as Root"
 msgstr "Адкрыць як Адміністратар"
 
-#: src/nemo-view.c:8292
+#: src/nemo-view.c:8161
 msgid "Open the folder with administration privileges"
 msgstr "Адкрыць папку з правамі адміністратара"
 
-#: src/nemo-view.c:8296
+#: src/nemo-view.c:8165
 msgid "Follow link to original file"
 msgstr "Перайсці па спасылцы да зыходнага файла"
 
-#: src/nemo-view.c:8297
+#: src/nemo-view.c:8166
 msgid "Navigate to the original file that this symbolic link points to"
 msgstr ""
 "Перайсці да зыходнага файла, на які паказвае дадзеная сімвальная спасылка"
 
-#: src/nemo-view.c:8300
+#: src/nemo-view.c:8169
 msgid "Open containing folder"
 msgstr ""
 
-#: src/nemo-view.c:8301
+#: src/nemo-view.c:8170
 msgid "Navigate to the folder that the selected item is stored in"
 msgstr ""
 
-#: src/nemo-view.c:8304
+#: src/nemo-view.c:8173
 msgid "Other _Application..."
 msgstr "Іншая _праграма..."
 
-#: src/nemo-view.c:8305 src/nemo-view.c:8309
+#: src/nemo-view.c:8174 src/nemo-view.c:8178
 msgid "Choose another application with which to open the selected item"
 msgstr "Выбраць іншую праграму, у якой трэба адкрыць вылучаны элемент"
 
-#: src/nemo-view.c:8308
+#: src/nemo-view.c:8177
 msgid "Open With Other _Application..."
 msgstr "_Адкрыць у іншай праграме..."
 
-#: src/nemo-view.c:8317
+#: src/nemo-view.c:8186
 msgid "Prepare the selected files to be moved with a Paste command"
 msgstr ""
 "Падрыхтаваць вылучаныя файлы да перамяшчэння з дапамогай загаду \"Уставіць\""
 
-#: src/nemo-view.c:8321
+#: src/nemo-view.c:8190
 msgid "Prepare the selected files to be copied with a Paste command"
 msgstr ""
 "Падрыхтаваць вылучаныя файлы да капіравання з дапамогай загаду \"Уставіць\""
 
-#: src/nemo-view.c:8325
+#: src/nemo-view.c:8194
 msgid "Move or copy files previously selected by a Cut or Copy command"
 msgstr ""
 "Перамясціць ці скапіраваць файлы, адзначаныя раней загадам \"Выразаць\" ці "
 "\"Скапіраваць\""
 
-#: src/nemo-view.c:8331
+#: src/nemo-view.c:8200
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into the "
 "selected folder"
@@ -2127,193 +2126,193 @@ msgstr ""
 "Перамясціць ці скапіраваць у вылучаную папку файлы, адзначаныя раней загадам "
 "\"Выразаць\" ці \"Скапіраваць\""
 
-#: src/nemo-view.c:8333
+#: src/nemo-view.c:8202
 msgid "Cop_y to"
 msgstr "_Скапіраваць у"
 
-#: src/nemo-view.c:8334
+#: src/nemo-view.c:8203
 msgid "M_ove to"
 msgstr "Пера_мясціць у"
 
-#: src/nemo-view.c:8336 libnemo-private/nemo-clipboard.c:444
+#: src/nemo-view.c:8205 libnemo-private/nemo-clipboard.c:444
 msgid "Select _All"
 msgstr "Вылучыць _усё"
 
-#: src/nemo-view.c:8337
+#: src/nemo-view.c:8206
 msgid "Select all items in this window"
 msgstr "Вылучыць усе элементы ў гэтым акне"
 
-#: src/nemo-view.c:8340
+#: src/nemo-view.c:8209
 msgid "Select I_tems Matching..."
 msgstr "Вылучыць адпаведныя _элементы..."
 
-#: src/nemo-view.c:8341
+#: src/nemo-view.c:8210
 msgid "Select items in this window matching a given pattern"
 msgstr "Вылучыць элементы ў гэтым акне, якія адпавядаюць шаблону"
 
-#: src/nemo-view.c:8344
+#: src/nemo-view.c:8213
 msgid "_Invert Selection"
 msgstr "Інвертаваць _вылучэнне"
 
-#: src/nemo-view.c:8345
+#: src/nemo-view.c:8214
 msgid "Select all and only the items that are not currently selected"
 msgstr "Вылучыць толькі тыя элементы, якія ў гэты момант не вылучаныя"
 
-#: src/nemo-view.c:8348
+#: src/nemo-view.c:8217
 msgid "D_uplicate"
 msgstr "_Стварыць дублікат"
 
-#: src/nemo-view.c:8349
+#: src/nemo-view.c:8218
 msgid "Duplicate each selected item"
 msgstr "Стварыць дублікат кожнага вылучанага элемента"
 
-#: src/nemo-view.c:8352 src/nemo-view.c:9896
+#: src/nemo-view.c:8221 src/nemo-view.c:9790
 msgid "Ma_ke Link"
 msgid_plural "Ma_ke Links"
 msgstr[0] "С_тварыць спасылку"
 msgstr[1] "С_тварыць спасылкі"
 msgstr[2] "С_тварыць спасылкі"
 
-#: src/nemo-view.c:8353
+#: src/nemo-view.c:8222
 msgid "Create a symbolic link for each selected item"
 msgstr "Стварыць сімвальную спасылку для кожнага вылучанага элемента"
 
-#: src/nemo-view.c:8356
+#: src/nemo-view.c:8225
 msgid "_Rename..."
 msgstr "_Пераназваць..."
 
-#: src/nemo-view.c:8357
+#: src/nemo-view.c:8226
 msgid "Rename selected item"
 msgstr "Пераназваць вылучаны элемент"
 
-#: src/nemo-view.c:8365 src/nemo-view.c:9848
+#: src/nemo-view.c:8234 src/nemo-view.c:9742
 msgid "Move each selected item to the Trash"
 msgstr "Выкінуць вылучаныя элементы ў сметніцу"
 
-#: src/nemo-view.c:8369 src/nemo-view.c:9871
+#: src/nemo-view.c:8238 src/nemo-view.c:9765
 msgid "Delete each selected item, without moving to the Trash"
 msgstr "Выдаліць вылучаныя элементы, абмінуўшы сметніцу"
 
-#: src/nemo-view.c:8372 src/nemo-view.c:8490
+#: src/nemo-view.c:8241 src/nemo-view.c:8359
 msgid "_Restore"
 msgstr "_Аднавіць"
 
-#: src/nemo-view.c:8376 src/nemo-window-menus.c:1114
+#: src/nemo-view.c:8245 src/nemo-window-menus.c:1114
 msgid "_Undo"
 msgstr "_Адмена"
 
-#: src/nemo-view.c:8377
+#: src/nemo-view.c:8246
 msgid "Undo the last action"
 msgstr "Адкаціцца на адзін крок"
 
-#: src/nemo-view.c:8380
+#: src/nemo-view.c:8249
 msgid "_Redo"
 msgstr "_Паўтарыць"
 
-#: src/nemo-view.c:8381
+#: src/nemo-view.c:8250
 msgid "Redo the last undone action"
 msgstr "Паўтарыць апошняе скасаванае дзеянне"
 
-#: src/nemo-view.c:8390
+#: src/nemo-view.c:8259
 msgid "Reset View to _Defaults"
 msgstr "Усталяваць _прадвызначаны рэжым прагляду"
 
-#: src/nemo-view.c:8391
+#: src/nemo-view.c:8260
 msgid "Reset sorting order and zoom level to match preferences for this view"
 msgstr ""
 "Вярнуць парадак сартавання і ўзровень павелічэння, уласцівы гэтаму рэжыму"
 
-#: src/nemo-view.c:8394
+#: src/nemo-view.c:8263
 msgid "Connect To This Server"
 msgstr "Злучыцца з гэтым серверам"
 
-#: src/nemo-view.c:8395
+#: src/nemo-view.c:8264
 msgid "Make a permanent connection to this server"
 msgstr "Усталяваць сталае злучэнне з гэтым серверам"
 
-#: src/nemo-view.c:8399
+#: src/nemo-view.c:8268
 msgid "Mount the selected volume"
 msgstr "Прымацаваць вылучаны дыскавы том"
 
-#: src/nemo-view.c:8403
+#: src/nemo-view.c:8272
 msgid "Unmount the selected volume"
 msgstr "Адмантаваць вылучаны дыскавы том"
 
-#: src/nemo-view.c:8407
+#: src/nemo-view.c:8276
 msgid "Eject the selected volume"
 msgstr "Выняць вылучаны дыскавы том"
 
-#: src/nemo-view.c:8411
+#: src/nemo-view.c:8280
 msgid "Start the selected volume"
 msgstr "Запусціць вылучаны дыскавы том"
 
-#: src/nemo-view.c:8415 src/nemo-view.c:9364
+#: src/nemo-view.c:8284 src/nemo-view.c:9247
 msgid "Stop the selected volume"
 msgstr "Спыніць вылучаны дыскавы том"
 
-#: src/nemo-view.c:8419 src/nemo-view.c:8443 src/nemo-view.c:8515
+#: src/nemo-view.c:8288 src/nemo-view.c:8312 src/nemo-view.c:8384
 msgid "Detect media in the selected drive"
 msgstr "Апазнаць носьбіт у вылучаным прывадзе"
 
-#: src/nemo-view.c:8423
+#: src/nemo-view.c:8292
 msgid "Mount the volume associated with the open folder"
 msgstr "Прымантаваць дыскавы том, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:8427
+#: src/nemo-view.c:8296
 msgid "Unmount the volume associated with the open folder"
 msgstr "Адмантаваць дыскавы том, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:8431
+#: src/nemo-view.c:8300
 msgid "Eject the volume associated with the open folder"
 msgstr "Выняць дыскавы том, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:8435
+#: src/nemo-view.c:8304
 msgid "Start the volume associated with the open folder"
 msgstr "Запусціць дыскавы том, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:8439
+#: src/nemo-view.c:8308
 msgid "Stop the volume associated with the open folder"
 msgstr "Спыніць дыскавы том, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:8446
+#: src/nemo-view.c:8315
 msgid "Open File and Close window"
 msgstr "Адкрыць файл і закрыць акно"
 
-#: src/nemo-view.c:8450
+#: src/nemo-view.c:8319
 msgid "Sa_ve Search"
 msgstr "_Захаваць пошук"
 
-#: src/nemo-view.c:8451
+#: src/nemo-view.c:8320
 msgid "Save the edited search"
 msgstr "Захаваць зменены пошук"
 
-#: src/nemo-view.c:8454
+#: src/nemo-view.c:8323
 msgid "Sa_ve Search As..."
 msgstr "_Захаваць пошук як..."
 
-#: src/nemo-view.c:8455
+#: src/nemo-view.c:8324
 msgid "Save the current search as a file"
 msgstr "Захаваць бягучы пошук у файле"
 
-#: src/nemo-view.c:8461
+#: src/nemo-view.c:8330
 msgid "Open this folder in a navigation window"
 msgstr "Адкрыць гэтую папку ў акне навігацыі"
 
-#: src/nemo-view.c:8465
+#: src/nemo-view.c:8334
 msgid "Open this folder in a new tab"
 msgstr "Адкрыць гэтую папку ў новай картцы"
 
-#: src/nemo-view.c:8470
+#: src/nemo-view.c:8339
 msgid "Prepare this folder to be moved with a Paste command"
 msgstr ""
 "Падрыхтаваць гэтую папку да перамяшчэння з дапамогай загаду \"Уставіць\""
 
-#: src/nemo-view.c:8474
+#: src/nemo-view.c:8343
 msgid "Prepare this folder to be copied with a Paste command"
 msgstr ""
 "Падрыхтаваць гэтую папку да капіравання з дапамогай загаду \"Уставіць\""
 
-#: src/nemo-view.c:8478
+#: src/nemo-view.c:8347
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into this "
 "folder"
@@ -2321,101 +2320,101 @@ msgstr ""
 "Перамясціць ці скапіраваць у гэтую папку файлы, вылучаныя раней загадам "
 "\"Выразаць\" ці \"Скапіраваць\""
 
-#: src/nemo-view.c:8483
+#: src/nemo-view.c:8352
 msgid "Move this folder to the Trash"
 msgstr "Выкінуць гэтую папку ў сметніцу"
 
-#: src/nemo-view.c:8487
+#: src/nemo-view.c:8356
 msgid "Delete this folder, without moving to the Trash"
 msgstr "Выдаліць гэтую папку, абмінуўшы сметніцу"
 
-#: src/nemo-view.c:8495
+#: src/nemo-view.c:8364
 msgid "Mount the volume associated with this folder"
 msgstr "Прымантаваць дыскавы том, які змяшчае гэтую папку"
 
-#: src/nemo-view.c:8499
+#: src/nemo-view.c:8368
 msgid "Unmount the volume associated with this folder"
 msgstr "Адмантаваць дыскавы том, які змяшчае гэтую папку"
 
-#: src/nemo-view.c:8503
+#: src/nemo-view.c:8372
 msgid "Eject the volume associated with this folder"
 msgstr "Выняць дыскавы том, які змяшчае гэтую папку"
 
-#: src/nemo-view.c:8507
+#: src/nemo-view.c:8376
 msgid "Start the volume associated with this folder"
 msgstr "Запусціць дыскавы том, які змяшчае гэтую папку"
 
-#: src/nemo-view.c:8511
+#: src/nemo-view.c:8380
 msgid "Stop the volume associated with this folder"
 msgstr "Спыніць дыскавы том, які змяшчае гэтую папку"
 
-#: src/nemo-view.c:8520
+#: src/nemo-view.c:8389
 msgid "View or modify the properties of this folder"
 msgstr "Паглядзець ці мадыфікаваць уласцівасці гэтай папкі"
 
-#: src/nemo-view.c:8523 src/nemo-view.c:8526
+#: src/nemo-view.c:8392 src/nemo-view.c:8395
 msgid "_Other pane"
 msgstr "Іншы _абшар акна"
 
-#: src/nemo-view.c:8524
+#: src/nemo-view.c:8393
 msgid "Copy the current selection to the other pane in the window"
 msgstr "Скапіраваць вылучанае ў іншы абшар акна"
 
-#: src/nemo-view.c:8527
+#: src/nemo-view.c:8396
 msgid "Move the current selection to the other pane in the window"
 msgstr "Перамясціць вылучанае ў іншы абшар акна"
 
-#: src/nemo-view.c:8530 src/nemo-view.c:8534 src/nemo-window-menus.c:1185
+#: src/nemo-view.c:8399 src/nemo-view.c:8403 src/nemo-window-menus.c:1185
 #: src/nemo-window-menus.c:1377 src/nemo-window-menus.c:1591
 msgid "_Home"
 msgstr "_Хатняя папка"
 
-#: src/nemo-view.c:8531
+#: src/nemo-view.c:8400
 msgid "Copy the current selection to the home folder"
 msgstr "Скапіраваць вылучанае ў хатнюю папку"
 
-#: src/nemo-view.c:8535
+#: src/nemo-view.c:8404
 msgid "Move the current selection to the home folder"
 msgstr "Перамясціць вылучанае ў хатнюю папку"
 
-#: src/nemo-view.c:8538 src/nemo-view.c:8542
+#: src/nemo-view.c:8407 src/nemo-view.c:8411
 msgid "_Desktop"
 msgstr "_Працоўны Стол"
 
-#: src/nemo-view.c:8539
+#: src/nemo-view.c:8408
 msgid "Copy the current selection to the desktop"
 msgstr "Скапіраваць вылучанае на працоўны стол"
 
-#: src/nemo-view.c:8543
+#: src/nemo-view.c:8412
 msgid "Move the current selection to the desktop"
 msgstr "Перамясціць вылучанае на працоўны стол"
 
-#: src/nemo-view.c:8546 src/nemo-view.c:8550
+#: src/nemo-view.c:8415 src/nemo-view.c:8419
 msgid "Browse…"
 msgstr "Агляд..."
 
-#: src/nemo-view.c:8547
+#: src/nemo-view.c:8416
 msgid "Browse for a folder to move the selection to"
 msgstr "Выбар папкі для перамяшчэння вылучанага"
 
-#: src/nemo-view.c:8551
+#: src/nemo-view.c:8420
 msgid "Browse for a folder to copy the selection to"
 msgstr "Выбар папкі для капіявання вылучанага"
 
-#: src/nemo-view.c:8625
+#: src/nemo-view.c:8508
 msgid "Run scripts"
 msgstr ""
 
-#: src/nemo-view.c:8627
+#: src/nemo-view.c:8510
 msgid "_Scripts"
 msgstr "_Сцэнарыі"
 
-#: src/nemo-view.c:9000
+#: src/nemo-view.c:8883
 #, c-format
 msgid "Move the open folder out of the trash to \"%s\""
 msgstr "Перамясціць адкрытую папку са сметніцы ў \"%s\""
 
-#: src/nemo-view.c:9003
+#: src/nemo-view.c:8886
 #, c-format
 msgid "Move the selected folder out of the trash to \"%s\""
 msgid_plural "Move the selected folders out of the trash to \"%s\""
@@ -2423,14 +2422,14 @@ msgstr[0] "Перамясціць вылучаную папку са сметн�
 msgstr[1] "Перамясціць вылучаныя папкі са сметніцы ў \"%s\""
 msgstr[2] "Перамясціць вылучаныя папкі са сметніцы ў \"%s\""
 
-#: src/nemo-view.c:9007
+#: src/nemo-view.c:8890
 msgid "Move the selected folder out of the trash"
 msgid_plural "Move the selected folders out of the trash"
 msgstr[0] "Перамясціць вылучаную папку са сметніцы"
 msgstr[1] "Перамясціць вылучаныя папкі са сметніцы"
 msgstr[2] "Перамясціць вылучаныя папкі са сметніцы"
 
-#: src/nemo-view.c:9013
+#: src/nemo-view.c:8896
 #, c-format
 msgid "Move the selected file out of the trash to \"%s\""
 msgid_plural "Move the selected files out of the trash to \"%s\""
@@ -2438,14 +2437,14 @@ msgstr[0] "Перамясціць вылучаны файл са сметніц�
 msgstr[1] "Перамясціць вылучаныя файлы са сметніцы ў \"%s\""
 msgstr[2] "Перамясціць вылучаныя файлы са сметніцы ў \"%s\""
 
-#: src/nemo-view.c:9017
+#: src/nemo-view.c:8900
 msgid "Move the selected file out of the trash"
 msgid_plural "Move the selected files out of the trash"
 msgstr[0] "Перамясціць вылучаны файл са сметніцы"
 msgstr[1] "Перамясціць вылучаныя файлы са сметніцы"
 msgstr[2] "Перамясціць вылучаныя файлы са сметніцы"
 
-#: src/nemo-view.c:9023
+#: src/nemo-view.c:8906
 #, c-format
 msgid "Move the selected item out of the trash to \"%s\""
 msgid_plural "Move the selected items out of the trash to \"%s\""
@@ -2453,120 +2452,120 @@ msgstr[0] "Перамясціць вылучаны элемент са смет�
 msgstr[1] "Перамясціць вылучаныя элементы са сметніцы ў \"%s\""
 msgstr[2] "Перамясціць вылучаныя элементы са сметніцы ў \"%s\""
 
-#: src/nemo-view.c:9027
+#: src/nemo-view.c:8910
 msgid "Move the selected item out of the trash"
 msgid_plural "Move the selected items out of the trash"
 msgstr[0] "Перамясціць вылучаны элемент са сметніцы"
 msgstr[1] "Перамясціць вылучаныя элементы са сметніцы"
 msgstr[2] "Перамясціць вылучаныя элементы са сметніцы"
 
-#: src/nemo-view.c:9144 src/nemo-view.c:9148 src/nemo-view.c:9335
-#: src/nemo-view.c:9339
+#: src/nemo-view.c:9027 src/nemo-view.c:9031 src/nemo-view.c:9218
+#: src/nemo-view.c:9222
 msgid "Start the selected drive"
 msgstr "Запусціць вылучаны прывад"
 
-#: src/nemo-view.c:9152 src/nemo-view.c:9343
+#: src/nemo-view.c:9035 src/nemo-view.c:9226
 msgid "Connect to the selected drive"
 msgstr "Злучыцца з вылучаным прывадам"
 
-#: src/nemo-view.c:9155 src/nemo-view.c:9242 src/nemo-view.c:9346
+#: src/nemo-view.c:9038 src/nemo-view.c:9125 src/nemo-view.c:9229
 msgid "_Start Multi-disk Drive"
 msgstr "_Запусціць шматдыскавы прывад"
 
-#: src/nemo-view.c:9156 src/nemo-view.c:9347
+#: src/nemo-view.c:9039 src/nemo-view.c:9230
 msgid "Start the selected multi-disk drive"
 msgstr "Запусціць вылучаны шматдыскавы прывад"
 
-#: src/nemo-view.c:9159
+#: src/nemo-view.c:9042
 msgid "U_nlock Drive"
 msgstr "_Адблакіраваць прывад"
 
-#: src/nemo-view.c:9160 src/nemo-view.c:9351
+#: src/nemo-view.c:9043 src/nemo-view.c:9234
 msgid "Unlock the selected drive"
 msgstr "Адблакіраваць вылучаны прывад"
 
-#: src/nemo-view.c:9173
+#: src/nemo-view.c:9056
 msgid "Stop the selected drive"
 msgstr "Спыніць вылучаны прывад"
 
-#: src/nemo-view.c:9177 src/nemo-view.c:9368
+#: src/nemo-view.c:9060 src/nemo-view.c:9251
 msgid "Safely remove the selected drive"
 msgstr "Карэктна адлучыць вылучаны прывад"
 
-#: src/nemo-view.c:9180 src/nemo-view.c:9267 src/nemo-view.c:9371
+#: src/nemo-view.c:9063 src/nemo-view.c:9150 src/nemo-view.c:9254
 msgid "_Disconnect"
 msgstr "_Адлучэнне"
 
-#: src/nemo-view.c:9181 src/nemo-view.c:9372
+#: src/nemo-view.c:9064 src/nemo-view.c:9255
 msgid "Disconnect the selected drive"
 msgstr "Адлучыць вылучаны прывад"
 
-#: src/nemo-view.c:9184 src/nemo-view.c:9271 src/nemo-view.c:9375
+#: src/nemo-view.c:9067 src/nemo-view.c:9154 src/nemo-view.c:9258
 msgid "_Stop Multi-disk Drive"
 msgstr "_Спыніць шматдыскавы прывад"
 
-#: src/nemo-view.c:9185 src/nemo-view.c:9376
+#: src/nemo-view.c:9068 src/nemo-view.c:9259
 msgid "Stop the selected multi-disk drive"
 msgstr "Спыніць вылучаны шматдыскавы прывад"
 
-#: src/nemo-view.c:9189 src/nemo-view.c:9380
+#: src/nemo-view.c:9072 src/nemo-view.c:9263
 msgid "Lock the selected drive"
 msgstr "Заблакіраваць вылучаны прывад"
 
-#: src/nemo-view.c:9231 src/nemo-view.c:9235
+#: src/nemo-view.c:9114 src/nemo-view.c:9118
 msgid "Start the drive associated with the open folder"
 msgstr "Запусціць прывад, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:9239
+#: src/nemo-view.c:9122
 msgid "Connect to the drive associated with the open folder"
 msgstr "Злучыцца з прывадам, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:9243
+#: src/nemo-view.c:9126
 msgid "Start the multi-disk drive associated with the open folder"
 msgstr "Запусціць шматдыскавы прывад, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:9247
+#: src/nemo-view.c:9130
 msgid "Unlock the drive associated with the open folder"
 msgstr "Адблакіраваць прывад, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:9260
+#: src/nemo-view.c:9143
 msgid "_Stop the drive associated with the open folder"
 msgstr "_Спыніць прывад, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:9264
+#: src/nemo-view.c:9147
 msgid "Safely remove the drive associated with the open folder"
 msgstr "Карэктна адлучыць прывад, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:9268
+#: src/nemo-view.c:9151
 msgid "Disconnect the drive associated with the open folder"
 msgstr "Адлучыць прывад, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:9272
+#: src/nemo-view.c:9155
 msgid "Stop the multi-disk drive associated with the open folder"
 msgstr "Спыніць шматдыскавы прывад, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:9276
+#: src/nemo-view.c:9159
 msgid "Lock the drive associated with the open folder"
 msgstr "Заблакіраваць прывад, які змяшчае адкрытую папку"
 
-#: src/nemo-view.c:9516 src/nemo-view.c:9843
+#: src/nemo-view.c:9399 src/nemo-view.c:9737
 msgid "_Delete Permanently"
 msgstr "_Незваротна выдаліць"
 
-#: src/nemo-view.c:9517
+#: src/nemo-view.c:9400
 msgid "Delete the open folder permanently"
 msgstr "Незваротна выдаліць адкрытую папку"
 
-#: src/nemo-view.c:9521
+#: src/nemo-view.c:9404
 msgid "Move the open folder to the Trash"
 msgstr "Выкінуць адкрытую папку ў сметніцу"
 
-#: src/nemo-view.c:9749
+#: src/nemo-view.c:9629
 #, c-format
 msgid "_Open With %s"
 msgstr "_Адкрыць у %s"
 
-#: src/nemo-view.c:9806
+#: src/nemo-view.c:9700
 #, c-format
 msgid "Open in %'d New _Window"
 msgid_plural "Open in %'d New _Windows"
@@ -2574,7 +2573,7 @@ msgstr[0] "_Адкрыць у %'d новым акне"
 msgstr[1] "_Адкрыць у %'d новых вокнах"
 msgstr[2] "_Адкрыць у %'d новых вокнах"
 
-#: src/nemo-view.c:9826
+#: src/nemo-view.c:9720
 #, c-format
 msgid "Open in %'d New _Tab"
 msgid_plural "Open in %'d New _Tabs"
@@ -2582,24 +2581,24 @@ msgstr[0] "Адкрыць у %'d новай картцы"
 msgstr[1] "Адкрыць у %'d новых картках"
 msgstr[2] "Адкрыць у %'d новых картках"
 
-#: src/nemo-view.c:9844
+#: src/nemo-view.c:9738
 msgid "Delete all selected items permanently"
 msgstr "Незваротна выдаліць вылучанае"
 
-#: src/nemo-view.c:9867
+#: src/nemo-view.c:9761
 msgid "Remo_ve from Recent"
 msgstr "В_ыдаліць са спіса нядаўніх файлаў"
 
-#: src/nemo-view.c:9868
+#: src/nemo-view.c:9762
 msgid "Remove each selected item from the recently used list"
 msgstr ""
 
-#: src/nemo-view.c:9909
+#: src/nemo-view.c:9803
 msgid "View or modify the properties of the open folder"
 msgstr "Паглядзець ці мадыфікаваць уласцівасці адкрытай папкі"
 
 #: src/nemo-view-dnd.c:125 libnemo-private/nemo-file.c:6557
-#: libnemo-private/nemo-file-operations.c:390
+#: libnemo-private/nemo-file-operations.c:392
 #, c-format
 msgid "Link to %s"
 msgstr "Спасылка на %s"
@@ -2641,16 +2640,16 @@ msgstr "Месцапалажэнне \"%s\" не існуе."
 msgid "Bookmark for Nonexistent Location"
 msgstr "Закладка для адсутнага месцапалажэння"
 
-#: src/nemo-window-bookmarks.c:315
+#: src/nemo-window-bookmarks.c:310
 msgid "Go to the location specified by this bookmark"
 msgstr "Перайсці ў месца, на якое спасылаецца гэтая закладка"
 
-#: src/nemo-window.c:1588
+#: src/nemo-window.c:1594
 #, c-format
 msgid "%s - File Browser"
 msgstr "Аглядальнік файлаў: %s"
 
-#: src/nemo-window.c:2093 src/nemo-window-menus.c:316
+#: src/nemo-window.c:2104 src/nemo-window-menus.c:316
 msgid "Nemo"
 msgstr "Nemo"
 
@@ -2658,60 +2657,60 @@ msgstr "Nemo"
 msgid "Searching..."
 msgstr "Пошук..."
 
-#: src/nemo-window-manage-views.c:1668 src/nemo-window-manage-views.c:1674
-#: src/nemo-window-manage-views.c:1691 src/nemo-window-manage-views.c:1702
-#: src/nemo-window-manage-views.c:1708 src/nemo-window-manage-views.c:1734
+#: src/nemo-window-manage-views.c:1653 src/nemo-window-manage-views.c:1659
+#: src/nemo-window-manage-views.c:1676 src/nemo-window-manage-views.c:1687
+#: src/nemo-window-manage-views.c:1693 src/nemo-window-manage-views.c:1719
 #, c-format
 msgid "Could not display \"%s\"."
 msgstr "Не ўдалося паказаць \"%s\"."
 
-#: src/nemo-window-manage-views.c:1671
+#: src/nemo-window-manage-views.c:1656
 msgid "Nemo has no installed viewer capable of displaying the folder."
 msgstr ""
 "Для адлюстраваньня гэтай папкі ў Nemo не ўстаноўлен падыходны сродак "
 "прагляду."
 
-#: src/nemo-window-manage-views.c:1677
+#: src/nemo-window-manage-views.c:1662
 msgid "The location is not a folder."
 msgstr "Месцапалажэнне не з'яўляецца папкай."
 
-#: src/nemo-window-manage-views.c:1683
+#: src/nemo-window-manage-views.c:1668
 #, c-format
 msgid "Could not find \"%s\"."
 msgstr "Не ўдалося знайсці \"%s\"."
 
-#: src/nemo-window-manage-views.c:1686
+#: src/nemo-window-manage-views.c:1671
 msgid "Please check the spelling and try again."
 msgstr "Праверце правільнасць напісання і паўтарыце спробу."
 
-#: src/nemo-window-manage-views.c:1694
+#: src/nemo-window-manage-views.c:1679
 #, c-format
 msgid "Nemo cannot handle \"%s\" locations."
 msgstr "Nemo не можа апрацаваць шляхi \"%s\"."
 
-#: src/nemo-window-manage-views.c:1697
+#: src/nemo-window-manage-views.c:1682
 msgid "Nemo cannot handle this kind of location."
 msgstr "Nemo не можа апрацаваць дадзены тып шляху."
 
-#: src/nemo-window-manage-views.c:1704
+#: src/nemo-window-manage-views.c:1689
 msgid "Unable to mount the location."
 msgstr "Не ўдалося прымантаваць месцапалажэнне."
 
-#: src/nemo-window-manage-views.c:1710
+#: src/nemo-window-manage-views.c:1695
 msgid "Access was denied."
 msgstr "Доступ быў забаронены."
 
-#: src/nemo-window-manage-views.c:1719
+#: src/nemo-window-manage-views.c:1704
 #, c-format
 msgid "Could not display \"%s\", because the host could not be found."
 msgstr "Не ўдалося паказаць \"%s\", бо адпаведны кампутар не быў знойдзены."
 
-#: src/nemo-window-manage-views.c:1721
+#: src/nemo-window-manage-views.c:1706
 msgid ""
 "Check that the spelling is correct and that your proxy settings are correct."
 msgstr "Праверце правільнасць напісання і настроек проксі-сервера."
 
-#: src/nemo-window-manage-views.c:1736
+#: src/nemo-window-manage-views.c:1721
 #, c-format
 msgid ""
 "Error: %s\n"
@@ -3241,15 +3240,15 @@ msgstr "Уставіць тэкст з буфера абмену"
 msgid "Select all the text in a text field"
 msgstr "Вылучыць увесь тэкст у графе"
 
-#: libnemo-private/nemo-column-chooser.c:368
+#: libnemo-private/nemo-column-chooser.c:371
 msgid "Move _Up"
 msgstr "Пасунуць у_верх"
 
-#: libnemo-private/nemo-column-chooser.c:378
+#: libnemo-private/nemo-column-chooser.c:381
 msgid "Move Dow_n"
 msgstr "Пасунуць _ніжэй"
 
-#: libnemo-private/nemo-column-chooser.c:391
+#: libnemo-private/nemo-column-chooser.c:394
 msgid "Use De_fault"
 msgstr "_Прадвызначана"
 
@@ -3357,6 +3356,14 @@ msgstr "Арыгінальнае месца"
 msgid "Original location of file before moved to the Trash"
 msgstr "Арыгінальнае месца файла да яго выкіду ў сметніцу"
 
+#: libnemo-private/nemo-context-menu-menu-item.c:73
+msgid "Show less actions"
+msgstr ""
+
+#: libnemo-private/nemo-context-menu-menu-item.c:74
+msgid "Show more actions"
+msgstr ""
+
 #: libnemo-private/nemo-desktop-directory-file.c:437
 #: libnemo-private/nemo-desktop-icon-file.c:154
 msgid "on the desktop"
@@ -3399,151 +3406,151 @@ msgstr "_Стварыць спасылку"
 msgid "Cancel"
 msgstr "Адмяніць"
 
-#: libnemo-private/nemo-file.c:1226 libnemo-private/nemo-vfs-file.c:405
+#: libnemo-private/nemo-file.c:1228 libnemo-private/nemo-vfs-file.c:405
 msgid "This file cannot be mounted"
 msgstr "Немагчыма прымантаваць файл"
 
-#: libnemo-private/nemo-file.c:1271
+#: libnemo-private/nemo-file.c:1273
 msgid "This file cannot be unmounted"
 msgstr "Немагчыма адмантаваць файл"
 
-#: libnemo-private/nemo-file.c:1305
+#: libnemo-private/nemo-file.c:1307
 msgid "This file cannot be ejected"
 msgstr "Не ўдалося выняць носьбіт, які адпавядае файлу"
 
-#: libnemo-private/nemo-file.c:1338 libnemo-private/nemo-vfs-file.c:583
+#: libnemo-private/nemo-file.c:1340 libnemo-private/nemo-vfs-file.c:583
 msgid "This file cannot be started"
 msgstr "Не ўдалося запусціць гэты файл"
 
-#: libnemo-private/nemo-file.c:1390 libnemo-private/nemo-file.c:1421
+#: libnemo-private/nemo-file.c:1392 libnemo-private/nemo-file.c:1423
 msgid "This file cannot be stopped"
 msgstr "Не ўдалося спыніць гэты файл"
 
-#: libnemo-private/nemo-file.c:1848
+#: libnemo-private/nemo-file.c:1850
 msgid "Slashes are not allowed in filenames"
 msgstr "Нельга ўжываць слэшы ў назвах файлаў"
 
-#: libnemo-private/nemo-file.c:1866
+#: libnemo-private/nemo-file.c:1868
 msgid "File not found"
 msgstr "Файл не знойдзены"
 
-#: libnemo-private/nemo-file.c:1894
+#: libnemo-private/nemo-file.c:1896
 msgid "Toplevel files cannot be renamed"
 msgstr "Нельга пераназваць файлы верхняга ўзроўню"
 
-#: libnemo-private/nemo-file.c:1917
+#: libnemo-private/nemo-file.c:1919
 msgid "Unable to rename desktop icon"
 msgstr "Не ўдалося пераназваць значок працоўнага стала"
 
-#: libnemo-private/nemo-file.c:1946
+#: libnemo-private/nemo-file.c:1948
 msgid "Unable to rename desktop file"
 msgstr "Не ўдалося пераназваць файл працоўнага стала"
 
-#: libnemo-private/nemo-file.c:4491
+#: libnemo-private/nemo-file.c:4493
 msgid "today at 00:00:00 PM"
 msgstr "сёння ў 00:00:00"
 
-#: libnemo-private/nemo-file.c:4494
+#: libnemo-private/nemo-file.c:4496
 msgid "today at 00:00 PM"
 msgstr "сёння ў 00:00"
 
-#: libnemo-private/nemo-file.c:4495
+#: libnemo-private/nemo-file.c:4497
 msgid "today at %-I:%M %p"
 msgstr "сёння ў %-H:%M"
 
-#: libnemo-private/nemo-file.c:4497
+#: libnemo-private/nemo-file.c:4499
 msgid "today, 00:00 PM"
 msgstr "сёння, 00:00"
 
-#: libnemo-private/nemo-file.c:4498
+#: libnemo-private/nemo-file.c:4500
 msgid "today, %-I:%M %p"
 msgstr "сёння, %-H:%M"
 
-#: libnemo-private/nemo-file.c:4500 libnemo-private/nemo-file.c:4501
+#: libnemo-private/nemo-file.c:4502 libnemo-private/nemo-file.c:4503
 msgid "today"
 msgstr "сёння"
 
-#: libnemo-private/nemo-file.c:4510
+#: libnemo-private/nemo-file.c:4512
 msgid "yesterday at 00:00:00 PM"
 msgstr "учора ў 00:00:00"
 
-#: libnemo-private/nemo-file.c:4511
+#: libnemo-private/nemo-file.c:4513
 msgid "yesterday at %-I:%M:%S %p"
 msgstr "учора ў %-H:%M:%S"
 
-#: libnemo-private/nemo-file.c:4513
+#: libnemo-private/nemo-file.c:4515
 msgid "yesterday at 00:00 PM"
 msgstr "учора ў 00:00"
 
-#: libnemo-private/nemo-file.c:4514
+#: libnemo-private/nemo-file.c:4516
 msgid "yesterday at %-I:%M %p"
 msgstr "учора ў %-I:%M %p"
 
-#: libnemo-private/nemo-file.c:4516
+#: libnemo-private/nemo-file.c:4518
 msgid "yesterday, 00:00 PM"
 msgstr "учора, 00:00"
 
-#: libnemo-private/nemo-file.c:4517
+#: libnemo-private/nemo-file.c:4519
 msgid "yesterday, %-I:%M %p"
 msgstr "учора, %-I:%M %p"
 
-#: libnemo-private/nemo-file.c:4519 libnemo-private/nemo-file.c:4520
+#: libnemo-private/nemo-file.c:4521 libnemo-private/nemo-file.c:4522
 msgid "yesterday"
 msgstr "учора"
 
-#: libnemo-private/nemo-file.c:4531
+#: libnemo-private/nemo-file.c:4533
 msgid "Wednesday, September 00 0000 at 00:00:00 PM"
 msgstr "Серада, 00 верасня 0000 у 00:00:00"
 
-#: libnemo-private/nemo-file.c:4532
+#: libnemo-private/nemo-file.c:4534
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %-d %B %Y у %-H:%M:%S"
 
-#: libnemo-private/nemo-file.c:4534
+#: libnemo-private/nemo-file.c:4536
 msgid "Mon, Oct 00 0000 at 00:00:00 PM"
 msgstr "Пан, 00 кас 0000 у 00:00:00"
 
-#: libnemo-private/nemo-file.c:4535
+#: libnemo-private/nemo-file.c:4537
 msgid "%a, %b %-d %Y at %-I:%M:%S %p"
 msgstr "%a %-d %b %Y у %-H:%M:%S"
 
-#: libnemo-private/nemo-file.c:4537
+#: libnemo-private/nemo-file.c:4539
 msgid "Mon, Oct 00 0000 at 00:00 PM"
 msgstr "Пан, 00 кас 0000 у 00:00:00"
 
-#: libnemo-private/nemo-file.c:4538
+#: libnemo-private/nemo-file.c:4540
 msgid "%a, %b %-d %Y at %-I:%M %p"
 msgstr "%a %-d %b %Y у %-H:%M"
 
-#: libnemo-private/nemo-file.c:4540
+#: libnemo-private/nemo-file.c:4542
 msgid "Oct 00 0000 at 00:00 PM"
 msgstr "00 кас 0000 у 00:00"
 
-#: libnemo-private/nemo-file.c:4541
+#: libnemo-private/nemo-file.c:4543
 msgid "%b %-d %Y at %-I:%M %p"
 msgstr "%-d %b %Y у %-H:%M"
 
-#: libnemo-private/nemo-file.c:4543
+#: libnemo-private/nemo-file.c:4545
 msgid "Oct 00 0000, 00:00 PM"
 msgstr "00 кас 0000, 00:00"
 
-#: libnemo-private/nemo-file.c:4544
+#: libnemo-private/nemo-file.c:4546
 msgid "%b %-d %Y, %-I:%M %p"
 msgstr "%-d %b %Y, %-H:%M"
 
-#: libnemo-private/nemo-file.c:4546
+#: libnemo-private/nemo-file.c:4548
 msgid "00/00/00, 00:00 PM"
 msgstr "00.00.00, 00:00"
 
-#: libnemo-private/nemo-file.c:4547
+#: libnemo-private/nemo-file.c:4549
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%-d.%m.%y, %-I:%M %p"
 
-#: libnemo-private/nemo-file.c:4549
+#: libnemo-private/nemo-file.c:4551
 msgid "00/00/00"
 msgstr "00.00.00"
 
-#: libnemo-private/nemo-file.c:4550
+#: libnemo-private/nemo-file.c:4552
 msgid "%m/%d/%y"
 msgstr "%d.%m.%y"
 
@@ -3653,17 +3660,17 @@ msgstr "спасылка"
 msgid "link (broken)"
 msgstr "спасылка (зламаная)"
 
-#: libnemo-private/nemo-file.c:7548
+#: libnemo-private/nemo-file.c:7544
 #, c-format
 msgid "Name: %s"
 msgstr "Iмя: %s"
 
-#: libnemo-private/nemo-file.c:7555
+#: libnemo-private/nemo-file.c:7551
 #, c-format
 msgid "Type: %s"
 msgstr "Тып: %s"
 
-#: libnemo-private/nemo-file.c:7565
+#: libnemo-private/nemo-file.c:7561
 #, c-format
 msgid "%s item"
 msgid_plural "%s items"
@@ -3671,27 +3678,27 @@ msgstr[0] "%s файл"
 msgstr[1] "%s файла"
 msgstr[2] "%s файлаў"
 
-#: libnemo-private/nemo-file.c:7567
+#: libnemo-private/nemo-file.c:7563
 #, c-format
 msgid "Contains: %s"
 msgstr "Змяшчае: %s"
 
-#: libnemo-private/nemo-file.c:7576
+#: libnemo-private/nemo-file.c:7572
 #, c-format
 msgid "Size: %s"
 msgstr "Памер: %s"
 
-#: libnemo-private/nemo-file.c:7584
+#: libnemo-private/nemo-file.c:7580
 #, c-format
 msgid "Accessed: %s"
 msgstr "Апошні доступ: %s"
 
-#: libnemo-private/nemo-file.c:7592
+#: libnemo-private/nemo-file.c:7588
 #, c-format
 msgid "Modified: %s"
 msgstr "Апошняя змена: %s"
 
-#: libnemo-private/nemo-file.c:7601
+#: libnemo-private/nemo-file.c:7597
 #, c-format
 msgid "Location: %s"
 msgstr "Месца: %s"
@@ -3792,7 +3799,7 @@ msgid "Apply this action to all files"
 msgstr "Учыніць гэтае дзеянне для ўсіх файлаў"
 
 #: libnemo-private/nemo-file-conflict-dialog.c:546
-#: libnemo-private/nemo-file-operations.c:192
+#: libnemo-private/nemo-file-operations.c:194
 msgid "_Skip"
 msgstr "_Прапусціць"
 
@@ -3808,39 +3815,39 @@ msgstr "Замена"
 msgid "File conflict"
 msgstr "Канфлікт файлаў"
 
-#: libnemo-private/nemo-file-operations.c:193
+#: libnemo-private/nemo-file-operations.c:195
 msgid "S_kip All"
 msgstr "Пр_апусціць усё"
 
-#: libnemo-private/nemo-file-operations.c:194
+#: libnemo-private/nemo-file-operations.c:196
 msgid "_Retry"
 msgstr "_Паўтарыць"
 
-#: libnemo-private/nemo-file-operations.c:195
+#: libnemo-private/nemo-file-operations.c:197
 msgid "Delete _All"
 msgstr "Выдаліць _усё"
 
-#: libnemo-private/nemo-file-operations.c:196
+#: libnemo-private/nemo-file-operations.c:198
 msgid "_Replace"
 msgstr "_Замяніць"
 
-#: libnemo-private/nemo-file-operations.c:197
+#: libnemo-private/nemo-file-operations.c:199
 msgid "Replace _All"
 msgstr "_Замяніць усё"
 
-#: libnemo-private/nemo-file-operations.c:198
+#: libnemo-private/nemo-file-operations.c:200
 msgid "_Merge"
 msgstr "_Аб'яднаць"
 
-#: libnemo-private/nemo-file-operations.c:199
+#: libnemo-private/nemo-file-operations.c:201
 msgid "Merge _All"
 msgstr "_Аб'яднаць усё"
 
-#: libnemo-private/nemo-file-operations.c:200
+#: libnemo-private/nemo-file-operations.c:202
 msgid "Copy _Anyway"
 msgstr "_Усё роўна скапіяваць"
 
-#: libnemo-private/nemo-file-operations.c:291
+#: libnemo-private/nemo-file-operations.c:293
 #, c-format
 msgid "%'d second"
 msgid_plural "%'d seconds"
@@ -3848,8 +3855,8 @@ msgstr[0] "%'d секунда"
 msgstr[1] "%'d секунды"
 msgstr[2] "%'d секунд"
 
-#: libnemo-private/nemo-file-operations.c:296
-#: libnemo-private/nemo-file-operations.c:307
+#: libnemo-private/nemo-file-operations.c:298
+#: libnemo-private/nemo-file-operations.c:309
 #, c-format
 msgid "%'d minute"
 msgid_plural "%'d minutes"
@@ -3857,7 +3864,7 @@ msgstr[0] "%'d хвіліна"
 msgstr[1] "%'d хвіліны"
 msgstr[2] "%'d хвілін"
 
-#: libnemo-private/nemo-file-operations.c:306
+#: libnemo-private/nemo-file-operations.c:308
 #, c-format
 msgid "%'d hour"
 msgid_plural "%'d hours"
@@ -3865,7 +3872,7 @@ msgstr[0] "%'d гадзіна"
 msgstr[1] "%'d гадзіны"
 msgstr[2] "%'d гадзін"
 
-#: libnemo-private/nemo-file-operations.c:314
+#: libnemo-private/nemo-file-operations.c:316
 #, c-format
 msgid "approximately %'d hour"
 msgid_plural "approximately %'d hours"
@@ -3873,156 +3880,156 @@ msgstr[0] "прыблізна %'d гадзіна"
 msgstr[1] "прыблізна %'d гадзіны"
 msgstr[2] "прыблізна %'d гадзін"
 
-#: libnemo-private/nemo-file-operations.c:394
+#: libnemo-private/nemo-file-operations.c:396
 #, c-format
 msgid "Another link to %s"
 msgstr "Іншая спасылка на %s"
 
-#: libnemo-private/nemo-file-operations.c:410
+#: libnemo-private/nemo-file-operations.c:412
 #, c-format
 msgid "%'dst link to %s"
 msgstr "%'d спасылка на %s"
 
-#: libnemo-private/nemo-file-operations.c:414
+#: libnemo-private/nemo-file-operations.c:416
 #, c-format
 msgid "%'dnd link to %s"
 msgstr "%'d спасылка на %s"
 
-#: libnemo-private/nemo-file-operations.c:418
+#: libnemo-private/nemo-file-operations.c:420
 #, c-format
 msgid "%'drd link to %s"
 msgstr "%'d спасылка на %s"
 
-#: libnemo-private/nemo-file-operations.c:422
+#: libnemo-private/nemo-file-operations.c:424
 #, c-format
 msgid "%'dth link to %s"
 msgstr "%'d спасылка на %s"
 
-#: libnemo-private/nemo-file-operations.c:461
+#: libnemo-private/nemo-file-operations.c:463
 msgid " (copy)"
 msgstr " (копія)"
 
-#: libnemo-private/nemo-file-operations.c:463
+#: libnemo-private/nemo-file-operations.c:465
 msgid " (another copy)"
 msgstr " (іншая копія)"
 
-#: libnemo-private/nemo-file-operations.c:466
 #: libnemo-private/nemo-file-operations.c:468
 #: libnemo-private/nemo-file-operations.c:470
-#: libnemo-private/nemo-file-operations.c:480
+#: libnemo-private/nemo-file-operations.c:472
+#: libnemo-private/nemo-file-operations.c:482
 msgid "th copy)"
 msgstr "-я копія)"
 
-#: libnemo-private/nemo-file-operations.c:473
+#: libnemo-private/nemo-file-operations.c:475
 msgid "st copy)"
 msgstr "-я копія)"
 
-#: libnemo-private/nemo-file-operations.c:475
+#: libnemo-private/nemo-file-operations.c:477
 msgid "nd copy)"
 msgstr "-я копія)"
 
-#: libnemo-private/nemo-file-operations.c:477
+#: libnemo-private/nemo-file-operations.c:479
 msgid "rd copy)"
 msgstr "-я копія)"
 
-#: libnemo-private/nemo-file-operations.c:494
+#: libnemo-private/nemo-file-operations.c:496
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (копія)%s"
 
-#: libnemo-private/nemo-file-operations.c:496
+#: libnemo-private/nemo-file-operations.c:498
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (іншая копія)%s"
 
-#: libnemo-private/nemo-file-operations.c:499
 #: libnemo-private/nemo-file-operations.c:501
 #: libnemo-private/nemo-file-operations.c:503
-#: libnemo-private/nemo-file-operations.c:517
+#: libnemo-private/nemo-file-operations.c:505
+#: libnemo-private/nemo-file-operations.c:519
 #, c-format
 msgid "%s (%'dth copy)%s"
 msgstr "%s (%d-ая копія)%s"
 
-#: libnemo-private/nemo-file-operations.c:511
+#: libnemo-private/nemo-file-operations.c:513
 #, c-format
 msgid "%s (%'dst copy)%s"
 msgstr "%s (%'d-ая копія)%s"
 
-#: libnemo-private/nemo-file-operations.c:513
+#: libnemo-private/nemo-file-operations.c:515
 #, c-format
 msgid "%s (%'dnd copy)%s"
 msgstr "%s (%'d-ая копія)%s"
 
-#: libnemo-private/nemo-file-operations.c:515
+#: libnemo-private/nemo-file-operations.c:517
 #, c-format
 msgid "%s (%'drd copy)%s"
 msgstr "%s (%'d-яя копія)%s"
 
-#: libnemo-private/nemo-file-operations.c:616
+#: libnemo-private/nemo-file-operations.c:618
 msgid " ("
 msgstr " ("
 
-#: libnemo-private/nemo-file-operations.c:624
+#: libnemo-private/nemo-file-operations.c:626
 #, c-format
 msgid " (%'d"
 msgstr " (%'d"
 
-#: libnemo-private/nemo-file-operations.c:993
+#: libnemo-private/nemo-file-operations.c:995
 #, c-format
 msgid "Waiting to copy a file from '%1$s' to '%2$s'"
 msgid_plural "Waiting to copy files from '%1$s' to '%2$s'"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libnemo-private/nemo-file-operations.c:1002
+#: libnemo-private/nemo-file-operations.c:1004
 #, c-format
 msgid "Waiting to move a file from '%1$s' to '%2$s'"
 msgid_plural "Waiting to move files from '%1$s' to '%2$s'"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libnemo-private/nemo-file-operations.c:1010
+#: libnemo-private/nemo-file-operations.c:1012
 #, c-format
 msgid "Waiting to permanently delete a file from '%s'"
 msgid_plural "Waiting to permanently delete files from '%s'"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libnemo-private/nemo-file-operations.c:1018
+#: libnemo-private/nemo-file-operations.c:1020
 #, c-format
 msgid "Waiting to trash a file in '%s'"
 msgid_plural "Waiting to trash files in '%s'"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libnemo-private/nemo-file-operations.c:1024
+#: libnemo-private/nemo-file-operations.c:1026
 msgid "Waiting to empty the trash"
 msgstr ""
 
-#: libnemo-private/nemo-file-operations.c:1030
+#: libnemo-private/nemo-file-operations.c:1032
 #, c-format
 msgid "Waiting to duplicate a file in '%s'"
 msgid_plural "Waiting to duplicate files in '%s'"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libnemo-private/nemo-file-operations.c:1038
+#: libnemo-private/nemo-file-operations.c:1040
 #, c-format
 msgid "Waiting to change permissions of files in '%s'"
 msgstr ""
 
-#: libnemo-private/nemo-file-operations.c:1044
+#: libnemo-private/nemo-file-operations.c:1046
 #, c-format
 msgid "Waiting to link a file from '%1$s' to '%2$s'"
 msgid_plural "Waiting to link files from '%1$s' to '%2$s'"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libnemo-private/nemo-file-operations.c:1455
+#: libnemo-private/nemo-file-operations.c:1466
 msgid "Are you sure you want to permanently delete \"%B\" from the trash?"
 msgstr "Вы сапраўды жадаеце назаўжды выдаліць \"%B\" з сметніцы?"
 
-#: libnemo-private/nemo-file-operations.c:1458
+#: libnemo-private/nemo-file-operations.c:1469
 #, c-format
 msgid ""
 "Are you sure you want to permanently delete the %'d selected item from the "
@@ -4038,24 +4045,24 @@ msgstr[2] ""
 "Ці вы насамрэч хочаце незваротна выдаліць %'d вылучаных элементаў са "
 "сметніцы?"
 
-#: libnemo-private/nemo-file-operations.c:1468
-#: libnemo-private/nemo-file-operations.c:1534
+#: libnemo-private/nemo-file-operations.c:1479
+#: libnemo-private/nemo-file-operations.c:1545
 msgid "If you delete an item, it will be permanently lost."
 msgstr "Калі вы выдаліце элемент, ён будзе згублены назаўсёды."
 
-#: libnemo-private/nemo-file-operations.c:1488
+#: libnemo-private/nemo-file-operations.c:1499
 msgid "Empty all items from Trash?"
 msgstr "Ачысціць сметніцу?"
 
-#: libnemo-private/nemo-file-operations.c:1492
+#: libnemo-private/nemo-file-operations.c:1503
 msgid "All items in the Trash will be permanently deleted."
 msgstr "Усё змесціва сметніцы будзе выдалена незваротна."
 
-#: libnemo-private/nemo-file-operations.c:1522
+#: libnemo-private/nemo-file-operations.c:1533
 msgid "Are you sure you want to permanently delete \"%B\"?"
 msgstr "Вы сапраўды жадаеце назаўжды выдаліць \"%B\"?"
 
-#: libnemo-private/nemo-file-operations.c:1525
+#: libnemo-private/nemo-file-operations.c:1536
 #, c-format
 msgid "Are you sure you want to permanently delete the %'d selected item?"
 msgid_plural ""
@@ -4065,7 +4072,7 @@ msgstr[1] "Ці вы насамрэч хочаце незваротна выда
 msgstr[2] ""
 "Ці вы насамрэч хочаце незваротна выдаліць %'d вылучаных элементаў?"
 
-#: libnemo-private/nemo-file-operations.c:1568
+#: libnemo-private/nemo-file-operations.c:1579
 #, c-format
 msgid "%'d file left to delete"
 msgid_plural "%'d files left to delete"
@@ -4073,26 +4080,26 @@ msgstr[0] "засталося выдаліць %'d файл"
 msgstr[1] "засталося выдаліць %'d файлы"
 msgstr[2] "засталося выдаліць %'d файлаў"
 
-#: libnemo-private/nemo-file-operations.c:1574
+#: libnemo-private/nemo-file-operations.c:1585
 msgid "Deleting files"
 msgstr "Выдаленне файлаў"
 
-#: libnemo-private/nemo-file-operations.c:1588
+#: libnemo-private/nemo-file-operations.c:1599
 msgid "%T left"
 msgid_plural "%T left"
 msgstr[0] "засталося: %T"
 msgstr[1] "засталося: %T"
 msgstr[2] "засталося: %T"
 
-#: libnemo-private/nemo-file-operations.c:1655
-#: libnemo-private/nemo-file-operations.c:1689
-#: libnemo-private/nemo-file-operations.c:1728
-#: libnemo-private/nemo-file-operations.c:1805
-#: libnemo-private/nemo-file-operations.c:2627
+#: libnemo-private/nemo-file-operations.c:1666
+#: libnemo-private/nemo-file-operations.c:1700
+#: libnemo-private/nemo-file-operations.c:1739
+#: libnemo-private/nemo-file-operations.c:1816
+#: libnemo-private/nemo-file-operations.c:2639
 msgid "Error while deleting."
 msgstr "Памылка падчас выдалення."
 
-#: libnemo-private/nemo-file-operations.c:1659
+#: libnemo-private/nemo-file-operations.c:1670
 msgid ""
 "Files in the folder \"%B\" cannot be deleted because you do not have "
 "permissions to see them."
@@ -4100,44 +4107,44 @@ msgstr ""
 "Вы не можаце выдаліць файлы з папкі \"%B\", бо не маеце дазволу на прагляд "
 "яе змесціва."
 
-#: libnemo-private/nemo-file-operations.c:1662
-#: libnemo-private/nemo-file-operations.c:2686
-#: libnemo-private/nemo-file-operations.c:3674
+#: libnemo-private/nemo-file-operations.c:1673
+#: libnemo-private/nemo-file-operations.c:2698
+#: libnemo-private/nemo-file-operations.c:3696
 msgid ""
 "There was an error getting information about the files in the folder \"%B\"."
 msgstr "Узнікла памылка збору звестак пра файлы ў папцы \"%B\"."
 
-#: libnemo-private/nemo-file-operations.c:1671
-#: libnemo-private/nemo-file-operations.c:3683
+#: libnemo-private/nemo-file-operations.c:1682
+#: libnemo-private/nemo-file-operations.c:3705
 msgid "_Skip files"
 msgstr "_Прапусціць файлы"
 
-#: libnemo-private/nemo-file-operations.c:1692
+#: libnemo-private/nemo-file-operations.c:1703
 msgid ""
 "The folder \"%B\" cannot be deleted because you do not have permissions to "
 "read it."
 msgstr ""
 "Вы не можаце выдаліць папку \"%B\", бо не маеце дазволу на яе чытанне."
 
-#: libnemo-private/nemo-file-operations.c:1695
-#: libnemo-private/nemo-file-operations.c:2725
-#: libnemo-private/nemo-file-operations.c:3719
+#: libnemo-private/nemo-file-operations.c:1706
+#: libnemo-private/nemo-file-operations.c:2737
+#: libnemo-private/nemo-file-operations.c:3741
 msgid "There was an error reading the folder \"%B\"."
 msgstr "Узнікла памылка чытання папкі \"%B\"."
 
-#: libnemo-private/nemo-file-operations.c:1729
+#: libnemo-private/nemo-file-operations.c:1740
 msgid "Could not remove the folder %B."
 msgstr "Не ўдалося выдаліць папку %B."
 
-#: libnemo-private/nemo-file-operations.c:1806
+#: libnemo-private/nemo-file-operations.c:1817
 msgid "There was an error deleting %B."
 msgstr "Памылка выдаленьня %B."
 
-#: libnemo-private/nemo-file-operations.c:1886
+#: libnemo-private/nemo-file-operations.c:1897
 msgid "Moving files to trash"
 msgstr "Выкіданне файлаў у сметніцу"
 
-#: libnemo-private/nemo-file-operations.c:1888
+#: libnemo-private/nemo-file-operations.c:1899
 #, c-format
 msgid "%'d file left to trash"
 msgid_plural "%'d files left to trash"
@@ -4145,35 +4152,35 @@ msgstr[0] "засталося выкінуць %'d файл у сметніцу"
 msgstr[1] "засталося выкінуць %'d файлы ў сметніцу"
 msgstr[2] "засталося выкінуць %'d файлаў у сметніцу"
 
-#: libnemo-private/nemo-file-operations.c:1939
+#: libnemo-private/nemo-file-operations.c:1950
 msgid "Cannot move file to trash, do you want to delete immediately?"
 msgstr "Не ўдалося выкінуць файл у сметніцу. Выдаліць яго незваротна?"
 
-#: libnemo-private/nemo-file-operations.c:1940
+#: libnemo-private/nemo-file-operations.c:1951
 msgid "The file \"%B\" cannot be moved to the trash."
 msgstr "Не ўдалося выкінуць файл \"%B\" у сметніцу."
 
-#: libnemo-private/nemo-file-operations.c:2119
+#: libnemo-private/nemo-file-operations.c:2130
 msgid "Trashing Files"
 msgstr "Выкіданне файлаў у сметніцу"
 
-#: libnemo-private/nemo-file-operations.c:2121
+#: libnemo-private/nemo-file-operations.c:2132
 msgid "Deleting Files"
 msgstr "Выдаленне файлаў"
 
-#: libnemo-private/nemo-file-operations.c:2202
+#: libnemo-private/nemo-file-operations.c:2213
 msgid "Unable to eject %V"
 msgstr "Не ўдалося выняць %V"
 
-#: libnemo-private/nemo-file-operations.c:2204
+#: libnemo-private/nemo-file-operations.c:2215
 msgid "Unable to unmount %V"
 msgstr "Не ўдалося адмантаваць %V"
 
-#: libnemo-private/nemo-file-operations.c:2361
+#: libnemo-private/nemo-file-operations.c:2372
 msgid "Do you want to empty the trash before you unmount?"
 msgstr "Ці вы хочаце ачысціць сметніцу перад адмантаваннем?"
 
-#: libnemo-private/nemo-file-operations.c:2363
+#: libnemo-private/nemo-file-operations.c:2374
 msgid ""
 "In order to regain the free space on this volume the trash must be emptied. "
 "All trashed items on the volume will be permanently lost."
@@ -4181,16 +4188,16 @@ msgstr ""
 "Каб вызваліць прастору на гэтым дыскавым томе, трэба ачысціць сметніцу. Усе "
 "файлы ў сметніцы будуць выдалены незваротна."
 
-#: libnemo-private/nemo-file-operations.c:2369
+#: libnemo-private/nemo-file-operations.c:2380
 msgid "Do _not Empty Trash"
 msgstr "Не а_чышчаць сметніцу"
 
-#: libnemo-private/nemo-file-operations.c:2498
+#: libnemo-private/nemo-file-operations.c:2510
 #, c-format
 msgid "Unable to mount %s"
 msgstr "Немагчыма прымантаваць %s"
 
-#: libnemo-private/nemo-file-operations.c:2574
+#: libnemo-private/nemo-file-operations.c:2586
 #, c-format
 msgid "Preparing to copy %'d file (%S)"
 msgid_plural "Preparing to copy %'d files (%S)"
@@ -4198,7 +4205,7 @@ msgstr[0] "Падрыхтоўка да капіравання %'d файла (%S
 msgstr[1] "Падрыхтоўка да капіравання %'d файлаў (%S)"
 msgstr[2] "Падрыхтоўка да капіравання %'d файлаў (%S)"
 
-#: libnemo-private/nemo-file-operations.c:2580
+#: libnemo-private/nemo-file-operations.c:2592
 #, c-format
 msgid "Preparing to move %'d file (%S)"
 msgid_plural "Preparing to move %'d files (%S)"
@@ -4206,7 +4213,7 @@ msgstr[0] "Падрыхтоўка да перамяшчэння %'d файла (
 msgstr[1] "Падрыхтоўка да перамяшчэння %'d файлаў (%S)"
 msgstr[2] "Падрыхтоўка да перамяшчэння %'d файлаў (%S)"
 
-#: libnemo-private/nemo-file-operations.c:2586
+#: libnemo-private/nemo-file-operations.c:2598
 #, c-format
 msgid "Preparing to delete %'d file (%S)"
 msgid_plural "Preparing to delete %'d files (%S)"
@@ -4214,7 +4221,7 @@ msgstr[0] "Падрыхтоўка да выдалення %'d файла (%S)"
 msgstr[1] "Падрыхтоўка да выдалення %'d файлаў (%S)"
 msgstr[2] "Падрыхтоўка да выдалення %'d файлаў (%S)"
 
-#: libnemo-private/nemo-file-operations.c:2592
+#: libnemo-private/nemo-file-operations.c:2604
 #, c-format
 msgid "Preparing to trash %'d file"
 msgid_plural "Preparing to trash %'d files"
@@ -4222,24 +4229,24 @@ msgstr[0] "Падрыхтоўка да выкідання %'d файла ў см
 msgstr[1] "Падрыхтоўка да выкідання %'d файлаў у сметніцу"
 msgstr[2] "Падрыхтоўка да выкідання %'d файлаў у сметніцу"
 
-#: libnemo-private/nemo-file-operations.c:2623
-#: libnemo-private/nemo-file-operations.c:3534
-#: libnemo-private/nemo-file-operations.c:3666
-#: libnemo-private/nemo-file-operations.c:3711
+#: libnemo-private/nemo-file-operations.c:2635
+#: libnemo-private/nemo-file-operations.c:3556
+#: libnemo-private/nemo-file-operations.c:3688
+#: libnemo-private/nemo-file-operations.c:3733
 msgid "Error while copying."
 msgstr "Памылка падчас капіравання."
 
-#: libnemo-private/nemo-file-operations.c:2625
-#: libnemo-private/nemo-file-operations.c:3664
-#: libnemo-private/nemo-file-operations.c:3709
+#: libnemo-private/nemo-file-operations.c:2637
+#: libnemo-private/nemo-file-operations.c:3686
+#: libnemo-private/nemo-file-operations.c:3731
 msgid "Error while moving."
 msgstr "Памылка падчас перамяшчэння."
 
-#: libnemo-private/nemo-file-operations.c:2629
+#: libnemo-private/nemo-file-operations.c:2641
 msgid "Error while moving files to trash."
 msgstr "Памылка перамяшчэння файлаў у сметніцу."
 
-#: libnemo-private/nemo-file-operations.c:2683
+#: libnemo-private/nemo-file-operations.c:2695
 msgid ""
 "Files in the folder \"%B\" cannot be handled because you do not have "
 "permissions to see them."
@@ -4247,44 +4254,44 @@ msgstr ""
 "Вы не можаце апераваць файламі з папкі \"%B\", бо не маеце дазволу на іх "
 "прагляд."
 
-#: libnemo-private/nemo-file-operations.c:2722
+#: libnemo-private/nemo-file-operations.c:2734
 msgid ""
 "The folder \"%B\" cannot be handled because you do not have permissions to "
 "read it."
 msgstr ""
 "Вы не можаце апераваць папкай \"%B\", бо не маеце дазволу на яе чытанне."
 
-#: libnemo-private/nemo-file-operations.c:2799
+#: libnemo-private/nemo-file-operations.c:2811
 msgid ""
 "The file \"%B\" cannot be handled because you do not have permissions to "
 "read it."
 msgstr ""
 "Вы не можаце апераваць файлам \"%B\", бо не маеце дазволу на яго чытанне."
 
-#: libnemo-private/nemo-file-operations.c:2802
+#: libnemo-private/nemo-file-operations.c:2814
 msgid "There was an error getting information about \"%B\"."
 msgstr "Узнікла памылка збору звестак пра \"%B\"."
 
-#: libnemo-private/nemo-file-operations.c:2903
-#: libnemo-private/nemo-file-operations.c:2945
-#: libnemo-private/nemo-file-operations.c:2979
-#: libnemo-private/nemo-file-operations.c:3009
+#: libnemo-private/nemo-file-operations.c:2915
+#: libnemo-private/nemo-file-operations.c:2957
+#: libnemo-private/nemo-file-operations.c:2991
+#: libnemo-private/nemo-file-operations.c:3021
 msgid "Error while copying to \"%B\"."
 msgstr "Памылка падчас капіравання ў \"%B\"."
 
-#: libnemo-private/nemo-file-operations.c:2907
+#: libnemo-private/nemo-file-operations.c:2919
 msgid "You do not have permissions to access the destination folder."
 msgstr "Вы не маеце дазволу на доступ да папкі прызначэння."
 
-#: libnemo-private/nemo-file-operations.c:2909
+#: libnemo-private/nemo-file-operations.c:2921
 msgid "There was an error getting information about the destination."
 msgstr "Узнікла памылка збору звестак пра месца прызначэння."
 
-#: libnemo-private/nemo-file-operations.c:2946
+#: libnemo-private/nemo-file-operations.c:2958
 msgid "The destination is not a folder."
 msgstr "Месца прызначэння не з'яўляецца папкай."
 
-#: libnemo-private/nemo-file-operations.c:2980
+#: libnemo-private/nemo-file-operations.c:2992
 msgid ""
 "There is not enough space on the destination. Try to remove files to make "
 "space."
@@ -4292,66 +4299,66 @@ msgstr ""
 "Не хапае вольнай прасторы ў месцы прызначэння. Паспрабуйце вызваліць яе, "
 "выдаліўшы колькі непатрэбных файлаў."
 
-#: libnemo-private/nemo-file-operations.c:2982
+#: libnemo-private/nemo-file-operations.c:2994
 #, c-format
 msgid "%S more space is required to copy to the destination."
 msgstr ""
 "Для капіравання ў месца прызначэння патрэбна яшчэ %S вольнай прасторы."
 
-#: libnemo-private/nemo-file-operations.c:3010
+#: libnemo-private/nemo-file-operations.c:3022
 msgid "The destination is read-only."
 msgstr "Месца прызначэння даступна толькі для чытання."
 
-#: libnemo-private/nemo-file-operations.c:3069
+#: libnemo-private/nemo-file-operations.c:3081
 msgid "Moving \"%B\" to \"%B\""
 msgstr "Перамяшчэнне \"%B\" у \"%B\""
 
-#: libnemo-private/nemo-file-operations.c:3070
+#: libnemo-private/nemo-file-operations.c:3082
 msgid "Copying \"%B\" to \"%B\""
 msgstr "Капіраванне \"%B\" у \"%B\""
 
-#: libnemo-private/nemo-file-operations.c:3077
+#: libnemo-private/nemo-file-operations.c:3089
 msgid "Duplicating \"%B\""
 msgstr "Стварэнне дубліката \"%B\""
 
-#: libnemo-private/nemo-file-operations.c:3085
+#: libnemo-private/nemo-file-operations.c:3097
 msgid "Moving file %'d of %'d (in \"%B\") to \"%B\""
 msgstr "Перамяшчэнне %'d з %'d файлаў (з \"%B\") у \"%B\""
 
-#: libnemo-private/nemo-file-operations.c:3087
+#: libnemo-private/nemo-file-operations.c:3099
 msgid "Copying file %'d of %'d (in \"%B\") to \"%B\""
 msgstr "Капіраванне %'d з %'d файлаў (з \"%B\") у \"%B\""
 
-#: libnemo-private/nemo-file-operations.c:3094
+#: libnemo-private/nemo-file-operations.c:3106
 msgid "Duplicating file %'d of %'d (in \"%B\")"
 msgstr "Стварэнне дубліката %'d з %'d файлаў (у \"%B\")"
 
-#: libnemo-private/nemo-file-operations.c:3103
+#: libnemo-private/nemo-file-operations.c:3115
 msgid "Moving file %'d of %'d to \"%B\""
 msgstr "Перамяшчэнне %'d з %'d файлаў у \"%B\""
 
-#: libnemo-private/nemo-file-operations.c:3105
+#: libnemo-private/nemo-file-operations.c:3117
 msgid "Copying file %'d of %'d to \"%B\""
 msgstr "Капіраванне %'d з %'d файлаў у \"%B\""
 
-#: libnemo-private/nemo-file-operations.c:3111
+#: libnemo-private/nemo-file-operations.c:3123
 #, c-format
 msgid "Duplicating file %'d of %'d"
 msgstr "Стварэнне дубліката %'d з %'d файлаў"
 
-#: libnemo-private/nemo-file-operations.c:3130
+#: libnemo-private/nemo-file-operations.c:3142
 #, c-format
 msgid "%S of %S"
 msgstr "%S з %S"
 
-#: libnemo-private/nemo-file-operations.c:3141
+#: libnemo-private/nemo-file-operations.c:3153
 msgid "%S of %S — %T left (%S/sec)"
 msgid_plural "%S of %S — %T left (%S/sec)"
 msgstr[0] "%S з %S — засталося: %T (%S/с)"
 msgstr[1] "%S з %S — засталося: %T (%S/с)"
 msgstr[2] "%S з %S — засталося: %T (%S/с)"
 
-#: libnemo-private/nemo-file-operations.c:3538
+#: libnemo-private/nemo-file-operations.c:3560
 msgid ""
 "The folder \"%B\" cannot be copied because you do not have permissions to "
 "create it in the destination."
@@ -4359,11 +4366,11 @@ msgstr ""
 "Вы не можаце скапіраваць папку \"%s\", бо не маеце дазволу на стварэнне яе "
 "копіі ў месцы прызначэння."
 
-#: libnemo-private/nemo-file-operations.c:3541
+#: libnemo-private/nemo-file-operations.c:3563
 msgid "There was an error creating the folder \"%B\"."
 msgstr "Узнікла памылка стварэння папкі \"%B\"."
 
-#: libnemo-private/nemo-file-operations.c:3671
+#: libnemo-private/nemo-file-operations.c:3693
 msgid ""
 "Files in the folder \"%B\" cannot be copied because you do not have "
 "permissions to see them."
@@ -4371,87 +4378,87 @@ msgstr ""
 "Вы не можаце скапіраваць файлы з папкі \"%s\", бо вы ня маеце дазволу на іх "
 "прагляд."
 
-#: libnemo-private/nemo-file-operations.c:3716
+#: libnemo-private/nemo-file-operations.c:3738
 msgid ""
 "The folder \"%B\" cannot be copied because you do not have permissions to "
 "read it."
 msgstr ""
 "Вы не можаце скапіраваць папку \"%B\", бо не маеце дазволу на яе чытанне."
 
-#: libnemo-private/nemo-file-operations.c:3761
-#: libnemo-private/nemo-file-operations.c:4454
-#: libnemo-private/nemo-file-operations.c:5063
+#: libnemo-private/nemo-file-operations.c:3783
+#: libnemo-private/nemo-file-operations.c:4476
+#: libnemo-private/nemo-file-operations.c:5085
 msgid "Error while moving \"%B\"."
 msgstr "Памылка падчас перамяшчэння \"%B\"."
 
-#: libnemo-private/nemo-file-operations.c:3762
+#: libnemo-private/nemo-file-operations.c:3784
 msgid "Could not remove the source folder."
 msgstr "Не ўдалося выдаліць арыгінальную папку."
 
-#: libnemo-private/nemo-file-operations.c:3847
-#: libnemo-private/nemo-file-operations.c:3888
-#: libnemo-private/nemo-file-operations.c:4456
-#: libnemo-private/nemo-file-operations.c:4527
+#: libnemo-private/nemo-file-operations.c:3869
+#: libnemo-private/nemo-file-operations.c:3910
+#: libnemo-private/nemo-file-operations.c:4478
+#: libnemo-private/nemo-file-operations.c:4549
 msgid "Error while copying \"%B\"."
 msgstr "Памылка падчас капіравання \"%B\"."
 
-#: libnemo-private/nemo-file-operations.c:3848
+#: libnemo-private/nemo-file-operations.c:3870
 #, c-format
 msgid "Could not remove files from the already existing folder %F."
 msgstr "Не ўдалося выдаліць файлы з існуючай папкі %F."
 
-#: libnemo-private/nemo-file-operations.c:3889
+#: libnemo-private/nemo-file-operations.c:3911
 #, c-format
 msgid "Could not remove the already existing file %F."
 msgstr "Не ўдалося выдаліць існуючы файл %F."
 
-#: libnemo-private/nemo-file-operations.c:4209
-#: libnemo-private/nemo-file-operations.c:4908
+#: libnemo-private/nemo-file-operations.c:4231
+#: libnemo-private/nemo-file-operations.c:4930
 msgid "You cannot move a folder into itself."
 msgstr "Немагчыма перамясціць папку саму ў сябе."
 
-#: libnemo-private/nemo-file-operations.c:4210
-#: libnemo-private/nemo-file-operations.c:4909
+#: libnemo-private/nemo-file-operations.c:4232
+#: libnemo-private/nemo-file-operations.c:4931
 msgid "You cannot copy a folder into itself."
 msgstr "Немагчыма скапіраваць папку саму ў сябе."
 
-#: libnemo-private/nemo-file-operations.c:4211
-#: libnemo-private/nemo-file-operations.c:4910
+#: libnemo-private/nemo-file-operations.c:4233
+#: libnemo-private/nemo-file-operations.c:4932
 msgid "The destination folder is inside the source folder."
 msgstr "Папка прызначэння знаходзіцца ўнутры арыгінальнай папкі."
 
-#: libnemo-private/nemo-file-operations.c:4242
+#: libnemo-private/nemo-file-operations.c:4264
 msgid "You cannot move a file over itself."
 msgstr "Немагчыма перамясціць файл на месца самога сябе."
 
-#: libnemo-private/nemo-file-operations.c:4243
+#: libnemo-private/nemo-file-operations.c:4265
 msgid "You cannot copy a file over itself."
 msgstr "Немагчыма скапіраваць файл на месца самога сябе."
 
-#: libnemo-private/nemo-file-operations.c:4244
+#: libnemo-private/nemo-file-operations.c:4266
 msgid "The source file would be overwritten by the destination."
 msgstr "Іначай арыгінальны файл быў бы перапісаны файлам прызначэння."
 
-#: libnemo-private/nemo-file-operations.c:4458
+#: libnemo-private/nemo-file-operations.c:4480
 #, c-format
 msgid "Could not remove the already existing file with the same name in %F."
 msgstr "Не ўдалося выдаліць у %F існуючы файл з такой самай назвай."
 
-#: libnemo-private/nemo-file-operations.c:4528
+#: libnemo-private/nemo-file-operations.c:4550
 #, c-format
 msgid "There was an error copying the file into %F."
 msgstr "Узнікла памылка капіравання файла ў %F."
 
-#: libnemo-private/nemo-file-operations.c:4760
-#: libnemo-private/nemo-file-operations.c:4792
+#: libnemo-private/nemo-file-operations.c:4782
+#: libnemo-private/nemo-file-operations.c:4814
 msgid "Copying Files"
 msgstr "Капіраванне файлаў"
 
-#: libnemo-private/nemo-file-operations.c:4818
+#: libnemo-private/nemo-file-operations.c:4840
 msgid "Preparing to Move to \"%B\""
 msgstr "Падрыхтоўка да перамяшчэння ў \"%B\""
 
-#: libnemo-private/nemo-file-operations.c:4822
+#: libnemo-private/nemo-file-operations.c:4844
 #, c-format
 msgid "Preparing to move %'d file"
 msgid_plural "Preparing to move %'d files"
@@ -4459,20 +4466,20 @@ msgstr[0] "Падрыхтоўка да перамяшчэння %'d файла"
 msgstr[1] "Падрыхтоўка да перамяшчэння %'d файлаў"
 msgstr[2] "Падрыхтоўка да перамяшчэння %'d файлаў"
 
-#: libnemo-private/nemo-file-operations.c:5064
+#: libnemo-private/nemo-file-operations.c:5086
 #, c-format
 msgid "There was an error moving the file into %F."
 msgstr "Узнікла памылка перамяшчэння файла ў %F."
 
-#: libnemo-private/nemo-file-operations.c:5326
+#: libnemo-private/nemo-file-operations.c:5348
 msgid "Moving Files"
 msgstr "Перамяшчэнне файлаў"
 
-#: libnemo-private/nemo-file-operations.c:5359
+#: libnemo-private/nemo-file-operations.c:5381
 msgid "Creating links in \"%B\""
 msgstr "Стварэнне спасылак у \"%B\""
 
-#: libnemo-private/nemo-file-operations.c:5363
+#: libnemo-private/nemo-file-operations.c:5385
 #, c-format
 msgid "Making link to %'d file"
 msgid_plural "Making links to %'d files"
@@ -4480,61 +4487,63 @@ msgstr[0] "Стварэнне спасылак для %'d файла"
 msgstr[1] "Стварэнне спасылак для %'d файлаў"
 msgstr[2] "Стварэнне спасылак для %'d файлаў"
 
-#: libnemo-private/nemo-file-operations.c:5498
+#: libnemo-private/nemo-file-operations.c:5520
 msgid "Error while creating link to %B."
 msgstr "Памылка падчас стварэння спасылкі да %B."
 
-#: libnemo-private/nemo-file-operations.c:5500
+#: libnemo-private/nemo-file-operations.c:5522
 msgid "Symbolic links only supported for local files"
 msgstr "Сімвальныя спасылкі падтрымліваюцца толькі для мясцовых файлаў"
 
-#: libnemo-private/nemo-file-operations.c:5503
+#: libnemo-private/nemo-file-operations.c:5525
 msgid "The target doesn't support symbolic links."
 msgstr "Месца прызначэння не падтрымлівае сімвальныя спасылкі."
 
-#: libnemo-private/nemo-file-operations.c:5506
+#: libnemo-private/nemo-file-operations.c:5528
 #, c-format
 msgid "There was an error creating the symlink in %F."
 msgstr "Узнікла памылка стварэння спасылкі ў %F."
 
-#: libnemo-private/nemo-file-operations.c:5823
+#: libnemo-private/nemo-file-operations.c:5845
 msgid "Setting permissions"
 msgstr "Настаўленне дазволаў"
 
-#: libnemo-private/nemo-file-operations.c:6086
+#: libnemo-private/nemo-file-operations.c:6108
 msgid "Untitled Folder"
 msgstr "Новая папка"
 
-#: libnemo-private/nemo-file-operations.c:6092
+#: libnemo-private/nemo-file-operations.c:6114
 #, c-format
 msgid "Untitled %s"
 msgstr "Новы %s"
 
-#: libnemo-private/nemo-file-operations.c:6098
+#: libnemo-private/nemo-file-operations.c:6120
 msgid "Untitled Document"
 msgstr "Новы дакумент"
 
-#: libnemo-private/nemo-file-operations.c:6276
+#: libnemo-private/nemo-file-operations.c:6298
 msgid "Error while creating directory %B."
 msgstr "Памылка падчас стварэння каталога %B."
 
-#: libnemo-private/nemo-file-operations.c:6278
+#: libnemo-private/nemo-file-operations.c:6300
 msgid "Error while creating file %B."
 msgstr "Памылка падчас стварэння файла %B."
 
-#: libnemo-private/nemo-file-operations.c:6280
+#: libnemo-private/nemo-file-operations.c:6302
 #, c-format
 msgid "There was an error creating the directory in %F."
 msgstr "Узнікла памылка стварэння каталога ў %F."
 
-#: libnemo-private/nemo-file-operations.c:6535
+#: libnemo-private/nemo-file-operations.c:6533
+#: libnemo-private/nemo-file-operations.c:6534
+#: libnemo-private/nemo-file-operations.c:6567
 msgid "Emptying Trash"
 msgstr "Ачыстка сметніцы"
 
-#: libnemo-private/nemo-file-operations.c:6581
-#: libnemo-private/nemo-file-operations.c:6622
-#: libnemo-private/nemo-file-operations.c:6657
-#: libnemo-private/nemo-file-operations.c:6692
+#: libnemo-private/nemo-file-operations.c:6613
+#: libnemo-private/nemo-file-operations.c:6654
+#: libnemo-private/nemo-file-operations.c:6689
+#: libnemo-private/nemo-file-operations.c:6724
 msgid "Unable to mark launcher trusted (executable)"
 msgstr "Не ўдалося зрабіць стартар давераным (выканальным)"
 
@@ -4899,16 +4908,16 @@ msgstr "_Адмяніць змяненне ўласніка"
 msgid "_Redo Change Owner"
 msgstr "_Паўтарыць змяненне ўласніка"
 
-#: libnemo-private/nemo-file-utilities.c:1267
+#: libnemo-private/nemo-file-utilities.c:1344
 #, c-format
 msgid "Could not determine original location of \"%s\" "
 msgstr "Не ўдалося вызначыць арыгінальнае размяшчэнне \"%s\" "
 
-#: libnemo-private/nemo-file-utilities.c:1271
+#: libnemo-private/nemo-file-utilities.c:1348
 msgid "The item cannot be restored from trash"
 msgstr "Не ўдалося аднавіць элемент са сметніцы"
 
-#: libnemo-private/nemo-icon-container.c:2737
+#: libnemo-private/nemo-icon-container.c:2742
 msgid "The selection rectangle"
 msgstr "Вобласьць вылучэньня"
 
@@ -5102,15 +5111,15 @@ msgid ""
 "The position of the opposite end of the selection from the cursor in chars."
 msgstr "Пазіцыя супрацьлеглага канца вылучэння адносна курсора, у знаках."
 
-#: eel/eel-editable-label.c:3093
+#: eel/eel-editable-label.c:3090
 msgid "Select All"
 msgstr "Выбраць усё"
 
-#: eel/eel-editable-label.c:3104
+#: eel/eel-editable-label.c:3101
 msgid "Input Methods"
 msgstr "Метады ўводу"
 
-#: eel/eel-gtk-extensions.c:404
+#: eel/eel-gtk-extensions.c:327
 msgid "Show more _details"
 msgstr "_Паказаць падрабязнасці"
 
@@ -5121,6 +5130,79 @@ msgstr "Магчыма спыніць гэтае дзеянне, націсну�
 #: eel/eel-vfs-extensions.c:99
 msgid " (invalid Unicode)"
 msgstr " (хібны Унікод)"
+
+#: data/action_i18n_strings.py:8
+msgid "Add Desklets"
+msgstr "Дадаць дэсклеты"
+
+#: data/action_i18n_strings.py:9
+msgid "Add Cinamon desklets"
+msgstr ""
+
+#: data/action_i18n_strings.py:10
+msgid "Set as Wallpaper..."
+msgstr "Ўсталяваць у якасці фонавага малюнка..."
+
+#: data/action_i18n_strings.py:11
+msgid "Set the selected image as your Cinnamon desktop wallpaper"
+msgstr ""
+
+#: data/action_i18n_strings.py:12
+msgid "Change Desktop _Background"
+msgstr "Змяніць _фон працоўнага стала"
+
+#: data/action_i18n_strings.py:13
+msgid "Change the Cinnamon desktop background"
+msgstr ""
+
+#: data/action_i18n_strings.py:14
+msgid "Create a new l_auncher here..."
+msgstr "Стварыць новы стартар тут..."
+
+#: data/action_i18n_strings.py:15
+msgid "Create a new launcher in this folder"
+msgstr "Стварыць новы стартар у гэтай папцы"
+
+#: data/action_i18n_strings.py:16
+msgid "Manage workspaces (Expo)"
+msgstr ""
+
+#: data/action_i18n_strings.py:17
+msgid "Open Expo to add, remove, or organize workspaces"
+msgstr ""
+
+#: data/action_i18n_strings.py:18
+msgid "Mount archive"
+msgstr "Падключыць архіў"
+
+#: data/action_i18n_strings.py:19
+#, python-format
+msgid "Mount %f to browse its contents"
+msgstr "Падключыць %f, чтобы просмотреть его содержимое"
+
+#: data/action_i18n_strings.py:20
+msgid "Jump to new workspace"
+msgstr ""
+
+#: data/action_i18n_strings.py:21
+msgid "Create a new workspace and activate it"
+msgstr ""
+
+#: data/action_i18n_strings.py:22
+msgid "Desktop _Settings"
+msgstr ""
+
+#: data/action_i18n_strings.py:23
+msgid "Change how your desktop works"
+msgstr ""
+
+#: data/action_i18n_strings.py:24
+msgid "Remove workspace"
+msgstr ""
+
+#: data/action_i18n_strings.py:25
+msgid "Remove the currently active workspace"
+msgstr ""
 
 #: src/nemo-bookmarks-window.glade:8
 msgid "Edit Bookmarks"
@@ -5141,21 +5223,21 @@ msgstr "<b>_Месца</b>"
 #: src/nemo-file-management-properties.glade:29
 #: src/nemo-file-management-properties.glade:182
 #: src/nemo-file-management-properties.glade:199
-#: src/nemo-file-management-properties.glade:3226
+#: src/nemo-file-management-properties.glade:3154
 msgid "Always"
 msgstr "Заўжды"
 
 #: src/nemo-file-management-properties.glade:32
 #: src/nemo-file-management-properties.glade:185
 #: src/nemo-file-management-properties.glade:202
-#: src/nemo-file-management-properties.glade:3229
+#: src/nemo-file-management-properties.glade:3157
 msgid "Local Files Only"
 msgstr "Толькі для мясцовых файлаў"
 
 #: src/nemo-file-management-properties.glade:35
 #: src/nemo-file-management-properties.glade:188
 #: src/nemo-file-management-properties.glade:205
-#: src/nemo-file-management-properties.glade:3232
+#: src/nemo-file-management-properties.glade:3160
 msgid "Never"
 msgstr "Ніколі"
 
@@ -5289,153 +5371,153 @@ msgstr ""
 msgid "File Management Preferences"
 msgstr "Настройкі кіравання файламі"
 
-#: src/nemo-file-management-properties.glade:367
+#: src/nemo-file-management-properties.glade:370
 msgid "<b>Default View</b>"
 msgstr "<b>Прадвызначаны рэжым</b>"
 
-#: src/nemo-file-management-properties.glade:397
+#: src/nemo-file-management-properties.glade:400
 msgid "View _new folders using:"
 msgstr "Спосаб паказу _новых папак:"
 
-#: src/nemo-file-management-properties.glade:442
+#: src/nemo-file-management-properties.glade:445
 msgid "_Arrange items:"
 msgstr "_Упарадкаваць элементы:"
 
-#: src/nemo-file-management-properties.glade:479
+#: src/nemo-file-management-properties.glade:482
 msgid "Sort _folders before files"
 msgstr "_Размяшчаць папкі перад файламі"
 
-#: src/nemo-file-management-properties.glade:532
+#: src/nemo-file-management-properties.glade:535
 msgid "<b>Icon View Defaults</b>"
 msgstr "<b>Прадвызначаныя настройкі рэжыму значкоў</b>"
 
-#: src/nemo-file-management-properties.glade:562
+#: src/nemo-file-management-properties.glade:565
 msgid "Default _zoom level:"
 msgstr "П_радвызначаны ўзровень павелічэння:"
 
-#: src/nemo-file-management-properties.glade:599
+#: src/nemo-file-management-properties.glade:602
 msgid "_Text beside icons"
 msgstr "_Тэкст пры значку"
 
-#: src/nemo-file-management-properties.glade:615
+#: src/nemo-file-management-properties.glade:618
 msgid "_Use compact layout"
 msgstr "Выкарыстоўваць кампактны рэжым"
 
-#: src/nemo-file-management-properties.glade:668
+#: src/nemo-file-management-properties.glade:671
 msgid "<b>Compact View Defaults</b>"
 msgstr "<b>Прадвызначаныя настройкі кампактнага рэжыму</b>"
 
-#: src/nemo-file-management-properties.glade:698
+#: src/nemo-file-management-properties.glade:701
 msgid "_Default zoom level:"
 msgstr "_Прадвызначаны ўзровень павелічэння:"
 
-#: src/nemo-file-management-properties.glade:735
+#: src/nemo-file-management-properties.glade:738
 msgid "A_ll columns have the same width"
 msgstr "_Усе слупкі маюць аднолькавую шырыню"
 
-#: src/nemo-file-management-properties.glade:788
+#: src/nemo-file-management-properties.glade:791
 msgid "<b>List View Defaults</b>"
 msgstr "<b>Прадвызначаныя настройкі рэжыму спіса</b>"
 
-#: src/nemo-file-management-properties.glade:818
+#: src/nemo-file-management-properties.glade:821
 msgid "D_efault zoom level:"
 msgstr "_Прадвызначаны ўзровень павелічэння:"
 
-#: src/nemo-file-management-properties.glade:892
+#: src/nemo-file-management-properties.glade:895
 msgid "<b>Tree View Defaults</b>"
 msgstr "<b>Прадвызначаныя настройкі рэжыму іерархіі</b>"
 
-#: src/nemo-file-management-properties.glade:914
+#: src/nemo-file-management-properties.glade:917
 msgid "Show _only folders"
 msgstr "Паказваць т_олькі папкі"
 
-#: src/nemo-file-management-properties.glade:951
+#: src/nemo-file-management-properties.glade:954
 msgid "Views"
 msgstr "Рэжымы"
 
-#: src/nemo-file-management-properties.glade:979
+#: src/nemo-file-management-properties.glade:982
 msgid "<b>Behavior</b>"
 msgstr "<b>Паводзіны</b>"
 
-#: src/nemo-file-management-properties.glade:1000
+#: src/nemo-file-management-properties.glade:1003
 msgid "_Single click to open items"
 msgstr "_Адзіны нацiск адкрывае элементы"
 
-#: src/nemo-file-management-properties.glade:1017
+#: src/nemo-file-management-properties.glade:1020
 msgid "_Double click to open items"
 msgstr "_Падвойны нацiск адкрывае элементы"
 
-#: src/nemo-file-management-properties.glade:1035
+#: src/nemo-file-management-properties.glade:1038
 msgid "Click twice with a pause in between to rename items"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:1052
+#: src/nemo-file-management-properties.glade:1055
 msgid "Open each _folder in its own window"
 msgstr "_Адкрываць кожную папку ў асобным акне"
 
-#: src/nemo-file-management-properties.glade:1069
+#: src/nemo-file-management-properties.glade:1072
 msgid "Always start in dual-pane view"
 msgstr "Кожны раз адкрываць у двухпанэльным рэжыме"
 
-#: src/nemo-file-management-properties.glade:1086
+#: src/nemo-file-management-properties.glade:1089
 msgid "Ignore per-folder view preferences"
 msgstr "Ігнараваць індывідуальныя налады выгляду для папак"
 
-#: src/nemo-file-management-properties.glade:1103
+#: src/nemo-file-management-properties.glade:1106
 msgid "Disable file operation queueing"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:1157
+#: src/nemo-file-management-properties.glade:1160
 msgid "<b>Executable Text Files</b>"
 msgstr "<b>Выканальныя тэкставыя файлы</b>"
 
-#: src/nemo-file-management-properties.glade:1179
+#: src/nemo-file-management-properties.glade:1182
 msgid "_Run executable text files when they are opened"
 msgstr "Пры _адкрыцці запускаць выканальныя тэкставыя файлы"
 
-#: src/nemo-file-management-properties.glade:1196
+#: src/nemo-file-management-properties.glade:1199
 msgid "_View executable text files when they are opened"
 msgstr "Пры адкрыцці паказваць _выканальныя тэкставыя файлы"
 
-#: src/nemo-file-management-properties.glade:1213
+#: src/nemo-file-management-properties.glade:1216
 msgid "_Ask each time"
 msgstr "_Штораз пытацца"
 
-#: src/nemo-file-management-properties.glade:1267
+#: src/nemo-file-management-properties.glade:1270
 msgid "<b>Trash</b>"
 msgstr "<b>Сметніца</b>"
 
-#: src/nemo-file-management-properties.glade:1289
+#: src/nemo-file-management-properties.glade:1292
 msgid "Ask before _emptying the Trash or deleting files"
 msgstr "Спытацца перад _выдаленнем файлаў са сметніцы"
 
-#: src/nemo-file-management-properties.glade:1305
+#: src/nemo-file-management-properties.glade:1308
 msgid "I_nclude a Delete command that bypasses Trash"
 msgstr "_Дадаць загад \"Выдаліць\", які дазваляе абмінуць сметніцу"
 
-#: src/nemo-file-management-properties.glade:1321
+#: src/nemo-file-management-properties.glade:1324
 msgid "Bypass the Trash when the Delete key is pressed"
 msgstr "Выдаляць міма сметнiцы, калi нацiскаеш клавiшу Delete"
 
-#: src/nemo-file-management-properties.glade:1373
+#: src/nemo-file-management-properties.glade:1376
 msgid "<b>Media Handling</b>"
 msgstr "<b>Носьбіты</b>"
 
-#: src/nemo-file-management-properties.glade:1395
+#: src/nemo-file-management-properties.glade:1398
 msgid "Automatically mount removeable media when inserted and on startup"
 msgstr "Аўтаматычна далучаць зменныя носьбіты пры падключэнні і запуску"
 
-#: src/nemo-file-management-properties.glade:1411
+#: src/nemo-file-management-properties.glade:1414
 msgid "Automatically open a folder for automounted media"
 msgstr "Аўтаматычна адкрываць папку для аўтаматычна змантаваных носьбітаў"
 
-#: src/nemo-file-management-properties.glade:1427
+#: src/nemo-file-management-properties.glade:1430
 msgid "Prompt or autorun/autostart programs when media are inserted"
 msgstr ""
 "Запытваць пацверджанне або аўтаматычна запускаць праграмы калі носьбіты "
 "падключаныя"
 
-#: src/nemo-file-management-properties.glade:1443
+#: src/nemo-file-management-properties.glade:1446
 msgid ""
 "Automatically close the device's tab, pane, or window when a device is "
 "unmounted or ejected"
@@ -5443,33 +5525,23 @@ msgstr ""
 "Аўтаматычна закрываць карткі, панэлі ці вокны пры адмантавання цi адлучэння "
 "носьбiта"
 
-#: src/nemo-file-management-properties.glade:1496
+#: src/nemo-file-management-properties.glade:1499
 msgid "<b>Bulk Rename</b>"
 msgstr "<b>Масавае пераназванне</b>"
 
-#: src/nemo-file-management-properties.glade:1526
+#: src/nemo-file-management-properties.glade:1529
 msgid "Command to invoke when renaming multiple items:"
 msgstr "Загад для запуску пры масавым пераназванні:"
 
-#: src/nemo-file-management-properties.glade:1578
+#: src/nemo-file-management-properties.glade:1581
 msgid "Behavior"
 msgstr "Паводзіны"
 
-#: src/nemo-file-management-properties.glade:1606
-msgid "<b>Context Menus</b>"
-msgstr ""
-
-#: src/nemo-file-management-properties.glade:1628
-msgid ""
-"Show all available actions in context menus (restart Nemo if you change this "
-"option)"
-msgstr ""
-
-#: src/nemo-file-management-properties.glade:1681
+#: src/nemo-file-management-properties.glade:1609
 msgid "<b>Icon Captions</b>"
 msgstr "<b>Подпісы значкоў</b>"
 
-#: src/nemo-file-management-properties.glade:1706
+#: src/nemo-file-management-properties.glade:1634
 msgid ""
 "Choose the order of information to appear beneath icon names. More "
 "information will appear when zooming in closer."
@@ -5477,258 +5549,193 @@ msgstr ""
 "Вызначыце парадак з'яўлення інфармацыі пад назвамі значкоў. Чым большае "
 "павелічэнне элементаў, тым болей будзе паказана інфармацыі."
 
-#: src/nemo-file-management-properties.glade:1857
+#: src/nemo-file-management-properties.glade:1785
 msgid "<b>Date</b>"
 msgstr "<b>Дата</b>"
 
-#: src/nemo-file-management-properties.glade:1880
+#: src/nemo-file-management-properties.glade:1808
 msgid "_Format:"
 msgstr "_Фармат:"
 
-#: src/nemo-file-management-properties.glade:1940
+#: src/nemo-file-management-properties.glade:1868
 msgid "<b>Window and Tab Titles</b>"
 msgstr "<b>Загалоўкі вокнаў і картак</b>"
 
-#: src/nemo-file-management-properties.glade:1962
+#: src/nemo-file-management-properties.glade:1890
 msgid "Show the full p_ath in the title bar and tab bars"
 msgstr "Паказваць поўны адрас у загалоўках вокнаў і картак"
 
-#: src/nemo-file-management-properties.glade:2015
+#: src/nemo-file-management-properties.glade:1943
 msgid "<b>File Size</b>"
 msgstr "<b>Памер файлу</b>"
 
-#: src/nemo-file-management-properties.glade:2038
+#: src/nemo-file-management-properties.glade:1966
 msgid "_Prefixes:"
 msgstr "_Прэфіксы:"
 
-#: src/nemo-file-management-properties.glade:2105
+#: src/nemo-file-management-properties.glade:2033
 msgid "<b>File Properties</b>"
 msgstr "<b>Уласцівасці файла</b>"
 
-#: src/nemo-file-management-properties.glade:2127
+#: src/nemo-file-management-properties.glade:2055
 msgid "Show advanced permissions in the file property dialog"
 msgstr "Паказваць дададковыя правы доступу ў дыялогу ўласцівасцяў файла"
 
-#: src/nemo-file-management-properties.glade:2180
+#: src/nemo-file-management-properties.glade:2108
 msgid "<b>Move/Copy To Menu</b>"
 msgstr "<b>Меню Перамясціць/Капіяваць у</b>"
 
-#: src/nemo-file-management-properties.glade:2202
+#: src/nemo-file-management-properties.glade:2130
 msgid "List bookmarks in the menu"
 msgstr "Адлюстроўваць «Закладкі» ў меню"
 
-#: src/nemo-file-management-properties.glade:2218
+#: src/nemo-file-management-properties.glade:2146
 msgid "List devices and network locations in the menu"
 msgstr "Адлюстроўваць прылады і сеткавыя размяшчэннi ў меню"
 
-#: src/nemo-file-management-properties.glade:2255
+#: src/nemo-file-management-properties.glade:2183
 msgid "Display"
 msgstr "Манітор"
 
-#: src/nemo-file-management-properties.glade:2284
+#: src/nemo-file-management-properties.glade:2212
 msgid "<b>List Columns</b>"
 msgstr "<b>Слупкі спіса</b>"
 
-#: src/nemo-file-management-properties.glade:2309
+#: src/nemo-file-management-properties.glade:2237
 msgid "Choose the order of information to appear in the list view."
 msgstr "Вызначыце парадак з'яўлення інфармацыі ў рэжыме спіса."
 
-#: src/nemo-file-management-properties.glade:2344
+#: src/nemo-file-management-properties.glade:2272
 msgid "List Columns"
 msgstr "Слупкі спіса"
 
-#: src/nemo-file-management-properties.glade:2372
+#: src/nemo-file-management-properties.glade:2300
 msgid "<b>Text Files</b>"
 msgstr "<b>Тэкставыя файлы</b>"
 
-#: src/nemo-file-management-properties.glade:2402
+#: src/nemo-file-management-properties.glade:2330
 msgid "Show te_xt in icons:"
 msgstr "Паказваць _тэкст на значках:"
 
-#: src/nemo-file-management-properties.glade:2476
+#: src/nemo-file-management-properties.glade:2404
 msgid "<b>Other Previewable Files</b>"
 msgstr "<b>Іншыя файлы з магчымасцю папярэдняга агляду</b>"
 
-#: src/nemo-file-management-properties.glade:2506
+#: src/nemo-file-management-properties.glade:2434
 msgid "Show _thumbnails:"
 msgstr "Паказваць _мініяцюры:"
 
-#: src/nemo-file-management-properties.glade:2551
+#: src/nemo-file-management-properties.glade:2479
 msgid "_Only for files smaller than:"
 msgstr "_Толькі для файлаў, меншых за:"
 
-#: src/nemo-file-management-properties.glade:2625
+#: src/nemo-file-management-properties.glade:2553
 msgid "<b>Folders</b>"
 msgstr "<b>Папкі</b>"
 
-#: src/nemo-file-management-properties.glade:2655
+#: src/nemo-file-management-properties.glade:2583
 msgid "Count _number of items:"
 msgstr "Падлічваць _колькасць элементаў:"
 
-#: src/nemo-file-management-properties.glade:2729
+#: src/nemo-file-management-properties.glade:2657
 msgid "<b>Tooltips</b>"
 msgstr "<b>Падказкі</b>"
 
-#: src/nemo-file-management-properties.glade:2751
+#: src/nemo-file-management-properties.glade:2679
 msgid "Show tooltips in icon and compact views"
 msgstr "Паказваць падказкі ў рэжымах: «Значкі» і «Кампактны»"
 
-#: src/nemo-file-management-properties.glade:2768
+#: src/nemo-file-management-properties.glade:2696
 msgid "Show tooltips in list views"
 msgstr "Паказваць падказкі ў рэжыме «Спіс»"
 
-#: src/nemo-file-management-properties.glade:2785
+#: src/nemo-file-management-properties.glade:2713
 msgid "Show tooltips on the desktop"
 msgstr "Паказваць падказкі на працоўным стале"
 
-#: src/nemo-file-management-properties.glade:2805
+#: src/nemo-file-management-properties.glade:2733
 msgid ""
 "<i>By default, a folder tooltip shows the item count, and files display "
 "their size.\n"
 "    Select additional information to display in the tooltip:</i>"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:2829
+#: src/nemo-file-management-properties.glade:2757
 msgid "Detailed file type"
 msgstr "Падрабязна аб тыпе аб'екта"
 
-#: src/nemo-file-management-properties.glade:2844
+#: src/nemo-file-management-properties.glade:2772
 msgid "Accessed date"
 msgstr "Дата доступу"
 
-#: src/nemo-file-management-properties.glade:2860
+#: src/nemo-file-management-properties.glade:2788
 msgid "Modified date"
 msgstr "Дата змены"
 
-#: src/nemo-file-management-properties.glade:2875
+#: src/nemo-file-management-properties.glade:2803
 msgid "File or folder location"
 msgstr "Месцазнаходжанне файла або папкі"
 
-#: src/nemo-file-management-properties.glade:2921
+#: src/nemo-file-management-properties.glade:2849
 msgid "Preview"
 msgstr "Прадпрагляд"
 
-#: src/nemo-file-management-properties.glade:2949
+#: src/nemo-file-management-properties.glade:2877
 msgid "<b>Options</b>"
 msgstr "<b>Налады</b>"
 
-#: src/nemo-file-management-properties.glade:2971
+#: src/nemo-file-management-properties.glade:2899
 msgid "Show previous button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:2988
+#: src/nemo-file-management-properties.glade:2916
 msgid "Show next button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3004
+#: src/nemo-file-management-properties.glade:2932
 msgid "Show up button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3020
+#: src/nemo-file-management-properties.glade:2948
 msgid "Show refresh button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3036
+#: src/nemo-file-management-properties.glade:2964
 msgid "Show computer button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3052
+#: src/nemo-file-management-properties.glade:2980
 msgid "Show home button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3068
+#: src/nemo-file-management-properties.glade:2996
 msgid "Show location entry/breadcrumbs toggle button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3084
+#: src/nemo-file-management-properties.glade:3012
 msgid "Show open in terminal button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3100
+#: src/nemo-file-management-properties.glade:3028
 msgid "Show new folder button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3116
+#: src/nemo-file-management-properties.glade:3044
 msgid "Show search button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3132
+#: src/nemo-file-management-properties.glade:3060
 msgid "Show icon view button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3148
+#: src/nemo-file-management-properties.glade:3076
 msgid "Show list view button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3164
+#: src/nemo-file-management-properties.glade:3092
 msgid "Show compact view button"
 msgstr ""
 
-#: src/nemo-file-management-properties.glade:3201
+#: src/nemo-file-management-properties.glade:3129
 msgid "Toolbar"
 msgstr "Панель прылад"
-
-#: data/action_i18n_strings.py:7
-msgid "Add Desklets"
-msgstr "Дадаць дэсклеты"
-
-#: data/action_i18n_strings.py:8
-msgid "Add Cinamon desklets"
-msgstr ""
-
-#: data/action_i18n_strings.py:9
-msgid "Manage workspaces (Expo)"
-msgstr ""
-
-#: data/action_i18n_strings.py:10
-msgid "Open Expo to add, remove, or organize workspaces"
-msgstr ""
-
-#: data/action_i18n_strings.py:11
-msgid "Set as Wallpaper..."
-msgstr "Ўсталяваць у якасці фонавага малюнка..."
-
-#: data/action_i18n_strings.py:12
-msgid "Set the selected image as your Cinnamon desktop wallpaper"
-msgstr ""
-
-#: data/action_i18n_strings.py:13
-msgid "Create a new l_auncher here..."
-msgstr "Стварыць новы стартар тут..."
-
-#: data/action_i18n_strings.py:14
-msgid "Create a new launcher in this folder"
-msgstr "Стварыць новы стартар у гэтай папцы"
-
-#: data/action_i18n_strings.py:15
-msgid "Change Desktop _Background"
-msgstr "Змяніць _фон працоўнага стала"
-
-#: data/action_i18n_strings.py:16
-msgid "Change the Cinnamon desktop background"
-msgstr ""
-
-#: data/action_i18n_strings.py:17
-msgid "Remove workspace"
-msgstr ""
-
-#: data/action_i18n_strings.py:18
-msgid "Remove the currently active workspace"
-msgstr ""
-
-#: data/action_i18n_strings.py:19
-msgid "Jump to new workspace"
-msgstr ""
-
-#: data/action_i18n_strings.py:20
-msgid "Create a new workspace and activate it"
-msgstr ""
-
-#: data/action_i18n_strings.py:21
-msgid "Mount archive"
-msgstr "Падключыць архіў"
-
-#: data/action_i18n_strings.py:22
-#, python-format
-msgid "Mount %f to browse its contents"
-msgstr "Падключыць %f, чтобы просмотреть его содержимое"

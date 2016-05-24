@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-11-11 18:45+0000\n"
-"PO-Revision-Date: 2016-04-03 05:32+0000\n"
+"POT-Creation-Date: 2016-05-20 13:14+0100\n"
+"PO-Revision-Date: 2016-05-13 18:02+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2016-04-21 14:40+0000\n"
-"X-Generator: Launchpad (build 17995)\n"
+"X-Launchpad-Export-Date: 2016-05-24 09:33+0000\n"
+"X-Generator: Launchpad (build 18053)\n"
 "Language: sr\n"
 
 #: src/nemo-action-config-widget.c:231
@@ -54,47 +54,47 @@ msgstr ""
 "Пре покретања Нема, направите следеће фасцикле или подесите дозволе тако да "
 "их Немо може направити."
 
-#: src/nemo-application.c:752
+#: src/nemo-application.c:619
 msgid "--check cannot be used with other options."
 msgstr "„--check“ се не може користити уз остале опције."
 
-#: src/nemo-application.c:758
+#: src/nemo-application.c:625
 msgid "--quit cannot be used with URIs."
 msgstr "„--quit“ се не може користити са путањама."
 
-#: src/nemo-application.c:765
+#: src/nemo-application.c:632
 msgid "--geometry cannot be used with more than one URI."
 msgstr "„--geometry“ се не може користити са више путања."
 
-#: src/nemo-application.c:823
+#: src/nemo-application.c:690
 msgid "Perform a quick set of self-check tests."
 msgstr "Спроводи скуп брзих самопровера."
 
-#: src/nemo-application.c:829
+#: src/nemo-application.c:696
 msgid "Show the version of the program."
 msgstr "Приказује издање програма."
 
-#: src/nemo-application.c:831
+#: src/nemo-application.c:698
 msgid "Create the initial window with the given geometry."
 msgstr "Ствара почетни прозор са датим димензијама и положајем."
 
-#: src/nemo-application.c:831
+#: src/nemo-application.c:698
 msgid "GEOMETRY"
 msgstr "ГЕОМЕТРИЈА"
 
-#: src/nemo-application.c:833
+#: src/nemo-application.c:700
 msgid "Only create windows for explicitly specified URIs."
 msgstr "Ствара прозоре само за изричито наведене путање."
 
-#: src/nemo-application.c:835
-msgid ""
-"Do not manage the desktop (ignore the preference set in the preferences "
-"dialog)."
-msgstr ""
-"Не управља радном површи (занемарује сва подешавања у прозорчету са "
-"поставкама)."
+#: src/nemo-application.c:702
+msgid "Never manage the desktop (ignore the GSettings preference)."
+msgstr "Никада не управља радном површи (занемарује поставке Гподешавања)."
 
-#: src/nemo-application.c:837
+#: src/nemo-application.c:704
+msgid "Always manage the desktop (ignore the GSettings preference)."
+msgstr "Увек управља радном површи (занемарује поставке Гподешавања)."
+
+#: src/nemo-application.c:706
 msgid ""
 "Repair the user thumbnail cache - this can be useful if you're having "
 "trouble with file thumbnails.  Must be run as root"
@@ -102,15 +102,15 @@ msgstr ""
 "Поправља корисничку оставу сличица — може бити корисно ако имате проблем са "
 "умањеним приказима.  Морате покренути као администратор."
 
-#: src/nemo-application.c:839
+#: src/nemo-application.c:708
 msgid "Quit Nemo."
 msgstr "Затвара Немо."
 
-#: src/nemo-application.c:840
+#: src/nemo-application.c:709
 msgid "[URI...]"
 msgstr "[Путања...]"
 
-#: src/nemo-application.c:851
+#: src/nemo-application.c:720
 msgid ""
 "\n"
 "\n"
@@ -120,11 +120,11 @@ msgstr ""
 "\n"
 "Разгледајте систем датотека помоћу управника датотека"
 
-#: src/nemo-application.c:1131
+#: src/nemo-application.c:992
 msgid "Nemo's main menu is now hidden"
 msgstr "Немов главни изборник је сада скривен"
 
-#: src/nemo-application.c:1134
+#: src/nemo-application.c:995
 msgid ""
 "You have chosen to hide the main menu.  You can get it back temporarily by:\n"
 "\n"
@@ -144,7 +144,7 @@ msgstr ""
 "\n"
 "Трајно га можете вратити бирањем ове могућности у изборнику „Преглед“."
 
-#: src/nemo-application.c:1145
+#: src/nemo-application.c:1006
 msgid "Don't show this message again."
 msgstr "Не приказуј ову поруку поново."
 
@@ -185,6 +185,12 @@ msgstr ""
 #: src/nemo-autorun-software.c:234 src/nemo-mime-actions.c:728
 msgid "_Run"
 msgstr "_Покрени"
+
+#: src/nemo-blank-desktop-window.c:203 src/nemo-desktop-window.c:103
+#: src/nemo-desktop-window.c:292 src/nemo-pathbar.c:1497
+#: src/nemo-places-sidebar.c:773 libnemo-private/nemo-action.c:947
+msgid "Desktop"
+msgstr "Радна површ"
 
 #: src/nemo-bookmarks-window.c:162 src/nemo-window-menus.c:379
 #, c-format
@@ -265,8 +271,8 @@ msgstr "Проверите ваше податке за овај налог."
 msgid "Continue"
 msgstr "Настави"
 
-#: src/nemo-connect-server-dialog.c:698 src/nemo-properties-window.c:5149
-#: src/nemo-view.c:1578
+#: src/nemo-connect-server-dialog.c:698 src/nemo-properties-window.c:5180
+#: src/nemo-view.c:1573
 msgid "There was an error displaying help."
 msgstr "Дошло је до грешке приликом приказивања помоћи."
 
@@ -298,7 +304,7 @@ msgstr "_Врста:"
 msgid "Sh_are:"
 msgstr "_Дели:"
 
-#: src/nemo-connect-server-dialog.c:1011 src/nemo-view.c:1772
+#: src/nemo-connect-server-dialog.c:1011 src/nemo-view.c:1767
 msgid "_Folder:"
 msgstr "_Фасцикла:"
 
@@ -340,24 +346,24 @@ msgstr ""
 "\n"
 "Додај везу са прикљученим диском са сервера"
 
-#: src/nemo-desktop-icon-view.c:695 src/nemo-view.c:8312 src/nemo-view.c:9924
+#: src/nemo-desktop-icon-view.c:502 src/nemo-view.c:8181 src/nemo-view.c:9818
 msgid "E_mpty Trash"
 msgstr "Испразни _корпу"
 
-#: src/nemo-desktop-icon-view.c:708
+#: src/nemo-desktop-icon-view.c:515
 msgid "Empty Trash"
 msgstr "Испразните корпу"
 
-#: src/nemo-desktop-icon-view.c:710 src/nemo-trash-bar.c:207
-#: src/nemo-view.c:8313
+#: src/nemo-desktop-icon-view.c:517 src/nemo-trash-bar.c:218
+#: src/nemo-view.c:8182
 msgid "Delete all items in the Trash"
 msgstr "Избаци све ставке из смећа"
 
-#: src/nemo-desktop-icon-view.c:773
+#: src/nemo-desktop-icon-view.c:580
 msgid "The desktop view encountered an error."
 msgstr "Преглед радне површи је наишао на грешку."
 
-#: src/nemo-desktop-icon-view.c:774
+#: src/nemo-desktop-icon-view.c:581
 msgid "The desktop view encountered an error while starting up."
 msgstr "Преглед радне површи је наишао на грешку при покретању."
 
@@ -379,12 +385,6 @@ msgstr "Опис"
 #: src/nemo-desktop-item-properties.c:421
 msgid "Command"
 msgstr "Наредба"
-
-#: src/nemo-desktop-window.c:92 src/nemo-desktop-window.c:305
-#: src/nemo-pathbar.c:1497 src/nemo-places-sidebar.c:770
-#: libnemo-private/nemo-action.c:932
-msgid "Desktop"
-msgstr "Радна површ"
 
 #: src/nemo-error-reporting.c:68
 #, c-format
@@ -507,194 +507,194 @@ msgstr "Проширења"
 msgid "Extensions changed.  Restart required."
 msgstr "Проширења су промењена.  Потребно је поновно покретање."
 
-#: src/nemo-file-management-properties.c:281 src/nemo-properties-window.c:3945
-#: src/nemo-properties-window.c:3956
+#: src/nemo-file-management-properties.c:282 src/nemo-properties-window.c:3941
+#: src/nemo-properties-window.c:3952
 msgid "None"
 msgstr "Ништа"
 
-#: src/nemo-file-management-properties.c:464 libnemo-private/nemo-file.c:4492
+#: src/nemo-file-management-properties.c:463 libnemo-private/nemo-file.c:4494
 msgid "today at %-I:%M:%S %p"
 msgstr "данас у %-H:%M:%S"
 
-#: src/nemo-icon-view.c:133
+#: src/nemo-icon-view.c:135
 msgid "by _Name"
 msgstr "према _називу"
 
-#: src/nemo-icon-view.c:134 src/nemo-icon-view.c:1449
+#: src/nemo-icon-view.c:136 src/nemo-icon-view.c:1478
 msgid "Keep icons sorted by name in rows"
 msgstr "Иконице уређене према називу у редовима"
 
-#: src/nemo-icon-view.c:140
+#: src/nemo-icon-view.c:142
 msgid "by _Size"
 msgstr "према _величини"
 
-#: src/nemo-icon-view.c:141 src/nemo-icon-view.c:1453
+#: src/nemo-icon-view.c:143 src/nemo-icon-view.c:1482
 msgid "Keep icons sorted by size in rows"
 msgstr "Иконице уређене према величини у редовима"
 
-#: src/nemo-icon-view.c:147
+#: src/nemo-icon-view.c:149
 msgid "by _Type"
 msgstr "према _врсти"
 
-#: src/nemo-icon-view.c:148 src/nemo-icon-view.c:1457
+#: src/nemo-icon-view.c:150 src/nemo-icon-view.c:1486
 msgid "Keep icons sorted by type in rows"
 msgstr "Иконице уређене према врсти"
 
-#: src/nemo-icon-view.c:154
+#: src/nemo-icon-view.c:156
 msgid "by _Detailed Type"
 msgstr "према _опширној врсти"
 
-#: src/nemo-icon-view.c:155 src/nemo-icon-view.c:1461
+#: src/nemo-icon-view.c:157 src/nemo-icon-view.c:1490
 msgid "Keep icons sorted by detailed type in rows"
 msgstr "Иконице уређене према опширној врсти"
 
-#: src/nemo-icon-view.c:161
+#: src/nemo-icon-view.c:163
 msgid "by Modification _Date"
 msgstr "према датуму _измене"
 
-#: src/nemo-icon-view.c:162 src/nemo-icon-view.c:1465
+#: src/nemo-icon-view.c:164 src/nemo-icon-view.c:1494
 msgid "Keep icons sorted by modification date in rows"
 msgstr "Иконице уређене према датуму измене у редовима"
 
-#: src/nemo-icon-view.c:168
+#: src/nemo-icon-view.c:170
 msgid "by T_rash Time"
 msgstr "према датуму _брисања"
 
-#: src/nemo-icon-view.c:169 src/nemo-icon-view.c:1469
+#: src/nemo-icon-view.c:171 src/nemo-icon-view.c:1498
 msgid "Keep icons sorted by trash time in rows"
 msgstr "Иконице уређене према датуму брисања"
 
-#: src/nemo-icon-view.c:682
+#: src/nemo-icon-view.c:711
 msgid "_Organize Desktop by Name"
 msgstr "_Уреди радну површ према називу"
 
-#: src/nemo-icon-view.c:1408
+#: src/nemo-icon-view.c:1437
 msgid "Arran_ge Items"
 msgstr "По_ређај ставке"
 
-#: src/nemo-icon-view.c:1410
+#: src/nemo-icon-view.c:1439
 msgid "Resize Icon..."
 msgstr "Промени величину иконице..."
 
-#: src/nemo-icon-view.c:1411
+#: src/nemo-icon-view.c:1440
 msgid "Make the selected icon resizable"
 msgstr "Омогући промену величине изабране иконице"
 
-#: src/nemo-icon-view.c:1414 src/nemo-icon-view.c:1588
+#: src/nemo-icon-view.c:1443 src/nemo-icon-view.c:1617
 msgid "Restore Icons' Original Si_zes"
 msgstr "Врати изворне величине иконица"
 
-#: src/nemo-icon-view.c:1415
+#: src/nemo-icon-view.c:1444
 msgid "Restore each selected icon to its original size"
 msgstr "Враћа све изабране иконице на изворну величину"
 
-#: src/nemo-icon-view.c:1418
+#: src/nemo-icon-view.c:1447
 msgid "_Organize by Name"
 msgstr "_Поређај према називу"
 
-#: src/nemo-icon-view.c:1419
+#: src/nemo-icon-view.c:1448
 msgid "Reposition icons to better fit in the window and avoid overlapping"
 msgstr "Постави иконице тако да боље стану у прозор и избегавај преклапање"
 
-#: src/nemo-icon-view.c:1426
+#: src/nemo-icon-view.c:1455
 msgid "Compact _Layout"
 msgstr "Прикажи _збијено"
 
-#: src/nemo-icon-view.c:1427
+#: src/nemo-icon-view.c:1456
 msgid "Toggle using a tighter layout scheme"
 msgstr "Користи збијенији распоред ставки"
 
-#: src/nemo-icon-view.c:1431
+#: src/nemo-icon-view.c:1460
 msgid "Re_versed Order"
 msgstr "О_брни редослед"
 
-#: src/nemo-icon-view.c:1432
+#: src/nemo-icon-view.c:1461
 msgid "Display icons in the opposite order"
 msgstr "Прикажи иконице у супротном поретку"
 
-#: src/nemo-icon-view.c:1436
+#: src/nemo-icon-view.c:1465
 msgid "_Keep Aligned"
 msgstr "_Задржи распоред"
 
-#: src/nemo-icon-view.c:1437
+#: src/nemo-icon-view.c:1466
 msgid "Keep icons lined up on a grid"
 msgstr "Задржи иконице постројене на мрежи"
 
-#: src/nemo-icon-view.c:1444
+#: src/nemo-icon-view.c:1473
 msgid "_Manually"
 msgstr "_Ручно"
 
-#: src/nemo-icon-view.c:1445
+#: src/nemo-icon-view.c:1474
 msgid "Leave icons wherever they are dropped"
 msgstr "Постави иконице где год су спуштене"
 
-#: src/nemo-icon-view.c:1448
+#: src/nemo-icon-view.c:1477
 msgid "By _Name"
 msgstr "Према _називу"
 
-#: src/nemo-icon-view.c:1452
+#: src/nemo-icon-view.c:1481
 msgid "By _Size"
 msgstr "Према _величини"
 
-#: src/nemo-icon-view.c:1456
+#: src/nemo-icon-view.c:1485
 msgid "By _Type"
 msgstr "Према вр_сти"
 
-#: src/nemo-icon-view.c:1460
+#: src/nemo-icon-view.c:1489
 msgid "By _Detailed Type"
 msgstr "Према _опширној врсти"
 
-#: src/nemo-icon-view.c:1464
+#: src/nemo-icon-view.c:1493
 msgid "By Modification _Date"
 msgstr "Према _датуму измене"
 
-#: src/nemo-icon-view.c:1468
+#: src/nemo-icon-view.c:1497
 msgid "By T_rash Time"
 msgstr "Према датуму _брисања"
 
-#: src/nemo-icon-view.c:1589
+#: src/nemo-icon-view.c:1618
 msgid "Restore Icon's Original Si_ze"
 msgstr "Врати изворну величину иконице"
 
-#: src/nemo-icon-view.c:2881 src/nemo-icon-view-container.c:590
+#: src/nemo-icon-view.c:2901 src/nemo-icon-view-container.c:610
 #: src/nemo-window-menus.c:1439 src/nemo-file-management-properties.glade:12
 msgid "Icon View"
 msgstr "Преглед иконицама"
 
-#: src/nemo-icon-view.c:2883
+#: src/nemo-icon-view.c:2903
 msgid "_Icons"
 msgstr "_Иконице"
 
-#: src/nemo-icon-view.c:2884
+#: src/nemo-icon-view.c:2904
 msgid "The icon view encountered an error."
 msgstr "Преглед иконицама је наишао на грешку."
 
-#: src/nemo-icon-view.c:2885
+#: src/nemo-icon-view.c:2905
 msgid "The icon view encountered an error while starting up."
 msgstr "Преглед иконицама је наишао на грешку при покретању."
 
-#: src/nemo-icon-view.c:2886
+#: src/nemo-icon-view.c:2906
 msgid "Display this location with the icon view."
 msgstr "Прикажите ову путању помоћу прегледа иконицама."
 
-#: src/nemo-icon-view.c:2895 src/nemo-window-menus.c:1462
+#: src/nemo-icon-view.c:2915 src/nemo-window-menus.c:1462
 #: src/nemo-file-management-properties.glade:18
 msgid "Compact View"
 msgstr "Прикажите збијено"
 
-#: src/nemo-icon-view.c:2897
+#: src/nemo-icon-view.c:2917
 msgid "_Compact"
 msgstr "_Збијено"
 
-#: src/nemo-icon-view.c:2898
+#: src/nemo-icon-view.c:2918
 msgid "The compact view encountered an error."
 msgstr "Збијени преглед је наишао на грешку."
 
-#: src/nemo-icon-view.c:2899
+#: src/nemo-icon-view.c:2919
 msgid "The compact view encountered an error while starting up."
 msgstr "Збијени преглед је наишао на грешку при покретању."
 
-#: src/nemo-icon-view.c:2900
+#: src/nemo-icon-view.c:2920
 msgid "Display this location with the compact view."
 msgstr "Прикажите ову путању користећи збијени преглед."
 
@@ -826,7 +826,7 @@ msgstr "Нисам успео да учитам податке слике"
 
 #: src/nemo-image-properties-page.c:706 src/nemo-list-model.c:431
 #: src/nemo-tree-sidebar-model.c:1242 src/nemo-window-manage-views.c:1169
-#: src/nemo-window-slot.c:296
+#: src/nemo-window-slot.c:297
 msgid "Loading..."
 msgstr "Учитавам..."
 
@@ -865,36 +865,36 @@ msgstr "Прикажи додатне информације о прављењу
 msgid "(Empty)"
 msgstr "(Празно)"
 
-#: src/nemo-list-view.c:1876
+#: src/nemo-list-view.c:1891
 msgid "Use Default"
 msgstr "Користи подразумевано"
 
-#: src/nemo-list-view.c:1887
+#: src/nemo-list-view.c:1902
 msgid "Temporarily disable auto-sort"
 msgstr "Привремено онемогући аутоматско разврставање"
 
-#: src/nemo-list-view.c:2196 libnemo-private/nemo-column-utilities.c:43
+#: src/nemo-list-view.c:2234 libnemo-private/nemo-column-utilities.c:43
 msgid "Name"
 msgstr "Назив"
 
-#: src/nemo-list-view.c:2270 src/nemo-list-view.c:3830
+#: src/nemo-list-view.c:2312 src/nemo-list-view.c:3872
 #: src/nemo-window-menus.c:1450 src/nemo-file-management-properties.glade:15
 msgid "List View"
 msgstr "Преглед списком"
 
-#: src/nemo-list-view.c:3832
+#: src/nemo-list-view.c:3874
 msgid "_List"
 msgstr "_Списак"
 
-#: src/nemo-list-view.c:3833
+#: src/nemo-list-view.c:3875
 msgid "The list view encountered an error."
 msgstr "Преглед списком је наишао на грешку."
 
-#: src/nemo-list-view.c:3834
+#: src/nemo-list-view.c:3876
 msgid "The list view encountered an error while starting up."
 msgstr "Преглед списком је наишао на грешку при покретању."
 
-#: src/nemo-list-view.c:3835
+#: src/nemo-list-view.c:3877
 msgid "Display this location with the list view."
 msgstr "Отворите ову путању у прегледу помоћу списка."
 
@@ -934,8 +934,8 @@ msgid "This link cannot be used, because its target \"%s\" doesn't exist."
 msgstr "Не можете користити везу зато што њено одредиште „%s“ не постоји."
 
 #: src/nemo-mime-actions.c:656 src/nemo-tree-sidebar.c:1339
-#: src/nemo-view.c:8364 src/nemo-view.c:8482 src/nemo-view.c:9520
-#: src/nemo-view.c:9847
+#: src/nemo-view.c:8233 src/nemo-view.c:8351 src/nemo-view.c:9403
+#: src/nemo-view.c:9741
 msgid "Mo_ve to Trash"
 msgstr "Пре_мести у смеће"
 
@@ -958,7 +958,7 @@ msgid "_Display"
 msgstr "_Прикажи"
 
 #: src/nemo-mime-actions.c:1051 src/nemo-mime-actions.c:1571
-#: src/nemo-view.c:1058
+#: src/nemo-view.c:1053
 msgid "Are you sure you want to open all files?"
 msgstr "Да ли желите да отворите све датотеке?"
 
@@ -971,7 +971,7 @@ msgstr[1] "Ово ће отворити %d засебна листа."
 msgstr[2] "Ово ће отворити %d засебних листова."
 
 #: src/nemo-mime-actions.c:1155 src/nemo-open-with-main.c:144
-#: src/nemo-view.c:1323
+#: src/nemo-view.c:1318
 msgid "Open with"
 msgstr "Отвори програмом"
 
@@ -1030,11 +1030,11 @@ msgstr[1] "Ово ће отворити %d засебна програма."
 msgstr[2] "Ово ће отворити %d засебних програма."
 
 #: src/nemo-mime-actions.c:1649 src/nemo-mime-actions.c:1923
-#: src/nemo-view.c:7482
+#: src/nemo-view.c:7351
 msgid "Unable to mount location"
 msgstr "Не могу монтирати локацију"
 
-#: src/nemo-mime-actions.c:2002 src/nemo-view.c:7629
+#: src/nemo-mime-actions.c:2002 src/nemo-view.c:7498
 msgid "Unable to start location"
 msgstr "Не могу покренути локацију"
 
@@ -1051,7 +1051,7 @@ msgstr[0] "Отварам %d ставку."
 msgstr[1] "Отварам %d ставке."
 msgstr[2] "Отварам %d ставки."
 
-#: src/nemo-notebook.c:390
+#: src/nemo-notebook.c:392
 msgid "Close tab"
 msgstr "Затвори лист"
 
@@ -1067,20 +1067,20 @@ msgstr ""
 "Приказује прозорче „Отвори програмом“ за дату путању, како би омогућио "
 "кориснику да измени подразумеваног руковаоца миме врсте."
 
-#: src/nemo-places-sidebar.c:404
+#: src/nemo-places-sidebar.c:408
 msgid "Devices"
 msgstr "Уређаји"
 
-#: src/nemo-places-sidebar.c:622 src/nemo-view.c:3139
+#: src/nemo-places-sidebar.c:626 src/nemo-view.c:3127
 #, c-format
 msgid "Free space: %s"
 msgstr "Слободан простор: %s"
 
-#: src/nemo-places-sidebar.c:742
+#: src/nemo-places-sidebar.c:745
 msgid "My Computer"
 msgstr "Мој рачунар"
 
-#: src/nemo-places-sidebar.c:749
+#: src/nemo-places-sidebar.c:752
 #, c-format
 msgid ""
 "Open your personal folder\n"
@@ -1089,26 +1089,26 @@ msgstr ""
 "Отворите своју личну фасциклу\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:753 src/nemo-query-editor.c:1109
+#: src/nemo-places-sidebar.c:756 src/nemo-query-editor.c:1167
 #: src/nemo-tree-sidebar.c:1475 libnemo-private/nemo-bookmark.c:130
 #: libnemo-private/nemo-desktop-link.c:118
 #: libnemo-private/nemo-file-utilities.c:66
 msgid "Home"
 msgstr "Почетна"
 
-#: src/nemo-places-sidebar.c:772
+#: src/nemo-places-sidebar.c:775
 msgid "Open the contents of your desktop in a folder"
 msgstr "Отворите радну површину као фасциклу"
 
-#: src/nemo-places-sidebar.c:821
+#: src/nemo-places-sidebar.c:825
 msgid "Recent"
 msgstr "Скорашње"
 
-#: src/nemo-places-sidebar.c:823
+#: src/nemo-places-sidebar.c:827
 msgid "Recent files"
 msgstr "Скорашње датотеке"
 
-#: src/nemo-places-sidebar.c:832
+#: src/nemo-places-sidebar.c:836
 #, c-format
 msgid ""
 "Open the contents of the File System\n"
@@ -1117,24 +1117,24 @@ msgstr ""
 "Отворите садржај системских датотека\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:836 src/nemo-tree-sidebar.c:1479
+#: src/nemo-places-sidebar.c:840 src/nemo-tree-sidebar.c:1479
 msgid "File System"
 msgstr "Систем датотека"
 
-#: src/nemo-places-sidebar.c:851 src/nemo-trash-bar.c:191
+#: src/nemo-places-sidebar.c:855 src/nemo-trash-bar.c:202
 #: libnemo-private/nemo-desktop-link.c:135
 msgid "Trash"
 msgstr "Смеће"
 
-#: src/nemo-places-sidebar.c:853
+#: src/nemo-places-sidebar.c:857
 msgid "Open the trash"
 msgstr "Отворите смеће"
 
-#: src/nemo-places-sidebar.c:858
+#: src/nemo-places-sidebar.c:862
 msgid "Bookmarks"
 msgstr "Обележивачи"
 
-#: src/nemo-places-sidebar.c:978
+#: src/nemo-places-sidebar.c:979
 #, c-format
 msgid ""
 "%s (%s)\n"
@@ -1143,17 +1143,17 @@ msgstr ""
 "%s (%s)\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:1007
+#: src/nemo-places-sidebar.c:1008
 #, c-format
 msgid "Mount and open %s (%s)"
 msgstr "Прикачи и отвори „%s“ (%s)"
 
-#: src/nemo-places-sidebar.c:1035 src/nemo-places-sidebar.c:1124
+#: src/nemo-places-sidebar.c:1036 src/nemo-places-sidebar.c:1125
 #, c-format
 msgid "Mount and open %s"
 msgstr "Прикачи и отвори „%s“"
 
-#: src/nemo-places-sidebar.c:1077
+#: src/nemo-places-sidebar.c:1078
 #, c-format
 msgid ""
 "%s\n"
@@ -1162,139 +1162,140 @@ msgstr ""
 "%s\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:1111 src/nemo-places-sidebar.c:1166
+#: src/nemo-places-sidebar.c:1112 src/nemo-places-sidebar.c:1167
 #: src/nemo-tree-sidebar.c:1483 libnemo-private/nemo-desktop-link.c:147
 msgid "Network"
 msgstr "Мрежа"
 
-#: src/nemo-places-sidebar.c:1168
+#: src/nemo-places-sidebar.c:1169
 msgid "Browse the contents of the network"
 msgstr "Прегледај садржај мреже"
 
-#: src/nemo-places-sidebar.c:2245 src/nemo-places-sidebar.c:3425
-#: src/nemo-view.c:8410 src/nemo-view.c:8434 src/nemo-view.c:8506
-#: src/nemo-view.c:9143 src/nemo-view.c:9147 src/nemo-view.c:9230
-#: src/nemo-view.c:9234 src/nemo-view.c:9334 src/nemo-view.c:9338
+#: src/nemo-places-sidebar.c:2246 src/nemo-places-sidebar.c:3426
+#: src/nemo-view.c:8279 src/nemo-view.c:8303 src/nemo-view.c:8375
+#: src/nemo-view.c:9026 src/nemo-view.c:9030 src/nemo-view.c:9113
+#: src/nemo-view.c:9117 src/nemo-view.c:9217 src/nemo-view.c:9221
 msgid "_Start"
 msgstr "_Покрени"
 
-#: src/nemo-places-sidebar.c:2246 src/nemo-places-sidebar.c:3432
-#: src/nemo-view.c:8414 src/nemo-view.c:8438 src/nemo-view.c:8510
-#: src/nemo-view.c:9172 src/nemo-view.c:9259 src/nemo-view.c:9363
+#: src/nemo-places-sidebar.c:2247 src/nemo-places-sidebar.c:3433
+#: src/nemo-view.c:8283 src/nemo-view.c:8307 src/nemo-view.c:8379
+#: src/nemo-view.c:9055 src/nemo-view.c:9142 src/nemo-view.c:9246
 #: src/nemo-window-menus.c:1125
 msgid "_Stop"
 msgstr "_Заустави"
 
-#: src/nemo-places-sidebar.c:2251
+#: src/nemo-places-sidebar.c:2252
 msgid "_Power On"
 msgstr "_Укључи"
 
-#: src/nemo-places-sidebar.c:2252 src/nemo-view.c:9176 src/nemo-view.c:9263
-#: src/nemo-view.c:9367
+#: src/nemo-places-sidebar.c:2253 src/nemo-view.c:9059 src/nemo-view.c:9146
+#: src/nemo-view.c:9250
 msgid "_Safely Remove Drive"
 msgstr "_Безбедно уклони уређај"
 
-#: src/nemo-places-sidebar.c:2255
+#: src/nemo-places-sidebar.c:2256
 msgid "_Connect Drive"
 msgstr "_Повежи уређај"
 
-#: src/nemo-places-sidebar.c:2256
+#: src/nemo-places-sidebar.c:2257
 msgid "_Disconnect Drive"
 msgstr "_Откачи уређај"
 
-#: src/nemo-places-sidebar.c:2259
+#: src/nemo-places-sidebar.c:2260
 msgid "_Start Multi-disk Device"
 msgstr "_Покрени уређај са више дискова"
 
-#: src/nemo-places-sidebar.c:2260
+#: src/nemo-places-sidebar.c:2261
 msgid "_Stop Multi-disk Device"
 msgstr "_Заустави уређај са више дискова"
 
-#: src/nemo-places-sidebar.c:2264 src/nemo-view.c:9246 src/nemo-view.c:9350
+#: src/nemo-places-sidebar.c:2265 src/nemo-view.c:9129 src/nemo-view.c:9233
 msgid "_Unlock Drive"
 msgstr "_Откључај уређај"
 
-#: src/nemo-places-sidebar.c:2265 src/nemo-view.c:9188 src/nemo-view.c:9275
-#: src/nemo-view.c:9379
+#: src/nemo-places-sidebar.c:2266 src/nemo-view.c:9071 src/nemo-view.c:9158
+#: src/nemo-view.c:9262
 msgid "_Lock Drive"
 msgstr "_Закључај уређај"
 
-#: src/nemo-places-sidebar.c:2371 src/nemo-places-sidebar.c:2979
+#: src/nemo-places-sidebar.c:2372 src/nemo-places-sidebar.c:2980
 #, c-format
 msgid "Unable to start %s"
 msgstr "Не могу да покренем „%s“"
 
-#: src/nemo-places-sidebar.c:2739 src/nemo-places-sidebar.c:2767
-#: src/nemo-places-sidebar.c:2795
+#: src/nemo-places-sidebar.c:2740 src/nemo-places-sidebar.c:2768
+#: src/nemo-places-sidebar.c:2796
 #, c-format
 msgid "Unable to eject %s"
 msgstr "Не могу да избацим „%s“"
 
-#: src/nemo-places-sidebar.c:2934
+#: src/nemo-places-sidebar.c:2935
 #, c-format
 msgid "Unable to poll %s for media changes"
 msgstr "Не могу да пратим промене на „%s“"
 
-#: src/nemo-places-sidebar.c:3034
+#: src/nemo-places-sidebar.c:3035
 #, c-format
 msgid "Unable to stop %s"
 msgstr "Не могу да зауставим „%s“"
 
-#: src/nemo-places-sidebar.c:3337 src/nemo-tree-sidebar.c:1250
-#: src/nemo-view.c:8271 src/nemo-view.c:9762
+#: src/nemo-places-sidebar.c:3338 src/nemo-tree-sidebar.c:1250
+#: src/nemo-view.c:8140 src/nemo-view.c:8480 src/nemo-view.c:9650
+#: src/nemo-view.c:9661
 msgid "_Open"
 msgstr "_Отвори"
 
-#: src/nemo-places-sidebar.c:3345 src/nemo-tree-sidebar.c:1261
-#: src/nemo-view.c:8283 src/nemo-view.c:8464 src/nemo-view.c:9467
-#: src/nemo-view.c:9824
+#: src/nemo-places-sidebar.c:3346 src/nemo-tree-sidebar.c:1261
+#: src/nemo-view.c:8152 src/nemo-view.c:8333 src/nemo-view.c:9350
+#: src/nemo-view.c:9718
 msgid "Open in New _Tab"
 msgstr "Отвори у новој _картици"
 
-#: src/nemo-places-sidebar.c:3355 src/nemo-tree-sidebar.c:1275
-#: src/nemo-view.c:9458 src/nemo-view.c:9804
+#: src/nemo-places-sidebar.c:3356 src/nemo-tree-sidebar.c:1275
+#: src/nemo-view.c:9341 src/nemo-view.c:9698
 msgid "Open in New _Window"
 msgstr "Отвори у новом _прозору"
 
-#: src/nemo-places-sidebar.c:3366 src/nemo-window-menus.c:1231
+#: src/nemo-places-sidebar.c:3367 src/nemo-window-menus.c:1231
 msgid "_Add Bookmark"
 msgstr "_Додај обележивач"
 
-#: src/nemo-places-sidebar.c:3372
+#: src/nemo-places-sidebar.c:3373
 msgid "Remove"
 msgstr "Уклони"
 
-#: src/nemo-places-sidebar.c:3381
+#: src/nemo-places-sidebar.c:3382
 msgid "Rename..."
 msgstr "Преименуј..."
 
-#: src/nemo-places-sidebar.c:3397 src/nemo-view.c:8398 src/nemo-view.c:8422
-#: src/nemo-view.c:8494
+#: src/nemo-places-sidebar.c:3398 src/nemo-view.c:8267 src/nemo-view.c:8291
+#: src/nemo-view.c:8363
 msgid "_Mount"
 msgstr "_Прикачи"
 
-#: src/nemo-places-sidebar.c:3404 src/nemo-tree-sidebar.c:1371
-#: src/nemo-view.c:8402 src/nemo-view.c:8426 src/nemo-view.c:8498
+#: src/nemo-places-sidebar.c:3405 src/nemo-tree-sidebar.c:1371
+#: src/nemo-view.c:8271 src/nemo-view.c:8295 src/nemo-view.c:8367
 msgid "_Unmount"
 msgstr "_Откачи"
 
-#: src/nemo-places-sidebar.c:3411 src/nemo-tree-sidebar.c:1380
-#: src/nemo-view.c:8406 src/nemo-view.c:8430 src/nemo-view.c:8502
+#: src/nemo-places-sidebar.c:3412 src/nemo-tree-sidebar.c:1380
+#: src/nemo-view.c:8275 src/nemo-view.c:8299 src/nemo-view.c:8371
 msgid "_Eject"
 msgstr "_Избаци"
 
-#: src/nemo-places-sidebar.c:3418 src/nemo-view.c:8418 src/nemo-view.c:8442
-#: src/nemo-view.c:8514
+#: src/nemo-places-sidebar.c:3419 src/nemo-view.c:8287 src/nemo-view.c:8311
+#: src/nemo-view.c:8383
 msgid "_Detect Media"
 msgstr "_Пронађи медијум"
 
-#: src/nemo-places-sidebar.c:3441 src/nemo-trash-bar.c:204
-#: libnemo-private/nemo-file-operations.c:1495
-#: libnemo-private/nemo-file-operations.c:2371
+#: src/nemo-places-sidebar.c:3442 src/nemo-trash-bar.c:215
+#: libnemo-private/nemo-file-operations.c:1506
+#: libnemo-private/nemo-file-operations.c:2382
 msgid "Empty _Trash"
 msgstr "Испразни _смеће"
 
-#: src/nemo-places-sidebar.c:3453 src/nemo-view.c:8253 src/nemo-view.c:8519
+#: src/nemo-places-sidebar.c:3454 src/nemo-view.c:8122 src/nemo-view.c:8388
 msgid "_Properties"
 msgstr "_Својства"
 
@@ -1323,63 +1324,63 @@ msgstr "Све радње над датотекама су успешно зав
 msgid "%d%% %s"
 msgstr "%d%% %s"
 
-#: src/nemo-properties-window.c:492
+#: src/nemo-properties-window.c:494
 msgid "You cannot assign more than one custom icon at a time!"
 msgstr "Не можете да доделите више од једне произвољне иконице у исто време!"
 
-#: src/nemo-properties-window.c:493
+#: src/nemo-properties-window.c:495
 msgid "Please drag just one image to set a custom icon."
 msgstr "Превуците само једну слику да бисте поставили иконицу."
 
-#: src/nemo-properties-window.c:504
+#: src/nemo-properties-window.c:506
 msgid "The file that you dropped is not local."
 msgstr "Датотека коју сте убацили није локална."
 
-#: src/nemo-properties-window.c:505 src/nemo-properties-window.c:511
+#: src/nemo-properties-window.c:507 src/nemo-properties-window.c:513
 msgid "You can only use local images as custom icons."
 msgstr "Можете користити само локалне слике за иконице."
 
-#: src/nemo-properties-window.c:510
+#: src/nemo-properties-window.c:512
 msgid "The file that you dropped is not an image."
 msgstr "Датотека коју сте убацили није слика."
 
-#: src/nemo-properties-window.c:640
+#: src/nemo-properties-window.c:642
 msgid "_Name:"
 msgid_plural "_Names:"
 msgstr[0] "_Назив:"
 msgstr[1] "_Називи:"
 msgstr[2] "_Називи:"
 
-#: src/nemo-properties-window.c:835
+#: src/nemo-properties-window.c:837
 msgid "Properties"
 msgstr "Својства"
 
-#: src/nemo-properties-window.c:843
+#: src/nemo-properties-window.c:845
 #, c-format
 msgid "%s Properties"
 msgstr "Својства за „%s“"
 
-#: src/nemo-properties-window.c:1125 libnemo-private/nemo-file.c:6385
+#: src/nemo-properties-window.c:1119 libnemo-private/nemo-file.c:6385
 msgid "unknown"
 msgstr "непознато"
 
-#: src/nemo-properties-window.c:1357
+#: src/nemo-properties-window.c:1351
 msgid "Cancel Group Change?"
 msgstr "Да откажем измену групе?"
 
-#: src/nemo-properties-window.c:1772
+#: src/nemo-properties-window.c:1766
 msgid "Cancel Owner Change?"
 msgstr "Да откажем измену власника?"
 
-#: src/nemo-properties-window.c:2093
+#: src/nemo-properties-window.c:2087
 msgid "nothing"
 msgstr "ништа"
 
-#: src/nemo-properties-window.c:2095
+#: src/nemo-properties-window.c:2089
 msgid "unreadable"
 msgstr "нечитљив"
 
-#: src/nemo-properties-window.c:2108
+#: src/nemo-properties-window.c:2102
 #, c-format
 msgid "%1$s item (and %2$s hidden), with size %3$s"
 msgid_plural "%1$s items (and %2$s hidden), totalling %3$s"
@@ -1387,7 +1388,7 @@ msgstr[0] "%1$s ставка (и %2$s сакривена), величине %3$s
 msgstr[1] "%1$s ставке (и %2$s скривене), величине %3$s"
 msgstr[2] "%1$s ставки (и %2$s скривених), величине %3$s"
 
-#: src/nemo-properties-window.c:2113
+#: src/nemo-properties-window.c:2107
 #, c-format
 msgid "%1$s item, with size %2$s"
 msgid_plural "%1$s items, totalling %2$s"
@@ -1395,236 +1396,236 @@ msgstr[0] "%1$s ставка, величине %2$s"
 msgstr[1] "%1$s ставке, величине %2$s"
 msgstr[2] "%1$s ставки, величине %2$s"
 
-#: src/nemo-properties-window.c:2122
+#: src/nemo-properties-window.c:2116
 msgid "(some contents unreadable)"
 msgstr "(део садржаја је нечитљив)"
 
-#: src/nemo-properties-window.c:2139
+#: src/nemo-properties-window.c:2133
 msgid "Contents:"
 msgstr "Садржај:"
 
-#: src/nemo-properties-window.c:2940
+#: src/nemo-properties-window.c:2937
 msgid "used"
 msgstr "употребљено"
 
-#: src/nemo-properties-window.c:2947
+#: src/nemo-properties-window.c:2944
 msgid "free"
 msgstr "слободно"
 
-#: src/nemo-properties-window.c:2949
+#: src/nemo-properties-window.c:2946
 msgid "Total capacity:"
 msgstr "Укупан капацитет:"
 
-#: src/nemo-properties-window.c:2958
+#: src/nemo-properties-window.c:2955
 msgid "Filesystem type:"
 msgstr "Врста система датотека:"
 
-#: src/nemo-properties-window.c:3044
+#: src/nemo-properties-window.c:3040
 msgid "Basic"
 msgstr "Основно"
 
-#: src/nemo-properties-window.c:3101
+#: src/nemo-properties-window.c:3097
 #: libnemo-private/nemo-file-conflict-dialog.c:260
 #: libnemo-private/nemo-file-conflict-dialog.c:291
 msgid "Type:"
 msgstr "Врста:"
 
-#: src/nemo-properties-window.c:3110 libnemo-private/nemo-file.c:7608
+#: src/nemo-properties-window.c:3106 libnemo-private/nemo-file.c:7604
 msgid "Link target:"
 msgstr "Одредиште везе:"
 
-#: src/nemo-properties-window.c:3121
+#: src/nemo-properties-window.c:3117
 #: libnemo-private/nemo-file-conflict-dialog.c:257
 #: libnemo-private/nemo-file-conflict-dialog.c:288
 msgid "Size:"
 msgstr "Величина:"
 
-#: src/nemo-properties-window.c:3130
+#: src/nemo-properties-window.c:3126
 msgid "Location:"
 msgstr "Место:"
 
-#: src/nemo-properties-window.c:3137
+#: src/nemo-properties-window.c:3133
 msgid "Volume:"
 msgstr "Волумен:"
 
-#: src/nemo-properties-window.c:3147
+#: src/nemo-properties-window.c:3143
 msgid "Accessed:"
 msgstr "Приступљено:"
 
-#: src/nemo-properties-window.c:3151
+#: src/nemo-properties-window.c:3147
 msgid "Modified:"
 msgstr "Измењено:"
 
-#: src/nemo-properties-window.c:3160
+#: src/nemo-properties-window.c:3156
 msgid "Free space:"
 msgstr "Слободан простор:"
 
-#: src/nemo-properties-window.c:3581
+#: src/nemo-properties-window.c:3577
 msgid "_Read"
 msgstr "_Чита"
 
-#: src/nemo-properties-window.c:3583
+#: src/nemo-properties-window.c:3579
 msgid "_Write"
 msgstr "_Пише"
 
-#: src/nemo-properties-window.c:3585
+#: src/nemo-properties-window.c:3581
 msgid "E_xecute"
 msgstr "_Извршава"
 
-#: src/nemo-properties-window.c:3853 src/nemo-properties-window.c:3864
-#: src/nemo-properties-window.c:3876
+#: src/nemo-properties-window.c:3849 src/nemo-properties-window.c:3860
+#: src/nemo-properties-window.c:3872
 msgid "no "
 msgstr "ништа "
 
-#: src/nemo-properties-window.c:3856
+#: src/nemo-properties-window.c:3852
 msgid "list"
 msgstr "списак"
 
-#: src/nemo-properties-window.c:3858
+#: src/nemo-properties-window.c:3854
 msgid "read"
 msgstr "чита"
 
-#: src/nemo-properties-window.c:3867
+#: src/nemo-properties-window.c:3863
 msgid "create/delete"
 msgstr "прави/брише"
 
-#: src/nemo-properties-window.c:3869
+#: src/nemo-properties-window.c:3865
 msgid "write"
 msgstr "пише"
 
-#: src/nemo-properties-window.c:3878
+#: src/nemo-properties-window.c:3874
 msgid "access"
 msgstr "приступа"
 
-#: src/nemo-properties-window.c:3926
+#: src/nemo-properties-window.c:3922
 msgid "Access:"
 msgstr "Приступ:"
 
-#: src/nemo-properties-window.c:3928
+#: src/nemo-properties-window.c:3924
 msgid "Folder access:"
 msgstr "Приступ фасцикли:"
 
-#: src/nemo-properties-window.c:3930
+#: src/nemo-properties-window.c:3926
 msgid "File access:"
 msgstr "Приступ датотеци:"
 
-#: src/nemo-properties-window.c:3948
+#: src/nemo-properties-window.c:3944
 msgid "List files only"
 msgstr "Само прегледа датотеке"
 
-#: src/nemo-properties-window.c:3950
+#: src/nemo-properties-window.c:3946
 msgid "Access files"
 msgstr "Приступа датотекама"
 
-#: src/nemo-properties-window.c:3952
+#: src/nemo-properties-window.c:3948
 msgid "Create and delete files"
 msgstr "Прави и брише датотеке"
 
-#: src/nemo-properties-window.c:3959
+#: src/nemo-properties-window.c:3955
 msgid "Read-only"
 msgstr "Чита само"
 
-#: src/nemo-properties-window.c:3961
+#: src/nemo-properties-window.c:3957
 msgid "Read and write"
 msgstr "Чита и уписује"
 
-#: src/nemo-properties-window.c:4026
+#: src/nemo-properties-window.c:4022
 msgid "Special flags:"
 msgstr "Нарочите ознаке:"
 
-#: src/nemo-properties-window.c:4028
+#: src/nemo-properties-window.c:4024
 msgid "Set _user ID"
 msgstr "Постави _ИБ корисника"
 
-#: src/nemo-properties-window.c:4029
+#: src/nemo-properties-window.c:4025
 msgid "Set gro_up ID"
 msgstr "Постави ИБ _групе"
 
-#: src/nemo-properties-window.c:4030
+#: src/nemo-properties-window.c:4026
 msgid "_Sticky"
 msgstr "_Лепљив"
 
-#: src/nemo-properties-window.c:4104 src/nemo-properties-window.c:4296
+#: src/nemo-properties-window.c:4100 src/nemo-properties-window.c:4292
 msgid "_Owner:"
 msgstr "_Власник:"
 
-#: src/nemo-properties-window.c:4112 src/nemo-properties-window.c:4201
-#: src/nemo-properties-window.c:4306
+#: src/nemo-properties-window.c:4108 src/nemo-properties-window.c:4197
+#: src/nemo-properties-window.c:4302
 msgid "Owner:"
 msgstr "Власник:"
 
-#: src/nemo-properties-window.c:4134 src/nemo-properties-window.c:4318
+#: src/nemo-properties-window.c:4130 src/nemo-properties-window.c:4314
 msgid "_Group:"
 msgstr "_Група:"
 
-#: src/nemo-properties-window.c:4142 src/nemo-properties-window.c:4202
-#: src/nemo-properties-window.c:4326
+#: src/nemo-properties-window.c:4138 src/nemo-properties-window.c:4198
+#: src/nemo-properties-window.c:4322
 msgid "Group:"
 msgstr "Група:"
 
-#: src/nemo-properties-window.c:4181
+#: src/nemo-properties-window.c:4177
 msgid "Execute:"
 msgstr "Изврши:"
 
-#: src/nemo-properties-window.c:4184
+#: src/nemo-properties-window.c:4180
 msgid "Allow _executing file as program"
 msgstr "Дозволи _покретање датотеке као програма"
 
-#: src/nemo-properties-window.c:4203
+#: src/nemo-properties-window.c:4199
 msgid "Others:"
 msgstr "Остали:"
 
-#: src/nemo-properties-window.c:4342
+#: src/nemo-properties-window.c:4338
 msgid "Folder Permissions:"
 msgstr "Овлашћења над фасциклом:"
 
-#: src/nemo-properties-window.c:4350
+#: src/nemo-properties-window.c:4346
 msgid "File Permissions:"
 msgstr "Овлашћења над датотеком:"
 
-#: src/nemo-properties-window.c:4359
+#: src/nemo-properties-window.c:4355
 msgid "Text view:"
 msgstr "Преглед текста:"
 
-#: src/nemo-properties-window.c:4493
+#: src/nemo-properties-window.c:4489
 #: libnemo-private/nemo-column-utilities.c:104
 msgid "Permissions"
 msgstr "Овлашћења"
 
-#: src/nemo-properties-window.c:4507
+#: src/nemo-properties-window.c:4503
 msgid "You are not the owner, so you cannot change these permissions."
 msgstr "Ви нисте власник, и зато не можете изменити ова овлашћења."
 
-#: src/nemo-properties-window.c:4527
+#: src/nemo-properties-window.c:4523
 msgid "SELinux context:"
 msgstr "СЕЛинукс контекст:"
 
-#: src/nemo-properties-window.c:4532
+#: src/nemo-properties-window.c:4528
 msgid "Last changed:"
 msgstr "Последња измена:"
 
-#: src/nemo-properties-window.c:4544
+#: src/nemo-properties-window.c:4540
 msgid "Apply Permissions to Enclosed Files"
 msgstr "Примени овлашћења на све приложене датотеке"
 
-#: src/nemo-properties-window.c:4554
+#: src/nemo-properties-window.c:4550
 #, c-format
 msgid "The permissions of \"%s\" could not be determined."
 msgstr "Не могу утврдити овлашћења за „%s“."
 
-#: src/nemo-properties-window.c:4557
+#: src/nemo-properties-window.c:4553
 msgid "The permissions of the selected file could not be determined."
 msgstr "Не могу да утврдим овлашћења за изабрану датотеку."
 
-#: src/nemo-properties-window.c:4791
+#: src/nemo-properties-window.c:4792
 msgid "Open With"
 msgstr "Отвори програмом"
 
-#: src/nemo-properties-window.c:5117
+#: src/nemo-properties-window.c:5149
 msgid "Creating Properties window."
 msgstr "Стварам прозор са својствима."
 
-#: src/nemo-properties-window.c:5403
+#: src/nemo-properties-window.c:5434
 msgid "Select Custom Icon"
 msgstr "Изаберите произвољну иконицу"
 
@@ -1632,71 +1633,75 @@ msgstr "Изаберите произвољну иконицу"
 msgid "File Type"
 msgstr "Врста датотеке"
 
-#: src/nemo-query-editor.c:262
+#: src/nemo-query-editor.c:386
 msgid "Documents"
 msgstr "Документи"
 
-#: src/nemo-query-editor.c:280
+#: src/nemo-query-editor.c:404
 msgid "Music"
 msgstr "Музика"
 
-#: src/nemo-query-editor.c:295 libnemo-private/nemo-file.c:6423
+#: src/nemo-query-editor.c:419 libnemo-private/nemo-file.c:6423
 msgid "Video"
 msgstr "Видео"
 
-#: src/nemo-query-editor.c:311
+#: src/nemo-query-editor.c:435
 msgid "Picture"
 msgstr "Слика"
 
-#: src/nemo-query-editor.c:331
+#: src/nemo-query-editor.c:455
 msgid "Illustration"
 msgstr "Цртеж"
 
-#: src/nemo-query-editor.c:345 libnemo-private/nemo-file.c:6428
+#: src/nemo-query-editor.c:469 libnemo-private/nemo-file.c:6428
 msgid "Spreadsheet"
 msgstr "Таблица"
 
-#: src/nemo-query-editor.c:361 libnemo-private/nemo-file.c:6427
+#: src/nemo-query-editor.c:485 libnemo-private/nemo-file.c:6427
 msgid "Presentation"
 msgstr "Презентација"
 
-#: src/nemo-query-editor.c:370
+#: src/nemo-query-editor.c:494
 msgid "Pdf / Postscript"
 msgstr "ПДФ / Постскрипт"
 
-#: src/nemo-query-editor.c:378
+#: src/nemo-query-editor.c:502
 msgid "Text File"
 msgstr "Текстуална датотека"
 
-#: src/nemo-query-editor.c:457
+#: src/nemo-query-editor.c:581
 msgid "Select type"
 msgstr "Изаберите врсту"
 
-#: src/nemo-query-editor.c:541
+#: src/nemo-query-editor.c:585
+msgid "Select"
+msgstr "Изабери"
+
+#: src/nemo-query-editor.c:666
 msgid "Any"
 msgstr "Било која"
 
-#: src/nemo-query-editor.c:556
+#: src/nemo-query-editor.c:681
 msgid "Other Type..."
 msgstr "Друга врста..."
 
-#: src/nemo-query-editor.c:836
+#: src/nemo-query-editor.c:961
 msgid "Remove this criterion from the search"
 msgstr "Уклони овај услов из претраге"
 
-#: src/nemo-query-editor.c:913
+#: src/nemo-query-editor.c:1028
 msgid "Add a new criterion to this search"
 msgstr "Додај нови услов за ову претрагу"
 
-#: src/nemo-query-editor.c:915
+#: src/nemo-query-editor.c:1030
 msgid "Current"
 msgstr "Текуће"
 
-#: src/nemo-query-editor.c:919
+#: src/nemo-query-editor.c:1034
 msgid "All Files"
 msgstr "Све датотеке"
 
-#: src/nemo-query-editor.c:944
+#: src/nemo-query-editor.c:1059
 msgid "_Search for:"
 msgstr "_Потражи:"
 
@@ -1748,38 +1753,38 @@ msgstr "Одбаци"
 msgid "Elevated Privileges"
 msgstr "Увећане привилегије"
 
-#: src/nemo-trash-bar.c:198
+#: src/nemo-trash-bar.c:209
 msgid "Restore Selected Items"
 msgstr "Врати изабране ставке"
 
-#: src/nemo-trash-bar.c:201
+#: src/nemo-trash-bar.c:212
 msgid "Restore selected items to their original position"
 msgstr "Вратите све изабране ставке на њихово првобитно место"
 
-#: src/nemo-tree-sidebar.c:951 src/nemo-view.c:6850
+#: src/nemo-tree-sidebar.c:951 src/nemo-view.c:6710
 #, c-format
 msgid "\"%s\" will be moved if you select the Paste command"
 msgstr "„%s“ ће бити премештено уколико изаберете наредбу „Убаци“"
 
-#: src/nemo-tree-sidebar.c:955 src/nemo-view.c:6854
+#: src/nemo-tree-sidebar.c:955 src/nemo-view.c:6714
 #, c-format
 msgid "\"%s\" will be copied if you select the Paste command"
 msgstr "„%s“ ће бити умножено уколико изаберете наредбу „Убаци“"
 
-#: src/nemo-tree-sidebar.c:994 src/nemo-view.c:7100
+#: src/nemo-tree-sidebar.c:994 src/nemo-view.c:6960
 msgid "There is nothing on the clipboard to paste."
 msgstr "Нема ничега у списку исечака за убацивање."
 
-#: src/nemo-tree-sidebar.c:1291 src/nemo-view.c:8261
+#: src/nemo-tree-sidebar.c:1291 src/nemo-view.c:8130
 msgid "Create New _Folder"
 msgstr "Направи нову _фасциклу"
 
-#: src/nemo-tree-sidebar.c:1323 src/nemo-view.c:8330 src/nemo-view.c:8477
+#: src/nemo-tree-sidebar.c:1323 src/nemo-view.c:8199 src/nemo-view.c:8346
 msgid "_Paste Into Folder"
 msgstr "У_баци у фасциклу"
 
-#: src/nemo-tree-sidebar.c:1353 src/nemo-view.c:8368 src/nemo-view.c:8486
-#: src/nemo-view.c:9870
+#: src/nemo-tree-sidebar.c:1353 src/nemo-view.c:8237 src/nemo-view.c:8355
+#: src/nemo-view.c:9764
 msgid "_Delete"
 msgstr "_Избриши"
 
@@ -1787,7 +1792,7 @@ msgstr "_Избриши"
 msgid "Computer"
 msgstr "Рачунар"
 
-#: src/nemo-view.c:1060
+#: src/nemo-view.c:1055
 #, c-format
 msgid "This will open %'d separate tab."
 msgid_plural "This will open %'d separate tabs."
@@ -1795,7 +1800,7 @@ msgstr[0] "Ово ће отворити %'d засебан лист."
 msgstr[1] "Ово ће отворити %'d засебна листа."
 msgstr[2] "Ово ће отворити %'d засебних листова."
 
-#: src/nemo-view.c:1063
+#: src/nemo-view.c:1058
 #, c-format
 msgid "This will open %'d separate window."
 msgid_plural "This will open %'d separate windows."
@@ -1803,60 +1808,60 @@ msgstr[0] "Ово ће отворити %'d засебан прозор."
 msgstr[1] "Ово ће отворити %'d засебна прозора."
 msgstr[2] "Ово ће отворити %'d засебних прозора."
 
-#: src/nemo-view.c:1598
+#: src/nemo-view.c:1593
 msgid "Select Items Matching"
 msgstr "Изаберите ставке по услову"
 
-#: src/nemo-view.c:1613
+#: src/nemo-view.c:1608
 msgid "_Pattern:"
 msgstr "_Образац:"
 
-#: src/nemo-view.c:1619
+#: src/nemo-view.c:1614
 msgid "Examples: "
 msgstr "Примери: "
 
-#: src/nemo-view.c:1732
+#: src/nemo-view.c:1727
 msgid "Save Search as"
 msgstr "Сачувај претрагу као"
 
-#: src/nemo-view.c:1755
+#: src/nemo-view.c:1750
 msgid "Search _name:"
 msgstr "_Назив претраге:"
 
-#: src/nemo-view.c:1777
+#: src/nemo-view.c:1772
 msgid "Select Folder to Save Search In"
 msgstr "Изаберите фасциклу за чување претраге"
 
-#: src/nemo-view.c:2586 libnemo-private/nemo-file-undo-operations.c:135
+#: src/nemo-view.c:2581 libnemo-private/nemo-file-undo-operations.c:135
 msgid "Undo"
 msgstr "Опозови"
 
-#: src/nemo-view.c:2587 libnemo-private/nemo-file-undo-operations.c:138
+#: src/nemo-view.c:2582 libnemo-private/nemo-file-undo-operations.c:138
 msgid "Undo last action"
 msgstr "Опозовите последњу радњу"
 
-#: src/nemo-view.c:2605 libnemo-private/nemo-file-undo-operations.c:142
+#: src/nemo-view.c:2600 libnemo-private/nemo-file-undo-operations.c:142
 msgid "Redo"
 msgstr "Понови"
 
-#: src/nemo-view.c:2606 libnemo-private/nemo-file-undo-operations.c:145
+#: src/nemo-view.c:2601 libnemo-private/nemo-file-undo-operations.c:145
 msgid "Redo last undone action"
 msgstr "Поновите последњу опозвану радњу"
 
-#: src/nemo-view.c:2790
+#: src/nemo-view.c:2784
 msgid "Content View"
 msgstr "Преглед садржаја"
 
-#: src/nemo-view.c:2791
+#: src/nemo-view.c:2785
 msgid "View of the current folder"
 msgstr "Прегледајте текућу фасциклу"
 
-#: src/nemo-view.c:3062 src/nemo-view.c:3099
+#: src/nemo-view.c:3050 src/nemo-view.c:3087
 #, c-format
 msgid "\"%s\" selected"
 msgstr "„%s“ је изабрана"
 
-#: src/nemo-view.c:3064
+#: src/nemo-view.c:3052
 #, c-format
 msgid "%'d folder selected"
 msgid_plural "%'d folders selected"
@@ -1864,7 +1869,7 @@ msgstr[0] "Изабрана је %'d фасцикла"
 msgstr[1] "Изабране су %'d фасцикле"
 msgstr[2] "Изабрано је %'d фасцикли"
 
-#: src/nemo-view.c:3074
+#: src/nemo-view.c:3062
 #, c-format
 msgid " (containing %'d item)"
 msgid_plural " (containing %'d items)"
@@ -1872,7 +1877,7 @@ msgstr[0] " (садржи %'d ставку)"
 msgstr[1] " (садржи %'d ставке)"
 msgstr[2] " (садржи %'d ставки)"
 
-#: src/nemo-view.c:3085
+#: src/nemo-view.c:3073
 #, c-format
 msgid " (containing a total of %'d item)"
 msgid_plural " (containing a total of %'d items)"
@@ -1880,7 +1885,7 @@ msgstr[0] " (садрже укупно %'d ставку)"
 msgstr[1] " (садрже укупно %'d ставке)"
 msgstr[2] " (садрже укупно %'d ставки)"
 
-#: src/nemo-view.c:3102
+#: src/nemo-view.c:3090
 #, c-format
 msgid "%'d item selected"
 msgid_plural "%'d items selected"
@@ -1888,7 +1893,7 @@ msgstr[0] "Изабрана је %'d ставка"
 msgstr[1] "Изабране су %'d ставке"
 msgstr[2] "Изабрано је %'d ставки"
 
-#: src/nemo-view.c:3109
+#: src/nemo-view.c:3097
 #, c-format
 msgid "%'d other item selected"
 msgid_plural "%'d other items selected"
@@ -1896,12 +1901,12 @@ msgstr[0] "Изабрана је %'d друга ставка"
 msgstr[1] "Изабране су %'d друге ставке"
 msgstr[2] "Изабрано је %'d других ставки"
 
-#: src/nemo-view.c:3126
+#: src/nemo-view.c:3114
 #, c-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: src/nemo-view.c:3147 libnemo-private/nemo-file.c:5951
+#: src/nemo-view.c:3135 libnemo-private/nemo-file.c:5951
 #, c-format
 msgid "%'u item"
 msgid_plural "%'u items"
@@ -1909,32 +1914,32 @@ msgstr[0] "%'u ставка"
 msgstr[1] "%'u ставке"
 msgstr[2] "%'u ставки"
 
-#: src/nemo-view.c:3150
+#: src/nemo-view.c:3138
 #, c-format
 msgid "%s, Free space: %s"
 msgstr "%s, слободан простор: %s"
 
-#: src/nemo-view.c:3165
+#: src/nemo-view.c:3153
 #, c-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: src/nemo-view.c:3184 src/nemo-view.c:3197
+#: src/nemo-view.c:3172 src/nemo-view.c:3185
 #, c-format
 msgid "%s%s, %s"
 msgstr "%s%s, %s"
 
-#: src/nemo-view.c:3211
+#: src/nemo-view.c:3199
 #, c-format
 msgid "%s%s, %s, %s"
 msgstr "%s%s, %s, %s"
 
-#: src/nemo-view.c:4693
+#: src/nemo-view.c:4691
 #, c-format
 msgid "Open With %s"
 msgstr "Отвори програмом „%s“"
 
-#: src/nemo-view.c:4695
+#: src/nemo-view.c:4693
 #, c-format
 msgid "Use \"%s\" to open the selected item"
 msgid_plural "Use \"%s\" to open the selected items"
@@ -1942,25 +1947,17 @@ msgstr[0] "За отварање изабране ставке користи �
 msgstr[1] "За отварање изабраних ставки користи „%s“"
 msgstr[2] "За отварање изабраних ставки користи „%s“"
 
-#: src/nemo-view.c:6014
+#: src/nemo-view.c:6038
 #, c-format
 msgid "Run \"%s\" on any selected items"
 msgstr "Покрени „%s“ на свакој изабраној ставци"
 
-#: src/nemo-view.c:6397
+#: src/nemo-view.c:6421
 #, c-format
 msgid "Create a new document from template \"%s\""
 msgstr "Направи нови документ према шаблону „%s“"
 
-#: src/nemo-view.c:6718
-msgid "Show less actions"
-msgstr "Прикажи мање радњи"
-
-#: src/nemo-view.c:6718
-msgid "Show more actions"
-msgstr "Прикажи више радњи"
-
-#: src/nemo-view.c:6861
+#: src/nemo-view.c:6721
 #, c-format
 msgid "The %'d selected item will be moved if you select the Paste command"
 msgid_plural ""
@@ -1972,7 +1969,7 @@ msgstr[1] ""
 msgstr[2] ""
 "%'d изабраних ставки биће премештено уколико изаберете наредбу „Убаци“"
 
-#: src/nemo-view.c:6868
+#: src/nemo-view.c:6728
 #, c-format
 msgid "The %'d selected item will be copied if you select the Paste command"
 msgid_plural ""
@@ -1984,146 +1981,146 @@ msgstr[1] ""
 msgstr[2] ""
 "%'d изабраних ставки биће умножено уколико изаберете наредбу „Убаци“"
 
-#: src/nemo-view.c:7038
+#: src/nemo-view.c:6898
 msgid "Select Target Folder For Move"
 msgstr "Изаберите одредишну фасциклу за премештање"
 
-#: src/nemo-view.c:7059
+#: src/nemo-view.c:6919
 msgid "Select Target Folder For Copy"
 msgstr "Изаберите одредишну фасциклу за умножавање"
 
-#: src/nemo-view.c:7502
+#: src/nemo-view.c:7371
 msgid "Unable to unmount location"
 msgstr "Не могу да откачим локацију"
 
-#: src/nemo-view.c:7522
+#: src/nemo-view.c:7391
 msgid "Unable to eject location"
 msgstr "Не могу да избацим локацију"
 
-#: src/nemo-view.c:7537
+#: src/nemo-view.c:7406
 msgid "Unable to stop drive"
 msgstr "Не могу да зауставим уређај"
 
-#: src/nemo-view.c:8023
+#: src/nemo-view.c:7892
 #, c-format
 msgid "Connect to Server %s"
 msgstr "Повежи се на сервер %s"
 
-#: src/nemo-view.c:8028 src/nemo-view.c:9151 src/nemo-view.c:9238
-#: src/nemo-view.c:9342
+#: src/nemo-view.c:7897 src/nemo-view.c:9034 src/nemo-view.c:9121
+#: src/nemo-view.c:9225
 msgid "_Connect"
 msgstr "_Повежи се"
 
-#: src/nemo-view.c:8042
+#: src/nemo-view.c:7911
 msgid "Link _name:"
 msgstr "_Назив везе:"
 
-#: src/nemo-view.c:8249
+#: src/nemo-view.c:8118
 msgid "Create New _Document"
 msgstr "Направи нови _документ"
 
-#: src/nemo-view.c:8250
+#: src/nemo-view.c:8119
 msgid "Open Wit_h"
 msgstr "Отвори _програмом"
 
-#: src/nemo-view.c:8251
+#: src/nemo-view.c:8120
 msgid "Choose a program with which to open the selected item"
 msgstr "Изаберите програм за отварање изабране ставке"
 
-#: src/nemo-view.c:8254 src/nemo-view.c:9911
+#: src/nemo-view.c:8123 src/nemo-view.c:9805
 msgid "View or modify the properties of each selected item"
 msgstr "Прегледајте или измените својства сваке изабране ставке"
 
-#: src/nemo-view.c:8262
+#: src/nemo-view.c:8131
 msgid "Create a new empty folder inside this folder"
 msgstr "Направите празну фасциклу унутар текуће фасцикле"
 
-#: src/nemo-view.c:8264
+#: src/nemo-view.c:8133
 msgid "No templates installed"
 msgstr "Нису инсталирани шаблони"
 
-#: src/nemo-view.c:8267
+#: src/nemo-view.c:8136
 msgid "_Empty Document"
 msgstr "Празан _документ"
 
-#: src/nemo-view.c:8268
+#: src/nemo-view.c:8137
 msgid "Create a new empty document inside this folder"
 msgstr "Направите празан документ унутар ове фасцикле"
 
-#: src/nemo-view.c:8272
+#: src/nemo-view.c:8141 src/nemo-view.c:8481
 msgid "Open the selected item in this window"
 msgstr "Отворите изабрану ставку у овом прозору"
 
-#: src/nemo-view.c:8279 src/nemo-view.c:8460
+#: src/nemo-view.c:8148 src/nemo-view.c:8329
 msgid "Open in Navigation Window"
 msgstr "Отвори у управљачком прозору"
 
-#: src/nemo-view.c:8280
+#: src/nemo-view.c:8149
 msgid "Open each selected item in a navigation window"
 msgstr "Отворите сваку изабрану ставку у управљачком прозору"
 
-#: src/nemo-view.c:8284
+#: src/nemo-view.c:8153
 msgid "Open each selected item in a new tab"
 msgstr "Отворите сваку изабрану ставку у новом листу"
 
-#: src/nemo-view.c:8287 src/nemo-window-menus.c:1427
+#: src/nemo-view.c:8156 src/nemo-window-menus.c:1427
 msgid "Open in Terminal"
 msgstr "Отвори у терминалу"
 
-#: src/nemo-view.c:8288
+#: src/nemo-view.c:8157
 msgid "Open terminal in the selected folder"
 msgstr "Отвори терминал у изабраној фасцикли"
 
-#: src/nemo-view.c:8291
+#: src/nemo-view.c:8160
 msgid "Open as Root"
 msgstr "Отвори као администратор"
 
-#: src/nemo-view.c:8292
+#: src/nemo-view.c:8161
 msgid "Open the folder with administration privileges"
 msgstr "Отворите фасциклу са администраторским правима"
 
-#: src/nemo-view.c:8296
+#: src/nemo-view.c:8165
 msgid "Follow link to original file"
 msgstr "Пратите везу до изворне датотеке"
 
-#: src/nemo-view.c:8297
+#: src/nemo-view.c:8166
 msgid "Navigate to the original file that this symbolic link points to"
 msgstr "Идите до изворне датотеке на коју указује ова симболичка веза"
 
-#: src/nemo-view.c:8300
+#: src/nemo-view.c:8169
 msgid "Open containing folder"
 msgstr "Отвори изворну фасциклу"
 
-#: src/nemo-view.c:8301
+#: src/nemo-view.c:8170
 msgid "Navigate to the folder that the selected item is stored in"
 msgstr "Идите у фасциклу у којој се налази изабрана ставка"
 
-#: src/nemo-view.c:8304
+#: src/nemo-view.c:8173
 msgid "Other _Application..."
 msgstr "Други _програм..."
 
-#: src/nemo-view.c:8305 src/nemo-view.c:8309
+#: src/nemo-view.c:8174 src/nemo-view.c:8178
 msgid "Choose another application with which to open the selected item"
 msgstr "Изаберите неки други програм за отварање изабране ставке"
 
-#: src/nemo-view.c:8308
+#: src/nemo-view.c:8177
 msgid "Open With Other _Application..."
 msgstr "Отвори другим _програмом..."
 
-#: src/nemo-view.c:8317
+#: src/nemo-view.c:8186
 msgid "Prepare the selected files to be moved with a Paste command"
 msgstr "Припремите изабране датотеке за премештање помоћу наредбе „Убаци“"
 
-#: src/nemo-view.c:8321
+#: src/nemo-view.c:8190
 msgid "Prepare the selected files to be copied with a Paste command"
 msgstr "Припремите изабране датотеке за умножавање помоћу наредбе „Убаци“"
 
-#: src/nemo-view.c:8325
+#: src/nemo-view.c:8194
 msgid "Move or copy files previously selected by a Cut or Copy command"
 msgstr ""
 "Преместите или умножите датотеке изабране наредбом „Исеци“ или „Умножи“"
 
-#: src/nemo-view.c:8331
+#: src/nemo-view.c:8200
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into the "
 "selected folder"
@@ -2131,190 +2128,190 @@ msgstr ""
 "Преместите или умножите датотеке изабране наредбом „Исеци“ или „Умножи“ у "
 "изабрану фасциклу"
 
-#: src/nemo-view.c:8333
+#: src/nemo-view.c:8202
 msgid "Cop_y to"
 msgstr "_Умножи у"
 
-#: src/nemo-view.c:8334
+#: src/nemo-view.c:8203
 msgid "M_ove to"
 msgstr "_Премести у"
 
-#: src/nemo-view.c:8336 libnemo-private/nemo-clipboard.c:444
+#: src/nemo-view.c:8205 libnemo-private/nemo-clipboard.c:444
 msgid "Select _All"
 msgstr "Изабери _све"
 
-#: src/nemo-view.c:8337
+#: src/nemo-view.c:8206
 msgid "Select all items in this window"
 msgstr "Изаберите све ставке у овом прозору"
 
-#: src/nemo-view.c:8340
+#: src/nemo-view.c:8209
 msgid "Select I_tems Matching..."
 msgstr "Изабери ставке према _услову..."
 
-#: src/nemo-view.c:8341
+#: src/nemo-view.c:8210
 msgid "Select items in this window matching a given pattern"
 msgstr "Изаберите ставке које одговарају датом обрасцу у текућем прозору"
 
-#: src/nemo-view.c:8344
+#: src/nemo-view.c:8213
 msgid "_Invert Selection"
 msgstr "_Обрни избор"
 
-#: src/nemo-view.c:8345
+#: src/nemo-view.c:8214
 msgid "Select all and only the items that are not currently selected"
 msgstr "Изаберите све ставке осим оних које су тренутно изабране"
 
-#: src/nemo-view.c:8348
+#: src/nemo-view.c:8217
 msgid "D_uplicate"
 msgstr "У_двостручи"
 
-#: src/nemo-view.c:8349
+#: src/nemo-view.c:8218
 msgid "Duplicate each selected item"
 msgstr "Удвостручите сваку изабрану ставку"
 
-#: src/nemo-view.c:8352 src/nemo-view.c:9896
+#: src/nemo-view.c:8221 src/nemo-view.c:9790
 msgid "Ma_ke Link"
 msgid_plural "Ma_ke Links"
 msgstr[0] "Направи _везу"
 msgstr[1] "Направи _везе"
 msgstr[2] "Направи _везе"
 
-#: src/nemo-view.c:8353
+#: src/nemo-view.c:8222
 msgid "Create a symbolic link for each selected item"
 msgstr "Направите симболичку везу за сваку изабрану ставку"
 
-#: src/nemo-view.c:8356
+#: src/nemo-view.c:8225
 msgid "_Rename..."
 msgstr "_Преименуј..."
 
-#: src/nemo-view.c:8357
+#: src/nemo-view.c:8226
 msgid "Rename selected item"
 msgstr "Промените назив изабране ставке"
 
-#: src/nemo-view.c:8365 src/nemo-view.c:9848
+#: src/nemo-view.c:8234 src/nemo-view.c:9742
 msgid "Move each selected item to the Trash"
 msgstr "Преместите сваку изабрану ставку у смеће"
 
-#: src/nemo-view.c:8369 src/nemo-view.c:9871
+#: src/nemo-view.c:8238 src/nemo-view.c:9765
 msgid "Delete each selected item, without moving to the Trash"
 msgstr "Уклоните сваку изабрану ставку, без премештања у смеће"
 
-#: src/nemo-view.c:8372 src/nemo-view.c:8490
+#: src/nemo-view.c:8241 src/nemo-view.c:8359
 msgid "_Restore"
 msgstr "_Врати"
 
-#: src/nemo-view.c:8376 src/nemo-window-menus.c:1114
+#: src/nemo-view.c:8245 src/nemo-window-menus.c:1114
 msgid "_Undo"
 msgstr "_Опозови"
 
-#: src/nemo-view.c:8377
+#: src/nemo-view.c:8246
 msgid "Undo the last action"
 msgstr "Опозовите последњу радњу"
 
-#: src/nemo-view.c:8380
+#: src/nemo-view.c:8249
 msgid "_Redo"
 msgstr "_Понови"
 
-#: src/nemo-view.c:8381
+#: src/nemo-view.c:8250
 msgid "Redo the last undone action"
 msgstr "Поновите последњу опозвану радњу"
 
-#: src/nemo-view.c:8390
+#: src/nemo-view.c:8259
 msgid "Reset View to _Defaults"
 msgstr "Постави прегле_д на подразумевани"
 
-#: src/nemo-view.c:8391
+#: src/nemo-view.c:8260
 msgid "Reset sorting order and zoom level to match preferences for this view"
 msgstr "Поставите поредак и увећање према поставкама за овај преглед"
 
-#: src/nemo-view.c:8394
+#: src/nemo-view.c:8263
 msgid "Connect To This Server"
 msgstr "Повежи се на овај сервер"
 
-#: src/nemo-view.c:8395
+#: src/nemo-view.c:8264
 msgid "Make a permanent connection to this server"
 msgstr "Направи трајну везу са овим сервером"
 
-#: src/nemo-view.c:8399
+#: src/nemo-view.c:8268
 msgid "Mount the selected volume"
 msgstr "Прикачите изабрани диск"
 
-#: src/nemo-view.c:8403
+#: src/nemo-view.c:8272
 msgid "Unmount the selected volume"
 msgstr "Откачите изабрани диск"
 
-#: src/nemo-view.c:8407
+#: src/nemo-view.c:8276
 msgid "Eject the selected volume"
 msgstr "Избаците изабрани диск"
 
-#: src/nemo-view.c:8411
+#: src/nemo-view.c:8280
 msgid "Start the selected volume"
 msgstr "Покрените изабрани диск"
 
-#: src/nemo-view.c:8415 src/nemo-view.c:9364
+#: src/nemo-view.c:8284 src/nemo-view.c:9247
 msgid "Stop the selected volume"
 msgstr "Зауставите изабрани диск"
 
-#: src/nemo-view.c:8419 src/nemo-view.c:8443 src/nemo-view.c:8515
+#: src/nemo-view.c:8288 src/nemo-view.c:8312 src/nemo-view.c:8384
 msgid "Detect media in the selected drive"
 msgstr "Пронађите медијуме на изабраном уређају"
 
-#: src/nemo-view.c:8423
+#: src/nemo-view.c:8292
 msgid "Mount the volume associated with the open folder"
 msgstr "Прикачите диск који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:8427
+#: src/nemo-view.c:8296
 msgid "Unmount the volume associated with the open folder"
 msgstr "Откачите диск који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:8431
+#: src/nemo-view.c:8300
 msgid "Eject the volume associated with the open folder"
 msgstr "Избаците диск који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:8435
+#: src/nemo-view.c:8304
 msgid "Start the volume associated with the open folder"
 msgstr "Покрените диск који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:8439
+#: src/nemo-view.c:8308
 msgid "Stop the volume associated with the open folder"
 msgstr "Зауставите диск који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:8446
+#: src/nemo-view.c:8315
 msgid "Open File and Close window"
 msgstr "Отвори датотеку и затвори прозор"
 
-#: src/nemo-view.c:8450
+#: src/nemo-view.c:8319
 msgid "Sa_ve Search"
 msgstr "_Сачувај претрагу"
 
-#: src/nemo-view.c:8451
+#: src/nemo-view.c:8320
 msgid "Save the edited search"
 msgstr "Сачувајте уређену претрагу"
 
-#: src/nemo-view.c:8454
+#: src/nemo-view.c:8323
 msgid "Sa_ve Search As..."
 msgstr "_Сачувај претрагу као..."
 
-#: src/nemo-view.c:8455
+#: src/nemo-view.c:8324
 msgid "Save the current search as a file"
 msgstr "Сачувајте текућу претрагу као датотеку"
 
-#: src/nemo-view.c:8461
+#: src/nemo-view.c:8330
 msgid "Open this folder in a navigation window"
 msgstr "Отвори ову фасциклу у управљачком прозору"
 
-#: src/nemo-view.c:8465
+#: src/nemo-view.c:8334
 msgid "Open this folder in a new tab"
 msgstr "Отворите фасциклу у новом листу"
 
-#: src/nemo-view.c:8470
+#: src/nemo-view.c:8339
 msgid "Prepare this folder to be moved with a Paste command"
 msgstr "Припреми ову фасциклу за премештање помоћу наредбе „Убаци“"
 
-#: src/nemo-view.c:8474
+#: src/nemo-view.c:8343
 msgid "Prepare this folder to be copied with a Paste command"
 msgstr "Припреми ову фасциклу за умножавање помоћу наредбе „Убаци“"
 
-#: src/nemo-view.c:8478
+#: src/nemo-view.c:8347
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into this "
 "folder"
@@ -2322,101 +2319,101 @@ msgstr ""
 "Преместите или умножите датотеке изабране помоћу наредбе „Исеци“ или "
 "„Умножи“ у ову фасциклу"
 
-#: src/nemo-view.c:8483
+#: src/nemo-view.c:8352
 msgid "Move this folder to the Trash"
 msgstr "Премести ову фасциклу у Смеће"
 
-#: src/nemo-view.c:8487
+#: src/nemo-view.c:8356
 msgid "Delete this folder, without moving to the Trash"
 msgstr "Обриши ову фасциклу, без премештања у смеће"
 
-#: src/nemo-view.c:8495
+#: src/nemo-view.c:8364
 msgid "Mount the volume associated with this folder"
 msgstr "Прикачите диск који је придружен овој фасцикли"
 
-#: src/nemo-view.c:8499
+#: src/nemo-view.c:8368
 msgid "Unmount the volume associated with this folder"
 msgstr "Откачите диск који је придружен овој фасцикли"
 
-#: src/nemo-view.c:8503
+#: src/nemo-view.c:8372
 msgid "Eject the volume associated with this folder"
 msgstr "Избаците диск који је придружен овој фасцикли"
 
-#: src/nemo-view.c:8507
+#: src/nemo-view.c:8376
 msgid "Start the volume associated with this folder"
 msgstr "Покрените диск који је придружен овој фасцикли"
 
-#: src/nemo-view.c:8511
+#: src/nemo-view.c:8380
 msgid "Stop the volume associated with this folder"
 msgstr "Зауставите диск који је придружен овој фасцикли"
 
-#: src/nemo-view.c:8520
+#: src/nemo-view.c:8389
 msgid "View or modify the properties of this folder"
 msgstr "Прикажите или измените особине ове фасцикле"
 
-#: src/nemo-view.c:8523 src/nemo-view.c:8526
+#: src/nemo-view.c:8392 src/nemo-view.c:8395
 msgid "_Other pane"
 msgstr "_Друго окно"
 
-#: src/nemo-view.c:8524
+#: src/nemo-view.c:8393
 msgid "Copy the current selection to the other pane in the window"
 msgstr "Умножите тренутни избор у друго окно прозора"
 
-#: src/nemo-view.c:8527
+#: src/nemo-view.c:8396
 msgid "Move the current selection to the other pane in the window"
 msgstr "Преместите тренутни избор у друго окно прозора"
 
-#: src/nemo-view.c:8530 src/nemo-view.c:8534 src/nemo-window-menus.c:1185
+#: src/nemo-view.c:8399 src/nemo-view.c:8403 src/nemo-window-menus.c:1185
 #: src/nemo-window-menus.c:1377 src/nemo-window-menus.c:1591
 msgid "_Home"
 msgstr "_Лична фасцикла"
 
-#: src/nemo-view.c:8531
+#: src/nemo-view.c:8400
 msgid "Copy the current selection to the home folder"
 msgstr "Умножите тренутни избор у личну фасциклу"
 
-#: src/nemo-view.c:8535
+#: src/nemo-view.c:8404
 msgid "Move the current selection to the home folder"
 msgstr "Преместите тренутни избор у личну фасциклу"
 
-#: src/nemo-view.c:8538 src/nemo-view.c:8542
+#: src/nemo-view.c:8407 src/nemo-view.c:8411
 msgid "_Desktop"
 msgstr "_Радна површ"
 
-#: src/nemo-view.c:8539
+#: src/nemo-view.c:8408
 msgid "Copy the current selection to the desktop"
 msgstr "Умножите тренутни избор на радну површ"
 
-#: src/nemo-view.c:8543
+#: src/nemo-view.c:8412
 msgid "Move the current selection to the desktop"
 msgstr "Преместите изабрано на радну површ"
 
-#: src/nemo-view.c:8546 src/nemo-view.c:8550
+#: src/nemo-view.c:8415 src/nemo-view.c:8419
 msgid "Browse…"
 msgstr "Разгледај…"
 
-#: src/nemo-view.c:8547
+#: src/nemo-view.c:8416
 msgid "Browse for a folder to move the selection to"
 msgstr "Разгледајте фасциклу за премештање избора"
 
-#: src/nemo-view.c:8551
+#: src/nemo-view.c:8420
 msgid "Browse for a folder to copy the selection to"
 msgstr "Разгледајте фасциклу за умножавање избора"
 
-#: src/nemo-view.c:8625
+#: src/nemo-view.c:8508
 msgid "Run scripts"
 msgstr "Покрени скрипте"
 
-#: src/nemo-view.c:8627
+#: src/nemo-view.c:8510
 msgid "_Scripts"
 msgstr "_Скрипте"
 
-#: src/nemo-view.c:9000
+#: src/nemo-view.c:8883
 #, c-format
 msgid "Move the open folder out of the trash to \"%s\""
 msgstr "Премести отворену фасциклу из смећа у „%s“"
 
-#: src/nemo-view.c:9003
+#: src/nemo-view.c:8886
 #, c-format
 msgid "Move the selected folder out of the trash to \"%s\""
 msgid_plural "Move the selected folders out of the trash to \"%s\""
@@ -2424,14 +2421,14 @@ msgstr[0] "Премести изабрану фасциклу из смећа у
 msgstr[1] "Премести изабране фасцикле из смећа у „%s“"
 msgstr[2] "Премести изабране фасцикле из смећа у „%s“"
 
-#: src/nemo-view.c:9007
+#: src/nemo-view.c:8890
 msgid "Move the selected folder out of the trash"
 msgid_plural "Move the selected folders out of the trash"
 msgstr[0] "Премести изабрану фасциклу из смећа"
 msgstr[1] "Премести изабране фасцикле из смећа"
 msgstr[2] "Премести изабране фасцикле из смећа"
 
-#: src/nemo-view.c:9013
+#: src/nemo-view.c:8896
 #, c-format
 msgid "Move the selected file out of the trash to \"%s\""
 msgid_plural "Move the selected files out of the trash to \"%s\""
@@ -2439,14 +2436,14 @@ msgstr[0] "Премести изабрану датотеку из смећа у
 msgstr[1] "Премести изабране датотеке из смећа у „%s“"
 msgstr[2] "Премести изабране датотеке из смећа у „%s“"
 
-#: src/nemo-view.c:9017
+#: src/nemo-view.c:8900
 msgid "Move the selected file out of the trash"
 msgid_plural "Move the selected files out of the trash"
 msgstr[0] "Премести изабрану датотеку из смећа"
 msgstr[1] "Премести изабране датотеке из смећа"
 msgstr[2] "Премести изабране датотеке из смећа"
 
-#: src/nemo-view.c:9023
+#: src/nemo-view.c:8906
 #, c-format
 msgid "Move the selected item out of the trash to \"%s\""
 msgid_plural "Move the selected items out of the trash to \"%s\""
@@ -2454,120 +2451,120 @@ msgstr[0] "Премести изабрану ставку из смећа у „
 msgstr[1] "Премести изабране ставке из смећа у „%s“"
 msgstr[2] "Премести изабране ставке из смећа у „%s“"
 
-#: src/nemo-view.c:9027
+#: src/nemo-view.c:8910
 msgid "Move the selected item out of the trash"
 msgid_plural "Move the selected items out of the trash"
 msgstr[0] "Премести изабрану ставку из смећа"
 msgstr[1] "Премести изабране ставке из смећа"
 msgstr[2] "Премести изабране ставке из смећа"
 
-#: src/nemo-view.c:9144 src/nemo-view.c:9148 src/nemo-view.c:9335
-#: src/nemo-view.c:9339
+#: src/nemo-view.c:9027 src/nemo-view.c:9031 src/nemo-view.c:9218
+#: src/nemo-view.c:9222
 msgid "Start the selected drive"
 msgstr "Покрените изабрани уређај"
 
-#: src/nemo-view.c:9152 src/nemo-view.c:9343
+#: src/nemo-view.c:9035 src/nemo-view.c:9226
 msgid "Connect to the selected drive"
 msgstr "Повежите се на изабрани уређај"
 
-#: src/nemo-view.c:9155 src/nemo-view.c:9242 src/nemo-view.c:9346
+#: src/nemo-view.c:9038 src/nemo-view.c:9125 src/nemo-view.c:9229
 msgid "_Start Multi-disk Drive"
 msgstr "_Покрени уређај са више дискова"
 
-#: src/nemo-view.c:9156 src/nemo-view.c:9347
+#: src/nemo-view.c:9039 src/nemo-view.c:9230
 msgid "Start the selected multi-disk drive"
 msgstr "Покрените изабрани уређај са више дискова"
 
-#: src/nemo-view.c:9159
+#: src/nemo-view.c:9042
 msgid "U_nlock Drive"
 msgstr "_Откључај уређај"
 
-#: src/nemo-view.c:9160 src/nemo-view.c:9351
+#: src/nemo-view.c:9043 src/nemo-view.c:9234
 msgid "Unlock the selected drive"
 msgstr "Откључајте изабрани уређај"
 
-#: src/nemo-view.c:9173
+#: src/nemo-view.c:9056
 msgid "Stop the selected drive"
 msgstr "Заустави изабрани уређај"
 
-#: src/nemo-view.c:9177 src/nemo-view.c:9368
+#: src/nemo-view.c:9060 src/nemo-view.c:9251
 msgid "Safely remove the selected drive"
 msgstr "Безбедно уклоните изабрани уређај"
 
-#: src/nemo-view.c:9180 src/nemo-view.c:9267 src/nemo-view.c:9371
+#: src/nemo-view.c:9063 src/nemo-view.c:9150 src/nemo-view.c:9254
 msgid "_Disconnect"
 msgstr "_Прекини везу"
 
-#: src/nemo-view.c:9181 src/nemo-view.c:9372
+#: src/nemo-view.c:9064 src/nemo-view.c:9255
 msgid "Disconnect the selected drive"
 msgstr "Прекините везу са изабраним уређајем"
 
-#: src/nemo-view.c:9184 src/nemo-view.c:9271 src/nemo-view.c:9375
+#: src/nemo-view.c:9067 src/nemo-view.c:9154 src/nemo-view.c:9258
 msgid "_Stop Multi-disk Drive"
 msgstr "_Заустави уређај са више дискова"
 
-#: src/nemo-view.c:9185 src/nemo-view.c:9376
+#: src/nemo-view.c:9068 src/nemo-view.c:9259
 msgid "Stop the selected multi-disk drive"
 msgstr "Заустави изабрани уређај са више дискова"
 
-#: src/nemo-view.c:9189 src/nemo-view.c:9380
+#: src/nemo-view.c:9072 src/nemo-view.c:9263
 msgid "Lock the selected drive"
 msgstr "Закључај изабрани уређај"
 
-#: src/nemo-view.c:9231 src/nemo-view.c:9235
+#: src/nemo-view.c:9114 src/nemo-view.c:9118
 msgid "Start the drive associated with the open folder"
 msgstr "Покрени уређај који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:9239
+#: src/nemo-view.c:9122
 msgid "Connect to the drive associated with the open folder"
 msgstr "Повежи уређај који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:9243
+#: src/nemo-view.c:9126
 msgid "Start the multi-disk drive associated with the open folder"
 msgstr "Покрени уређај са више дискова који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:9247
+#: src/nemo-view.c:9130
 msgid "Unlock the drive associated with the open folder"
 msgstr "Откључај уређај који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:9260
+#: src/nemo-view.c:9143
 msgid "_Stop the drive associated with the open folder"
 msgstr "_Заустави уређај који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:9264
+#: src/nemo-view.c:9147
 msgid "Safely remove the drive associated with the open folder"
 msgstr "Безбедно уклони уређај који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:9268
+#: src/nemo-view.c:9151
 msgid "Disconnect the drive associated with the open folder"
 msgstr "Прекини везу са уређајем који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:9272
+#: src/nemo-view.c:9155
 msgid "Stop the multi-disk drive associated with the open folder"
 msgstr "Заустави уређај са више дискова који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:9276
+#: src/nemo-view.c:9159
 msgid "Lock the drive associated with the open folder"
 msgstr "Закључај уређај који је придружен отвореној фасцикли"
 
-#: src/nemo-view.c:9516 src/nemo-view.c:9843
+#: src/nemo-view.c:9399 src/nemo-view.c:9737
 msgid "_Delete Permanently"
 msgstr "_Обриши трајно"
 
-#: src/nemo-view.c:9517
+#: src/nemo-view.c:9400
 msgid "Delete the open folder permanently"
 msgstr "Трајно обришите отворену фасциклу"
 
-#: src/nemo-view.c:9521
+#: src/nemo-view.c:9404
 msgid "Move the open folder to the Trash"
 msgstr "Премести отворену фасциклу у Смеће"
 
-#: src/nemo-view.c:9749
+#: src/nemo-view.c:9629
 #, c-format
 msgid "_Open With %s"
 msgstr "_Отвори програмом „%s“"
 
-#: src/nemo-view.c:9806
+#: src/nemo-view.c:9700
 #, c-format
 msgid "Open in %'d New _Window"
 msgid_plural "Open in %'d New _Windows"
@@ -2575,7 +2572,7 @@ msgstr[0] "Отвори у %'d новом _прозору"
 msgstr[1] "Отвори у %'d нова _прозора"
 msgstr[2] "Отвори у %'d нових _прозора"
 
-#: src/nemo-view.c:9826
+#: src/nemo-view.c:9720
 #, c-format
 msgid "Open in %'d New _Tab"
 msgid_plural "Open in %'d New _Tabs"
@@ -2583,24 +2580,24 @@ msgstr[0] "Отвори у %'d новом _листу"
 msgstr[1] "Отвори у %'d нова _листа"
 msgstr[2] "Отвори у %'d нових _листа"
 
-#: src/nemo-view.c:9844
+#: src/nemo-view.c:9738
 msgid "Delete all selected items permanently"
 msgstr "Трајно обриши све изабране ставке"
 
-#: src/nemo-view.c:9867
+#: src/nemo-view.c:9761
 msgid "Remo_ve from Recent"
 msgstr "Уклони из _скорашњих"
 
-#: src/nemo-view.c:9868
+#: src/nemo-view.c:9762
 msgid "Remove each selected item from the recently used list"
 msgstr "Уклоните сваку изабрану ставку из списка недавно коришћених"
 
-#: src/nemo-view.c:9909
+#: src/nemo-view.c:9803
 msgid "View or modify the properties of the open folder"
 msgstr "Прегледајте или измените особине отворене фасцикле"
 
 #: src/nemo-view-dnd.c:125 libnemo-private/nemo-file.c:6557
-#: libnemo-private/nemo-file-operations.c:390
+#: libnemo-private/nemo-file-operations.c:392
 #, c-format
 msgid "Link to %s"
 msgstr "Повежи са %s"
@@ -2642,16 +2639,16 @@ msgstr "Локација „%s“ више не постоји."
 msgid "Bookmark for Nonexistent Location"
 msgstr "Обележивач за непостојећу путању"
 
-#: src/nemo-window-bookmarks.c:315
+#: src/nemo-window-bookmarks.c:310
 msgid "Go to the location specified by this bookmark"
 msgstr "Идите на путању наведену у овом обележивачу"
 
-#: src/nemo-window.c:1588
+#: src/nemo-window.c:1594
 #, c-format
 msgid "%s - File Browser"
 msgstr "%s — Прегледач датотека"
 
-#: src/nemo-window.c:2093 src/nemo-window-menus.c:316
+#: src/nemo-window.c:2104 src/nemo-window-menus.c:316
 msgid "Nemo"
 msgstr "Немо"
 
@@ -2659,60 +2656,60 @@ msgstr "Немо"
 msgid "Searching..."
 msgstr "Претражујем..."
 
-#: src/nemo-window-manage-views.c:1668 src/nemo-window-manage-views.c:1674
-#: src/nemo-window-manage-views.c:1691 src/nemo-window-manage-views.c:1702
-#: src/nemo-window-manage-views.c:1708 src/nemo-window-manage-views.c:1734
+#: src/nemo-window-manage-views.c:1653 src/nemo-window-manage-views.c:1659
+#: src/nemo-window-manage-views.c:1676 src/nemo-window-manage-views.c:1687
+#: src/nemo-window-manage-views.c:1693 src/nemo-window-manage-views.c:1719
 #, c-format
 msgid "Could not display \"%s\"."
 msgstr "Не могу да прикажем „%s“."
 
-#: src/nemo-window-manage-views.c:1671
+#: src/nemo-window-manage-views.c:1656
 msgid "Nemo has no installed viewer capable of displaying the folder."
 msgstr "Немо нема инсталиран прегледач који може да прикаже фасциклу."
 
-#: src/nemo-window-manage-views.c:1677
+#: src/nemo-window-manage-views.c:1662
 msgid "The location is not a folder."
 msgstr "Локација није фасцикла."
 
-#: src/nemo-window-manage-views.c:1683
+#: src/nemo-window-manage-views.c:1668
 #, c-format
 msgid "Could not find \"%s\"."
 msgstr "Не могу да нађем „%s“."
 
-#: src/nemo-window-manage-views.c:1686
+#: src/nemo-window-manage-views.c:1671
 msgid "Please check the spelling and try again."
 msgstr "Проверите да ли сте добро укуцали и покушајте поново."
 
-#: src/nemo-window-manage-views.c:1694
+#: src/nemo-window-manage-views.c:1679
 #, c-format
 msgid "Nemo cannot handle \"%s\" locations."
 msgstr "Немо не може да ради са „%s“ местима."
 
-#: src/nemo-window-manage-views.c:1697
+#: src/nemo-window-manage-views.c:1682
 msgid "Nemo cannot handle this kind of location."
 msgstr "Немо не може да ради са овом врстом локације."
 
-#: src/nemo-window-manage-views.c:1704
+#: src/nemo-window-manage-views.c:1689
 msgid "Unable to mount the location."
 msgstr "Не могу да прикачим место."
 
-#: src/nemo-window-manage-views.c:1710
+#: src/nemo-window-manage-views.c:1695
 msgid "Access was denied."
 msgstr "Приступ је одбијен."
 
-#: src/nemo-window-manage-views.c:1719
+#: src/nemo-window-manage-views.c:1704
 #, c-format
 msgid "Could not display \"%s\", because the host could not be found."
 msgstr "Не могу да прикажем „%s“ зато што није пронађен домаћин."
 
-#: src/nemo-window-manage-views.c:1721
+#: src/nemo-window-manage-views.c:1706
 msgid ""
 "Check that the spelling is correct and that your proxy settings are correct."
 msgstr ""
 "Проверите да ли сте добро укуцали и да ли су поставке вашег посредника "
 "исправне."
 
-#: src/nemo-window-manage-views.c:1736
+#: src/nemo-window-manage-views.c:1721
 #, c-format
 msgid ""
 "Error: %s\n"
@@ -3241,15 +3238,15 @@ msgstr "Убаците текст сачуван у остави"
 msgid "Select all the text in a text field"
 msgstr "Изаберите сав текст у пољу"
 
-#: libnemo-private/nemo-column-chooser.c:368
+#: libnemo-private/nemo-column-chooser.c:371
 msgid "Move _Up"
 msgstr "Премести _горе"
 
-#: libnemo-private/nemo-column-chooser.c:378
+#: libnemo-private/nemo-column-chooser.c:381
 msgid "Move Dow_n"
 msgstr "Премести _доле"
 
-#: libnemo-private/nemo-column-chooser.c:391
+#: libnemo-private/nemo-column-chooser.c:394
 msgid "Use De_fault"
 msgstr "Користи подра_зумевано"
 
@@ -3357,6 +3354,14 @@ msgstr "Првобитна локација"
 msgid "Original location of file before moved to the Trash"
 msgstr "Првобитна путања до датотеке пре премештања у Смеће"
 
+#: libnemo-private/nemo-context-menu-menu-item.c:73
+msgid "Show less actions"
+msgstr "Прикажи мање радњи"
+
+#: libnemo-private/nemo-context-menu-menu-item.c:74
+msgid "Show more actions"
+msgstr "Прикажи више радњи"
+
 #: libnemo-private/nemo-desktop-directory-file.c:437
 #: libnemo-private/nemo-desktop-icon-file.c:154
 msgid "on the desktop"
@@ -3399,151 +3404,151 @@ msgstr "_Повежи овде"
 msgid "Cancel"
 msgstr "Откажи"
 
-#: libnemo-private/nemo-file.c:1226 libnemo-private/nemo-vfs-file.c:405
+#: libnemo-private/nemo-file.c:1228 libnemo-private/nemo-vfs-file.c:405
 msgid "This file cannot be mounted"
 msgstr "Ова датотека не може бити прикачена"
 
-#: libnemo-private/nemo-file.c:1271
+#: libnemo-private/nemo-file.c:1273
 msgid "This file cannot be unmounted"
 msgstr "Ова датотека не може бити откачена"
 
-#: libnemo-private/nemo-file.c:1305
+#: libnemo-private/nemo-file.c:1307
 msgid "This file cannot be ejected"
 msgstr "Ова датотека не може бити избачена"
 
-#: libnemo-private/nemo-file.c:1338 libnemo-private/nemo-vfs-file.c:583
+#: libnemo-private/nemo-file.c:1340 libnemo-private/nemo-vfs-file.c:583
 msgid "This file cannot be started"
 msgstr "Ова датотека не може бити покренута"
 
-#: libnemo-private/nemo-file.c:1390 libnemo-private/nemo-file.c:1421
+#: libnemo-private/nemo-file.c:1392 libnemo-private/nemo-file.c:1423
 msgid "This file cannot be stopped"
 msgstr "Ова датотека не може бити заустављена"
 
-#: libnemo-private/nemo-file.c:1848
+#: libnemo-private/nemo-file.c:1850
 msgid "Slashes are not allowed in filenames"
 msgstr "Косе црте нису дозвољене у називу датотека"
 
-#: libnemo-private/nemo-file.c:1866
+#: libnemo-private/nemo-file.c:1868
 msgid "File not found"
 msgstr "Нисам нашао датотеку"
 
-#: libnemo-private/nemo-file.c:1894
+#: libnemo-private/nemo-file.c:1896
 msgid "Toplevel files cannot be renamed"
 msgstr "Датотеке највишег нивоа не могу бити преименоване"
 
-#: libnemo-private/nemo-file.c:1917
+#: libnemo-private/nemo-file.c:1919
 msgid "Unable to rename desktop icon"
 msgstr "Не могу да преименујем иконицу радне површи"
 
-#: libnemo-private/nemo-file.c:1946
+#: libnemo-private/nemo-file.c:1948
 msgid "Unable to rename desktop file"
 msgstr "Не могу да преименујем датотеку радне површи"
 
-#: libnemo-private/nemo-file.c:4491
+#: libnemo-private/nemo-file.c:4493
 msgid "today at 00:00:00 PM"
 msgstr "данс у 00:00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4494
+#: libnemo-private/nemo-file.c:4496
 msgid "today at 00:00 PM"
 msgstr "данас у 00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4495
+#: libnemo-private/nemo-file.c:4497
 msgid "today at %-I:%M %p"
 msgstr "данас у %-I:%M"
 
-#: libnemo-private/nemo-file.c:4497
+#: libnemo-private/nemo-file.c:4499
 msgid "today, 00:00 PM"
 msgstr "данас, 00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4498
+#: libnemo-private/nemo-file.c:4500
 msgid "today, %-I:%M %p"
 msgstr "данас, у %-I:%M"
 
-#: libnemo-private/nemo-file.c:4500 libnemo-private/nemo-file.c:4501
+#: libnemo-private/nemo-file.c:4502 libnemo-private/nemo-file.c:4503
 msgid "today"
 msgstr "данас"
 
-#: libnemo-private/nemo-file.c:4510
+#: libnemo-private/nemo-file.c:4512
 msgid "yesterday at 00:00:00 PM"
 msgstr "јуче у 00:00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4511
+#: libnemo-private/nemo-file.c:4513
 msgid "yesterday at %-I:%M:%S %p"
 msgstr "јуче у %-I:%M:%S"
 
-#: libnemo-private/nemo-file.c:4513
+#: libnemo-private/nemo-file.c:4515
 msgid "yesterday at 00:00 PM"
 msgstr "јуче у 00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4514
+#: libnemo-private/nemo-file.c:4516
 msgid "yesterday at %-I:%M %p"
 msgstr "јуче у %-I:%M"
 
-#: libnemo-private/nemo-file.c:4516
+#: libnemo-private/nemo-file.c:4518
 msgid "yesterday, 00:00 PM"
 msgstr "јуче, 00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4517
+#: libnemo-private/nemo-file.c:4519
 msgid "yesterday, %-I:%M %p"
 msgstr "јуче, %-I:%M"
 
-#: libnemo-private/nemo-file.c:4519 libnemo-private/nemo-file.c:4520
+#: libnemo-private/nemo-file.c:4521 libnemo-private/nemo-file.c:4522
 msgid "yesterday"
 msgstr "јуче"
 
-#: libnemo-private/nemo-file.c:4531
+#: libnemo-private/nemo-file.c:4533
 msgid "Wednesday, September 00 0000 at 00:00:00 PM"
 msgstr "Среда, 00. септембар 0000. у 00:00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4532
+#: libnemo-private/nemo-file.c:4534
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %-d. %B %Y. у %-I:%M:%S"
 
-#: libnemo-private/nemo-file.c:4534
+#: libnemo-private/nemo-file.c:4536
 msgid "Mon, Oct 00 0000 at 00:00:00 PM"
 msgstr "Пон., 00. окт. 0000. у 00:00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4535
+#: libnemo-private/nemo-file.c:4537
 msgid "%a, %b %-d %Y at %-I:%M:%S %p"
 msgstr "%a, %-d. %b. %Y у %-I:%M:%S"
 
-#: libnemo-private/nemo-file.c:4537
+#: libnemo-private/nemo-file.c:4539
 msgid "Mon, Oct 00 0000 at 00:00 PM"
 msgstr "Пон., 00. окт. 0000. у 00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4538
+#: libnemo-private/nemo-file.c:4540
 msgid "%a, %b %-d %Y at %-I:%M %p"
 msgstr "%a, %-d. %b %Y. у %-I:%M"
 
-#: libnemo-private/nemo-file.c:4540
+#: libnemo-private/nemo-file.c:4542
 msgid "Oct 00 0000 at 00:00 PM"
 msgstr "00. окт. 0000. у 00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4541
+#: libnemo-private/nemo-file.c:4543
 msgid "%b %-d %Y at %-I:%M %p"
 msgstr "%-d. %b. %Y. у %-I:%M"
 
-#: libnemo-private/nemo-file.c:4543
+#: libnemo-private/nemo-file.c:4545
 msgid "Oct 00 0000, 00:00 PM"
 msgstr "00. окт. 0000., у 00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4544
+#: libnemo-private/nemo-file.c:4546
 msgid "%b %-d %Y, %-I:%M %p"
 msgstr "%-d. %b. %Y., у %-I:%M"
 
-#: libnemo-private/nemo-file.c:4546
+#: libnemo-private/nemo-file.c:4548
 msgid "00/00/00, 00:00 PM"
 msgstr "00/00/00, у 00:00 ПоП"
 
-#: libnemo-private/nemo-file.c:4547
+#: libnemo-private/nemo-file.c:4549
 msgid "%m/%-d/%y, %-I:%M %p"
 msgstr "%-d./%m./%y., у %-I:%M"
 
-#: libnemo-private/nemo-file.c:4549
+#: libnemo-private/nemo-file.c:4551
 msgid "00/00/00"
 msgstr "00/00/00"
 
-#: libnemo-private/nemo-file.c:4550
+#: libnemo-private/nemo-file.c:4552
 msgid "%m/%d/%y"
 msgstr "%d./%m./%y."
 
@@ -3653,17 +3658,17 @@ msgstr "веза"
 msgid "link (broken)"
 msgstr "веза (неисправна)"
 
-#: libnemo-private/nemo-file.c:7548
+#: libnemo-private/nemo-file.c:7544
 #, c-format
 msgid "Name: %s"
 msgstr "Назив: %s"
 
-#: libnemo-private/nemo-file.c:7555
+#: libnemo-private/nemo-file.c:7551
 #, c-format
 msgid "Type: %s"
 msgstr "Врста: %s"
 
-#: libnemo-private/nemo-file.c:7565
+#: libnemo-private/nemo-file.c:7561
 #, c-format
 msgid "%s item"
 msgid_plural "%s items"
@@ -3671,27 +3676,27 @@ msgstr[0] "%s ставка"
 msgstr[1] "%s ставке"
 msgstr[2] "%s ставки"
 
-#: libnemo-private/nemo-file.c:7567
+#: libnemo-private/nemo-file.c:7563
 #, c-format
 msgid "Contains: %s"
 msgstr "Садржи: %s"
 
-#: libnemo-private/nemo-file.c:7576
+#: libnemo-private/nemo-file.c:7572
 #, c-format
 msgid "Size: %s"
 msgstr "Величина: %s"
 
-#: libnemo-private/nemo-file.c:7584
+#: libnemo-private/nemo-file.c:7580
 #, c-format
 msgid "Accessed: %s"
 msgstr "Приступљено: %s"
 
-#: libnemo-private/nemo-file.c:7592
+#: libnemo-private/nemo-file.c:7588
 #, c-format
 msgid "Modified: %s"
 msgstr "Измењено: %s"
 
-#: libnemo-private/nemo-file.c:7601
+#: libnemo-private/nemo-file.c:7597
 #, c-format
 msgid "Location: %s"
 msgstr "Место: %s"
@@ -3792,7 +3797,7 @@ msgid "Apply this action to all files"
 msgstr "Примени ову радњу за све датотеке"
 
 #: libnemo-private/nemo-file-conflict-dialog.c:546
-#: libnemo-private/nemo-file-operations.c:192
+#: libnemo-private/nemo-file-operations.c:194
 msgid "_Skip"
 msgstr "_Прескочи"
 
@@ -3808,39 +3813,39 @@ msgstr "Замени"
 msgid "File conflict"
 msgstr "Сукоб датотека"
 
-#: libnemo-private/nemo-file-operations.c:193
+#: libnemo-private/nemo-file-operations.c:195
 msgid "S_kip All"
 msgstr "П_рескочи све"
 
-#: libnemo-private/nemo-file-operations.c:194
+#: libnemo-private/nemo-file-operations.c:196
 msgid "_Retry"
 msgstr "_Понови"
 
-#: libnemo-private/nemo-file-operations.c:195
+#: libnemo-private/nemo-file-operations.c:197
 msgid "Delete _All"
 msgstr "Обриши _све"
 
-#: libnemo-private/nemo-file-operations.c:196
+#: libnemo-private/nemo-file-operations.c:198
 msgid "_Replace"
 msgstr "_Замени"
 
-#: libnemo-private/nemo-file-operations.c:197
+#: libnemo-private/nemo-file-operations.c:199
 msgid "Replace _All"
 msgstr "Замени _све"
 
-#: libnemo-private/nemo-file-operations.c:198
+#: libnemo-private/nemo-file-operations.c:200
 msgid "_Merge"
 msgstr "_Споји"
 
-#: libnemo-private/nemo-file-operations.c:199
+#: libnemo-private/nemo-file-operations.c:201
 msgid "Merge _All"
 msgstr "Споји _ све"
 
-#: libnemo-private/nemo-file-operations.c:200
+#: libnemo-private/nemo-file-operations.c:202
 msgid "Copy _Anyway"
 msgstr "Ипак _умножи"
 
-#: libnemo-private/nemo-file-operations.c:291
+#: libnemo-private/nemo-file-operations.c:293
 #, c-format
 msgid "%'d second"
 msgid_plural "%'d seconds"
@@ -3848,8 +3853,8 @@ msgstr[0] "%'d секунда"
 msgstr[1] "%'d секунде"
 msgstr[2] "%'d секунди"
 
-#: libnemo-private/nemo-file-operations.c:296
-#: libnemo-private/nemo-file-operations.c:307
+#: libnemo-private/nemo-file-operations.c:298
+#: libnemo-private/nemo-file-operations.c:309
 #, c-format
 msgid "%'d minute"
 msgid_plural "%'d minutes"
@@ -3857,7 +3862,7 @@ msgstr[0] "%'d минут"
 msgstr[1] "%'d минута"
 msgstr[2] "%'d минута"
 
-#: libnemo-private/nemo-file-operations.c:306
+#: libnemo-private/nemo-file-operations.c:308
 #, c-format
 msgid "%'d hour"
 msgid_plural "%'d hours"
@@ -3865,7 +3870,7 @@ msgstr[0] "%'d сат"
 msgstr[1] "%'d сата"
 msgstr[2] "%'d сати"
 
-#: libnemo-private/nemo-file-operations.c:314
+#: libnemo-private/nemo-file-operations.c:316
 #, c-format
 msgid "approximately %'d hour"
 msgid_plural "approximately %'d hours"
@@ -3873,101 +3878,101 @@ msgstr[0] "приближно %'d сат"
 msgstr[1] "приближно %'d сата"
 msgstr[2] "приближно %'d сати"
 
-#: libnemo-private/nemo-file-operations.c:394
+#: libnemo-private/nemo-file-operations.c:396
 #, c-format
 msgid "Another link to %s"
 msgstr "Још једна веза ка „%s“"
 
-#: libnemo-private/nemo-file-operations.c:410
+#: libnemo-private/nemo-file-operations.c:412
 #, c-format
 msgid "%'dst link to %s"
 msgstr "%'d. веза ка „%s“"
 
-#: libnemo-private/nemo-file-operations.c:414
+#: libnemo-private/nemo-file-operations.c:416
 #, c-format
 msgid "%'dnd link to %s"
 msgstr "%'d. веза ка „%s“"
 
-#: libnemo-private/nemo-file-operations.c:418
+#: libnemo-private/nemo-file-operations.c:420
 #, c-format
 msgid "%'drd link to %s"
 msgstr "%'d. веза ка „%s“"
 
-#: libnemo-private/nemo-file-operations.c:422
+#: libnemo-private/nemo-file-operations.c:424
 #, c-format
 msgid "%'dth link to %s"
 msgstr "%'d. веза ка „%s“"
 
-#: libnemo-private/nemo-file-operations.c:461
+#: libnemo-private/nemo-file-operations.c:463
 msgid " (copy)"
 msgstr " (први умножак)"
 
-#: libnemo-private/nemo-file-operations.c:463
+#: libnemo-private/nemo-file-operations.c:465
 msgid " (another copy)"
 msgstr " (други умножак)"
 
-#: libnemo-private/nemo-file-operations.c:466
 #: libnemo-private/nemo-file-operations.c:468
 #: libnemo-private/nemo-file-operations.c:470
-#: libnemo-private/nemo-file-operations.c:480
+#: libnemo-private/nemo-file-operations.c:472
+#: libnemo-private/nemo-file-operations.c:482
 msgid "th copy)"
 msgstr ". умножак)"
 
-#: libnemo-private/nemo-file-operations.c:473
+#: libnemo-private/nemo-file-operations.c:475
 msgid "st copy)"
 msgstr ". умножак)"
 
-#: libnemo-private/nemo-file-operations.c:475
+#: libnemo-private/nemo-file-operations.c:477
 msgid "nd copy)"
 msgstr ". умножак)"
 
-#: libnemo-private/nemo-file-operations.c:477
+#: libnemo-private/nemo-file-operations.c:479
 msgid "rd copy)"
 msgstr ". умножак)"
 
-#: libnemo-private/nemo-file-operations.c:494
+#: libnemo-private/nemo-file-operations.c:496
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (први умножак)%s"
 
-#: libnemo-private/nemo-file-operations.c:496
+#: libnemo-private/nemo-file-operations.c:498
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (други умножак)%s"
 
-#: libnemo-private/nemo-file-operations.c:499
 #: libnemo-private/nemo-file-operations.c:501
 #: libnemo-private/nemo-file-operations.c:503
-#: libnemo-private/nemo-file-operations.c:517
+#: libnemo-private/nemo-file-operations.c:505
+#: libnemo-private/nemo-file-operations.c:519
 #, c-format
 msgid "%s (%'dth copy)%s"
 msgstr "%s (%'d. умножак)%s"
 
-#: libnemo-private/nemo-file-operations.c:511
+#: libnemo-private/nemo-file-operations.c:513
 #, c-format
 msgid "%s (%'dst copy)%s"
 msgstr "%s (%'d. умножак)%s"
 
-#: libnemo-private/nemo-file-operations.c:513
+#: libnemo-private/nemo-file-operations.c:515
 #, c-format
 msgid "%s (%'dnd copy)%s"
 msgstr "%s (%'d. умножак)%s"
 
-#: libnemo-private/nemo-file-operations.c:515
+#: libnemo-private/nemo-file-operations.c:517
 #, c-format
 msgid "%s (%'drd copy)%s"
 msgstr "%s (%'d. умножак)%s"
 
-#: libnemo-private/nemo-file-operations.c:616
+#: libnemo-private/nemo-file-operations.c:618
 msgid " ("
 msgstr " ("
 
-#: libnemo-private/nemo-file-operations.c:624
+#: libnemo-private/nemo-file-operations.c:626
 #, c-format
 msgid " (%'d"
 msgstr " (%'d"
 
-#: libnemo-private/nemo-file-operations.c:993
+#: libnemo-private/nemo-file-operations.c:995
 #, c-format
 msgid "Waiting to copy a file from '%1$s' to '%2$s'"
 msgid_plural "Waiting to copy files from '%1$s' to '%2$s'"
@@ -3975,7 +3980,7 @@ msgstr[0] "Умножавам датотеку из „%1$s“ у „%2$s“"
 msgstr[1] "Умножавам датотеке из „%1$s“ у „%2$s“"
 msgstr[2] "Умножавам датотеке из „%1$s“ у „%2$s“"
 
-#: libnemo-private/nemo-file-operations.c:1002
+#: libnemo-private/nemo-file-operations.c:1004
 #, c-format
 msgid "Waiting to move a file from '%1$s' to '%2$s'"
 msgid_plural "Waiting to move files from '%1$s' to '%2$s'"
@@ -3983,7 +3988,7 @@ msgstr[0] "Премештам датотеку из „%1$s“ у „%2$s“"
 msgstr[1] "Премештам датотеке из „%1$s“ у „%2$s“"
 msgstr[2] "Премештам датотеке из „%1$s“ у „%2$s“"
 
-#: libnemo-private/nemo-file-operations.c:1010
+#: libnemo-private/nemo-file-operations.c:1012
 #, c-format
 msgid "Waiting to permanently delete a file from '%s'"
 msgid_plural "Waiting to permanently delete files from '%s'"
@@ -3991,7 +3996,7 @@ msgstr[0] "Трајно бришем датотеку из „%1$s“"
 msgstr[1] "Трајно бришем датотеке из „%1$s“"
 msgstr[2] "Трајно бришем датотеке из „%1$s“"
 
-#: libnemo-private/nemo-file-operations.c:1018
+#: libnemo-private/nemo-file-operations.c:1020
 #, c-format
 msgid "Waiting to trash a file in '%s'"
 msgid_plural "Waiting to trash files in '%s'"
@@ -3999,11 +4004,11 @@ msgstr[0] "Уклањам датотеку у „%1$s“"
 msgstr[1] "Уклањам датотеке у „%1$s“"
 msgstr[2] "Уклањам датотеке у „%1$s“"
 
-#: libnemo-private/nemo-file-operations.c:1024
+#: libnemo-private/nemo-file-operations.c:1026
 msgid "Waiting to empty the trash"
 msgstr "Празним смеће"
 
-#: libnemo-private/nemo-file-operations.c:1030
+#: libnemo-private/nemo-file-operations.c:1032
 #, c-format
 msgid "Waiting to duplicate a file in '%s'"
 msgid_plural "Waiting to duplicate files in '%s'"
@@ -4011,12 +4016,12 @@ msgstr[0] "Удвостручавам датотеку у „%s“"
 msgstr[1] "Удвостручавам датотеке у „%s“"
 msgstr[2] "Удвостручавам датотеке у „%s“"
 
-#: libnemo-private/nemo-file-operations.c:1038
+#: libnemo-private/nemo-file-operations.c:1040
 #, c-format
 msgid "Waiting to change permissions of files in '%s'"
 msgstr "Мењам овлашћења датотека у „%s“"
 
-#: libnemo-private/nemo-file-operations.c:1044
+#: libnemo-private/nemo-file-operations.c:1046
 #, c-format
 msgid "Waiting to link a file from '%1$s' to '%2$s'"
 msgid_plural "Waiting to link files from '%1$s' to '%2$s'"
@@ -4024,11 +4029,11 @@ msgstr[0] "Правим везу датотеке из „%1$s“ у „%2$s“"
 msgstr[1] "Правим везе датотека из „%1$s“ у „%2$s“"
 msgstr[2] "Правим везе датотека из „%1$s“ у „%2$s“"
 
-#: libnemo-private/nemo-file-operations.c:1455
+#: libnemo-private/nemo-file-operations.c:1466
 msgid "Are you sure you want to permanently delete \"%B\" from the trash?"
 msgstr "Да ли желите трајно да уклоните „%B“ из смећа?"
 
-#: libnemo-private/nemo-file-operations.c:1458
+#: libnemo-private/nemo-file-operations.c:1469
 #, c-format
 msgid ""
 "Are you sure you want to permanently delete the %'d selected item from the "
@@ -4040,24 +4045,24 @@ msgstr[0] "Да ли желите трајно да избришетe %'d иза
 msgstr[1] "Да ли желите трајно да избришетe %'d изабране ставке из смећа?"
 msgstr[2] "Да ли желите трајно да избришетe %'d изабраних ставки из смећа?"
 
-#: libnemo-private/nemo-file-operations.c:1468
-#: libnemo-private/nemo-file-operations.c:1534
+#: libnemo-private/nemo-file-operations.c:1479
+#: libnemo-private/nemo-file-operations.c:1545
 msgid "If you delete an item, it will be permanently lost."
 msgstr "Ако обришете ставку, она ће бити неповратно изгубљена."
 
-#: libnemo-private/nemo-file-operations.c:1488
+#: libnemo-private/nemo-file-operations.c:1499
 msgid "Empty all items from Trash?"
 msgstr "Да избацим све ставке из смећа?"
 
-#: libnemo-private/nemo-file-operations.c:1492
+#: libnemo-private/nemo-file-operations.c:1503
 msgid "All items in the Trash will be permanently deleted."
 msgstr "Све ставке из смећа биће трајно уклоњене."
 
-#: libnemo-private/nemo-file-operations.c:1522
+#: libnemo-private/nemo-file-operations.c:1533
 msgid "Are you sure you want to permanently delete \"%B\"?"
 msgstr "Да ли желите трајно да избришете „%B“?"
 
-#: libnemo-private/nemo-file-operations.c:1525
+#: libnemo-private/nemo-file-operations.c:1536
 #, c-format
 msgid "Are you sure you want to permanently delete the %'d selected item?"
 msgid_plural ""
@@ -4066,7 +4071,7 @@ msgstr[0] "Да ли желите трајно да избришете %'d из�
 msgstr[1] "Да ли желите трајно да избришете %'d изабране ставке?"
 msgstr[2] "Да ли желите трајно да избришете %'d изабраних ставки?"
 
-#: libnemo-private/nemo-file-operations.c:1568
+#: libnemo-private/nemo-file-operations.c:1579
 #, c-format
 msgid "%'d file left to delete"
 msgid_plural "%'d files left to delete"
@@ -4074,26 +4079,26 @@ msgstr[0] "Преостала је %'d датотека за брисање"
 msgstr[1] "Преостале су %'d датотеке за брисање"
 msgstr[2] "Преостало је %'d датотека за брисање"
 
-#: libnemo-private/nemo-file-operations.c:1574
+#: libnemo-private/nemo-file-operations.c:1585
 msgid "Deleting files"
 msgstr "Бришем датотеке"
 
-#: libnemo-private/nemo-file-operations.c:1588
+#: libnemo-private/nemo-file-operations.c:1599
 msgid "%T left"
 msgid_plural "%T left"
 msgstr[0] "преостао је %T"
 msgstr[1] "преостала су %T"
 msgstr[2] "преостало је %T"
 
-#: libnemo-private/nemo-file-operations.c:1655
-#: libnemo-private/nemo-file-operations.c:1689
-#: libnemo-private/nemo-file-operations.c:1728
-#: libnemo-private/nemo-file-operations.c:1805
-#: libnemo-private/nemo-file-operations.c:2627
+#: libnemo-private/nemo-file-operations.c:1666
+#: libnemo-private/nemo-file-operations.c:1700
+#: libnemo-private/nemo-file-operations.c:1739
+#: libnemo-private/nemo-file-operations.c:1816
+#: libnemo-private/nemo-file-operations.c:2639
 msgid "Error while deleting."
 msgstr "Грешка приликом брисања."
 
-#: libnemo-private/nemo-file-operations.c:1659
+#: libnemo-private/nemo-file-operations.c:1670
 msgid ""
 "Files in the folder \"%B\" cannot be deleted because you do not have "
 "permissions to see them."
@@ -4101,45 +4106,45 @@ msgstr ""
 "Датотеке у фасцикли „%B“ не могу бити избрисане јер немате дозволе за њихово "
 "приказивање."
 
-#: libnemo-private/nemo-file-operations.c:1662
-#: libnemo-private/nemo-file-operations.c:2686
-#: libnemo-private/nemo-file-operations.c:3674
+#: libnemo-private/nemo-file-operations.c:1673
+#: libnemo-private/nemo-file-operations.c:2698
+#: libnemo-private/nemo-file-operations.c:3696
 msgid ""
 "There was an error getting information about the files in the folder \"%B\"."
 msgstr ""
 "Јавила се грешка приликом добављања података о датотекама у фасцикли „%B“."
 
-#: libnemo-private/nemo-file-operations.c:1671
-#: libnemo-private/nemo-file-operations.c:3683
+#: libnemo-private/nemo-file-operations.c:1682
+#: libnemo-private/nemo-file-operations.c:3705
 msgid "_Skip files"
 msgstr "_Прескочи датотеке"
 
-#: libnemo-private/nemo-file-operations.c:1692
+#: libnemo-private/nemo-file-operations.c:1703
 msgid ""
 "The folder \"%B\" cannot be deleted because you do not have permissions to "
 "read it."
 msgstr ""
 "Фасцикла „%B“ не може бити избрисана јер немате овлашћења за њено читање."
 
-#: libnemo-private/nemo-file-operations.c:1695
-#: libnemo-private/nemo-file-operations.c:2725
-#: libnemo-private/nemo-file-operations.c:3719
+#: libnemo-private/nemo-file-operations.c:1706
+#: libnemo-private/nemo-file-operations.c:2737
+#: libnemo-private/nemo-file-operations.c:3741
 msgid "There was an error reading the folder \"%B\"."
 msgstr "Јавила се грешка приликом читања фасцикле „%B“."
 
-#: libnemo-private/nemo-file-operations.c:1729
+#: libnemo-private/nemo-file-operations.c:1740
 msgid "Could not remove the folder %B."
 msgstr "Не могу уклонити фасциклу „%B“."
 
-#: libnemo-private/nemo-file-operations.c:1806
+#: libnemo-private/nemo-file-operations.c:1817
 msgid "There was an error deleting %B."
 msgstr "Јавила се грешка при брисању „%B“."
 
-#: libnemo-private/nemo-file-operations.c:1886
+#: libnemo-private/nemo-file-operations.c:1897
 msgid "Moving files to trash"
 msgstr "Премештам датотеке у смеће"
 
-#: libnemo-private/nemo-file-operations.c:1888
+#: libnemo-private/nemo-file-operations.c:1899
 #, c-format
 msgid "%'d file left to trash"
 msgid_plural "%'d files left to trash"
@@ -4147,36 +4152,36 @@ msgstr[0] "У смећу је остала %'d датотека"
 msgstr[1] "У смећу су остале %'d датотеке"
 msgstr[2] "У смећу је остало %'d датотека"
 
-#: libnemo-private/nemo-file-operations.c:1939
+#: libnemo-private/nemo-file-operations.c:1950
 msgid "Cannot move file to trash, do you want to delete immediately?"
 msgstr ""
 "Не могу пребацити датотеку у смеће, да ли желите одмах да је обришете?"
 
-#: libnemo-private/nemo-file-operations.c:1940
+#: libnemo-private/nemo-file-operations.c:1951
 msgid "The file \"%B\" cannot be moved to the trash."
 msgstr "Не могу преместити датотеку „%B“ у смеће."
 
-#: libnemo-private/nemo-file-operations.c:2119
+#: libnemo-private/nemo-file-operations.c:2130
 msgid "Trashing Files"
 msgstr "Пребацујем у смеће"
 
-#: libnemo-private/nemo-file-operations.c:2121
+#: libnemo-private/nemo-file-operations.c:2132
 msgid "Deleting Files"
 msgstr "Бришем датотеке"
 
-#: libnemo-private/nemo-file-operations.c:2202
+#: libnemo-private/nemo-file-operations.c:2213
 msgid "Unable to eject %V"
 msgstr "Не могу да избацим „%V“"
 
-#: libnemo-private/nemo-file-operations.c:2204
+#: libnemo-private/nemo-file-operations.c:2215
 msgid "Unable to unmount %V"
 msgstr "Не могу да откачим „%V“"
 
-#: libnemo-private/nemo-file-operations.c:2361
+#: libnemo-private/nemo-file-operations.c:2372
 msgid "Do you want to empty the trash before you unmount?"
 msgstr "Да ли желите да испразните смеће пре него што откачите?"
 
-#: libnemo-private/nemo-file-operations.c:2363
+#: libnemo-private/nemo-file-operations.c:2374
 msgid ""
 "In order to regain the free space on this volume the trash must be emptied. "
 "All trashed items on the volume will be permanently lost."
@@ -4184,16 +4189,16 @@ msgstr ""
 "Морате испразнити смеће како бисте ослободили простор на овом уређају. Све "
 "ставке из смећа биће трајно изгубљене."
 
-#: libnemo-private/nemo-file-operations.c:2369
+#: libnemo-private/nemo-file-operations.c:2380
 msgid "Do _not Empty Trash"
 msgstr "_Немој избацити смеће"
 
-#: libnemo-private/nemo-file-operations.c:2498
+#: libnemo-private/nemo-file-operations.c:2510
 #, c-format
 msgid "Unable to mount %s"
 msgstr "Не могу да прикачим „%s“"
 
-#: libnemo-private/nemo-file-operations.c:2574
+#: libnemo-private/nemo-file-operations.c:2586
 #, c-format
 msgid "Preparing to copy %'d file (%S)"
 msgid_plural "Preparing to copy %'d files (%S)"
@@ -4201,7 +4206,7 @@ msgstr[0] "Припремам за умножавање %'d датотеку (%S
 msgstr[1] "Припремам за умножавање %'d датотеке (%S)"
 msgstr[2] "Припремам за умножавање %'d датотека (%S)"
 
-#: libnemo-private/nemo-file-operations.c:2580
+#: libnemo-private/nemo-file-operations.c:2592
 #, c-format
 msgid "Preparing to move %'d file (%S)"
 msgid_plural "Preparing to move %'d files (%S)"
@@ -4209,7 +4214,7 @@ msgstr[0] "Припремам за премештање %'d датотеку (%S
 msgstr[1] "Припремам за премештање %'d датотеке (%S)"
 msgstr[2] "Припремам за премештање %'d датотека (%S)"
 
-#: libnemo-private/nemo-file-operations.c:2586
+#: libnemo-private/nemo-file-operations.c:2598
 #, c-format
 msgid "Preparing to delete %'d file (%S)"
 msgid_plural "Preparing to delete %'d files (%S)"
@@ -4217,7 +4222,7 @@ msgstr[0] "Припремам за брисање %'d датотеку (%S)"
 msgstr[1] "Припремам за брисање %'d датотеке (%S)"
 msgstr[2] "Припремам за брисање %'d датотека (%S)"
 
-#: libnemo-private/nemo-file-operations.c:2592
+#: libnemo-private/nemo-file-operations.c:2604
 #, c-format
 msgid "Preparing to trash %'d file"
 msgid_plural "Preparing to trash %'d files"
@@ -4225,24 +4230,24 @@ msgstr[0] "Припремам за слање %'d датотеку у смеће
 msgstr[1] "Припремам за слање %'d датотеке у смеће"
 msgstr[2] "Припремам за слање %'d датотека у смеће"
 
-#: libnemo-private/nemo-file-operations.c:2623
-#: libnemo-private/nemo-file-operations.c:3534
-#: libnemo-private/nemo-file-operations.c:3666
-#: libnemo-private/nemo-file-operations.c:3711
+#: libnemo-private/nemo-file-operations.c:2635
+#: libnemo-private/nemo-file-operations.c:3556
+#: libnemo-private/nemo-file-operations.c:3688
+#: libnemo-private/nemo-file-operations.c:3733
 msgid "Error while copying."
 msgstr "Грешка при умножавању."
 
-#: libnemo-private/nemo-file-operations.c:2625
-#: libnemo-private/nemo-file-operations.c:3664
-#: libnemo-private/nemo-file-operations.c:3709
+#: libnemo-private/nemo-file-operations.c:2637
+#: libnemo-private/nemo-file-operations.c:3686
+#: libnemo-private/nemo-file-operations.c:3731
 msgid "Error while moving."
 msgstr "Грешка при премештању."
 
-#: libnemo-private/nemo-file-operations.c:2629
+#: libnemo-private/nemo-file-operations.c:2641
 msgid "Error while moving files to trash."
 msgstr "Грешка приликом премештања датотека у смеће."
 
-#: libnemo-private/nemo-file-operations.c:2683
+#: libnemo-private/nemo-file-operations.c:2695
 msgid ""
 "Files in the folder \"%B\" cannot be handled because you do not have "
 "permissions to see them."
@@ -4250,108 +4255,108 @@ msgstr ""
 "Не могу да радим са датотекама у фасцикли „%B“ јер немате овлашћења за "
 "њихово приказивање."
 
-#: libnemo-private/nemo-file-operations.c:2722
+#: libnemo-private/nemo-file-operations.c:2734
 msgid ""
 "The folder \"%B\" cannot be handled because you do not have permissions to "
 "read it."
 msgstr ""
 "Не могу да радим са фасциклом „%B“ јер немате овлашћења за њено читање."
 
-#: libnemo-private/nemo-file-operations.c:2799
+#: libnemo-private/nemo-file-operations.c:2811
 msgid ""
 "The file \"%B\" cannot be handled because you do not have permissions to "
 "read it."
 msgstr ""
 "Не могу да радим са датотеком „%B“ јер немате овлашћења за њено читање."
 
-#: libnemo-private/nemo-file-operations.c:2802
+#: libnemo-private/nemo-file-operations.c:2814
 msgid "There was an error getting information about \"%B\"."
 msgstr "Грешка приликом добављања података о „%B“."
 
-#: libnemo-private/nemo-file-operations.c:2903
-#: libnemo-private/nemo-file-operations.c:2945
-#: libnemo-private/nemo-file-operations.c:2979
-#: libnemo-private/nemo-file-operations.c:3009
+#: libnemo-private/nemo-file-operations.c:2915
+#: libnemo-private/nemo-file-operations.c:2957
+#: libnemo-private/nemo-file-operations.c:2991
+#: libnemo-private/nemo-file-operations.c:3021
 msgid "Error while copying to \"%B\"."
 msgstr "Грешка приликом умножавања у „%B“."
 
-#: libnemo-private/nemo-file-operations.c:2907
+#: libnemo-private/nemo-file-operations.c:2919
 msgid "You do not have permissions to access the destination folder."
 msgstr "Немате овлашћења да приступите одредишној фасцикли."
 
-#: libnemo-private/nemo-file-operations.c:2909
+#: libnemo-private/nemo-file-operations.c:2921
 msgid "There was an error getting information about the destination."
 msgstr "Дошло је до грешке приликом добављања података о одредишту."
 
-#: libnemo-private/nemo-file-operations.c:2946
+#: libnemo-private/nemo-file-operations.c:2958
 msgid "The destination is not a folder."
 msgstr "Одредиште није фасцикла."
 
-#: libnemo-private/nemo-file-operations.c:2980
+#: libnemo-private/nemo-file-operations.c:2992
 msgid ""
 "There is not enough space on the destination. Try to remove files to make "
 "space."
 msgstr "Нема довољно места у одредишту. Покушајте да уклоните неке датотеке."
 
-#: libnemo-private/nemo-file-operations.c:2982
+#: libnemo-private/nemo-file-operations.c:2994
 #, c-format
 msgid "%S more space is required to copy to the destination."
 msgstr "За умножавање у одредиште потребно је још %S простора."
 
-#: libnemo-private/nemo-file-operations.c:3010
+#: libnemo-private/nemo-file-operations.c:3022
 msgid "The destination is read-only."
 msgstr "Одредиште је само за читање."
 
-#: libnemo-private/nemo-file-operations.c:3069
+#: libnemo-private/nemo-file-operations.c:3081
 msgid "Moving \"%B\" to \"%B\""
 msgstr "Премештам „%B“ у „%B“"
 
-#: libnemo-private/nemo-file-operations.c:3070
+#: libnemo-private/nemo-file-operations.c:3082
 msgid "Copying \"%B\" to \"%B\""
 msgstr "Умножавам „%B“ у „%B“"
 
-#: libnemo-private/nemo-file-operations.c:3077
+#: libnemo-private/nemo-file-operations.c:3089
 msgid "Duplicating \"%B\""
 msgstr "Удвостручавам „%B“"
 
-#: libnemo-private/nemo-file-operations.c:3085
+#: libnemo-private/nemo-file-operations.c:3097
 msgid "Moving file %'d of %'d (in \"%B\") to \"%B\""
 msgstr "Премештам %'d. датотеку од %'d (из „%B“) у „%B“"
 
-#: libnemo-private/nemo-file-operations.c:3087
+#: libnemo-private/nemo-file-operations.c:3099
 msgid "Copying file %'d of %'d (in \"%B\") to \"%B\""
 msgstr "Умножавам %'d. датотеку од %'d (из „%B“) у „%B“"
 
-#: libnemo-private/nemo-file-operations.c:3094
+#: libnemo-private/nemo-file-operations.c:3106
 msgid "Duplicating file %'d of %'d (in \"%B\")"
 msgstr "Удвостручујем %'d. датотеку од %'d (из „%B“)"
 
-#: libnemo-private/nemo-file-operations.c:3103
+#: libnemo-private/nemo-file-operations.c:3115
 msgid "Moving file %'d of %'d to \"%B\""
 msgstr "Премештам %'d. датотеку од %'d у „%B“"
 
-#: libnemo-private/nemo-file-operations.c:3105
+#: libnemo-private/nemo-file-operations.c:3117
 msgid "Copying file %'d of %'d to \"%B\""
 msgstr "Умножавам %'d. датотеку од %'d у „%B“"
 
-#: libnemo-private/nemo-file-operations.c:3111
+#: libnemo-private/nemo-file-operations.c:3123
 #, c-format
 msgid "Duplicating file %'d of %'d"
 msgstr "Удвостручујем %'d. датотеку од %'d"
 
-#: libnemo-private/nemo-file-operations.c:3130
+#: libnemo-private/nemo-file-operations.c:3142
 #, c-format
 msgid "%S of %S"
 msgstr "%S од %S"
 
-#: libnemo-private/nemo-file-operations.c:3141
+#: libnemo-private/nemo-file-operations.c:3153
 msgid "%S of %S — %T left (%S/sec)"
 msgid_plural "%S of %S — %T left (%S/sec)"
 msgstr[0] "%S од %S — преостаје %T (%S/сек)"
 msgstr[1] "%S од %S — преостају %T (%S/сек)"
 msgstr[2] "%S од %S — преостају %T (%S/сек)"
 
-#: libnemo-private/nemo-file-operations.c:3538
+#: libnemo-private/nemo-file-operations.c:3560
 msgid ""
 "The folder \"%B\" cannot be copied because you do not have permissions to "
 "create it in the destination."
@@ -4359,11 +4364,11 @@ msgstr ""
 "Фасцикла „%B“ не може бити умножена зато што немате овлашћења да је "
 "направите у одредишту."
 
-#: libnemo-private/nemo-file-operations.c:3541
+#: libnemo-private/nemo-file-operations.c:3563
 msgid "There was an error creating the folder \"%B\"."
 msgstr "Дошло је до грешке приликом прављења фасцикле „%B“."
 
-#: libnemo-private/nemo-file-operations.c:3671
+#: libnemo-private/nemo-file-operations.c:3693
 msgid ""
 "Files in the folder \"%B\" cannot be copied because you do not have "
 "permissions to see them."
@@ -4371,87 +4376,87 @@ msgstr ""
 "Датотеке у фасцикли „%B“ не могу бити умножене зато што немате овлашћења за "
 "њихово приказивање."
 
-#: libnemo-private/nemo-file-operations.c:3716
+#: libnemo-private/nemo-file-operations.c:3738
 msgid ""
 "The folder \"%B\" cannot be copied because you do not have permissions to "
 "read it."
 msgstr ""
 "Фасцикла „%B“ не може бити умножена зато што немате овлашћења за њено читање."
 
-#: libnemo-private/nemo-file-operations.c:3761
-#: libnemo-private/nemo-file-operations.c:4454
-#: libnemo-private/nemo-file-operations.c:5063
+#: libnemo-private/nemo-file-operations.c:3783
+#: libnemo-private/nemo-file-operations.c:4476
+#: libnemo-private/nemo-file-operations.c:5085
 msgid "Error while moving \"%B\"."
 msgstr "Грешка приликом премештања „%B“."
 
-#: libnemo-private/nemo-file-operations.c:3762
+#: libnemo-private/nemo-file-operations.c:3784
 msgid "Could not remove the source folder."
 msgstr "Не могу уклонити изворну фасциклу."
 
-#: libnemo-private/nemo-file-operations.c:3847
-#: libnemo-private/nemo-file-operations.c:3888
-#: libnemo-private/nemo-file-operations.c:4456
-#: libnemo-private/nemo-file-operations.c:4527
+#: libnemo-private/nemo-file-operations.c:3869
+#: libnemo-private/nemo-file-operations.c:3910
+#: libnemo-private/nemo-file-operations.c:4478
+#: libnemo-private/nemo-file-operations.c:4549
 msgid "Error while copying \"%B\"."
 msgstr "Грешка приликом умножавања „%B“."
 
-#: libnemo-private/nemo-file-operations.c:3848
+#: libnemo-private/nemo-file-operations.c:3870
 #, c-format
 msgid "Could not remove files from the already existing folder %F."
 msgstr "Не могу уклонити датотеке из већ постојеће фасцикле „%F“."
 
-#: libnemo-private/nemo-file-operations.c:3889
+#: libnemo-private/nemo-file-operations.c:3911
 #, c-format
 msgid "Could not remove the already existing file %F."
 msgstr "Не могу уклонити постојећу датотеку „%F“."
 
-#: libnemo-private/nemo-file-operations.c:4209
-#: libnemo-private/nemo-file-operations.c:4908
+#: libnemo-private/nemo-file-operations.c:4231
+#: libnemo-private/nemo-file-operations.c:4930
 msgid "You cannot move a folder into itself."
 msgstr "Не могу преместити фасциклу у себе саму."
 
-#: libnemo-private/nemo-file-operations.c:4210
-#: libnemo-private/nemo-file-operations.c:4909
+#: libnemo-private/nemo-file-operations.c:4232
+#: libnemo-private/nemo-file-operations.c:4931
 msgid "You cannot copy a folder into itself."
 msgstr "Не могу умножити фасциклу у себе саму."
 
-#: libnemo-private/nemo-file-operations.c:4211
-#: libnemo-private/nemo-file-operations.c:4910
+#: libnemo-private/nemo-file-operations.c:4233
+#: libnemo-private/nemo-file-operations.c:4932
 msgid "The destination folder is inside the source folder."
 msgstr "Одредишна фасцикла је унутар полазне фасцикле."
 
-#: libnemo-private/nemo-file-operations.c:4242
+#: libnemo-private/nemo-file-operations.c:4264
 msgid "You cannot move a file over itself."
 msgstr "Не могу преместити датотеку преко исте датотеке."
 
-#: libnemo-private/nemo-file-operations.c:4243
+#: libnemo-private/nemo-file-operations.c:4265
 msgid "You cannot copy a file over itself."
 msgstr "Не могу умножити датотеку преко исте датотеке."
 
-#: libnemo-private/nemo-file-operations.c:4244
+#: libnemo-private/nemo-file-operations.c:4266
 msgid "The source file would be overwritten by the destination."
 msgstr "Изворна датотека биће замењена одредишном."
 
-#: libnemo-private/nemo-file-operations.c:4458
+#: libnemo-private/nemo-file-operations.c:4480
 #, c-format
 msgid "Could not remove the already existing file with the same name in %F."
 msgstr "Не могу уклонити постојећу датотеку са истим називом у „%F“."
 
-#: libnemo-private/nemo-file-operations.c:4528
+#: libnemo-private/nemo-file-operations.c:4550
 #, c-format
 msgid "There was an error copying the file into %F."
 msgstr "Дошло је до грешке при умножавању датотеке у „%F“."
 
-#: libnemo-private/nemo-file-operations.c:4760
-#: libnemo-private/nemo-file-operations.c:4792
+#: libnemo-private/nemo-file-operations.c:4782
+#: libnemo-private/nemo-file-operations.c:4814
 msgid "Copying Files"
 msgstr "Умножавам датотеке"
 
-#: libnemo-private/nemo-file-operations.c:4818
+#: libnemo-private/nemo-file-operations.c:4840
 msgid "Preparing to Move to \"%B\""
 msgstr "Припремам за премештање у „%B“"
 
-#: libnemo-private/nemo-file-operations.c:4822
+#: libnemo-private/nemo-file-operations.c:4844
 #, c-format
 msgid "Preparing to move %'d file"
 msgid_plural "Preparing to move %'d files"
@@ -4459,20 +4464,20 @@ msgstr[0] "Припремам за премештање %'d датотеку"
 msgstr[1] "Припремам за премештање %'d датотеке"
 msgstr[2] "Припремам за премештање %'d датотека"
 
-#: libnemo-private/nemo-file-operations.c:5064
+#: libnemo-private/nemo-file-operations.c:5086
 #, c-format
 msgid "There was an error moving the file into %F."
 msgstr "Дошло је до грешке при премештању у „%F“."
 
-#: libnemo-private/nemo-file-operations.c:5326
+#: libnemo-private/nemo-file-operations.c:5348
 msgid "Moving Files"
 msgstr "Премештам датотеке"
 
-#: libnemo-private/nemo-file-operations.c:5359
+#: libnemo-private/nemo-file-operations.c:5381
 msgid "Creating links in \"%B\""
 msgstr "Правим везе у „%B“"
 
-#: libnemo-private/nemo-file-operations.c:5363
+#: libnemo-private/nemo-file-operations.c:5385
 #, c-format
 msgid "Making link to %'d file"
 msgid_plural "Making links to %'d files"
@@ -4480,61 +4485,63 @@ msgstr[0] "Правим везу ка %'d датотеци"
 msgstr[1] "Правим везе ка %'d датотеке"
 msgstr[2] "Правим везе ка %'d датотека"
 
-#: libnemo-private/nemo-file-operations.c:5498
+#: libnemo-private/nemo-file-operations.c:5520
 msgid "Error while creating link to %B."
 msgstr "Грешка при прављењу везе ка „%B“."
 
-#: libnemo-private/nemo-file-operations.c:5500
+#: libnemo-private/nemo-file-operations.c:5522
 msgid "Symbolic links only supported for local files"
 msgstr "Симболичке везе су могуће само над локалним датотекама"
 
-#: libnemo-private/nemo-file-operations.c:5503
+#: libnemo-private/nemo-file-operations.c:5525
 msgid "The target doesn't support symbolic links."
 msgstr "Одредиште не подржава симболичке везе."
 
-#: libnemo-private/nemo-file-operations.c:5506
+#: libnemo-private/nemo-file-operations.c:5528
 #, c-format
 msgid "There was an error creating the symlink in %F."
 msgstr "Дошло је до грешке при стварању симболичке везе у „%F“."
 
-#: libnemo-private/nemo-file-operations.c:5823
+#: libnemo-private/nemo-file-operations.c:5845
 msgid "Setting permissions"
 msgstr "Постављам овлашћења"
 
-#: libnemo-private/nemo-file-operations.c:6086
+#: libnemo-private/nemo-file-operations.c:6108
 msgid "Untitled Folder"
 msgstr "Неименована фасцикла"
 
-#: libnemo-private/nemo-file-operations.c:6092
+#: libnemo-private/nemo-file-operations.c:6114
 #, c-format
 msgid "Untitled %s"
 msgstr "Неименовано „%s“"
 
-#: libnemo-private/nemo-file-operations.c:6098
+#: libnemo-private/nemo-file-operations.c:6120
 msgid "Untitled Document"
 msgstr "Неименовани документ"
 
-#: libnemo-private/nemo-file-operations.c:6276
+#: libnemo-private/nemo-file-operations.c:6298
 msgid "Error while creating directory %B."
 msgstr "Грешка приликом стварања фасцикле „%B“."
 
-#: libnemo-private/nemo-file-operations.c:6278
+#: libnemo-private/nemo-file-operations.c:6300
 msgid "Error while creating file %B."
 msgstr "Грешка при стварању датотеке „%B“."
 
-#: libnemo-private/nemo-file-operations.c:6280
+#: libnemo-private/nemo-file-operations.c:6302
 #, c-format
 msgid "There was an error creating the directory in %F."
 msgstr "Дошло је до грешке приликом стварања фасцикле у „%F“."
 
-#: libnemo-private/nemo-file-operations.c:6535
+#: libnemo-private/nemo-file-operations.c:6533
+#: libnemo-private/nemo-file-operations.c:6534
+#: libnemo-private/nemo-file-operations.c:6567
 msgid "Emptying Trash"
 msgstr "Празним смеће"
 
-#: libnemo-private/nemo-file-operations.c:6581
-#: libnemo-private/nemo-file-operations.c:6622
-#: libnemo-private/nemo-file-operations.c:6657
-#: libnemo-private/nemo-file-operations.c:6692
+#: libnemo-private/nemo-file-operations.c:6613
+#: libnemo-private/nemo-file-operations.c:6654
+#: libnemo-private/nemo-file-operations.c:6689
+#: libnemo-private/nemo-file-operations.c:6724
 msgid "Unable to mark launcher trusted (executable)"
 msgstr "Не могу да означим покретач поверљивим (извршним)"
 
@@ -4899,16 +4906,16 @@ msgstr "_Опозови промену власника"
 msgid "_Redo Change Owner"
 msgstr "_Понови промену власника"
 
-#: libnemo-private/nemo-file-utilities.c:1267
+#: libnemo-private/nemo-file-utilities.c:1344
 #, c-format
 msgid "Could not determine original location of \"%s\" "
 msgstr "Не могу утврдити изворну локацију за „%s“ "
 
-#: libnemo-private/nemo-file-utilities.c:1271
+#: libnemo-private/nemo-file-utilities.c:1348
 msgid "The item cannot be restored from trash"
 msgstr "Не могу вратити ставку из смећа"
 
-#: libnemo-private/nemo-icon-container.c:2737
+#: libnemo-private/nemo-icon-container.c:2742
 msgid "The selection rectangle"
 msgstr "Правоугаоник избора"
 
@@ -5104,15 +5111,15 @@ msgid ""
 "The position of the opposite end of the selection from the cursor in chars."
 msgstr "Положај супротног краја избора као број знакова од показивача."
 
-#: eel/eel-editable-label.c:3093
+#: eel/eel-editable-label.c:3090
 msgid "Select All"
 msgstr "Изабери све"
 
-#: eel/eel-editable-label.c:3104
+#: eel/eel-editable-label.c:3101
 msgid "Input Methods"
 msgstr "Начини уноса"
 
-#: eel/eel-gtk-extensions.c:404
+#: eel/eel-gtk-extensions.c:327
 msgid "Show more _details"
 msgstr "Прикажи више _појединости"
 
@@ -5123,6 +5130,79 @@ msgstr "Можете зауставити ову радњу кликом на �
 #: eel/eel-vfs-extensions.c:99
 msgid " (invalid Unicode)"
 msgstr " (неисправан Уникод)"
+
+#: data/action_i18n_strings.py:8
+msgid "Add Desklets"
+msgstr "Додај справице"
+
+#: data/action_i18n_strings.py:9
+msgid "Add Cinamon desklets"
+msgstr "Додајте Циметове справице на радну површ"
+
+#: data/action_i18n_strings.py:10
+msgid "Set as Wallpaper..."
+msgstr "Постави као позадину..."
+
+#: data/action_i18n_strings.py:11
+msgid "Set the selected image as your Cinnamon desktop wallpaper"
+msgstr "Поставите изабрану слику за позадину радне површи"
+
+#: data/action_i18n_strings.py:12
+msgid "Change Desktop _Background"
+msgstr "Из_мени позадину"
+
+#: data/action_i18n_strings.py:13
+msgid "Change the Cinnamon desktop background"
+msgstr "Измените позадину радне површи"
+
+#: data/action_i18n_strings.py:14
+msgid "Create a new l_auncher here..."
+msgstr "Овде направи нови _покретач..."
+
+#: data/action_i18n_strings.py:15
+msgid "Create a new launcher in this folder"
+msgstr "Направи нови покретач у овој фасцикли"
+
+#: data/action_i18n_strings.py:16
+msgid "Manage workspaces (Expo)"
+msgstr "Управљај радним просторима (експо)"
+
+#: data/action_i18n_strings.py:17
+msgid "Open Expo to add, remove, or organize workspaces"
+msgstr "Отворите експо да додате, уклоните или уредите радне просторе"
+
+#: data/action_i18n_strings.py:18
+msgid "Mount archive"
+msgstr "Прикачи архиву"
+
+#: data/action_i18n_strings.py:19
+#, python-format
+msgid "Mount %f to browse its contents"
+msgstr "Прикачите „%f“ да бисте видели садржај"
+
+#: data/action_i18n_strings.py:20
+msgid "Jump to new workspace"
+msgstr "Пређи у нови радни простор"
+
+#: data/action_i18n_strings.py:21
+msgid "Create a new workspace and activate it"
+msgstr "Направите нови радни простор и активирајте га"
+
+#: data/action_i18n_strings.py:22
+msgid "Desktop _Settings"
+msgstr ""
+
+#: data/action_i18n_strings.py:23
+msgid "Change how your desktop works"
+msgstr ""
+
+#: data/action_i18n_strings.py:24
+msgid "Remove workspace"
+msgstr "Уклони радни простор"
+
+#: data/action_i18n_strings.py:25
+msgid "Remove the currently active workspace"
+msgstr "Уклоните тренутно активан радни простор"
 
 #: src/nemo-bookmarks-window.glade:8
 msgid "Edit Bookmarks"
@@ -5143,21 +5223,21 @@ msgstr "<b>_Путања</b>"
 #: src/nemo-file-management-properties.glade:29
 #: src/nemo-file-management-properties.glade:182
 #: src/nemo-file-management-properties.glade:199
-#: src/nemo-file-management-properties.glade:3226
+#: src/nemo-file-management-properties.glade:3154
 msgid "Always"
 msgstr "Увек"
 
 #: src/nemo-file-management-properties.glade:32
 #: src/nemo-file-management-properties.glade:185
 #: src/nemo-file-management-properties.glade:202
-#: src/nemo-file-management-properties.glade:3229
+#: src/nemo-file-management-properties.glade:3157
 msgid "Local Files Only"
 msgstr "Само за локалне датотеке"
 
 #: src/nemo-file-management-properties.glade:35
 #: src/nemo-file-management-properties.glade:188
 #: src/nemo-file-management-properties.glade:205
-#: src/nemo-file-management-properties.glade:3232
+#: src/nemo-file-management-properties.glade:3160
 msgid "Never"
 msgstr "Никад"
 
@@ -5291,187 +5371,175 @@ msgstr "8 GB"
 msgid "File Management Preferences"
 msgstr "Поставке за управљање датотекама"
 
-#: src/nemo-file-management-properties.glade:367
+#: src/nemo-file-management-properties.glade:370
 msgid "<b>Default View</b>"
 msgstr "<b>Подразумевани преглед</b>"
 
-#: src/nemo-file-management-properties.glade:397
+#: src/nemo-file-management-properties.glade:400
 msgid "View _new folders using:"
 msgstr "За _нове фасцикле користи:"
 
-#: src/nemo-file-management-properties.glade:442
+#: src/nemo-file-management-properties.glade:445
 msgid "_Arrange items:"
 msgstr "_Поређај ставке:"
 
-#: src/nemo-file-management-properties.glade:479
+#: src/nemo-file-management-properties.glade:482
 msgid "Sort _folders before files"
 msgstr "Поређај _фасцикле пре датотека"
 
-#: src/nemo-file-management-properties.glade:532
+#: src/nemo-file-management-properties.glade:535
 msgid "<b>Icon View Defaults</b>"
 msgstr "<b>Подразумеване вредности за преглед иконицама</b>"
 
-#: src/nemo-file-management-properties.glade:562
+#: src/nemo-file-management-properties.glade:565
 msgid "Default _zoom level:"
 msgstr "П_одразумевано увећање:"
 
-#: src/nemo-file-management-properties.glade:599
+#: src/nemo-file-management-properties.glade:602
 msgid "_Text beside icons"
 msgstr "_Текст поред иконица"
 
-#: src/nemo-file-management-properties.glade:615
+#: src/nemo-file-management-properties.glade:618
 msgid "_Use compact layout"
 msgstr "_Користи збијени распоред"
 
-#: src/nemo-file-management-properties.glade:668
+#: src/nemo-file-management-properties.glade:671
 msgid "<b>Compact View Defaults</b>"
 msgstr "<b>Подразумеване вредности за збијени преглед</b>"
 
-#: src/nemo-file-management-properties.glade:698
+#: src/nemo-file-management-properties.glade:701
 msgid "_Default zoom level:"
 msgstr "_Подразумевано увећање:"
 
-#: src/nemo-file-management-properties.glade:735
+#: src/nemo-file-management-properties.glade:738
 msgid "A_ll columns have the same width"
 msgstr "_Све колоне су исте ширине"
 
-#: src/nemo-file-management-properties.glade:788
+#: src/nemo-file-management-properties.glade:791
 msgid "<b>List View Defaults</b>"
 msgstr "<b>Подразумеване вредности за преглед списком</b>"
 
-#: src/nemo-file-management-properties.glade:818
+#: src/nemo-file-management-properties.glade:821
 msgid "D_efault zoom level:"
 msgstr "_Подразумевано увећање:"
 
-#: src/nemo-file-management-properties.glade:892
+#: src/nemo-file-management-properties.glade:895
 msgid "<b>Tree View Defaults</b>"
 msgstr "<b>Подразумеване вредности за преглед стаблом</b>"
 
-#: src/nemo-file-management-properties.glade:914
+#: src/nemo-file-management-properties.glade:917
 msgid "Show _only folders"
 msgstr "Прикажи _само фасцикле"
 
-#: src/nemo-file-management-properties.glade:951
+#: src/nemo-file-management-properties.glade:954
 msgid "Views"
 msgstr "Прегледи"
 
-#: src/nemo-file-management-properties.glade:979
+#: src/nemo-file-management-properties.glade:982
 msgid "<b>Behavior</b>"
 msgstr "<b>Понашање</b>"
 
-#: src/nemo-file-management-properties.glade:1000
+#: src/nemo-file-management-properties.glade:1003
 msgid "_Single click to open items"
 msgstr "_Један клик отвара ставке"
 
-#: src/nemo-file-management-properties.glade:1017
+#: src/nemo-file-management-properties.glade:1020
 msgid "_Double click to open items"
 msgstr "_Два клика отварају ставке"
 
-#: src/nemo-file-management-properties.glade:1035
+#: src/nemo-file-management-properties.glade:1038
 msgid "Click twice with a pause in between to rename items"
 msgstr "Кликните два пута са задршком да преименујете ставке"
 
-#: src/nemo-file-management-properties.glade:1052
+#: src/nemo-file-management-properties.glade:1055
 msgid "Open each _folder in its own window"
 msgstr "Отварај _фасцикле у засебним прозорима"
 
-#: src/nemo-file-management-properties.glade:1069
+#: src/nemo-file-management-properties.glade:1072
 msgid "Always start in dual-pane view"
 msgstr "Увек покрени преглед у двојном окну"
 
-#: src/nemo-file-management-properties.glade:1086
+#: src/nemo-file-management-properties.glade:1089
 msgid "Ignore per-folder view preferences"
 msgstr "Занемари поставке прегледа за појединачне фасцикле"
 
-#: src/nemo-file-management-properties.glade:1103
+#: src/nemo-file-management-properties.glade:1106
 msgid "Disable file operation queueing"
 msgstr "Искључи стављање у ред радњи над датотекама"
 
-#: src/nemo-file-management-properties.glade:1157
+#: src/nemo-file-management-properties.glade:1160
 msgid "<b>Executable Text Files</b>"
 msgstr "<b>Извршне текстуалне датотеке</b>"
 
-#: src/nemo-file-management-properties.glade:1179
+#: src/nemo-file-management-properties.glade:1182
 msgid "_Run executable text files when they are opened"
 msgstr "_Покрени извршне текстуалне датотеке при отварању"
 
-#: src/nemo-file-management-properties.glade:1196
+#: src/nemo-file-management-properties.glade:1199
 msgid "_View executable text files when they are opened"
 msgstr "_Прегледај извршне текстуалне датотеке при отварању"
 
-#: src/nemo-file-management-properties.glade:1213
+#: src/nemo-file-management-properties.glade:1216
 msgid "_Ask each time"
 msgstr "_Питај сваки пут"
 
-#: src/nemo-file-management-properties.glade:1267
+#: src/nemo-file-management-properties.glade:1270
 msgid "<b>Trash</b>"
 msgstr "<b>Смеће</b>"
 
-#: src/nemo-file-management-properties.glade:1289
+#: src/nemo-file-management-properties.glade:1292
 msgid "Ask before _emptying the Trash or deleting files"
 msgstr "Питај пре _пражњења смећа или брисања датотека"
 
-#: src/nemo-file-management-properties.glade:1305
+#: src/nemo-file-management-properties.glade:1308
 msgid "I_nclude a Delete command that bypasses Trash"
 msgstr "_Укључи и наредбу за брисање која заобилази смеће"
 
-#: src/nemo-file-management-properties.glade:1321
+#: src/nemo-file-management-properties.glade:1324
 msgid "Bypass the Trash when the Delete key is pressed"
 msgstr "Заобиђи смеће када се притисне тастер „Избриши“"
 
-#: src/nemo-file-management-properties.glade:1373
+#: src/nemo-file-management-properties.glade:1376
 msgid "<b>Media Handling</b>"
 msgstr "<b>Управљање медијумима</b>"
 
-#: src/nemo-file-management-properties.glade:1395
+#: src/nemo-file-management-properties.glade:1398
 msgid "Automatically mount removeable media when inserted and on startup"
 msgstr "Сам прикачи измењиви медиј када се убаци и приликом покретања"
 
-#: src/nemo-file-management-properties.glade:1411
+#: src/nemo-file-management-properties.glade:1414
 msgid "Automatically open a folder for automounted media"
 msgstr "Сам отвори фасциклу за аутоматски прикачени медиј"
 
-#: src/nemo-file-management-properties.glade:1427
+#: src/nemo-file-management-properties.glade:1430
 msgid "Prompt or autorun/autostart programs when media are inserted"
 msgstr ""
 "Постави упит или аутоматски изврши/покрени програм приликом убацивања медија"
 
-#: src/nemo-file-management-properties.glade:1443
+#: src/nemo-file-management-properties.glade:1446
 msgid ""
 "Automatically close the device's tab, pane, or window when a device is "
 "unmounted or ejected"
 msgstr ""
 "Сам затвори лист уређаја, окно или прозор када је уређај откачен или избачен"
 
-#: src/nemo-file-management-properties.glade:1496
+#: src/nemo-file-management-properties.glade:1499
 msgid "<b>Bulk Rename</b>"
 msgstr "<b>Групно преименовање</b>"
 
-#: src/nemo-file-management-properties.glade:1526
+#: src/nemo-file-management-properties.glade:1529
 msgid "Command to invoke when renaming multiple items:"
 msgstr "Наредба за преименовање више ставки:"
 
-#: src/nemo-file-management-properties.glade:1578
+#: src/nemo-file-management-properties.glade:1581
 msgid "Behavior"
 msgstr "Понашање"
 
-#: src/nemo-file-management-properties.glade:1606
-msgid "<b>Context Menus</b>"
-msgstr "<b>Приручни изборници</b>"
-
-#: src/nemo-file-management-properties.glade:1628
-msgid ""
-"Show all available actions in context menus (restart Nemo if you change this "
-"option)"
-msgstr ""
-"Прикажи све доступне радње у приручним изборницима (поново покрените Немо "
-"ако измените ово)"
-
-#: src/nemo-file-management-properties.glade:1681
+#: src/nemo-file-management-properties.glade:1609
 msgid "<b>Icon Captions</b>"
 msgstr "<b>Натписи иконица</b>"
 
-#: src/nemo-file-management-properties.glade:1706
+#: src/nemo-file-management-properties.glade:1634
 msgid ""
 "Choose the order of information to appear beneath icon names. More "
 "information will appear when zooming in closer."
@@ -5479,111 +5547,111 @@ msgstr ""
 "Изаберите редослед података који се појављују испод назива иконица. Више "
 "података биће приказано када увећате."
 
-#: src/nemo-file-management-properties.glade:1857
+#: src/nemo-file-management-properties.glade:1785
 msgid "<b>Date</b>"
 msgstr "<b>Датум</b>"
 
-#: src/nemo-file-management-properties.glade:1880
+#: src/nemo-file-management-properties.glade:1808
 msgid "_Format:"
 msgstr "_Формат:"
 
-#: src/nemo-file-management-properties.glade:1940
+#: src/nemo-file-management-properties.glade:1868
 msgid "<b>Window and Tab Titles</b>"
 msgstr "<b>Наслови прозора и листова</b>"
 
-#: src/nemo-file-management-properties.glade:1962
+#: src/nemo-file-management-properties.glade:1890
 msgid "Show the full p_ath in the title bar and tab bars"
 msgstr "Прикажи пуну _путању у траци наслова и тракама листова"
 
-#: src/nemo-file-management-properties.glade:2015
+#: src/nemo-file-management-properties.glade:1943
 msgid "<b>File Size</b>"
 msgstr "<b>Величина датотеке</b>"
 
-#: src/nemo-file-management-properties.glade:2038
+#: src/nemo-file-management-properties.glade:1966
 msgid "_Prefixes:"
 msgstr "_Префикси:"
 
-#: src/nemo-file-management-properties.glade:2105
+#: src/nemo-file-management-properties.glade:2033
 msgid "<b>File Properties</b>"
 msgstr "<b>Својства датотеке</b>"
 
-#: src/nemo-file-management-properties.glade:2127
+#: src/nemo-file-management-properties.glade:2055
 msgid "Show advanced permissions in the file property dialog"
 msgstr "Прикажи напредна овлашћења у прозорчету својстава датотеке"
 
-#: src/nemo-file-management-properties.glade:2180
+#: src/nemo-file-management-properties.glade:2108
 msgid "<b>Move/Copy To Menu</b>"
 msgstr "<b>Премештање и умножавање у изборнику</b>"
 
-#: src/nemo-file-management-properties.glade:2202
+#: src/nemo-file-management-properties.glade:2130
 msgid "List bookmarks in the menu"
 msgstr "Прикажи списак забелешки у изборнику"
 
-#: src/nemo-file-management-properties.glade:2218
+#: src/nemo-file-management-properties.glade:2146
 msgid "List devices and network locations in the menu"
 msgstr "Прикажи списак уређаја и мрежних места у изборнику"
 
-#: src/nemo-file-management-properties.glade:2255
+#: src/nemo-file-management-properties.glade:2183
 msgid "Display"
 msgstr "Приказ"
 
-#: src/nemo-file-management-properties.glade:2284
+#: src/nemo-file-management-properties.glade:2212
 msgid "<b>List Columns</b>"
 msgstr "<b>Колоне списка</b>"
 
-#: src/nemo-file-management-properties.glade:2309
+#: src/nemo-file-management-properties.glade:2237
 msgid "Choose the order of information to appear in the list view."
 msgstr "Изаберите редослед података приликом прегледа списком."
 
-#: src/nemo-file-management-properties.glade:2344
+#: src/nemo-file-management-properties.glade:2272
 msgid "List Columns"
 msgstr "Колоне списка"
 
-#: src/nemo-file-management-properties.glade:2372
+#: src/nemo-file-management-properties.glade:2300
 msgid "<b>Text Files</b>"
 msgstr "<b>Текстуалне датотеке</b>"
 
-#: src/nemo-file-management-properties.glade:2402
+#: src/nemo-file-management-properties.glade:2330
 msgid "Show te_xt in icons:"
 msgstr "Прикажи _текст у иконицама:"
 
-#: src/nemo-file-management-properties.glade:2476
+#: src/nemo-file-management-properties.glade:2404
 msgid "<b>Other Previewable Files</b>"
 msgstr "<b>Остале датотеке за преглед</b>"
 
-#: src/nemo-file-management-properties.glade:2506
+#: src/nemo-file-management-properties.glade:2434
 msgid "Show _thumbnails:"
 msgstr "Прикажи _сличице:"
 
-#: src/nemo-file-management-properties.glade:2551
+#: src/nemo-file-management-properties.glade:2479
 msgid "_Only for files smaller than:"
 msgstr "_Само за датотеке мање од:"
 
-#: src/nemo-file-management-properties.glade:2625
+#: src/nemo-file-management-properties.glade:2553
 msgid "<b>Folders</b>"
 msgstr "<b>Фасцикле</b>"
 
-#: src/nemo-file-management-properties.glade:2655
+#: src/nemo-file-management-properties.glade:2583
 msgid "Count _number of items:"
 msgstr "Пре_број ставке:"
 
-#: src/nemo-file-management-properties.glade:2729
+#: src/nemo-file-management-properties.glade:2657
 msgid "<b>Tooltips</b>"
 msgstr "<b>Облачићи</b>"
 
-#: src/nemo-file-management-properties.glade:2751
+#: src/nemo-file-management-properties.glade:2679
 msgid "Show tooltips in icon and compact views"
 msgstr "Прикажи облачиће у прегледу иконицама и збијеном прегледу"
 
-#: src/nemo-file-management-properties.glade:2768
+#: src/nemo-file-management-properties.glade:2696
 msgid "Show tooltips in list views"
 msgstr "Прикажи облачиће у прегледу списком"
 
-#: src/nemo-file-management-properties.glade:2785
+#: src/nemo-file-management-properties.glade:2713
 msgid "Show tooltips on the desktop"
 msgstr "Прикажи облачиће на радној површи"
 
-#: src/nemo-file-management-properties.glade:2805
+#: src/nemo-file-management-properties.glade:2733
 msgid ""
 "<i>By default, a folder tooltip shows the item count, and files display "
 "their size.\n"
@@ -5593,147 +5661,82 @@ msgstr ""
 "приказује њену величину.\n"
 "    Изаберите додатне податке који ће се приказивати у облачићу:</i>"
 
-#: src/nemo-file-management-properties.glade:2829
+#: src/nemo-file-management-properties.glade:2757
 msgid "Detailed file type"
 msgstr "Опширно о врсти датотеке"
 
-#: src/nemo-file-management-properties.glade:2844
+#: src/nemo-file-management-properties.glade:2772
 msgid "Accessed date"
 msgstr "Датум приступа"
 
-#: src/nemo-file-management-properties.glade:2860
+#: src/nemo-file-management-properties.glade:2788
 msgid "Modified date"
 msgstr "Датум измене"
 
-#: src/nemo-file-management-properties.glade:2875
+#: src/nemo-file-management-properties.glade:2803
 msgid "File or folder location"
 msgstr "Место датотеке или фасцикле"
 
-#: src/nemo-file-management-properties.glade:2921
+#: src/nemo-file-management-properties.glade:2849
 msgid "Preview"
 msgstr "Преглед"
 
-#: src/nemo-file-management-properties.glade:2949
+#: src/nemo-file-management-properties.glade:2877
 msgid "<b>Options</b>"
 msgstr "<b>Могућности</b>"
 
-#: src/nemo-file-management-properties.glade:2971
+#: src/nemo-file-management-properties.glade:2899
 msgid "Show previous button"
 msgstr "Прикажи дугме за претходно"
 
-#: src/nemo-file-management-properties.glade:2988
+#: src/nemo-file-management-properties.glade:2916
 msgid "Show next button"
 msgstr "Прикажи дугме за следеће"
 
-#: src/nemo-file-management-properties.glade:3004
+#: src/nemo-file-management-properties.glade:2932
 msgid "Show up button"
 msgstr "Прикажи дугме за горе"
 
-#: src/nemo-file-management-properties.glade:3020
+#: src/nemo-file-management-properties.glade:2948
 msgid "Show refresh button"
 msgstr "Прикажи дугме за освежење"
 
-#: src/nemo-file-management-properties.glade:3036
+#: src/nemo-file-management-properties.glade:2964
 msgid "Show computer button"
 msgstr "Прикажи дугме за рачунар"
 
-#: src/nemo-file-management-properties.glade:3052
+#: src/nemo-file-management-properties.glade:2980
 msgid "Show home button"
 msgstr "Прикажи дугме за личну фасциклу"
 
-#: src/nemo-file-management-properties.glade:3068
+#: src/nemo-file-management-properties.glade:2996
 msgid "Show location entry/breadcrumbs toggle button"
 msgstr "Прикажи дугме за промену уноса места/путање навигације"
 
-#: src/nemo-file-management-properties.glade:3084
+#: src/nemo-file-management-properties.glade:3012
 msgid "Show open in terminal button"
 msgstr "Прикажи дугме за отварање у терминалу"
 
-#: src/nemo-file-management-properties.glade:3100
+#: src/nemo-file-management-properties.glade:3028
 msgid "Show new folder button"
 msgstr "Прикажи дугме за нову фасциклу"
 
-#: src/nemo-file-management-properties.glade:3116
+#: src/nemo-file-management-properties.glade:3044
 msgid "Show search button"
 msgstr "Прикажи дугме за претрагу"
 
-#: src/nemo-file-management-properties.glade:3132
+#: src/nemo-file-management-properties.glade:3060
 msgid "Show icon view button"
 msgstr "Прикажи дугме за преглед иконицама"
 
-#: src/nemo-file-management-properties.glade:3148
+#: src/nemo-file-management-properties.glade:3076
 msgid "Show list view button"
 msgstr "Прикажи дугме за преглед списком"
 
-#: src/nemo-file-management-properties.glade:3164
+#: src/nemo-file-management-properties.glade:3092
 msgid "Show compact view button"
 msgstr "Прикажи дугме за збијени преглед"
 
-#: src/nemo-file-management-properties.glade:3201
+#: src/nemo-file-management-properties.glade:3129
 msgid "Toolbar"
 msgstr "Трака алата"
-
-#: data/action_i18n_strings.py:7
-msgid "Add Desklets"
-msgstr "Додај справице"
-
-#: data/action_i18n_strings.py:8
-msgid "Add Cinamon desklets"
-msgstr "Додајте Циметове справице на радну површ"
-
-#: data/action_i18n_strings.py:9
-msgid "Manage workspaces (Expo)"
-msgstr "Управљај радним просторима (експо)"
-
-#: data/action_i18n_strings.py:10
-msgid "Open Expo to add, remove, or organize workspaces"
-msgstr "Отворите експо да додате, уклоните или уредите радне просторе"
-
-#: data/action_i18n_strings.py:11
-msgid "Set as Wallpaper..."
-msgstr "Постави као позадину..."
-
-#: data/action_i18n_strings.py:12
-msgid "Set the selected image as your Cinnamon desktop wallpaper"
-msgstr "Поставите изабрану слику за позадину радне површи"
-
-#: data/action_i18n_strings.py:13
-msgid "Create a new l_auncher here..."
-msgstr "Овде направи нови _покретач..."
-
-#: data/action_i18n_strings.py:14
-msgid "Create a new launcher in this folder"
-msgstr "Направи нови покретач у овој фасцикли"
-
-#: data/action_i18n_strings.py:15
-msgid "Change Desktop _Background"
-msgstr "Из_мени позадину"
-
-#: data/action_i18n_strings.py:16
-msgid "Change the Cinnamon desktop background"
-msgstr "Измените позадину радне површи"
-
-#: data/action_i18n_strings.py:17
-msgid "Remove workspace"
-msgstr "Уклони радни простор"
-
-#: data/action_i18n_strings.py:18
-msgid "Remove the currently active workspace"
-msgstr "Уклоните тренутно активан радни простор"
-
-#: data/action_i18n_strings.py:19
-msgid "Jump to new workspace"
-msgstr "Пређи у нови радни простор"
-
-#: data/action_i18n_strings.py:20
-msgid "Create a new workspace and activate it"
-msgstr "Направите нови радни простор и активирајте га"
-
-#: data/action_i18n_strings.py:21
-msgid "Mount archive"
-msgstr "Прикачи архиву"
-
-#: data/action_i18n_strings.py:22
-#, python-format
-msgid "Mount %f to browse its contents"
-msgstr "Прикачите „%f“ да бисте видели садржај"
