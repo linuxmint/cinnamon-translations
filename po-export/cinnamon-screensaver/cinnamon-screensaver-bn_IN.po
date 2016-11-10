@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: "
 "http://bugzilla.gnome.org/enter_bug.cgi?product=cinnamon-"
 "screensaver&component=general\n"
-"POT-Creation-Date: 2015-05-19 17:24+0200\n"
+"POT-Creation-Date: 2016-09-23 22:51-0400\n"
 "PO-Revision-Date: 2013-08-26 12:23+0000\n"
 "Last-Translator: Launchpad Translations Administrators <Unknown>\n"
 "Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
@@ -19,164 +19,89 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Launchpad-Export-Date: 2016-06-25 09:30+0000\n"
-"X-Generator: Launchpad (build 18111)\n"
+"X-Launchpad-Export-Date: 2016-11-09 17:14+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 
-#: src/cinnamon-screensaver-command.c:274
+#: src/cinnamon-screensaver-command.py:34
+msgid "Causes the screensaver to exit gracefully"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:36
+msgid "Query the state of the screensaver"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:38
+msgid "Query the length of time the screensaver has been active"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:40
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:42
+msgid "Turn the screensaver on (blank the screen)"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:44
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:46
+msgid "Version of this application"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:48
+msgid "Message to be displayed in lock screen"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:77
 msgid "The screensaver is active\n"
 msgstr ""
 
-#: src/cinnamon-screensaver-command.c:276
+#: src/cinnamon-screensaver-command.py:79
 msgid "The screensaver is inactive\n"
 msgstr ""
 
-#: src/cinnamon-screensaver-command.c:306
-#, c-format
+#: src/cinnamon-screensaver-command.py:83
+#| msgid "The screensaver is not inhibited\n"
+msgid "The screensaver is not currently active.\n"
+msgstr "স্ক্রিন-সেভার বর্তমানে সক্রিয় নয়।\n"
+
+#: src/cinnamon-screensaver-command.py:85
+#, python-format
 msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/cinnamon-screensaver-command.c:308
-#| msgid "The screensaver is not inhibited\n"
-msgid "The screensaver is not currently active.\n"
-msgstr "স্ক্রিন-সেভার বর্তমানে সক্রিয় নয়।\n"
-
-#: src/cinnamon-screensaver-dialog.c:173 src/cinnamon-screensaver-dialog.c:174
-#: src/cinnamon-screensaver-dialog.c:175 src/gs-auth-pam.c:699
-msgid "Username:"
-msgstr "ব্যবহারকারী:"
-
-#: src/cinnamon-screensaver-dialog.c:176 src/cinnamon-screensaver-dialog.c:177
-#: src/gs-auth-pam.c:166
-msgid "Password:"
-msgstr "পাসওয়ার্ড:"
-
-#: src/cinnamon-screensaver-dialog.c:178
-msgid "You are required to change your password immediately (password aged)"
-msgstr ""
-"অবিলম্বে পাসওয়ার্ড পরিবর্তন করা আবশ্যক (পাসওয়ার্ডের মেয়াদ পূর্ণ হয়েছে)"
-
-#: src/cinnamon-screensaver-dialog.c:179
-msgid "You are required to change your password immediately (root enforced)"
-msgstr "অবিলম্বে পাসওয়ার্ড পরিবর্তন করা আবশ্যক (root দ্বারা বাধ্যতামূলক)"
-
-#: src/cinnamon-screensaver-dialog.c:180
-msgid "Your account has expired; please contact your system administrator"
-msgstr ""
-"আপনার অ্যাকাউন্টের ব্যবহারকালের মেয়াদ উত্তীর্ণ হয়েছে; অনুগ্রহ করে সিস্টেম "
-"অ্যাডমিনিস্ট্রেটরের সাথে যোগাযোগ করুন"
-
-#: src/cinnamon-screensaver-dialog.c:181
-msgid "No password supplied"
-msgstr "পাসওয়ার্ড উল্লেখ করা হয়নি"
-
-#: src/cinnamon-screensaver-dialog.c:182
-msgid "Password unchanged"
-msgstr "পাসওয়ার্ড পরিবর্তন করা হয়নি"
-
-#: src/cinnamon-screensaver-dialog.c:183
-msgid "Cannot get username"
-msgstr ""
-
-#: src/cinnamon-screensaver-dialog.c:184
-msgid "Retype new Unix password:"
-msgstr ""
-
-#: src/cinnamon-screensaver-dialog.c:185
-msgid "Enter new Unix password:"
-msgstr ""
-
-#: src/cinnamon-screensaver-dialog.c:186
-msgid "(current) Unix password:"
-msgstr ""
-
-#: src/cinnamon-screensaver-dialog.c:187
-msgid "Error while changing NIS password."
-msgstr "NIS পাসওয়ার্ড পরিবর্তন করতে ত্রুটি।"
-
-#: src/cinnamon-screensaver-dialog.c:188
-msgid "You must choose a longer password"
-msgstr "দীর্ঘ মাপের পাসওয়ার্ড নির্বাচন করা আবশ্যক"
-
-#: src/cinnamon-screensaver-dialog.c:189
-msgid "Password has been already used. Choose another."
-msgstr "এই পাসওয়ার্ড ব্যবহৃত হয়েছে। অনুগ্রহ করে একটি পৃথক পাসওয়ার্ড লিখুন।"
-
-#: src/cinnamon-screensaver-dialog.c:190
-msgid "You must wait longer to change your password"
-msgstr "পাসওয়ার্ড পরিবর্তনের জন্য আরো কিছু কাল অপেক্ষা করা আবশ্যক"
-
-#: src/cinnamon-screensaver-dialog.c:191
-msgid "Sorry, passwords do not match"
-msgstr "দুঃখিত, পাসওয়ার্ডে গরমিল"
-
-#: src/cinnamon-screensaver-dialog.c:257
-msgid "Checking…"
-msgstr ""
-
-#: src/cinnamon-screensaver-dialog.c:299 src/gs-auth-pam.c:457
-msgid "Authentication failed."
-msgstr "অনুমোদন বিফল।"
-
-#: src/gnome-wall-clock.c:223
+#: src/clock.py:59
 msgid "%A, %B %e"
 msgstr ""
 
-#: src/gs-auth-pam.c:397
-#, c-format
-msgid "Unable to establish service %s: %s\n"
-msgstr "%s পরিসেবা নির্ধারণ করতে ব্যর্থ: %s\n"
+#: src/playerControl.py:158
+msgid "--:--"
+msgstr ""
 
-#: src/gs-auth-pam.c:423
-#, c-format
-msgid "Can't set PAM_TTY=%s"
-msgstr "PAM_TTY=%s নির্ধারণ করতে ব্যর্থ"
+#: src/playerControl.py:161
+msgid "%M:%S"
+msgstr ""
 
-#: src/gs-auth-pam.c:455
-msgid "Incorrect password."
-msgstr "পাসওয়ার্ড সঠিক নয়।"
+#: src/playerControl.py:163
+msgid "%H:%M:%S"
+msgstr ""
 
-#: src/gs-auth-pam.c:471
-msgid "Not permitted to gain access at this time."
-msgstr "এই মুহূর্তে ব্যবহারের অধিকার প্রাপ্ত করা যাবে না।"
+#: src/unlock.py:40 src/unlock.py:295
+msgid "Enter password..."
+msgstr ""
 
-#: src/gs-auth-pam.c:477
-msgid "No longer permitted to access the system."
-msgstr "সিস্টেম ব্যবহারের অধিকার উপস্থিত নেই।"
-
-#: src/gs-listener-dbus.c:1302
-msgid "failed to register with the message bus"
-msgstr "মেসেজ বাসের সাথে নিবন্ধন করতে ব্যর্থ"
-
-#: src/gs-listener-dbus.c:1312
-msgid "not connected to the message bus"
-msgstr "মেসেজ বাসের সাথে সংযুক্ত নয়"
-
-#: src/gs-listener-dbus.c:1321 src/gs-listener-dbus.c:1351
-msgid "screensaver already running in this session"
-msgstr "বর্তমান সেশানে স্ক্রিন-সেভার চলছে"
-
-#: src/gs-lock-plug.c:323
-msgid "Time has expired."
-msgstr "সময় অতিবাহিত হয়ে গেছে।"
-
-#: src/gs-lock-plug.c:354
+#: src/unlock.py:212
 msgid "You have the Caps Lock key on."
 msgstr "ক্যাপস-লক কি চালু আছে।"
 
-#: src/gs-lock-plug.c:1445
-msgid "S_witch User…"
+#: src/unlock.py:244
+msgid "Checking..."
 msgstr ""
 
-#: src/gs-lock-plug.c:1454
-msgid "Log _Out"
-msgstr "লগ আউট (_O)"
-
-#: src/gs-lock-plug.c:1461
-msgid "_Unlock"
-msgstr "আনলক (_U)"
-
-#: src/gs-lock-plug.c:1588
-msgid "_Password:"
-msgstr "পাসওয়ার্ড (_P):"
+#: src/unlock.py:296
+msgid "Password incorrect - try again."
+msgstr ""

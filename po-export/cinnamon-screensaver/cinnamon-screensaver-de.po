@@ -19,172 +19,98 @@ msgstr ""
 "Project-Id-Version: cinnamon-screensaver master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "screensaver&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-05-19 17:24+0200\n"
-"PO-Revision-Date: 2014-02-05 20:23+0000\n"
+"POT-Creation-Date: 2016-09-23 22:51-0400\n"
+"PO-Revision-Date: 2016-11-06 16:00+0000\n"
 "Last-Translator: Tobias Bannert <tobannert@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-06-25 09:30+0000\n"
-"X-Generator: Launchpad (build 18111)\n"
+"X-Launchpad-Export-Date: 2016-11-09 17:14+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 
-#: src/cinnamon-screensaver-command.c:274
+#: src/cinnamon-screensaver-command.py:34
+msgid "Causes the screensaver to exit gracefully"
+msgstr "Veranlasst den Bildschirmschoner sanft zu beenden"
+
+#: src/cinnamon-screensaver-command.py:36
+msgid "Query the state of the screensaver"
+msgstr "Den Status des Bildschirmschoners abfragen"
+
+#: src/cinnamon-screensaver-command.py:38
+msgid "Query the length of time the screensaver has been active"
+msgstr "Die Länge der Bildschirmschoneraktivität abfragen"
+
+#: src/cinnamon-screensaver-command.py:40
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr "Teilt dem laufenden Bildschirm mit, den Bildschirm sofort zu sperren"
+
+#: src/cinnamon-screensaver-command.py:42
+msgid "Turn the screensaver on (blank the screen)"
+msgstr "Den Bildschirmschoner aktivieren (Bildschirm abdunkeln)"
+
+#: src/cinnamon-screensaver-command.py:44
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr ""
+"Wenn der Bildschirmschoner aktiv ist, diesen deaktivieren (Abdunkelung "
+"aufheben)"
+
+#: src/cinnamon-screensaver-command.py:46
+msgid "Version of this application"
+msgstr "Version dieser Anwendung"
+
+#: src/cinnamon-screensaver-command.py:48
+msgid "Message to be displayed in lock screen"
+msgstr "Nachricht die auf dem Sperrbildschirm angezeigt wird"
+
+#: src/cinnamon-screensaver-command.py:77
 msgid "The screensaver is active\n"
 msgstr "Der Bildschirmschoner ist aktiv\n"
 
-#: src/cinnamon-screensaver-command.c:276
+#: src/cinnamon-screensaver-command.py:79
 msgid "The screensaver is inactive\n"
 msgstr "Der Bildschirmschoner ist inaktiv\n"
 
-#: src/cinnamon-screensaver-command.c:306
-#, c-format
+#: src/cinnamon-screensaver-command.py:83
+msgid "The screensaver is not currently active.\n"
+msgstr "Der Bildschirmschoner ist derzeit nicht aktiv.\n"
+
+#: src/cinnamon-screensaver-command.py:85
+#, python-format
 msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "Der Bildschirmschoner war für %d Sekunde aktiv.\n"
 msgstr[1] "Der Bildschirmschoner war für %d Sekunden aktiv.\n"
 
-#: src/cinnamon-screensaver-command.c:308
-msgid "The screensaver is not currently active.\n"
-msgstr "Der Bildschirmschoner ist derzeit nicht aktiv.\n"
-
-#: src/cinnamon-screensaver-dialog.c:173 src/cinnamon-screensaver-dialog.c:174
-#: src/cinnamon-screensaver-dialog.c:175 src/gs-auth-pam.c:699
-msgid "Username:"
-msgstr "Benutzername:"
-
-#: src/cinnamon-screensaver-dialog.c:176 src/cinnamon-screensaver-dialog.c:177
-#: src/gs-auth-pam.c:166
-msgid "Password:"
-msgstr "Passwort:"
-
-#: src/cinnamon-screensaver-dialog.c:178
-msgid "You are required to change your password immediately (password aged)"
-msgstr "Sie müssen Ihr Passwort sofort ändern (Passwort veraltet)"
-
-#: src/cinnamon-screensaver-dialog.c:179
-msgid "You are required to change your password immediately (root enforced)"
-msgstr ""
-"Sie müssen Ihr Passwort sofort ändern (durch Systemadministrator erzwungen)"
-
-#: src/cinnamon-screensaver-dialog.c:180
-msgid "Your account has expired; please contact your system administrator"
-msgstr ""
-"Ihr Benutzerkonto ist abgelaufen. Bitte kontaktieren Sie Ihren "
-"Systemadministrator."
-
-#: src/cinnamon-screensaver-dialog.c:181
-msgid "No password supplied"
-msgstr "Kein Passwort angegeben"
-
-#: src/cinnamon-screensaver-dialog.c:182
-msgid "Password unchanged"
-msgstr "Passwort ist unverändert"
-
-#: src/cinnamon-screensaver-dialog.c:183
-msgid "Cannot get username"
-msgstr "Benutzername konnte nicht ermittelt werden"
-
-#: src/cinnamon-screensaver-dialog.c:184
-msgid "Retype new Unix password:"
-msgstr "Neues UNIX-Passwort wiederholen:"
-
-#: src/cinnamon-screensaver-dialog.c:185
-msgid "Enter new Unix password:"
-msgstr "Neues UNIX-Passwort eingeben:"
-
-#: src/cinnamon-screensaver-dialog.c:186
-msgid "(current) Unix password:"
-msgstr "(Aktuelles) UNIX-Passwort:"
-
-#: src/cinnamon-screensaver-dialog.c:187
-msgid "Error while changing NIS password."
-msgstr "Beim Ändern des NIS-Passwortes ist ein Fehler aufgetreten."
-
-#: src/cinnamon-screensaver-dialog.c:188
-msgid "You must choose a longer password"
-msgstr "Sie müssen ein längeres Passwort wählen"
-
-#: src/cinnamon-screensaver-dialog.c:189
-msgid "Password has been already used. Choose another."
-msgstr ""
-"Dieses Passwort wurde bereits verwendet. Bitte wählen Sie ein anderes."
-
-#: src/cinnamon-screensaver-dialog.c:190
-msgid "You must wait longer to change your password"
-msgstr "Sie müssen länger warten, um Ihr Passwort zu ändern."
-
-#: src/cinnamon-screensaver-dialog.c:191
-msgid "Sorry, passwords do not match"
-msgstr "Entschuldigung, die Passwörter stimmen nicht überein"
-
-#: src/cinnamon-screensaver-dialog.c:257
-msgid "Checking…"
-msgstr "Überprüfung läuft …"
-
-#: src/cinnamon-screensaver-dialog.c:299 src/gs-auth-pam.c:457
-msgid "Authentication failed."
-msgstr "Legitimierung ist gescheitert."
-
-#: src/gnome-wall-clock.c:223
+#: src/clock.py:59
 msgid "%A, %B %e"
 msgstr "%A, %e. %B"
 
-#: src/gs-auth-pam.c:397
-#, c-format
-msgid "Unable to establish service %s: %s\n"
-msgstr "Dienst %s konnte nicht eingerichtet werden: %s\n"
+#: src/playerControl.py:158
+msgid "--:--"
+msgstr "--:--"
 
-#: src/gs-auth-pam.c:423
-#, c-format
-msgid "Can't set PAM_TTY=%s"
-msgstr "PAM_TTY=%s konnte nicht eingestellt werden"
+#: src/playerControl.py:161
+msgid "%M:%S"
+msgstr "%M:%S"
 
-#: src/gs-auth-pam.c:455
-msgid "Incorrect password."
-msgstr "Falsches Passwort."
+#: src/playerControl.py:163
+msgid "%H:%M:%S"
+msgstr "%H:%M:%S"
 
-#: src/gs-auth-pam.c:471
-msgid "Not permitted to gain access at this time."
-msgstr "Ein Zugriff ist derzeit nicht gestattet."
+#: src/unlock.py:40 src/unlock.py:295
+msgid "Enter password..."
+msgstr "Passwort eingeben …"
 
-#: src/gs-auth-pam.c:477
-msgid "No longer permitted to access the system."
-msgstr "Es ist nicht länger gestattet, auf das System zuzugreifen."
-
-#: src/gs-listener-dbus.c:1302
-msgid "failed to register with the message bus"
-msgstr "Registrierung am Benachrichtigungssystem fehlgeschlagen"
-
-#: src/gs-listener-dbus.c:1312
-msgid "not connected to the message bus"
-msgstr "Keine Verbindung zum Benachrichtigungssystem"
-
-#: src/gs-listener-dbus.c:1321 src/gs-listener-dbus.c:1351
-msgid "screensaver already running in this session"
-msgstr "Der Bildschirmschoner ist in dieser Sitzung bereits aktiv"
-
-#: src/gs-lock-plug.c:323
-msgid "Time has expired."
-msgstr "Die Zeit ist abgelaufen."
-
-#: src/gs-lock-plug.c:354
+#: src/unlock.py:212
 msgid "You have the Caps Lock key on."
 msgstr "Die Feststelltaste ist aktiviert."
 
-#: src/gs-lock-plug.c:1445
-msgid "S_witch User…"
-msgstr "Benutzer _wechseln …"
+#: src/unlock.py:244
+msgid "Checking..."
+msgstr "Überprüfung läuft …"
 
-#: src/gs-lock-plug.c:1454
-msgid "Log _Out"
-msgstr "A_bmelden"
-
-#: src/gs-lock-plug.c:1461
-msgid "_Unlock"
-msgstr "_Entsperren"
-
-#: src/gs-lock-plug.c:1588
-msgid "_Password:"
-msgstr "_Passwort:"
+#: src/unlock.py:296
+msgid "Password incorrect - try again."
+msgstr "Passwort ist falsch – bitte erneut versuchen."

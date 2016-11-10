@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-screensaver.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-19 17:24+0200\n"
+"POT-Creation-Date: 2016-09-23 22:51-0400\n"
 "PO-Revision-Date: 2014-04-22 14:34+0000\n"
 "Last-Translator: meequz <meequz@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
@@ -14,162 +14,90 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2016-06-25 09:30+0000\n"
-"X-Generator: Launchpad (build 18111)\n"
+"X-Launchpad-Export-Date: 2016-11-09 17:14+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 "Language: be\n"
 
-#: src/cinnamon-screensaver-command.c:274
+#: src/cinnamon-screensaver-command.py:34
+msgid "Causes the screensaver to exit gracefully"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:36
+msgid "Query the state of the screensaver"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:38
+msgid "Query the length of time the screensaver has been active"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:40
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:42
+msgid "Turn the screensaver on (blank the screen)"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:44
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:46
+msgid "Version of this application"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:48
+msgid "Message to be displayed in lock screen"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:77
 msgid "The screensaver is active\n"
 msgstr "Ахоўнік экрана актываваны\n"
 
-#: src/cinnamon-screensaver-command.c:276
+#: src/cinnamon-screensaver-command.py:79
 msgid "The screensaver is inactive\n"
 msgstr "Ахоўнік экрана не актываваны\n"
 
-#: src/cinnamon-screensaver-command.c:306
-#, c-format
+#: src/cinnamon-screensaver-command.py:83
+msgid "The screensaver is not currently active.\n"
+msgstr "Ахоўнік экрана не актываваны.\n"
+
+#: src/cinnamon-screensaver-command.py:85
+#, python-format
 msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "Ахоўнік экрана актываваны цягам %d секунды.\n"
 msgstr[1] "Ахоўнік экрана актываваны цягам %d секунд.\n"
 msgstr[2] "Ахоўнік экрана актываваны цягам %d секунд.\n"
 
-#: src/cinnamon-screensaver-command.c:308
-msgid "The screensaver is not currently active.\n"
-msgstr "Ахоўнік экрана не актываваны.\n"
-
-#: src/cinnamon-screensaver-dialog.c:173 src/cinnamon-screensaver-dialog.c:174
-#: src/cinnamon-screensaver-dialog.c:175 src/gs-auth-pam.c:699
-msgid "Username:"
-msgstr "Карыстальнік:"
-
-#: src/cinnamon-screensaver-dialog.c:176 src/cinnamon-screensaver-dialog.c:177
-#: src/gs-auth-pam.c:166
-msgid "Password:"
-msgstr "Пароль:"
-
-#: src/cinnamon-screensaver-dialog.c:178
-msgid "You are required to change your password immediately (password aged)"
-msgstr "Вы мусіце неадкладна змяніць свой пароль, бо ён састарэў"
-
-#: src/cinnamon-screensaver-dialog.c:179
-msgid "You are required to change your password immediately (root enforced)"
-msgstr "Вы мусіце неадкладна змяніць свой пароль, бо гэтак загадаў root"
-
-#: src/cinnamon-screensaver-dialog.c:180
-msgid "Your account has expired; please contact your system administrator"
-msgstr "Ваш конт састарэў. Звярніцеся да свайго сістэмнага адміністратара"
-
-#: src/cinnamon-screensaver-dialog.c:181
-msgid "No password supplied"
-msgstr "Пароль не пададзены"
-
-#: src/cinnamon-screensaver-dialog.c:182
-msgid "Password unchanged"
-msgstr "Пароль не зменены"
-
-#: src/cinnamon-screensaver-dialog.c:183
-msgid "Cannot get username"
-msgstr "Не ўдалося атрымаць імя карыстальніка"
-
-#: src/cinnamon-screensaver-dialog.c:184
-msgid "Retype new Unix password:"
-msgstr "Паўтарыце новы UNIX-пароль:"
-
-#: src/cinnamon-screensaver-dialog.c:185
-msgid "Enter new Unix password:"
-msgstr "Упішыце новы UNIX-пароль:"
-
-#: src/cinnamon-screensaver-dialog.c:186
-msgid "(current) Unix password:"
-msgstr "(бягучы) UNIX-пароль:"
-
-#: src/cinnamon-screensaver-dialog.c:187
-msgid "Error while changing NIS password."
-msgstr "Памылка падчас змянення NIS-пароля."
-
-#: src/cinnamon-screensaver-dialog.c:188
-msgid "You must choose a longer password"
-msgstr "Трэба падаць даўжэйшы пароль"
-
-#: src/cinnamon-screensaver-dialog.c:189
-msgid "Password has been already used. Choose another."
-msgstr "Пароль ужо выкарыстоўваўся раней. Падайце іншы."
-
-#: src/cinnamon-screensaver-dialog.c:190
-msgid "You must wait longer to change your password"
-msgstr "Трэба болей пачакаць, каб змагчы змяніць свой пароль"
-
-#: src/cinnamon-screensaver-dialog.c:191
-msgid "Sorry, passwords do not match"
-msgstr "Паролі адрозніваюцца"
-
-#: src/cinnamon-screensaver-dialog.c:257
-msgid "Checking…"
-msgstr "Праверка..."
-
-#: src/cinnamon-screensaver-dialog.c:299 src/gs-auth-pam.c:457
-msgid "Authentication failed."
-msgstr "Няўдалая ідэнтыфікацыя."
-
-#: src/gnome-wall-clock.c:223
+#: src/clock.py:59
 msgid "%A, %B %e"
 msgstr "%A, %B %e"
 
-#: src/gs-auth-pam.c:397
-#, c-format
-msgid "Unable to establish service %s: %s\n"
-msgstr "Не ўдалося запусціць службу %s: %s\n"
+#: src/playerControl.py:158
+msgid "--:--"
+msgstr ""
 
-#: src/gs-auth-pam.c:423
-#, c-format
-msgid "Can't set PAM_TTY=%s"
-msgstr "Не ўдалося наставіць PAM_TTY=%s"
+#: src/playerControl.py:161
+msgid "%M:%S"
+msgstr ""
 
-#: src/gs-auth-pam.c:455
-msgid "Incorrect password."
-msgstr "Хібны пароль."
+#: src/playerControl.py:163
+msgid "%H:%M:%S"
+msgstr ""
 
-#: src/gs-auth-pam.c:471
-msgid "Not permitted to gain access at this time."
-msgstr "Гэтым разам доступ да сістэмы забаронены."
+#: src/unlock.py:40 src/unlock.py:295
+msgid "Enter password..."
+msgstr ""
 
-#: src/gs-auth-pam.c:477
-msgid "No longer permitted to access the system."
-msgstr "Доступ да сістэмы забаронены."
-
-#: src/gs-listener-dbus.c:1302
-msgid "failed to register with the message bus"
-msgstr "не ўдалося зарэгістравацца на магістралі паведамленняў"
-
-#: src/gs-listener-dbus.c:1312
-msgid "not connected to the message bus"
-msgstr "не далучаны да магістралі паведамленняў"
-
-#: src/gs-listener-dbus.c:1321 src/gs-listener-dbus.c:1351
-msgid "screensaver already running in this session"
-msgstr "ахоўнік экрана ўжо працуе ў гэтым сеансе"
-
-#: src/gs-lock-plug.c:323
-msgid "Time has expired."
-msgstr "Час скончыўся."
-
-#: src/gs-lock-plug.c:354
+#: src/unlock.py:212
 msgid "You have the Caps Lock key on."
 msgstr "Caps Lock уключаны."
 
-#: src/gs-lock-plug.c:1445
-msgid "S_witch User…"
-msgstr "_Пераключыць карыстальніка..."
+#: src/unlock.py:244
+msgid "Checking..."
+msgstr ""
 
-#: src/gs-lock-plug.c:1454
-msgid "Log _Out"
-msgstr "_Скончыць сеанс"
-
-#: src/gs-lock-plug.c:1461
-msgid "_Unlock"
-msgstr "_Адамкнуць"
-
-#: src/gs-lock-plug.c:1588
-msgid "_Password:"
-msgstr "_Пароль:"
+#: src/unlock.py:296
+msgid "Password incorrect - try again."
+msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-05-19 17:24+0200\n"
+"POT-Creation-Date: 2016-09-23 22:51-0400\n"
 "PO-Revision-Date: 2015-06-27 14:34+0000\n"
 "Last-Translator: GunChleoc <Unknown>\n"
 "Language-Team: Gaelic; Scottish <gd@li.org>\n"
@@ -16,19 +16,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
-"X-Launchpad-Export-Date: 2016-06-25 09:30+0000\n"
-"X-Generator: Launchpad (build 18111)\n"
+"X-Launchpad-Export-Date: 2016-11-09 17:14+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 
-#: src/cinnamon-screensaver-command.c:274
+#: src/cinnamon-screensaver-command.py:34
+msgid "Causes the screensaver to exit gracefully"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:36
+msgid "Query the state of the screensaver"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:38
+msgid "Query the length of time the screensaver has been active"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:40
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:42
+msgid "Turn the screensaver on (blank the screen)"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:44
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:46
+msgid "Version of this application"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:48
+msgid "Message to be displayed in lock screen"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:77
 msgid "The screensaver is active\n"
 msgstr "Tha an sàbhalaiche-sgrìn gnìomhach\n"
 
-#: src/cinnamon-screensaver-command.c:276
+#: src/cinnamon-screensaver-command.py:79
 msgid "The screensaver is inactive\n"
 msgstr "Chan eil an sàbhalaiche-sgrìn gnìomhach\n"
 
-#: src/cinnamon-screensaver-command.c:306
-#, c-format
+#: src/cinnamon-screensaver-command.py:83
+msgid "The screensaver is not currently active.\n"
+msgstr "Chan eil an sàbhalaiche-sgrìn gnìomhach an-dràsta.\n"
+
+#: src/cinnamon-screensaver-command.py:85
+#, python-format
 msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "Tha an sàbhalaiche-sgrìn gnìomhach fad %d diog.\n"
@@ -36,148 +72,34 @@ msgstr[1] "Tha an sàbhalaiche-sgrìn gnìomhach fad %d dhiog.\n"
 msgstr[2] "Tha an sàbhalaiche-sgrìn gnìomhach fad %d diogan.\n"
 msgstr[3] "Tha an sàbhalaiche-sgrìn gnìomhach fad %d diog.\n"
 
-#: src/cinnamon-screensaver-command.c:308
-msgid "The screensaver is not currently active.\n"
-msgstr "Chan eil an sàbhalaiche-sgrìn gnìomhach an-dràsta.\n"
-
-#: src/cinnamon-screensaver-dialog.c:173 src/cinnamon-screensaver-dialog.c:174
-#: src/cinnamon-screensaver-dialog.c:175 src/gs-auth-pam.c:699
-msgid "Username:"
-msgstr "Ainm-cleachdaiche:"
-
-#: src/cinnamon-screensaver-dialog.c:176 src/cinnamon-screensaver-dialog.c:177
-#: src/gs-auth-pam.c:166
-msgid "Password:"
-msgstr "Facal-faire:"
-
-#: src/cinnamon-screensaver-dialog.c:178
-msgid "You are required to change your password immediately (password aged)"
-msgstr ""
-"Feumaidh tu am facal-faire agad atharrachadh sa bhad (facal-faire ro aosta)"
-
-#: src/cinnamon-screensaver-dialog.c:179
-msgid "You are required to change your password immediately (root enforced)"
-msgstr ""
-"Feumaidh tu am facal-faire agad atharrachadh sa bhad (air èigneachadh le "
-"root)"
-
-#: src/cinnamon-screensaver-dialog.c:180
-msgid "Your account has expired; please contact your system administrator"
-msgstr ""
-"Dh'fhalbh an ùine air a' chunntas agad; feuch an cuir thu fios gu rianaire "
-"an t-siostaim agad"
-
-#: src/cinnamon-screensaver-dialog.c:181
-msgid "No password supplied"
-msgstr "Cha deach facal-faire a' solar"
-
-#: src/cinnamon-screensaver-dialog.c:182
-msgid "Password unchanged"
-msgstr "Tha am facal-faire gun atharrachadh"
-
-#: src/cinnamon-screensaver-dialog.c:183
-msgid "Cannot get username"
-msgstr "Chan urrainn dhuinn an t-ainm-cleachdaiche fhaighinn"
-
-#: src/cinnamon-screensaver-dialog.c:184
-msgid "Retype new Unix password:"
-msgstr "Cuir am facal-faire Unix ùr a-steach a-rithist:"
-
-#: src/cinnamon-screensaver-dialog.c:185
-msgid "Enter new Unix password:"
-msgstr "Cuir facal-faire Unix ùr a-steach:"
-
-#: src/cinnamon-screensaver-dialog.c:186
-msgid "(current) Unix password:"
-msgstr "Am facal-faire Unix (làithreach):"
-
-#: src/cinnamon-screensaver-dialog.c:187
-msgid "Error while changing NIS password."
-msgstr "Mearachd le atharrachadh an fhacail-fhaire NIS."
-
-#: src/cinnamon-screensaver-dialog.c:188
-msgid "You must choose a longer password"
-msgstr "Feumaidh tu facal-faire nas fhaide a thaghadh"
-
-#: src/cinnamon-screensaver-dialog.c:189
-msgid "Password has been already used. Choose another."
-msgstr "Chaidh am facal-faire seo a chleachdadh roimhe. Tagh fear eile."
-
-#: src/cinnamon-screensaver-dialog.c:190
-msgid "You must wait longer to change your password"
-msgstr ""
-"Feumaidh tu feitheamh nas fhaide gus am facal-faire agad atharrachadh"
-
-#: src/cinnamon-screensaver-dialog.c:191
-msgid "Sorry, passwords do not match"
-msgstr "Duilich, ach chan eil an dà fhacal-faire co-ionnann"
-
-#: src/cinnamon-screensaver-dialog.c:257
-msgid "Checking…"
-msgstr "'Ga dhearbhadh..."
-
-#: src/cinnamon-screensaver-dialog.c:299 src/gs-auth-pam.c:457
-msgid "Authentication failed."
-msgstr "Dh'fhàillig leis an dearbhadh."
-
-#: src/gnome-wall-clock.c:223
+#: src/clock.py:59
 msgid "%A, %B %e"
 msgstr "%A %e %B"
 
-#: src/gs-auth-pam.c:397
-#, c-format
-msgid "Unable to establish service %s: %s\n"
-msgstr "Cha b' urrainn dhuinn an t-seirbheis %s a stèidheachadh: %s\n"
+#: src/playerControl.py:158
+msgid "--:--"
+msgstr ""
 
-#: src/gs-auth-pam.c:423
-#, c-format
-msgid "Can't set PAM_TTY=%s"
-msgstr "Chan urrainn dhuinn PAM_TTY=%s a shuidheachadh"
+#: src/playerControl.py:161
+msgid "%M:%S"
+msgstr ""
 
-#: src/gs-auth-pam.c:455
-msgid "Incorrect password."
-msgstr "Chan eil am facal-faire mar bu chòir."
+#: src/playerControl.py:163
+msgid "%H:%M:%S"
+msgstr ""
 
-#: src/gs-auth-pam.c:471
-msgid "Not permitted to gain access at this time."
-msgstr "Chan eil cead inntrigidh agad aig an àm seo."
+#: src/unlock.py:40 src/unlock.py:295
+msgid "Enter password..."
+msgstr ""
 
-#: src/gs-auth-pam.c:477
-msgid "No longer permitted to access the system."
-msgstr "Chan fhaod thu an siostam inntrigeadh tuilleadh."
-
-#: src/gs-listener-dbus.c:1302
-msgid "failed to register with the message bus"
-msgstr "dh'fhàillig le clàradh leis a' bhus theachdaireachdan"
-
-#: src/gs-listener-dbus.c:1312
-msgid "not connected to the message bus"
-msgstr "gun cheangal ris a' bhus theachdaireachdan"
-
-#: src/gs-listener-dbus.c:1321 src/gs-listener-dbus.c:1351
-msgid "screensaver already running in this session"
-msgstr "tha sàbhalaiche-sgrìn 'ga ruith san t-seisean seo mar-thà"
-
-#: src/gs-lock-plug.c:323
-msgid "Time has expired."
-msgstr "Dh'fhalbh an ùine air."
-
-#: src/gs-lock-plug.c:354
+#: src/unlock.py:212
 msgid "You have the Caps Lock key on."
 msgstr "Tha an iuchair Caps Lock agad air."
 
-#: src/gs-lock-plug.c:1445
-msgid "S_witch User…"
-msgstr "Gearr _leum gu cleachdaiche eile..."
+#: src/unlock.py:244
+msgid "Checking..."
+msgstr ""
 
-#: src/gs-lock-plug.c:1454
-msgid "Log _Out"
-msgstr "Log _a-mach"
-
-#: src/gs-lock-plug.c:1461
-msgid "_Unlock"
-msgstr "_Thoir a' ghlas dheth"
-
-#: src/gs-lock-plug.c:1588
-msgid "_Password:"
-msgstr "_Facal-faire:"
+#: src/unlock.py:296
+msgid "Password incorrect - try again."
+msgstr ""

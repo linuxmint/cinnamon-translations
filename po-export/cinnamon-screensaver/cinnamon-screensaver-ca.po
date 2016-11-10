@@ -11,172 +11,100 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-screensaver\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-19 17:24+0200\n"
-"PO-Revision-Date: 2013-10-28 09:38+0000\n"
+"POT-Creation-Date: 2016-09-23 22:51-0400\n"
+"PO-Revision-Date: 2016-11-05 18:18+0000\n"
 "Last-Translator: Isidro Pisa <isidro@utils.info>\n"
 "Language-Team: Catalan <tradgnome@softcatala.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-06-25 09:30+0000\n"
-"X-Generator: Launchpad (build 18111)\n"
+"X-Launchpad-Export-Date: 2016-11-09 17:14+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 "Language: ca\n"
 
-#: src/cinnamon-screensaver-command.c:274
+#: src/cinnamon-screensaver-command.py:34
+msgid "Causes the screensaver to exit gracefully"
+msgstr "Fa que l'estalvi de pantalla acabi de forma correcta"
+
+#: src/cinnamon-screensaver-command.py:36
+msgid "Query the state of the screensaver"
+msgstr "Consulta l'estat de l'estalvi de pantalla"
+
+#: src/cinnamon-screensaver-command.py:38
+msgid "Query the length of time the screensaver has been active"
+msgstr "Consulta quant de temps ha estat actiu l'estalvi de pantalla"
+
+#: src/cinnamon-screensaver-command.py:40
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr ""
+"Li diu al procés d'estalvi de pantalla que bloquegi la pantalla immediatament"
+
+#: src/cinnamon-screensaver-command.py:42
+msgid "Turn the screensaver on (blank the screen)"
+msgstr "Activa l'estalvi de pantalla (pantalla negra)"
+
+#: src/cinnamon-screensaver-command.py:44
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr ""
+"Si l'estalvi de pantalla està actiu llavors desactiva'l (restableix la "
+"pantalla)"
+
+#: src/cinnamon-screensaver-command.py:46
+msgid "Version of this application"
+msgstr "Versió d'aquesta aplicació"
+
+#: src/cinnamon-screensaver-command.py:48
+msgid "Message to be displayed in lock screen"
+msgstr "Missatge que es mostra en bloquejar la pantalla"
+
+#: src/cinnamon-screensaver-command.py:77
 msgid "The screensaver is active\n"
 msgstr "L'estalvi de pantalla està actiu\n"
 
-#: src/cinnamon-screensaver-command.c:276
+#: src/cinnamon-screensaver-command.py:79
 msgid "The screensaver is inactive\n"
 msgstr "L'estalvi de pantalla està inactiu\n"
 
-#: src/cinnamon-screensaver-command.c:306
-#, c-format
+#: src/cinnamon-screensaver-command.py:83
+msgid "The screensaver is not currently active.\n"
+msgstr "L'estalvi de pantalla no està actiu.\n"
+
+#: src/cinnamon-screensaver-command.py:85
+#, python-format
 msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "Fa %d segons que l'estalvi de pantalla s'ha activat.\n"
 msgstr[1] "Fa %d segons que l'estalvi de pantalla s'ha activat.\n"
 
-#: src/cinnamon-screensaver-command.c:308
-msgid "The screensaver is not currently active.\n"
-msgstr "L'estalvi de pantalla no és actiu.\n"
-
-#: src/cinnamon-screensaver-dialog.c:173 src/cinnamon-screensaver-dialog.c:174
-#: src/cinnamon-screensaver-dialog.c:175 src/gs-auth-pam.c:699
-msgid "Username:"
-msgstr "Nom d'usuari:"
-
-#: src/cinnamon-screensaver-dialog.c:176 src/cinnamon-screensaver-dialog.c:177
-#: src/gs-auth-pam.c:166
-msgid "Password:"
-msgstr "Contrasenya:"
-
-#: src/cinnamon-screensaver-dialog.c:178
-msgid "You are required to change your password immediately (password aged)"
-msgstr ""
-"Heu de canviar la contrasenya immediatament (la contrasenya s'ha fet vella)"
-
-#: src/cinnamon-screensaver-dialog.c:179
-msgid "You are required to change your password immediately (root enforced)"
-msgstr ""
-"Heu de canviar la contrasenya immediatament (us hi obliga el superusuari)"
-
-#: src/cinnamon-screensaver-dialog.c:180
-msgid "Your account has expired; please contact your system administrator"
-msgstr ""
-"El vostre compte ha expirat, contacteu amb l'administrador d'aquest sistema"
-
-#: src/cinnamon-screensaver-dialog.c:181
-msgid "No password supplied"
-msgstr "No s'ha proporcionat cap contrasenya"
-
-#: src/cinnamon-screensaver-dialog.c:182
-msgid "Password unchanged"
-msgstr "No s'ha canviat la contrasenya"
-
-#: src/cinnamon-screensaver-dialog.c:183
-msgid "Cannot get username"
-msgstr "No s'ha pogut obtenir el nom d'usuari"
-
-#: src/cinnamon-screensaver-dialog.c:184
-msgid "Retype new Unix password:"
-msgstr "Reescriviu la nova contrasenya UNIX:"
-
-#: src/cinnamon-screensaver-dialog.c:185
-msgid "Enter new Unix password:"
-msgstr "Introduïu la nova contrasenya UNIX:"
-
-#: src/cinnamon-screensaver-dialog.c:186
-msgid "(current) Unix password:"
-msgstr "Contrasenya UNIX (actual):"
-
-#: src/cinnamon-screensaver-dialog.c:187
-msgid "Error while changing NIS password."
-msgstr "S'ha produït un error en canviar la contrasenya NIS."
-
-#: src/cinnamon-screensaver-dialog.c:188
-msgid "You must choose a longer password"
-msgstr "Heu de triar una contrasenya més llarga"
-
-#: src/cinnamon-screensaver-dialog.c:189
-msgid "Password has been already used. Choose another."
-msgstr "La contrasenya ja s'ha fet servir. Trieu-ne una altra."
-
-#: src/cinnamon-screensaver-dialog.c:190
-msgid "You must wait longer to change your password"
-msgstr "Heu d'esperar més per canviar la contrasenya"
-
-#: src/cinnamon-screensaver-dialog.c:191
-msgid "Sorry, passwords do not match"
-msgstr "Les contrasenyes no coincideixen"
-
-#: src/cinnamon-screensaver-dialog.c:257
-msgid "Checking…"
-msgstr "S'està comprovant…"
-
-#: src/cinnamon-screensaver-dialog.c:299 src/gs-auth-pam.c:457
-msgid "Authentication failed."
-msgstr "Ha fallat l'autenticació."
-
-#: src/gnome-wall-clock.c:223
+#: src/clock.py:59
 msgid "%A, %B %e"
 msgstr "%A, %e %B"
 
-#: src/gs-auth-pam.c:397
-#, c-format
-msgid "Unable to establish service %s: %s\n"
-msgstr "No s'ha pogut establir el servei %s: %s\n"
+#: src/playerControl.py:158
+msgid "--:--"
+msgstr "--:--"
 
-#: src/gs-auth-pam.c:423
-#, c-format
-msgid "Can't set PAM_TTY=%s"
-msgstr "No s'ha pogut establir PAM_TTY=%s"
+#: src/playerControl.py:161
+msgid "%M:%S"
+msgstr "%M:%S"
 
-#: src/gs-auth-pam.c:455
-msgid "Incorrect password."
-msgstr "Contrasenya incorrecta."
+#: src/playerControl.py:163
+msgid "%H:%M:%S"
+msgstr "%H:%M:%S"
 
-#: src/gs-auth-pam.c:471
-msgid "Not permitted to gain access at this time."
-msgstr "No podeu accedir-hi ara mateix."
+#: src/unlock.py:40 src/unlock.py:295
+msgid "Enter password..."
+msgstr "Escriviu la contrasenya ..."
 
-#: src/gs-auth-pam.c:477
-msgid "No longer permitted to access the system."
-msgstr "Ja no podeu accedir al sistema."
-
-#: src/gs-listener-dbus.c:1302
-msgid "failed to register with the message bus"
-msgstr "no s'ha pogut registrar en el bus de missatges"
-
-#: src/gs-listener-dbus.c:1312
-msgid "not connected to the message bus"
-msgstr "no s'ha pogut connectar al bus de missatges"
-
-#: src/gs-listener-dbus.c:1321 src/gs-listener-dbus.c:1351
-msgid "screensaver already running in this session"
-msgstr "l'estalvi de pantalla ja està funcionant en aquesta sessió"
-
-#: src/gs-lock-plug.c:323
-msgid "Time has expired."
-msgstr "S'ha excedit el temps."
-
-#: src/gs-lock-plug.c:354
+#: src/unlock.py:212
 msgid "You have the Caps Lock key on."
 msgstr "Teniu la tecla de fixació de majúscules activada."
 
-#: src/gs-lock-plug.c:1445
-msgid "S_witch User…"
-msgstr "Canvia d'_usuari…"
+#: src/unlock.py:244
+msgid "Checking..."
+msgstr "Comprovant..."
 
-#: src/gs-lock-plug.c:1454
-msgid "Log _Out"
-msgstr "_Surt"
-
-#: src/gs-lock-plug.c:1461
-msgid "_Unlock"
-msgstr "_Desbloca"
-
-#: src/gs-lock-plug.c:1588
-msgid "_Password:"
-msgstr "_Contrasenya:"
+#: src/unlock.py:296
+msgid "Password incorrect - try again."
+msgstr "Contrasenya incorrecta - torneu-ho a provar."

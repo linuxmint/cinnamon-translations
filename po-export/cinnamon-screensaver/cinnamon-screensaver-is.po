@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-screensaver_cinnamon-screensaver-is\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-19 17:24+0200\n"
+"POT-Creation-Date: 2016-09-23 22:51-0400\n"
 "PO-Revision-Date: 2014-08-24 22:59+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
@@ -16,162 +16,88 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-06-25 09:30+0000\n"
-"X-Generator: Launchpad (build 18111)\n"
+"X-Launchpad-Export-Date: 2016-11-09 17:14+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 
-#: src/cinnamon-screensaver-command.c:274
+#: src/cinnamon-screensaver-command.py:34
+msgid "Causes the screensaver to exit gracefully"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:36
+msgid "Query the state of the screensaver"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:38
+msgid "Query the length of time the screensaver has been active"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:40
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:42
+msgid "Turn the screensaver on (blank the screen)"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:44
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:46
+msgid "Version of this application"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:48
+msgid "Message to be displayed in lock screen"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:77
 msgid "The screensaver is active\n"
 msgstr "Skjáhvílan er virk\n"
 
-#: src/cinnamon-screensaver-command.c:276
+#: src/cinnamon-screensaver-command.py:79
 msgid "The screensaver is inactive\n"
 msgstr "Skjáhvílan er óvirk\n"
 
-#: src/cinnamon-screensaver-command.c:306
-#, c-format
+#: src/cinnamon-screensaver-command.py:83
+msgid "The screensaver is not currently active.\n"
+msgstr "Skjáhvílan er ekki virk í augnablikinu.\n"
+
+#: src/cinnamon-screensaver-command.py:85
+#, python-format
 msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "Skjáhvílan hefur verið virk í %d sekúndu.\n"
 msgstr[1] "Skjáhvílan hefur verið virk í %d sekúndur.\n"
 
-#: src/cinnamon-screensaver-command.c:308
-msgid "The screensaver is not currently active.\n"
-msgstr "Skjáhvílan er ekki virk í augnablikinu.\n"
-
-#: src/cinnamon-screensaver-dialog.c:173 src/cinnamon-screensaver-dialog.c:174
-#: src/cinnamon-screensaver-dialog.c:175 src/gs-auth-pam.c:699
-msgid "Username:"
-msgstr "Notandanafn:"
-
-#: src/cinnamon-screensaver-dialog.c:176 src/cinnamon-screensaver-dialog.c:177
-#: src/gs-auth-pam.c:166
-msgid "Password:"
-msgstr "Lykilorð:"
-
-#: src/cinnamon-screensaver-dialog.c:178
-msgid "You are required to change your password immediately (password aged)"
-msgstr ""
-"Þú verður að breyta lykilorðinu þínu umsvifalaust (það er orðið of gamallt)"
-
-#: src/cinnamon-screensaver-dialog.c:179
-msgid "You are required to change your password immediately (root enforced)"
-msgstr "Þú verður að breyta lykilorðinu þínu umsvifalaust (rótarskipun)"
-
-#: src/cinnamon-screensaver-dialog.c:180
-msgid "Your account has expired; please contact your system administrator"
-msgstr ""
-"Aðgangur þinn er útrunninn; vinsamlegast hafðu samband við kerfisstjóra"
-
-#: src/cinnamon-screensaver-dialog.c:181
-msgid "No password supplied"
-msgstr "Ekkert lykilorð gefið"
-
-#: src/cinnamon-screensaver-dialog.c:182
-msgid "Password unchanged"
-msgstr "Lykilorð óbreytt"
-
-#: src/cinnamon-screensaver-dialog.c:183
-msgid "Cannot get username"
-msgstr "Get ekki náð notandanafni"
-
-#: src/cinnamon-screensaver-dialog.c:184
-msgid "Retype new Unix password:"
-msgstr "Endurtaktu nýtt Unix lykilorð:"
-
-#: src/cinnamon-screensaver-dialog.c:185
-msgid "Enter new Unix password:"
-msgstr "Settu inn nýtt Unix lykilorð:"
-
-#: src/cinnamon-screensaver-dialog.c:186
-msgid "(current) Unix password:"
-msgstr "(núverandi) Unix lykilorð:"
-
-#: src/cinnamon-screensaver-dialog.c:187
-msgid "Error while changing NIS password."
-msgstr "Villa kom upp við breytingu á NIS lykilorði."
-
-#: src/cinnamon-screensaver-dialog.c:188
-msgid "You must choose a longer password"
-msgstr "Þú verður að velja lengra lykilorð"
-
-#: src/cinnamon-screensaver-dialog.c:189
-msgid "Password has been already used. Choose another."
-msgstr "Þú hefur notað þetta lykilorð áður. Vinsamlegast veldu annað."
-
-#: src/cinnamon-screensaver-dialog.c:190
-msgid "You must wait longer to change your password"
-msgstr "Þú verður að bíða lengur til þess að breyta lykilorðinu þínu"
-
-#: src/cinnamon-screensaver-dialog.c:191
-msgid "Sorry, passwords do not match"
-msgstr "Afsakið, lykilorðin passa ekki saman"
-
-#: src/cinnamon-screensaver-dialog.c:257
-msgid "Checking…"
-msgstr "Athuga..."
-
-#: src/cinnamon-screensaver-dialog.c:299 src/gs-auth-pam.c:457
-msgid "Authentication failed."
-msgstr "Auðkenning tókst ekki."
-
-#: src/gnome-wall-clock.c:223
+#: src/clock.py:59
 msgid "%A, %B %e"
 msgstr "%A, %e. %B"
 
-#: src/gs-auth-pam.c:397
-#, c-format
-msgid "Unable to establish service %s: %s\n"
-msgstr "Gat ekki stofnað þjónustu %s: %s\n"
+#: src/playerControl.py:158
+msgid "--:--"
+msgstr ""
 
-#: src/gs-auth-pam.c:423
-#, c-format
-msgid "Can't set PAM_TTY=%s"
-msgstr "Get ekki stillt PAM_TTY=%s"
+#: src/playerControl.py:161
+msgid "%M:%S"
+msgstr ""
 
-#: src/gs-auth-pam.c:455
-msgid "Incorrect password."
-msgstr "Rangt lykilorð."
+#: src/playerControl.py:163
+msgid "%H:%M:%S"
+msgstr ""
 
-#: src/gs-auth-pam.c:471
-msgid "Not permitted to gain access at this time."
-msgstr "Þér er ekki leyfður aðgangur í þetta sinn."
+#: src/unlock.py:40 src/unlock.py:295
+msgid "Enter password..."
+msgstr ""
 
-#: src/gs-auth-pam.c:477
-msgid "No longer permitted to access the system."
-msgstr "Þér verður ekki gefinn aðgangur að kerfinu."
-
-#: src/gs-listener-dbus.c:1302
-msgid "failed to register with the message bus"
-msgstr "mistókst að skrá sig í skilaboðarás"
-
-#: src/gs-listener-dbus.c:1312
-msgid "not connected to the message bus"
-msgstr "ekki tengd við skilaboðarás"
-
-#: src/gs-listener-dbus.c:1321 src/gs-listener-dbus.c:1351
-msgid "screensaver already running in this session"
-msgstr "skjáhvíla er nú þegar keyrandi í þessari setu"
-
-#: src/gs-lock-plug.c:323
-msgid "Time has expired."
-msgstr "Tíminn er útrunninn."
-
-#: src/gs-lock-plug.c:354
+#: src/unlock.py:212
 msgid "You have the Caps Lock key on."
 msgstr "Þú ert að nota HÁSTAFI."
 
-#: src/gs-lock-plug.c:1445
-msgid "S_witch User…"
-msgstr "S_kipta um notanda…"
+#: src/unlock.py:244
+msgid "Checking..."
+msgstr ""
 
-#: src/gs-lock-plug.c:1454
-msgid "Log _Out"
-msgstr "_Skrá út"
-
-#: src/gs-lock-plug.c:1461
-msgid "_Unlock"
-msgstr "_Aflæsa"
-
-#: src/gs-lock-plug.c:1588
-msgid "_Password:"
-msgstr "_Lykilorð:"
+#: src/unlock.py:296
+msgid "Password incorrect - try again."
+msgstr ""

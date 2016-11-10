@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-screensaver\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-19 17:24+0200\n"
+"POT-Creation-Date: 2016-09-23 22:51-0400\n"
 "PO-Revision-Date: 2013-08-26 12:23+0000\n"
 "Last-Translator: Launchpad Translations Administrators <Unknown>\n"
 "Language-Team: QIRIMTATARCA <tilde-birlik-meydan@lists.sourceforge.net>\n"
@@ -14,176 +14,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-06-25 09:30+0000\n"
-"X-Generator: Launchpad (build 18111)\n"
+"X-Launchpad-Export-Date: 2016-11-09 17:14+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 "Language: \n"
 
-#: src/cinnamon-screensaver-command.c:274
+#: src/cinnamon-screensaver-command.py:34
+msgid "Causes the screensaver to exit gracefully"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:36
+msgid "Query the state of the screensaver"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:38
+msgid "Query the length of time the screensaver has been active"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:40
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:42
+msgid "Turn the screensaver on (blank the screen)"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:44
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:46
+msgid "Version of this application"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:48
+msgid "Message to be displayed in lock screen"
+msgstr ""
+
+#: src/cinnamon-screensaver-command.py:77
 msgid "The screensaver is active\n"
 msgstr "Ekran qoruyıcısı faaldir\n"
 
-#: src/cinnamon-screensaver-command.c:276
+#: src/cinnamon-screensaver-command.py:79
 msgid "The screensaver is inactive\n"
 msgstr "Ekran qoruyıcısı ğayrıfaaldir\n"
 
+# tüklü
+#: src/cinnamon-screensaver-command.py:83
+msgid "The screensaver is not currently active.\n"
+msgstr "Ekran qoruyıcı hal-hazırda faal degildir.\n"
+
 #
-#: src/cinnamon-screensaver-command.c:306
-#, c-format
+#: src/cinnamon-screensaver-command.py:85
+#, python-format
 msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "Ekran qoruyucısı %d saniye faal olğandır.\n"
 
-# tüklü
-#: src/cinnamon-screensaver-command.c:308
-msgid "The screensaver is not currently active.\n"
-msgstr "Ekran qoruyıcı hal-hazırda faal degildir.\n"
-
-#: src/cinnamon-screensaver-dialog.c:173 src/cinnamon-screensaver-dialog.c:174
-#: src/cinnamon-screensaver-dialog.c:175 src/gs-auth-pam.c:699
-msgid "Username:"
-msgstr "Qullanıcı adı:"
-
-#: src/cinnamon-screensaver-dialog.c:176 src/cinnamon-screensaver-dialog.c:177
-#: src/gs-auth-pam.c:166
-msgid "Password:"
-msgstr "Sır-söz:"
-
-# tr
-#: src/cinnamon-screensaver-dialog.c:178
-msgid "You are required to change your password immediately (password aged)"
-msgstr "Hemen parolanızı değiştirmeniz gerekiyor (parolanız eskidi)"
-
-# tr
-#: src/cinnamon-screensaver-dialog.c:179
-msgid "You are required to change your password immediately (root enforced)"
-msgstr "Parolanızı hemen değiştirmeniz gerekiyor (root zorluyor)"
-
-#: src/cinnamon-screensaver-dialog.c:180
-msgid "Your account has expired; please contact your system administrator"
-msgstr "Hesabıñız eskirgendir; lütfen sistem memurıñız ile temasqa keçiñiz"
-
-# tr
-#: src/cinnamon-screensaver-dialog.c:181
-msgid "No password supplied"
-msgstr "Bir parola sağlanmadı"
-
-# tr
-#: src/cinnamon-screensaver-dialog.c:182
-msgid "Password unchanged"
-msgstr "Parola değişmedi"
-
-#: src/cinnamon-screensaver-dialog.c:183
-msgid "Cannot get username"
-msgstr "Qullanıcı adı alınalmay"
-
-#: src/cinnamon-screensaver-dialog.c:184
-msgid "Retype new Unix password:"
-msgstr "Yañı Uniks sır-sözüñizni kene tuşlañız:"
-
-# tüklü
-#: src/cinnamon-screensaver-dialog.c:185
-msgid "Enter new Unix password:"
-msgstr "Yañı Unix sır-sözüñizni kirsetiñiz:"
-
-#: src/cinnamon-screensaver-dialog.c:186
-msgid "(current) Unix password:"
-msgstr "(cari) Unix sır-sözüñiz:"
-
-# tr
-#: src/cinnamon-screensaver-dialog.c:187
-msgid "Error while changing NIS password."
-msgstr "NIS parolası değiştirilirken hata"
-
-# tr
-#: src/cinnamon-screensaver-dialog.c:188
-msgid "You must choose a longer password"
-msgstr "Daha uzun bir parola seçmelisiniz"
-
-# tr
-#: src/cinnamon-screensaver-dialog.c:189
-msgid "Password has been already used. Choose another."
-msgstr "Parola kullanılmaktadır. Başka bir tane seçin."
-
-#: src/cinnamon-screensaver-dialog.c:190
-msgid "You must wait longer to change your password"
-msgstr "Sır-sözüñizni deñiştirmek içün daa uzun beklemelisiñiz"
-
-# tr
-#: src/cinnamon-screensaver-dialog.c:191
-msgid "Sorry, passwords do not match"
-msgstr "Üzgünüm, parolalar uyuşmuyor"
-
-#: src/cinnamon-screensaver-dialog.c:257
-msgid "Checking…"
-msgstr "Teşkerile…"
-
-#: src/cinnamon-screensaver-dialog.c:299 src/gs-auth-pam.c:457
-msgid "Authentication failed."
-msgstr "Sahihlenme muvafaqiyetsiz."
-
-#: src/gnome-wall-clock.c:223
+#: src/clock.py:59
 msgid "%A, %B %e"
 msgstr ""
 
-#: src/gs-auth-pam.c:397
-#, c-format
-msgid "Unable to establish service %s: %s\n"
-msgstr "Servis %s qurulamadı: %s\n"
+#: src/playerControl.py:158
+msgid "--:--"
+msgstr ""
 
-#: src/gs-auth-pam.c:423
-#, c-format
-msgid "Can't set PAM_TTY=%s"
-msgstr "PAM_TTY=%s tesbit etilamadı"
+#: src/playerControl.py:161
+msgid "%M:%S"
+msgstr ""
 
-# tr
-#: src/gs-auth-pam.c:455
-msgid "Incorrect password."
-msgstr "Yanlış parola."
+#: src/playerControl.py:163
+msgid "%H:%M:%S"
+msgstr ""
 
-# tr
-#: src/gs-auth-pam.c:471
-msgid "Not permitted to gain access at this time."
-msgstr "Şu an erişim kazanmaya izinli değil."
+#: src/unlock.py:40 src/unlock.py:295
+msgid "Enter password..."
+msgstr ""
 
-# tr
-#: src/gs-auth-pam.c:477
-msgid "No longer permitted to access the system."
-msgstr "Sisteme erişimine artık izin verilmiyor."
-
-# tr
-#: src/gs-listener-dbus.c:1302
-msgid "failed to register with the message bus"
-msgstr "mesaj veri yoluna kayıt başarısız"
-
-# tr
-#: src/gs-listener-dbus.c:1312
-msgid "not connected to the message bus"
-msgstr "mesaj veri yoluna bağlı değil"
-
-#: src/gs-listener-dbus.c:1321 src/gs-listener-dbus.c:1351
-msgid "screensaver already running in this session"
-msgstr "Bu oturımda ekran qoruyıcısı endi çapmaqta"
-
-#: src/gs-lock-plug.c:323
-msgid "Time has expired."
-msgstr "Zaman aşıldı."
-
-#: src/gs-lock-plug.c:354
+#: src/unlock.py:212
 msgid "You have the Caps Lock key on."
 msgstr "Büyük Harif Kiliti (Caps Lock) tuşuñız faaldir."
 
-#: src/gs-lock-plug.c:1445
-msgid "S_witch User…"
-msgstr "Qullanıcı _Almaştır…"
+#: src/unlock.py:244
+msgid "Checking..."
+msgstr ""
 
-#: src/gs-lock-plug.c:1454
-msgid "Log _Out"
-msgstr "_Tışarı İmzalan"
-
-#: src/gs-lock-plug.c:1461
-msgid "_Unlock"
-msgstr "_Kilitsizle"
-
-#: src/gs-lock-plug.c:1588
-msgid "_Password:"
-msgstr "_Sır-söz:"
+#: src/unlock.py:296
+msgid "Password incorrect - try again."
+msgstr ""

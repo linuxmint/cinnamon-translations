@@ -13,168 +13,96 @@ msgstr ""
 "Report-Msgid-Bugs-To: "
 "http://bugzilla.gnome.org/enter_bug.cgi?product=cinnamon-"
 "screensaver&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-05-19 17:24+0200\n"
-"PO-Revision-Date: 2013-10-30 05:21+0000\n"
-"Last-Translator: Wylmer Wang <Unknown>\n"
+"POT-Creation-Date: 2016-09-23 22:51-0400\n"
+"PO-Revision-Date: 2016-11-06 02:44+0000\n"
+"Last-Translator: AlephAlpha <alephalpha911@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-06-25 09:30+0000\n"
-"X-Generator: Launchpad (build 18111)\n"
+"X-Launchpad-Export-Date: 2016-11-09 17:14+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 
-#: src/cinnamon-screensaver-command.c:274
+#: src/cinnamon-screensaver-command.py:34
+msgid "Causes the screensaver to exit gracefully"
+msgstr "使屏幕保护程序正常退出"
+
+#: src/cinnamon-screensaver-command.py:36
+msgid "Query the state of the screensaver"
+msgstr "查询屏幕保护程序的状态"
+
+#: src/cinnamon-screensaver-command.py:38
+msgid "Query the length of time the screensaver has been active"
+msgstr "查询屏幕保护程序已经活动的时间"
+
+#: src/cinnamon-screensaver-command.py:40
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr "通知正在运行的屏幕保护程序进程立即锁定屏幕"
+
+#: src/cinnamon-screensaver-command.py:42
+msgid "Turn the screensaver on (blank the screen)"
+msgstr "开启屏幕保护程序(黑屏)"
+
+#: src/cinnamon-screensaver-command.py:44
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr "如果屏幕保护程序正活动则使之不活动(解除黑屏)"
+
+#: src/cinnamon-screensaver-command.py:46
+msgid "Version of this application"
+msgstr "此应用程序的版本"
+
+#: src/cinnamon-screensaver-command.py:48
+msgid "Message to be displayed in lock screen"
+msgstr "要在锁屏界面显示的消息"
+
+#: src/cinnamon-screensaver-command.py:77
 msgid "The screensaver is active\n"
 msgstr "屏幕保护程序状态为活动\n"
 
-#: src/cinnamon-screensaver-command.c:276
+#: src/cinnamon-screensaver-command.py:79
 msgid "The screensaver is inactive\n"
 msgstr "屏幕保护程序状态为不活动\n"
 
-#: src/cinnamon-screensaver-command.c:306
-#, c-format
+#: src/cinnamon-screensaver-command.py:83
+msgid "The screensaver is not currently active.\n"
+msgstr "屏幕保护当前没有激活。\n"
+
+#: src/cinnamon-screensaver-command.py:85
+#, python-format
 #| msgid "The screensaver has been active for %d seconds.\n"
 msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "屏幕保护程序已激活 %d 秒。\n"
 
-#: src/cinnamon-screensaver-command.c:308
-msgid "The screensaver is not currently active.\n"
-msgstr "屏幕保护当前没有激活。\n"
-
-#: src/cinnamon-screensaver-dialog.c:173 src/cinnamon-screensaver-dialog.c:174
-#: src/cinnamon-screensaver-dialog.c:175 src/gs-auth-pam.c:699
-msgid "Username:"
-msgstr "用户名："
-
-#: src/cinnamon-screensaver-dialog.c:176 src/cinnamon-screensaver-dialog.c:177
-#: src/gs-auth-pam.c:166
-msgid "Password:"
-msgstr "密码："
-
-#: src/cinnamon-screensaver-dialog.c:178
-msgid "You are required to change your password immediately (password aged)"
-msgstr "您必须立即更改您的密码(密码到期)"
-
-#: src/cinnamon-screensaver-dialog.c:179
-msgid "You are required to change your password immediately (root enforced)"
-msgstr "您必须立即更改您的密码(root 强制)"
-
-#: src/cinnamon-screensaver-dialog.c:180
-msgid "Your account has expired; please contact your system administrator"
-msgstr "您的帐户已过期；请联系您的系统管理员"
-
-#: src/cinnamon-screensaver-dialog.c:181
-msgid "No password supplied"
-msgstr "没有提供密码"
-
-#: src/cinnamon-screensaver-dialog.c:182
-msgid "Password unchanged"
-msgstr "密码未改变"
-
-#: src/cinnamon-screensaver-dialog.c:183
-msgid "Cannot get username"
-msgstr "无法获取用户名"
-
-#: src/cinnamon-screensaver-dialog.c:184
-msgid "Retype new Unix password:"
-msgstr "重新输入新 UNIX 密码："
-
-#: src/cinnamon-screensaver-dialog.c:185
-msgid "Enter new Unix password:"
-msgstr "输入新 UNIX 密码："
-
-#: src/cinnamon-screensaver-dialog.c:186
-msgid "(current) Unix password:"
-msgstr "当前 UNIX 密码："
-
-#: src/cinnamon-screensaver-dialog.c:187
-msgid "Error while changing NIS password."
-msgstr "更改 NIS 密码出错。"
-
-#: src/cinnamon-screensaver-dialog.c:188
-msgid "You must choose a longer password"
-msgstr "你必须选择一个更长些的密码"
-
-#: src/cinnamon-screensaver-dialog.c:189
-msgid "Password has been already used. Choose another."
-msgstr "密码已经被使用。请重新选择。"
-
-#: src/cinnamon-screensaver-dialog.c:190
-msgid "You must wait longer to change your password"
-msgstr "您必须等待更久以修改您的密码"
-
-#: src/cinnamon-screensaver-dialog.c:191
-msgid "Sorry, passwords do not match"
-msgstr "对不起，密码不匹配"
-
-#: src/cinnamon-screensaver-dialog.c:257
-msgid "Checking…"
-msgstr "正在检查..."
-
-#: src/cinnamon-screensaver-dialog.c:299 src/gs-auth-pam.c:457
-msgid "Authentication failed."
-msgstr "验证失败。"
-
-#: src/gnome-wall-clock.c:223
+#: src/clock.py:59
 msgid "%A, %B %e"
 msgstr "%-m月%-d日%A"
 
-#: src/gs-auth-pam.c:397
-#, c-format
-msgid "Unable to establish service %s: %s\n"
-msgstr "无法建立服务 %s：%s\n"
+#: src/playerControl.py:158
+msgid "--:--"
+msgstr "--:--"
 
-#: src/gs-auth-pam.c:423
-#, c-format
-msgid "Can't set PAM_TTY=%s"
-msgstr "不能设置 PAM_TTY=%s"
+#: src/playerControl.py:161
+msgid "%M:%S"
+msgstr "%M:%S"
 
-#: src/gs-auth-pam.c:455
-msgid "Incorrect password."
-msgstr "密码不正确。"
+#: src/playerControl.py:163
+msgid "%H:%M:%S"
+msgstr "%H:%M:%S"
 
-#: src/gs-auth-pam.c:471
-msgid "Not permitted to gain access at this time."
-msgstr "目前不允许获得访问。"
+#: src/unlock.py:40 src/unlock.py:295
+msgid "Enter password..."
+msgstr "输入密码……"
 
-#: src/gs-auth-pam.c:477
-msgid "No longer permitted to access the system."
-msgstr "不再允许访问系统。"
-
-#: src/gs-listener-dbus.c:1302
-msgid "failed to register with the message bus"
-msgstr "注册到消息总线失败"
-
-#: src/gs-listener-dbus.c:1312
-msgid "not connected to the message bus"
-msgstr "未连接到消息总线"
-
-#: src/gs-listener-dbus.c:1321 src/gs-listener-dbus.c:1351
-msgid "screensaver already running in this session"
-msgstr "本会话中屏幕保护程序已经运行"
-
-#: src/gs-lock-plug.c:323
-msgid "Time has expired."
-msgstr "时间已到。"
-
-#: src/gs-lock-plug.c:354
+#: src/unlock.py:212
 msgid "You have the Caps Lock key on."
 msgstr "您打开了 Caps Lock 键。"
 
-#: src/gs-lock-plug.c:1445
-msgid "S_witch User…"
-msgstr "切换用户(_W)"
+#: src/unlock.py:244
+msgid "Checking..."
+msgstr "正在检查…"
 
-#: src/gs-lock-plug.c:1454
-msgid "Log _Out"
-msgstr "注销(_O)"
-
-#: src/gs-lock-plug.c:1461
-msgid "_Unlock"
-msgstr "解锁(_U)"
-
-#: src/gs-lock-plug.c:1588
-msgid "_Password:"
-msgstr "密码(_P)："
+#: src/unlock.py:296
+msgid "Password incorrect - try again."
+msgstr "密码错误 - 请重试。"
