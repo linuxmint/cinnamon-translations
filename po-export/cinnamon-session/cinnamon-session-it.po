@@ -9,22 +9,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-session 2.9x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-06 13:59+0100\n"
-"PO-Revision-Date: 2017-09-06 11:15+0000\n"
-"Last-Translator: Luca Ferretti <Unknown>\n"
+"POT-Creation-Date: 2017-10-23 14:05+0100\n"
+"PO-Revision-Date: 2017-09-22 13:44+0000\n"
+"Last-Translator: lang-it <Unknown>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2017-09-06 23:30+0000\n"
-"X-Generator: Launchpad (build 18446)\n"
+"X-Launchpad-Export-Date: 2017-11-03 11:43+0000\n"
+"X-Generator: Launchpad (build 18493)\n"
 "Language: \n"
 
 #: cinnamon-session/csm-inhibit-dialog.c:251
 #, c-format
 msgid "Icon '%s' not found"
-msgstr "Icona «%s» non trovata"
+msgstr "Icona '%s' non trovata"
 
 #: cinnamon-session/csm-inhibit-dialog.c:586
 msgid "Unknown"
@@ -39,8 +39,8 @@ msgid ""
 "Waiting for the program to finish.  Interrupting the program may cause you "
 "to lose work."
 msgstr ""
-"In attesa che i programmi finiscano. Interrompere questi programmi potrebbe "
-"causare la perdita del proprio lavoro.sessione"
+"Attendere che il programma termini. L'interruzione potrebbe causare la "
+"perdita del lavoro."
 
 #: cinnamon-session/csm-inhibit-dialog.c:641 data/csm-inhibit-dialog.glade.h:1
 msgid "Some programs are still running:"
@@ -51,8 +51,8 @@ msgid ""
 "Waiting for programs to finish.  Interrupting these programs may cause you "
 "to lose work."
 msgstr ""
-"In attesa che i programmi finiscano. Interrompere questi programmi potrebbe "
-"causare la perdita del proprio lavoro."
+"Attendere che i programmi terminino. L'interruzione potrebbe causare la "
+"perdita del lavoro."
 
 #: cinnamon-session/csm-inhibit-dialog.c:872
 msgid "Switch User Anyway"
@@ -91,21 +91,23 @@ msgstr "Annulla"
 msgid "You will be automatically logged out in %d second."
 msgid_plural "You will be logged out in %d seconds."
 msgstr[0] ""
+"La sessione in corso verrà terminata automaticamente entro %d secondo."
 msgstr[1] ""
+"La sessione in corso verrà terminata automaticamente entro %d secondi."
 
 #: cinnamon-session/csm-logout-dialog.c:265
 #, c-format
 msgid "This system will be automatically shut down in %d second."
 msgid_plural "This system will be shut down in %d seconds."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Il sistema si spegnerà automaticamente tra %d secondo."
+msgstr[1] "Il sistema si spegnerà automaticamente tra %d secondi."
 
 #: cinnamon-session/csm-logout-dialog.c:273
 #, c-format
 msgid "This system will be automatically restarted in %d second."
 msgid_plural "This system will be restarted in %d seconds."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Il sistema verrà riavviato automaticamente tra %d secondo."
+msgstr[1] "Il sistema verrà riavviato automaticamente tra %d secondi."
 
 #: cinnamon-session/csm-logout-dialog.c:297
 #, c-format
@@ -114,7 +116,7 @@ msgstr "È stato effettuato l'accesso come «%s»."
 
 #: cinnamon-session/csm-logout-dialog.c:359
 msgid "Session"
-msgstr ""
+msgstr "Sessione"
 
 # lo so che c'è system, ma in italiano non ha senso
 #: cinnamon-session/csm-logout-dialog.c:374
@@ -124,6 +126,12 @@ msgstr "Terminare questa sessione adesso?"
 #: cinnamon-session/csm-logout-dialog.c:380
 msgid "_Switch User"
 msgstr "_Cambia utente"
+
+#: cinnamon-session/csm-logout-dialog.c:385
+#: cinnamon-session/csm-logout-dialog.c:418
+#: cinnamon-session/csm-logout-dialog.c:434
+msgid "_Cancel"
+msgstr ""
 
 #: cinnamon-session/csm-logout-dialog.c:389 cinnamon-session/csm-util.c:429
 msgid "_Log Out"
@@ -156,7 +164,7 @@ msgstr "Riavviare questo sistema adesso?"
 
 # non so se la forma è corretta, non ho provato
 # a inibire il termine sessione
-#: cinnamon-session/csm-manager.c:1457 cinnamon-session/csm-manager.c:2238
+#: cinnamon-session/csm-manager.c:1490 cinnamon-session/csm-manager.c:2271
 msgid "Not responding"
 msgstr "Non risponde"
 
@@ -236,7 +244,7 @@ msgstr "Mostra il dialogo \"fail whale\" per test"
 
 #: cinnamon-session/main.c:278
 msgid " - the Cinnamon session manager"
-msgstr ""
+msgstr " - il gestore di sessioni di Cinnamon"
 
 # commento opzioni riga comando
 #: tools/cinnamon-session-quit.c:53
@@ -333,62 +341,3 @@ msgstr "Opzioni di gestione sessione:"
 #: egg/eggsmclient.c:254
 msgid "Show session management options"
 msgstr "Mostra le opzioni di gestione sessione"
-
-#~ msgid "Oh no!  Something has gone wrong."
-#~ msgstr "Oh no! Qualcosa è andato storto."
-
-#~ msgid ""
-#~ "A problem has occurred and the system can't recover. Please contact a system "
-#~ "administrator"
-#~ msgstr ""
-#~ "Si è verificato un problema impossibile da recuperare. Contattare "
-#~ "l'amministratore di sistema"
-
-#~ msgid ""
-#~ "A problem has occurred and the system can't recover. All extensions have "
-#~ "been disabled as a precaution."
-#~ msgstr ""
-#~ "Si è verificato un problema impossibile da recuperare. Per precauzione, "
-#~ "tutte le estensioni sono state disabilitate."
-
-#~ msgid ""
-#~ "A problem has occurred and the system can't recover.\n"
-#~ "Please log out and try again."
-#~ msgstr ""
-#~ "Si è verificato un problema impossibile da recuperare.\n"
-#~ "Terminare la sessione e provare di nuovo."
-
-#~ msgid "Cinnamon fallback"
-#~ msgstr "Cinnamon ripiego"
-
-#~ msgid "Cinnamon"
-#~ msgstr "Cinnamon"
-
-#~ msgid "This session logs you into Cinnamon"
-#~ msgstr "Questa sessione esegue l'accesso in Cinnamon"
-
-#~ msgid "Startup Programs"
-#~ msgstr "Programmi d'avvio"
-
-#~ msgid "Options"
-#~ msgstr "Opzioni"
-
-#~ msgid "<b>Some programs are still running:</b>"
-#~ msgstr "<b>Alcuni programmi sono ancora in esecuzione:</b>"
-
-#~ msgid ""
-#~ "A problem has occurred and the system can't recover. Some of the extensions "
-#~ "below may have caused this.\n"
-#~ "Please try disabling some of these, and then log out and try again."
-#~ msgstr ""
-#~ "Si è verificato un problema impossibile da recuperare. Una delle estensioni "
-#~ "elencate qui sotto potrebbe aver causato tale problema.\n"
-#~ "Provare a disabilitare alcune estensioni, quindi terminare la sessione e "
-#~ "provare di nuovo."
-
-#~ msgid ""
-#~ "There is a problem with the configuration server.\n"
-#~ "(%s exited with status %d)"
-#~ msgstr ""
-#~ "C'è un problema con il server di configurazione.\n"
-#~ "(%s è uscito con stato %d)"

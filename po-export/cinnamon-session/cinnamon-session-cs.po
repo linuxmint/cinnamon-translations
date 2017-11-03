@@ -15,16 +15,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-session\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-06 13:59+0100\n"
-"PO-Revision-Date: 2017-09-06 14:11+0000\n"
+"POT-Creation-Date: 2017-10-23 14:05+0100\n"
+"PO-Revision-Date: 2017-10-24 09:52+0000\n"
 "Last-Translator: Pavel Borecki <Unknown>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2017-09-06 23:29+0000\n"
-"X-Generator: Launchpad (build 18446)\n"
+"X-Launchpad-Export-Date: 2017-11-03 11:43+0000\n"
+"X-Generator: Launchpad (build 18493)\n"
 "X-Project-Style: gnome\n"
 "Language: cs\n"
 
@@ -39,7 +39,7 @@ msgstr "Neznámé"
 
 #: cinnamon-session/csm-inhibit-dialog.c:637
 msgid "A program is still running:"
-msgstr "Program stále běží:"
+msgstr "Program je pořád spuštěný:"
 
 #: cinnamon-session/csm-inhibit-dialog.c:638 data/csm-inhibit-dialog.glade.h:2
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 
 #: cinnamon-session/csm-inhibit-dialog.c:641 data/csm-inhibit-dialog.glade.h:1
 msgid "Some programs are still running:"
-msgstr "Některé programy stále běží:"
+msgstr "Některé programy jsou pořád spuštěné:"
 
 #: cinnamon-session/csm-inhibit-dialog.c:642
 msgid ""
@@ -91,7 +91,7 @@ msgstr "Uzamknout obrazovku"
 
 #: cinnamon-session/csm-inhibit-dialog.c:898
 msgid "Cancel"
-msgstr "Zrušit"
+msgstr "Storno"
 
 #: cinnamon-session/csm-logout-dialog.c:257
 #, c-format
@@ -134,6 +134,12 @@ msgstr "Odhlásit se nyní z tohoto systému?"
 msgid "_Switch User"
 msgstr "_Přepnout uživatele"
 
+#: cinnamon-session/csm-logout-dialog.c:385
+#: cinnamon-session/csm-logout-dialog.c:418
+#: cinnamon-session/csm-logout-dialog.c:434
+msgid "_Cancel"
+msgstr "_Storno"
+
 #: cinnamon-session/csm-logout-dialog.c:389 cinnamon-session/csm-util.c:429
 msgid "_Log Out"
 msgstr "_Odhlásit se"
@@ -161,9 +167,9 @@ msgstr "_Vypnout"
 
 #: cinnamon-session/csm-logout-dialog.c:429
 msgid "Restart this system now?"
-msgstr "Restartovat tento systém nyní?"
+msgstr "Restartovat nyní tento systém?"
 
-#: cinnamon-session/csm-manager.c:1457 cinnamon-session/csm-manager.c:2238
+#: cinnamon-session/csm-manager.c:1490 cinnamon-session/csm-manager.c:2271
 msgid "Not responding"
 msgstr "Neodpovídá"
 
@@ -175,7 +181,7 @@ msgstr "Program skončil s kódem %d"
 #: cinnamon-session/csm-process-helper.c:128
 #, c-format
 msgid "Killed by signal %d"
-msgstr "Zabito signálem %d"
+msgstr "Vynuceně ukončeno signálem %d"
 
 #: cinnamon-session/csm-process-helper.c:133
 #, c-format
@@ -185,7 +191,8 @@ msgstr "Zastaveno signálem %d"
 #: cinnamon-session/csm-util.c:413
 msgid "Unable to start login session (and unable to connect to the X server)"
 msgstr ""
-"Nepodařilo se spustit sezení s přihlášením (a spojit se se serverem X)"
+"Nepodařilo se spustit sezení s přihlášením (a spojit se s grafickým X "
+"serverem)"
 
 #: cinnamon-session/csm-xsmp-client.c:559
 msgid "Remembered Application"
@@ -200,7 +207,7 @@ msgid ""
 "Refusing new client connection because the session is currently being shut "
 "down\n"
 msgstr ""
-"Odmítnutí spojení nového klienta, jelikož právě probíhá vypnutí sezení\n"
+"Odmítnutí spojení nového klienta, protože právě probíhá vypnutí sezení\n"
 
 #: cinnamon-session/csm-xsmp-server.c:609
 #, c-format
@@ -209,23 +216,23 @@ msgstr "Nelze vytvořit socket naslouchání ICE: %s"
 
 #: cinnamon-session/main.c:243
 msgid "Override standard autostart directories"
-msgstr "Přepsat standardní adresáře automatického spuštění"
+msgstr "Přepsat standardní složky automatického spouštění"
 
 #: cinnamon-session/main.c:243
 msgid "AUTOSTART_DIR"
-msgstr "ADR_AUTOSPUŠTĚNÍ"
+msgstr "SLOZ_AUTOSPOUSTENI"
 
 #: cinnamon-session/main.c:244
 msgid "Session to use"
-msgstr "Sezení, které se má použít"
+msgstr "Sezení, které použít"
 
 #: cinnamon-session/main.c:244
 msgid "SESSION_NAME"
-msgstr "NÁZEV_SEZENÍ"
+msgstr "NAZEV_SEZENI"
 
 #: cinnamon-session/main.c:245
 msgid "Enable debugging code"
-msgstr "Zapnout ladicí kód"
+msgstr "Zapnout ladění kódu"
 
 #: cinnamon-session/main.c:246
 msgid "Do not load user-specified applications"
@@ -257,7 +264,7 @@ msgstr "Restartovat"
 
 #: tools/cinnamon-session-quit.c:56
 msgid "Ignoring any existing inhibitors"
-msgstr "Ignorovat jakékoliv existující inhibitory"
+msgstr "Ignorovat jakékoli existující blokátory"
 
 #: tools/cinnamon-session-quit.c:57
 msgid "Don't prompt for user confirmation"
@@ -265,7 +272,7 @@ msgstr "Nevyžadovat potvrzení od uživatele"
 
 #: tools/cinnamon-session-quit.c:91 tools/cinnamon-session-quit.c:101
 msgid "Could not connect to the session manager"
-msgstr "Nelze se spojit se správcem sezení"
+msgstr "Nedaří se spojit se správou sezení"
 
 #: tools/cinnamon-session-quit.c:203
 msgid "Program called with conflicting options"
@@ -278,7 +285,7 @@ msgstr "Soubor není platným souborem .desktop"
 #: egg/eggdesktopfile.c:191
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr "Nerozpoznaná verze „%s“ souboru pracovní plochy"
+msgstr "Nerozpoznaná verze „%s“ souboru se spouštěčem aplikace"
 
 #: egg/eggdesktopfile.c:973
 #, c-format
@@ -296,7 +303,7 @@ msgstr "Nerozpoznaná spouštěcí volba: %d"
 
 #: egg/eggdesktopfile.c:1383
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "URI dokumentu nelze postoupit položce pracovní plochy „Type=Link“"
+msgstr "URI dokumentu nelze postoupit položce spouštěče „Type=Link“"
 
 #: egg/eggdesktopfile.c:1404
 msgid "Not a launchable item"
@@ -304,11 +311,11 @@ msgstr "Není spustitelnou položkou"
 
 #: egg/eggsmclient.c:226
 msgid "Disable connection to session manager"
-msgstr "Vypnout spojení se správcem sezení"
+msgstr "Vypnout spojení se správou sezení"
 
 #: egg/eggsmclient.c:229
 msgid "Specify file containing saved configuration"
-msgstr "Určit soubor obsahující uložené nastavení"
+msgstr "Určete soubor obsahující uložená nastavení"
 
 #: egg/eggsmclient.c:229
 msgid "FILE"
@@ -316,58 +323,16 @@ msgstr "SOUBOR"
 
 #: egg/eggsmclient.c:232
 msgid "Specify session management ID"
-msgstr "Určit ID správce sezení"
+msgstr "Zadejte identifikátor správy sezení"
 
 #: egg/eggsmclient.c:232
 msgid "ID"
-msgstr "ID"
+msgstr "Identifikátor"
 
 #: egg/eggsmclient.c:253
 msgid "Session management options:"
-msgstr "Volby správy sezení:"
+msgstr "Předvolby správy sezení:"
 
 #: egg/eggsmclient.c:254
 msgid "Show session management options"
-msgstr "Zobrazit volby správy sezení"
-
-#~ msgid "Oh no!  Something has gone wrong."
-#~ msgstr "Jejda! Něco se pokazilo."
-
-#~ msgid ""
-#~ "A problem has occurred and the system can't recover. Please contact a system "
-#~ "administrator"
-#~ msgstr ""
-#~ "Došlo ke komplikacím a systém se nepodařilo obnovit. Kontaktujte prosím "
-#~ "správce systému"
-
-#~ msgid ""
-#~ "A problem has occurred and the system can't recover. All extensions have "
-#~ "been disabled as a precaution."
-#~ msgstr ""
-#~ "Došlo ke komplikacím a systém se nepodařilo obnovit. Všechna rozšíření byla "
-#~ "preventivně zakázána."
-
-#~ msgid ""
-#~ "A problem has occurred and the system can't recover.\n"
-#~ "Please log out and try again."
-#~ msgstr ""
-#~ "Došlo ke komplikacím a systém se nepodařilo obnovit.\n"
-#~ "Odhlaste se prosím a zkuste to znovu."
-
-#~ msgid "Cinnamon fallback"
-#~ msgstr "Záložní prostředí Cinnamon"
-
-#~ msgid "Cinnamon"
-#~ msgstr "Cinnamon"
-
-#~ msgid "This session logs you into Cinnamon"
-#~ msgstr "Toto sezení vás přihlásí do Cinnamon"
-
-#~ msgid "Startup Programs"
-#~ msgstr "Programy při přihlášení"
-
-#~ msgid "Options"
-#~ msgstr "Možnosti"
-
-#~ msgid "<b>Some programs are still running:</b>"
-#~ msgstr "<b>Některé programy stále běží:</b>"
+msgstr "Zobrazit předvolby správy sezení"
