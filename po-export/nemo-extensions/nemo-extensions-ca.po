@@ -7,22 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2017-10-24 11:10+0100\n"
-"PO-Revision-Date: 2017-12-25 16:48+0000\n"
+"POT-Creation-Date: 2018-05-01 13:07+0100\n"
+"PO-Revision-Date: 2018-05-05 10:26+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <Unknown>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2018-01-06 14:25+0000\n"
-"X-Generator: Launchpad (build 18521)\n"
+"X-Launchpad-Export-Date: 2018-05-22 09:25+0000\n"
+"X-Generator: Launchpad (build 18658)\n"
 
-#: nemo-audio-tab/nemo-extension/nemo-audio-tab.py:35
+#: nemo-audio-tab/nemo-extension/nemo-audio-tab.py:41
 msgid "Audio"
 msgstr "Àudio"
 
-#: nemo-audio-tab/nemo-extension/nemo-audio-tab.py:65
+#: nemo-audio-tab/nemo-extension/nemo-audio-tab.py:68
 msgid "No Info"
 msgstr "sense informació"
 
@@ -200,22 +200,22 @@ msgstr ""
 #: nemo-gtkhash/src/hash.c:74 nemo-gtkhash/src/nautilus/properties-hash.c:61
 #, c-format
 msgid "%s of %s - 1 minute left (%s/sec)"
-msgstr "%s de %s - queda 1 minut (%s/seg)"
+msgstr "%s de %s - queda 1 minut (%s/s)"
 
 #: nemo-gtkhash/src/hash.c:77 nemo-gtkhash/src/nautilus/properties-hash.c:64
 #, c-format
 msgid "%s of %s - %u minutes left (%s/sec)"
-msgstr "%s de %s - queden %u minuts (%s/seg)"
+msgstr "%s de %s - queden %u minuts (%s/s)"
 
 #: nemo-gtkhash/src/hash.c:81 nemo-gtkhash/src/nautilus/properties-hash.c:68
 #, c-format
 msgid "%s of %s - 1 second left (%s/sec)"
-msgstr "%s de %s - queda 1 segon (%s/seg)"
+msgstr "%s de %s - queda 1 segon (%s/s)"
 
 #: nemo-gtkhash/src/hash.c:84 nemo-gtkhash/src/nautilus/properties-hash.c:71
 #, c-format
 msgid "%s of %s - %u seconds left (%s/sec)"
-msgstr "%s de %s - queden %u segons (%s/seg)"
+msgstr "%s de %s - queden %u segons (%s/s)"
 
 #: nemo-gtkhash/src/main.c:86
 msgid "Check against the specified digest or checksum"
@@ -383,10 +383,12 @@ msgid "Height:"
 msgstr "Alçada:"
 
 #: nemo-image-converter/data/nemo-image-resize.ui.h:19
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:6
 msgid "<b>Filename</b>"
 msgstr "<b>Nom de fitxer</b>"
 
 #: nemo-image-converter/data/nemo-image-resize.ui.h:20
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:7
 msgid "Append"
 msgstr "Annexa"
 
@@ -395,6 +397,7 @@ msgid ".resized"
 msgstr ".resized"
 
 #: nemo-image-converter/data/nemo-image-resize.ui.h:22
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:9
 msgid "to file title"
 msgstr "al títol del fitxer"
 
@@ -405,6 +408,38 @@ msgstr "Redimensiona in situ"
 #: nemo-image-converter/data/nemo-image-resize.ui.h:24
 msgid "_Resize"
 msgstr "_Redimensiona"
+
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:1
+msgid "Rotate Images"
+msgstr "Gira les imatges"
+
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:2
+msgid "<b>Image Rotation</b>"
+msgstr "<b>Gir d'imatge</b>"
+
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:3
+msgid "Select an angle:"
+msgstr "Seleccioneu un angle:"
+
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:4
+msgid "Custom angle:"
+msgstr "Angle escollit:"
+
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:5
+msgid "degrees clockwise"
+msgstr "graus en sentit horari"
+
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:8
+msgid ".rotated"
+msgstr ".girat"
+
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:10
+msgid "Rotate in place"
+msgstr "Gira in situ"
+
+#: nemo-image-converter/data/nemo-image-rotate.ui.h:11
+msgid "_Rotate"
+msgstr "Gi_ra"
 
 #: nemo-media-columns/nemo-media-columns.py:75
 msgid "Title"
@@ -557,7 +592,7 @@ msgstr "de"
 msgid "by"
 msgstr "per"
 
-#: nemo-preview/src/js/viewers/evince.js:81
+#: nemo-preview/src/js/viewers/xreader.js:81
 #, javascript-format
 msgid "%d of %d"
 msgstr "%d de %d"
@@ -718,6 +753,18 @@ msgstr "Seleccioneu el nom de codificació que s'ha d'utilitzar"
 #: nemo-repairer/src/encoding-dialog.ui.h:2
 msgid "_Encoding name to add: "
 msgstr "_Nom de codificació que s'ha d'afegir: "
+
+#: nemo-repairer/src/repair-dialog.ui.h:1
+msgid "Nemo Filename Repairer"
+msgstr "Reparador de noms de fitxers de Nemo"
+
+#: nemo-repairer/src/repair-dialog.ui.h:2
+msgid "Select _encoding:"
+msgstr "Seleccioneu la _codificació:"
+
+#: nemo-repairer/src/repair-dialog.ui.h:3
+msgid "Include _subdirectories"
+msgstr "Inclou _subcarpetes"
 
 #: nemo-seahorse/tool/seahorse-notification.c:569
 msgid "Key Imported"
@@ -1183,6 +1230,14 @@ msgid ""
 msgstr ""
 "Atès que els fitxers estan ubicats remotament, es xifraran per separat."
 
+#: nemo-seahorse/tool/seahorse-notify.xml.h:1
+msgid "Notification Messages"
+msgstr "Missatges de notificació"
+
+#: nemo-seahorse/tool/seahorse-progress.xml.h:1
+msgid "Progress Title"
+msgstr "Títol de progrés"
+
 #: nemo-seahorse/nemo-ext/nemo-seahorse.c:159
 msgid "Encrypt..."
 msgstr "Xifra..."
@@ -1270,7 +1325,7 @@ msgstr "Crea un _recurs compartit"
 
 #: nemo-share/src/nemo-share.c:600
 msgid "Please reboot to finalize changes"
-msgstr "Reinicieu per finalitzar els canvis."
+msgstr "Reinicieu per finalitzar els canvis"
 
 #: nemo-share/src/nemo-share.c:603
 msgid ""
