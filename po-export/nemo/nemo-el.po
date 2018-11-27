@@ -7,16 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2018-04-24 15:23+0100\n"
-"PO-Revision-Date: 2017-08-17 11:41+0000\n"
+"POT-Creation-Date: 2018-11-12 15:08+0000\n"
+"PO-Revision-Date: 2018-06-29 21:36+0000\n"
 "Last-Translator: Basilis Thomopoulos <kolxoz83@gmail.com>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2018-06-26 10:10+0000\n"
-"X-Generator: Launchpad (build 18688)\n"
+"X-Launchpad-Export-Date: 2018-11-27 17:46+0000\n"
+"X-Generator: Launchpad (build 18826)\n"
+"Language: el\n"
 
 #: src/nemo-action-config-widget.c:237
 msgid "No actions found"
@@ -26,12 +27,12 @@ msgstr "Δεν βρέθηκαν ενέργειες"
 msgid "Actions"
 msgstr "Ενέργειες"
 
-#: src/nemo-application.c:273
+#: src/nemo-application.c:402
 #, c-format
 msgid "Nemo could not create the required folder \"%s\"."
 msgstr "Το Nemo δεν μπόρεσε να δημιουργήσει τον απαιτούμενο φάκελο \"%s\"."
 
-#: src/nemo-application.c:275
+#: src/nemo-application.c:404
 msgid ""
 "Before running Nemo, please create the following folder, or set permissions "
 "such that Nemo can create it."
@@ -77,13 +78,17 @@ msgstr ""
 msgid "_Run"
 msgstr "_Εκτέλεση"
 
-#: src/nemo-blank-desktop-window.c:198 src/nemo-desktop-window.c:123
-#: src/nemo-desktop-window.c:292 src/nemo-pathbar.c:1469
-#: src/nemo-places-sidebar.c:738 libnemo-private/nemo-action.c:978
+#: src/nemo-blank-desktop-window.c:145
+msgid "Customize"
+msgstr ""
+
+#: src/nemo-blank-desktop-window.c:214 src/nemo-desktop-window.c:125
+#: src/nemo-desktop-window.c:294 src/nemo-pathbar.c:1440
+#: src/nemo-places-sidebar.c:770 libnemo-private/nemo-action.c:981
 msgid "Desktop"
 msgstr "Επιφάνεια Εργασίας"
 
-#: src/nemo-bookmarks-window.c:162 src/nemo-window-menus.c:399
+#: src/nemo-bookmarks-window.c:162 src/nemo-window-menus.c:402
 #, c-format
 msgid ""
 "There was an error displaying help: \n"
@@ -162,8 +167,8 @@ msgstr "Παρακαλώ επιβεβαιώστε τις πληροφορίες 
 msgid "Continue"
 msgstr "Συνέχεια"
 
-#: src/nemo-connect-server-dialog.c:695 src/nemo-properties-window.c:5156
-#: src/nemo-view.c:1601
+#: src/nemo-connect-server-dialog.c:695 src/nemo-properties-window.c:5166
+#: src/nemo-view.c:1615
 msgid "There was an error displaying help."
 msgstr "Υπήρξε σφάλμα κατά την εμφάνιση της βοήθειας."
 
@@ -195,7 +200,7 @@ msgstr "_Τύπος:"
 msgid "Sh_are:"
 msgstr "_Κοινή χρήση:"
 
-#: src/nemo-connect-server-dialog.c:1008 src/nemo-view.c:1795
+#: src/nemo-connect-server-dialog.c:1008 src/nemo-view.c:1809
 msgid "_Folder:"
 msgstr "_Φάκελος:"
 
@@ -243,7 +248,7 @@ msgstr "Εμφάνιση της έκδοσης του προγράμματος."
 
 #: src/nemo-desktop-application.c:260
 msgid "Quit Nemo Desktop."
-msgstr ""
+msgstr "Κλείστε την επιφάνεια εργασίας Nemo."
 
 #: src/nemo-desktop-application.c:271
 msgid ""
@@ -251,151 +256,127 @@ msgid ""
 "\n"
 "Manage the desktop with the file manager"
 msgstr ""
+"\n"
+"\n"
+"Διαχειριστείτε την επιφάνεια εργασίας με το διαχειριστή αρχείων"
 
-#: src/nemo-desktop-icon-grid-view.c:1015 src/nemo-desktop-icon-view.c:679
-#: src/nemo-view.c:8237 src/nemo-view.c:9875
+#: src/nemo-desktop-icon-grid-view.c:917 src/nemo-desktop-icon-view.c:682
+#: src/nemo-view.c:8254 src/nemo-view.c:9884
 msgid "E_mpty Trash"
 msgstr "Ά_δειασμα Απορριμάτων"
 
-#: src/nemo-desktop-icon-grid-view.c:1143
-msgid "Align to _grid"
+#: src/nemo-desktop-icon-grid-view.c:1027
+#: gresources/nemo-desktop-overlay.glade:305
+msgid "Auto-arrange"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1144
-msgid "Keep icons aligned to a grid"
+#: src/nemo-desktop-icon-grid-view.c:1032
+#: gresources/nemo-desktop-overlay.glade:551
+msgid "Reverse sort"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1148
-msgid "_Auto-arrange"
-msgstr ""
-
-#: src/nemo-desktop-icon-grid-view.c:1149
-msgid "Keep icons automatically arranged"
-msgstr ""
-
-#: src/nemo-desktop-icon-grid-view.c:1156
+#: src/nemo-desktop-icon-grid-view.c:1040
 msgid "Smaller"
+msgstr "Μικρότερα"
+
+#: src/nemo-desktop-icon-grid-view.c:1044
+msgid "Small"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1157
-msgid "Display smaller icons"
-msgstr ""
-
-#: src/nemo-desktop-icon-grid-view.c:1160
+#: src/nemo-desktop-icon-grid-view.c:1048
 msgid "Normal"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1161
-msgid "Display normal-sized icons"
+#: src/nemo-desktop-icon-grid-view.c:1052
+msgid "Large"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1164
+#: src/nemo-desktop-icon-grid-view.c:1056
 msgid "Larger"
+msgstr "Μεγαλύτερα"
+
+#: src/nemo-desktop-icon-grid-view.c:1063
+msgid "_Vertical"
+msgstr "_Κάθετα"
+
+#: src/nemo-desktop-icon-grid-view.c:1067
+msgid "_Horizontal"
+msgstr "Ο_ριζόντια"
+
+#: src/nemo-desktop-icon-grid-view.c:1074 src/nemo-list-view.c:2393
+#: libnemo-private/nemo-column-utilities.c:43
+#: gresources/nemo-desktop-overlay.glade:116
+msgid "Name"
+msgstr "Όνομα"
+
+#: src/nemo-desktop-icon-grid-view.c:1078
+#: libnemo-private/nemo-column-utilities.c:50
+#: gresources/nemo-desktop-overlay.glade:121
+msgid "Size"
+msgstr "Μέγεθος"
+
+#: src/nemo-desktop-icon-grid-view.c:1082
+#: libnemo-private/nemo-column-utilities.c:58
+#: gresources/nemo-desktop-overlay.glade:126
+msgid "Type"
+msgstr "Τύπος"
+
+#: src/nemo-desktop-icon-grid-view.c:1086
+#: gresources/nemo-desktop-overlay.glade:131
+msgid "Date"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1165
-msgid "Display larger icons"
+#: src/nemo-desktop-icon-grid-view.c:1092
+msgid "_Sort"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1170 src/nemo-view.c:8463
-#: src/nemo-view.c:8467
-msgid "_Desktop"
-msgstr "_Επιφάνεια εργασίας"
-
-#: src/nemo-desktop-icon-grid-view.c:1171
+#: src/nemo-desktop-icon-grid-view.c:1093
 msgid "_Icon Size"
-msgstr ""
+msgstr "Μέγεθος _εικονιδίων"
 
-#: src/nemo-desktop-icon-grid-view.c:1175 src/nemo-desktop-icon-view.c:720
+#: src/nemo-desktop-icon-grid-view.c:1097 src/nemo-desktop-icon-view.c:723
 msgid "Empty Trash"
 msgstr "Άδειασμα Απορριμμάτων"
 
-#: src/nemo-desktop-icon-grid-view.c:1177 src/nemo-desktop-icon-view.c:721
-#: src/nemo-trash-bar.c:218 src/nemo-view.c:8238
+#: src/nemo-desktop-icon-grid-view.c:1099 src/nemo-desktop-icon-view.c:724
+#: src/nemo-trash-bar.c:227 src/nemo-view.c:8255
 msgid "Delete all items in the Trash"
 msgstr "Διαγραφή όλων των αντικειμένων στα Απορρίμματα"
 
-#: src/nemo-desktop-icon-grid-view.c:1180 src/nemo-icon-view.c:1463
-msgid "By _Name"
-msgstr "Κατά _Όνομα"
-
-#: src/nemo-desktop-icon-grid-view.c:1181 src/nemo-icon-view.c:138
-#: src/nemo-icon-view.c:1464
-msgid "Keep icons sorted by name in rows"
-msgstr "Να διατηρούνται τα εικονίδια ταξινομημένα κατά όνομα σε γραμμές"
-
-#: src/nemo-desktop-icon-grid-view.c:1184 src/nemo-icon-view.c:1467
-msgid "By _Size"
-msgstr "Κατά _Μέγεθος"
-
-#: src/nemo-desktop-icon-grid-view.c:1185 src/nemo-icon-view.c:145
-#: src/nemo-icon-view.c:1468
-msgid "Keep icons sorted by size in rows"
-msgstr "Να διατηρούνται τα εικονίδια ταξινομημένα κατά μεγέθος σε γραμμές"
-
-#: src/nemo-desktop-icon-grid-view.c:1188 src/nemo-icon-view.c:1475
-msgid "By _Detailed Type"
-msgstr "Κατά _Λεπτομερή Τύπο"
-
-#: src/nemo-desktop-icon-grid-view.c:1189 src/nemo-icon-view.c:159
-#: src/nemo-icon-view.c:1476
-msgid "Keep icons sorted by detailed type in rows"
-msgstr ""
-"Να διατηρούνται τα εικονίδια ταξινομημένα κατά λεπτομερή τύπο σε γραμμές"
-
-#: src/nemo-desktop-icon-grid-view.c:1192 src/nemo-icon-view.c:1479
-msgid "By Modification _Date"
-msgstr "Κατά _Ημερομηνία Τροποποίησης"
-
-#: src/nemo-desktop-icon-grid-view.c:1193 src/nemo-icon-view.c:166
-#: src/nemo-icon-view.c:1480
-msgid "Keep icons sorted by modification date in rows"
-msgstr ""
-"Να διατηρούνται τα εικονίδια ταξινομημένα κατά ημερομηνία τροποποίησης σε "
-"γραμμές"
-
-#: src/nemo-desktop-icon-grid-view.c:1196
-msgid "_Vertical"
+#: src/nemo-desktop-icon-grid-view.c:1103
+msgid "_Customize"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1197
-msgid "Arrange icons vertically in stacks"
+#: src/nemo-desktop-icon-grid-view.c:1104
+msgid "Adjust the desktop layout for this monitor"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1200
-msgid "_Horizontal"
-msgstr ""
-
-#: src/nemo-desktop-icon-grid-view.c:1201
-msgid "Arrange icons horizontally in rows"
-msgstr ""
-
-#: src/nemo-desktop-icon-grid-view.c:1278 src/nemo-desktop-icon-view.c:784
+#: src/nemo-desktop-icon-grid-view.c:1195 src/nemo-desktop-icon-view.c:787
 msgid "The desktop view encountered an error."
 msgstr "Η προβολή επιφάνειας εργασίας παρουσίασε σφάλμα."
 
-#: src/nemo-desktop-icon-grid-view.c:1279 src/nemo-desktop-icon-view.c:785
+#: src/nemo-desktop-icon-grid-view.c:1196 src/nemo-desktop-icon-view.c:788
 msgid "The desktop view encountered an error while starting up."
 msgstr ""
 "Παρουσιάστηκε σφάλμα κατά την εκκίνηση της προβολής επιφάνειας εργασίας."
 
-#: src/nemo-desktop-icon-view.c:701 src/nemo-desktop-icon-view.c:716
+#: src/nemo-desktop-icon-view.c:704 src/nemo-desktop-icon-view.c:719
 msgid "Restore Icons' Original Si_zes"
 msgstr "Επαναφορά Αρχικού Με_γέθους του Εικονιδίου"
 
-#: src/nemo-desktop-icon-view.c:702
+#: src/nemo-desktop-icon-view.c:705
 msgid "Restore Icon's Original Si_ze"
 msgstr "Επαναφορά Αρχικού Με_γέθους Εικονιδίου"
 
-#: src/nemo-desktop-icon-view.c:712
+#: src/nemo-desktop-icon-view.c:715
 msgid "Resize Icon..."
 msgstr "Αλλαγή διαστάσεων εικονιδίου..."
 
-#: src/nemo-desktop-icon-view.c:713
+#: src/nemo-desktop-icon-view.c:716
 msgid "Make the selected icon resizable"
 msgstr "Να επιτρέπεται η αλλαγή διάστασης του επιλεγμένου εικονιδίου"
 
-#: src/nemo-desktop-icon-view.c:717
+#: src/nemo-desktop-icon-view.c:720
 msgid "Restore each selected icon to its original size"
 msgstr "Επαναφορά κάθε επιλεγμένου εικονιδίου στο αρχικό του μέγεθος"
 
@@ -417,6 +398,29 @@ msgstr "Περιγραφή"
 #: src/nemo-desktop-item-properties.c:421
 msgid "Command"
 msgstr "Εντολή"
+
+#: src/nemo-desktop-overlay.c:76
+#, c-format
+msgid "Current Monitor Layout (%s - %dx%d)"
+msgstr ""
+
+#: src/nemo-desktop-overlay.c:88
+#, c-format
+msgid "Current Monitor Layout (%dx%d)"
+msgstr ""
+
+#: src/nemo-desktop-overlay.c:355 src/nemo-desktop-overlay.c:491
+#: src/nemo-desktop-overlay.c:494
+msgid "Desktop Settings"
+msgstr ""
+
+#: src/nemo-desktop-overlay.c:458
+msgid "Current Monitor Preferences"
+msgstr ""
+
+#: src/nemo-desktop-overlay.c:481
+msgid "Show global desktop settings"
+msgstr ""
 
 #: src/nemo-error-reporting.c:68
 #, c-format
@@ -537,45 +541,53 @@ msgstr "Γίνεται μετονομασία του \"%s\" σε \"%s\"."
 msgid "No extensions found"
 msgstr "Δεν βρέθηκαν πρόσθετα"
 
-#: src/nemo-extension-config-widget.c:254
+#: src/nemo-extension-config-widget.c:274
 msgid "no information available"
 msgstr "Δεν υπάρχουν διαθέσιμες πληροφορίες"
 
-#: src/nemo-extension-config-widget.c:264
+#: src/nemo-extension-config-widget.c:284
 msgid "Configure"
-msgstr ""
+msgstr "Διαμόρφωση"
 
-#: src/nemo-extension-config-widget.c:370
+#: src/nemo-extension-config-widget.c:395
 msgid "Extensions"
 msgstr "Επεκτάσεις"
 
-#: src/nemo-extension-config-widget.c:378
+#: src/nemo-extension-config-widget.c:403
 msgid "Extensions changed.  Restart required."
 msgstr "Οι επεκτάσεις άλλαξαν. Απαιτείται επανεκκίνηση."
 
-#: src/nemo-file-management-properties.c:284 src/nemo-properties-window.c:3917
-#: src/nemo-properties-window.c:3928
+#: src/nemo-file-management-properties.c:286 src/nemo-properties-window.c:3927
+#: src/nemo-properties-window.c:3938
 msgid "None"
 msgstr "Κανένα"
 
-#: src/nemo-file-management-properties.c:465 libnemo-private/nemo-file.c:4745
+#: src/nemo-file-management-properties.c:479 libnemo-private/nemo-file.c:4859
 #, no-c-format
 msgid "Yesterday"
-msgstr ""
+msgstr "Εχθές"
 
 #: src/nemo-icon-view.c:137
 msgid "by _Name"
 msgstr "κατά _Όνομα"
 
+#: src/nemo-icon-view.c:138 src/nemo-icon-view.c:1419
+msgid "Keep icons sorted by name in rows"
+msgstr "Να διατηρούνται τα εικονίδια ταξινομημένα κατά όνομα σε γραμμές"
+
 #: src/nemo-icon-view.c:144
 msgid "by _Size"
 msgstr "κατά _Μέγεθος"
+
+#: src/nemo-icon-view.c:145 src/nemo-icon-view.c:1423
+msgid "Keep icons sorted by size in rows"
+msgstr "Να διατηρούνται τα εικονίδια ταξινομημένα κατά μεγέθος σε γραμμές"
 
 #: src/nemo-icon-view.c:151
 msgid "by _Type"
 msgstr "κατά _Τύπο"
 
-#: src/nemo-icon-view.c:152 src/nemo-icon-view.c:1472
+#: src/nemo-icon-view.c:152 src/nemo-icon-view.c:1427
 msgid "Keep icons sorted by type in rows"
 msgstr "Να διατηρούνται τα εικονίδια ταξινομημένα κατά τύπο σε γραμμές"
 
@@ -583,119 +595,138 @@ msgstr "Να διατηρούνται τα εικονίδια ταξινομημ
 msgid "by _Detailed Type"
 msgstr "κατά _Λεπτομερή Τύπο"
 
+#: src/nemo-icon-view.c:159 src/nemo-icon-view.c:1431
+msgid "Keep icons sorted by detailed type in rows"
+msgstr ""
+"Να διατηρούνται τα εικονίδια ταξινομημένα κατά λεπτομερή τύπο σε γραμμές"
+
 #: src/nemo-icon-view.c:165
 msgid "by Modification _Date"
 msgstr "κατά _Ημερομηνία Τροποποίησης"
+
+#: src/nemo-icon-view.c:166 src/nemo-icon-view.c:1435
+msgid "Keep icons sorted by modification date in rows"
+msgstr ""
+"Να διατηρούνται τα εικονίδια ταξινομημένα κατά ημερομηνία τροποποίησης σε "
+"γραμμές"
 
 #: src/nemo-icon-view.c:172
 msgid "by T_rash Time"
 msgstr "κατά _Ώρα Απομάκρυνσης"
 
-#: src/nemo-icon-view.c:173 src/nemo-icon-view.c:1484
+#: src/nemo-icon-view.c:173 src/nemo-icon-view.c:1439
 msgid "Keep icons sorted by trash time in rows"
 msgstr ""
 "Να διατηρούνται τα εικονίδια ταξινομημένα κατά ώρα απομάκρυνσης σε γραμμές"
 
-#: src/nemo-icon-view.c:650
+#: src/nemo-icon-view.c:606
 msgid "_Organize Desktop by Name"
 msgstr "_Οργάνωση Επιφάνειας εργασίας κατά Όνομα"
 
-#: src/nemo-icon-view.c:1431
+#: src/nemo-icon-view.c:1391
 msgid "Arran_ge Items"
 msgstr "_Στοίχιση Αντικειμένων"
 
-#: src/nemo-icon-view.c:1433
+#: src/nemo-icon-view.c:1393
 msgid "_Organize by Name"
 msgstr "_Οργάνωση κατά Όνομα"
 
-#: src/nemo-icon-view.c:1434
+#: src/nemo-icon-view.c:1394
 msgid "Reposition icons to better fit in the window and avoid overlapping"
 msgstr ""
 "Αναταξινόμηση εικονιδίων ώστε να ταιριάζουν καλύτερα στο παράθυρο και να "
 "αποφεύγεται η επικάλυψη"
 
-#: src/nemo-icon-view.c:1441
-msgid "Compact _Layout"
-msgstr "Συμπτυγμένη _διάταξη"
-
-#: src/nemo-icon-view.c:1442
-msgid "Toggle using a tighter layout scheme"
-msgstr "Εναλλαγή χρήσης στενότερης διάταξης"
-
-#: src/nemo-icon-view.c:1446
+#: src/nemo-icon-view.c:1401
 msgid "Re_versed Order"
 msgstr "Αντί_στροφη Σειρά"
 
-#: src/nemo-icon-view.c:1447
+#: src/nemo-icon-view.c:1402
 msgid "Display icons in the opposite order"
 msgstr "Εμφάνιση των εικονιδίων στην αντίστροφη σειρά"
 
-#: src/nemo-icon-view.c:1451
+#: src/nemo-icon-view.c:1406
 msgid "_Keep Aligned"
 msgstr "_Διατήρηση Στοίχησης"
 
-#: src/nemo-icon-view.c:1452
+#: src/nemo-icon-view.c:1407
 msgid "Keep icons lined up on a grid"
 msgstr "Διατήρηση της στοίχησης των εικονιδίων σε πλέγμα"
 
-#: src/nemo-icon-view.c:1459
+#: src/nemo-icon-view.c:1414
 msgid "_Manually"
 msgstr "_Χειροκίνητα"
 
-#: src/nemo-icon-view.c:1460
+#: src/nemo-icon-view.c:1415
 msgid "Leave icons wherever they are dropped"
 msgstr "Παραμονή των εικονιδίων οπουδήποτε αφήνονται"
 
-#: src/nemo-icon-view.c:1471
+#: src/nemo-icon-view.c:1418
+msgid "By _Name"
+msgstr "Κατά _Όνομα"
+
+#: src/nemo-icon-view.c:1422
+msgid "By _Size"
+msgstr "Κατά _Μέγεθος"
+
+#: src/nemo-icon-view.c:1426
 msgid "By _Type"
 msgstr "Κατά _Τύπο"
 
-#: src/nemo-icon-view.c:1483
+#: src/nemo-icon-view.c:1430
+msgid "By _Detailed Type"
+msgstr "Κατά _Λεπτομερή Τύπο"
+
+#: src/nemo-icon-view.c:1434
+msgid "By Modification _Date"
+msgstr "Κατά _Ημερομηνία Τροποποίησης"
+
+#: src/nemo-icon-view.c:1438
 msgid "By T_rash Time"
 msgstr "Κατά _Ώρα Απομάκρυνσης"
 
-#: src/nemo-icon-view.c:2901 src/nemo-icon-view-container.c:2166
-#: src/nemo-icon-view-grid-container.c:1653 src/nemo-window-menus.c:1372
-#: src/nemo-window-menus.c:1522
-#: gresources/nemo-file-management-properties.glade:12
+#: src/nemo-icon-view.c:2830 src/nemo-icon-view-container.c:2118
+#: src/nemo-icon-view-grid-container.c:1600 src/nemo-window-menus.c:1450
+#: src/nemo-window-menus.c:1600
+#: gresources/nemo-file-management-properties.glade:83
 msgid "Icon View"
 msgstr "Προβολή Εικονιδίων"
 
-#: src/nemo-icon-view.c:2903
+#: src/nemo-icon-view.c:2832
 msgid "_Icons"
 msgstr "_Εικονίδια"
 
-#: src/nemo-icon-view.c:2904
+#: src/nemo-icon-view.c:2833
 msgid "The icon view encountered an error."
 msgstr "Η προβολή εικονιδίων παρουσίασε σφάλμα."
 
-#: src/nemo-icon-view.c:2905
+#: src/nemo-icon-view.c:2834
 msgid "The icon view encountered an error while starting up."
 msgstr "Η προβολή εικονιδίων παρουσίασε σφάλμα κατά την εκκίνηση."
 
-#: src/nemo-icon-view.c:2906
+#: src/nemo-icon-view.c:2835
 msgid "Display this location with the icon view."
 msgstr "Εμφάνιση αυτής της τοποθεσίας με την προβολή εικονιδίων."
 
-#: src/nemo-icon-view.c:2915 src/nemo-window-menus.c:1378
-#: src/nemo-window-menus.c:1545
-#: gresources/nemo-file-management-properties.glade:18
+#: src/nemo-icon-view.c:2844 src/nemo-window-menus.c:1456
+#: src/nemo-window-menus.c:1623
+#: gresources/nemo-file-management-properties.glade:89
 msgid "Compact View"
 msgstr "Συμπτυγμένη Προβολή"
 
-#: src/nemo-icon-view.c:2917
+#: src/nemo-icon-view.c:2846
 msgid "_Compact"
 msgstr "_Συμπτυγμένη"
 
-#: src/nemo-icon-view.c:2918
+#: src/nemo-icon-view.c:2847
 msgid "The compact view encountered an error."
 msgstr "Η συμπτυγμένη προβολή παρουσίασε σφάλμα."
 
-#: src/nemo-icon-view.c:2919
+#: src/nemo-icon-view.c:2848
 msgid "The compact view encountered an error while starting up."
 msgstr "Η συμπτυγμένη προβολή παρουσίασε σφάλμα κατά την εκκίνηση."
 
-#: src/nemo-icon-view.c:2920
+#: src/nemo-icon-view.c:2849
 msgid "Display this location with the compact view."
 msgstr "Εμφάνιση αυτής της τοποθεσίας με τη συμπτυγμένη προβολή."
 
@@ -803,8 +834,8 @@ msgstr "Εστιακή Απόσταση"
 msgid "Software"
 msgstr "Λογισμικό"
 
-#: src/nemo-image-properties-page.c:413 src/nemo-window-menus.c:1487
-#: libnemo-private/nemo-column-utilities.c:136
+#: src/nemo-image-properties-page.c:413 src/nemo-window-menus.c:1565
+#: libnemo-private/nemo-column-utilities.c:159
 msgid "Location"
 msgstr "Τοποθεσία"
 
@@ -824,13 +855,13 @@ msgstr "Βαθμολογία"
 msgid "Failed to load image information"
 msgstr "Αποτυχία φόρτωσης πληροφοριών εικόνας"
 
-#: src/nemo-image-properties-page.c:706 src/nemo-list-model.c:429
-#: src/nemo-tree-sidebar-model.c:1240 src/nemo-window-manage-views.c:1182
-#: src/nemo-window-slot.c:299
+#: src/nemo-image-properties-page.c:706 src/nemo-list-model.c:423
+#: src/nemo-tree-sidebar-model.c:1232 src/nemo-window-manage-views.c:1200
+#: src/nemo-window-slot.c:305
 msgid "Loading..."
 msgstr "Φόρτωση..."
 
-#: src/nemo-image-properties-page.c:767 libnemo-private/nemo-file.c:6536
+#: src/nemo-image-properties-page.c:767 libnemo-private/nemo-file.c:6669
 msgid "Image"
 msgstr "Εικόνα"
 
@@ -861,41 +892,37 @@ msgstr ""
 msgid "View additional information about creating scripts"
 msgstr "Δείτε επιπλέον πληροφορίες σχετικά με τη δημιουργία σεναρίων"
 
-#: src/nemo-list-model.c:427 src/nemo-tree-sidebar-model.c:1240
+#: src/nemo-list-model.c:421 src/nemo-tree-sidebar-model.c:1232
 msgid "(Empty)"
 msgstr "(Κενό)"
 
-#: src/nemo-list-view.c:1961
+#: src/nemo-list-view.c:2034
 msgid "Use Default"
 msgstr "Χρήση Προεπιλογής"
 
-#: src/nemo-list-view.c:1972
+#: src/nemo-list-view.c:2045
 msgid "Temporarily disable auto-sort"
 msgstr "Προσωρινή απενεργοποίηση αυτόματης ταξινόμησης"
 
-#: src/nemo-list-view.c:2290 libnemo-private/nemo-column-utilities.c:43
-msgid "Name"
-msgstr "Όνομα"
-
-#: src/nemo-list-view.c:2374 src/nemo-list-view.c:3922
-#: src/nemo-window-menus.c:1375 src/nemo-window-menus.c:1533
-#: gresources/nemo-file-management-properties.glade:15
+#: src/nemo-list-view.c:2478 src/nemo-list-view.c:4092
+#: src/nemo-window-menus.c:1453 src/nemo-window-menus.c:1611
+#: gresources/nemo-file-management-properties.glade:86
 msgid "List View"
 msgstr "Λίστα προβολής"
 
-#: src/nemo-list-view.c:3924
+#: src/nemo-list-view.c:4094
 msgid "_List"
 msgstr "_Λίστα"
 
-#: src/nemo-list-view.c:3925
+#: src/nemo-list-view.c:4095
 msgid "The list view encountered an error."
 msgstr "Η προβολή λίστας παρουσίασε σφάλμα."
 
-#: src/nemo-list-view.c:3926
+#: src/nemo-list-view.c:4096
 msgid "The list view encountered an error while starting up."
 msgstr "Η προβολή λίστας παρουσίασε σφάλμα κατά την εκκίνηση."
 
-#: src/nemo-list-view.c:3927
+#: src/nemo-list-view.c:4097
 msgid "Display this location with the list view."
 msgstr "Εμφάνιση αυτής της τοποθεσίας με την προβολή λίστας."
 
@@ -944,7 +971,7 @@ msgstr "Δημιουργία παραθύρων μόνο για τα URI που 
 
 #: src/nemo-main-application.c:514
 msgid "Ignored argument - left for compatibility only."
-msgstr ""
+msgstr "Παραβλέπεται όρισμα - αριστερά μόνο για συμβατότητα."
 
 #: src/nemo-main-application.c:516
 msgid ""
@@ -1026,8 +1053,8 @@ msgstr ""
 "υπάρχει."
 
 #: src/nemo-mime-actions.c:659 src/nemo-tree-sidebar.c:1343
-#: src/nemo-view.c:8289 src/nemo-view.c:8407 src/nemo-view.c:9460
-#: src/nemo-view.c:9798
+#: src/nemo-view.c:8306 src/nemo-view.c:8424 src/nemo-view.c:9477
+#: src/nemo-view.c:9807
 msgid "Mo_ve to Trash"
 msgstr "_Μετακίνηση στα Απορρίμματα"
 
@@ -1049,8 +1076,8 @@ msgstr "Εκτέλεση στο _Τερματικό"
 msgid "_Display"
 msgstr "_Εμφάνιση"
 
-#: src/nemo-mime-actions.c:1054 src/nemo-mime-actions.c:1586
-#: src/nemo-view.c:1055
+#: src/nemo-mime-actions.c:1054 src/nemo-mime-actions.c:1615
+#: src/nemo-view.c:1069
 msgid "Are you sure you want to open all files?"
 msgstr "Είστε βέβαιος ότι θέλετε να ανοίξετε όλα τα αρχεία;"
 
@@ -1061,16 +1088,16 @@ msgid_plural "This will open %d separate tabs."
 msgstr[0] "Αυτό θα ανοίξει %d ξεχωριστή καρτέλα."
 msgstr[1] "Αυτό θα ανοίξει %d ξεχωριστές καρτέλες."
 
-#: src/nemo-mime-actions.c:1158 src/nemo-open-with-main.c:144
-#: src/nemo-view.c:1341
+#: src/nemo-mime-actions.c:1158 src/nemo-open-with-main.c:151
+#: src/nemo-view.c:1355
 msgid "Open with"
 msgstr "Άνοιγμα με"
 
-#: src/nemo-mime-actions.c:1227
+#: src/nemo-mime-actions.c:1235
 msgid "Unknown file type"
 msgstr "Άγνωστος τύπος αρχείου"
 
-#: src/nemo-mime-actions.c:1230
+#: src/nemo-mime-actions.c:1240
 #, c-format
 msgid ""
 "The file \"%s\" has no known programs associated with it.  If you trust the "
@@ -1089,14 +1116,21 @@ msgid "Make executable and run"
 msgstr "Σήμανση ως εκτελέσιμο και εκτέλεση"
 
 #: src/nemo-mime-actions.c:1249
+#, c-format
+msgid ""
+"The file \"%s\" has no known programs associated with it.  Use the Open With "
+"dialog to pick a program to open it with."
+msgstr ""
+
+#: src/nemo-mime-actions.c:1260
 msgid "Choose a program"
 msgstr "Επιλέξτε ένα πρόγραμμα"
 
-#: src/nemo-mime-actions.c:1327
+#: src/nemo-mime-actions.c:1339
 msgid "Untrusted application launcher"
 msgstr "Μη έμπιστος εκκινητής εφαρμογής"
 
-#: src/nemo-mime-actions.c:1330
+#: src/nemo-mime-actions.c:1342
 #, c-format
 msgid ""
 "The application launcher \"%s\" has not been marked as trusted (executable). "
@@ -1106,36 +1140,36 @@ msgstr ""
 "Εάν δε γνωρίζετε την πηγή προέλευσης αυτού του αρχείου, η εκκίνησή του "
 "μπορεί να μην είναι ασφαλής."
 
-#: src/nemo-mime-actions.c:1346
+#: src/nemo-mime-actions.c:1358
 msgid "_Launch Anyway"
 msgstr "_Εκκίνηση Ούτως ή άλλως"
 
-#: src/nemo-mime-actions.c:1349
+#: src/nemo-mime-actions.c:1361
 msgid "Mark as _Trusted"
 msgstr "Σήμανση ως  _Έμπιστο"
 
-#: src/nemo-mime-actions.c:1587
+#: src/nemo-mime-actions.c:1616
 #, c-format
 msgid "This will open %d separate application."
 msgid_plural "This will open %d separate applications."
 msgstr[0] "Αυτό θα ανοίξει %d ξεχωριστή εφαρμογή."
 msgstr[1] "Αυτό θα ανοίξει %d ξεχωριστές εφαρμογές."
 
-#: src/nemo-mime-actions.c:1659 src/nemo-mime-actions.c:1933
-#: src/nemo-view.c:7407
+#: src/nemo-mime-actions.c:1688 src/nemo-mime-actions.c:1962
+#: src/nemo-view.c:7424
 msgid "Unable to mount location"
 msgstr "Δεν ήταν δυνατή η προσάρτηση της τοποθεσίας"
 
-#: src/nemo-mime-actions.c:2012 src/nemo-view.c:7554
+#: src/nemo-mime-actions.c:2041 src/nemo-view.c:7571
 msgid "Unable to start location"
 msgstr "Δεν ήταν δυνατή η εκκίνηση της τοποθεσίας"
 
-#: src/nemo-mime-actions.c:2096
+#: src/nemo-mime-actions.c:2125
 #, c-format
 msgid "Opening \"%s\"."
 msgstr "Άνοιγμα \"%s\"."
 
-#: src/nemo-mime-actions.c:2099
+#: src/nemo-mime-actions.c:2128
 #, c-format
 msgid "Opening %d item."
 msgid_plural "Opening %d items."
@@ -1146,7 +1180,7 @@ msgstr[1] "Άνοιγμα %d αντικειμένων."
 msgid "Close tab"
 msgstr "Κλείσιμο καρτέλας"
 
-#: src/nemo-open-with-main.c:102
+#: src/nemo-open-with-main.c:104
 msgid ""
 "\n"
 "\n"
@@ -1158,20 +1192,20 @@ msgstr ""
 "Εμφάνισε ένα ανοικτό-με διάλογο δοσμένο uri, για να επιτραπεί στον χρήστη να "
 "αλλάξει το χειριστή προεπιλογής mimetype."
 
-#: src/nemo-places-sidebar.c:379
+#: src/nemo-places-sidebar.c:377
 msgid "Devices"
 msgstr "Συσκευές"
 
-#: src/nemo-places-sidebar.c:591 src/nemo-view.c:3157
+#: src/nemo-places-sidebar.c:601 src/nemo-view.c:3155
 #, c-format
 msgid "Free space: %s"
 msgstr "Ελεύθερος χώρος: %s"
 
-#: src/nemo-places-sidebar.c:710
+#: src/nemo-places-sidebar.c:738
 msgid "My Computer"
 msgstr "Ο Υπολογιστής μου"
 
-#: src/nemo-places-sidebar.c:717
+#: src/nemo-places-sidebar.c:749
 #, c-format
 msgid ""
 "Open your personal folder\n"
@@ -1180,26 +1214,28 @@ msgstr ""
 "Άνοιγμα του προσωπικού σας φακέλου\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:721 src/nemo-tree-sidebar.c:1482
+#: src/nemo-places-sidebar.c:753 src/nemo-tree-sidebar.c:1482
 #: libnemo-private/nemo-bookmark.c:130 libnemo-private/nemo-desktop-link.c:118
-#: libnemo-private/nemo-file-utilities.c:66
-#: libnemo-private/nemo-file-utilities.c:109 generate_additional_file:40
+#: libnemo-private/nemo-file-utilities.c:67
+#: libnemo-private/nemo-file-utilities.c:110 generate_additional_file:42
+#: gresources/nemo-desktop-preferences.glade:224
+#: gresources/nemo-file-management-properties.glade:2880
 msgid "Home"
 msgstr "Προσωπικός φάκελος"
 
-#: src/nemo-places-sidebar.c:740
+#: src/nemo-places-sidebar.c:772
 msgid "Open the contents of your desktop in a folder"
 msgstr "Άνοιγμα των περιεχομένων της επιφάνειας εργασίας σας σε ένα φάκελο"
 
-#: src/nemo-places-sidebar.c:790
+#: src/nemo-places-sidebar.c:822
 msgid "Recent"
 msgstr "Πρόσφατα"
 
-#: src/nemo-places-sidebar.c:792
+#: src/nemo-places-sidebar.c:824
 msgid "Recent files"
 msgstr "Πρόσφατα αρχεία"
 
-#: src/nemo-places-sidebar.c:801
+#: src/nemo-places-sidebar.c:836
 #, c-format
 msgid ""
 "Open the contents of the File System\n"
@@ -1208,24 +1244,25 @@ msgstr ""
 "Άνοιγμα των περιεχομένων του φακέλου Σύστημα Αρχείων\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:805 src/nemo-tree-sidebar.c:1486
+#: src/nemo-places-sidebar.c:840 src/nemo-tree-sidebar.c:1486
 msgid "File System"
 msgstr "Σύστημα Αρχείων"
 
-#: src/nemo-places-sidebar.c:820 src/nemo-trash-bar.c:202
-#: libnemo-private/nemo-desktop-link.c:135 generate_additional_file:54
+#: src/nemo-places-sidebar.c:854 src/nemo-trash-bar.c:211
+#: libnemo-private/nemo-desktop-link.c:135 generate_additional_file:56
+#: gresources/nemo-desktop-preferences.glade:302
 msgid "Trash"
 msgstr "Απορρίμματα"
 
-#: src/nemo-places-sidebar.c:822
+#: src/nemo-places-sidebar.c:856
 msgid "Open the trash"
 msgstr "Άνοιγμα των απορριμμάτων"
 
-#: src/nemo-places-sidebar.c:827
+#: src/nemo-places-sidebar.c:861
 msgid "Bookmarks"
 msgstr "Σελιδοδείκτες"
 
-#: src/nemo-places-sidebar.c:943
+#: src/nemo-places-sidebar.c:985
 #, c-format
 msgid ""
 "%s (%s)\n"
@@ -1234,17 +1271,17 @@ msgstr ""
 "%s (%s)\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:972
+#: src/nemo-places-sidebar.c:1019
 #, c-format
 msgid "Mount and open %s (%s)"
 msgstr "Προσάρτηση και άνοιγμα του %s (%s)"
 
-#: src/nemo-places-sidebar.c:1000 src/nemo-places-sidebar.c:1089
+#: src/nemo-places-sidebar.c:1046 src/nemo-places-sidebar.c:1139
 #, c-format
 msgid "Mount and open %s"
 msgstr "Προσάρτηση και άνοιγμα του  %s"
 
-#: src/nemo-places-sidebar.c:1042
+#: src/nemo-places-sidebar.c:1092
 #, c-format
 msgid ""
 "%s\n"
@@ -1253,146 +1290,143 @@ msgstr ""
 "%s\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:1076 src/nemo-places-sidebar.c:1131
+#: src/nemo-places-sidebar.c:1126 src/nemo-places-sidebar.c:1181
 #: src/nemo-tree-sidebar.c:1490 libnemo-private/nemo-desktop-link.c:147
+#: gresources/nemo-desktop-preferences.glade:458
 msgid "Network"
 msgstr "Δίκτυο"
 
-#: src/nemo-places-sidebar.c:1133
+#: src/nemo-places-sidebar.c:1183
 msgid "Browse the contents of the network"
 msgstr "Περιήγηση των περιεχομένων του δικτύου"
 
-#: src/nemo-places-sidebar.c:2217 src/nemo-places-sidebar.c:3397
-#: src/nemo-view.c:8335 src/nemo-view.c:8359 src/nemo-view.c:8431
-#: src/nemo-view.c:9083 src/nemo-view.c:9087 src/nemo-view.c:9170
-#: src/nemo-view.c:9174 src/nemo-view.c:9274 src/nemo-view.c:9278
+#: src/nemo-places-sidebar.c:2266 src/nemo-places-sidebar.c:3455
+#: src/nemo-view.c:8352 src/nemo-view.c:8376 src/nemo-view.c:8448
+#: src/nemo-view.c:9100 src/nemo-view.c:9104 src/nemo-view.c:9187
+#: src/nemo-view.c:9191 src/nemo-view.c:9291 src/nemo-view.c:9295
 msgid "_Start"
 msgstr "_Έναρξη"
 
-#: src/nemo-places-sidebar.c:2218 src/nemo-places-sidebar.c:3404
-#: src/nemo-view.c:8339 src/nemo-view.c:8363 src/nemo-view.c:8435
-#: src/nemo-view.c:9112 src/nemo-view.c:9199 src/nemo-view.c:9303
-#: src/nemo-window-menus.c:1196
+#: src/nemo-places-sidebar.c:2267 src/nemo-places-sidebar.c:3462
+#: src/nemo-view.c:8356 src/nemo-view.c:8380 src/nemo-view.c:8452
+#: src/nemo-view.c:9129 src/nemo-view.c:9216 src/nemo-view.c:9320
+#: src/nemo-window-menus.c:1269
 msgid "_Stop"
 msgstr "_Διακοπή"
 
-#: src/nemo-places-sidebar.c:2223
+#: src/nemo-places-sidebar.c:2272
 msgid "_Power On"
 msgstr "_Ενεργοποίηση"
 
-#: src/nemo-places-sidebar.c:2224 src/nemo-view.c:9116 src/nemo-view.c:9203
-#: src/nemo-view.c:9307
+#: src/nemo-places-sidebar.c:2273 src/nemo-view.c:9133 src/nemo-view.c:9220
+#: src/nemo-view.c:9324
 msgid "_Safely Remove Drive"
 msgstr "_Ασφαλής Αφαίρεση Δίσκου"
 
-#: src/nemo-places-sidebar.c:2227
+#: src/nemo-places-sidebar.c:2276
 msgid "_Connect Drive"
 msgstr "_Σύνδεση Δίσκου"
 
-#: src/nemo-places-sidebar.c:2228
+#: src/nemo-places-sidebar.c:2277
 msgid "_Disconnect Drive"
 msgstr "_Αποσύνδεση Δίσκου"
 
-#: src/nemo-places-sidebar.c:2231
+#: src/nemo-places-sidebar.c:2280
 msgid "_Start Multi-disk Device"
 msgstr "_Εκκίνηση Συσκευής Πολλαπλών Δίσκων"
 
-#: src/nemo-places-sidebar.c:2232
+#: src/nemo-places-sidebar.c:2281
 msgid "_Stop Multi-disk Device"
 msgstr "_Διακοπή Συσκευής Πολλαπλών Δίσκων"
 
-#: src/nemo-places-sidebar.c:2236 src/nemo-view.c:9186 src/nemo-view.c:9290
+#: src/nemo-places-sidebar.c:2285 src/nemo-view.c:9203 src/nemo-view.c:9307
 msgid "_Unlock Drive"
 msgstr "_Ξεκλείδωμα Δίσκου"
 
-#: src/nemo-places-sidebar.c:2237 src/nemo-view.c:9128 src/nemo-view.c:9215
-#: src/nemo-view.c:9319
+#: src/nemo-places-sidebar.c:2286 src/nemo-view.c:9145 src/nemo-view.c:9232
+#: src/nemo-view.c:9336
 msgid "_Lock Drive"
 msgstr "_Κλείδωμα Δίσκου"
 
-#: src/nemo-places-sidebar.c:2343 src/nemo-places-sidebar.c:2951
+#: src/nemo-places-sidebar.c:2392 src/nemo-places-sidebar.c:3011
 #, c-format
 msgid "Unable to start %s"
 msgstr "Δεν ήταν δυνατή η εκκίνηση του %s"
 
-#: src/nemo-places-sidebar.c:2711 src/nemo-places-sidebar.c:2739
-#: src/nemo-places-sidebar.c:2767
+#: src/nemo-places-sidebar.c:2778 src/nemo-places-sidebar.c:2804
+#: src/nemo-places-sidebar.c:2830
 #, c-format
 msgid "Unable to eject %s"
 msgstr "Δεν ήταν δυνατή η εξαγωγή του %s"
 
-#: src/nemo-places-sidebar.c:2906
+#: src/nemo-places-sidebar.c:2967
 #, c-format
 msgid "Unable to poll %s for media changes"
 msgstr "Δεν ήταν δυνατή η ερώτηση του %s για αλλαγές πολυμέσων"
 
-#: src/nemo-places-sidebar.c:3006
+#: src/nemo-places-sidebar.c:3065
 #, c-format
 msgid "Unable to stop %s"
 msgstr "Δεν ήταν δυνατή η διακοπή του %s"
 
-#: src/nemo-places-sidebar.c:3309 src/nemo-tree-sidebar.c:1249
-#: src/nemo-view.c:8196 src/nemo-view.c:8536 src/nemo-view.c:9707
-#: src/nemo-view.c:9718
+#: src/nemo-places-sidebar.c:3367 src/nemo-tree-sidebar.c:1249
+#: src/nemo-view.c:8213 src/nemo-view.c:8553 src/nemo-view.c:9722
+#: src/nemo-view.c:9733 libnemo-private/nemo-mime-application-chooser.c:483
 msgid "_Open"
 msgstr "_Άνοιγμα"
 
-#: src/nemo-places-sidebar.c:3317 src/nemo-tree-sidebar.c:1260
-#: src/nemo-view.c:8208 src/nemo-view.c:8389 src/nemo-view.c:9407
-#: src/nemo-view.c:9775
+#: src/nemo-places-sidebar.c:3375 src/nemo-tree-sidebar.c:1260
+#: src/nemo-view.c:8225 src/nemo-view.c:8406 src/nemo-view.c:9424
+#: src/nemo-view.c:9784
 msgid "Open in New _Tab"
 msgstr "Άνοιγμα σε Νέα _Καρτέλα"
 
-#: src/nemo-places-sidebar.c:3327 src/nemo-tree-sidebar.c:1274
-#: src/nemo-view.c:9398 src/nemo-view.c:9755
+#: src/nemo-places-sidebar.c:3385 src/nemo-tree-sidebar.c:1274
+#: src/nemo-view.c:9415 src/nemo-view.c:9764
 msgid "Open in New _Window"
 msgstr "Άνοιγμα σε Νέο _Παράθυρο"
 
-#: src/nemo-places-sidebar.c:3338 src/nemo-window-menus.c:1302
+#: src/nemo-places-sidebar.c:3396 src/nemo-window-menus.c:1375
 msgid "_Add Bookmark"
 msgstr "_Προσθήκη Σελιδοδείκτη"
 
-#: src/nemo-places-sidebar.c:3344
+#: src/nemo-places-sidebar.c:3402
 msgid "Remove"
 msgstr "Αφαίρεση"
 
-#: src/nemo-places-sidebar.c:3353
+#: src/nemo-places-sidebar.c:3411
 msgid "Rename..."
 msgstr "Μετονομασία..."
 
-#: src/nemo-places-sidebar.c:3369 src/nemo-view.c:8323 src/nemo-view.c:8347
-#: src/nemo-view.c:8419
+#: src/nemo-places-sidebar.c:3427 src/nemo-view.c:8340 src/nemo-view.c:8364
+#: src/nemo-view.c:8436
 msgid "_Mount"
 msgstr "_Προσάρτηση"
 
-#: src/nemo-places-sidebar.c:3376 src/nemo-tree-sidebar.c:1375
-#: src/nemo-view.c:8327 src/nemo-view.c:8351 src/nemo-view.c:8423
+#: src/nemo-places-sidebar.c:3434 src/nemo-tree-sidebar.c:1375
+#: src/nemo-view.c:8344 src/nemo-view.c:8368 src/nemo-view.c:8440
 msgid "_Unmount"
 msgstr "_Αποπροσάρτηση"
 
-#: src/nemo-places-sidebar.c:3383 src/nemo-tree-sidebar.c:1384
-#: src/nemo-view.c:8331 src/nemo-view.c:8355 src/nemo-view.c:8427
+#: src/nemo-places-sidebar.c:3441 src/nemo-tree-sidebar.c:1384
+#: src/nemo-view.c:8348 src/nemo-view.c:8372 src/nemo-view.c:8444
 msgid "_Eject"
 msgstr "_Εξαγωγή"
 
-#: src/nemo-places-sidebar.c:3390 src/nemo-view.c:8343 src/nemo-view.c:8367
-#: src/nemo-view.c:8439
+#: src/nemo-places-sidebar.c:3448 src/nemo-view.c:8360 src/nemo-view.c:8384
+#: src/nemo-view.c:8456
 msgid "_Detect Media"
 msgstr "_Εντοπισμός Μέσων"
 
-#: src/nemo-places-sidebar.c:3413 src/nemo-trash-bar.c:215
+#: src/nemo-places-sidebar.c:3471 src/nemo-trash-bar.c:224
 #: libnemo-private/nemo-file-operations.c:1556
 #: libnemo-private/nemo-file-operations.c:2434
 msgid "Empty _Trash"
 msgstr "Άδειασμα _Απορριμμάτων"
 
-#: src/nemo-places-sidebar.c:3425 src/nemo-view.c:8178 src/nemo-view.c:8444
+#: src/nemo-places-sidebar.c:3483 src/nemo-view.c:8195 src/nemo-view.c:8461
 msgid "_Properties"
 msgstr "_Ιδιότητες"
-
-#: src/nemo-plugin-manager.c:126 src/nemo-window-menus.c:1181
-msgid "Plugins"
-msgstr "Πρόσθετα"
 
 #: src/nemo-progress-ui-handler.c:116
 #, c-format
@@ -1414,352 +1448,346 @@ msgstr "Όλες οι λειτουργίες αρχείων ολοκληρώθη
 msgid "%d%% %s"
 msgstr "%d%% %s"
 
-#: src/nemo-properties-window.c:494
+#: src/nemo-properties-window.c:500
 msgid "You cannot assign more than one custom icon at a time!"
 msgstr ""
 "Δεν μπορείτε να ορίσετε περισσότερα από ένα προσαρμοσμένα εικονίδια τη φορά!"
 
-#: src/nemo-properties-window.c:495
+#: src/nemo-properties-window.c:501
 msgid "Please drag just one image to set a custom icon."
 msgstr ""
 "Παρακαλώ σύρετε μόνο μια εικόνα για να ορίσετε ένα προσαρμοσμένο εικονίδιο."
 
-#: src/nemo-properties-window.c:506
+#: src/nemo-properties-window.c:512
 msgid "The file that you dropped is not local."
 msgstr "Το αρχείο που αποθέσατε δεν είναι τοπικό."
 
-#: src/nemo-properties-window.c:507 src/nemo-properties-window.c:513
+#: src/nemo-properties-window.c:513 src/nemo-properties-window.c:519
 msgid "You can only use local images as custom icons."
 msgstr ""
 "Μπορείτε να χρησιμοποιήσετε μόνο τοπικές εικόνες ως προσαρμοσμένα εικονίδια."
 
-#: src/nemo-properties-window.c:512
+#: src/nemo-properties-window.c:518
 msgid "The file that you dropped is not an image."
 msgstr "Το αρχείο που αποθέσατε δεν είναι εικόνα."
 
-#: src/nemo-properties-window.c:642
+#: src/nemo-properties-window.c:648
 msgid "_Name:"
 msgid_plural "_Names:"
 msgstr[0] "_Όνομα:"
 msgstr[1] "_Ονόματα:"
 
-#: src/nemo-properties-window.c:837
+#: src/nemo-properties-window.c:843
 msgid "Properties"
 msgstr "Ιδιότητες"
 
-#: src/nemo-properties-window.c:845
+#: src/nemo-properties-window.c:851
 #, c-format
 msgid "%s Properties"
 msgstr "%s Ιδιότητες"
 
-#: src/nemo-properties-window.c:1119 libnemo-private/nemo-file.c:6498
+#: src/nemo-properties-window.c:1125 libnemo-private/nemo-file.c:6627
 msgid "unknown"
 msgstr "άγνωστο"
 
-#: src/nemo-properties-window.c:1351
+#: src/nemo-properties-window.c:1357
 msgid "Cancel Group Change?"
 msgstr "Ακύρωση Αλλαγής Ομάδας;"
 
-#: src/nemo-properties-window.c:1766
+#: src/nemo-properties-window.c:1772
 msgid "Cancel Owner Change?"
 msgstr "Ακύρωση Αλλαγής Ιδιοκτήτη;"
 
-#: src/nemo-properties-window.c:2087
+#: src/nemo-properties-window.c:2093
 msgid "nothing"
 msgstr "τίποτα"
 
-#: src/nemo-properties-window.c:2089
+#: src/nemo-properties-window.c:2095
 msgid "unreadable"
 msgstr "μη αναγνώσιμο"
 
-#: src/nemo-properties-window.c:2104
+#: src/nemo-properties-window.c:2110
 #, c-format
 msgid "%1$s item (and %2$s hidden), with size %3$s"
 msgid_plural "%1$s items (and %2$s hidden), totalling %3$s"
 msgstr[0] "%1$s αντικείμενο (και %2$s κρυμμένα), με μέγεθος %3$s"
 msgstr[1] "%1$s αντικείμενα (και %2$s κρυμμένα), συνολικού μεγέθους %3$s"
 
-#: src/nemo-properties-window.c:2109
+#: src/nemo-properties-window.c:2115
 #, c-format
 msgid "%1$s item, with size %2$s"
 msgid_plural "%1$s items, totalling %2$s"
 msgstr[0] "%1$s αντικείμενο, με μέγεθος %2$s"
 msgstr[1] "%1$s αντικείμενα, συνολικού μεγέθους %2$s"
 
-#: src/nemo-properties-window.c:2118
+#: src/nemo-properties-window.c:2124
 msgid "(some contents unreadable)"
 msgstr "(κάποια περιεχόμενα δεν είναι αναγνώσιμα)"
 
-#: src/nemo-properties-window.c:2135
+#: src/nemo-properties-window.c:2141
 msgid "Contents:"
 msgstr "Περιεχόμενα:"
 
-#: src/nemo-properties-window.c:2913
+#: src/nemo-properties-window.c:2919
 msgid "used"
 msgstr "σε χρήση"
 
-#: src/nemo-properties-window.c:2920
+#: src/nemo-properties-window.c:2926
 msgid "free"
 msgstr "ελεύθερα"
 
-#: src/nemo-properties-window.c:2922
+#: src/nemo-properties-window.c:2928
 msgid "Total capacity:"
 msgstr "Συνολική χωρητικότητα:"
 
-#: src/nemo-properties-window.c:2931
+#: src/nemo-properties-window.c:2937
 msgid "Filesystem type:"
 msgstr "Τύπος συστήματος αρχείων:"
 
-#: src/nemo-properties-window.c:3016
+#: src/nemo-properties-window.c:3022
 msgid "Basic"
 msgstr "Βασικά"
 
-#: src/nemo-properties-window.c:3073
+#: src/nemo-properties-window.c:3079
 #: libnemo-private/nemo-file-conflict-dialog.c:259
 #: libnemo-private/nemo-file-conflict-dialog.c:291
 msgid "Type:"
 msgstr "Τύπος:"
 
-#: src/nemo-properties-window.c:3082 libnemo-private/nemo-file.c:7637
+#: src/nemo-properties-window.c:3088 libnemo-private/nemo-file.c:7779
 msgid "Link target:"
 msgstr "Προορισμός συνδέσμου:"
 
-#: src/nemo-properties-window.c:3093
+#: src/nemo-properties-window.c:3099
 #: libnemo-private/nemo-file-conflict-dialog.c:256
 #: libnemo-private/nemo-file-conflict-dialog.c:288
 msgid "Size:"
 msgstr "Μέγεθος:"
 
-#: src/nemo-properties-window.c:3102
+#: src/nemo-properties-window.c:3108
 msgid "Location:"
 msgstr "Τοποθεσία:"
 
-#: src/nemo-properties-window.c:3109
+#: src/nemo-properties-window.c:3115
 msgid "Volume:"
 msgstr "Τόμος:"
 
-#: src/nemo-properties-window.c:3119
+#: src/nemo-properties-window.c:3125
 msgid "Accessed:"
 msgstr "Προσπελάστηκε:"
 
-#: src/nemo-properties-window.c:3123
+#: src/nemo-properties-window.c:3129
 msgid "Modified:"
 msgstr "Τροποποιήθηκε:"
 
-#: src/nemo-properties-window.c:3132
+#: src/nemo-properties-window.c:3133
+msgid "Created:"
+msgstr ""
+
+#: src/nemo-properties-window.c:3142
 msgid "Free space:"
 msgstr "Ελεύθερος χώρος:"
 
-#: src/nemo-properties-window.c:3553
+#: src/nemo-properties-window.c:3563
 msgid "_Read"
 msgstr "_Ανάγνωση"
 
-#: src/nemo-properties-window.c:3555
+#: src/nemo-properties-window.c:3565
 msgid "_Write"
 msgstr "_Εγγραφή"
 
-#: src/nemo-properties-window.c:3557
+#: src/nemo-properties-window.c:3567
 msgid "E_xecute"
 msgstr "Ε_κτέλεση"
 
-#: src/nemo-properties-window.c:3825 src/nemo-properties-window.c:3836
-#: src/nemo-properties-window.c:3848
+#: src/nemo-properties-window.c:3835 src/nemo-properties-window.c:3846
+#: src/nemo-properties-window.c:3858
 msgid "no "
 msgstr "όχι "
 
-#: src/nemo-properties-window.c:3828
+#: src/nemo-properties-window.c:3838
 msgid "list"
 msgstr "λίστα"
 
-#: src/nemo-properties-window.c:3830
+#: src/nemo-properties-window.c:3840
 msgid "read"
 msgstr "ανάγνωση"
 
-#: src/nemo-properties-window.c:3839
+#: src/nemo-properties-window.c:3849
 msgid "create/delete"
 msgstr "δημιουργία/διαγραφή"
 
-#: src/nemo-properties-window.c:3841
+#: src/nemo-properties-window.c:3851
 msgid "write"
 msgstr "εγγραφή"
 
-#: src/nemo-properties-window.c:3850
+#: src/nemo-properties-window.c:3860
 msgid "access"
 msgstr "πρόσβαση"
 
-#: src/nemo-properties-window.c:3898
+#: src/nemo-properties-window.c:3908
 msgid "Access:"
 msgstr "Πρόσβαση:"
 
-#: src/nemo-properties-window.c:3900
+#: src/nemo-properties-window.c:3910
 msgid "Folder access:"
 msgstr "Πρόσβαση φακέλου:"
 
-#: src/nemo-properties-window.c:3902
+#: src/nemo-properties-window.c:3912
 msgid "File access:"
 msgstr "Πρόσβαση αρχείου:"
 
-#: src/nemo-properties-window.c:3920
+#: src/nemo-properties-window.c:3930
 msgid "List files only"
 msgstr "Μόνο λίστα αρχείων"
 
-#: src/nemo-properties-window.c:3922
+#: src/nemo-properties-window.c:3932
 msgid "Access files"
 msgstr "Πρόσβαση αρχείων"
 
-#: src/nemo-properties-window.c:3924
+#: src/nemo-properties-window.c:3934
 msgid "Create and delete files"
 msgstr "Δημιουργία και διαγραφή αρχείων"
 
-#: src/nemo-properties-window.c:3931
+#: src/nemo-properties-window.c:3941
 msgid "Read-only"
 msgstr "Μόνο για ανάγνωση"
 
-#: src/nemo-properties-window.c:3933
+#: src/nemo-properties-window.c:3943
 msgid "Read and write"
 msgstr "Ανάγνωση και εγγραφή"
 
-#: src/nemo-properties-window.c:3998
+#: src/nemo-properties-window.c:4008
 msgid "Special flags:"
 msgstr "Ειδικά σημάδια:"
 
-#: src/nemo-properties-window.c:4000
+#: src/nemo-properties-window.c:4010
 msgid "Set _user ID"
 msgstr "Ορισμός ταυτότητας _χρήστη"
 
-#: src/nemo-properties-window.c:4001
+#: src/nemo-properties-window.c:4011
 msgid "Set gro_up ID"
 msgstr "Ορισμός ταυτότητας ομά_δας"
 
-#: src/nemo-properties-window.c:4002
+#: src/nemo-properties-window.c:4012
 msgid "_Sticky"
 msgstr "_Μόνιμο"
 
-#: src/nemo-properties-window.c:4076 src/nemo-properties-window.c:4268
+#: src/nemo-properties-window.c:4086 src/nemo-properties-window.c:4278
 msgid "_Owner:"
 msgstr "_Ιδιοκτήτης:"
 
-#: src/nemo-properties-window.c:4084 src/nemo-properties-window.c:4173
-#: src/nemo-properties-window.c:4278
+#: src/nemo-properties-window.c:4094 src/nemo-properties-window.c:4183
+#: src/nemo-properties-window.c:4288
 msgid "Owner:"
 msgstr "Ιδιοκτήτης:"
 
-#: src/nemo-properties-window.c:4106 src/nemo-properties-window.c:4290
+#: src/nemo-properties-window.c:4116 src/nemo-properties-window.c:4300
 msgid "_Group:"
 msgstr "_Ομάδα:"
 
-#: src/nemo-properties-window.c:4114 src/nemo-properties-window.c:4174
-#: src/nemo-properties-window.c:4298
+#: src/nemo-properties-window.c:4124 src/nemo-properties-window.c:4184
+#: src/nemo-properties-window.c:4308
 msgid "Group:"
 msgstr "Ομάδα:"
 
-#: src/nemo-properties-window.c:4153
+#: src/nemo-properties-window.c:4163
 msgid "Execute:"
 msgstr "Εκτέλεση:"
 
-#: src/nemo-properties-window.c:4156
+#: src/nemo-properties-window.c:4166
 msgid "Allow _executing file as program"
 msgstr "Να επιτρέπεται η _εκτέλεση του αρχείου ως πρόγραμμα"
 
-#: src/nemo-properties-window.c:4175
+#: src/nemo-properties-window.c:4185
 msgid "Others:"
 msgstr "Άλλοι:"
 
-#: src/nemo-properties-window.c:4314
+#: src/nemo-properties-window.c:4324
 msgid "Folder Permissions:"
 msgstr "Δικαιώματα Φακέλου:"
 
-#: src/nemo-properties-window.c:4322
+#: src/nemo-properties-window.c:4332
 msgid "File Permissions:"
 msgstr "Δικαιώματα Αρχείου:"
 
-#: src/nemo-properties-window.c:4331
+#: src/nemo-properties-window.c:4341
 msgid "Text view:"
 msgstr "Προβολή κειμένου:"
 
-#: src/nemo-properties-window.c:4465
-#: libnemo-private/nemo-column-utilities.c:104
+#: src/nemo-properties-window.c:4475
+#: libnemo-private/nemo-column-utilities.c:127
 msgid "Permissions"
 msgstr "Δικαιώματα"
 
-#: src/nemo-properties-window.c:4479
+#: src/nemo-properties-window.c:4489
 msgid "You are not the owner, so you cannot change these permissions."
 msgstr ""
 "Δεν είστε ο ιδιοκτήτης, οπότε δεν μπορείτε να αλλάξετε τα δικαιώματα αυτά."
 
-#: src/nemo-properties-window.c:4499
+#: src/nemo-properties-window.c:4509
 msgid "SELinux context:"
 msgstr "Περιβάλλον SELinux:"
 
-#: src/nemo-properties-window.c:4504
+#: src/nemo-properties-window.c:4514
 msgid "Last changed:"
 msgstr "Τελευταία τροποποίηση:"
 
-#: src/nemo-properties-window.c:4516
+#: src/nemo-properties-window.c:4526
 msgid "Apply Permissions to Enclosed Files"
 msgstr "Εφαρμογή Δικαιωμάτων στα Εμπεριεχόμενα Αρχεία"
 
-#: src/nemo-properties-window.c:4526
+#: src/nemo-properties-window.c:4536
 #, c-format
 msgid "The permissions of \"%s\" could not be determined."
 msgstr "Δεν ήταν δυνατή η εξακρίβωση των δικαιωμάτων του \"%s\"."
 
-#: src/nemo-properties-window.c:4529
+#: src/nemo-properties-window.c:4539
 msgid "The permissions of the selected file could not be determined."
 msgstr ""
 "Δεν ήταν δυνατή η εξακρίβωση των δικαιωμάτων του επιλεγμένου αρχείου."
 
-#: src/nemo-properties-window.c:4768
+#: src/nemo-properties-window.c:4778
 msgid "Open With"
 msgstr "Άνοιγμα Με"
 
-#: src/nemo-properties-window.c:4906
+#: src/nemo-properties-window.c:4916
 msgid "Help"
-msgstr ""
+msgstr "Βοήθεια"
 
-#: src/nemo-properties-window.c:4907
-#: gresources/nemo-file-management-properties.glade:276
+#: src/nemo-properties-window.c:4917
 msgid "Close"
-msgstr ""
+msgstr "Κλείσιμο"
 
-#: src/nemo-properties-window.c:5125
+#: src/nemo-properties-window.c:5135
 msgid "Creating Properties window."
 msgstr "Δημιουργία Παραθύρου Ιδιοτήτων."
 
-#: src/nemo-properties-window.c:5410
-msgid "Select Custom Icon"
-msgstr "Επιλογή Προσαρμοσμένου Εικονιδίου"
-
-#: src/nemo-properties-window.c:5412
+#: src/nemo-properties-window.c:5392
 msgid "Revert"
-msgstr ""
-
-#: src/nemo-properties-window.c:5413 libnemo-private/nemo-dnd.c:871
-msgid "Cancel"
-msgstr "Ακύρωση"
-
-#: src/nemo-properties-window.c:5414
-msgid "Open"
-msgstr ""
+msgstr "Επαναστρέφω"
 
 #: src/nemo-query-editor.c:398
 #, c-format
 msgid "in <tt><b>%s</b></tt>"
-msgstr ""
+msgstr "στο <tt><b>%s</b></tt>"
 
 #: src/nemo-query-editor.c:399
 #, c-format
 msgid "Search for <b>%s</b>"
-msgstr ""
+msgstr "Εύρεση για <b>%s</b>"
 
-#: src/nemo-query-editor.c:713
+#: src/nemo-query-editor.c:711
 msgid "Type to search or arrow-up to select a favorite"
 msgstr ""
+"Πληκτρολογήστε για αναζήτηση ή το άνω βέλος για να επιλέξετε ένα αγαπημένο"
 
-#: src/nemo-query-editor.c:740
+#: src/nemo-query-editor.c:733
 msgid ""
 "Click to save or forget a favorite search. Right-click to display favorites."
 msgstr ""
+"Κάντε κλικ για να αποθηκεύσετε ή να ξεχάσετε μια αγαπημένη αναζήτηση. Κάντε "
+"δεξί κλικ για να εμφανίσετε τα αγαπημένα."
 
 #: src/nemo-script-config-widget.c:148
 msgid "No scripts found"
@@ -1769,23 +1797,23 @@ msgstr "Δε βρέθηκαν scripts"
 msgid "Scripts"
 msgstr "Scripts"
 
-#: src/nemo-statusbar.c:200
+#: src/nemo-statusbar.c:176
 msgid "Show Places"
 msgstr "Εμφάνιση Τοποθεσιών"
 
-#: src/nemo-statusbar.c:209
+#: src/nemo-statusbar.c:185
 msgid "Show Treeview"
 msgstr "Εμφάνιση σε μορφή Δέντρου"
 
-#: src/nemo-statusbar.c:223
+#: src/nemo-statusbar.c:199
 msgid "Hide the Sidebar (F9)"
 msgstr "Απόκρυψη Πλευρικής Στήλης (F9)"
 
-#: src/nemo-statusbar.c:232
+#: src/nemo-statusbar.c:208
 msgid "Show the Sidebar (F9)"
 msgstr "Εμφάνιση Πλευρικής Στήλης (F9)"
 
-#: src/nemo-statusbar.c:246
+#: src/nemo-statusbar.c:222
 msgid "Adjust zoom level"
 msgstr "Προσαρμογή βαθμού μεγέθυνσης"
 
@@ -1805,219 +1833,220 @@ msgstr "Διόρθωση τώρα"
 msgid "Dismiss"
 msgstr "Παράβλεψη"
 
-#: src/nemo-toolbar.c:238
+#: src/nemo-toolbar.c:247
 msgid "Elevated Privileges"
 msgstr "Αυξημένα δικαιώματα"
 
-#: src/nemo-trash-bar.c:209
+#: src/nemo-trash-bar.c:218
 msgid "Restore Selected Items"
 msgstr "Επαναφορά Επιλεγμένων Αντικειμένων"
 
-#: src/nemo-trash-bar.c:212
+#: src/nemo-trash-bar.c:221
 msgid "Restore selected items to their original position"
 msgstr "Επαναφορά επιλεγμένων αντικειμένων στην αρχική τους θέση"
 
-#: src/nemo-tree-sidebar.c:951 src/nemo-view.c:6749
+#: src/nemo-tree-sidebar.c:951 src/nemo-view.c:6766
 #, c-format
 msgid "\"%s\" will be moved if you select the Paste command"
 msgstr "Το \"%s\" θα μετακινηθεί αν επιλέξετε την εντολή Επικόλληση"
 
-#: src/nemo-tree-sidebar.c:955 src/nemo-view.c:6753
+#: src/nemo-tree-sidebar.c:955 src/nemo-view.c:6770
 #, c-format
 msgid "\"%s\" will be copied if you select the Paste command"
 msgstr "Το \"%s\" θα αντιγραφεί αν επιλέξετε την εντολή Επικόλληση"
 
-#: src/nemo-tree-sidebar.c:994 src/nemo-view.c:7003
+#: src/nemo-tree-sidebar.c:994 src/nemo-view.c:7020
 msgid "There is nothing on the clipboard to paste."
 msgstr "Δεν υπάρχει τίποτα για επικόλληση στο πρόχειρο."
 
-#: src/nemo-tree-sidebar.c:1290 src/nemo-view.c:8186
+#: src/nemo-tree-sidebar.c:1290 src/nemo-view.c:8203
 msgid "Create New _Folder"
 msgstr "Δημιουργία Νέου _Φακέλου"
 
-#: src/nemo-tree-sidebar.c:1303 src/nemo-view.c:8241 src/nemo-view.c:8394
+#: src/nemo-tree-sidebar.c:1303 src/nemo-view.c:8258 src/nemo-view.c:8411
 msgid "Cu_t"
-msgstr ""
+msgstr "Απο_κοπή"
 
-#: src/nemo-tree-sidebar.c:1315 src/nemo-view.c:8245 src/nemo-view.c:8398
+#: src/nemo-tree-sidebar.c:1315 src/nemo-view.c:8262 src/nemo-view.c:8415
 msgid "_Copy"
-msgstr ""
+msgstr "Α_ντιγραφή"
 
-#: src/nemo-tree-sidebar.c:1327 src/nemo-view.c:8255 src/nemo-view.c:8402
+#: src/nemo-tree-sidebar.c:1327 src/nemo-view.c:8272 src/nemo-view.c:8419
 msgid "_Paste Into Folder"
 msgstr "_Επικόλληση Στο φάκελο"
 
-#: src/nemo-tree-sidebar.c:1357 src/nemo-view.c:8293 src/nemo-view.c:8411
-#: src/nemo-view.c:9821
+#: src/nemo-tree-sidebar.c:1357 src/nemo-view.c:8310 src/nemo-view.c:8428
+#: src/nemo-view.c:9830
 msgid "_Delete"
 msgstr "_Διαγραφή"
 
 #: src/nemo-tree-sidebar.c:1399
 msgid "P_roperties"
-msgstr ""
+msgstr "_Ιδιότητες"
 
 #: src/nemo-tree-sidebar.c:1477 libnemo-private/nemo-desktop-link.c:126
-#: generate_additional_file:47
+#: generate_additional_file:49 gresources/nemo-desktop-preferences.glade:146
+#: gresources/nemo-file-management-properties.glade:2843
 msgid "Computer"
 msgstr "Υπολογιστής"
 
-#: src/nemo-view.c:1057
+#: src/nemo-view.c:1071
 #, c-format
 msgid "This will open %'d separate tab."
 msgid_plural "This will open %'d separate tabs."
 msgstr[0] "Αυτό θα ανοίξει %'d ξεχωριστή καρτέλα."
 msgstr[1] "Αυτό θα ανοίξει %'d ξεχωριστές καρτέλες."
 
-#: src/nemo-view.c:1060
+#: src/nemo-view.c:1074
 #, c-format
 msgid "This will open %'d separate window."
 msgid_plural "This will open %'d separate windows."
 msgstr[0] "Αυτό θα ανοίξει %'d ξεχωριστό παράθυρο."
 msgstr[1] "Αυτό θα ανοίξει %'d ξεχωριστά παράθυρα."
 
-#: src/nemo-view.c:1621
+#: src/nemo-view.c:1635
 msgid "Select Items Matching"
 msgstr "Επιλογή Αντικειμένων που Ταιριάζουν σε"
 
-#: src/nemo-view.c:1636
+#: src/nemo-view.c:1650
 msgid "_Pattern:"
 msgstr "_Μοτίβο:"
 
-#: src/nemo-view.c:1642
+#: src/nemo-view.c:1656
 msgid "Examples: "
 msgstr "Παραδείγματα: "
 
-#: src/nemo-view.c:1755
+#: src/nemo-view.c:1769
 msgid "Save Search as"
 msgstr "Αποθήκευση Αναζήτησης ως"
 
-#: src/nemo-view.c:1778
+#: src/nemo-view.c:1792
 msgid "Search _name:"
 msgstr "_Όνομα αναζήτησης:"
 
-#: src/nemo-view.c:1800
+#: src/nemo-view.c:1814
 msgid "Select Folder to Save Search In"
 msgstr "Επιλογή Φακέλου για Αποθήκευση Αναζήτησης Σε"
 
-#: src/nemo-view.c:2605 libnemo-private/nemo-file-undo-operations.c:147
+#: src/nemo-view.c:2603 libnemo-private/nemo-file-undo-operations.c:147
 msgid "Undo"
 msgstr "Αναίρεση"
 
-#: src/nemo-view.c:2606 libnemo-private/nemo-file-undo-operations.c:150
+#: src/nemo-view.c:2604 libnemo-private/nemo-file-undo-operations.c:150
 msgid "Undo last action"
 msgstr "Αναίρεση τελευταίας ενέργειας"
 
-#: src/nemo-view.c:2624 libnemo-private/nemo-file-undo-operations.c:154
+#: src/nemo-view.c:2622 libnemo-private/nemo-file-undo-operations.c:154
 msgid "Redo"
 msgstr "Επανάληψη"
 
-#: src/nemo-view.c:2625 libnemo-private/nemo-file-undo-operations.c:157
+#: src/nemo-view.c:2623 libnemo-private/nemo-file-undo-operations.c:157
 msgid "Redo last undone action"
 msgstr "Επανάληψη τελευταίας αναιρεθείσης ενέργειας"
 
-#: src/nemo-view.c:2814
+#: src/nemo-view.c:2812
 msgid "Content View"
 msgstr "Προβολή Περιεχομένου"
 
-#: src/nemo-view.c:2815
+#: src/nemo-view.c:2813
 msgid "View of the current folder"
 msgstr "Προβολή του τρέχοντος φακέλου"
 
-#: src/nemo-view.c:3080 src/nemo-view.c:3117
+#: src/nemo-view.c:3078 src/nemo-view.c:3115
 #, c-format
 msgid "\"%s\" selected"
 msgstr "Επιλέχθηκαν \"%s\""
 
-#: src/nemo-view.c:3082
+#: src/nemo-view.c:3080
 #, c-format
 msgid "%'d folder selected"
 msgid_plural "%'d folders selected"
 msgstr[0] "Επιλέχθηκε %'d φάκελος"
 msgstr[1] "Επιλέχθηκαν %'d φάκελοι"
 
-#: src/nemo-view.c:3092
+#: src/nemo-view.c:3090
 #, c-format
 msgid " (containing %'d item)"
 msgid_plural " (containing %'d items)"
 msgstr[0] " (περιέχει %'d αντικείμενο)"
 msgstr[1] " (περιέχει %'d αντικείμενα)"
 
-#: src/nemo-view.c:3103
+#: src/nemo-view.c:3101
 #, c-format
 msgid " (containing a total of %'d item)"
 msgid_plural " (containing a total of %'d items)"
 msgstr[0] " (περιέχει συνολικά %'d αντικείμενο)"
 msgstr[1] " (περιέχει συνολικά %'d αντικείμενα)"
 
-#: src/nemo-view.c:3120
+#: src/nemo-view.c:3118
 #, c-format
 msgid "%'d item selected"
 msgid_plural "%'d items selected"
 msgstr[0] "Επιλέχθηκε %'d αντικείμενο"
 msgstr[1] "Επιλέχθηκαν %'d αντικείμενα"
 
-#: src/nemo-view.c:3127
+#: src/nemo-view.c:3125
 #, c-format
 msgid "%'d other item selected"
 msgid_plural "%'d other items selected"
 msgstr[0] "Επιλέχθηκε %'d άλλο αντικείμενο"
 msgstr[1] "Επιλέχθηκαν %'d άλλα αντικείμενα"
 
-#: src/nemo-view.c:3144
+#: src/nemo-view.c:3142
 #, c-format
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: src/nemo-view.c:3165 libnemo-private/nemo-file.c:6027
+#: src/nemo-view.c:3163 libnemo-private/nemo-file.c:6141
 #, c-format
 msgid "%'u item"
 msgid_plural "%'u items"
 msgstr[0] "%'u αντικείμενο"
 msgstr[1] "%'u αντικείμενα"
 
-#: src/nemo-view.c:3168
+#: src/nemo-view.c:3166
 #, c-format
 msgid "%s, Free space: %s"
 msgstr "%s, Ελεύθερος χώρος: %s"
 
-#: src/nemo-view.c:3183
+#: src/nemo-view.c:3181
 #, c-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: src/nemo-view.c:3202 src/nemo-view.c:3215
+#: src/nemo-view.c:3200 src/nemo-view.c:3213
 #, c-format
 msgid "%s%s, %s"
 msgstr "%s%s, %s"
 
-#: src/nemo-view.c:3229
+#: src/nemo-view.c:3227
 #, c-format
 msgid "%s%s, %s, %s"
 msgstr "%s%s, %s, %s"
 
-#: src/nemo-view.c:4728
+#: src/nemo-view.c:4715
 #, c-format
 msgid "Open With %s"
 msgstr "Άνοιγμα Με %s"
 
-#: src/nemo-view.c:4730
+#: src/nemo-view.c:4717
 #, c-format
 msgid "Use \"%s\" to open the selected item"
 msgid_plural "Use \"%s\" to open the selected items"
 msgstr[0] "Χρήση του \"%s\" για το άνοιγμα του επιλεγμένου αντικειμένου"
 msgstr[1] "Χρήση του \"%s\" για το άνοιγμα των επιλεγμένων αντικειμένων"
 
-#: src/nemo-view.c:6077
+#: src/nemo-view.c:6073
 #, c-format
 msgid "Run \"%s\" on any selected items"
 msgstr "Εκτέλεση του \"%s\" σε οποιαδήποτε επιλεγμένα αντικείμενα"
 
-#: src/nemo-view.c:6460
+#: src/nemo-view.c:6477
 #, c-format
 msgid "Create a new document from template \"%s\""
 msgstr "Δημιουργία νέου εγγράφου από το πρότυπο \"%s\""
 
-#: src/nemo-view.c:6760
+#: src/nemo-view.c:6777
 #, c-format
 msgid "The %'d selected item will be moved if you select the Paste command"
 msgid_plural ""
@@ -2029,7 +2058,7 @@ msgstr[1] ""
 "Τα %'d επιλεγμένα αντικείμενα θα μεταφερθούν αν επιλέξετε την εντολή "
 "Επικόλληση"
 
-#: src/nemo-view.c:6767
+#: src/nemo-view.c:6784
 #, c-format
 msgid "The %'d selected item will be copied if you select the Paste command"
 msgid_plural ""
@@ -2041,155 +2070,155 @@ msgstr[1] ""
 "Τα %'d επιλεγμένα αντικείμενα θα αντιγραφούν αν επιλέξετε την εντολή "
 "Επικόλληση"
 
-#: src/nemo-view.c:6937
+#: src/nemo-view.c:6954
 msgid "Select Target Folder For Move"
 msgstr "Επιλογή Φακέλου Προορισμού Για Μετακίνηση"
 
-#: src/nemo-view.c:6960
+#: src/nemo-view.c:6977
 msgid "Select Target Folder For Copy"
 msgstr "Επιλογή Φακέλου Προορισμού Για Αντιγραφή"
 
-#: src/nemo-view.c:7427
+#: src/nemo-view.c:7444
 msgid "Unable to unmount location"
 msgstr "Δεν ήταν δυνατή η αποπροσάρτηση της τοποθεσίας"
 
-#: src/nemo-view.c:7447
+#: src/nemo-view.c:7464
 msgid "Unable to eject location"
 msgstr "Δεν ήταν δυνατή η εξαγωγή της τοποθεσίας"
 
-#: src/nemo-view.c:7462
+#: src/nemo-view.c:7479
 msgid "Unable to stop drive"
 msgstr "Δεν ήταν δυνατή η διακοπή του δίσκου"
 
-#: src/nemo-view.c:7948
+#: src/nemo-view.c:7965
 #, c-format
 msgid "Connect to Server %s"
 msgstr "Σύνδεση στον Διακομιστή %s"
 
-#: src/nemo-view.c:7953 src/nemo-view.c:9091 src/nemo-view.c:9178
-#: src/nemo-view.c:9282
+#: src/nemo-view.c:7970 src/nemo-view.c:9108 src/nemo-view.c:9195
+#: src/nemo-view.c:9299
 msgid "_Connect"
 msgstr "_Σύνδεση"
 
-#: src/nemo-view.c:7967
+#: src/nemo-view.c:7984
 msgid "Link _name:"
 msgstr "_Όνομα Συνδέσμου:"
 
-#: src/nemo-view.c:8174
+#: src/nemo-view.c:8191
 msgid "Create New _Document"
 msgstr "Δημιουργία Νέου _Εγγράφου"
 
-#: src/nemo-view.c:8175
+#: src/nemo-view.c:8192
 msgid "Open Wit_h"
 msgstr "Άνοιγμα _Με"
 
-#: src/nemo-view.c:8176
+#: src/nemo-view.c:8193
 msgid "Choose a program with which to open the selected item"
 msgstr ""
 "Επιλέξτε ένα πρόγραμμα με το οποίο θα ανοίξετε το επιλεγμένο αντικείμενο"
 
-#: src/nemo-view.c:8179 src/nemo-view.c:9862
+#: src/nemo-view.c:8196 src/nemo-view.c:9871
 msgid "View or modify the properties of each selected item"
 msgstr "Εμφάνιση ή τροποποίηση των ιδιοτήτων κάθε επιλεγμένου αντικειμένου"
 
-#: src/nemo-view.c:8187
+#: src/nemo-view.c:8204
 msgid "Create a new empty folder inside this folder"
 msgstr "Δημιουργία νέου κενού φακέλου μέσα σε αυτόν το φάκελο"
 
-#: src/nemo-view.c:8189
+#: src/nemo-view.c:8206
 msgid "No templates installed"
 msgstr "Δεν υπάρχουν εγκατεστημένα πρότυπα"
 
-#: src/nemo-view.c:8192
+#: src/nemo-view.c:8209
 msgid "_Empty Document"
 msgstr "_Κενό έγγραφο"
 
-#: src/nemo-view.c:8193
+#: src/nemo-view.c:8210
 msgid "Create a new empty document inside this folder"
 msgstr "Δημιουργία νέου κενού εγγράφου μέσα σε αυτόν το φάκελο"
 
-#: src/nemo-view.c:8197 src/nemo-view.c:8537
+#: src/nemo-view.c:8214 src/nemo-view.c:8554
 msgid "Open the selected item in this window"
 msgstr "Άνοιγμα του επιλεγμένου αντικειμένου σε αυτό το παράθυρο"
 
-#: src/nemo-view.c:8204 src/nemo-view.c:8385
+#: src/nemo-view.c:8221 src/nemo-view.c:8402
 msgid "Open in Navigation Window"
 msgstr "Άνοιγμα σε Παράθυρο Πλοήγησης"
 
-#: src/nemo-view.c:8205
+#: src/nemo-view.c:8222
 msgid "Open each selected item in a navigation window"
 msgstr "Άνοιγμα κάθε επιλεγμένου αντικειμένου σε ένα παράθυρο πλοήγησης"
 
-#: src/nemo-view.c:8209
+#: src/nemo-view.c:8226
 msgid "Open each selected item in a new tab"
 msgstr "Άνοιγμα κάθε επιλεγμένου αντικειμένου σε μια νέα καρτέλα"
 
-#: src/nemo-view.c:8212 src/nemo-window-menus.c:1510
+#: src/nemo-view.c:8229 src/nemo-window-menus.c:1588
 msgid "Open in Terminal"
 msgstr "Άνοιγμα στο Τερματικό"
 
-#: src/nemo-view.c:8213
+#: src/nemo-view.c:8230
 msgid "Open terminal in the selected folder"
 msgstr "Άνοιγμα του τερματικού στον επιλεγμένο φάκελο"
 
-#: src/nemo-view.c:8216
+#: src/nemo-view.c:8233
 msgid "Open as Root"
 msgstr "Άνοιγμα ως Διαχειριστής"
 
-#: src/nemo-view.c:8217
+#: src/nemo-view.c:8234
 msgid "Open the folder with administration privileges"
 msgstr "Άνοιγμα του φακέλου με δικαιώματα διαχείρισης"
 
-#: src/nemo-view.c:8221
+#: src/nemo-view.c:8238
 msgid "Follow link to original file"
 msgstr "Ακολούθηση συνδέσμου προς το αρχικό αρχείο"
 
-#: src/nemo-view.c:8222
+#: src/nemo-view.c:8239
 msgid "Navigate to the original file that this symbolic link points to"
 msgstr ""
 "Πλοήγηση στο αρχικό αρχείο στο οποίο οδηγεί αυτός ο συμβολικός σύνδεσμος"
 
-#: src/nemo-view.c:8225
+#: src/nemo-view.c:8242
 msgid "Open containing folder"
 msgstr "Άνοιγμα φακέλου που το περιέχει"
 
-#: src/nemo-view.c:8226
+#: src/nemo-view.c:8243
 msgid "Navigate to the folder that the selected item is stored in"
 msgstr "Μετάβαση στο φάκελο που το επιλεγμένο αρχείο είναι αποθηκευμένο"
 
-#: src/nemo-view.c:8229
+#: src/nemo-view.c:8246
 msgid "Other _Application..."
 msgstr "Άλλη _Εφαρμογή…"
 
-#: src/nemo-view.c:8230 src/nemo-view.c:8234
+#: src/nemo-view.c:8247 src/nemo-view.c:8251
 msgid "Choose another application with which to open the selected item"
 msgstr "Επιλέξτε μία άλλη εφαρμογή για να ανοίξετε το επιλεγμένο αντικειμένο"
 
-#: src/nemo-view.c:8233
+#: src/nemo-view.c:8250
 msgid "Open With Other _Application..."
 msgstr "Άνοιγμα Με Άλλη _Εφαρμογή..."
 
-#: src/nemo-view.c:8242
+#: src/nemo-view.c:8259
 msgid "Prepare the selected files to be moved with a Paste command"
 msgstr ""
 "Προετοιμασία μεταφοράς των επιλεγμένων αρχείων με την εντολή Επικόλληση"
 
-#: src/nemo-view.c:8246
+#: src/nemo-view.c:8263
 msgid "Prepare the selected files to be copied with a Paste command"
 msgstr ""
 "Προετοιμασία αντιγραφής των επιλεγμένων αρχείων με την εντολή Επικόλληση"
 
-#: src/nemo-view.c:8249
+#: src/nemo-view.c:8266
 msgid "_Paste"
-msgstr ""
+msgstr "_Επικόληση"
 
-#: src/nemo-view.c:8250
+#: src/nemo-view.c:8267
 msgid "Move or copy files previously selected by a Cut or Copy command"
 msgstr ""
 "Μεταφορά ή αντιγραφή των αρχείων που επιλέχθηκαν προηγουμένως με την εντολή "
 "Αποκοπή ή Αντιγραφή"
 
-#: src/nemo-view.c:8256
+#: src/nemo-view.c:8273
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into the "
 "selected folder"
@@ -2197,196 +2226,196 @@ msgstr ""
 "Μεταφορά ή αντιγραφή των αρχείων που επιλέχθηκαν προηγουμένως με την εντολή "
 "Αποκοπή ή Αντιγραφή μέσα στον επιλεγμένο φάκελο"
 
-#: src/nemo-view.c:8258
+#: src/nemo-view.c:8275
 msgid "Cop_y to"
 msgstr "_Αντιγραφή σε"
 
-#: src/nemo-view.c:8259
+#: src/nemo-view.c:8276
 msgid "M_ove to"
 msgstr "_Μετακίνηση σε"
 
-#: src/nemo-view.c:8261 libnemo-private/nemo-clipboard.c:444
+#: src/nemo-view.c:8278 libnemo-private/nemo-clipboard.c:444
 msgid "Select _All"
 msgstr "Επιλογή _Όλων"
 
-#: src/nemo-view.c:8262
+#: src/nemo-view.c:8279
 msgid "Select all items in this window"
 msgstr "Επιλογή όλων των αντικειμένων σε αυτό το παράθυρο"
 
-#: src/nemo-view.c:8265
+#: src/nemo-view.c:8282
 msgid "Select I_tems Matching..."
 msgstr "Επιλογή _Αντικειμένων που Ταιριάζουν..."
 
-#: src/nemo-view.c:8266
+#: src/nemo-view.c:8283
 msgid "Select items in this window matching a given pattern"
 msgstr ""
 "Επιλογή των αντικειμένων του παραθύρου που αντιστοιχούν σε ένα δεδομένο "
 "μοτίβο"
 
-#: src/nemo-view.c:8269
+#: src/nemo-view.c:8286
 msgid "_Invert Selection"
 msgstr "_Αντιστροφή Επιλογής"
 
-#: src/nemo-view.c:8270
+#: src/nemo-view.c:8287
 msgid "Select all and only the items that are not currently selected"
 msgstr ""
 "Επιλογή όλων και μόνο των αντικειμένων που δεν είναι επιλεγμένα αυτή τη "
 "στιγμή"
 
-#: src/nemo-view.c:8273
+#: src/nemo-view.c:8290
 msgid "D_uplicate"
 msgstr "Δημιουργία _Αντιγράφου"
 
-#: src/nemo-view.c:8274
+#: src/nemo-view.c:8291
 msgid "Duplicate each selected item"
 msgstr "Δημιουργία αντιγράφου για κάθε επιλεγμένο αντικείμενο"
 
-#: src/nemo-view.c:8277 src/nemo-view.c:9847
+#: src/nemo-view.c:8294 src/nemo-view.c:9856
 msgid "Ma_ke Link"
 msgid_plural "Ma_ke Links"
 msgstr[0] "Δημιουργία _Συνδέσμου"
 msgstr[1] "Δημιουργία _Συνδέσμων"
 
-#: src/nemo-view.c:8278
+#: src/nemo-view.c:8295
 msgid "Create a symbolic link for each selected item"
 msgstr "Δημιουργία συμβολικού συνδέσμου για κάθε επιλεγμένο αντικείμενο"
 
-#: src/nemo-view.c:8281
+#: src/nemo-view.c:8298
 msgid "_Rename..."
 msgstr "_Μετονομασία..."
 
-#: src/nemo-view.c:8282
+#: src/nemo-view.c:8299
 msgid "Rename selected item"
 msgstr "Μετονομασία επιλεγμένου αντικειμένου"
 
-#: src/nemo-view.c:8290 src/nemo-view.c:9799
+#: src/nemo-view.c:8307 src/nemo-view.c:9808
 msgid "Move each selected item to the Trash"
 msgstr "Μετακίνηση κάθε επιλεγμένου αντικειμένου στα Απορρίμματα"
 
-#: src/nemo-view.c:8294 src/nemo-view.c:9822
+#: src/nemo-view.c:8311 src/nemo-view.c:9831
 msgid "Delete each selected item, without moving to the Trash"
 msgstr ""
 "Διαγραφή κάθε επιλεγμένου αντικειμένου, χωρίς μετακίνηση στα Απορρίμματα"
 
-#: src/nemo-view.c:8297 src/nemo-view.c:8415
+#: src/nemo-view.c:8314 src/nemo-view.c:8432
 msgid "_Restore"
 msgstr "_Αποκατάσταση"
 
-#: src/nemo-view.c:8301 src/nemo-window-menus.c:1185
+#: src/nemo-view.c:8318 src/nemo-window-menus.c:1258
 msgid "_Undo"
 msgstr "_Αναίρεση"
 
-#: src/nemo-view.c:8302
+#: src/nemo-view.c:8319
 msgid "Undo the last action"
 msgstr "Αναίρεση της τελευταίας ενέργειας"
 
-#: src/nemo-view.c:8305
+#: src/nemo-view.c:8322
 msgid "_Redo"
 msgstr "_Επανάληψη"
 
-#: src/nemo-view.c:8306
+#: src/nemo-view.c:8323
 msgid "Redo the last undone action"
 msgstr "Επανάληψη της τελευταίας αναιρεθείσης ενέργειας"
 
-#: src/nemo-view.c:8315
+#: src/nemo-view.c:8332
 msgid "Reset View to _Defaults"
 msgstr "Επαναφορά Προβολής στις _Προεπιλογές"
 
-#: src/nemo-view.c:8316
+#: src/nemo-view.c:8333
 msgid "Reset sorting order and zoom level to match preferences for this view"
 msgstr ""
 "Επαναφορά της σειράς ταξινόμησης και του επιπέδου μεγέθυνσης ώστε να "
 "αντιστοιχούν στις προτιμήσεις αυτής της προβολής"
 
-#: src/nemo-view.c:8319
+#: src/nemo-view.c:8336
 msgid "Connect To This Server"
 msgstr "Σύνδεση Σε Αυτόν Τον Διακομιστή"
 
-#: src/nemo-view.c:8320
+#: src/nemo-view.c:8337
 msgid "Make a permanent connection to this server"
 msgstr "Δημιουργία μιας μόνιμης σύνδεσης σε αυτόν τον διακομιστή"
 
-#: src/nemo-view.c:8324
+#: src/nemo-view.c:8341
 msgid "Mount the selected volume"
 msgstr "Προσάρτηση του επιλεγμένου τόμου"
 
-#: src/nemo-view.c:8328
+#: src/nemo-view.c:8345
 msgid "Unmount the selected volume"
 msgstr "Απόπροσαρτηση του επιλεγμένου τόμου"
 
-#: src/nemo-view.c:8332
+#: src/nemo-view.c:8349
 msgid "Eject the selected volume"
 msgstr "Εξαγωγή του επιλεγμένου τόμου"
 
-#: src/nemo-view.c:8336
+#: src/nemo-view.c:8353
 msgid "Start the selected volume"
 msgstr "Εκκίνηση του επιλεγμένου τόμου"
 
-#: src/nemo-view.c:8340 src/nemo-view.c:9304
+#: src/nemo-view.c:8357 src/nemo-view.c:9321
 msgid "Stop the selected volume"
 msgstr "Διακοπή του επιλεγμένου τόμου"
 
-#: src/nemo-view.c:8344 src/nemo-view.c:8368 src/nemo-view.c:8440
+#: src/nemo-view.c:8361 src/nemo-view.c:8385 src/nemo-view.c:8457
 msgid "Detect media in the selected drive"
 msgstr "Εντοπισμός πολυμέσων στον επιλεγμένο δίσκο"
 
-#: src/nemo-view.c:8348
+#: src/nemo-view.c:8365
 msgid "Mount the volume associated with the open folder"
 msgstr "Προσάρτηση του τόμου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:8352
+#: src/nemo-view.c:8369
 msgid "Unmount the volume associated with the open folder"
 msgstr "Αποπροσάρτηση του τόμου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:8356
+#: src/nemo-view.c:8373
 msgid "Eject the volume associated with the open folder"
 msgstr "Εξαγωγή του τόμου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:8360
+#: src/nemo-view.c:8377
 msgid "Start the volume associated with the open folder"
 msgstr "Εκκίνηση του τόμου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:8364
+#: src/nemo-view.c:8381
 msgid "Stop the volume associated with the open folder"
 msgstr "Διακοπή του τόμου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:8371
+#: src/nemo-view.c:8388
 msgid "Open File and Close window"
 msgstr "Άνοιγμα Αρχείου και Κλείσιμο παραθύρου"
 
-#: src/nemo-view.c:8375
+#: src/nemo-view.c:8392
 msgid "Sa_ve Search"
 msgstr "_Αποθήκευση Αναζήτησης"
 
-#: src/nemo-view.c:8376
+#: src/nemo-view.c:8393
 msgid "Save the edited search"
 msgstr "Αποθήκευση της τροποποιημένης αναζήτησης"
 
-#: src/nemo-view.c:8379
+#: src/nemo-view.c:8396
 msgid "Sa_ve Search As..."
 msgstr "_Αποθήκευση Αναζήτησης Ως..."
 
-#: src/nemo-view.c:8380
+#: src/nemo-view.c:8397
 msgid "Save the current search as a file"
 msgstr "Αποθήκευση της τρέχουσας αναζήτησης ως αρχείο"
 
-#: src/nemo-view.c:8386
+#: src/nemo-view.c:8403
 msgid "Open this folder in a navigation window"
 msgstr "Άνοιγμα αυτού του φακέλου σε ένα παράθυρο πλοήγησης"
 
-#: src/nemo-view.c:8390
+#: src/nemo-view.c:8407
 msgid "Open this folder in a new tab"
 msgstr "Άνοιγμα αυτού του φακέλου σε νέα καρτέλα"
 
-#: src/nemo-view.c:8395
+#: src/nemo-view.c:8412
 msgid "Prepare this folder to be moved with a Paste command"
 msgstr "Προετοιμασία μεταφοράς του φακέλου με την εντολή Επικόλληση"
 
-#: src/nemo-view.c:8399
+#: src/nemo-view.c:8416
 msgid "Prepare this folder to be copied with a Paste command"
 msgstr "Προετοιμασία αντιγραφής του φακέλου με την εντολή Επικόλληση"
 
-#: src/nemo-view.c:8403
+#: src/nemo-view.c:8420
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into this "
 "folder"
@@ -2394,97 +2423,101 @@ msgstr ""
 "Μεταφορά ή αντιγραφή αρχείων που επιλέχθηκαν προηγουμένως με την εντολή "
 "Αποκοπή ή Αντιγραφή σε αυτόν το φάκελο"
 
-#: src/nemo-view.c:8408
+#: src/nemo-view.c:8425
 msgid "Move this folder to the Trash"
 msgstr "Μεταφορά αυτού του φακέλου στα Απορρίμματα"
 
-#: src/nemo-view.c:8412
+#: src/nemo-view.c:8429
 msgid "Delete this folder, without moving to the Trash"
 msgstr "Διαγραφή αυτού του φακέλου, χωρίς μεταφορά στα Απορρίμματα"
 
-#: src/nemo-view.c:8420
+#: src/nemo-view.c:8437
 msgid "Mount the volume associated with this folder"
 msgstr "Προσάρτηση του τόμου που αντιστοιχεί σε αυτόν το φάκελο"
 
-#: src/nemo-view.c:8424
+#: src/nemo-view.c:8441
 msgid "Unmount the volume associated with this folder"
 msgstr "Αποπροσάρτηση του τόμου που σχετίζεται με αυτόν τον φάκελο"
 
-#: src/nemo-view.c:8428
+#: src/nemo-view.c:8445
 msgid "Eject the volume associated with this folder"
 msgstr "Εξαγωγή του τόμου που σχετίζεται με αυτόν τον φάκελο"
 
-#: src/nemo-view.c:8432
+#: src/nemo-view.c:8449
 msgid "Start the volume associated with this folder"
 msgstr "Εκκίνηση του τόμου που σχετίζεται με αυτόν τον φάκελο"
 
-#: src/nemo-view.c:8436
+#: src/nemo-view.c:8453
 msgid "Stop the volume associated with this folder"
 msgstr "Διακοπή του τόμου που σχετίζεται με αυτόν τον φάκελο"
 
-#: src/nemo-view.c:8445
+#: src/nemo-view.c:8462
 msgid "View or modify the properties of this folder"
 msgstr "Εμφάνιση ή τροποποίηση των ιδιοτήτων αυτού του φακέλου"
 
-#: src/nemo-view.c:8448 src/nemo-view.c:8451
+#: src/nemo-view.c:8465 src/nemo-view.c:8468
 msgid "_Other pane"
 msgstr "_Άλλο πάνελ"
 
-#: src/nemo-view.c:8449
+#: src/nemo-view.c:8466
 msgid "Copy the current selection to the other pane in the window"
 msgstr "Αντιγραφή της τρέχουσας επιλογής στο άλλο πάνελ του παραθύρου"
 
-#: src/nemo-view.c:8452
+#: src/nemo-view.c:8469
 msgid "Move the current selection to the other pane in the window"
 msgstr "Μετακίνηση της τρέχουσας επιλογής στο άλλο πάνελ του παραθύρου"
 
-#: src/nemo-view.c:8455 src/nemo-view.c:8459 src/nemo-window-menus.c:1256
-#: src/nemo-window-menus.c:1460 src/nemo-window-menus.c:1677
+#: src/nemo-view.c:8472 src/nemo-view.c:8476 src/nemo-window-menus.c:1329
+#: src/nemo-window-menus.c:1538 src/nemo-window-menus.c:1767
 msgid "_Home"
 msgstr "_Προσωπικός Φάκελος"
 
-#: src/nemo-view.c:8456
+#: src/nemo-view.c:8473
 msgid "Copy the current selection to the home folder"
 msgstr "Αντιγραφή της τρέχουσας επιλογής στον προσωπικό φάκελο"
 
-#: src/nemo-view.c:8460
+#: src/nemo-view.c:8477
 msgid "Move the current selection to the home folder"
 msgstr "Μετακίνηση της τρέχουσας επιλογής στον προσωπικό φάκελο"
 
-#: src/nemo-view.c:8464
+#: src/nemo-view.c:8480 src/nemo-view.c:8484
+msgid "_Desktop"
+msgstr "_Επιφάνεια εργασίας"
+
+#: src/nemo-view.c:8481
 msgid "Copy the current selection to the desktop"
 msgstr "Αντιγραφή της τρέχουσας επιλογής στην επιφάνεια εργασίας"
 
-#: src/nemo-view.c:8468
+#: src/nemo-view.c:8485
 msgid "Move the current selection to the desktop"
 msgstr "Μετακίνηση της τρέχουσας επιλογής στην επιφάνεια εργασίας"
 
-#: src/nemo-view.c:8471 src/nemo-view.c:8475
+#: src/nemo-view.c:8488 src/nemo-view.c:8492
 msgid "Browse…"
 msgstr "Περιήγηση…"
 
-#: src/nemo-view.c:8472
+#: src/nemo-view.c:8489
 msgid "Browse for a folder to move the selection to"
 msgstr "Περιήγηση για ένα φάκελο στον οποίο θα μετακινηθεί η επιλογή"
 
-#: src/nemo-view.c:8476
+#: src/nemo-view.c:8493
 msgid "Browse for a folder to copy the selection to"
 msgstr "Περιήγηση για ένα φάκελο στον οποίο θα αντιγραφεί η επιλογή"
 
-#: src/nemo-view.c:8565
+#: src/nemo-view.c:8582
 msgid "Run scripts"
 msgstr "Εκτέλεση scripts"
 
-#: src/nemo-view.c:8567
+#: src/nemo-view.c:8584
 msgid "_Scripts"
 msgstr "_Σενάρια"
 
-#: src/nemo-view.c:8940
+#: src/nemo-view.c:8957
 #, c-format
 msgid "Move the open folder out of the trash to \"%s\""
 msgstr "Μεταφορά του ανοικτού φακέλου έξω από τα απορρίμματα, στο \"%s\""
 
-#: src/nemo-view.c:8943
+#: src/nemo-view.c:8960
 #, c-format
 msgid "Move the selected folder out of the trash to \"%s\""
 msgid_plural "Move the selected folders out of the trash to \"%s\""
@@ -2493,13 +2526,13 @@ msgstr[0] ""
 msgstr[1] ""
 "Μεταφορά των επιλεγμένων φακέλων έξω από τα απορρίμματα, στο \"%s\""
 
-#: src/nemo-view.c:8947
+#: src/nemo-view.c:8964
 msgid "Move the selected folder out of the trash"
 msgid_plural "Move the selected folders out of the trash"
 msgstr[0] "Μεταφορά του επιλεγμένου φακέλου έξω από τα απορρίμματα"
 msgstr[1] "Μεταφορά των επιλεγμένων φακέλων έξω από τα απορρίμματα"
 
-#: src/nemo-view.c:8953
+#: src/nemo-view.c:8970
 #, c-format
 msgid "Move the selected file out of the trash to \"%s\""
 msgid_plural "Move the selected files out of the trash to \"%s\""
@@ -2508,13 +2541,13 @@ msgstr[0] ""
 msgstr[1] ""
 "Μεταφορά των επιλεγμένων αρχείων έξω από τα απορρίμματα, στο \"%s\""
 
-#: src/nemo-view.c:8957
+#: src/nemo-view.c:8974
 msgid "Move the selected file out of the trash"
 msgid_plural "Move the selected files out of the trash"
 msgstr[0] "Μεταφορά του επιλεγμένου αρχείου έξω από τα απορρίμματα"
 msgstr[1] "Μεταφορά των επιλεγμένων αρχείων έξω από τα απορρίμματα"
 
-#: src/nemo-view.c:8963
+#: src/nemo-view.c:8980
 #, c-format
 msgid "Move the selected item out of the trash to \"%s\""
 msgid_plural "Move the selected items out of the trash to \"%s\""
@@ -2523,151 +2556,151 @@ msgstr[0] ""
 msgstr[1] ""
 "Μεταφορά των επιλεγμένων αντικειμένων έξω από τα απορρίμματα, στο \"%s\""
 
-#: src/nemo-view.c:8967
+#: src/nemo-view.c:8984
 msgid "Move the selected item out of the trash"
 msgid_plural "Move the selected items out of the trash"
 msgstr[0] "Μεταφορά του επιλεγμένου αντικειμένου έξω από τα απορρίμματα"
 msgstr[1] "Μεταφορά των επιλεγμένων αντικειμένων έξω από τα απορρίμματα"
 
-#: src/nemo-view.c:9084 src/nemo-view.c:9088 src/nemo-view.c:9275
-#: src/nemo-view.c:9279
+#: src/nemo-view.c:9101 src/nemo-view.c:9105 src/nemo-view.c:9292
+#: src/nemo-view.c:9296
 msgid "Start the selected drive"
 msgstr "Εκκίνηση του επιλεγμένου δίσκου"
 
-#: src/nemo-view.c:9092 src/nemo-view.c:9283
+#: src/nemo-view.c:9109 src/nemo-view.c:9300
 msgid "Connect to the selected drive"
 msgstr "Σύνδεση στον επιλεγμένο δίσκο"
 
-#: src/nemo-view.c:9095 src/nemo-view.c:9182 src/nemo-view.c:9286
+#: src/nemo-view.c:9112 src/nemo-view.c:9199 src/nemo-view.c:9303
 msgid "_Start Multi-disk Drive"
 msgstr "_Εκκίνηση Δίσκου Πολλαπλών Δίσκων"
 
-#: src/nemo-view.c:9096 src/nemo-view.c:9287
+#: src/nemo-view.c:9113 src/nemo-view.c:9304
 msgid "Start the selected multi-disk drive"
 msgstr "Εκκίνηση του επιλεγμένου δίσκου πολλαπλών δίσκων"
 
-#: src/nemo-view.c:9099
+#: src/nemo-view.c:9116
 msgid "U_nlock Drive"
 msgstr "_Ξεκλείδωμα Δίσκου"
 
-#: src/nemo-view.c:9100 src/nemo-view.c:9291
+#: src/nemo-view.c:9117 src/nemo-view.c:9308
 msgid "Unlock the selected drive"
 msgstr "Ξεκλείδωμα του επιλεγμένου δίσκου"
 
-#: src/nemo-view.c:9113
+#: src/nemo-view.c:9130
 msgid "Stop the selected drive"
 msgstr "Διακοπή του επιλεγμένου δίσκου"
 
-#: src/nemo-view.c:9117 src/nemo-view.c:9308
+#: src/nemo-view.c:9134 src/nemo-view.c:9325
 msgid "Safely remove the selected drive"
 msgstr "Ασφαλής κατάργηση του επιλεγμένου δίσκου"
 
-#: src/nemo-view.c:9120 src/nemo-view.c:9207 src/nemo-view.c:9311
+#: src/nemo-view.c:9137 src/nemo-view.c:9224 src/nemo-view.c:9328
 msgid "_Disconnect"
 msgstr "_Αποσύνδεση"
 
-#: src/nemo-view.c:9121 src/nemo-view.c:9312
+#: src/nemo-view.c:9138 src/nemo-view.c:9329
 msgid "Disconnect the selected drive"
 msgstr "Αποσύνδεση του επιλεγμένου δίσκου"
 
-#: src/nemo-view.c:9124 src/nemo-view.c:9211 src/nemo-view.c:9315
+#: src/nemo-view.c:9141 src/nemo-view.c:9228 src/nemo-view.c:9332
 msgid "_Stop Multi-disk Drive"
 msgstr "_Διακοπή Δίσκου Πολλαπλών Δίσκων"
 
-#: src/nemo-view.c:9125 src/nemo-view.c:9316
+#: src/nemo-view.c:9142 src/nemo-view.c:9333
 msgid "Stop the selected multi-disk drive"
 msgstr "Διακοπή του επιλεγμένου δίσκου πολλαπλών δίσκων"
 
-#: src/nemo-view.c:9129 src/nemo-view.c:9320
+#: src/nemo-view.c:9146 src/nemo-view.c:9337
 msgid "Lock the selected drive"
 msgstr "Κλείδωμα του επιλεγμένου δίσκου"
 
-#: src/nemo-view.c:9171 src/nemo-view.c:9175
+#: src/nemo-view.c:9188 src/nemo-view.c:9192
 msgid "Start the drive associated with the open folder"
 msgstr "Εκκίνηση του δίσκου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:9179
+#: src/nemo-view.c:9196
 msgid "Connect to the drive associated with the open folder"
 msgstr "Σύνδεση στον δίσκο που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:9183
+#: src/nemo-view.c:9200
 msgid "Start the multi-disk drive associated with the open folder"
 msgstr ""
 "Εκκίνηση του δίσκου πολλαπλών δίσκων που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:9187
+#: src/nemo-view.c:9204
 msgid "Unlock the drive associated with the open folder"
 msgstr "Ξεκλείδωμα του δίσκου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:9200
+#: src/nemo-view.c:9217
 msgid "_Stop the drive associated with the open folder"
 msgstr "_Διακοπή του δίσκου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:9204
+#: src/nemo-view.c:9221
 msgid "Safely remove the drive associated with the open folder"
 msgstr "Ασφαλής αφαίρεση του δίσκου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:9208
+#: src/nemo-view.c:9225
 msgid "Disconnect the drive associated with the open folder"
 msgstr "Αποσύνδεση του δίσκου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:9212
+#: src/nemo-view.c:9229
 msgid "Stop the multi-disk drive associated with the open folder"
 msgstr ""
 "Διακοπή του δίσκο πολλαπλών δίσκων που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:9216
+#: src/nemo-view.c:9233
 msgid "Lock the drive associated with the open folder"
 msgstr "Κλείδωμα του δίσκου που σχετίζεται με τον ανοικτό φάκελο"
 
-#: src/nemo-view.c:9456 src/nemo-view.c:9794
+#: src/nemo-view.c:9473 src/nemo-view.c:9803
 msgid "_Delete Permanently"
 msgstr "Οριστική _Διαγραφή"
 
-#: src/nemo-view.c:9457
+#: src/nemo-view.c:9474
 msgid "Delete the open folder permanently"
 msgstr "Οριστική διαγραφή του ανοικτού φακέλου"
 
-#: src/nemo-view.c:9461
+#: src/nemo-view.c:9478
 msgid "Move the open folder to the Trash"
 msgstr "Μεταφορά του ανοικτού φακέλου στα Απορρίμματα"
 
-#: src/nemo-view.c:9686
+#: src/nemo-view.c:9701
 #, c-format
 msgid "_Open With %s"
 msgstr "Ά_νοιγμα με %s"
 
-#: src/nemo-view.c:9757
+#: src/nemo-view.c:9766
 #, c-format
 msgid "Open in %'d New _Window"
 msgid_plural "Open in %'d New _Windows"
 msgstr[0] "Άνοιγμα σε %'d νέο _παράθυρο"
 msgstr[1] "Άνοιγμα σε %'d νέα _παράθυρα"
 
-#: src/nemo-view.c:9777
+#: src/nemo-view.c:9786
 #, c-format
 msgid "Open in %'d New _Tab"
 msgid_plural "Open in %'d New _Tabs"
 msgstr[0] "Άνοιγμα σε %'d νέα _καρτέλα"
 msgstr[1] "Άνοιγμα σε %'d νέες _καρτέλες"
 
-#: src/nemo-view.c:9795
+#: src/nemo-view.c:9804
 msgid "Delete all selected items permanently"
 msgstr "Οριστική διαγραφή όλων των επιλεγμένων αντικειμένων"
 
-#: src/nemo-view.c:9818
+#: src/nemo-view.c:9827
 msgid "Remo_ve from Recent"
 msgstr "Αφαίρε_ση από τα Πρόσφατα"
 
-#: src/nemo-view.c:9819
+#: src/nemo-view.c:9828
 msgid "Remove each selected item from the recently used list"
 msgstr "Αφαίρεση κάθε επιλεγμένου αντικειμένου από την πρόσφατη λίστα"
 
-#: src/nemo-view.c:9860
+#: src/nemo-view.c:9869
 msgid "View or modify the properties of the open folder"
 msgstr "Εμφάνιση ή τροποποίηση των ιδιοτήτων του ανοιχτού φακέλου"
 
-#: src/nemo-view-dnd.c:125 libnemo-private/nemo-file.c:6636
+#: src/nemo-view-dnd.c:125 libnemo-private/nemo-file.c:6769
 #: libnemo-private/nemo-file-operations.c:393
 #, c-format
 msgid "Link to %s"
@@ -2711,79 +2744,79 @@ msgstr "Η τοποθεσία \"%s\" δεν υπάρχει."
 msgid "Bookmark for Nonexistent Location"
 msgstr "Σελιδοδείκτης για ανύπαρκτη τοποθεσία"
 
-#: src/nemo-window-bookmarks.c:310
+#: src/nemo-window-bookmarks.c:308
 msgid "Go to the location specified by this bookmark"
 msgstr "Μετάβαση στη τοποθεσία που καθορίζεται από αυτόν το σελιδοδείκτη"
 
-#: src/nemo-window.c:1249
+#: src/nemo-window.c:1251
 #, c-format
 msgid "%s - File Browser"
 msgstr "%s - Περιηγητής Αρχείων"
 
-#: src/nemo-window.c:1769 src/nemo-window-menus.c:336
+#: src/nemo-window.c:1847 src/nemo-window-menus.c:339
 msgid "Nemo"
 msgstr "Nemo"
 
-#: src/nemo-window-manage-views.c:1182
+#: src/nemo-window-manage-views.c:1200
 msgid "Searching..."
 msgstr "Αναζήτηση..."
 
-#: src/nemo-window-manage-views.c:1665 src/nemo-window-manage-views.c:1671
-#: src/nemo-window-manage-views.c:1688 src/nemo-window-manage-views.c:1699
-#: src/nemo-window-manage-views.c:1705 src/nemo-window-manage-views.c:1731
+#: src/nemo-window-manage-views.c:1684 src/nemo-window-manage-views.c:1690
+#: src/nemo-window-manage-views.c:1707 src/nemo-window-manage-views.c:1718
+#: src/nemo-window-manage-views.c:1724 src/nemo-window-manage-views.c:1750
 #, c-format
 msgid "Could not display \"%s\"."
 msgstr "Δεν ήταν δυνατή η εμφάνιση του \"%s\"."
 
-#: src/nemo-window-manage-views.c:1668
+#: src/nemo-window-manage-views.c:1687
 msgid "Nemo has no installed viewer capable of displaying the folder."
 msgstr ""
 "Το Nemo δεν έχει εγκατεστημένη εφαρμογή ικανή να παρουσιάσει το φάκελο."
 
-#: src/nemo-window-manage-views.c:1674
+#: src/nemo-window-manage-views.c:1693
 msgid "The location is not a folder."
 msgstr "Η τοποθεσία δεν είναι φάκελος."
 
-#: src/nemo-window-manage-views.c:1680
+#: src/nemo-window-manage-views.c:1699
 #, c-format
 msgid "Could not find \"%s\"."
 msgstr "Δεν ήταν δυνατή η εύρεση του \"%s\"."
 
-#: src/nemo-window-manage-views.c:1683
+#: src/nemo-window-manage-views.c:1702
 msgid "Please check the spelling and try again."
 msgstr "Παρακαλώ, ελέγξτε την ορθογραφία και δοκιμάστε ξανά."
 
-#: src/nemo-window-manage-views.c:1691
+#: src/nemo-window-manage-views.c:1710
 #, c-format
 msgid "Nemo cannot handle \"%s\" locations."
 msgstr "Το Nemo δεν μπορεί να διαχειριστεί την τοποθεσία \"%s\""
 
-#: src/nemo-window-manage-views.c:1694
+#: src/nemo-window-manage-views.c:1713
 msgid "Nemo cannot handle this kind of location."
 msgstr "Το Nemo δεν μπορεί να διαχειριστεί αυτό του είδους την τοποθεσία."
 
-#: src/nemo-window-manage-views.c:1701
+#: src/nemo-window-manage-views.c:1720
 msgid "Unable to mount the location."
 msgstr "Δεν ήταν δυνατή η προσάρτησης της τοποθεσίας."
 
-#: src/nemo-window-manage-views.c:1707
+#: src/nemo-window-manage-views.c:1726
 msgid "Access was denied."
 msgstr "Δεν επιτράπηκε η πρόσβαση."
 
-#: src/nemo-window-manage-views.c:1716
+#: src/nemo-window-manage-views.c:1735
 #, c-format
 msgid "Could not display \"%s\", because the host could not be found."
 msgstr ""
 "Δεν ήταν δυνατή η εμφάνιση του \"%s\", γιατί δε βρέθηκε ο υπολογιστής που το "
 "φιλοξενεί."
 
-#: src/nemo-window-manage-views.c:1718
+#: src/nemo-window-manage-views.c:1737
 msgid ""
 "Check that the spelling is correct and that your proxy settings are correct."
 msgstr ""
 "Βεβαιωθείτε ότι η ορθογραφία και οι ρυθμίσεις διαμεσολαβητή είναι σωστές."
 
-#: src/nemo-window-manage-views.c:1733
+#: src/nemo-window-manage-views.c:1752
 #, c-format
 msgid ""
 "Error: %s\n"
@@ -2792,7 +2825,7 @@ msgstr ""
 "Σφάλμα: %s\n"
 "Παρακαλώ, επιλέξτε άλλο πρόγραμμα και δοκιμάστε ξανά."
 
-#: src/nemo-window-menus.c:315
+#: src/nemo-window-menus.c:318
 msgid ""
 "Nemo is free software; you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -2804,7 +2837,7 @@ msgstr ""
 "δημοσιεύονται από το Free Software Foundation - είτε σύμφωνα με την έκδοση 2 "
 "είτε (κατ' επιλογή) σύμφωνα με οποιαδήποτε νεότερη έκδοση."
 
-#: src/nemo-window-menus.c:319
+#: src/nemo-window-menus.c:322
 msgid ""
 "Nemo is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -2816,7 +2849,7 @@ msgstr ""
 "ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε το GNU General Public License "
 "για περισσότερες λεπτομέρειες."
 
-#: src/nemo-window-menus.c:323
+#: src/nemo-window-menus.c:326
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Nemo; if not, write to the Free Software Foundation, Inc., 51 Franklin "
@@ -2826,422 +2859,442 @@ msgstr ""
 "με το Nemo - αν όχι, τότε γράψτε στο Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
 
-#: src/nemo-window-menus.c:338
+#: src/nemo-window-menus.c:341
 msgid ""
 "Nemo lets you organize files and folders, both on your computer and online."
 msgstr ""
 "Το Nemo σας επιτρέπει να οργανώνετε αρχεία και φακέλους, τόσο στον "
 "υπολογιστή σας όσο και μέσω δικτύου."
 
-#: src/nemo-window-menus.c:1168
+#: src/nemo-window-menus.c:1241
 msgid "_File"
 msgstr "_Αρχείο"
 
-#: src/nemo-window-menus.c:1169
+#: src/nemo-window-menus.c:1242
 msgid "_Edit"
 msgstr "_Επεξεργασία"
 
-#: src/nemo-window-menus.c:1170
+#: src/nemo-window-menus.c:1243
 msgid "_View"
 msgstr "_Προβολή"
 
-#: src/nemo-window-menus.c:1171
+#: src/nemo-window-menus.c:1244
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: src/nemo-window-menus.c:1173
+#: src/nemo-window-menus.c:1246
 msgid "_Close"
 msgstr "_Κλείσιμο"
 
-#: src/nemo-window-menus.c:1174
+#: src/nemo-window-menus.c:1247
 msgid "Close this folder"
 msgstr "Κλείσιμο αυτού του φακέλου"
 
-#: src/nemo-window-menus.c:1177
+#: src/nemo-window-menus.c:1250
 msgid "Prefere_nces"
 msgstr "_Προτιμήσεις"
 
-#: src/nemo-window-menus.c:1178
+#: src/nemo-window-menus.c:1251
 msgid "Edit Nemo preferences"
 msgstr "Επεξεργασία των προτιμήσεων του Nemo"
 
-#: src/nemo-window-menus.c:1182
+#: src/nemo-window-menus.c:1254
+#: gresources/nemo-file-management-properties.glade:3239
+msgid "Plugins"
+msgstr "Πρόσθετα"
+
+#: src/nemo-window-menus.c:1255
 msgid "Manage extensions, actions and scripts"
 msgstr "Διαχειριστείτε τις επεκτάσεις, τις δράσεις και τα σενάρια"
 
-#: src/nemo-window-menus.c:1186
+#: src/nemo-window-menus.c:1259
 msgid "Undo the last text change"
 msgstr "Ακύρωση της τελευταίας αλλαγής κειμένου"
 
-#: src/nemo-window-menus.c:1189
+#: src/nemo-window-menus.c:1262
 msgid "Open _Parent"
 msgstr "Άνοιγμα _Γονικού"
 
-#: src/nemo-window-menus.c:1190
+#: src/nemo-window-menus.c:1263
 msgid "Open the parent folder"
 msgstr "Άνοιγμα του γονικού φακέλου"
 
-#: src/nemo-window-menus.c:1197
+#: src/nemo-window-menus.c:1270
 msgid "Stop loading the current location"
 msgstr "Διακοπή φόρτωσης της τρέχουσας τοποθεσίας"
 
-#: src/nemo-window-menus.c:1200 src/nemo-window-menus.c:1446
+#: src/nemo-window-menus.c:1273 src/nemo-window-menus.c:1524
 msgid "_Reload"
 msgstr "_Επαναφόρτωση"
 
-#: src/nemo-window-menus.c:1201 src/nemo-window-menus.c:1448
+#: src/nemo-window-menus.c:1274 src/nemo-window-menus.c:1526
 msgid "Reload the current location"
 msgstr "Επαναφόρτωση της τρέχουσας τοποθεσίας"
 
-#: src/nemo-window-menus.c:1204
+#: src/nemo-window-menus.c:1277
 msgid "_All Topics"
 msgstr "_Όλα τα θέματα"
 
-#: src/nemo-window-menus.c:1205
+#: src/nemo-window-menus.c:1278
 msgid "Display Nemo help"
 msgstr "Εμφάνιση της βοήθειας του Nemo"
 
-#: src/nemo-window-menus.c:1224
+#: src/nemo-window-menus.c:1297
 msgid "_About"
 msgstr "_Σχετικά"
 
-#: src/nemo-window-menus.c:1225
+#: src/nemo-window-menus.c:1298
 msgid "Display credits for the creators of Nemo"
 msgstr "Εμφάνιση συνεισφορών για τους δημιουργούς του Nemo"
 
-#: src/nemo-window-menus.c:1228
+#: src/nemo-window-menus.c:1301
 msgid "Zoom _In"
 msgstr "_Μεγέθυνση"
 
-#: src/nemo-window-menus.c:1229
+#: src/nemo-window-menus.c:1302
 msgid "Increase the view size"
 msgstr "Αύξηση του μεγέθους προβολής"
 
-#: src/nemo-window-menus.c:1240
+#: src/nemo-window-menus.c:1313
 msgid "Zoom _Out"
 msgstr "_Σμίκρυνση"
 
-#: src/nemo-window-menus.c:1241
+#: src/nemo-window-menus.c:1314
 msgid "Decrease the view size"
 msgstr "Μείωση του μεγέθους προβολής"
 
-#: src/nemo-window-menus.c:1248
+#: src/nemo-window-menus.c:1321
 msgid "Normal Si_ze"
 msgstr "Κανονικό _μέγεθος"
 
-#: src/nemo-window-menus.c:1249
+#: src/nemo-window-menus.c:1322
 msgid "Use the normal view size"
 msgstr "Χρήση του κανονικού μεγέθους προβολής"
 
-#: src/nemo-window-menus.c:1252
+#: src/nemo-window-menus.c:1325
 msgid "Connect to _Server..."
 msgstr "Σύνδεση στον _εξυπηρετητή..."
 
-#: src/nemo-window-menus.c:1253
+#: src/nemo-window-menus.c:1326
 msgid "Connect to a remote computer or shared disk"
 msgstr "Σύνδεση σε έναν απομακρυσμένο υπολογιστή ή σε έναν κοινόχρηστο δίσκο"
 
-#: src/nemo-window-menus.c:1257
+#: src/nemo-window-menus.c:1330
 msgid "Open your personal folder"
 msgstr "Άνοιγμα του προσωπικού σας φακέλου"
 
-#: src/nemo-window-menus.c:1260 src/nemo-window-menus.c:1474
+#: src/nemo-window-menus.c:1333 src/nemo-window-menus.c:1552
 msgid "_Computer"
 msgstr "_Υπολογιστής"
 
-#: src/nemo-window-menus.c:1261
+#: src/nemo-window-menus.c:1334
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Περιήγηση σε όλους τους τοπικούς ή απομακρυσμένους δίσκους και φακέλους "
 "στους οποίους έχει πρόσβαση ο υπολογιστής"
 
-#: src/nemo-window-menus.c:1264
+#: src/nemo-window-menus.c:1337
 msgid "_Network"
 msgstr "_Δίκτυο"
 
-#: src/nemo-window-menus.c:1265
+#: src/nemo-window-menus.c:1338
 msgid "Browse bookmarked and local network locations"
 msgstr ""
 "Περιήγηση σε τοπικές και δικτυακές τοποθεσίες που έχουν ορισθεί σε "
 "σελιδοδείκτες"
 
-#: src/nemo-window-menus.c:1268
+#: src/nemo-window-menus.c:1341
 msgid "T_emplates"
 msgstr "_Πρότυπα"
 
-#: src/nemo-window-menus.c:1269
+#: src/nemo-window-menus.c:1342
 msgid "Open your personal templates folder"
 msgstr "Άνοιγμα του προσωπικού σας φακέλου προτύπων"
 
-#: src/nemo-window-menus.c:1272
+#: src/nemo-window-menus.c:1345
 msgid "_Trash"
 msgstr "_Απορρίματα"
 
-#: src/nemo-window-menus.c:1273
+#: src/nemo-window-menus.c:1346
 msgid "Open your personal trash folder"
 msgstr "Άνοιγμα του προσωπικού σας φακέλου απορριμμάτων"
 
-#: src/nemo-window-menus.c:1275
+#: src/nemo-window-menus.c:1348
 msgid "_Go"
 msgstr "_Μετάβαση"
 
-#: src/nemo-window-menus.c:1276
+#: src/nemo-window-menus.c:1349
 msgid "_Bookmarks"
 msgstr "_Σελιδοδείκτες"
 
-#: src/nemo-window-menus.c:1277
+#: src/nemo-window-menus.c:1350
 msgid "_Tabs"
 msgstr "_Καρτέλες"
 
-#: src/nemo-window-menus.c:1278
+#: src/nemo-window-menus.c:1351
 msgid "New _Window"
 msgstr "Νέο _Παράθυρο"
 
-#: src/nemo-window-menus.c:1279
+#: src/nemo-window-menus.c:1352
 msgid "Open another Nemo window for the displayed location"
 msgstr "Άνοιγμα νέου παραθύρου Nemo για την εμφανιζόμενη τοποθεσία"
 
-#: src/nemo-window-menus.c:1281
+#: src/nemo-window-menus.c:1354
 msgid "New _Tab"
 msgstr "Νέα _Καρτέλα"
 
-#: src/nemo-window-menus.c:1282
+#: src/nemo-window-menus.c:1355
 msgid "Open another tab for the displayed location"
 msgstr "Άνοιγμα μιας άλλης καρτέλας για την εμφανιζόμενη τοποθεσία"
 
-#: src/nemo-window-menus.c:1284
+#: src/nemo-window-menus.c:1357
 msgid "Close _All Windows"
 msgstr "Κλείσιμο ό_λων των Παραθύρων"
 
-#: src/nemo-window-menus.c:1285
+#: src/nemo-window-menus.c:1358
 msgid "Close all Navigation windows"
 msgstr "Κλείσιμο όλων των παραθύρων Πλοήγησης"
 
-#: src/nemo-window-menus.c:1287 src/nemo-window-menus.c:1396
+#: src/nemo-window-menus.c:1360 src/nemo-window-menus.c:1474
 msgid "_Back"
 msgstr "_Επιστροφή"
 
-#: src/nemo-window-menus.c:1288 src/nemo-window-menus.c:1398
+#: src/nemo-window-menus.c:1361 src/nemo-window-menus.c:1476
 msgid "Go to the previous visited location"
 msgstr "Μετάβαση στην προηγούμενη τοποθεσία"
 
-#: src/nemo-window-menus.c:1290 src/nemo-window-menus.c:1412
+#: src/nemo-window-menus.c:1363 src/nemo-window-menus.c:1490
 msgid "_Forward"
 msgstr "_Προώθηση"
 
-#: src/nemo-window-menus.c:1291 src/nemo-window-menus.c:1414
+#: src/nemo-window-menus.c:1364 src/nemo-window-menus.c:1492
 msgid "Go to the next visited location"
 msgstr "Μετάβαση στην επόμενη τοποθεσία"
 
-#: src/nemo-window-menus.c:1293
+#: src/nemo-window-menus.c:1366
 msgid "Toggle _Location Entry"
 msgstr "Εναλλαγή _Εισαγωγής Τοποθεσίας"
 
-#: src/nemo-window-menus.c:1294
+#: src/nemo-window-menus.c:1367
 msgid "Switch between location entry and breadcrumbs"
 msgstr ""
 "Εναλλαγή μεταξύ της εισαγωγής τοποθεσίας και των breadcrumbs πλοήγησης"
 
-#: src/nemo-window-menus.c:1296
+#: src/nemo-window-menus.c:1369
 msgid "S_witch to Other Pane"
 msgstr "_Μετακίνηση στο Άλλο Πάνελ"
 
-#: src/nemo-window-menus.c:1297
+#: src/nemo-window-menus.c:1370
 msgid "Move focus to the other pane in a split view window"
 msgstr ""
 "Μετακίνηση της εστίασης στο άλλο πάνελ σε ένα παράθυρο χωρισμένης προβολής"
 
-#: src/nemo-window-menus.c:1299
+#: src/nemo-window-menus.c:1372
 msgid "Sa_me Location as Other Pane"
 msgstr "Ί_δια τοποθεσία με το Άλλο Πάνελ"
 
-#: src/nemo-window-menus.c:1300
+#: src/nemo-window-menus.c:1373
 msgid "Go to the same location as in the extra pane"
 msgstr "Μετάβαση στην ίδια τοποθεσία με το έξτρα πάνελ"
 
-#: src/nemo-window-menus.c:1303
+#: src/nemo-window-menus.c:1376
 msgid "Add a bookmark for the current location to this menu"
 msgstr "Προσθήκη σελιδοδείκτη για την τρέχουσα τοποθεσία σε αυτό το μενού"
 
-#: src/nemo-window-menus.c:1305
+#: src/nemo-window-menus.c:1378
 msgid "_Edit Bookmarks..."
 msgstr "_Επεξεργασία Σελιδοδεικτών..."
 
-#: src/nemo-window-menus.c:1306
+#: src/nemo-window-menus.c:1379
 msgid "Display a window that allows editing the bookmarks in this menu"
 msgstr ""
 "Εμφάνιση ενός παραθύρου που επιτρέπει την επεξεργασία των σελιδοδεικτών "
 "αυτού του μενού"
 
-#: src/nemo-window-menus.c:1308
+#: src/nemo-window-menus.c:1381
 msgid "_Previous Tab"
 msgstr "_Προηγούμενη καρτέλα"
 
-#: src/nemo-window-menus.c:1309
+#: src/nemo-window-menus.c:1382
 msgid "Activate previous tab"
 msgstr "Ενεργοποίηση προηγούμενης καρτέλας"
 
-#: src/nemo-window-menus.c:1311
+#: src/nemo-window-menus.c:1384
 msgid "_Next Tab"
 msgstr "_Επόμενη καρτέλα"
 
-#: src/nemo-window-menus.c:1312
+#: src/nemo-window-menus.c:1385
 msgid "Activate next tab"
 msgstr "Ενεργοποίηση επόμενης καρτέλας"
 
-#: src/nemo-window-menus.c:1314 src/nemo-window-pane.c:498
+#: src/nemo-window-menus.c:1387 src/nemo-window-pane.c:498
 msgid "Move Tab _Left"
 msgstr "Μετακίνηση καρτέλας _αριστερά"
 
-#: src/nemo-window-menus.c:1315
+#: src/nemo-window-menus.c:1388
 msgid "Move current tab to left"
 msgstr "Μετακίνηση της τρέχουσας καρτέλας προς τα αριστερά"
 
-#: src/nemo-window-menus.c:1317 src/nemo-window-pane.c:506
+#: src/nemo-window-menus.c:1390 src/nemo-window-pane.c:506
 msgid "Move Tab _Right"
 msgstr "Μετακίνηση καρτέλας προς τα _δεξιά"
 
-#: src/nemo-window-menus.c:1318
+#: src/nemo-window-menus.c:1391
 msgid "Move current tab to right"
 msgstr "Μετακίνηση της τρέχουσας καρτέλας προς τα δεξιά"
 
-#: src/nemo-window-menus.c:1320
+#: src/nemo-window-menus.c:1393
 msgid "Sidebar"
 msgstr "Πλευρική Στήλη"
 
-#: src/nemo-window-menus.c:1325
+#: src/nemo-window-menus.c:1398
 msgid "Show _Hidden Files"
 msgstr "Εμφάνιση _Κρυφών Αρχείων"
 
-#: src/nemo-window-menus.c:1326
+#: src/nemo-window-menus.c:1399
 msgid "Toggle the display of hidden files in the current window"
 msgstr "Εναλλάσσει την εμφάνιση κρυφών αρχείων στο τρέχον παράθυρο"
 
-#: src/nemo-window-menus.c:1330
+#: src/nemo-window-menus.c:1403
 msgid "_Main Toolbar"
 msgstr "_Κύρια Εργαλειοθήκη"
 
-#: src/nemo-window-menus.c:1331
+#: src/nemo-window-menus.c:1404
 msgid "Change the visibility of this window's main toolbar"
 msgstr "Αλλαγή της ορατότητας της κύριας εργαλειοθήκης του παραθύρου αυτού"
 
-#: src/nemo-window-menus.c:1335
+#: src/nemo-window-menus.c:1408
 msgid "_Show Sidebar"
 msgstr "Εμφάνι_ση Πλευρικής Στήλης"
 
-#: src/nemo-window-menus.c:1336
+#: src/nemo-window-menus.c:1409
 msgid "Change the visibility of this window's side pane"
 msgstr "Αλλαγή της ορατότητας της πλαϊνής μπάρας του παραθύρου αυτού"
 
-#: src/nemo-window-menus.c:1340
+#: src/nemo-window-menus.c:1413
 msgid "St_atusbar"
 msgstr "_Γραμμή κατάστασης"
 
-#: src/nemo-window-menus.c:1341
+#: src/nemo-window-menus.c:1414
 msgid "Change the visibility of this window's statusbar"
 msgstr "Αλλαγή της ορατότητας της γραμμής κατάστασης του παραθύρου αυτού"
 
-#: src/nemo-window-menus.c:1345
+#: src/nemo-window-menus.c:1418
 msgid "M_enubar"
 msgstr "Γ_ραμμή Μενού"
 
-#: src/nemo-window-menus.c:1346
+#: src/nemo-window-menus.c:1419
 msgid "Change the default visibility of the menubar"
 msgstr "Αλλαγή επιλογών εμφάνισης της γραμμής μενού"
 
-#: src/nemo-window-menus.c:1350
+#: src/nemo-window-menus.c:1423
 msgid "_Search for Files..."
 msgstr "_Αναζήτηση αρχείων..."
 
-#: src/nemo-window-menus.c:1351 src/nemo-window-menus.c:1556
+#: src/nemo-window-menus.c:1424 src/nemo-window-menus.c:1634
 msgid "Search documents and folders by name"
 msgstr "Αναζήτηση εγγράφων και φακέλων κατά όνομα"
 
-#: src/nemo-window-menus.c:1355
+#: src/nemo-window-menus.c:1428
 msgid "E_xtra Pane"
 msgstr "Έ_ξτρα πάνελ"
 
-#: src/nemo-window-menus.c:1356
+#: src/nemo-window-menus.c:1429
 msgid "Open an extra folder view side-by-side"
 msgstr "Άνοιγμα επιπρόσθετης προβολής φακέλων η μία δίπλα στην άλλη"
 
-#: src/nemo-window-menus.c:1363
+#: src/nemo-window-menus.c:1433
+msgid "Show _Thumbnails"
+msgstr ""
+
+#: src/nemo-window-menus.c:1434
+msgid "Toggle the display of thumbnails in the current directory"
+msgstr ""
+
+#: src/nemo-window-menus.c:1441
 msgid "Places"
 msgstr "Τοποθεσίες"
 
-#: src/nemo-window-menus.c:1363
+#: src/nemo-window-menus.c:1441
 msgid "Select Places as the default sidebar"
 msgstr "Επιλογή του «Τοποθεσίες» ως προεπιλεγμένης πλευρικής στήλης"
 
-#: src/nemo-window-menus.c:1366
+#: src/nemo-window-menus.c:1444
 msgid "Tree"
 msgstr "Δέντρο"
 
-#: src/nemo-window-menus.c:1366
+#: src/nemo-window-menus.c:1444
 msgid "Select Tree as the default sidebar"
 msgstr "Επιλογή του «Δένδρο» ως προεπιλεγμένης πλευρικής στήλης"
 
-#: src/nemo-window-menus.c:1399
+#: src/nemo-window-menus.c:1477
 msgid "Back history"
 msgstr "Ιστορικό πίσω"
 
-#: src/nemo-window-menus.c:1415 src/nemo-window-menus.c:1434
+#: src/nemo-window-menus.c:1493 src/nemo-window-menus.c:1512
 msgid "Forward history"
 msgstr "Ιστορικό μπροστά"
 
-#: src/nemo-window-menus.c:1431 src/nemo-window-menus.c:1674
+#: src/nemo-window-menus.c:1509 src/nemo-window-menus.c:1764
 msgid "_Up"
 msgstr "_Επάνω"
 
-#: src/nemo-window-menus.c:1433
+#: src/nemo-window-menus.c:1511
 msgid "Go to parent folder"
 msgstr "Μετακίνηση στον γονικό κατάλογο"
 
-#: src/nemo-window-menus.c:1462
+#: src/nemo-window-menus.c:1540
 msgid "Go to home directory"
 msgstr "Μετακίνηση στον προσωπικό φάκελο"
 
-#: src/nemo-window-menus.c:1476
+#: src/nemo-window-menus.c:1554
 msgid "Go to Computer"
 msgstr "Μετακίνηση στον Υπολογιστή"
 
-#: src/nemo-window-menus.c:1488
+#: src/nemo-window-menus.c:1566
 msgid "Toggle Location Entry"
 msgstr "Εναλλαγή Εισαγωγής Τοποθεσίας"
 
-#: src/nemo-window-menus.c:1500
+#: src/nemo-window-menus.c:1578
+#: gresources/nemo-file-management-properties.glade:2991
 msgid "New folder"
 msgstr "Νέος φάκελος"
 
-#: src/nemo-window-menus.c:1501
+#: src/nemo-window-menus.c:1579
 msgid "Create a new folder"
 msgstr "Δημιουργία νέου φακέλου"
 
-#: src/nemo-window-menus.c:1511
+#: src/nemo-window-menus.c:1589
 msgid "Open a terminal in the active folder"
 msgstr "Ανοίξτε ένα τερματικό στον ενεργό φάκελο"
 
-#: src/nemo-window-menus.c:1521
+#: src/nemo-window-menus.c:1599
 msgid "Icons"
 msgstr "Εικονίδια"
 
-#: src/nemo-window-menus.c:1532
+#: src/nemo-window-menus.c:1610
 msgid "List"
 msgstr "Λίστα"
 
-#: src/nemo-window-menus.c:1544
+#: src/nemo-window-menus.c:1622
 msgid "Compact"
 msgstr "Σύμπτυξη"
 
-#: src/nemo-window-menus.c:1556 libnemo-private/nemo-query.c:130
+#: src/nemo-window-menus.c:1634 libnemo-private/nemo-query.c:143
 #: libnemo-private/nemo-search-directory-file.c:164
 #: libnemo-private/nemo-search-directory-file.c:190
 #: libnemo-private/nemo-search-directory-file.c:224
+#: gresources/nemo-file-management-properties.glade:3028
 msgid "Search"
 msgstr "Αναζήτηση"
 
-#: src/nemo-window-menus.c:1680
+#: src/nemo-window-menus.c:1643 src/nemo-window-menus.c:1644
+#: gresources/nemo-file-management-properties.glade:3176
+msgid "Show Thumbnails"
+msgstr ""
+
+#: src/nemo-window-menus.c:1770
 msgid "_Location"
 msgstr "_Τοποθεσία"
 
@@ -3253,52 +3306,52 @@ msgstr "_Νέα Καρτέλα"
 msgid "_Close Tab"
 msgstr "_Κλείσιμο Καρτέλας"
 
-#: src/nemo-x-content-bar.c:98
+#: src/nemo-x-content-bar.c:97
 msgid "These files are on an Audio CD."
 msgstr "Αυτά τα αρχεία βρίσκονται σε ένα Audio CD."
 
-#: src/nemo-x-content-bar.c:100
+#: src/nemo-x-content-bar.c:99
 msgid "These files are on an Audio DVD."
 msgstr "Αυτά τα αρχεία βρίσκονται σε ένα Audio DVD."
 
-#: src/nemo-x-content-bar.c:102
+#: src/nemo-x-content-bar.c:101
 msgid "These files are on a Video DVD."
 msgstr "Αυτά τα αρχεία βρίσκονται σε ένα Video DVD."
 
-#: src/nemo-x-content-bar.c:104
+#: src/nemo-x-content-bar.c:103
 msgid "These files are on a Video CD."
 msgstr "Αυτά τα αρχεία βρίσκονται σε ένα Video CD."
 
-#: src/nemo-x-content-bar.c:106
+#: src/nemo-x-content-bar.c:105
 msgid "These files are on a Super Video CD."
 msgstr "Αυτά τα αρχεία βρίσκονται σε ένα Super Video CD."
 
-#: src/nemo-x-content-bar.c:108
+#: src/nemo-x-content-bar.c:107
 msgid "These files are on a Photo CD."
 msgstr "Αυτά τα αρχεία βρίσκονται σε ένα Photo CD."
 
-#: src/nemo-x-content-bar.c:110
+#: src/nemo-x-content-bar.c:109
 msgid "These files are on a Picture CD."
 msgstr "Αυτά τα αρχεία βρίσκονται σε ένα Picture CD."
 
-#: src/nemo-x-content-bar.c:112
+#: src/nemo-x-content-bar.c:111
 msgid "The media contains digital photos."
 msgstr "Το μέσο περιέχει ψηφιακές φωτογραφίες."
 
-#: src/nemo-x-content-bar.c:114
+#: src/nemo-x-content-bar.c:113
 msgid "These files are on a digital audio player."
 msgstr "Τα αρχεία βρίσκονται σε μία συσκευή αναπαραγωγής ψηφιακού ήχου."
 
-#: src/nemo-x-content-bar.c:116
+#: src/nemo-x-content-bar.c:115
 msgid "The media contains software."
 msgstr "Το μέσο περιέχει λογισμικό."
 
-#: src/nemo-x-content-bar.c:119
+#: src/nemo-x-content-bar.c:118
 #, c-format
 msgid "The media has been detected as \"%s\"."
 msgstr "Το μέσο αναγνωρίστηκε ως \"%s\"."
 
-#: src/nemo-x-content-bar.c:144
+#: src/nemo-x-content-bar.c:143
 #, c-format
 msgid "Open %s"
 msgstr "Άνοιγμα του %s"
@@ -3335,17 +3388,9 @@ msgstr "Χρήση _Προεπιλογής"
 msgid "The name and icon of the file."
 msgstr "Το όνομα και το εικονίδιο του αρχείου."
 
-#: libnemo-private/nemo-column-utilities.c:50
-msgid "Size"
-msgstr "Μέγεθος"
-
 #: libnemo-private/nemo-column-utilities.c:51
 msgid "The size of the file."
 msgstr "Το μέγεθος του αρχείου."
-
-#: libnemo-private/nemo-column-utilities.c:58
-msgid "Type"
-msgstr "Τύπος"
 
 #: libnemo-private/nemo-column-utilities.c:59
 msgid "The general type of the file."
@@ -3360,91 +3405,104 @@ msgid "The specific type of the file."
 msgstr "Ο συγκεκριμένος τύπος του αρχείου."
 
 #: libnemo-private/nemo-column-utilities.c:73
-#: libnemo-private/nemo-column-utilities.c:144
+#: libnemo-private/nemo-column-utilities.c:80
 msgid "The date the file was modified."
 msgstr "Η ημερομηνία τροποποίησης του αρχείου."
 
-#: libnemo-private/nemo-column-utilities.c:80
+#: libnemo-private/nemo-column-utilities.c:79
+msgid "Modified - Time"
+msgstr "Τροποποιημένη - Ώρα"
+
+#: libnemo-private/nemo-column-utilities.c:88
+msgid "Date Created"
+msgstr ""
+
+#: libnemo-private/nemo-column-utilities.c:89
+#: libnemo-private/nemo-column-utilities.c:96
+msgid "The date the file was created."
+msgstr ""
+
+#: libnemo-private/nemo-column-utilities.c:95
+msgid "Created - Time"
+msgstr ""
+
+#: libnemo-private/nemo-column-utilities.c:103
 msgid "Date Accessed"
 msgstr "Ημερομηνία Προσπέλασης"
 
-#: libnemo-private/nemo-column-utilities.c:81
+#: libnemo-private/nemo-column-utilities.c:104
 msgid "The date the file was accessed."
 msgstr "Η ημερομηνία που προσπελάστηκε το αρχείο."
 
-#: libnemo-private/nemo-column-utilities.c:88
+#: libnemo-private/nemo-column-utilities.c:111
 msgid "Owner"
 msgstr "Ιδιοκτήτης"
 
-#: libnemo-private/nemo-column-utilities.c:89
+#: libnemo-private/nemo-column-utilities.c:112
 msgid "The owner of the file."
 msgstr "Ο ιδιοκτήτης του αρχείου."
 
-#: libnemo-private/nemo-column-utilities.c:96
+#: libnemo-private/nemo-column-utilities.c:119
 msgid "Group"
 msgstr "Ομάδα"
 
-#: libnemo-private/nemo-column-utilities.c:97
+#: libnemo-private/nemo-column-utilities.c:120
 msgid "The group of the file."
 msgstr "Η ομάδα του αρχείου."
 
-#: libnemo-private/nemo-column-utilities.c:105
+#: libnemo-private/nemo-column-utilities.c:128
 msgid "The permissions of the file."
 msgstr "Τα δικαιώματα του αρχείου."
 
-#: libnemo-private/nemo-column-utilities.c:112
+#: libnemo-private/nemo-column-utilities.c:135
 msgid "Octal Permissions"
 msgstr "Οκταδικά δικαιώματα"
 
-#: libnemo-private/nemo-column-utilities.c:113
+#: libnemo-private/nemo-column-utilities.c:136
 msgid "The permissions of the file, in octal notation."
 msgstr "Τα δικαιώματα του αρχείου σε οκταδική μορφή."
 
-#: libnemo-private/nemo-column-utilities.c:120
+#: libnemo-private/nemo-column-utilities.c:143
 msgid "MIME Type"
 msgstr "Τύπος MIME"
 
-#: libnemo-private/nemo-column-utilities.c:121
+#: libnemo-private/nemo-column-utilities.c:144
 msgid "The mime type of the file."
 msgstr "Ο τύπος mime του αρχείου."
 
-#: libnemo-private/nemo-column-utilities.c:128
+#: libnemo-private/nemo-column-utilities.c:151
 msgid "SELinux Context"
 msgstr "Περιβάλλον SELinux"
 
-#: libnemo-private/nemo-column-utilities.c:129
+#: libnemo-private/nemo-column-utilities.c:152
 msgid "The SELinux security context of the file."
 msgstr "Το περιβάλλον ασφάλειας SELinux του αρχείου."
 
-#: libnemo-private/nemo-column-utilities.c:137
+#: libnemo-private/nemo-column-utilities.c:160
 msgid "The location of the file."
 msgstr "Η τοποθεσία του αρχείου."
 
-#: libnemo-private/nemo-column-utilities.c:143
-msgid "Modified - Time"
-msgstr ""
-
-#: libnemo-private/nemo-column-utilities.c:186
+#: libnemo-private/nemo-column-utilities.c:201
 msgid "Trashed On"
 msgstr "Διαγράφηκε Στις"
 
-#: libnemo-private/nemo-column-utilities.c:187
+#: libnemo-private/nemo-column-utilities.c:202
 msgid "Date when file was moved to the Trash"
 msgstr "Ημερομηνία μεταφοράς του αρχείου στα Απορρίμματα."
 
-#: libnemo-private/nemo-column-utilities.c:193
+#: libnemo-private/nemo-column-utilities.c:208
 msgid "Original Location"
 msgstr "Αρχική τοποθεσία"
 
-#: libnemo-private/nemo-column-utilities.c:194
+#: libnemo-private/nemo-column-utilities.c:209
 msgid "Original location of file before moved to the Trash"
 msgstr "Αρχική τοποθεσία του αρχείου πριν τη μετακίνηση στα Απορρίμματα"
 
-#: libnemo-private/nemo-context-menu-menu-item.c:73
+#: libnemo-private/nemo-context-menu-menu-item.c:77
 msgid "Show fewer actions"
 msgstr "Προβολή λιγότερων ενεργειών"
 
-#: libnemo-private/nemo-context-menu-menu-item.c:74
+#: libnemo-private/nemo-context-menu-menu-item.c:78
 msgid "Show more actions"
 msgstr "Εμφάνισε περισσότερες ενέργειες"
 
@@ -3486,268 +3544,277 @@ msgstr "_Αντιγραφή εδώ"
 msgid "_Link Here"
 msgstr "_Σύνδεσμος εδώ"
 
-#: libnemo-private/nemo-file.c:1246 libnemo-private/nemo-vfs-file.c:407
+#: libnemo-private/nemo-dnd.c:871
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: libnemo-private/nemo-file.c:1250 libnemo-private/nemo-vfs-file.c:416
 msgid "This file cannot be mounted"
 msgstr "Δεν είναι δυνατή η προσάρτηση του αρχείου"
 
-#: libnemo-private/nemo-file.c:1291
+#: libnemo-private/nemo-file.c:1295
 msgid "This file cannot be unmounted"
 msgstr "Δεν είναι δυνατή η αφαίρεση προσάρτησης του αρχείου"
 
-#: libnemo-private/nemo-file.c:1325
+#: libnemo-private/nemo-file.c:1329
 msgid "This file cannot be ejected"
 msgstr "Δεν είναι δυνατή η εξαγωγή του αρχείου"
 
-#: libnemo-private/nemo-file.c:1358 libnemo-private/nemo-vfs-file.c:585
+#: libnemo-private/nemo-file.c:1362 libnemo-private/nemo-vfs-file.c:594
 msgid "This file cannot be started"
 msgstr "Δεν είναι δυνατή η εκκίνηση του αρχείου"
 
-#: libnemo-private/nemo-file.c:1410 libnemo-private/nemo-file.c:1441
+#: libnemo-private/nemo-file.c:1414 libnemo-private/nemo-file.c:1445
 msgid "This file cannot be stopped"
 msgstr "Δεν είναι δυνατή η διακοπή του αρχείου"
 
-#: libnemo-private/nemo-file.c:1869
+#: libnemo-private/nemo-file.c:1873
 msgid "Slashes are not allowed in filenames"
 msgstr "Δεν επιτρέπεται η χρήση καθέτων στα ονόματα αρχείων"
 
-#: libnemo-private/nemo-file.c:1887
+#: libnemo-private/nemo-file.c:1891
 msgid "File not found"
 msgstr "Το αρχείο δε βρέθηκε"
 
-#: libnemo-private/nemo-file.c:1915
+#: libnemo-private/nemo-file.c:1919
 msgid "Toplevel files cannot be renamed"
 msgstr "Δεν είναι δυνατή η μετονομασία αρχείων ανωτάτου επιπέδου"
 
-#: libnemo-private/nemo-file.c:1938
+#: libnemo-private/nemo-file.c:1942
 msgid "Unable to rename desktop icon"
 msgstr ""
 "Δεν είναι δυνατή η μετονομασία του εικονιδίου της επιφάνειας εργασίας"
 
-#: libnemo-private/nemo-file.c:1967
+#: libnemo-private/nemo-file.c:1971
 msgid "Unable to rename desktop file"
 msgstr "Δεν είναι δυνατή η μετονομασία του αρχείου της επιφάνειας εργασίας"
 
-#: libnemo-private/nemo-file.c:4735
+#: libnemo-private/nemo-file.c:4849
 msgid "%H:%M"
-msgstr ""
+msgstr "%H:%M"
 
-#: libnemo-private/nemo-file.c:4738
+#: libnemo-private/nemo-file.c:4852
 msgid "%l:%M %p"
-msgstr ""
+msgstr "%l:%M %p"
 
-#: libnemo-private/nemo-file.c:4751
+#: libnemo-private/nemo-file.c:4865
 #, no-c-format
 msgid "Yesterday %H:%M"
-msgstr ""
+msgstr "Εχθές %H:%M"
 
-#: libnemo-private/nemo-file.c:4756
+#: libnemo-private/nemo-file.c:4870
 #, no-c-format
 msgid "Yesterday %l:%M %p"
-msgstr ""
+msgstr "Εχθές %l:%M %p"
 
-#: libnemo-private/nemo-file.c:4764
+#: libnemo-private/nemo-file.c:4878
 #, no-c-format
 msgid "%A"
-msgstr ""
+msgstr "%A"
 
-#: libnemo-private/nemo-file.c:4770
+#: libnemo-private/nemo-file.c:4884
 #, no-c-format
 msgid "%A %H:%M"
-msgstr ""
+msgstr "%A %H:%M"
 
-#: libnemo-private/nemo-file.c:4775
+#: libnemo-private/nemo-file.c:4889
 #, no-c-format
 msgid "%A %l:%M %p"
-msgstr ""
+msgstr "%A %l:%M %p"
 
-#: libnemo-private/nemo-file.c:4783
+#: libnemo-private/nemo-file.c:4897
 #, no-c-format
 msgid "%-e %B"
-msgstr ""
+msgstr "%-e %B"
 
-#: libnemo-private/nemo-file.c:4790
+#: libnemo-private/nemo-file.c:4904
 #, no-c-format
 msgid "%-e %B %H:%M"
-msgstr ""
+msgstr "%-e %B %H:%M"
 
-#: libnemo-private/nemo-file.c:4796
+#: libnemo-private/nemo-file.c:4910
 #, no-c-format
 msgid "%-e %B %l:%M %p"
-msgstr ""
+msgstr "%-e %B %l:%M %p"
 
-#: libnemo-private/nemo-file.c:4804
+#: libnemo-private/nemo-file.c:4918
 #, no-c-format
 msgid "%-e %b %Y"
-msgstr ""
+msgstr "%-e %b %Y"
 
-#: libnemo-private/nemo-file.c:4811
+#: libnemo-private/nemo-file.c:4925
 #, no-c-format
 msgid "%-e %b %Y %H:%M"
-msgstr ""
+msgstr "%-e %b %Y %H:%M"
 
-#: libnemo-private/nemo-file.c:4817
+#: libnemo-private/nemo-file.c:4931
 #, no-c-format
 msgid "%-e %b %Y %l:%M %p"
-msgstr ""
+msgstr "%-e %b %Y %l:%M %p"
 
-#: libnemo-private/nemo-file.c:4827
+#: libnemo-private/nemo-file.c:4941
 #, no-c-format
 msgid "%c"
-msgstr ""
+msgstr "%c"
 
-#: libnemo-private/nemo-file.c:5275
+#: libnemo-private/nemo-file.c:5389
 msgid "Not allowed to set permissions"
 msgstr "Δεν επιτρέπεται ο ορισμός δικαιωμάτων"
 
-#: libnemo-private/nemo-file.c:5570
+#: libnemo-private/nemo-file.c:5684
 msgid "Not allowed to set owner"
 msgstr "Δεν επιτρέπεται ο ορισμός ιδιοκτήτη"
 
-#: libnemo-private/nemo-file.c:5588
+#: libnemo-private/nemo-file.c:5702
 #, c-format
 msgid "Specified owner '%s' doesn't exist"
 msgstr "Ο καθορισμένος ιδιοκτήτης \"%s\" δεν υπάρχει."
 
-#: libnemo-private/nemo-file.c:5852
+#: libnemo-private/nemo-file.c:5966
 msgid "Not allowed to set group"
 msgstr "Δεν επιτρέπεται ο ορισμός ομάδας"
 
-#: libnemo-private/nemo-file.c:5870
+#: libnemo-private/nemo-file.c:5984
 #, c-format
 msgid "Specified group '%s' doesn't exist"
 msgstr "Η καθορισμένη ομάδα '%s' δεν υπάρχει"
 
-#: libnemo-private/nemo-file.c:6028
+#: libnemo-private/nemo-file.c:6142
 #, c-format
 msgid "%'u folder"
 msgid_plural "%'u folders"
 msgstr[0] "%'u φάκελος"
 msgstr[1] "%'u φάκελοι"
 
-#: libnemo-private/nemo-file.c:6029
+#: libnemo-private/nemo-file.c:6143
 #, c-format
 msgid "%'u file"
 msgid_plural "%'u files"
 msgstr[0] "%'u αρχείο"
 msgstr[1] "%'u αρχεία"
 
-#: libnemo-private/nemo-file.c:6461 libnemo-private/nemo-file.c:6477
+#: libnemo-private/nemo-file.c:6590 libnemo-private/nemo-file.c:6606
 msgid "? items"
 msgstr "; αντικείμενα"
 
-#: libnemo-private/nemo-file.c:6467
+#: libnemo-private/nemo-file.c:6596
 msgid "? bytes"
 msgstr "; bytes"
 
-#: libnemo-private/nemo-file.c:6484 libnemo-private/nemo-file.c:6569
+#: libnemo-private/nemo-file.c:6613 libnemo-private/nemo-file.c:6702
 msgid "Unknown"
 msgstr "Άγνωστο"
 
-#: libnemo-private/nemo-file.c:6533 libnemo-private/nemo-file.c:6541
-#: libnemo-private/nemo-file.c:6593
+#: libnemo-private/nemo-file.c:6666 libnemo-private/nemo-file.c:6674
+#: libnemo-private/nemo-file.c:6726
 msgid "Program"
 msgstr "Πρόγραμμα"
 
-#: libnemo-private/nemo-file.c:6534
+#: libnemo-private/nemo-file.c:6667
 msgid "Audio"
 msgstr "Ήχος"
 
-#: libnemo-private/nemo-file.c:6535
+#: libnemo-private/nemo-file.c:6668
 msgid "Font"
 msgstr "Γραμματοσειρά"
 
-#: libnemo-private/nemo-file.c:6537
+#: libnemo-private/nemo-file.c:6670
 msgid "Archive"
 msgstr "Αρχειοθήκη"
 
-#: libnemo-private/nemo-file.c:6538
+#: libnemo-private/nemo-file.c:6671
 msgid "Markup"
 msgstr "Σήμανση"
 
-#: libnemo-private/nemo-file.c:6539 libnemo-private/nemo-file.c:6540
+#: libnemo-private/nemo-file.c:6672 libnemo-private/nemo-file.c:6673
 #: eel/eel-editable-label.c:317
 msgid "Text"
 msgstr "Κείμενο"
 
-#: libnemo-private/nemo-file.c:6542
+#: libnemo-private/nemo-file.c:6675
 msgid "Video"
 msgstr "Βίντεο"
 
-#: libnemo-private/nemo-file.c:6543
+#: libnemo-private/nemo-file.c:6676
 msgid "Contacts"
 msgstr "Επαφές"
 
-#: libnemo-private/nemo-file.c:6544
+#: libnemo-private/nemo-file.c:6677
 msgid "Calendar"
 msgstr "Ημερολόγιο"
 
-#: libnemo-private/nemo-file.c:6545
+#: libnemo-private/nemo-file.c:6678
 msgid "Document"
 msgstr "Έγγραφο"
 
-#: libnemo-private/nemo-file.c:6546
+#: libnemo-private/nemo-file.c:6679
 msgid "Presentation"
 msgstr "Παρουσίαση"
 
-#: libnemo-private/nemo-file.c:6547
+#: libnemo-private/nemo-file.c:6680
 msgid "Spreadsheet"
 msgstr "Λογιστικό Φύλλο"
 
-#: libnemo-private/nemo-file.c:6595
-#: gresources/nemo-file-management-properties.glade:52
+#: libnemo-private/nemo-file.c:6728
+#: gresources/nemo-file-management-properties.glade:123
 msgid "Binary"
 msgstr "Δυαδικό"
 
-#: libnemo-private/nemo-file.c:6599
+#: libnemo-private/nemo-file.c:6732
 msgid "Folder"
 msgstr "Φάκελος"
 
-#: libnemo-private/nemo-file.c:6630
+#: libnemo-private/nemo-file.c:6763
 msgid "link"
 msgstr "σύνδεσμος"
 
-#: libnemo-private/nemo-file.c:6652 libnemo-private/nemo-file.c:6666
+#: libnemo-private/nemo-file.c:6785 libnemo-private/nemo-file.c:6799
 msgid "link (broken)"
 msgstr "σύνδεσμος (χαλασμένος)"
 
-#: libnemo-private/nemo-file.c:7576
+#: libnemo-private/nemo-file.c:7710
 #, c-format
 msgid "Name: %s"
 msgstr "Όνομα: %s"
 
-#: libnemo-private/nemo-file.c:7583
+#: libnemo-private/nemo-file.c:7717
 #, c-format
 msgid "Type: %s"
 msgstr "Τύπος: %s"
 
-#: libnemo-private/nemo-file.c:7593
+#: libnemo-private/nemo-file.c:7727
 #, c-format
 msgid "%s item"
 msgid_plural "%s items"
 msgstr[0] "%s αντικείμενο"
 msgstr[1] "%s αντικείμενα"
 
-#: libnemo-private/nemo-file.c:7595
+#: libnemo-private/nemo-file.c:7729
 #, c-format
 msgid "Contains: %s"
 msgstr "Περιέχει: %s"
 
-#: libnemo-private/nemo-file.c:7605
+#: libnemo-private/nemo-file.c:7739
 #, c-format
 msgid "Size: %s"
 msgstr "Mέγεθος: %s"
 
-#: libnemo-private/nemo-file.c:7613
+#: libnemo-private/nemo-file.c:7747
 #, c-format
 msgid "Accessed: %s"
 msgstr "Προσπελάστηκε: %s"
 
-#: libnemo-private/nemo-file.c:7621
+#: libnemo-private/nemo-file.c:7755
 #, c-format
 msgid "Modified: %s"
 msgstr "Τροποποιήθηκε: %s"
 
-#: libnemo-private/nemo-file.c:7630
+#: libnemo-private/nemo-file.c:7763
+#, c-format
+msgid "Created: %s"
+msgstr ""
+
+#: libnemo-private/nemo-file.c:7772
 #, c-format
 msgid "Location: %s"
 msgstr "Τοποθεσία: %s"
@@ -4022,7 +4089,7 @@ msgstr " (%'d"
 #: libnemo-private/nemo-file-operations.c:997
 #, c-format
 msgid "Error removing file: %s"
-msgstr ""
+msgstr "Σφάλμα κατάργησης αρχείου: %s"
 
 #: libnemo-private/nemo-file-operations.c:1047
 #, c-format
@@ -4942,32 +5009,32 @@ msgstr "_Αναίρεση Αλλαγής Ιδιοκτήτη"
 msgid "_Redo Change Owner"
 msgstr "_Επανάληψη Αλλαγής Ιδιοκτήτη"
 
-#: libnemo-private/nemo-file-utilities.c:1373
+#: libnemo-private/nemo-file-utilities.c:1374
 #, c-format
 msgid "Could not determine original location of \"%s\" "
 msgstr "Δεν ήταν δυνατός ο προσδιορισμός της αρχικής τοποθεσίας του \"%s\" "
 
-#: libnemo-private/nemo-file-utilities.c:1377
+#: libnemo-private/nemo-file-utilities.c:1378
 msgid "The item cannot be restored from trash"
 msgstr "Δεν είναι δυνατή η επαναφορά του αντικειμένου από τα απορρίμματα"
 
-#: libnemo-private/nemo-icon-container.c:1407
+#: libnemo-private/nemo-icon-container.c:1408
 msgid "The selection rectangle"
 msgstr "Το ορθογώνιο επιλογής"
 
-#: libnemo-private/nemo-mime-application-chooser.c:116
+#: libnemo-private/nemo-mime-application-chooser.c:113
 msgid "Could not forget association"
 msgstr "Δεν ήταν δυνατή η αποσύνδεση της αντιστοίχισης"
 
-#: libnemo-private/nemo-mime-application-chooser.c:140
+#: libnemo-private/nemo-mime-application-chooser.c:137
 msgid "Forget association"
 msgstr "Αποσύνδεση αντιστοίχισης"
 
-#: libnemo-private/nemo-mime-application-chooser.c:284
+#: libnemo-private/nemo-mime-application-chooser.c:277
 msgid "Valid executable."
 msgstr "Έγκυρο εκτελέσιμο"
 
-#: libnemo-private/nemo-mime-application-chooser.c:291
+#: libnemo-private/nemo-mime-application-chooser.c:284
 msgid ""
 "Not a valid executable.  Spaces in the file path must be escaped with "
 "backslash (\\)."
@@ -4975,18 +5042,18 @@ msgstr ""
 "Δεν είναι ένα έγκυρο εκτελέσιμο. Τα κενά στη διαδρομή του αρχείου πρέπει να "
 "αντιπροσωπεύονται με ανάστροφη κάθετο (\\)."
 
-#: libnemo-private/nemo-mime-application-chooser.c:428
-#: libnemo-private/nemo-mime-application-chooser.c:446
+#: libnemo-private/nemo-mime-application-chooser.c:419
+#: libnemo-private/nemo-mime-application-chooser.c:437
 #, c-format
 msgid "%s document"
 msgstr "Έγγραφο %s"
 
-#: libnemo-private/nemo-mime-application-chooser.c:433
+#: libnemo-private/nemo-mime-application-chooser.c:424
 #, c-format
 msgid "Open all files of type \"%s\" with"
 msgstr "Άνοιγμα όλων των αρχείων τύπου \"%s\" με"
 
-#: libnemo-private/nemo-mime-application-chooser.c:453
+#: libnemo-private/nemo-mime-application-chooser.c:444
 #, c-format
 msgid ""
 "Select an application in the list to open %s and other files of type \"%s\""
@@ -4994,7 +5061,19 @@ msgstr ""
 "Επιλέξτε μια εφαρμογή από τον κατάλογο για να ανοίγετε το %s και άλλα αρχεία "
 "του τύπου \"%s\""
 
-#: libnemo-private/nemo-mime-application-chooser.c:523
+#: libnemo-private/nemo-mime-application-chooser.c:478
+msgid "Custom application"
+msgstr "Εξειδικευμένη εφαρμογή"
+
+#: libnemo-private/nemo-mime-application-chooser.c:481
+msgid "_Cancel"
+msgstr ""
+
+#: libnemo-private/nemo-mime-application-chooser.c:498
+msgid "Executables"
+msgstr "Εκτελέσιμα"
+
+#: libnemo-private/nemo-mime-application-chooser.c:544
 msgid ""
 "You can also type or select a custom executable file to use to open this "
 "file type.  You can use this command just once, or set it as default for all "
@@ -5005,27 +5084,19 @@ msgstr ""
 "χρησιμοποιήσετε αυτή την εντολή είτε μόνο μία φορά, είτε να τη θέσετε ως "
 "προεπιλεγμένη για το άνοιγμα αρχείων αυτού του τύπου."
 
-#: libnemo-private/nemo-mime-application-chooser.c:537
+#: libnemo-private/nemo-mime-application-chooser.c:558
 msgid "Enter a custom command..."
 msgstr "Εισάγετε εξειδικευμένη εντολή..."
 
-#: libnemo-private/nemo-mime-application-chooser.c:546
-msgid "Custom application"
-msgstr "Εξειδικευμένη εφαρμογή"
-
-#: libnemo-private/nemo-mime-application-chooser.c:587
-msgid "Executables"
-msgstr "Εκτελέσιμα"
-
-#: libnemo-private/nemo-mime-application-chooser.c:590
+#: libnemo-private/nemo-mime-application-chooser.c:584
 msgid "Add to list"
 msgstr "Προσθήκη στον κατάλογο"
 
-#: libnemo-private/nemo-mime-application-chooser.c:598
+#: libnemo-private/nemo-mime-application-chooser.c:592
 msgid "Set as default"
 msgstr "Ορισμός ως προεπιλογή"
 
-#: libnemo-private/nemo-mime-application-chooser.c:607
+#: libnemo-private/nemo-mime-application-chooser.c:601
 msgid "Reset to system defaults"
 msgstr "Επαναφορά προεπιλογών συστήματος"
 
@@ -5067,16 +5138,16 @@ msgstr ""
 msgid "Details: "
 msgstr "Λεπτομέρειες: "
 
-#: libnemo-private/nemo-progress-info.c:206
-#: libnemo-private/nemo-progress-info.c:224
-#: libnemo-private/nemo-progress-info.c:242
+#: libnemo-private/nemo-progress-info.c:205
+#: libnemo-private/nemo-progress-info.c:223
+#: libnemo-private/nemo-progress-info.c:241
 msgid "Preparing"
 msgstr "Προετοιμασία"
 
-#: libnemo-private/nemo-query.c:138
+#: libnemo-private/nemo-query.c:151
 #, c-format
 msgid "Search for \"%s\" in \"%s\""
-msgstr ""
+msgstr "Εύρεση για \"%s\" σε \"%s\""
 
 #: libnemo-private/nemo-undo-signal-handlers.c:173
 msgid "Edit"
@@ -5158,7 +5229,7 @@ msgstr "Επιλογή όλων"
 msgid "Input Methods"
 msgstr "Μέθοδοι εισαγωγής"
 
-#: eel/eel-gtk-extensions.c:327
+#: eel/eel-gtk-extensions.c:329
 msgid "Show more _details"
 msgstr "Εμφάνιση περισσότερων _λεπτομερειών"
 
@@ -5166,7 +5237,7 @@ msgstr "Εμφάνιση περισσότερων _λεπτομερειών"
 msgid "You can stop this operation by clicking cancel."
 msgstr "Μπορείτε να διακόψετε αυτή τη λειτουργία αν πατήσετε ακύρωση."
 
-#: eel/eel-vfs-extensions.c:99
+#: eel/eel-vfs-extensions.c:105
 msgid " (invalid Unicode)"
 msgstr " (μη έγκυρο Unicode)"
 
@@ -5221,36 +5292,28 @@ msgid "Create a new launcher in this folder"
 msgstr "Δημιουργία ενός νέου εκκινητή  σε αυτό το φάκελο"
 
 #: data/nemo-actions/action_i18n_strings.py:20
-msgid "Desktop _Settings"
-msgstr "Ρυθμίσεις_Επιφάνειας_Εργασίας"
-
-#: data/nemo-actions/action_i18n_strings.py:21
-msgid "Change how your desktop works"
-msgstr "Αλλάξτε τον τρόπο λειτουργίας της επιφάνειας εργασίας"
-
-#: data/nemo-actions/action_i18n_strings.py:22
 msgid "Remove workspace"
 msgstr "Απομακρύνση/Αφαίρεση του χώρου εργασίας"
 
-#: data/nemo-actions/action_i18n_strings.py:23
+#: data/nemo-actions/action_i18n_strings.py:21
 msgid "Remove the currently active workspace"
 msgstr "Απομακρύνση/Αφαίρεση του τρέχοντος ενεργού χώρου εργασίας"
 
-#: data/nemo-actions/action_i18n_strings.py:24
+#: data/nemo-actions/action_i18n_strings.py:22
 msgid "Jump to new workspace"
 msgstr "Μετάβαση σε νέο χώρο εργασίας"
 
-#: data/nemo-actions/action_i18n_strings.py:25
+#: data/nemo-actions/action_i18n_strings.py:23
 msgid "Create a new workspace and activate it"
 msgstr "Δημιουργία νέου χώρου εργασίας και ενεργοποίηση"
 
-#: generate_additional_file:32
+#: generate_additional_file:34
 msgid "Files"
-msgstr ""
+msgstr "Αρχεία"
 
-#: generate_additional_file:32
+#: generate_additional_file:34
 msgid "Access and organize files"
-msgstr ""
+msgstr "Πρόσβαση και οργάνωση αρχείων"
 
 #: gresources/nemo-bookmarks-window.glade:8
 msgid "Edit Bookmarks"
@@ -5268,321 +5331,435 @@ msgstr "<b>Ό_νομα</b>"
 msgid "<b>_Location</b>"
 msgstr "<b>_Τοποθεσία</b>"
 
-#: gresources/nemo-file-management-properties.glade:29
-#: gresources/nemo-file-management-properties.glade:229
-#: gresources/nemo-file-management-properties.glade:246
-#: gresources/nemo-file-management-properties.glade:3081
+#: gresources/nemo-desktop-overlay.glade:61
+msgctxt "Desktop icon size"
+msgid "Smaller"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:66
+msgctxt "Desktop icon size"
+msgid "Small"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:76
+msgctxt "Desktop icon size"
+msgid "Large"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:81
+msgctxt "Desktop icon size"
+msgid "Larger"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:95
+msgid "Vertical"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:99
+msgid "Horizontal"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:138
+msgid "Current Monitor Layout"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:195
+msgid "<b>Icon Size:</b>"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:260
+msgid "<b>Layout</b>"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:381
+msgid "Direction"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:466
+msgid "Sort items by"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:625
+msgid "Reset grid spacing"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:692
+#: gresources/nemo-desktop-overlay.glade:883
+msgid "button"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:759
+msgid "Adjust horizontal grid spacing"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:814
+msgid "Adjust vertical grid spacing"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:858
+msgid "page0"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:872
+msgid ""
+"<b><big>Desktop icons are not currently enabled for this monitor.</big></b>"
+msgstr ""
+
+#: gresources/nemo-desktop-overlay.glade:901
+msgid "page1"
+msgstr ""
+
+#: gresources/nemo-desktop-preferences.glade:35
+msgid "<b>Desktop Layout</b>"
+msgstr ""
+
+#: gresources/nemo-desktop-preferences.glade:51
+msgid "No desktop icons"
+msgstr ""
+
+#: gresources/nemo-desktop-preferences.glade:52
+msgid "Show desktop icons on primary monitor only"
+msgstr ""
+
+#: gresources/nemo-desktop-preferences.glade:53
+msgid "Show desktop icons on non-primary monitor(s) only"
+msgstr ""
+
+#: gresources/nemo-desktop-preferences.glade:54
+msgid "Show desktop icons on all monitors"
+msgstr ""
+
+#: gresources/nemo-desktop-preferences.glade:99
+msgid "<b>Desktop Icons</b>"
+msgstr ""
+
+#: gresources/nemo-desktop-preferences.glade:380
+msgid "Mounted Drives"
+msgstr ""
+
+#: gresources/nemo-desktop-preferences.glade:541
+msgid "<b>Options</b>"
+msgstr "<b>Επιλογές</b>"
+
+#: gresources/nemo-desktop-preferences.glade:588
+msgid "Show icons from missing monitors"
+msgstr ""
+
+#: gresources/nemo-file-management-properties.glade:100
+#: gresources/nemo-file-management-properties.glade:300
+#: gresources/nemo-file-management-properties.glade:317
+#: gresources/nemo-file-management-properties.glade:3268
 msgid "Always"
 msgstr "Πάντοτε"
 
-#: gresources/nemo-file-management-properties.glade:32
-#: gresources/nemo-file-management-properties.glade:232
-#: gresources/nemo-file-management-properties.glade:249
-#: gresources/nemo-file-management-properties.glade:3084
+#: gresources/nemo-file-management-properties.glade:103
+#: gresources/nemo-file-management-properties.glade:303
+#: gresources/nemo-file-management-properties.glade:320
+#: gresources/nemo-file-management-properties.glade:3271
 msgid "Local Files Only"
 msgstr "Μόνο Τοπικά Αρχεία"
 
-#: gresources/nemo-file-management-properties.glade:35
-#: gresources/nemo-file-management-properties.glade:235
-#: gresources/nemo-file-management-properties.glade:252
-#: gresources/nemo-file-management-properties.glade:3087
+#: gresources/nemo-file-management-properties.glade:106
+#: gresources/nemo-file-management-properties.glade:306
+#: gresources/nemo-file-management-properties.glade:326
+#: gresources/nemo-file-management-properties.glade:3274
 msgid "Never"
 msgstr "Ποτέ"
 
-#: gresources/nemo-file-management-properties.glade:46
+#: gresources/nemo-file-management-properties.glade:117
 msgid "Decimal"
 msgstr "Δεκαδική"
 
-#: gresources/nemo-file-management-properties.glade:49
+#: gresources/nemo-file-management-properties.glade:120
 msgid "Decimal (long format)"
 msgstr "Δεκαδική (εκτενής μορφή)"
 
-#: gresources/nemo-file-management-properties.glade:55
+#: gresources/nemo-file-management-properties.glade:126
 msgid "Binary (long format)"
 msgstr "Δυαδική (εκτενής μορφή)"
 
-#: gresources/nemo-file-management-properties.glade:66
+#: gresources/nemo-file-management-properties.glade:137
 msgid "By Name"
 msgstr "Κατά όνομα"
 
-#: gresources/nemo-file-management-properties.glade:69
+#: gresources/nemo-file-management-properties.glade:140
 msgid "By Size"
 msgstr "Κατά Μέγεθος"
 
-#: gresources/nemo-file-management-properties.glade:72
+#: gresources/nemo-file-management-properties.glade:143
 msgid "By Type"
 msgstr "Κατά Τύπο"
 
-#: gresources/nemo-file-management-properties.glade:75
+#: gresources/nemo-file-management-properties.glade:146
 msgid "By Detailed Type"
 msgstr "Κατά Λεπτομερή Τύπο"
 
-#: gresources/nemo-file-management-properties.glade:78
+#: gresources/nemo-file-management-properties.glade:149
 msgid "By Modification Date"
 msgstr "Κατά Ημερομηνία Τροποποίησης"
 
-#: gresources/nemo-file-management-properties.glade:81
+#: gresources/nemo-file-management-properties.glade:152
 msgid "By Access Date"
 msgstr "Κατά Ημερομηνία Προσπέλασης"
 
-#: gresources/nemo-file-management-properties.glade:84
+#: gresources/nemo-file-management-properties.glade:155
 msgid "By Trashed Date"
 msgstr "Κατά Ημερομηνία Διαγραφής"
 
-#: gresources/nemo-file-management-properties.glade:95
-#: gresources/nemo-file-management-properties.glade:171
-#: gresources/nemo-file-management-properties.glade:200
+#: gresources/nemo-file-management-properties.glade:166
+#: gresources/nemo-file-management-properties.glade:242
+#: gresources/nemo-file-management-properties.glade:271
 msgid "33%"
 msgstr "33%"
 
-#: gresources/nemo-file-management-properties.glade:98
-#: gresources/nemo-file-management-properties.glade:174
-#: gresources/nemo-file-management-properties.glade:203
+#: gresources/nemo-file-management-properties.glade:169
+#: gresources/nemo-file-management-properties.glade:245
+#: gresources/nemo-file-management-properties.glade:274
 msgid "50%"
 msgstr "50%"
 
-#: gresources/nemo-file-management-properties.glade:101
-#: gresources/nemo-file-management-properties.glade:177
-#: gresources/nemo-file-management-properties.glade:206
+#: gresources/nemo-file-management-properties.glade:172
+#: gresources/nemo-file-management-properties.glade:248
+#: gresources/nemo-file-management-properties.glade:277
 msgid "66%"
 msgstr "66%"
 
-#: gresources/nemo-file-management-properties.glade:104
-#: gresources/nemo-file-management-properties.glade:180
-#: gresources/nemo-file-management-properties.glade:209
+#: gresources/nemo-file-management-properties.glade:175
+#: gresources/nemo-file-management-properties.glade:251
+#: gresources/nemo-file-management-properties.glade:280
 msgid "100%"
 msgstr "100%"
 
-#: gresources/nemo-file-management-properties.glade:107
-#: gresources/nemo-file-management-properties.glade:183
-#: gresources/nemo-file-management-properties.glade:212
+#: gresources/nemo-file-management-properties.glade:178
+#: gresources/nemo-file-management-properties.glade:254
+#: gresources/nemo-file-management-properties.glade:283
 msgid "150%"
 msgstr "150%"
 
-#: gresources/nemo-file-management-properties.glade:110
-#: gresources/nemo-file-management-properties.glade:186
-#: gresources/nemo-file-management-properties.glade:215
+#: gresources/nemo-file-management-properties.glade:181
+#: gresources/nemo-file-management-properties.glade:257
+#: gresources/nemo-file-management-properties.glade:286
 msgid "200%"
 msgstr "200%"
 
-#: gresources/nemo-file-management-properties.glade:113
-#: gresources/nemo-file-management-properties.glade:189
-#: gresources/nemo-file-management-properties.glade:218
+#: gresources/nemo-file-management-properties.glade:184
+#: gresources/nemo-file-management-properties.glade:260
+#: gresources/nemo-file-management-properties.glade:289
 msgid "400%"
 msgstr "400%"
 
-#: gresources/nemo-file-management-properties.glade:124
+#: gresources/nemo-file-management-properties.glade:195
 msgid "100 KB"
 msgstr "100 KB"
 
-#: gresources/nemo-file-management-properties.glade:127
+#: gresources/nemo-file-management-properties.glade:198
 msgid "500 KB"
 msgstr "500 KB"
 
-#: gresources/nemo-file-management-properties.glade:130
+#: gresources/nemo-file-management-properties.glade:201
 msgid "1 MB"
 msgstr "1 MB"
 
-#: gresources/nemo-file-management-properties.glade:133
+#: gresources/nemo-file-management-properties.glade:204
 msgid "3 MB"
 msgstr "3 MB"
 
-#: gresources/nemo-file-management-properties.glade:136
+#: gresources/nemo-file-management-properties.glade:207
 msgid "5 MB"
 msgstr "5 MB"
 
-#: gresources/nemo-file-management-properties.glade:139
+#: gresources/nemo-file-management-properties.glade:210
 msgid "10 MB"
 msgstr "10 MB"
 
-#: gresources/nemo-file-management-properties.glade:142
+#: gresources/nemo-file-management-properties.glade:213
 msgid "100 MB"
 msgstr "100 MB"
 
-#: gresources/nemo-file-management-properties.glade:145
+#: gresources/nemo-file-management-properties.glade:216
 msgid "1 GB"
 msgstr "1 GB"
 
-#: gresources/nemo-file-management-properties.glade:148
+#: gresources/nemo-file-management-properties.glade:219
 msgid "2 GB"
 msgstr "2 GB"
 
-#: gresources/nemo-file-management-properties.glade:151
+#: gresources/nemo-file-management-properties.glade:222
 msgid "4 GB"
 msgstr "4 GB"
 
-#: gresources/nemo-file-management-properties.glade:154
+#: gresources/nemo-file-management-properties.glade:225
 msgid "8 GB"
 msgstr "8 GB"
 
-#: gresources/nemo-file-management-properties.glade:157
+#: gresources/nemo-file-management-properties.glade:228
 msgid "16 GB"
-msgstr ""
+msgstr "16 GB"
 
-#: gresources/nemo-file-management-properties.glade:160
+#: gresources/nemo-file-management-properties.glade:231
 msgid "32 GB"
+msgstr "32 GB"
+
+#: gresources/nemo-file-management-properties.glade:323
+msgid "Per Folder"
 msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:258
+#: gresources/nemo-file-management-properties.glade:332
 msgid "File Management Preferences"
 msgstr "Προτιμήσεις Διαχείρισης Αρχείων"
 
-#: gresources/nemo-file-management-properties.glade:369
+#: gresources/nemo-file-management-properties.glade:390
 msgid "<b>Default View</b>"
 msgstr "<b>Προεπιλεγμένη Προβολή</b>"
 
-#: gresources/nemo-file-management-properties.glade:399
+#: gresources/nemo-file-management-properties.glade:420
 msgid "View _new folders using:"
 msgstr "Προβολή _νέων φακέλων χρησιμοποιώντας:"
 
-#: gresources/nemo-file-management-properties.glade:444
+#: gresources/nemo-file-management-properties.glade:465
 msgid "_Arrange items:"
 msgstr "_Ταξινόμηση αντικειμένων:"
 
-#: gresources/nemo-file-management-properties.glade:482
+#: gresources/nemo-file-management-properties.glade:503
 msgid "Sort _folders before files"
 msgstr "Εμφάνιση _φακέλων πριν από τα αρχεία"
 
-#: gresources/nemo-file-management-properties.glade:534
+#: gresources/nemo-file-management-properties.glade:544
 msgid "<b>Icon View Defaults</b>"
 msgstr "<b>Προεπιλογές προβολής εικονιδίων</b>"
 
-#: gresources/nemo-file-management-properties.glade:564
+#: gresources/nemo-file-management-properties.glade:574
 msgid "Default _zoom level:"
 msgstr "Προεπιλεγμένο επίπεδο μεγέ_θυνσης:"
 
-#: gresources/nemo-file-management-properties.glade:602
+#: gresources/nemo-file-management-properties.glade:612
 msgid "_Text beside icons"
 msgstr "_Κείμενο δίπλα στα εικονίδια"
 
-#: gresources/nemo-file-management-properties.glade:618
-msgid "_Use compact layout"
-msgstr "_Χρήση συμπτυγμένης διάταξης"
-
-#: gresources/nemo-file-management-properties.glade:670
+#: gresources/nemo-file-management-properties.glade:653
 msgid "<b>Compact View Defaults</b>"
 msgstr "<b>Προεπιλογές Συμπτυγμένης Προβολής</b>"
 
-#: gresources/nemo-file-management-properties.glade:700
+#: gresources/nemo-file-management-properties.glade:683
 msgid "_Default zoom level:"
 msgstr "Προεπιλεγμένο επίπεδο _μεγένθησης:"
 
-#: gresources/nemo-file-management-properties.glade:738
+#: gresources/nemo-file-management-properties.glade:721
 msgid "A_ll columns have the same width"
 msgstr "Ίδιο πλάτος για ό_λες τις στήλες"
 
-#: gresources/nemo-file-management-properties.glade:790
+#: gresources/nemo-file-management-properties.glade:762
 msgid "<b>List View Defaults</b>"
 msgstr "<b>Προεπιλογές προβολής λίστας</b>"
 
-#: gresources/nemo-file-management-properties.glade:820
+#: gresources/nemo-file-management-properties.glade:792
 msgid "D_efault zoom level:"
 msgstr "_Προεπιλεγμένο επίπεδο μεγένθησης:"
 
-#: gresources/nemo-file-management-properties.glade:894
+#: gresources/nemo-file-management-properties.glade:855
 msgid "<b>Tree View Defaults</b>"
 msgstr "<b>Προεπιλογές προβολής δένδρου</b>"
 
-#: gresources/nemo-file-management-properties.glade:917
+#: gresources/nemo-file-management-properties.glade:878
 msgid "Show _only folders"
 msgstr "Εμφάνιση μό_νο των φακέλων"
 
-#: gresources/nemo-file-management-properties.glade:954
+#: gresources/nemo-file-management-properties.glade:915
 msgid "Views"
 msgstr "Προβολές"
 
-#: gresources/nemo-file-management-properties.glade:981
+#: gresources/nemo-file-management-properties.glade:943
 msgid "<b>Behavior</b>"
 msgstr "<b>Συμπεριφορά</b>"
 
-#: gresources/nemo-file-management-properties.glade:1003
+#: gresources/nemo-file-management-properties.glade:965
 msgid "_Single click to open items"
 msgstr "_Μονό πάτημα για το άνοιγμα αντικειμένων"
 
-#: gresources/nemo-file-management-properties.glade:1020
+#: gresources/nemo-file-management-properties.glade:982
 msgid "_Double click to open items"
 msgstr "_Διπλό πάτημα για το άνοιγμα στοιχείων"
 
-#: gresources/nemo-file-management-properties.glade:1038
+#: gresources/nemo-file-management-properties.glade:1000
 msgid "Click on a file's name twice to rename it"
 msgstr "Διπλό πάτημα στο όνομα ενός αρχείου για μετανομασία του"
 
-#: gresources/nemo-file-management-properties.glade:1055
+#: gresources/nemo-file-management-properties.glade:1017
 msgid "Open each _folder in its own window"
 msgstr "Άνοιγμα κάθε φακέλου σε _ξεχωριστό παράθυρο"
 
-#: gresources/nemo-file-management-properties.glade:1072
+#: gresources/nemo-file-management-properties.glade:1034
 msgid "Always start in dual-pane view"
 msgstr "Ξεκίνα πάντα με την εμφάνιση διπλής κατάστασης"
 
-#: gresources/nemo-file-management-properties.glade:1089
+#: gresources/nemo-file-management-properties.glade:1051
 msgid "Ignore per-folder view preferences"
 msgstr "Αγνόησε τις ανά φάκελο  επιλογές εμφάνισης"
 
-#: gresources/nemo-file-management-properties.glade:1106
+#: gresources/nemo-file-management-properties.glade:1068
 msgid "Disable file operation queueing"
 msgstr "Απενεργοποίηση της λειτουργίας αναμονής αρχείου"
 
-#: gresources/nemo-file-management-properties.glade:1123
+#: gresources/nemo-file-management-properties.glade:1085
 msgid "Double-click on a blank area to go to the parent folder"
 msgstr "Διπλό πάτημα σε μία κενή περιοχή για μεταφορά στον γονικό φάκελο"
 
-#: gresources/nemo-file-management-properties.glade:1176
+#: gresources/nemo-file-management-properties.glade:1127
 msgid "<b>Executable Text Files</b>"
 msgstr "<b>Εκτελέσιμα αρχεία κειμένου</b>"
 
-#: gresources/nemo-file-management-properties.glade:1199
+#: gresources/nemo-file-management-properties.glade:1150
 msgid "_Run executable text files when they are opened"
 msgstr "Εκ_τέλεση εκτελέσιμων αρχείων κειμένου όταν ανοίγονται"
 
-#: gresources/nemo-file-management-properties.glade:1216
+#: gresources/nemo-file-management-properties.glade:1167
 msgid "_View executable text files when they are opened"
 msgstr "Προ_βολή εκτελέσιμων αρχείων κειμένου όταν ανοίγονται"
 
-#: gresources/nemo-file-management-properties.glade:1233
+#: gresources/nemo-file-management-properties.glade:1184
 msgid "_Ask each time"
 msgstr "Ε_ρώτηση κάθε φορά"
 
-#: gresources/nemo-file-management-properties.glade:1286
+#: gresources/nemo-file-management-properties.glade:1226
 msgid "<b>Trash</b>"
 msgstr "<b>Απορρίμματα</b>"
 
-#: gresources/nemo-file-management-properties.glade:1309
+#: gresources/nemo-file-management-properties.glade:1249
 msgid "Ask before _emptying the Trash or deleting files"
 msgstr "Ε_ρώτηση πριν το άδειασμα των Απορριμμάτων ή τη διαγραφή αρχείων"
 
-#: gresources/nemo-file-management-properties.glade:1325
+#: gresources/nemo-file-management-properties.glade:1265
 msgid "I_nclude a Delete command that bypasses Trash"
 msgstr "_Συμπερίληψη μιας εντολής Διαγραφής που παρακάμπτει τα Απορρίμματα"
 
-#: gresources/nemo-file-management-properties.glade:1341
+#: gresources/nemo-file-management-properties.glade:1281
 msgid "Bypass the Trash when the Delete key is pressed"
 msgstr ""
 "Όταν πατάω το πλήκτρο Delete να σβήνει το αρχείο και να μην πηγαίνει στα "
 "απορρίμματα"
 
-#: gresources/nemo-file-management-properties.glade:1392
+#: gresources/nemo-file-management-properties.glade:1321
 msgid "<b>Media Handling</b>"
 msgstr "<b>Χειρισμός μέσων</b>"
 
-#: gresources/nemo-file-management-properties.glade:1415
+#: gresources/nemo-file-management-properties.glade:1344
 msgid "Automatically mount removeable media when inserted and on startup"
 msgstr ""
 "Να προσαρτάς αυτόματα τα αποθηκευτικά μέσα που συνδέω, η όσα είναι εισηγμένα "
 "όταν ανοίγω τον υπολογιστή"
 
-#: gresources/nemo-file-management-properties.glade:1431
+#: gresources/nemo-file-management-properties.glade:1360
 msgid "Automatically open a folder for automounted media"
 msgstr ""
 "Να ανοίγεις αυτόματα τον σχετικό φάκελο όταν προσαρτώ ένα αποθηκευτικό μέσο"
 
-#: gresources/nemo-file-management-properties.glade:1447
+#: gresources/nemo-file-management-properties.glade:1376
 msgid "Prompt or autorun/autostart programs when media are inserted"
 msgstr ""
 "Ερώτηση για την αυτόματη εκκίνηση προγραμμάτων, όταν εισαχθεί ένα "
 "αποθηκευτικό μέσο"
 
-#: gresources/nemo-file-management-properties.glade:1463
+#: gresources/nemo-file-management-properties.glade:1392
 msgid ""
 "Automatically close the device's tab, pane, or window when a device is "
 "unmounted or ejected"
@@ -5590,23 +5767,23 @@ msgstr ""
 "Να κλείνει αυτόματα η καρτέλα της συσκευής ή το παράθυρο όταν ένα "
 "αποθηκευτικό μέσο αφαιρείτε ή αποπροσαρτάτε"
 
-#: gresources/nemo-file-management-properties.glade:1515
+#: gresources/nemo-file-management-properties.glade:1433
 msgid "<b>Bulk Rename</b>"
 msgstr "<b>Μαζική Μετονομασία</b>"
 
-#: gresources/nemo-file-management-properties.glade:1545
+#: gresources/nemo-file-management-properties.glade:1463
 msgid "Command to invoke when renaming multiple items:"
 msgstr "Εντολή για επίκληση κατά την ονομασία πολλαπλών στοιχείων:"
 
-#: gresources/nemo-file-management-properties.glade:1598
+#: gresources/nemo-file-management-properties.glade:1516
 msgid "Behavior"
 msgstr "Συμπεριφορά"
 
-#: gresources/nemo-file-management-properties.glade:1626
+#: gresources/nemo-file-management-properties.glade:1545
 msgid "<b>Icon Captions</b>"
 msgstr "<b>Λεζάντες εικονιδίων</b>"
 
-#: gresources/nemo-file-management-properties.glade:1651
+#: gresources/nemo-file-management-properties.glade:1570
 msgid ""
 "Choose the order of information to appear beneath icon names. More "
 "information will appear when zooming in closer."
@@ -5615,107 +5792,107 @@ msgstr ""
 "εικονιδίων. Όσο αυξάνει το επίπεδο εστίασης, τόσο περισσότερες πληροφορίες "
 "θα εμφανίζονται."
 
-#: gresources/nemo-file-management-properties.glade:1802
+#: gresources/nemo-file-management-properties.glade:1707
 msgid "<b>Date</b>"
 msgstr "<b>Ημερομηνία</b>"
 
-#: gresources/nemo-file-management-properties.glade:1826
+#: gresources/nemo-file-management-properties.glade:1731
 msgid "_Format:"
 msgstr "_Μορφοποίηση:"
 
-#: gresources/nemo-file-management-properties.glade:1885
+#: gresources/nemo-file-management-properties.glade:1779
 msgid "<b>Window and Tab Titles</b>"
 msgstr "<b>Τίτλοι Παραθύρων και Καρτελών</b>"
 
-#: gresources/nemo-file-management-properties.glade:1908
+#: gresources/nemo-file-management-properties.glade:1802
 msgid "Show the full p_ath in the title bar and tab bars"
 msgstr ""
 "Να τυπώνεις την πλήρη διαδρομή στον τίτλο του παραθύρου και στις καρτέλες"
 
-#: gresources/nemo-file-management-properties.glade:1960
+#: gresources/nemo-file-management-properties.glade:1843
 msgid "<b>File Size</b>"
 msgstr "<b>Μέγεθος αρχείου</b>"
 
-#: gresources/nemo-file-management-properties.glade:1984
+#: gresources/nemo-file-management-properties.glade:1867
 msgid "_Prefixes:"
 msgstr "_Προθέματα:"
 
-#: gresources/nemo-file-management-properties.glade:2050
+#: gresources/nemo-file-management-properties.glade:1922
 msgid "<b>File Properties</b>"
 msgstr "<b>Χαρακτηριστικά του αρχείου</b>"
 
-#: gresources/nemo-file-management-properties.glade:2073
+#: gresources/nemo-file-management-properties.glade:1945
 msgid "Show advanced permissions in the file property dialog"
 msgstr "Προβολή προχωρημένων δικαιωμάτων στο διάλογο ιδιοτήτων αρχείου"
 
-#: gresources/nemo-file-management-properties.glade:2125
+#: gresources/nemo-file-management-properties.glade:1986
 msgid "<b>Move/Copy To Menu</b>"
 msgstr "<b>Μετακίνηση/Αντιγραφή Στο Μενού</b>"
 
-#: gresources/nemo-file-management-properties.glade:2148
+#: gresources/nemo-file-management-properties.glade:2009
 msgid "List bookmarks in the menu"
 msgstr "Να εμφανίζονται οι σελιδοδείκτες μου στο μενού"
 
-#: gresources/nemo-file-management-properties.glade:2164
+#: gresources/nemo-file-management-properties.glade:2025
 msgid "List devices and network locations in the menu"
 msgstr "Να εμφανίζονται οι συσκευές και οι δικτυακές τοποθεσίες στο μενού"
 
-#: gresources/nemo-file-management-properties.glade:2201
+#: gresources/nemo-file-management-properties.glade:2062
 msgid "Display"
 msgstr "Οθόνη"
 
-#: gresources/nemo-file-management-properties.glade:2230
+#: gresources/nemo-file-management-properties.glade:2091
 msgid "<b>List Columns</b>"
 msgstr "<b>Στήλες λίστας</b>"
 
-#: gresources/nemo-file-management-properties.glade:2255
+#: gresources/nemo-file-management-properties.glade:2116
 msgid "Choose the order of information to appear in the list view."
 msgstr ""
 "Επιλέξτε τον τρόπο ταξινόμησης των πληροφοριών που εμφανίζονται στην προβολή "
 "λίστας."
 
-#: gresources/nemo-file-management-properties.glade:2291
+#: gresources/nemo-file-management-properties.glade:2152
 msgid "List Columns"
 msgstr "Στήλες Λίστας"
 
-#: gresources/nemo-file-management-properties.glade:2319
+#: gresources/nemo-file-management-properties.glade:2181
 msgid "<b>Previewable Files</b>"
 msgstr "<b>Προεπισκοπημένα Αρχεία</b>"
 
-#: gresources/nemo-file-management-properties.glade:2349
+#: gresources/nemo-file-management-properties.glade:2211
 msgid "Show _thumbnails:"
 msgstr "Εμφάνιση _μικρογραφιών:"
 
-#: gresources/nemo-file-management-properties.glade:2394
+#: gresources/nemo-file-management-properties.glade:2256
 msgid "_Only for files smaller than:"
 msgstr "Μόν_ο για αρχεία μικρότερα από:"
 
-#: gresources/nemo-file-management-properties.glade:2468
+#: gresources/nemo-file-management-properties.glade:2319
 msgid "<b>Folders</b>"
 msgstr "<b>Φάκελοι</b>"
 
-#: gresources/nemo-file-management-properties.glade:2498
+#: gresources/nemo-file-management-properties.glade:2349
 msgid "Count _number of items:"
 msgstr "Μέτρηση αρι_θμού αντικειμένων:"
 
-#: gresources/nemo-file-management-properties.glade:2572
+#: gresources/nemo-file-management-properties.glade:2412
 msgid "<b>Tooltips</b>"
 msgstr "<b>Συμβουλές</b>"
 
-#: gresources/nemo-file-management-properties.glade:2595
+#: gresources/nemo-file-management-properties.glade:2435
 msgid "Show tooltips in icon and compact views"
 msgstr ""
 "Εμφάνιση επεξηγήσεων στην προβολή εικονιδίων και την συμπτυγμένη προβολή"
 
-#: gresources/nemo-file-management-properties.glade:2612
+#: gresources/nemo-file-management-properties.glade:2452
 msgid "Show tooltips in list views"
 msgstr "Να δείχνεις tooltips στην προβολή με λίστα αρχείων"
 
-#: gresources/nemo-file-management-properties.glade:2629
+#: gresources/nemo-file-management-properties.glade:2469
 msgid "Show tooltips on the desktop"
 msgstr "Να δείχνεις tooltips στην επιφάνεια εργασίας"
 
-#: gresources/nemo-file-management-properties.glade:2648
+#: gresources/nemo-file-management-properties.glade:2488
 msgid ""
 "<i>By default, a folder tooltip shows the item count, and files display "
 "their size.\n"
@@ -5725,82 +5902,70 @@ msgstr ""
 "στοιχείων, και τα αρχεία εμφανίζουν το μέγεθός τους.\n"
 "    Επιλέξτε πρόσθετες πληροφορίες για να εμφανίζονται στην tooltip:</i>"
 
-#: gresources/nemo-file-management-properties.glade:2673
+#: gresources/nemo-file-management-properties.glade:2513
 msgid "Detailed file type"
 msgstr "Λεπτομερής τύπος αρχείου"
 
-#: gresources/nemo-file-management-properties.glade:2688
-msgid "Accessed date"
-msgstr "Ημερομηνία τελευταίας προσπέλασης"
-
-#: gresources/nemo-file-management-properties.glade:2704
+#: gresources/nemo-file-management-properties.glade:2528
 msgid "Modified date"
 msgstr "Ημερομηνία τελευταίας αλλαγής"
 
-#: gresources/nemo-file-management-properties.glade:2719
+#: gresources/nemo-file-management-properties.glade:2543
+msgid "Created date"
+msgstr ""
+
+#: gresources/nemo-file-management-properties.glade:2559
+msgid "Accessed date"
+msgstr "Ημερομηνία τελευταίας προσπέλασης"
+
+#: gresources/nemo-file-management-properties.glade:2575
 msgid "File or folder location"
 msgstr "Τοποθεσία αρχείου ή φακέλου"
 
-#: gresources/nemo-file-management-properties.glade:2765
+#: gresources/nemo-file-management-properties.glade:2621
 msgid "Preview"
 msgstr "Προεπισκόπιση"
 
-#: gresources/nemo-file-management-properties.glade:2793
-msgid "<b>Options</b>"
-msgstr "<b>Επιλογές</b>"
+#: gresources/nemo-file-management-properties.glade:2650
+msgid "Visible Buttons"
+msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:2816
-msgid "Show previous button"
-msgstr "Εμφάνισε το προηγούμενο πλήκτρο"
+#: gresources/nemo-file-management-properties.glade:2695
+msgid "Previous"
+msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:2833
-msgid "Show next button"
-msgstr "Εμφάνισε το επόμενο πλήκτρο"
+#: gresources/nemo-file-management-properties.glade:2732
+msgid "Next"
+msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:2849
-msgid "Show up button"
-msgstr "Εμφάνισε το επάνω πλήκτρο"
+#: gresources/nemo-file-management-properties.glade:2769
+msgid "Up"
+msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:2865
-msgid "Show refresh button"
-msgstr "Εμφάνισε το πλήκτρο ανανέωσης"
+#: gresources/nemo-file-management-properties.glade:2806
+msgid "Refresh"
+msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:2881
-msgid "Show computer button"
-msgstr "Εμφάνισε το πλήκτρο υπολογιστή"
+#: gresources/nemo-file-management-properties.glade:2917
+msgid "Location entry toggle"
+msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:2897
-msgid "Show home button"
-msgstr "Εμφάνιση κουμπιού Αρχικής σελίδας"
+#: gresources/nemo-file-management-properties.glade:2954
+msgid "Open in terminal"
+msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:2913
-msgid "Show location entry/breadcrumbs toggle button"
-msgstr "Δείξε την καταχώρηση τοποθεσίας / breadcrumbs κουμπί εναλλαγής"
+#: gresources/nemo-file-management-properties.glade:3065
+msgid "Icon view"
+msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:2929
-msgid "Show open in terminal button"
-msgstr "Εμφάνισε το κουμπί: -ανοιγμα με το τερματικό"
+#: gresources/nemo-file-management-properties.glade:3102
+msgid "List view"
+msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:2945
-msgid "Show new folder button"
-msgstr "Εμφάνισε το κουμπί: -νέος φάκελος"
+#: gresources/nemo-file-management-properties.glade:3139
+msgid "Compact view"
+msgstr ""
 
-#: gresources/nemo-file-management-properties.glade:2961
-msgid "Show search button"
-msgstr "Εμφάνισε το κουμπί: -αναζήτησης"
-
-#: gresources/nemo-file-management-properties.glade:2977
-msgid "Show icon view button"
-msgstr "Εμφάνισε το κουμπί: -προβολή εικονιδίων"
-
-#: gresources/nemo-file-management-properties.glade:2993
-msgid "Show list view button"
-msgstr "Εμφάνισε το κουμπί: -προβολή λίστας"
-
-#: gresources/nemo-file-management-properties.glade:3009
-msgid "Show compact view button"
-msgstr "Εμφάνισε το κουμπί: -συμπαγή προβολή"
-
-#: gresources/nemo-file-management-properties.glade:3046
+#: gresources/nemo-file-management-properties.glade:3211
 msgid "Toolbar"
 msgstr "Γραμμή εργαλείων"
