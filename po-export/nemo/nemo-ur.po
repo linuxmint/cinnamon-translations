@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-06-29 18:00+0200\n"
+"POT-Creation-Date: 2019-07-10 13:09+0200\n"
 "PO-Revision-Date: 2016-11-29 22:21+0000\n"
 "Last-Translator: Waqar Ahmed <waqar.17a@gmail.com>\n"
 "Language-Team: Urdu <ur@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-07-10 08:25+0000\n"
-"X-Generator: Launchpad (build 19007)\n"
+"X-Launchpad-Export-Date: 2019-07-28 09:32+0000\n"
+"X-Generator: Launchpad (build 19010)\n"
 "Language: ur\n"
 
 #: src/nemo-action-config-widget.c:237
@@ -82,6 +82,7 @@ msgstr "_چلائیں"
 msgid "Customize"
 msgstr ""
 
+#. hardcode "Desktop"
 #: src/nemo-blank-desktop-window.c:214 src/nemo-desktop-window.c:125
 #: src/nemo-desktop-window.c:294 src/nemo-pathbar.c:1440
 #: src/nemo-places-sidebar.c:779 libnemo-private/nemo-action.c:1330
@@ -167,6 +168,7 @@ msgstr "ہدایات کو دکھاتے ہوئے غلطی ہوئی ہے."
 msgid "C_onnect"
 msgstr "_جڑیں"
 
+#. set dialog properties
 #: src/nemo-connect-server-dialog.c:842
 msgid "Connect to Server"
 msgstr "سرور سے جڑیں"
@@ -175,22 +177,27 @@ msgstr "سرور سے جڑیں"
 msgid "Server Details"
 msgstr "سرور کی تفصیلات"
 
+#. first row: server entry + port spinbutton
 #: src/nemo-connect-server-dialog.c:885
 msgid "_Server:"
 msgstr "_سرور:"
 
+#. port
 #: src/nemo-connect-server-dialog.c:905
 msgid "_Port:"
 msgstr "_پورٹ:"
 
+#. second row: type combobox
 #: src/nemo-connect-server-dialog.c:923
 msgid "_Type:"
 msgstr "_نوعیت:"
 
+#. third row: share entry
 #: src/nemo-connect-server-dialog.c:993
 msgid "Sh_are:"
 msgstr "_شیئر کریں:"
 
+#. fourth row: folder entry
 #: src/nemo-connect-server-dialog.c:1008 src/nemo-view.c:1848
 msgid "_Folder:"
 msgstr "_فولڈر:"
@@ -199,18 +206,22 @@ msgstr "_فولڈر:"
 msgid "User Details"
 msgstr "صارف کی تفصیلات"
 
+#. first row: domain entry
 #: src/nemo-connect-server-dialog.c:1050
 msgid "_Domain name:"
 msgstr "_ڈومین نام:"
 
+#. second row: username entry
 #: src/nemo-connect-server-dialog.c:1065
 msgid "_User name:"
 msgstr "_صارف کا نام:"
 
+#. third row: password entry
 #: src/nemo-connect-server-dialog.c:1080
 msgid "Pass_word:"
 msgstr "_پاس ورڈ:"
 
+#. fourth row: remember checkbox
 #: src/nemo-connect-server-dialog.c:1096
 msgid "_Remember this password"
 msgstr "یہ پاس ورڈ _یاد رکھیں"
@@ -223,6 +234,8 @@ msgstr "عمل کاری منسوخ کردی گئی"
 msgid "Print but do not open the URI"
 msgstr "چھاپیں مگر URI نہ کھولیں"
 
+#. Translators: This is the --help description for the connect to server app,
+#. the initial newlines are between the command line arg and the description
 #: src/nemo-connect-server-dialog-main.c:131
 msgid ""
 "\n"
@@ -248,16 +261,22 @@ msgid ""
 "Manage the desktop with the file manager"
 msgstr ""
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:917 src/nemo-desktop-icon-view.c:682
-#: src/nemo-view.c:8316 src/nemo-view.c:9930
+#: src/nemo-view.c:8313 src/nemo-view.c:9925
 msgid "E_mpty Trash"
 msgstr "_ردی خالی کریں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:1027
 #: gresources/nemo-desktop-overlay.glade:293
 msgid "Auto-arrange"
 msgstr ""
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:1032
 #: gresources/nemo-desktop-overlay.glade:539
 msgid "Reverse sort"
@@ -291,7 +310,7 @@ msgstr ""
 msgid "_Horizontal"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1074 src/nemo-list-view.c:2329
+#: src/nemo-desktop-icon-grid-view.c:1074 src/nemo-list-view.c:2331
 #: libnemo-private/nemo-column-utilities.c:43
 #: gresources/nemo-desktop-overlay.glade:116
 msgid "Name"
@@ -314,20 +333,26 @@ msgstr "قسم"
 msgid "Date"
 msgstr ""
 
+#. name, stock id, label
 #: src/nemo-desktop-icon-grid-view.c:1092
 msgid "_Sort"
 msgstr ""
 
+#. name, stock id, label
 #: src/nemo-desktop-icon-grid-view.c:1093
 msgid "_Icon Size"
 msgstr ""
 
+#. label, accelerator
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:1097 src/nemo-desktop-icon-view.c:723
 msgid "Empty Trash"
 msgstr "ردی خالی کریں"
 
+#. tooltip
 #: src/nemo-desktop-icon-grid-view.c:1099 src/nemo-desktop-icon-view.c:724
-#: src/nemo-trash-bar.c:227 src/nemo-view.c:8317
+#: src/nemo-trash-bar.c:227 src/nemo-view.c:8314
 msgid "Delete all items in the Trash"
 msgstr "ردی میں موجود تمام عناصر حذف کریں"
 
@@ -347,6 +372,8 @@ msgstr "ڈیسک ٹاپ منظر کو مسئلہ درپیش."
 msgid "The desktop view encountered an error while starting up."
 msgstr "چلتے وقت ڈیسک ٹاپ منظر کو مسئلہ درپیش."
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-view.c:704 src/nemo-desktop-icon-view.c:719
 msgid "Restore Icons' Original Si_zes"
 msgstr "آئکن کا اصل ح_جم بحال کریں"
@@ -355,14 +382,18 @@ msgstr "آئکن کا اصل ح_جم بحال کریں"
 msgid "Restore Icon's Original Si_ze"
 msgstr "آئکن کا اصل _حجم بحال کریں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-view.c:715
 msgid "Resize Icon..."
 msgstr "آئن کا حجم بدلیں..."
 
+#. tooltip
 #: src/nemo-desktop-icon-view.c:716
 msgid "Make the selected icon resizable"
 msgstr "منتخب کردہ آئکن لچک پذیر بنائیں"
 
+#. tooltip
 #: src/nemo-desktop-icon-view.c:720
 msgid "Restore each selected icon to its original size"
 msgstr "ہر منتخب کردہ آئکن کا اصل حجم بحال کریں"
@@ -435,6 +466,7 @@ msgid ""
 "You do not have the permissions necessary to change the group of \"%s\"."
 msgstr "آپ کے پاس ایسے اجازے نہیں ہیں کہ آپ \"%s\" کا گروہ تبدیل کر سکیں."
 
+#. fall through
 #: src/nemo-error-reporting.c:120
 #, c-format
 msgid "Sorry, could not change the group of \"%s\": %s"
@@ -501,6 +533,7 @@ msgstr "نام \"%s\" موزوں نہیں ہے. ازراہ کرم مختلف ن�
 msgid "The name \"%s\" is too long. Please use a different name."
 msgstr "نام \"%s\" بہت طویل ہے. ازراہ کرم مختلف نام استعمال کریں."
 
+#. fall through
 #: src/nemo-error-reporting.c:243
 #, c-format
 msgid "Sorry, could not rename \"%s\" to \"%s\": %s"
@@ -535,6 +568,10 @@ msgstr "ایکس ٹینشن"
 msgid "Extensions changed.  Restart required."
 msgstr "ایکسٹینشن بدلی گئی۔ دوبارہ چلانا درکار ہے۔"
 
+#. Translators: this is referred to captions under icons.
+#. Translators: this is referred to the permissions
+#. * the user has in a directory.
+#. 
 #: src/nemo-file-management-properties.c:288 src/nemo-properties-window.c:3927
 #: src/nemo-properties-window.c:3938
 msgid "None"
@@ -549,7 +586,7 @@ msgstr ""
 msgid "by _Name"
 msgstr "_نام سے"
 
-#: src/nemo-icon-view.c:138 src/nemo-icon-view.c:1427
+#: src/nemo-icon-view.c:138 src/nemo-icon-view.c:1429
 msgid "Keep icons sorted by name in rows"
 msgstr "آئکنز کو نام سے صفوں میں مرتب رکھیں"
 
@@ -557,7 +594,7 @@ msgstr "آئکنز کو نام سے صفوں میں مرتب رکھیں"
 msgid "by _Size"
 msgstr "_حجم سے"
 
-#: src/nemo-icon-view.c:145 src/nemo-icon-view.c:1431
+#: src/nemo-icon-view.c:145 src/nemo-icon-view.c:1433
 msgid "Keep icons sorted by size in rows"
 msgstr "آئکنز کو حجم سے صفوں میں مرتب رکھیں"
 
@@ -565,7 +602,7 @@ msgstr "آئکنز کو حجم سے صفوں میں مرتب رکھیں"
 msgid "by _Type"
 msgstr "نو_عیت سے"
 
-#: src/nemo-icon-view.c:152 src/nemo-icon-view.c:1435
+#: src/nemo-icon-view.c:152 src/nemo-icon-view.c:1437
 msgid "Keep icons sorted by type in rows"
 msgstr "آئکنز کو نوعیت سے صفوں میں مرتب رکھیں"
 
@@ -573,7 +610,7 @@ msgstr "آئکنز کو نوعیت سے صفوں میں مرتب رکھیں"
 msgid "by _Detailed Type"
 msgstr "فائل کی _نوعیت سے"
 
-#: src/nemo-icon-view.c:159 src/nemo-icon-view.c:1439
+#: src/nemo-icon-view.c:159 src/nemo-icon-view.c:1441
 msgid "Keep icons sorted by detailed type in rows"
 msgstr "آئکنز کو تفصیلی نوعیت سے صفوں میں مرتب رکھیں"
 
@@ -581,7 +618,7 @@ msgstr "آئکنز کو تفصیلی نوعیت سے صفوں میں مرتب ر
 msgid "by Modification _Date"
 msgstr "تاری_خِ تبدیلی سے"
 
-#: src/nemo-icon-view.c:166 src/nemo-icon-view.c:1443
+#: src/nemo-icon-view.c:166 src/nemo-icon-view.c:1445
 msgid "Keep icons sorted by modification date in rows"
 msgstr "آئکنز کو تاریخِ تبدیلی سے صفوں میں مرتب رکھیں"
 
@@ -589,7 +626,7 @@ msgstr "آئکنز کو تاریخِ تبدیلی سے صفوں میں مرتب 
 msgid "by T_rash Time"
 msgstr "_ردی کے وقت سے"
 
-#: src/nemo-icon-view.c:173 src/nemo-icon-view.c:1447
+#: src/nemo-icon-view.c:173 src/nemo-icon-view.c:1449
 msgid "Keep icons sorted by trash time in rows"
 msgstr "آئکنز کو ردی کےوقت سے صفوں میں مرتب رکھیں"
 
@@ -597,110 +634,126 @@ msgstr "آئکنز کو ردی کےوقت سے صفوں میں مرتب رکھی
 msgid "_Organize Desktop by Name"
 msgstr "ڈیسک ٹاپ کو نام سے _منظم کریں"
 
-#: src/nemo-icon-view.c:1399
+#. name, stock id, label
+#: src/nemo-icon-view.c:1401
 msgid "Arran_ge Items"
 msgstr "عناصر کو ت_رتیب دیں"
 
-#: src/nemo-icon-view.c:1401
+#. name, stock id
+#. label, accelerator
+#: src/nemo-icon-view.c:1403
 msgid "_Organize by Name"
 msgstr "_نام سے منظم کریں"
 
-#: src/nemo-icon-view.c:1402
+#. tooltip
+#: src/nemo-icon-view.c:1404
 msgid "Reposition icons to better fit in the window and avoid overlapping"
 msgstr ""
 "آئکنز دوبارہ حالت دین تاکہ دریچے میں بہتر طور پر فٹ ہوسکیں اور اوور لیپنگ سے "
 "گریز کیا جاسکے"
 
-#: src/nemo-icon-view.c:1409
+#. name, stock id
+#. label, accelerator
+#: src/nemo-icon-view.c:1411
 msgid "Re_versed Order"
 msgstr "_عکسی ترتیب"
 
-#: src/nemo-icon-view.c:1410
+#. tooltip
+#: src/nemo-icon-view.c:1412
 msgid "Display icons in the opposite order"
 msgstr "آئکن متضاد ترتیب میں دکھاتا ہے"
 
-#: src/nemo-icon-view.c:1414
+#. name, stock id
+#. label, accelerator
+#: src/nemo-icon-view.c:1416
 msgid "_Keep Aligned"
 msgstr "سیدھ میں _رکھیں"
 
-#: src/nemo-icon-view.c:1415
+#. tooltip
+#: src/nemo-icon-view.c:1417
 msgid "Keep icons lined up on a grid"
 msgstr "آئکن صف بند اور مرتب رکھیں"
 
-#: src/nemo-icon-view.c:1422
+#: src/nemo-icon-view.c:1424
 msgid "_Manually"
 msgstr "_دستی"
 
-#: src/nemo-icon-view.c:1423
+#: src/nemo-icon-view.c:1425
 msgid "Leave icons wherever they are dropped"
 msgstr "آئکن وہیں رہنے دیں جہاں انہیں چھوڑا جائے"
 
-#: src/nemo-icon-view.c:1426
+#: src/nemo-icon-view.c:1428
 msgid "By _Name"
 msgstr "_نام سے"
 
-#: src/nemo-icon-view.c:1430
+#: src/nemo-icon-view.c:1432
 msgid "By _Size"
 msgstr "_حجم سے"
 
-#: src/nemo-icon-view.c:1434
+#: src/nemo-icon-view.c:1436
 msgid "By _Type"
 msgstr "_نوعیت سے"
 
-#: src/nemo-icon-view.c:1438
+#: src/nemo-icon-view.c:1440
 msgid "By _Detailed Type"
 msgstr "فائل کی _تفصیلی نوعیت سے"
 
-#: src/nemo-icon-view.c:1442
+#: src/nemo-icon-view.c:1444
 msgid "By Modification _Date"
 msgstr "تبدیلی کی _تاریخ سے"
 
-#: src/nemo-icon-view.c:1446
+#: src/nemo-icon-view.c:1448
 msgid "By T_rash Time"
 msgstr "ر_دی کے وقت سے"
 
-#: src/nemo-icon-view.c:2838 src/nemo-icon-view-container.c:2147
-#: src/nemo-icon-view-grid-container.c:1602 src/nemo-window-menus.c:1492
+#. translators: this is used in the view selection dropdown
+#. * of navigation windows and in the preferences dialog
+#: src/nemo-icon-view.c:2840 src/nemo-icon-view-container.c:2147
+#: src/nemo-icon-view-grid-container.c:1601 src/nemo-window-menus.c:1492
 #: src/nemo-window-menus.c:1642
 #: gresources/nemo-file-management-properties.glade:83
 msgid "Icon View"
 msgstr "آئکن منظر"
 
-#: src/nemo-icon-view.c:2840
+#. translators: this is used in the view menu
+#: src/nemo-icon-view.c:2842
 msgid "_Icons"
 msgstr "_آئکنز"
 
-#: src/nemo-icon-view.c:2841
+#: src/nemo-icon-view.c:2843
 msgid "The icon view encountered an error."
 msgstr "آئکن منظر کو مسئلہ درپیش ہوا."
 
-#: src/nemo-icon-view.c:2842
+#: src/nemo-icon-view.c:2844
 msgid "The icon view encountered an error while starting up."
 msgstr "شروع ہوتے وقت آئکن منظر کو مسئلہ درپیش ہوا."
 
-#: src/nemo-icon-view.c:2843
+#: src/nemo-icon-view.c:2845
 msgid "Display this location with the icon view."
 msgstr "یہ مقام آئکن منظر میں دکھائیں."
 
-#: src/nemo-icon-view.c:2852 src/nemo-window-menus.c:1498
+#. translators: this is used in the view selection dropdown
+#. * of navigation windows and in the preferences dialog
+#: src/nemo-icon-view.c:2854 src/nemo-window-menus.c:1498
 #: src/nemo-window-menus.c:1665
 #: gresources/nemo-file-management-properties.glade:89
 msgid "Compact View"
 msgstr "چُست منظر"
 
-#: src/nemo-icon-view.c:2854
+#. translators: this is used in the view menu
+#: src/nemo-icon-view.c:2856
 msgid "_Compact"
 msgstr "_چُست"
 
-#: src/nemo-icon-view.c:2855
+#: src/nemo-icon-view.c:2857
 msgid "The compact view encountered an error."
 msgstr "چُست منظر کو غلطی درپیش ہے."
 
-#: src/nemo-icon-view.c:2856
+#: src/nemo-icon-view.c:2858
 msgid "The compact view encountered an error while starting up."
 msgstr "چلتے وقت چُست منظر کو کوئی غلطی درپیش ہوئی ہے."
 
-#: src/nemo-icon-view.c:2857
+#: src/nemo-icon-view.c:2859
 msgid "Display this location with the compact view."
 msgstr "یہ مقام چُست منظر میں دکھائیں"
 
@@ -763,6 +816,7 @@ msgstr "کیمرے کا برانڈ"
 msgid "Camera Model"
 msgstr "کیمرے کا ماڈل"
 
+#. Choose which date to show in order of relevance
 #: src/nemo-image-properties-page.c:386
 msgid "Date Taken"
 msgstr "اتارنے کی تاریخ"
@@ -866,33 +920,36 @@ msgstr "سکرپٹ بنانے سے متعلق مزید معلومات دیکھی
 msgid "(Empty)"
 msgstr "(خالی)"
 
-#: src/nemo-list-view.c:1969
+#: src/nemo-list-view.c:1971
 msgid "Use Default"
 msgstr "طے شُدہ استعمال کریں"
 
-#: src/nemo-list-view.c:1980
+#: src/nemo-list-view.c:1982
 msgid "Temporarily disable auto-sort"
 msgstr "عارضی طور پر پر خودکار-ترتیب دینا کو غیر فعال کریں"
 
-#: src/nemo-list-view.c:2415 src/nemo-list-view.c:4039
+#. translators: this is used in the view selection dropdown
+#. * of navigation windows and in the preferences dialog
+#: src/nemo-list-view.c:2417 src/nemo-list-view.c:4043
 #: src/nemo-window-menus.c:1495 src/nemo-window-menus.c:1653
 #: gresources/nemo-file-management-properties.glade:86
 msgid "List View"
 msgstr "فہرست منظر"
 
-#: src/nemo-list-view.c:4041
+#. translators: this is used in the view menu
+#: src/nemo-list-view.c:4045
 msgid "_List"
 msgstr "_فہرست"
 
-#: src/nemo-list-view.c:4042
+#: src/nemo-list-view.c:4046
 msgid "The list view encountered an error."
 msgstr "فہرست منظر کو مسئلہ درپیش ہوئی."
 
-#: src/nemo-list-view.c:4043
+#: src/nemo-list-view.c:4047
 msgid "The list view encountered an error while starting up."
 msgstr "چلتے وقت فہرست منظر کو غلطی درپیش ہوئی"
 
-#: src/nemo-list-view.c:4044
+#: src/nemo-list-view.c:4048
 msgid "Display this location with the list view."
 msgstr "یہ مقام فہرست منظر میں دکھائیں."
 
@@ -1012,9 +1069,11 @@ msgid "This link cannot be used, because its target \"%s\" doesn't exist."
 msgstr ""
 "یہ ربط استعمال نہیں ہوسکتا کیونکہ اس کا ہدف \"%s\" اب موجود نہیں رہا."
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-mime-actions.c:659 src/nemo-tree-sidebar.c:1412
-#: src/nemo-view.c:8368 src/nemo-view.c:8486 src/nemo-view.c:9533
-#: src/nemo-view.c:9853
+#: src/nemo-view.c:8365 src/nemo-view.c:8483 src/nemo-view.c:9530
+#: src/nemo-view.c:9848
 msgid "Mo_ve to Trash"
 msgstr "ردی میں _منتقل کریں"
 
@@ -1110,11 +1169,11 @@ msgstr[0] "یہ %d علیحدہ ایپلی کیشن کھول دے گا۔"
 msgstr[1] "یہ %d علیحدہ ایپلی کیشنیں کھول دے گا۔"
 
 #: src/nemo-mime-actions.c:1688 src/nemo-mime-actions.c:1962
-#: src/nemo-view.c:7486
+#: src/nemo-view.c:7483
 msgid "Unable to mount location"
 msgstr "مقام کو ماؤنٹ کرنے سے قاصر"
 
-#: src/nemo-mime-actions.c:2041 src/nemo-view.c:7633
+#: src/nemo-mime-actions.c:2041 src/nemo-view.c:7630
 msgid "Unable to start location"
 msgstr "مقام کو شروع کرنے سے قاصر"
 
@@ -1134,6 +1193,8 @@ msgstr[1] "%d عناصر کو کھولا جارہا ہے."
 msgid "Close tab"
 msgstr "ٹیب بند کریں"
 
+#. Translators: This is the --help description for the open-with app,
+#. the initial newlines are between the command line arg and the description
 #: src/nemo-open-with-main.c:104
 msgid ""
 "\n"
@@ -1248,26 +1309,32 @@ msgstr "نیٹ ورک"
 msgid "Browse the contents of the network"
 msgstr "نیٹ ورک کا مواد براؤز کریں"
 
+#. Adjust start/stop items to reflect the type of the drive
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:2275 src/nemo-places-sidebar.c:3553
-#: src/nemo-view.c:8414 src/nemo-view.c:8438 src/nemo-view.c:8510
-#: src/nemo-view.c:9156 src/nemo-view.c:9160 src/nemo-view.c:9243
-#: src/nemo-view.c:9247 src/nemo-view.c:9347 src/nemo-view.c:9351
+#: src/nemo-view.c:8411 src/nemo-view.c:8435 src/nemo-view.c:8507
+#: src/nemo-view.c:9153 src/nemo-view.c:9157 src/nemo-view.c:9240
+#: src/nemo-view.c:9244 src/nemo-view.c:9344 src/nemo-view.c:9348
 msgid "_Start"
 msgstr "_چلائیں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:2276 src/nemo-places-sidebar.c:3560
-#: src/nemo-view.c:8418 src/nemo-view.c:8442 src/nemo-view.c:8514
-#: src/nemo-view.c:9185 src/nemo-view.c:9272 src/nemo-view.c:9376
+#: src/nemo-view.c:8415 src/nemo-view.c:8439 src/nemo-view.c:8511
+#: src/nemo-view.c:9182 src/nemo-view.c:9269 src/nemo-view.c:9373
 #: src/nemo-window-menus.c:1302
 msgid "_Stop"
 msgstr "_روکیں"
 
+#. start() for type G_DRIVE_START_STOP_TYPE_SHUTDOWN is normally not used
 #: src/nemo-places-sidebar.c:2281
 msgid "_Power On"
 msgstr "_پاور آن کریں"
 
-#: src/nemo-places-sidebar.c:2282 src/nemo-view.c:9189 src/nemo-view.c:9276
-#: src/nemo-view.c:9380
+#: src/nemo-places-sidebar.c:2282 src/nemo-view.c:9186 src/nemo-view.c:9273
+#: src/nemo-view.c:9377
 msgid "_Safely Remove Drive"
 msgstr "ڈرائیو م_حفوظ انداز میں نکالیں"
 
@@ -1287,12 +1354,13 @@ msgstr "متعدد-ڈسک آلہ _چلائیں"
 msgid "_Stop Multi-disk Device"
 msgstr "متعدد-ڈسک آلہ _روکیں"
 
-#: src/nemo-places-sidebar.c:2294 src/nemo-view.c:9259 src/nemo-view.c:9363
+#. stop() for type G_DRIVE_START_STOP_TYPE_PASSWORD is normally not used
+#: src/nemo-places-sidebar.c:2294 src/nemo-view.c:9256 src/nemo-view.c:9360
 msgid "_Unlock Drive"
 msgstr "ڈرائیو _قفل کھولیں"
 
-#: src/nemo-places-sidebar.c:2295 src/nemo-view.c:9201 src/nemo-view.c:9288
-#: src/nemo-view.c:9392
+#: src/nemo-places-sidebar.c:2295 src/nemo-view.c:9198 src/nemo-view.c:9285
+#: src/nemo-view.c:9389
 msgid "_Lock Drive"
 msgstr "ڈرائیو م_قفل کریں"
 
@@ -1317,23 +1385,30 @@ msgstr "میڈیا کی تبدیلیوں کے لیے %s کو شمار کرنے �
 msgid "Unable to stop %s"
 msgstr "‏%s کو روکنے سے قاصر"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3465 src/nemo-tree-sidebar.c:1304
-#: src/nemo-view.c:8275 src/nemo-view.c:9784
+#: src/nemo-view.c:8272 src/nemo-view.c:9779
 #: libnemo-private/nemo-mime-application-chooser.c:483
 msgid "_Open"
 msgstr "_کھولیں"
 
+#. add the "open in new tab" menu item
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3473 src/nemo-tree-sidebar.c:1315
-#: src/nemo-view.c:8287 src/nemo-view.c:8468 src/nemo-view.c:9480
-#: src/nemo-view.c:9830
+#: src/nemo-view.c:8284 src/nemo-view.c:8465 src/nemo-view.c:9477
+#: src/nemo-view.c:9825
 msgid "Open in New _Tab"
 msgstr "نئے _ٹیب میں کھولیں"
 
+#. add the "open in new window" menu item
 #: src/nemo-places-sidebar.c:3483 src/nemo-tree-sidebar.c:1329
-#: src/nemo-view.c:9471 src/nemo-view.c:9810
+#: src/nemo-view.c:9468 src/nemo-view.c:9805
 msgid "Open in New _Window"
 msgstr "نئے _دریچے میں کھولیں"
 
+#. name, stock id, label
 #: src/nemo-places-sidebar.c:3494 src/nemo-window-menus.c:1412
 msgid "_Add Bookmark"
 msgstr "بک مارک _شامل کریں"
@@ -1346,26 +1421,37 @@ msgstr "ہٹائیں"
 msgid "Rename..."
 msgstr "نام بدلیں..."
 
-#: src/nemo-places-sidebar.c:3525 src/nemo-view.c:8402 src/nemo-view.c:8426
-#: src/nemo-view.c:8498
+#. name, stock id
+#. label, accelerator
+#: src/nemo-places-sidebar.c:3525 src/nemo-view.c:8399 src/nemo-view.c:8423
+#: src/nemo-view.c:8495
 msgid "_Mount"
 msgstr "_ماؤنٹ کریں"
 
+#. add the "Unmount" menu item
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3532 src/nemo-tree-sidebar.c:1444
-#: src/nemo-view.c:8406 src/nemo-view.c:8430 src/nemo-view.c:8502
+#: src/nemo-view.c:8403 src/nemo-view.c:8427 src/nemo-view.c:8499
 msgid "_Unmount"
 msgstr "_ان ماؤنٹ کریں"
 
+#. add the "Eject" menu item
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3539 src/nemo-tree-sidebar.c:1453
-#: src/nemo-view.c:8410 src/nemo-view.c:8434 src/nemo-view.c:8506
+#: src/nemo-view.c:8407 src/nemo-view.c:8431 src/nemo-view.c:8503
 msgid "_Eject"
 msgstr "_خارج کریں"
 
-#: src/nemo-places-sidebar.c:3546 src/nemo-view.c:8422 src/nemo-view.c:8446
-#: src/nemo-view.c:8518
+#. name, stock id
+#. label, accelerator
+#: src/nemo-places-sidebar.c:3546 src/nemo-view.c:8419 src/nemo-view.c:8443
+#: src/nemo-view.c:8515
 msgid "_Detect Media"
 msgstr "میڈیا _دریافت کریں"
 
+#. Empty Trash menu item
 #: src/nemo-places-sidebar.c:3569 src/nemo-trash-bar.c:224
 #: libnemo-private/nemo-file-operations.c:1294
 #: libnemo-private/nemo-file-operations.c:1611
@@ -1373,7 +1459,9 @@ msgstr "میڈیا _دریافت کریں"
 msgid "Empty _Trash"
 msgstr "_ردی خالی کریں"
 
-#: src/nemo-places-sidebar.c:3581 src/nemo-view.c:8257 src/nemo-view.c:8523
+#. name, stock id
+#. label, accelerator
+#: src/nemo-places-sidebar.c:3581 src/nemo-view.c:8254 src/nemo-view.c:8520
 msgid "_Properties"
 msgstr "خصوصیات"
 
@@ -1432,6 +1520,9 @@ msgstr "الخصائص"
 msgid "%s Properties"
 msgstr "‏%s خصوصیات"
 
+#. Fallback, use for both unknown attributes and attributes
+#. * for which we have no more appropriate default.
+#. 
 #: src/nemo-properties-window.c:1125 libnemo-private/nemo-file.c:6719
 msgid "unknown"
 msgstr "انجان"
@@ -1470,14 +1561,22 @@ msgstr[1] ""
 msgid "(some contents unreadable)"
 msgstr "(کچھ مواد پڑھنے کے قابل نہیں)"
 
+#. Also set the title field here, with a trailing carriage return &
+#. * space if the value field has two lines. This is a hack to get the
+#. * "Contents:" title to line up with the first line of the
+#. * 2-line value. Maybe there's a better way to do this, but I
+#. * couldn't think of one.
+#. 
 #: src/nemo-properties-window.c:2141
 msgid "Contents:"
 msgstr "مواد:"
 
+#. Translators: "used" refers to the capacity of the filesystem
 #: src/nemo-properties-window.c:2919
 msgid "used"
 msgstr "استعمال شُدہ"
 
+#. Translators: "free" refers to the capacity of the filesystem
 #: src/nemo-properties-window.c:2926
 msgid "free"
 msgstr "خالی"
@@ -1546,6 +1645,9 @@ msgstr "لک_ھیں"
 msgid "E_xecute"
 msgstr "_چلائیں"
 
+#. translators: this gets concatenated to "no read",
+#. * "no access", etc. (see following strings)
+#. 
 #: src/nemo-properties-window.c:3835 src/nemo-properties-window.c:3846
 #: src/nemo-properties-window.c:3858
 msgid "no "
@@ -1786,47 +1888,60 @@ msgstr "منتخب کردہ عناصر بحال کریں"
 msgid "Restore selected items to their original position"
 msgstr "منتخب کردہ عناصر اپنی اصل حالت میں بحال کریں"
 
-#: src/nemo-tree-sidebar.c:788 src/nemo-view.c:8562
+#: src/nemo-tree-sidebar.c:788 src/nemo-view.c:8559
 msgid "Unp_in"
 msgstr ""
 
 #: src/nemo-tree-sidebar.c:790 src/nemo-tree-sidebar.c:1396
-#: src/nemo-view.c:8558
+#: src/nemo-view.c:8555
 msgid "P_in"
 msgstr ""
 
-#: src/nemo-tree-sidebar.c:965 src/nemo-view.c:6821
+#: src/nemo-tree-sidebar.c:965 src/nemo-view.c:6818
 #, c-format
 msgid "\"%s\" will be moved if you select the Paste command"
 msgstr "اگر آپ نے پیسٹ کمانڈ منتخب کی تو \"%s\" کو منتقل کردیا جائے گا"
 
-#: src/nemo-tree-sidebar.c:969 src/nemo-view.c:6825
+#: src/nemo-tree-sidebar.c:969 src/nemo-view.c:6822
 #, c-format
 msgid "\"%s\" will be copied if you select the Paste command"
 msgstr "اگر آپ نے پیسٹ کمانڈ منتخب کی تو \"%s\" کاپی کردیا جائے گا"
 
-#: src/nemo-tree-sidebar.c:1008 src/nemo-view.c:7075
+#: src/nemo-tree-sidebar.c:1008 src/nemo-view.c:7072
 msgid "There is nothing on the clipboard to paste."
 msgstr "کلپ بورڈ میں پیسٹ کرنے کے لیے کچھ نہیں ہے."
 
-#: src/nemo-tree-sidebar.c:1345 src/nemo-view.c:8265
+#. add the "create new folder" menu item
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1345 src/nemo-view.c:8262
 msgid "Create New _Folder"
 msgstr "نیا _فولڈر بنائیں"
 
-#: src/nemo-tree-sidebar.c:1358 src/nemo-view.c:8320 src/nemo-view.c:8473
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1358 src/nemo-view.c:8317 src/nemo-view.c:8470
 msgid "Cu_t"
 msgstr ""
 
-#: src/nemo-tree-sidebar.c:1370 src/nemo-view.c:8324 src/nemo-view.c:8477
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1370 src/nemo-view.c:8321 src/nemo-view.c:8474
 msgid "_Copy"
 msgstr ""
 
-#: src/nemo-tree-sidebar.c:1382 src/nemo-view.c:8334 src/nemo-view.c:8481
+#. We make accelerator "" instead of null here to not inherit the stock
+#. accelerator for paste
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1382 src/nemo-view.c:8331 src/nemo-view.c:8478
 msgid "_Paste Into Folder"
 msgstr "فولڈر کے اندر _پیسٹ کریں"
 
-#: src/nemo-tree-sidebar.c:1426 src/nemo-view.c:8372 src/nemo-view.c:8490
-#: src/nemo-view.c:9876
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1426 src/nemo-view.c:8369 src/nemo-view.c:8487
+#: src/nemo-view.c:9871
 msgid "_Delete"
 msgstr "_حذف"
 
@@ -1878,6 +1993,7 @@ msgstr "تلاش کا _عنوان:"
 msgid "Select Folder to Save Search In"
 msgstr "تلاش محفوظ کرنے کے لیے فولڈر منتخب کریں"
 
+#. Reset to default info
 #: src/nemo-view.c:2643 libnemo-private/nemo-file-undo-operations.c:147
 msgid "Undo"
 msgstr "کالعدم کریں"
@@ -1886,6 +2002,7 @@ msgstr "کالعدم کریں"
 msgid "Undo last action"
 msgstr "آخری عمل کالعدم کریں"
 
+#. Reset to default info
 #: src/nemo-view.c:2662 libnemo-private/nemo-file-undo-operations.c:154
 msgid "Redo"
 msgstr "اعادہ کریں"
@@ -1921,6 +2038,7 @@ msgid_plural " (containing %'d items)"
 msgstr[0] " (%'d عنصر پر مشتمل)"
 msgstr[1] " (%'d عناصر پر مشتمل)"
 
+#. translators: this is preceded with a string of form 'N folders' (N more than 1)
 #: src/nemo-view.c:3143
 #, c-format
 msgid " (containing a total of %'d item)"
@@ -1935,6 +2053,7 @@ msgid_plural "%'d items selected"
 msgstr[0] "%'d عنصر منتخب"
 msgstr[1] "%'d عناصر منتخب"
 
+#. Folders selected also, use "other" terminology
 #: src/nemo-view.c:3167
 #, c-format
 msgid "%'d other item selected"
@@ -1942,6 +2061,11 @@ msgid_plural "%'d other items selected"
 msgstr[0] "%'d دیگر عنصر منتخب کردہ"
 msgstr[1] "%'d دیگر عناصر منتخب کردہ"
 
+#. This is marked for translation in case a localiser
+#. * needs to use something other than parentheses. The
+#. * first message gives the number of items selected;
+#. * the message in parentheses the size of those items.
+#. 
 #: src/nemo-view.c:3184
 #, c-format
 msgid "%s (%s)"
@@ -1959,16 +2083,41 @@ msgstr[1] "%'u عناصر"
 msgid "%s, Free space: %s"
 msgstr "‏%s, خالی جگہ: %s"
 
+#. Marking this for translation, since you
+#. * might want to change "," to something else.
+#. * After the comma the amount of free space will
+#. * be shown.
+#. 
 #: src/nemo-view.c:3223
 #, c-format
 msgid "%s, %s"
 msgstr ""
 
+#. Marking this for translation, since you
+#. * might want to change "," to something else.
+#. * After the comma the amount of free space will
+#. * be shown.
+#. 
+#. This is marked for translation in case a localizer
+#. * needs to change ", " to something else. The comma
+#. * is between the message about the number of folders
+#. * and the number of items in those folders and the
+#. * message about the number of other items and the
+#. * total size of those items.
+#. 
 #: src/nemo-view.c:3242 src/nemo-view.c:3255
 #, c-format
 msgid "%s%s, %s"
 msgstr "%s%s, %s"
 
+#. This is marked for translation in case a localizer
+#. * needs to change ", " to something else. The first comma
+#. * is between the message about the number of folders
+#. * and the number of items in those folders and the
+#. * message about the number of other items and the
+#. * total size of those items. After the second comma
+#. * the free space is written.
+#. 
 #: src/nemo-view.c:3269
 #, c-format
 msgid "%s%s, %s, %s"
@@ -1991,12 +2140,12 @@ msgstr[1] "منتخب کردہ عناصر کو \"%s\" سے کھولیں"
 msgid "Run \"%s\" on any selected items"
 msgstr "کسی بھی منتخب کردہ عناصر پر \"%s\" چلائیں"
 
-#: src/nemo-view.c:6532
+#: src/nemo-view.c:6529
 #, c-format
 msgid "Create a new document from template \"%s\""
 msgstr "سانچہ \"%s\" سے نئی دستاویز بنائیں"
 
-#: src/nemo-view.c:6832
+#: src/nemo-view.c:6829
 #, c-format
 msgid "The %'d selected item will be moved if you select the Paste command"
 msgid_plural ""
@@ -2007,7 +2156,7 @@ msgstr[1] ""
 "اگر آپ پیسٹ کمانڈ منتخب کریں گے تو %'d منتخب کردہ عناصر منتقل کر دیے جائیں "
 "گے۔"
 
-#: src/nemo-view.c:6839
+#: src/nemo-view.c:6836
 #, c-format
 msgid "The %'d selected item will be copied if you select the Paste command"
 msgid_plural ""
@@ -2017,150 +2166,190 @@ msgstr[0] ""
 msgstr[1] ""
 "اگر آپ پیسٹ کمانڈ منتخب کریں گے تو %'d منتخب کردہ عناصر کاپی کر دیے جائیں گے۔"
 
-#: src/nemo-view.c:7009
+#: src/nemo-view.c:7006
 msgid "Select Target Folder For Move"
 msgstr "منتقل کرنے کے لیے ٹارگٹ فولڈر منتخب کریں"
 
-#: src/nemo-view.c:7032
+#: src/nemo-view.c:7029
 msgid "Select Target Folder For Copy"
 msgstr "کاپی کرنے کے لیے ٹارگٹ فولڈر منتخب کریں"
 
-#: src/nemo-view.c:7506
+#: src/nemo-view.c:7503
 msgid "Unable to unmount location"
 msgstr "مقام ان ماؤنٹ کرنے سے قاصر"
 
-#: src/nemo-view.c:7526
+#: src/nemo-view.c:7523
 msgid "Unable to eject location"
 msgstr "مقام خارج سے قاصر"
 
-#: src/nemo-view.c:7541
+#: src/nemo-view.c:7538
 msgid "Unable to stop drive"
 msgstr "ڈرائیو روکنے سے قاصر"
 
-#: src/nemo-view.c:8027
+#: src/nemo-view.c:8024
 #, c-format
 msgid "Connect to Server %s"
 msgstr "سرور %s سے جڑیں"
 
-#: src/nemo-view.c:8032 src/nemo-view.c:9164 src/nemo-view.c:9251
-#: src/nemo-view.c:9355
+#: src/nemo-view.c:8029 src/nemo-view.c:9161 src/nemo-view.c:9248
+#: src/nemo-view.c:9352
 msgid "_Connect"
 msgstr "_جڑیں"
 
-#: src/nemo-view.c:8046
+#: src/nemo-view.c:8043
 msgid "Link _name:"
 msgstr "ربط کا _نام:"
 
-#: src/nemo-view.c:8253
+#. name, stock id, label
+#: src/nemo-view.c:8250
 msgid "Create New _Document"
 msgstr "نئی _دستاویز بنائیں"
 
-#: src/nemo-view.c:8254
+#. name, stock id, label
+#: src/nemo-view.c:8251
 msgid "Open Wit_h"
 msgstr "کھولیں ب_ذریعہ"
 
-#: src/nemo-view.c:8255
+#: src/nemo-view.c:8252
 msgid "Choose a program with which to open the selected item"
 msgstr "منتخب کردہ عنصر کو کھولنے کے لیے کوئی پروگرام منتخب کریں"
 
-#: src/nemo-view.c:8258 src/nemo-view.c:9917
+#. tooltip
+#: src/nemo-view.c:8255 src/nemo-view.c:9912
 msgid "View or modify the properties of each selected item"
 msgstr "ہر منتخب کردہ عنصر کی خصوصیات دیکھیں اور ان کی تدوین کریں"
 
-#: src/nemo-view.c:8266
+#. tooltip
+#: src/nemo-view.c:8263
 msgid "Create a new empty folder inside this folder"
 msgstr "اس فولڈر کے اندر ایک نیا خالی فولڈر بنائیں"
 
-#: src/nemo-view.c:8268
+#. name, stock id, label
+#: src/nemo-view.c:8265
 msgid "No templates installed"
 msgstr "سانچے نصب نہیں ہیں"
 
-#: src/nemo-view.c:8271
+#. name, stock id
+#. translators: this is used to indicate that a document doesn't contain anything
+#. label, accelerator
+#: src/nemo-view.c:8268
 msgid "_Empty Document"
 msgstr "_خالی دستاویز"
 
-#: src/nemo-view.c:8272
+#. tooltip
+#: src/nemo-view.c:8269
 msgid "Create a new empty document inside this folder"
 msgstr "اس فولڈر کے اندر ایک نئی خالی دستاویز بنائیں"
 
-#: src/nemo-view.c:8276
+#. tooltip
+#: src/nemo-view.c:8273
 msgid "Open the selected item in this window"
 msgstr "منتخب کردہ عنصر اس دریچہ میں کھولیں"
 
-#: src/nemo-view.c:8283 src/nemo-view.c:8464
+#. name, stock id
+#. label, accelerator
+#. Location-specific actions
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8280 src/nemo-view.c:8461
 msgid "Open in Navigation Window"
 msgstr "ملاحی دریچے میں کھولیں"
 
-#: src/nemo-view.c:8284
+#. tooltip
+#: src/nemo-view.c:8281
 msgid "Open each selected item in a navigation window"
 msgstr "ہر منتخب کردہ عنصر کو نئے دریچے میں کھولیں"
 
-#: src/nemo-view.c:8288
+#. tooltip
+#: src/nemo-view.c:8285
 msgid "Open each selected item in a new tab"
 msgstr "ہر منتخب کردہ عنصر کو نئے ٹیب میں کھولیں"
 
-#: src/nemo-view.c:8291 src/nemo-window-menus.c:1630
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8288 src/nemo-window-menus.c:1630
 msgid "Open in Terminal"
 msgstr "_ٹرمنل میں کھولیں"
 
-#: src/nemo-view.c:8292
+#. tooltip
+#: src/nemo-view.c:8289
 msgid "Open terminal in the selected folder"
 msgstr "منتخب کردہ فولڈر ٹرمنل میں کھولیں"
 
-#: src/nemo-view.c:8295
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8292
 msgid "Open as Root"
 msgstr "یہ فولڈر بطور _روٹ کھولیں"
 
-#: src/nemo-view.c:8296
+#. tooltip
+#: src/nemo-view.c:8293
 msgid "Open the folder with administration privileges"
 msgstr "فولڈر کو بطور ایڈمینسٹریٹر کھولیں"
 
-#: src/nemo-view.c:8300
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8297
 msgid "Follow link to original file"
 msgstr "ربط سے اصل فائل تک جائیں"
 
-#: src/nemo-view.c:8301
+#. tooltip
+#: src/nemo-view.c:8298
 msgid "Navigate to the original file that this symbolic link points to"
 msgstr ""
 
-#: src/nemo-view.c:8304
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8301
 msgid "Open containing folder"
 msgstr "مُشتمل فولڈر _کھولیں"
 
-#: src/nemo-view.c:8305
+#. tooltip
+#: src/nemo-view.c:8302
 msgid "Navigate to the folder that the selected item is stored in"
 msgstr ""
 
-#: src/nemo-view.c:8308
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8305
 msgid "Other _Application..."
 msgstr "دیگر ا_طلاقیہ..."
 
-#: src/nemo-view.c:8309 src/nemo-view.c:8313
+#. tooltip
+#: src/nemo-view.c:8306 src/nemo-view.c:8310
 msgid "Choose another application with which to open the selected item"
 msgstr "کوئی اور اطلاقیہ منتخب کریں جس سے منتخب کردہ عنصر کو کھولا جاسکے"
 
-#: src/nemo-view.c:8312
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8309
 msgid "Open With Other _Application..."
 msgstr "کسی اور ا_طلاقیے سے کھولیں..."
 
-#: src/nemo-view.c:8321
+#. tooltip
+#: src/nemo-view.c:8318
 msgid "Prepare the selected files to be moved with a Paste command"
 msgstr "منتخب کردہ فائلوں کو پیسٹ کمانڈ سے منتقلی کے لیے تیار کریں"
 
-#: src/nemo-view.c:8325
+#. tooltip
+#: src/nemo-view.c:8322
 msgid "Prepare the selected files to be copied with a Paste command"
 msgstr "منتخب کردہ فائلوں کو پیسٹ کمانڈ سے کاپی کے لیے تیار کریں"
 
-#: src/nemo-view.c:8328
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8325
 msgid "_Paste"
 msgstr ""
 
-#: src/nemo-view.c:8329
+#. tooltip
+#: src/nemo-view.c:8326
 msgid "Move or copy files previously selected by a Cut or Copy command"
 msgstr ""
 "سابقہ منتخب کردہ فائلوں کو کٹ یا کاپی کمانڈ کے ذریعے منتقل یا کاپی کریں"
 
-#: src/nemo-view.c:8335
+#. tooltip
+#: src/nemo-view.c:8332
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into the "
 "selected folder"
@@ -2168,189 +2357,256 @@ msgstr ""
 "سابقہ منتخب کردہ فائلوں کو کٹ یا کاپی کمانڈ کے ذریعے منتخب کردہ فولڈر میں "
 "منتقل یا کاپی کریں"
 
-#: src/nemo-view.c:8337
+#. name, stock id, label
+#: src/nemo-view.c:8334
 msgid "Cop_y to"
 msgstr "_کاپی کریں تا"
 
-#: src/nemo-view.c:8338
+#. name, stock id, label
+#: src/nemo-view.c:8335
 msgid "M_ove to"
 msgstr "_منتقل کریں تا"
 
-#: src/nemo-view.c:8340 libnemo-private/nemo-clipboard.c:444
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8337 libnemo-private/nemo-clipboard.c:444
 msgid "Select _All"
 msgstr "م_نتخب تمام"
 
-#: src/nemo-view.c:8341
+#. tooltip
+#: src/nemo-view.c:8338
 msgid "Select all items in this window"
 msgstr "اس دریچے کے تمام عناصر منتخب کریں"
 
-#: src/nemo-view.c:8344
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8341
 msgid "Select I_tems Matching..."
 msgstr "لا_حقوں سے انتخاب..."
 
-#: src/nemo-view.c:8345
+#. tooltip
+#: src/nemo-view.c:8342
 msgid "Select items in this window matching a given pattern"
 msgstr "اس دریچے میں فائلیں لاحقوں کے اعتبار سے منتخب کریں"
 
-#: src/nemo-view.c:8348
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8345
 msgid "_Invert Selection"
 msgstr "انتخاب -معکوس کریں"
 
-#: src/nemo-view.c:8349
+#. tooltip
+#: src/nemo-view.c:8346
 msgid "Select all and only the items that are not currently selected"
 msgstr "اس وقت غیر منتخب کردہ تمام عناصر منتخب کرین"
 
-#: src/nemo-view.c:8352
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8349
 msgid "D_uplicate"
 msgstr "_نقل بنائیں"
 
-#: src/nemo-view.c:8353
+#. tooltip
+#: src/nemo-view.c:8350
 msgid "Duplicate each selected item"
 msgstr "ہر منتخب کردہ عنصر کی نقل بنائیں"
 
-#: src/nemo-view.c:8356 src/nemo-view.c:9902
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8353 src/nemo-view.c:9897
 msgid "Ma_ke Link"
 msgid_plural "Ma_ke Links"
 msgstr[0] "ربط _بنائیں"
 msgstr[1] "روابط _بنائیں"
 
-#: src/nemo-view.c:8357
+#. tooltip
+#: src/nemo-view.c:8354
 msgid "Create a symbolic link for each selected item"
 msgstr "ہر منتخب کردہ عنصر کا علامتی ربط بنائیں"
 
-#: src/nemo-view.c:8360
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8357
 msgid "_Rename..."
 msgstr "_نام بدلیں..."
 
-#: src/nemo-view.c:8361
+#. tooltip
+#: src/nemo-view.c:8358
 msgid "Rename selected item"
 msgstr "منتخب کردہ عنصر کا نام تبدیل کریں"
 
-#: src/nemo-view.c:8369 src/nemo-view.c:9854
+#. tooltip
+#: src/nemo-view.c:8366 src/nemo-view.c:9849
 msgid "Move each selected item to the Trash"
 msgstr "ہر منتخب کردہ عنصر کو ردی میں منتقل کریں"
 
-#: src/nemo-view.c:8373 src/nemo-view.c:9877
+#. tooltip
+#: src/nemo-view.c:8370 src/nemo-view.c:9872
 msgid "Delete each selected item, without moving to the Trash"
 msgstr "ہر منتخب کردہ عنصر کو بغیر ردی میں منتقل کیے حذف کریں"
 
-#: src/nemo-view.c:8376 src/nemo-view.c:8494
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8373 src/nemo-view.c:8491
 msgid "_Restore"
 msgstr "_بحال کریں"
 
-#: src/nemo-view.c:8380 src/nemo-window-menus.c:1291
+#. name, stock id
+#. label, accelerator
+#. name, stock id, label
+#: src/nemo-view.c:8377 src/nemo-window-menus.c:1291
 msgid "_Undo"
 msgstr "_کالعدم کریں"
 
-#: src/nemo-view.c:8381
+#. tooltip
+#: src/nemo-view.c:8378
 msgid "Undo the last action"
 msgstr "آخری عمل کالعدم کریں"
 
-#: src/nemo-view.c:8384
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8381
 msgid "_Redo"
 msgstr "ا_عادہ کریں"
 
-#: src/nemo-view.c:8385
+#. tooltip
+#: src/nemo-view.c:8382
 msgid "Redo the last undone action"
 msgstr "آخری کالعدم کیا گئے عمل کا اعادہ کریں"
 
-#: src/nemo-view.c:8394
+#. 
+#. * multiview-TODO: decide whether "Reset to Defaults" should
+#. * be window-wide, and not just view-wide.
+#. * Since this also resets the "Show hidden files" mode,
+#. * it is a mixture of both ATM.
+#. 
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8391
 msgid "Reset View to _Defaults"
 msgstr "منظر _ کو طے شدہ پر بحال کریں"
 
-#: src/nemo-view.c:8395
+#. tooltip
+#: src/nemo-view.c:8392
 msgid "Reset sorting order and zoom level to match preferences for this view"
 msgstr "ترتیب اور تقارب کا درجہ اس منظر کی ترجیحات پر لائیں"
 
-#: src/nemo-view.c:8398
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8395
 msgid "Connect To This Server"
 msgstr "اس سرور سے جڑیں"
 
-#: src/nemo-view.c:8399
+#. tooltip
+#: src/nemo-view.c:8396
 msgid "Make a permanent connection to this server"
 msgstr "اس سرور سے مستقل اتصال بنائیں"
 
-#: src/nemo-view.c:8403
+#. tooltip
+#: src/nemo-view.c:8400
 msgid "Mount the selected volume"
 msgstr "منتخب کردہ والیم کو ماؤنٹ کریں"
 
-#: src/nemo-view.c:8407
+#. tooltip
+#: src/nemo-view.c:8404
 msgid "Unmount the selected volume"
 msgstr "منتخب کردہ والیم کو ان ماؤنٹ کریں"
 
-#: src/nemo-view.c:8411
+#. tooltip
+#: src/nemo-view.c:8408
 msgid "Eject the selected volume"
 msgstr "منتخب کردہ والیم کو نکالیں"
 
-#: src/nemo-view.c:8415
+#. tooltip
+#: src/nemo-view.c:8412
 msgid "Start the selected volume"
 msgstr "منتخب کردہ والیم کو چلائیں"
 
-#: src/nemo-view.c:8419 src/nemo-view.c:9377
+#. tooltip
+#: src/nemo-view.c:8416 src/nemo-view.c:9374
 msgid "Stop the selected volume"
 msgstr "منتخب کردہ والیم کو روکیں"
 
-#: src/nemo-view.c:8423 src/nemo-view.c:8447 src/nemo-view.c:8519
+#. tooltip
+#: src/nemo-view.c:8420 src/nemo-view.c:8444 src/nemo-view.c:8516
 msgid "Detect media in the selected drive"
 msgstr "منتخب کردہ ڈرائیو میں میڈیا دریافت کریں"
 
-#: src/nemo-view.c:8427
+#. tooltip
+#: src/nemo-view.c:8424
 msgid "Mount the volume associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ والیم کو ماؤنٹ کریں"
 
-#: src/nemo-view.c:8431
+#. tooltip
+#: src/nemo-view.c:8428
 msgid "Unmount the volume associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ والیم کو ان ماؤنٹ کریں"
 
-#: src/nemo-view.c:8435
+#. tooltip
+#: src/nemo-view.c:8432
 msgid "Eject the volume associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ والیم کو نکالیں"
 
-#: src/nemo-view.c:8439
+#. tooltip
+#: src/nemo-view.c:8436
 msgid "Start the volume associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ والیم کو چلائیں"
 
-#: src/nemo-view.c:8443
+#. tooltip
+#: src/nemo-view.c:8440
 msgid "Stop the volume associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ والیم کو روکیں"
 
-#: src/nemo-view.c:8450
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8447
 msgid "Open File and Close window"
 msgstr "فائل کھولیں اور دریچہ بند کریں"
 
-#: src/nemo-view.c:8454
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8451
 msgid "Sa_ve Search"
 msgstr "تلاش م_حفوظ کریں"
 
-#: src/nemo-view.c:8455
+#. tooltip
+#: src/nemo-view.c:8452
 msgid "Save the edited search"
 msgstr "تدوین کردہ تلاش محفوظ کریں"
 
-#: src/nemo-view.c:8458
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8455
 msgid "Sa_ve Search As..."
 msgstr "تلاش مح_فوظ کریں بنام..."
 
-#: src/nemo-view.c:8459
+#. tooltip
+#: src/nemo-view.c:8456
 msgid "Save the current search as a file"
 msgstr "حالیہ تلاش بطور فائل محفوظ کریں"
 
-#: src/nemo-view.c:8465
+#. tooltip
+#: src/nemo-view.c:8462
 msgid "Open this folder in a navigation window"
 msgstr "یہ فولڈر نیویگیشن ونڈو میں کھولیں"
 
-#: src/nemo-view.c:8469
+#. tooltip
+#: src/nemo-view.c:8466
 msgid "Open this folder in a new tab"
 msgstr "یہ فولڈر نئے ٹیب میں کھولیں"
 
-#: src/nemo-view.c:8474
+#. tooltip
+#: src/nemo-view.c:8471
 msgid "Prepare this folder to be moved with a Paste command"
 msgstr "اس فولڈر کو پیسٹ کمانڈ کے ذریعے منتقل ہونے کے لیے تیار کریں"
 
-#: src/nemo-view.c:8478
+#. tooltip
+#: src/nemo-view.c:8475
 msgid "Prepare this folder to be copied with a Paste command"
 msgstr "اس فولڈر کو پیسٹ کمانڈ کے ذریعے کاپی ہونے کے لیے تیار کریں"
 
-#: src/nemo-view.c:8482
+#. tooltip
+#: src/nemo-view.c:8479
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into this "
 "folder"
@@ -2358,285 +2614,304 @@ msgstr ""
 "سابقہ منتخب کردہ فائلوں کو کٹ یا کاپی کمانڈ کے ذریعے اس فولڈر میں منتقل یا "
 "کاپی کریں"
 
-#: src/nemo-view.c:8487
+#. tooltip
+#: src/nemo-view.c:8484
 msgid "Move this folder to the Trash"
 msgstr "یہ فولڈر ردی میں منتقل کریں"
 
-#: src/nemo-view.c:8491
+#. tooltip
+#: src/nemo-view.c:8488
 msgid "Delete this folder, without moving to the Trash"
 msgstr "یہ فولڈر ردی میں منتقل کیے بغیر حذف کریں"
 
-#: src/nemo-view.c:8499
+#. tooltip
+#: src/nemo-view.c:8496
 msgid "Mount the volume associated with this folder"
 msgstr "اس فولڈر سے متعلقہ والیم کو ماؤنٹ کریں"
 
-#: src/nemo-view.c:8503
+#. tooltip
+#: src/nemo-view.c:8500
 msgid "Unmount the volume associated with this folder"
 msgstr "اس فولڈر سے متعلقہ والیم کو ان ماؤنٹ کریں"
 
-#: src/nemo-view.c:8507
+#. tooltip
+#: src/nemo-view.c:8504
 msgid "Eject the volume associated with this folder"
 msgstr "اس فولڈر سے متعلقہ والیم کو نکالیں"
 
-#: src/nemo-view.c:8511
+#. tooltip
+#: src/nemo-view.c:8508
 msgid "Start the volume associated with this folder"
 msgstr "اس فولڈر سے متعلقہ والیم کو چلائیں"
 
-#: src/nemo-view.c:8515
+#. tooltip
+#: src/nemo-view.c:8512
 msgid "Stop the volume associated with this folder"
 msgstr "اس فولڈر سے متعلقہ والیم کو روکیں"
 
-#: src/nemo-view.c:8524
+#. tooltip
+#: src/nemo-view.c:8521
 msgid "View or modify the properties of this folder"
 msgstr "اس فولڈر کی خصوصیات دیکھیں یا مدون کریں"
 
-#: src/nemo-view.c:8527 src/nemo-view.c:8530
+#. name, stock id, label
+#: src/nemo-view.c:8524 src/nemo-view.c:8527
 msgid "_Other pane"
 msgstr "_دوسرا جھروکا"
 
-#: src/nemo-view.c:8528
+#: src/nemo-view.c:8525
 msgid "Copy the current selection to the other pane in the window"
 msgstr "انتخاب اس دریچے کے دوسرے جھروکے میں کاپی کریں"
 
-#: src/nemo-view.c:8531
+#: src/nemo-view.c:8528
 msgid "Move the current selection to the other pane in the window"
 msgstr "انتخاب اس دریچے کے دوسرے جھروکے میں منتقل کریں"
 
-#: src/nemo-view.c:8534 src/nemo-view.c:8538 src/nemo-window-menus.c:1366
+#. name, stock id, label
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8531 src/nemo-view.c:8535 src/nemo-window-menus.c:1366
 #: src/nemo-window-menus.c:1580 src/nemo-window-menus.c:1818
 msgid "_Home"
 msgstr "_گھر"
 
-#: src/nemo-view.c:8535
+#: src/nemo-view.c:8532
 msgid "Copy the current selection to the home folder"
 msgstr "حالیہ انتخاب گھر کے فولڈر میں کاپی کریں"
 
-#: src/nemo-view.c:8539
+#: src/nemo-view.c:8536
 msgid "Move the current selection to the home folder"
 msgstr "حالیہ انتخاب گھر کے فولڈر میں منتقل کریں"
 
-#: src/nemo-view.c:8542 src/nemo-view.c:8546
+#. name, stock id, label
+#: src/nemo-view.c:8539 src/nemo-view.c:8543
 msgid "_Desktop"
 msgstr "_ڈیسک ٹاپ"
 
-#: src/nemo-view.c:8543
+#: src/nemo-view.c:8540
 msgid "Copy the current selection to the desktop"
 msgstr "حالیہ انتخاب ڈیسک ٹاپ پر کاپی کریں"
 
-#: src/nemo-view.c:8547
+#: src/nemo-view.c:8544
 msgid "Move the current selection to the desktop"
 msgstr "حالیہ انتخاب ڈیسک ٹاپ پر منتقل کریں"
 
-#: src/nemo-view.c:8550 src/nemo-view.c:8554
+#: src/nemo-view.c:8547 src/nemo-view.c:8551
 msgid "Browse…"
 msgstr "انتخاب..."
 
-#: src/nemo-view.c:8551
+#: src/nemo-view.c:8548
 msgid "Browse for a folder to move the selection to"
 msgstr "منتخب کردہ چیزوں کو منتقل کرنے کے لیے فولڈر کا انتخاب کریں"
 
-#: src/nemo-view.c:8555
+#: src/nemo-view.c:8552
 msgid "Browse for a folder to copy the selection to"
 msgstr "منتخب کردہ چیزوں کو کاپی کرنے کے لیے فولڈر کا انتخاب کریں"
 
-#: src/nemo-view.c:8559
+#: src/nemo-view.c:8556
 msgid ""
 "Pin the selected file so it always appears at the top of this location's "
 "file list"
 msgstr ""
 
-#: src/nemo-view.c:8563
+#: src/nemo-view.c:8560
 msgid "Unpin the selected file from the top of this location's file list"
 msgstr ""
 
-#: src/nemo-view.c:8638
+#: src/nemo-view.c:8635
 msgid "Run scripts"
 msgstr "سکرپٹ چلائیں"
 
-#: src/nemo-view.c:8640
+#. Create a script action here specially because its tooltip is dynamic
+#: src/nemo-view.c:8637
 msgid "_Scripts"
 msgstr "_سکرپٹس"
 
-#: src/nemo-view.c:9013
+#: src/nemo-view.c:9010
 #, c-format
 msgid "Move the open folder out of the trash to \"%s\""
 msgstr "کھلے فولڈر کو ردی سے باہر منتقل کریں تا \"%s\""
 
-#: src/nemo-view.c:9016
+#: src/nemo-view.c:9013
 #, c-format
 msgid "Move the selected folder out of the trash to \"%s\""
 msgid_plural "Move the selected folders out of the trash to \"%s\""
 msgstr[0] "منتخب کردہ فولڈر ردی سے باہر نکال کر \"%s\" میں منتقل کریں"
 msgstr[1] "منتخب کردہ فولڈرز ردی سے باہر نکال کر \"%s\" میں منتقل کریں"
 
-#: src/nemo-view.c:9020
+#: src/nemo-view.c:9017
 msgid "Move the selected folder out of the trash"
 msgid_plural "Move the selected folders out of the trash"
 msgstr[0] "منتخب کردہ فولڈر ردی سے باہر نکالیں"
 msgstr[1] "منتخب کردہ فولڈرز ردی سے باہر نکالیں"
 
-#: src/nemo-view.c:9026
+#: src/nemo-view.c:9023
 #, c-format
 msgid "Move the selected file out of the trash to \"%s\""
 msgid_plural "Move the selected files out of the trash to \"%s\""
 msgstr[0] "منتخب کردہ فائل ردی سے \"%s\" میں منتقل کریں"
 msgstr[1] "منتخب کردہ فائلیں ردی سے \"%s\" میں منتقل کریں"
 
-#: src/nemo-view.c:9030
+#: src/nemo-view.c:9027
 msgid "Move the selected file out of the trash"
 msgid_plural "Move the selected files out of the trash"
 msgstr[0] "منتخب کردہ فائل ردی سے باہر نکالیں"
 msgstr[1] "منتخب کردہ فائلیں ردی سے باہر نکالیں"
 
-#: src/nemo-view.c:9036
+#: src/nemo-view.c:9033
 #, c-format
 msgid "Move the selected item out of the trash to \"%s\""
 msgid_plural "Move the selected items out of the trash to \"%s\""
 msgstr[0] "منتخب کردہ عنصر کو ردی سے \"%s\" میں منتقل کریں"
 msgstr[1] "منتخب کردہ عناصر کو ردی سے \"%s\" میں منتقل کریں"
 
-#: src/nemo-view.c:9040
+#: src/nemo-view.c:9037
 msgid "Move the selected item out of the trash"
 msgid_plural "Move the selected items out of the trash"
 msgstr[0] "منتخب کردہ عنصر کو ردی سے باہر نکالیں"
 msgstr[1] "منتخب کردہ عناصر کو ردی سے باہر نکالیں"
 
-#: src/nemo-view.c:9157 src/nemo-view.c:9161 src/nemo-view.c:9348
-#: src/nemo-view.c:9352
+#: src/nemo-view.c:9154 src/nemo-view.c:9158 src/nemo-view.c:9345
+#: src/nemo-view.c:9349
 msgid "Start the selected drive"
 msgstr "منتخب کردہ ڈرائیو چلائیں"
 
-#: src/nemo-view.c:9165 src/nemo-view.c:9356
+#: src/nemo-view.c:9162 src/nemo-view.c:9353
 msgid "Connect to the selected drive"
 msgstr "منتخب کردہ ڈرائیو سے جڑیں"
 
-#: src/nemo-view.c:9168 src/nemo-view.c:9255 src/nemo-view.c:9359
+#: src/nemo-view.c:9165 src/nemo-view.c:9252 src/nemo-view.c:9356
 msgid "_Start Multi-disk Drive"
 msgstr "متعدد ڈسک-ڈرائیو _چلائیں"
 
-#: src/nemo-view.c:9169 src/nemo-view.c:9360
+#: src/nemo-view.c:9166 src/nemo-view.c:9357
 msgid "Start the selected multi-disk drive"
 msgstr "منتخب کردہ متعدد-ڈسک ڈرائیو چلائیں"
 
-#: src/nemo-view.c:9172
+#: src/nemo-view.c:9169
 msgid "U_nlock Drive"
 msgstr "ڈرائیو غیر _مقفل کریں"
 
-#: src/nemo-view.c:9173 src/nemo-view.c:9364
+#: src/nemo-view.c:9170 src/nemo-view.c:9361
 msgid "Unlock the selected drive"
 msgstr "منتخب کردہ ڈرائیو غیر مقفل کریں"
 
-#: src/nemo-view.c:9186
+#: src/nemo-view.c:9183
 msgid "Stop the selected drive"
 msgstr "منتخب کردہ ڈرائیو روکیں"
 
-#: src/nemo-view.c:9190 src/nemo-view.c:9381
+#: src/nemo-view.c:9187 src/nemo-view.c:9378
 msgid "Safely remove the selected drive"
 msgstr "منتخب کردہ ڈرائیو محفوظ طریقے سے نکالیں"
 
-#: src/nemo-view.c:9193 src/nemo-view.c:9280 src/nemo-view.c:9384
+#: src/nemo-view.c:9190 src/nemo-view.c:9277 src/nemo-view.c:9381
 msgid "_Disconnect"
 msgstr "رابطہ منقطع کریں"
 
-#: src/nemo-view.c:9194 src/nemo-view.c:9385
+#: src/nemo-view.c:9191 src/nemo-view.c:9382
 msgid "Disconnect the selected drive"
 msgstr "منتخب کردہ ڈرائیو غیر منسلک کریں"
 
-#: src/nemo-view.c:9197 src/nemo-view.c:9284 src/nemo-view.c:9388
+#: src/nemo-view.c:9194 src/nemo-view.c:9281 src/nemo-view.c:9385
 msgid "_Stop Multi-disk Drive"
 msgstr "متعدد-ڈسک ڈرائیو ر_وکیں"
 
-#: src/nemo-view.c:9198 src/nemo-view.c:9389
+#: src/nemo-view.c:9195 src/nemo-view.c:9386
 msgid "Stop the selected multi-disk drive"
 msgstr "منتخب کردہ متعدد-ڈسک ڈرائیو روکیں"
 
-#: src/nemo-view.c:9202 src/nemo-view.c:9393
+#: src/nemo-view.c:9199 src/nemo-view.c:9390
 msgid "Lock the selected drive"
 msgstr "منتخب کردہ ڈرائیو مقفل کریں"
 
-#: src/nemo-view.c:9244 src/nemo-view.c:9248
+#: src/nemo-view.c:9241 src/nemo-view.c:9245
 msgid "Start the drive associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ ڈرائیو چلائیں"
 
-#: src/nemo-view.c:9252
+#: src/nemo-view.c:9249
 msgid "Connect to the drive associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ ڈرائیو سے جڑیں"
 
-#: src/nemo-view.c:9256
+#: src/nemo-view.c:9253
 msgid "Start the multi-disk drive associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ متعدد-ڈسک ڈرائیو چلائیں"
 
-#: src/nemo-view.c:9260
+#: src/nemo-view.c:9257
 msgid "Unlock the drive associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ ڈرائیو غیر مقفل کریں"
 
-#: src/nemo-view.c:9273
+#: src/nemo-view.c:9270
 msgid "_Stop the drive associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ ڈرائیو _روکیں"
 
-#: src/nemo-view.c:9277
+#: src/nemo-view.c:9274
 msgid "Safely remove the drive associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ ڈرائیو محفوظ طریقے سے نکالیں"
 
-#: src/nemo-view.c:9281
+#: src/nemo-view.c:9278
 msgid "Disconnect the drive associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ ڈرائیو غیر منسلک کریں"
 
-#: src/nemo-view.c:9285
+#: src/nemo-view.c:9282
 msgid "Stop the multi-disk drive associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ متعدد-ڈسک ڈرائیو روکیں"
 
-#: src/nemo-view.c:9289
+#: src/nemo-view.c:9286
 msgid "Lock the drive associated with the open folder"
 msgstr "کھلے فولڈر سے متعلقہ ڈرائیو مقفل کریں"
 
-#: src/nemo-view.c:9529 src/nemo-view.c:9849
+#: src/nemo-view.c:9526 src/nemo-view.c:9844
 msgid "_Delete Permanently"
 msgstr "ہمیشہ کے لیے _حذف کریں"
 
-#: src/nemo-view.c:9530
+#: src/nemo-view.c:9527
 msgid "Delete the open folder permanently"
 msgstr "کھلا فولڈر ہمیشہ کے لیے حذف کریں"
 
-#: src/nemo-view.c:9534
+#: src/nemo-view.c:9531
 msgid "Move the open folder to the Trash"
 msgstr "کھلا فولڈر ردی میں منتقل کریں"
 
-#: src/nemo-view.c:9763
+#: src/nemo-view.c:9758
 #, c-format
 msgid "_Open With %s"
 msgstr "_کھولیں بذریعہ %s"
 
-#: src/nemo-view.c:9812
+#: src/nemo-view.c:9807
 #, c-format
 msgid "Open in %'d New _Window"
 msgid_plural "Open in %'d New _Windows"
 msgstr[0] "%'d نئی _ونڈو میں کھولیں"
 msgstr[1] "%'d نئی _ونڈوز میں کھولیں"
 
-#: src/nemo-view.c:9832
+#: src/nemo-view.c:9827
 #, c-format
 msgid "Open in %'d New _Tab"
 msgid_plural "Open in %'d New _Tabs"
 msgstr[0] "%'d نئے _ٹیب میں کھولیں"
 msgstr[1] "%'d نئے _ٹیبز میں کھولیں"
 
-#: src/nemo-view.c:9850
+#: src/nemo-view.c:9845
 msgid "Delete all selected items permanently"
 msgstr "تمام منتخب کردہ عناصر مستقل طور پر حذف کردیں"
 
-#: src/nemo-view.c:9873
+#: src/nemo-view.c:9868
 msgid "Remo_ve from Recent"
 msgstr "حالیہ سے _ہٹائیں"
 
-#: src/nemo-view.c:9874
+#: src/nemo-view.c:9869
 msgid "Remove each selected item from the recently used list"
 msgstr "ہر منتخب کردہ عنصر کو حالیہ استعمال کردہ فہرست سے ہٹا دیں"
 
-#: src/nemo-view.c:9915
+#: src/nemo-view.c:9910
 msgid "View or modify the properties of the open folder"
 msgstr "کھلے فولڈر کی خصوصیات دیکھیں یا انہیں مدون کریں"
 
+#. Note to localizers: convert file type string for file
+#. * (e.g. "folder", "plain text") to file type for symbolic link
+#. * to that kind of file (e.g. "link to folder").
+#. 
+#. appended to new link file
 #: src/nemo-view-dnd.c:125 libnemo-private/nemo-file.c:6861
 #: libnemo-private/nemo-file-operations.c:393
 #, c-format
@@ -2655,10 +2930,14 @@ msgstr "گھسیٹنے اور چھوڑنے کی معاونت صرف مقامی �
 msgid "An invalid drag type was used."
 msgstr "گھسیٹنے کی ناموزوں نوعیت استعمال کی گئی تھی."
 
+#. Translator: This is the filename used for when you dnd text to a directory
 #: src/nemo-view-dnd.c:376
 msgid "dropped text.txt"
 msgstr "چھوڑی گئی text.txt"
 
+#. Translator: This is the filename used for when you dnd raw
+#. * data to a directory, if the source didn't supply a name.
+#. 
 #: src/nemo-view-dnd.c:421
 msgid "dropped data"
 msgstr "چھوڑا گیا ڈیٹا"
@@ -2689,6 +2968,7 @@ msgstr "اس بک مارک کے متعین کردہ مقام پر جائیں"
 msgid "%s - File Browser"
 msgstr "‏%s - فائل براؤزر"
 
+#. Set initial window title
 #: src/nemo-window.c:1966 src/nemo-window-menus.c:339
 msgid "Nemo"
 msgstr "نیمو"
@@ -2739,6 +3019,11 @@ msgstr "مقام کو ماؤنٹ کرنے سے قاصر."
 msgid "Access was denied."
 msgstr "رسائی روک دی گئی."
 
+#. This case can be hit for user-typed strings like "foo" due to
+#. * the code that guesses web addresses when there's no initial "/".
+#. * But this case is also hit for legitimate web addresses when
+#. * the proxy is set up wrong.
+#. 
 #: src/nemo-window-manage-views.c:1756
 #, c-format
 msgid "Could not display \"%s\", because the host could not be found."
@@ -2809,26 +3094,33 @@ msgstr ""
 "ہدایات ظاہر کرنے میں غلطی: \n"
 "‏%s"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1274
 msgid "_File"
 msgstr "_فائل"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1275
 msgid "_Edit"
 msgstr "_ترمیم"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1276
 msgid "_View"
 msgstr "_منظر"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1277
 msgid "_Help"
 msgstr "_ہدایات"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1279
 msgid "_Close"
 msgstr "_بند کریں"
 
+#. tooltip
 #: src/nemo-window-menus.c:1280
 msgid "Close this folder"
 msgstr "یہ فولڈر بند کریں"
@@ -2854,6 +3146,7 @@ msgstr "ایکس ٹینشن کا انتظام، ایکشن اور سکرپٹ"
 msgid "Undo the last text change"
 msgstr "متن کی آخری تبدیلی کالعدم کریں"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1295
 msgid "Open _Parent"
 msgstr "_آبائی کھولیں"
@@ -2862,22 +3155,29 @@ msgstr "_آبائی کھولیں"
 msgid "Open the parent folder"
 msgstr "آبائی فولڈر کھولیں"
 
+#. tooltip
 #: src/nemo-window-menus.c:1303
 msgid "Stop loading the current location"
 msgstr "حالیہ مقام کے لوڈ کرنے کا عمل روکیں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1306 src/nemo-window-menus.c:1566
 msgid "_Reload"
 msgstr "دوبارہ لوڈ کریں"
 
+#. tooltip
 #: src/nemo-window-menus.c:1307 src/nemo-window-menus.c:1568
 msgid "Reload the current location"
 msgstr "حالیہ مقام کو دوبارہ لوڈ کریں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1310
 msgid "_All Topics"
 msgstr "_تمام موضوعات"
 
+#. tooltip
 #: src/nemo-window-menus.c:1311
 msgid "Display Nemo help"
 msgstr "نیمو کے بارے میں مدد حاصل کریں"
@@ -2890,95 +3190,143 @@ msgstr ""
 msgid "Display keyboard shortcuts"
 msgstr ""
 
+#. * name, stock id          { "NemoHelpSearch", NULL,
+#. label, accelerator        N_("Search for files"), NULL,
+#. tooltip                   N_("Locate files based on file name and type. Save your searches for later use."),
+#. G_CALLBACK (action_nemo_manual_callback) },
+#. name, stock id          { "NemoHelpSort", NULL,
+#. label, accelerator        N_("Sort files and folders"), NULL,
+#. tooltip                   N_("Arrange files by name, size, type, or when they were changed."),
+#. G_CALLBACK (action_nemo_manual_callback) },
+#. name, stock id          { "NemoHelpLost", NULL,
+#. label, accelerator        N_("Find a lost file"), NULL,
+#. tooltip                   N_("Follow these tips if you can't find a file you created or downloaded."),
+#. G_CALLBACK (action_nemo_manual_callback) },
+#. name, stock id          { "NemoHelpShare", NULL,
+#. label, accelerator        N_("Share and transfer files"), NULL,
+#. tooltip                   N_("Easily transfer files to your contacts and devices from the file manager."),
+#. G_CALLBACK (action_nemo_manual_callback) }, *
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1334
 msgid "_About"
 msgstr "_متعلق"
 
+#. tooltip
 #: src/nemo-window-menus.c:1335
 msgid "Display credits for the creators of Nemo"
 msgstr "نیمو کے بنانے والوں کے بارے میں جانیں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1338
 msgid "Zoom _In"
 msgstr "_اندر زوم کریں"
 
+#. tooltip
 #: src/nemo-window-menus.c:1339
 msgid "Increase the view size"
 msgstr "منظر کا حجم بڑھائیں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1350
 msgid "Zoom _Out"
 msgstr "_دور کریں"
 
+#. tooltip
 #: src/nemo-window-menus.c:1351
 msgid "Decrease the view size"
 msgstr "منظر کا حجم گھٹائیں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1358
 msgid "Normal Si_ze"
 msgstr "_عام حجم"
 
+#. tooltip
 #: src/nemo-window-menus.c:1359
 msgid "Use the normal view size"
 msgstr "منظر کا عام حجم استعمال کریں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1362
 msgid "Connect to _Server..."
 msgstr "_سرور سے جڑیں..."
 
+#. tooltip
 #: src/nemo-window-menus.c:1363
 msgid "Connect to a remote computer or shared disk"
 msgstr "کسی ریموٹ کمپیوٹر یا شیئر کردہ ڈسک سے جڑیں"
 
+#. tooltip
 #: src/nemo-window-menus.c:1367
 msgid "Open your personal folder"
 msgstr "اپنا ذاتی فولڈر کھولیں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1370 src/nemo-window-menus.c:1594
 msgid "_Computer"
 msgstr "_کمپیوٹر"
 
+#. tooltip
 #: src/nemo-window-menus.c:1371
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr "اس کمپیوٹر سے قابلِ رسائی تمام مقامی اور بعید ڈسک اور فولڈر دیکھیں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1374
 msgid "_Network"
 msgstr "_نیٹ ورک"
 
+#. tooltip
 #: src/nemo-window-menus.c:1375
 msgid "Browse bookmarked and local network locations"
 msgstr "بک مارک شدہ اور مقامی نیٹ ورک مقامات دیکھیں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1378
 msgid "T_emplates"
 msgstr "_سانچے"
 
+#. tooltip
 #: src/nemo-window-menus.c:1379
 msgid "Open your personal templates folder"
 msgstr "اپنا ذاتی سانچوں کا فولڈر کھولیں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1382
 msgid "_Trash"
 msgstr "_ردی"
 
+#. tooltip
 #: src/nemo-window-menus.c:1383
 msgid "Open your personal trash folder"
 msgstr "اپنی ذاتی ردی کا فولڈر کھولیں"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1385
 msgid "_Go"
 msgstr "_جائیں"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1386
 msgid "_Bookmarks"
 msgstr "_بک مارکس"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1387
 msgid "_Tabs"
 msgstr "_ٹیب"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1388
 msgid "New _Window"
 msgstr "نیا _دریچہ"
@@ -2987,6 +3335,7 @@ msgstr "نیا _دریچہ"
 msgid "Open another Nemo window for the displayed location"
 msgstr "یہ مقام نیمو کے نئے دریچے میں کھولیں"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1391
 msgid "New _Tab"
 msgstr "نیا _ٹیب"
@@ -2995,6 +3344,7 @@ msgstr "نیا _ٹیب"
 msgid "Open another tab for the displayed location"
 msgstr "اس مقام کو نئے ٹیب میں کھولیں"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1394
 msgid "Close _All Windows"
 msgstr "ت_مام دریچے بند کریں"
@@ -3003,6 +3353,7 @@ msgstr "ت_مام دریچے بند کریں"
 msgid "Close all Navigation windows"
 msgstr "تمام نیویگیشن دریچے بند کریں"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1397 src/nemo-window-menus.c:1516
 msgid "_Back"
 msgstr "_پیچھے"
@@ -3011,6 +3362,7 @@ msgstr "_پیچھے"
 msgid "Go to the previous visited location"
 msgstr "سابقہ دیکھے گئے مقام پر جائیں"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1400 src/nemo-window-menus.c:1532
 msgid "_Forward"
 msgstr "_آگے"
@@ -3019,6 +3371,7 @@ msgstr "_آگے"
 msgid "Go to the next visited location"
 msgstr "اگلے دیکھے گئے مقام پر جائیں"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1403
 msgid "Toggle _Location Entry"
 msgstr "مقام _اندراج ٹاگل کریں"
@@ -3027,6 +3380,7 @@ msgstr "مقام _اندراج ٹاگل کریں"
 msgid "Switch between location entry and breadcrumbs"
 msgstr ""
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1406
 msgid "S_witch to Other Pane"
 msgstr "دوسرے جھروکے میں منت_قل ہوں"
@@ -3035,6 +3389,7 @@ msgstr "دوسرے جھروکے میں منت_قل ہوں"
 msgid "Move focus to the other pane in a split view window"
 msgstr "تقسیم شدہ دریچے میں توجہ دوسرے جھروکے میں منتقل کریں"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1409
 msgid "Sa_me Location as Other Pane"
 msgstr "ی_ہی مقام بطور دوسرا جھروکا"
@@ -3047,6 +3402,7 @@ msgstr "ویسے ہی مقام پر جائیں جیسا کہ اضافی جھرو
 msgid "Add a bookmark for the current location to this menu"
 msgstr "حالیہ مقام کا پسندیدہ اس فہرست میں شامل کریں"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1415
 msgid "_Edit Bookmarks..."
 msgstr "بک مارکس کی _ترمیم کریں..."
@@ -3092,74 +3448,109 @@ msgstr "حالیہ ٹیب کو دائیں طرف منتقل کریں"
 msgid "Sidebar"
 msgstr "سائڈبار"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1435
 msgid "Show _Hidden Files"
 msgstr "_پوشیدہ فائلیں ظاہر کریں"
 
+#. tooltip
 #: src/nemo-window-menus.c:1436
 msgid "Toggle the display of hidden files in the current window"
 msgstr "حالیہ دریچے میں پوشیدہ فائلیں ظاہر کریں"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1440
 msgid "_Main Toolbar"
 msgstr "_مرکزی _ٹول بار"
 
+#. tooltip
 #: src/nemo-window-menus.c:1441
 msgid "Change the visibility of this window's main toolbar"
 msgstr "اس دریچے کی مرکزی اوزار پٹی کی رویت تبدیل کریں"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1445
 msgid "_Show Sidebar"
 msgstr "سائڈ بار _دکھائیں"
 
+#. tooltip
 #: src/nemo-window-menus.c:1446
 msgid "Change the visibility of this window's side pane"
 msgstr "اس دریچے کے بغلی پٹی کی رویت تبدیل کریں"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1450
 msgid "St_atusbar"
 msgstr "_سٹیٹس بار"
 
+#. tooltip
 #: src/nemo-window-menus.c:1451
 msgid "Change the visibility of this window's statusbar"
 msgstr "اس دریچہ کی حالت پٹی کی رویت تبدیل کریں"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1455
 msgid "M_enubar"
 msgstr "مینو بار"
 
+#. tooltip
 #: src/nemo-window-menus.c:1456
 msgid "Change the default visibility of the menubar"
 msgstr "مینو پٹی کی طے شدہ رویت تبدیل کریں"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1460
 msgid "_Search for Files..."
 msgstr "فائلیں _تلاش کریں..."
 
+#. tooltip
 #: src/nemo-window-menus.c:1461 src/nemo-window-menus.c:1676
 msgid "Search documents and folders by name"
 msgstr "دستاویزات اور فولڈر نام سے تلاش کریں"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1465
 msgid "E_xtra Pane"
 msgstr "ا_ضافی جھروکا"
 
+#. tooltip
 #: src/nemo-window-menus.c:1466
 msgid "Open an extra folder view side-by-side"
 msgstr "اسی دریچے میں ایک اور فولڈر سائڈ بائی سائڈ کھولیں۔"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1470
 msgid "Show _Thumbnails"
 msgstr ""
 
+#. tooltip
 #: src/nemo-window-menus.c:1471
 msgid "Toggle the display of thumbnails in the current directory"
 msgstr ""
 
+#. callback
+#. default
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1475
 msgid "Use _full context menu"
 msgstr ""
 
+#. tooltip
 #: src/nemo-window-menus.c:1476
 msgid "Display additional actions in the context menu"
 msgstr ""
@@ -3298,6 +3689,7 @@ msgstr "یہ فائلیں ایک ڈیجٹل آڈیو پلیئر پر ہیں."
 msgid "The media contains software."
 msgstr "میڈیا سوفٹ ویئر پر مشتمل ہے."
 
+#. fallback to generic greeting
 #: src/nemo-x-content-bar.c:118
 #, c-format
 msgid "The media has been detected as \"%s\"."
@@ -3308,18 +3700,28 @@ msgstr "یہ میڈیا بطور \"%s\" دریافت ہوا ہے."
 msgid "Open %s"
 msgstr "کھولیں %s"
 
+#. name, stock id
+#. label, accelerator
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:433
 msgid "Cut the selected text to the clipboard"
 msgstr "منتخب کردہ متن کلپ بورڈ پر کٹ کریں"
 
+#. name, stock id
+#. label, accelerator
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:437
 msgid "Copy the selected text to the clipboard"
 msgstr "منتخب کردہ متن کلپ بورڈ پر کاپی کریں"
 
+#. name, stock id
+#. label, accelerator
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:441
 msgid "Paste the text stored on the clipboard"
 msgstr "کلپ بورڈ پر ذخیرہ کردہ متن پیسٹ کریں"
 
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:445
 msgid "Select all the text in a text field"
 msgstr "متن کے قطعہ میں موجود تمام متن منتخب کریں"
@@ -3450,7 +3852,7 @@ msgstr "اصل مقام"
 msgid "Original location of file before moved to the Trash"
 msgstr "ردی میں منتقل کرنے سے پہلے فائل کا اصل مقام"
 
-#: libnemo-private/nemo-desktop-directory-file.c:455
+#: libnemo-private/nemo-desktop-directory-file.c:459
 #: libnemo-private/nemo-desktop-icon-file.c:154
 msgid "on the desktop"
 msgstr "ڈیسک ٹاپ پر"
@@ -3532,19 +3934,25 @@ msgstr "ڈیسک ٹاپ آئکن کا نام بدلنے سے قاصر"
 msgid "Unable to rename desktop file"
 msgstr "ڈیسک ٹاپ فائل کا نام بدلنے سے قاصر"
 
+#. Translators: Time in 24h format
 #: libnemo-private/nemo-file.c:4943
 msgid "%H:%M"
 msgstr ""
 
+#. Translators: Time in 12h format
 #: libnemo-private/nemo-file.c:4946
 msgid "%l:%M %p"
 msgstr ""
 
+#. Translators: this is the word Yesterday followed by
+#. * a time in 24h format. i.e. "Yesterday 23:04"
 #: libnemo-private/nemo-file.c:4959
 #, no-c-format
 msgid "Yesterday %H:%M"
 msgstr ""
 
+#. Translators: this is the word Yesterday followed by
+#. * a time in 12h format. i.e. "Yesterday 9:04 PM"
 #: libnemo-private/nemo-file.c:4964
 #, no-c-format
 msgid "Yesterday %l:%M %p"
@@ -3555,41 +3963,61 @@ msgstr ""
 msgid "%A"
 msgstr ""
 
+#. Translators: this is the name of the week day followed by
+#. * a time in 24h format. i.e. "Monday 23:04"
 #: libnemo-private/nemo-file.c:4978
 #, no-c-format
 msgid "%A %H:%M"
 msgstr ""
 
+#. Translators: this is the week day name followed by
+#. * a time in 12h format. i.e. "Monday 9:04 PM"
 #: libnemo-private/nemo-file.c:4983
 #, no-c-format
 msgid "%A %l:%M %p"
 msgstr ""
 
+#. Translators: this is the day of the month followed
+#. * by the abbreviated month name i.e. "3 February"
 #: libnemo-private/nemo-file.c:4991
 #, no-c-format
 msgid "%-e %B"
 msgstr ""
 
+#. Translators: this is the day of the month followed
+#. * by the abbreviated month name followed by a time in
+#. * 24h format i.e. "3 February 23:04"
 #: libnemo-private/nemo-file.c:4998
 #, no-c-format
 msgid "%-e %B %H:%M"
 msgstr ""
 
+#. Translators: this is the day of the month followed
+#. * by the abbreviated month name followed by a time in
+#. * 12h format i.e. "3 February 9:04"
 #: libnemo-private/nemo-file.c:5004
 #, no-c-format
 msgid "%-e %B %l:%M %p"
 msgstr ""
 
+#. Translators: this is the day of the month followed by the abbreviated
+#. * month name followed by the year i.e. "3 Feb 2015"
 #: libnemo-private/nemo-file.c:5012
 #, no-c-format
 msgid "%-e %b %Y"
 msgstr ""
 
+#. Translators: this is the day number followed
+#. * by the abbreviated month name followed by the year followed
+#. * by a time in 24h format i.e. "3 Feb 2015 23:04"
 #: libnemo-private/nemo-file.c:5019
 #, no-c-format
 msgid "%-e %b %Y %H:%M"
 msgstr ""
 
+#. Translators: this is the day number followed
+#. * by the abbreviated month name followed by the year followed
+#. * by a time in 12h format i.e. "3 Feb 2015 9:04 PM"
 #: libnemo-private/nemo-file.c:5025
 #, no-c-format
 msgid "%-e %b %Y %l:%M %p"
@@ -3636,10 +4064,12 @@ msgid_plural "%'u files"
 msgstr[0] "%'u فائل"
 msgstr[1] "%'u فائلیں"
 
+#. This means no contents at all were readable
 #: libnemo-private/nemo-file.c:6682 libnemo-private/nemo-file.c:6698
 msgid "? items"
 msgstr "؟ عناصر"
 
+#. This means no contents at all were readable
 #: libnemo-private/nemo-file.c:6688
 msgid "? bytes"
 msgstr "؟ بائٹس"
@@ -3845,6 +4275,7 @@ msgstr "تبدیل کریں اس سے"
 msgid "Merge"
 msgstr "ضم کریں"
 
+#. Setup the expander for the rename action
 #: libnemo-private/nemo-file-conflict-dialog.c:509
 msgid "_Select a new name for the destination"
 msgstr "منزل کا نیا نام _چُنیں:"
@@ -3853,6 +4284,7 @@ msgstr "منزل کا نیا نام _چُنیں:"
 msgid "Reset"
 msgstr "اصل پہ واپس"
 
+#. Setup the checkbox to apply the action to all files
 #: libnemo-private/nemo-file-conflict-dialog.c:535
 msgid "Apply this action to all files"
 msgstr "یہ عمل تمام فائلوں پر لاگو کریں"
@@ -3935,39 +4367,57 @@ msgid_plural "approximately %'d hours"
 msgstr[0] "تقریباً %'d گھنٹہ"
 msgstr[1] "تقریباً %'d گھنٹے"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:397
 #, c-format
 msgid "Another link to %s"
 msgstr "دوسرا ربط تا %s"
 
+#. Localizers: Feel free to leave out the "st" suffix
+#. * if there's no way to do that nicely for a
+#. * particular language.
+#. 
 #: libnemo-private/nemo-file-operations.c:413
 #, c-format
 msgid "%'dst link to %s"
 msgstr "ربط ‏%'d تا %s"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:417
 #, c-format
 msgid "%'dnd link to %s"
 msgstr "ربط ‏%'d تا %s"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:421
 #, c-format
 msgid "%'drd link to %s"
 msgstr "ربط ‏%'d تا %s"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:425
 #, c-format
 msgid "%'dth link to %s"
 msgstr "ربط ‏%'d تا %s"
 
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. 
+#. localizers: tag used to detect the first copy of a file
 #: libnemo-private/nemo-file-operations.c:464
 msgid " (copy)"
 msgstr " (کاپی)"
 
+#. localizers: tag used to detect the second copy of a file
 #: libnemo-private/nemo-file-operations.c:466
 msgid " (another copy)"
 msgstr " (دوسری کاپی)"
 
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
 #: libnemo-private/nemo-file-operations.c:469
 #: libnemo-private/nemo-file-operations.c:471
 #: libnemo-private/nemo-file-operations.c:473
@@ -3975,28 +4425,37 @@ msgstr " (دوسری کاپی)"
 msgid "th copy)"
 msgstr "کاپی)"
 
+#. localizers: tag used to detect the x1st copy of a file
 #: libnemo-private/nemo-file-operations.c:476
 msgid "st copy)"
 msgstr "کاپی)"
 
+#. localizers: tag used to detect the x2nd copy of a file
 #: libnemo-private/nemo-file-operations.c:478
 msgid "nd copy)"
 msgstr "کاپی)"
 
+#. localizers: tag used to detect the x3rd copy of a file
 #: libnemo-private/nemo-file-operations.c:480
 msgid "rd copy)"
 msgstr "کاپی)"
 
+#. localizers: appended to first file copy
 #: libnemo-private/nemo-file-operations.c:497
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (کاپی)%s"
 
+#. localizers: appended to second file copy
 #: libnemo-private/nemo-file-operations.c:499
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "‏%s (دوسری کاپی)%s"
 
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
 #: libnemo-private/nemo-file-operations.c:502
 #: libnemo-private/nemo-file-operations.c:504
 #: libnemo-private/nemo-file-operations.c:506
@@ -4005,25 +4464,34 @@ msgstr "‏%s (دوسری کاپی)%s"
 msgid "%s (%'dth copy)%s"
 msgstr "%s (%'d کاپی)%s"
 
+#. localizers: if in your language there's no difference between 1st, 2nd, 3rd and nth
+#. * plurals, you can leave the st, nd, rd suffixes out and just make all the translated
+#. * strings look like "%s (copy %'d)%s".
+#. 
+#. localizers: appended to x1st file copy
 #: libnemo-private/nemo-file-operations.c:514
 #, c-format
 msgid "%s (%'dst copy)%s"
 msgstr "%s (%'d کاپی)%s"
 
+#. localizers: appended to x2nd file copy
 #: libnemo-private/nemo-file-operations.c:516
 #, c-format
 msgid "%s (%'dnd copy)%s"
 msgstr "%s (%'d کاپی)%s"
 
+#. localizers: appended to x3rd file copy
 #: libnemo-private/nemo-file-operations.c:518
 #, c-format
 msgid "%s (%'drd copy)%s"
 msgstr "%s (%'d کاپی)%s"
 
+#. localizers: opening parentheses to match the "th copy)" string
 #: libnemo-private/nemo-file-operations.c:619
 msgid " ("
 msgstr " ("
 
+#. localizers: opening parentheses of the "th copy)" string
 #: libnemo-private/nemo-file-operations.c:627
 #, c-format
 msgid " (%'d"
@@ -4089,9 +4557,10 @@ msgstr[1] ""
 msgid "Are you sure you want to move \"%B\" to the trash?"
 msgstr ""
 
-#: libnemo-private/nemo-file-operations.c:1525
+#. translators: the singular form here can be skipped.
+#: libnemo-private/nemo-file-operations.c:1526
 #, c-format
-msgid "Are you sure you want to move the %'d selected items to the trash?"
+msgid "unused %'d"
 msgid_plural ""
 "Are you sure you want to move the %'d selected items to the trash?"
 msgstr[0] ""
@@ -4161,6 +4630,9 @@ msgstr[1] "%'d فائلیں حذف ہونے میں باقی"
 msgid "Deleting files"
 msgstr "فائلیں حذف کی جارہی ہیں"
 
+#. To translators: %T will expand to a time like "2 minutes".
+#. * The singular/plural form will be used depending on the remaining time (i.e. the %T argument).
+#. 
 #: libnemo-private/nemo-file-operations.c:1704
 msgid "%T left"
 msgid_plural "%T left"
@@ -4420,11 +4892,17 @@ msgstr "فائل کاپی کی جارہی ہے %'d برائے %'d تا \"%B\""
 msgid "Duplicating file %'d of %'d"
 msgstr "فائل مثنی کی جارہی ہے %'d برائے %'d"
 
+#. To translators: %S will expand to a size like "2 bytes" or "3 MB", so something like "4 kb of 4 MB"
 #: libnemo-private/nemo-file-operations.c:3271
 #, c-format
 msgid "%S of %S"
 msgstr "‏%S کا %S"
 
+#. To translators: %S will expand to a size like "2 bytes" or "3 MB", %T to a time duration like
+#. * "2 minutes". So the whole thing will be something like "2 kb of 4 MB -- 2 hours left (4kb/sec)"
+#. *
+#. * The singular/plural form will be used depending on the remaining time (i.e. the %T argument).
+#. 
 #: libnemo-private/nemo-file-operations.c:3282
 msgid "%S of %S — %T left (%S/sec)"
 msgid_plural "%S of %S — %T left (%S/sec)"
@@ -4486,6 +4964,7 @@ msgstr "پہلے سے موجود فولڈر %F میں سے فائلیں حذف �
 msgid "Could not remove the already existing file %F."
 msgstr "پہلے سے موجود فائل %F کو ہٹایا نہیں جاسکتا."
 
+#. the run_warning() frees all strings passed in automatically
 #: libnemo-private/nemo-file-operations.c:4375
 #: libnemo-private/nemo-file-operations.c:5090
 msgid "You cannot move a folder into itself."
@@ -4501,6 +4980,7 @@ msgstr "آپ فولڈر کو اسی کے اندر کاپی نہیں کر سکت�
 msgid "The destination folder is inside the source folder."
 msgstr "سمت فولڈر مصدر فولڈر کے اندر ہے."
 
+#. the run_warning() frees all strings passed in automatically
 #: libnemo-private/nemo-file-operations.c:4408
 msgid "You cannot move a file over itself."
 msgstr "آپ فائل کو اسی کے اوپر منتقل نہیں کر سکتے."
@@ -4580,10 +5060,12 @@ msgstr "%F میں علامتی ربط بنانے میں غلطی."
 msgid "Setting permissions"
 msgstr "اجازتیں مرتب کی جارہی ہیں"
 
+#. localizers: the initial name of a new folder
 #: libnemo-private/nemo-file-operations.c:6273
 msgid "Untitled Folder"
 msgstr "بے عُنوان فولڈر"
 
+#. localizers: the initial name of a new empty document
 #: libnemo-private/nemo-file-operations.c:6285
 msgid "Untitled Document"
 msgstr "بے عُنوان دستاویز"
@@ -4991,6 +5473,7 @@ msgstr ""
 "یہ ایگزیکیوٹیبل ٹھیک نہیں ہے۔ پاتھ میں موجود سپیس کو بیک سلیش (\\) کی مدد سے "
 "جوڑنا(escape) کرنا ضروری ہے۔"
 
+#. the %s here is a file extension
 #: libnemo-private/nemo-mime-application-chooser.c:419
 #: libnemo-private/nemo-mime-application-chooser.c:437
 #, c-format

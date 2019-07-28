@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-06-29 18:00+0200\n"
+"POT-Creation-Date: 2019-07-10 13:09+0200\n"
 "PO-Revision-Date: 2017-03-10 17:41+0000\n"
 "Last-Translator: GunChleoc <Unknown>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
-"X-Launchpad-Export-Date: 2019-07-10 08:25+0000\n"
-"X-Generator: Launchpad (build 19007)\n"
+"X-Launchpad-Export-Date: 2019-07-28 09:32+0000\n"
+"X-Generator: Launchpad (build 19010)\n"
 "Language: gd\n"
 
 #: src/nemo-action-config-widget.c:237
@@ -85,6 +85,7 @@ msgstr "_Ruith"
 msgid "Customize"
 msgstr ""
 
+#. hardcode "Desktop"
 #: src/nemo-blank-desktop-window.c:214 src/nemo-desktop-window.c:125
 #: src/nemo-desktop-window.c:294 src/nemo-pathbar.c:1440
 #: src/nemo-places-sidebar.c:779 libnemo-private/nemo-action.c:1330
@@ -171,6 +172,7 @@ msgstr "Bha mearachd ann a' taisbeanadh na cobharach."
 msgid "C_onnect"
 msgstr "C_eangail"
 
+#. set dialog properties
 #: src/nemo-connect-server-dialog.c:842
 msgid "Connect to Server"
 msgstr "Ceangail ris an fhrithealaiche"
@@ -179,22 +181,27 @@ msgstr "Ceangail ris an fhrithealaiche"
 msgid "Server Details"
 msgstr "Mion-fhiosrachadh mun fhrithealaiche"
 
+#. first row: server entry + port spinbutton
 #: src/nemo-connect-server-dialog.c:885
 msgid "_Server:"
 msgstr "_Frithealaiche:"
 
+#. port
 #: src/nemo-connect-server-dialog.c:905
 msgid "_Port:"
 msgstr "_Port:"
 
+#. second row: type combobox
 #: src/nemo-connect-server-dialog.c:923
 msgid "_Type:"
 msgstr "_Seòrsa:"
 
+#. third row: share entry
 #: src/nemo-connect-server-dialog.c:993
 msgid "Sh_are:"
 msgstr "Co-r_oinn:"
 
+#. fourth row: folder entry
 #: src/nemo-connect-server-dialog.c:1008 src/nemo-view.c:1848
 msgid "_Folder:"
 msgstr "_Pasgan:"
@@ -203,18 +210,22 @@ msgstr "_Pasgan:"
 msgid "User Details"
 msgstr "Mion-fhiosrachadh mun chleachdaiche"
 
+#. first row: domain entry
 #: src/nemo-connect-server-dialog.c:1050
 msgid "_Domain name:"
 msgstr "Ainm na _h-àrainn:"
 
+#. second row: username entry
 #: src/nemo-connect-server-dialog.c:1065
 msgid "_User name:"
 msgstr "Ainm-_cleachdaiche:"
 
+#. third row: password entry
 #: src/nemo-connect-server-dialog.c:1080
 msgid "Pass_word:"
 msgstr "Facal-_faire:"
 
+#. fourth row: remember checkbox
 #: src/nemo-connect-server-dialog.c:1096
 msgid "_Remember this password"
 msgstr "_Cuimhnich am facal-faire seo"
@@ -227,6 +238,8 @@ msgstr "Sguireadh dhen ghnìomh seo"
 msgid "Print but do not open the URI"
 msgstr "Dèan clò-bhualadh ach na fosgail an URI"
 
+#. Translators: This is the --help description for the connect to server app,
+#. the initial newlines are between the command line arg and the description
 #: src/nemo-connect-server-dialog-main.c:131
 msgid ""
 "\n"
@@ -252,16 +265,22 @@ msgid ""
 "Manage the desktop with the file manager"
 msgstr ""
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:917 src/nemo-desktop-icon-view.c:682
-#: src/nemo-view.c:8316 src/nemo-view.c:9930
+#: src/nemo-view.c:8313 src/nemo-view.c:9925
 msgid "E_mpty Trash"
 msgstr "Falamhaich an sgudal"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:1027
 #: gresources/nemo-desktop-overlay.glade:293
 msgid "Auto-arrange"
 msgstr ""
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:1032
 #: gresources/nemo-desktop-overlay.glade:539
 msgid "Reverse sort"
@@ -295,7 +314,7 @@ msgstr ""
 msgid "_Horizontal"
 msgstr ""
 
-#: src/nemo-desktop-icon-grid-view.c:1074 src/nemo-list-view.c:2329
+#: src/nemo-desktop-icon-grid-view.c:1074 src/nemo-list-view.c:2331
 #: libnemo-private/nemo-column-utilities.c:43
 #: gresources/nemo-desktop-overlay.glade:116
 msgid "Name"
@@ -318,20 +337,26 @@ msgstr "Seòrsa"
 msgid "Date"
 msgstr ""
 
+#. name, stock id, label
 #: src/nemo-desktop-icon-grid-view.c:1092
 msgid "_Sort"
 msgstr ""
 
+#. name, stock id, label
 #: src/nemo-desktop-icon-grid-view.c:1093
 msgid "_Icon Size"
 msgstr ""
 
+#. label, accelerator
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:1097 src/nemo-desktop-icon-view.c:723
 msgid "Empty Trash"
 msgstr "Falamhaich an sgudal"
 
+#. tooltip
 #: src/nemo-desktop-icon-grid-view.c:1099 src/nemo-desktop-icon-view.c:724
-#: src/nemo-trash-bar.c:227 src/nemo-view.c:8317
+#: src/nemo-trash-bar.c:227 src/nemo-view.c:8314
 msgid "Delete all items in the Trash"
 msgstr "Sguab às gach nì san sgudal"
 
@@ -352,6 +377,8 @@ msgid "The desktop view encountered an error while starting up."
 msgstr ""
 "Thachair an sealladh deasg ri mearachd fhad 's a bha e a' tòiseachadh."
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-view.c:704 src/nemo-desktop-icon-view.c:719
 msgid "Restore Icons' Original Si_zes"
 msgstr "Aisig meud tùsail nan ìomhaigheagan"
@@ -360,14 +387,18 @@ msgstr "Aisig meud tùsail nan ìomhaigheagan"
 msgid "Restore Icon's Original Si_ze"
 msgstr "Aisig meud tùsail na _h-ìomhaigheige"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-view.c:715
 msgid "Resize Icon..."
 msgstr "Atharraich meud na h-ìomhaigheige..."
 
+#. tooltip
 #: src/nemo-desktop-icon-view.c:716
 msgid "Make the selected icon resizable"
 msgstr "Ceadaich atharrachadh meud na h-ìomhaigheige a thagh thu"
 
+#. tooltip
 #: src/nemo-desktop-icon-view.c:720
 msgid "Restore each selected icon to its original size"
 msgstr "Aisig gach ìomhaigheag a thagh thu dhan mheud tùsail"
@@ -444,6 +475,7 @@ msgid ""
 "You do not have the permissions necessary to change the group of \"%s\"."
 msgstr "Chan eil cead agad buidheann \"%s\" atharrachadh."
 
+#. fall through
 #: src/nemo-error-reporting.c:120
 #, c-format
 msgid "Sorry, could not change the group of \"%s\": %s"
@@ -514,6 +546,7 @@ msgstr "Chan e ainm dligheach tha ann an \"%s\". Cleachd ainm eile."
 msgid "The name \"%s\" is too long. Please use a different name."
 msgstr "Tha an t-ainm \"%s\" ro fhada. Cleachd ainm eile."
 
+#. fall through
 #: src/nemo-error-reporting.c:243
 #, c-format
 msgid "Sorry, could not rename \"%s\" to \"%s\": %s"
@@ -549,6 +582,10 @@ msgstr "Leudachain"
 msgid "Extensions changed.  Restart required."
 msgstr "Chaidh na leudachain atharrachadh. Tha feum air ath-thòiseachadh."
 
+#. Translators: this is referred to captions under icons.
+#. Translators: this is referred to the permissions
+#. * the user has in a directory.
+#. 
 #: src/nemo-file-management-properties.c:288 src/nemo-properties-window.c:3927
 #: src/nemo-properties-window.c:3938
 msgid "None"
@@ -563,7 +600,7 @@ msgstr ""
 msgid "by _Name"
 msgstr "a-rèir ai_nm"
 
-#: src/nemo-icon-view.c:138 src/nemo-icon-view.c:1427
+#: src/nemo-icon-view.c:138 src/nemo-icon-view.c:1429
 msgid "Keep icons sorted by name in rows"
 msgstr "Seòrsaich ìomhaigheagan a-rèir ainm ann an ràghan"
 
@@ -571,7 +608,7 @@ msgstr "Seòrsaich ìomhaigheagan a-rèir ainm ann an ràghan"
 msgid "by _Size"
 msgstr "a-rèir _meud"
 
-#: src/nemo-icon-view.c:145 src/nemo-icon-view.c:1431
+#: src/nemo-icon-view.c:145 src/nemo-icon-view.c:1433
 msgid "Keep icons sorted by size in rows"
 msgstr "Seòrsaich ìomhaigheagan a-rèir meud ann an ràghan"
 
@@ -579,7 +616,7 @@ msgstr "Seòrsaich ìomhaigheagan a-rèir meud ann an ràghan"
 msgid "by _Type"
 msgstr "a-rèir _seòrsa"
 
-#: src/nemo-icon-view.c:152 src/nemo-icon-view.c:1435
+#: src/nemo-icon-view.c:152 src/nemo-icon-view.c:1437
 msgid "Keep icons sorted by type in rows"
 msgstr "Seòrsaich ìomhaigheagan a-rèir seòrsa ann an ràghan"
 
@@ -587,7 +624,7 @@ msgstr "Seòrsaich ìomhaigheagan a-rèir seòrsa ann an ràghan"
 msgid "by _Detailed Type"
 msgstr "a-rèir seòrsa mionai_deach"
 
-#: src/nemo-icon-view.c:159 src/nemo-icon-view.c:1439
+#: src/nemo-icon-view.c:159 src/nemo-icon-view.c:1441
 msgid "Keep icons sorted by detailed type in rows"
 msgstr ""
 "Seòrsaich na h-ìomhaigheagan a-rèir an seòrsa mionaideach ann an raghan"
@@ -596,7 +633,7 @@ msgstr ""
 msgid "by Modification _Date"
 msgstr "A-rèir ceann-là atharrachaidh"
 
-#: src/nemo-icon-view.c:166 src/nemo-icon-view.c:1443
+#: src/nemo-icon-view.c:166 src/nemo-icon-view.c:1445
 msgid "Keep icons sorted by modification date in rows"
 msgstr "Seòrsaich ìomhaigheagan a-rèir ceann-là atharrachaidh ann an ràghan"
 
@@ -604,7 +641,7 @@ msgstr "Seòrsaich ìomhaigheagan a-rèir ceann-là atharrachaidh ann an ràghan
 msgid "by T_rash Time"
 msgstr "a-rèi_r an ama a chaidh a chur san sgudal"
 
-#: src/nemo-icon-view.c:173 src/nemo-icon-view.c:1447
+#: src/nemo-icon-view.c:173 src/nemo-icon-view.c:1449
 msgid "Keep icons sorted by trash time in rows"
 msgstr ""
 "Seòrsaich ìomhaigheagan a-rèir an ama a chaidh a chur dhan sgudal ann an "
@@ -614,113 +651,129 @@ msgstr ""
 msgid "_Organize Desktop by Name"
 msgstr "C_uir air dòigh an deasg a-rèir ainm"
 
-#: src/nemo-icon-view.c:1399
+#. name, stock id, label
+#: src/nemo-icon-view.c:1401
 msgid "Arran_ge Items"
 msgstr "Cuir air dòigh na _nithean"
 
-#: src/nemo-icon-view.c:1401
+#. name, stock id
+#. label, accelerator
+#: src/nemo-icon-view.c:1403
 msgid "_Organize by Name"
 msgstr "Cuir air dòigh a-rèir ain_m"
 
-#: src/nemo-icon-view.c:1402
+#. tooltip
+#: src/nemo-icon-view.c:1404
 msgid "Reposition icons to better fit in the window and avoid overlapping"
 msgstr ""
 "Cuir air gleus ionadan nan ìomhaigheagan san uinneag agus na leig leotha a "
 "dhol a-steach air a chèile"
 
-#: src/nemo-icon-view.c:1409
+#. name, stock id
+#. label, accelerator
+#: src/nemo-icon-view.c:1411
 msgid "Re_versed Order"
 msgstr "Òr_dugh contrarra"
 
-#: src/nemo-icon-view.c:1410
+#. tooltip
+#: src/nemo-icon-view.c:1412
 msgid "Display icons in the opposite order"
 msgstr "Taisbean na h-ìomhaigheagan ann an òrdugh contrarra"
 
-#: src/nemo-icon-view.c:1414
+#. name, stock id
+#. label, accelerator
+#: src/nemo-icon-view.c:1416
 msgid "_Keep Aligned"
 msgstr "_Cum co-thaobhaichte iad"
 
-#: src/nemo-icon-view.c:1415
+#. tooltip
+#: src/nemo-icon-view.c:1417
 msgid "Keep icons lined up on a grid"
 msgstr "Co-thaobhaich na h-ìomhaigheagan a-rèir griod"
 
-#: src/nemo-icon-view.c:1422
+#: src/nemo-icon-view.c:1424
 msgid "_Manually"
 msgstr "_A làimh"
 
-#: src/nemo-icon-view.c:1423
+#: src/nemo-icon-view.c:1425
 msgid "Leave icons wherever they are dropped"
 msgstr "Fàg na h-ìomhaigheagan far an deach an leigeil às"
 
-#: src/nemo-icon-view.c:1426
+#: src/nemo-icon-view.c:1428
 msgid "By _Name"
 msgstr "A-rèir ainm"
 
-#: src/nemo-icon-view.c:1430
+#: src/nemo-icon-view.c:1432
 msgid "By _Size"
 msgstr "A-rèir meud"
 
-#: src/nemo-icon-view.c:1434
+#: src/nemo-icon-view.c:1436
 msgid "By _Type"
 msgstr "A-rèir _seòrsa"
 
-#: src/nemo-icon-view.c:1438
+#: src/nemo-icon-view.c:1440
 msgid "By _Detailed Type"
 msgstr "A-rèir seòrsa mionai_deach"
 
-#: src/nemo-icon-view.c:1442
+#: src/nemo-icon-view.c:1444
 msgid "By Modification _Date"
 msgstr "A-rèir ceann-_là atharrachaidh"
 
-#: src/nemo-icon-view.c:1446
+#: src/nemo-icon-view.c:1448
 msgid "By T_rash Time"
 msgstr "A-rèir an a_ma a chaidh a chur dhan sgudal"
 
-#: src/nemo-icon-view.c:2838 src/nemo-icon-view-container.c:2147
-#: src/nemo-icon-view-grid-container.c:1602 src/nemo-window-menus.c:1492
+#. translators: this is used in the view selection dropdown
+#. * of navigation windows and in the preferences dialog
+#: src/nemo-icon-view.c:2840 src/nemo-icon-view-container.c:2147
+#: src/nemo-icon-view-grid-container.c:1601 src/nemo-window-menus.c:1492
 #: src/nemo-window-menus.c:1642
 #: gresources/nemo-file-management-properties.glade:83
 msgid "Icon View"
 msgstr "Sealladh ìomhaigheagan"
 
-#: src/nemo-icon-view.c:2840
+#. translators: this is used in the view menu
+#: src/nemo-icon-view.c:2842
 msgid "_Icons"
 msgstr "Ì_omhaigheagan"
 
-#: src/nemo-icon-view.c:2841
+#: src/nemo-icon-view.c:2843
 msgid "The icon view encountered an error."
 msgstr "Thachair an sealladh ìomhaigheagan ri mearachd."
 
-#: src/nemo-icon-view.c:2842
+#: src/nemo-icon-view.c:2844
 msgid "The icon view encountered an error while starting up."
 msgstr ""
 "Thachair an sealladh ìomhaigheagan ri mearachd fhad 's a bha e a' "
 "tòiseachadh."
 
-#: src/nemo-icon-view.c:2843
+#: src/nemo-icon-view.c:2845
 msgid "Display this location with the icon view."
 msgstr "Seall an t-ionad seo san t-sealladh ìomhaigheagan."
 
-#: src/nemo-icon-view.c:2852 src/nemo-window-menus.c:1498
+#. translators: this is used in the view selection dropdown
+#. * of navigation windows and in the preferences dialog
+#: src/nemo-icon-view.c:2854 src/nemo-window-menus.c:1498
 #: src/nemo-window-menus.c:1665
 #: gresources/nemo-file-management-properties.glade:89
 msgid "Compact View"
 msgstr "An sealladh dùmhlaichte"
 
-#: src/nemo-icon-view.c:2854
+#. translators: this is used in the view menu
+#: src/nemo-icon-view.c:2856
 msgid "_Compact"
 msgstr "_Dùmhlaichte"
 
-#: src/nemo-icon-view.c:2855
+#: src/nemo-icon-view.c:2857
 msgid "The compact view encountered an error."
 msgstr "Thachair an sealladh dùmhlaichte ri mearachd."
 
-#: src/nemo-icon-view.c:2856
+#: src/nemo-icon-view.c:2858
 msgid "The compact view encountered an error while starting up."
 msgstr ""
 "Thachair an sealladh dùmhlaichte ri mearachd fhad 's a bha e a' tòiseachadh."
 
-#: src/nemo-icon-view.c:2857
+#: src/nemo-icon-view.c:2859
 msgid "Display this location with the compact view."
 msgstr "Seall an t-ionad seo san t-sealladh dùmhlaichte."
 
@@ -785,6 +838,7 @@ msgstr "Brannd a' chamara"
 msgid "Camera Model"
 msgstr "Modail a' chamara"
 
+#. Choose which date to show in order of relevance
 #: src/nemo-image-properties-page.c:386
 msgid "Date Taken"
 msgstr "Cuin a chaidh a thogail"
@@ -893,34 +947,37 @@ msgstr ""
 msgid "(Empty)"
 msgstr "(Falamh)"
 
-#: src/nemo-list-view.c:1969
+#: src/nemo-list-view.c:1971
 msgid "Use Default"
 msgstr "Cleachd a' bhun-roghainn"
 
-#: src/nemo-list-view.c:1980
+#: src/nemo-list-view.c:1982
 msgid "Temporarily disable auto-sort"
 msgstr "Cuir an seòrsachadh fèin-obrachail à comas rè seal."
 
-#: src/nemo-list-view.c:2415 src/nemo-list-view.c:4039
+#. translators: this is used in the view selection dropdown
+#. * of navigation windows and in the preferences dialog
+#: src/nemo-list-view.c:2417 src/nemo-list-view.c:4043
 #: src/nemo-window-menus.c:1495 src/nemo-window-menus.c:1653
 #: gresources/nemo-file-management-properties.glade:86
 msgid "List View"
 msgstr "Sealladh liosta"
 
-#: src/nemo-list-view.c:4041
+#. translators: this is used in the view menu
+#: src/nemo-list-view.c:4045
 msgid "_List"
 msgstr "_Liosta"
 
-#: src/nemo-list-view.c:4042
+#: src/nemo-list-view.c:4046
 msgid "The list view encountered an error."
 msgstr "Thachair an sealladh liosta ri mearachd."
 
-#: src/nemo-list-view.c:4043
+#: src/nemo-list-view.c:4047
 msgid "The list view encountered an error while starting up."
 msgstr ""
 "Thachair an sealladh liosta ri mearachd fhad 's a bha e a' tòiseachadh."
 
-#: src/nemo-list-view.c:4044
+#: src/nemo-list-view.c:4048
 msgid "Display this location with the list view."
 msgstr "Taisbean an t-ionad seo leis an t-sealladh liosta."
 
@@ -1060,9 +1117,11 @@ msgstr ""
 "Cha ghabh an ceangal seo a chleachdadh a chionn 's nach eil an targaid aige, "
 "\"%s\", ann."
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-mime-actions.c:659 src/nemo-tree-sidebar.c:1412
-#: src/nemo-view.c:8368 src/nemo-view.c:8486 src/nemo-view.c:9533
-#: src/nemo-view.c:9853
+#: src/nemo-view.c:8365 src/nemo-view.c:8483 src/nemo-view.c:9530
+#: src/nemo-view.c:9848
 msgid "Mo_ve to Trash"
 msgstr "Gluais dhan _sgudal"
 
@@ -1169,11 +1228,11 @@ msgstr[2] "Fosglaidh seo %d aplacaidean fa leth."
 msgstr[3] "Fosglaidh seo %d aplacaid fa leth."
 
 #: src/nemo-mime-actions.c:1688 src/nemo-mime-actions.c:1962
-#: src/nemo-view.c:7486
+#: src/nemo-view.c:7483
 msgid "Unable to mount location"
 msgstr "Cha ghabh an t-ionad a mhunntachadh"
 
-#: src/nemo-mime-actions.c:2041 src/nemo-view.c:7633
+#: src/nemo-mime-actions.c:2041 src/nemo-view.c:7630
 msgid "Unable to start location"
 msgstr "Cha ghabh an t-ionad a thòiseachadh"
 
@@ -1195,6 +1254,8 @@ msgstr[3] "A' fosgladh %d nì."
 msgid "Close tab"
 msgstr "Dùin an taba"
 
+#. Translators: This is the --help description for the open-with app,
+#. the initial newlines are between the command line arg and the description
 #: src/nemo-open-with-main.c:104
 msgid ""
 "\n"
@@ -1315,26 +1376,32 @@ msgstr "Lìonra"
 msgid "Browse the contents of the network"
 msgstr "Brabhsaich susbaint an lìonraidh"
 
+#. Adjust start/stop items to reflect the type of the drive
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:2275 src/nemo-places-sidebar.c:3553
-#: src/nemo-view.c:8414 src/nemo-view.c:8438 src/nemo-view.c:8510
-#: src/nemo-view.c:9156 src/nemo-view.c:9160 src/nemo-view.c:9243
-#: src/nemo-view.c:9247 src/nemo-view.c:9347 src/nemo-view.c:9351
+#: src/nemo-view.c:8411 src/nemo-view.c:8435 src/nemo-view.c:8507
+#: src/nemo-view.c:9153 src/nemo-view.c:9157 src/nemo-view.c:9240
+#: src/nemo-view.c:9244 src/nemo-view.c:9344 src/nemo-view.c:9348
 msgid "_Start"
 msgstr "_Tòisich"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:2276 src/nemo-places-sidebar.c:3560
-#: src/nemo-view.c:8418 src/nemo-view.c:8442 src/nemo-view.c:8514
-#: src/nemo-view.c:9185 src/nemo-view.c:9272 src/nemo-view.c:9376
+#: src/nemo-view.c:8415 src/nemo-view.c:8439 src/nemo-view.c:8511
+#: src/nemo-view.c:9182 src/nemo-view.c:9269 src/nemo-view.c:9373
 #: src/nemo-window-menus.c:1302
 msgid "_Stop"
 msgstr "_Sguir dheth"
 
+#. start() for type G_DRIVE_START_STOP_TYPE_SHUTDOWN is normally not used
 #: src/nemo-places-sidebar.c:2281
 msgid "_Power On"
 msgstr "A' _chumhachd air"
 
-#: src/nemo-places-sidebar.c:2282 src/nemo-view.c:9189 src/nemo-view.c:9276
-#: src/nemo-view.c:9380
+#: src/nemo-places-sidebar.c:2282 src/nemo-view.c:9186 src/nemo-view.c:9273
+#: src/nemo-view.c:9377
 msgid "_Safely Remove Drive"
 msgstr "Gluais a-mach an draibh gu _sàbhailte"
 
@@ -1354,12 +1421,13 @@ msgstr "_Tòisich uidheam ioma-diosgach"
 msgid "_Stop Multi-disk Device"
 msgstr "C_uir stad air an uidheam ioma-diosgach"
 
-#: src/nemo-places-sidebar.c:2294 src/nemo-view.c:9259 src/nemo-view.c:9363
+#. stop() for type G_DRIVE_START_STOP_TYPE_PASSWORD is normally not used
+#: src/nemo-places-sidebar.c:2294 src/nemo-view.c:9256 src/nemo-view.c:9360
 msgid "_Unlock Drive"
 msgstr "_Thoir a' ghlas far an draibh"
 
-#: src/nemo-places-sidebar.c:2295 src/nemo-view.c:9201 src/nemo-view.c:9288
-#: src/nemo-view.c:9392
+#: src/nemo-places-sidebar.c:2295 src/nemo-view.c:9198 src/nemo-view.c:9285
+#: src/nemo-view.c:9389
 msgid "_Lock Drive"
 msgstr "G_lais an draibh"
 
@@ -1384,23 +1452,30 @@ msgstr "Chan urrainn dhuinn %s a sgrùdadh airson atharraichean nam meadhanan"
 msgid "Unable to stop %s"
 msgstr "Chan urrainn dhuinn stad a chur air %s"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3465 src/nemo-tree-sidebar.c:1304
-#: src/nemo-view.c:8275 src/nemo-view.c:9784
+#: src/nemo-view.c:8272 src/nemo-view.c:9779
 #: libnemo-private/nemo-mime-application-chooser.c:483
 msgid "_Open"
 msgstr "F_osgail"
 
+#. add the "open in new tab" menu item
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3473 src/nemo-tree-sidebar.c:1315
-#: src/nemo-view.c:8287 src/nemo-view.c:8468 src/nemo-view.c:9480
-#: src/nemo-view.c:9830
+#: src/nemo-view.c:8284 src/nemo-view.c:8465 src/nemo-view.c:9477
+#: src/nemo-view.c:9825
 msgid "Open in New _Tab"
 msgstr "Fosgail ann an _taba ùr"
 
+#. add the "open in new window" menu item
 #: src/nemo-places-sidebar.c:3483 src/nemo-tree-sidebar.c:1329
-#: src/nemo-view.c:9471 src/nemo-view.c:9810
+#: src/nemo-view.c:9468 src/nemo-view.c:9805
 msgid "Open in New _Window"
 msgstr "Fosgail ann an _uinneag ùr"
 
+#. name, stock id, label
 #: src/nemo-places-sidebar.c:3494 src/nemo-window-menus.c:1412
 msgid "_Add Bookmark"
 msgstr "_Cuir comharra-leabhair ris"
@@ -1413,26 +1488,37 @@ msgstr "Thoir air falbh"
 msgid "Rename..."
 msgstr "Thoir ainm ùr air..."
 
-#: src/nemo-places-sidebar.c:3525 src/nemo-view.c:8402 src/nemo-view.c:8426
-#: src/nemo-view.c:8498
+#. name, stock id
+#. label, accelerator
+#: src/nemo-places-sidebar.c:3525 src/nemo-view.c:8399 src/nemo-view.c:8423
+#: src/nemo-view.c:8495
 msgid "_Mount"
 msgstr "_Munntaich"
 
+#. add the "Unmount" menu item
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3532 src/nemo-tree-sidebar.c:1444
-#: src/nemo-view.c:8406 src/nemo-view.c:8430 src/nemo-view.c:8502
+#: src/nemo-view.c:8403 src/nemo-view.c:8427 src/nemo-view.c:8499
 msgid "_Unmount"
 msgstr "_Dì-mhunntaich"
 
+#. add the "Eject" menu item
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3539 src/nemo-tree-sidebar.c:1453
-#: src/nemo-view.c:8410 src/nemo-view.c:8434 src/nemo-view.c:8506
+#: src/nemo-view.c:8407 src/nemo-view.c:8431 src/nemo-view.c:8503
 msgid "_Eject"
 msgstr "_Gluais a-mach"
 
-#: src/nemo-places-sidebar.c:3546 src/nemo-view.c:8422 src/nemo-view.c:8446
-#: src/nemo-view.c:8518
+#. name, stock id
+#. label, accelerator
+#: src/nemo-places-sidebar.c:3546 src/nemo-view.c:8419 src/nemo-view.c:8443
+#: src/nemo-view.c:8515
 msgid "_Detect Media"
 msgstr "_Mothaich dha meadhanan"
 
+#. Empty Trash menu item
 #: src/nemo-places-sidebar.c:3569 src/nemo-trash-bar.c:224
 #: libnemo-private/nemo-file-operations.c:1294
 #: libnemo-private/nemo-file-operations.c:1611
@@ -1440,7 +1526,9 @@ msgstr "_Mothaich dha meadhanan"
 msgid "Empty _Trash"
 msgstr "Falamhaich an _sgudal"
 
-#: src/nemo-places-sidebar.c:3581 src/nemo-view.c:8257 src/nemo-view.c:8523
+#. name, stock id
+#. label, accelerator
+#: src/nemo-places-sidebar.c:3581 src/nemo-view.c:8254 src/nemo-view.c:8520
 msgid "_Properties"
 msgstr "_Roghainnean"
 
@@ -1512,6 +1600,9 @@ msgstr "Roghainnean"
 msgid "%s Properties"
 msgstr "Roghainnean %s"
 
+#. Fallback, use for both unknown attributes and attributes
+#. * for which we have no more appropriate default.
+#. 
 #: src/nemo-properties-window.c:1125 libnemo-private/nemo-file.c:6719
 msgid "unknown"
 msgstr "neo-aithnichte"
@@ -1554,14 +1645,22 @@ msgstr[3] "%1$s nì, %2$s a mheud uile gu lèir"
 msgid "(some contents unreadable)"
 msgstr "(tha cuid a shusbaint ann nach gabh a leughadh)"
 
+#. Also set the title field here, with a trailing carriage return &
+#. * space if the value field has two lines. This is a hack to get the
+#. * "Contents:" title to line up with the first line of the
+#. * 2-line value. Maybe there's a better way to do this, but I
+#. * couldn't think of one.
+#. 
 #: src/nemo-properties-window.c:2141
 msgid "Contents:"
 msgstr "Susbaint:"
 
+#. Translators: "used" refers to the capacity of the filesystem
 #: src/nemo-properties-window.c:2919
 msgid "used"
 msgstr "air a chleachdadh"
 
+#. Translators: "free" refers to the capacity of the filesystem
 #: src/nemo-properties-window.c:2926
 msgid "free"
 msgstr "saor"
@@ -1630,6 +1729,9 @@ msgstr "Cead-_ sgrìobhaidh"
 msgid "E_xecute"
 msgstr "Cead-g_nìomhachaidh"
 
+#. translators: this gets concatenated to "no read",
+#. * "no access", etc. (see following strings)
+#. 
 #: src/nemo-properties-window.c:3835 src/nemo-properties-window.c:3846
 #: src/nemo-properties-window.c:3858
 msgid "no "
@@ -1872,48 +1974,61 @@ msgstr "Aisig na nithean a thagh thu"
 msgid "Restore selected items to their original position"
 msgstr "Aisig na nithean a thagh thu gun ionad tùsail"
 
-#: src/nemo-tree-sidebar.c:788 src/nemo-view.c:8562
+#: src/nemo-tree-sidebar.c:788 src/nemo-view.c:8559
 msgid "Unp_in"
 msgstr ""
 
 #: src/nemo-tree-sidebar.c:790 src/nemo-tree-sidebar.c:1396
-#: src/nemo-view.c:8558
+#: src/nemo-view.c:8555
 msgid "P_in"
 msgstr ""
 
-#: src/nemo-tree-sidebar.c:965 src/nemo-view.c:6821
+#: src/nemo-tree-sidebar.c:965 src/nemo-view.c:6818
 #, c-format
 msgid "\"%s\" will be moved if you select the Paste command"
 msgstr "Thèid \"%s\" a ghluasad ma thaghas tu an àithne \"Cuir ann\""
 
-#: src/nemo-tree-sidebar.c:969 src/nemo-view.c:6825
+#: src/nemo-tree-sidebar.c:969 src/nemo-view.c:6822
 #, c-format
 msgid "\"%s\" will be copied if you select the Paste command"
 msgstr ""
 "Thèid lethbhreac a dhèanamh de \"%s\" ma thaghas tu an àithne \"Cuir ann\""
 
-#: src/nemo-tree-sidebar.c:1008 src/nemo-view.c:7075
+#: src/nemo-tree-sidebar.c:1008 src/nemo-view.c:7072
 msgid "There is nothing on the clipboard to paste."
 msgstr "Chan eil dad air an stòr-bhòrd as urrainn dhut a chur ann."
 
-#: src/nemo-tree-sidebar.c:1345 src/nemo-view.c:8265
+#. add the "create new folder" menu item
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1345 src/nemo-view.c:8262
 msgid "Create New _Folder"
 msgstr "Cruthaich _pasgan ùr"
 
-#: src/nemo-tree-sidebar.c:1358 src/nemo-view.c:8320 src/nemo-view.c:8473
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1358 src/nemo-view.c:8317 src/nemo-view.c:8470
 msgid "Cu_t"
 msgstr ""
 
-#: src/nemo-tree-sidebar.c:1370 src/nemo-view.c:8324 src/nemo-view.c:8477
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1370 src/nemo-view.c:8321 src/nemo-view.c:8474
 msgid "_Copy"
 msgstr ""
 
-#: src/nemo-tree-sidebar.c:1382 src/nemo-view.c:8334 src/nemo-view.c:8481
+#. We make accelerator "" instead of null here to not inherit the stock
+#. accelerator for paste
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1382 src/nemo-view.c:8331 src/nemo-view.c:8478
 msgid "_Paste Into Folder"
 msgstr "Cuir dhan _phasgan seo"
 
-#: src/nemo-tree-sidebar.c:1426 src/nemo-view.c:8372 src/nemo-view.c:8490
-#: src/nemo-view.c:9876
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1426 src/nemo-view.c:8369 src/nemo-view.c:8487
+#: src/nemo-view.c:9871
 msgid "_Delete"
 msgstr "Sgua_b às"
 
@@ -1969,6 +2084,7 @@ msgstr "_Ainm an luirg:"
 msgid "Select Folder to Save Search In"
 msgstr "Tagh pasgan gus an lorg a shàbhaladh ann"
 
+#. Reset to default info
 #: src/nemo-view.c:2643 libnemo-private/nemo-file-undo-operations.c:147
 msgid "Undo"
 msgstr "Neo-dhèan"
@@ -1977,6 +2093,7 @@ msgstr "Neo-dhèan"
 msgid "Undo last action"
 msgstr "Neo-dhèan an gnìomh mu dheireadh"
 
+#. Reset to default info
 #: src/nemo-view.c:2662 libnemo-private/nemo-file-undo-operations.c:154
 msgid "Redo"
 msgstr "Ath-dhèan"
@@ -2016,6 +2133,7 @@ msgstr[1] " (anns a bheil %'d nì)"
 msgstr[2] " (anns a bheil %'d nithean)"
 msgstr[3] " (anns a bheil %'d nì)"
 
+#. translators: this is preceded with a string of form 'N folders' (N more than 1)
 #: src/nemo-view.c:3143
 #, c-format
 msgid " (containing a total of %'d item)"
@@ -2034,6 +2152,7 @@ msgstr[1] "%'d nì air a thaghadh"
 msgstr[2] "%'d nithean air a thaghadh"
 msgstr[3] "%'d nì air a thaghadh"
 
+#. Folders selected also, use "other" terminology
 #: src/nemo-view.c:3167
 #, c-format
 msgid "%'d other item selected"
@@ -2043,6 +2162,11 @@ msgstr[1] "%'d nì eile air a thaghadh"
 msgstr[2] "%'d nithean eile air a thaghadh"
 msgstr[3] "%'d nì eile air a thaghadh"
 
+#. This is marked for translation in case a localiser
+#. * needs to use something other than parentheses. The
+#. * first message gives the number of items selected;
+#. * the message in parentheses the size of those items.
+#. 
 #: src/nemo-view.c:3184
 #, c-format
 msgid "%s (%s)"
@@ -2062,16 +2186,41 @@ msgstr[3] "%'u nì"
 msgid "%s, Free space: %s"
 msgstr "%s, rum saor: %s"
 
+#. Marking this for translation, since you
+#. * might want to change "," to something else.
+#. * After the comma the amount of free space will
+#. * be shown.
+#. 
 #: src/nemo-view.c:3223
 #, c-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
+#. Marking this for translation, since you
+#. * might want to change "," to something else.
+#. * After the comma the amount of free space will
+#. * be shown.
+#. 
+#. This is marked for translation in case a localizer
+#. * needs to change ", " to something else. The comma
+#. * is between the message about the number of folders
+#. * and the number of items in those folders and the
+#. * message about the number of other items and the
+#. * total size of those items.
+#. 
 #: src/nemo-view.c:3242 src/nemo-view.c:3255
 #, c-format
 msgid "%s%s, %s"
 msgstr "%s%s, %s"
 
+#. This is marked for translation in case a localizer
+#. * needs to change ", " to something else. The first comma
+#. * is between the message about the number of folders
+#. * and the number of items in those folders and the
+#. * message about the number of other items and the
+#. * total size of those items. After the second comma
+#. * the free space is written.
+#. 
 #: src/nemo-view.c:3269
 #, c-format
 msgid "%s%s, %s, %s"
@@ -2096,12 +2245,12 @@ msgstr[3] "Cleachd \"%s\" gus an nì a thagh thu fhosgladh"
 msgid "Run \"%s\" on any selected items"
 msgstr "Ruith \"%s\" air nì sam bith a thagh thu"
 
-#: src/nemo-view.c:6532
+#: src/nemo-view.c:6529
 #, c-format
 msgid "Create a new document from template \"%s\""
 msgstr "Cruthaich sgrìobhainn ùr stèidhichte air an teamplaid \"%s\""
 
-#: src/nemo-view.c:6832
+#: src/nemo-view.c:6829
 #, c-format
 msgid "The %'d selected item will be moved if you select the Paste command"
 msgid_plural ""
@@ -2116,7 +2265,7 @@ msgstr[2] ""
 msgstr[3] ""
 "Thèid na %'d nì a thagh thu a ghluasad ma thaghas tu an àithne \"Cuir ann\""
 
-#: src/nemo-view.c:6839
+#: src/nemo-view.c:6836
 #, c-format
 msgid "The %'d selected item will be copied if you select the Paste command"
 msgid_plural ""
@@ -2134,154 +2283,194 @@ msgstr[3] ""
 "Thèid lethbhreac a dhèanamh dhen %'d nì a thagh thu ma thaghas tu an àithne "
 "\"Cuir ann\""
 
-#: src/nemo-view.c:7009
+#: src/nemo-view.c:7006
 msgid "Select Target Folder For Move"
 msgstr "Tagh am pasgan-uidhe airson a' ghluasaid"
 
-#: src/nemo-view.c:7032
+#: src/nemo-view.c:7029
 msgid "Select Target Folder For Copy"
 msgstr "Tagh am pasgan-uidhe airson an lethbhric"
 
-#: src/nemo-view.c:7506
+#: src/nemo-view.c:7503
 msgid "Unable to unmount location"
 msgstr "Cha ghabh an t-ionad a dhì-mhunntachadh"
 
-#: src/nemo-view.c:7526
+#: src/nemo-view.c:7523
 msgid "Unable to eject location"
 msgstr "Cha ghabh an t-ionad sin a ghluasad a-mach"
 
-#: src/nemo-view.c:7541
+#: src/nemo-view.c:7538
 msgid "Unable to stop drive"
 msgstr "Cha ghabh stad a chur air an draibh"
 
-#: src/nemo-view.c:8027
+#: src/nemo-view.c:8024
 #, c-format
 msgid "Connect to Server %s"
 msgstr "Ceangail ris an fhrithealaiche %s"
 
-#: src/nemo-view.c:8032 src/nemo-view.c:9164 src/nemo-view.c:9251
-#: src/nemo-view.c:9355
+#: src/nemo-view.c:8029 src/nemo-view.c:9161 src/nemo-view.c:9248
+#: src/nemo-view.c:9352
 msgid "_Connect"
 msgstr "_Ceangail"
 
-#: src/nemo-view.c:8046
+#: src/nemo-view.c:8043
 msgid "Link _name:"
 msgstr "Ai_nm a' cheangail"
 
-#: src/nemo-view.c:8253
+#. name, stock id, label
+#: src/nemo-view.c:8250
 msgid "Create New _Document"
 msgstr "Cruthaich _sgrìobhainn ùr"
 
-#: src/nemo-view.c:8254
+#. name, stock id, label
+#: src/nemo-view.c:8251
 msgid "Open Wit_h"
 msgstr "Fosgail _le"
 
-#: src/nemo-view.c:8255
+#: src/nemo-view.c:8252
 msgid "Choose a program with which to open the selected item"
 msgstr "Tagh prògram a dh'fhosglas an nì a thagh thu dhut"
 
-#: src/nemo-view.c:8258 src/nemo-view.c:9917
+#. tooltip
+#: src/nemo-view.c:8255 src/nemo-view.c:9912
 msgid "View or modify the properties of each selected item"
 msgstr "Seall no atharraich roghainnean a nì a thagh thu"
 
-#: src/nemo-view.c:8266
+#. tooltip
+#: src/nemo-view.c:8263
 msgid "Create a new empty folder inside this folder"
 msgstr "Cruthaich pasgan falamh ùr am broinn a' phasgain seo"
 
-#: src/nemo-view.c:8268
+#. name, stock id, label
+#: src/nemo-view.c:8265
 msgid "No templates installed"
 msgstr "Cha deach teamplaid sam bith a stàladh"
 
-#: src/nemo-view.c:8271
+#. name, stock id
+#. translators: this is used to indicate that a document doesn't contain anything
+#. label, accelerator
+#: src/nemo-view.c:8268
 msgid "_Empty Document"
 msgstr "Sgrìobhainn _bhàn"
 
-#: src/nemo-view.c:8272
+#. tooltip
+#: src/nemo-view.c:8269
 msgid "Create a new empty document inside this folder"
 msgstr "Cruthaich sgrìobhainn bhàn ùr am broinn a' phasgain seo"
 
-#: src/nemo-view.c:8276
+#. tooltip
+#: src/nemo-view.c:8273
 msgid "Open the selected item in this window"
 msgstr "Fosgail an nì a thagh thu san uinneag seo"
 
-#: src/nemo-view.c:8283 src/nemo-view.c:8464
+#. name, stock id
+#. label, accelerator
+#. Location-specific actions
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8280 src/nemo-view.c:8461
 msgid "Open in Navigation Window"
 msgstr "Foasgail ann an uinneag seòladaireachd"
 
-#: src/nemo-view.c:8284
+#. tooltip
+#: src/nemo-view.c:8281
 msgid "Open each selected item in a navigation window"
 msgstr "Fosgail gach nì a thagh thu ann an uinneag seòladaireachd"
 
-#: src/nemo-view.c:8288
+#. tooltip
+#: src/nemo-view.c:8285
 msgid "Open each selected item in a new tab"
 msgstr "Fosgail gach nì a thagh thu ann an taba ùr"
 
-#: src/nemo-view.c:8291 src/nemo-window-menus.c:1630
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8288 src/nemo-window-menus.c:1630
 msgid "Open in Terminal"
 msgstr "Fosgail san tèirmineal"
 
-#: src/nemo-view.c:8292
+#. tooltip
+#: src/nemo-view.c:8289
 msgid "Open terminal in the selected folder"
 msgstr "Fosgail an tèirmineal sa phasgan a thagh thu"
 
-#: src/nemo-view.c:8295
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8292
 msgid "Open as Root"
 msgstr "Fosgail mar root"
 
-#: src/nemo-view.c:8296
+#. tooltip
+#: src/nemo-view.c:8293
 msgid "Open the folder with administration privileges"
 msgstr "Fosgail am pasgan le pribhleidean rianachd"
 
-#: src/nemo-view.c:8300
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8297
 msgid "Follow link to original file"
 msgstr "Lean an ceangal gun fhaidhle tùsail"
 
-#: src/nemo-view.c:8301
+#. tooltip
+#: src/nemo-view.c:8298
 msgid "Navigate to the original file that this symbolic link points to"
 msgstr ""
 "Seòl gun fhaidhle tùsail a tha an ceangal samhlach seo a' tomhadh ris"
 
-#: src/nemo-view.c:8304
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8301
 msgid "Open containing folder"
 msgstr "Fosgail am pasgan sa bheil e"
 
-#: src/nemo-view.c:8305
+#. tooltip
+#: src/nemo-view.c:8302
 msgid "Navigate to the folder that the selected item is stored in"
 msgstr "Seòl dhan phasgan far a bheil an nì a thagh thu 'ga ghlèidheadh"
 
-#: src/nemo-view.c:8308
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8305
 msgid "Other _Application..."
 msgstr "_Aplacaid eile..."
 
-#: src/nemo-view.c:8309 src/nemo-view.c:8313
+#. tooltip
+#: src/nemo-view.c:8306 src/nemo-view.c:8310
 msgid "Choose another application with which to open the selected item"
 msgstr "Tagh aplacaid eile a dh'fhosglas an nì a thagh thu"
 
-#: src/nemo-view.c:8312
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8309
 msgid "Open With Other _Application..."
 msgstr "Fosgail le _aplacaid eile..."
 
-#: src/nemo-view.c:8321
+#. tooltip
+#: src/nemo-view.c:8318
 msgid "Prepare the selected files to be moved with a Paste command"
 msgstr "Ullaich na faidhlichean gus an gluasad leis an àithne \"Cuir ann\""
 
-#: src/nemo-view.c:8325
+#. tooltip
+#: src/nemo-view.c:8322
 msgid "Prepare the selected files to be copied with a Paste command"
 msgstr ""
 "Ullaich na faidhlichean gus lethbhreac a dhèanamh dhiubh leis an àithne "
 "\"Cuir ann\""
 
-#: src/nemo-view.c:8328
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8325
 msgid "_Paste"
 msgstr ""
 
-#: src/nemo-view.c:8329
+#. tooltip
+#: src/nemo-view.c:8326
 msgid "Move or copy files previously selected by a Cut or Copy command"
 msgstr ""
 "Gluais no dèan lethbhreac de dh'fhaidhlichean a thagh thu roimhe leis an "
 "àithne \"Gearr\" no \"Dèan lethbhreac\""
 
-#: src/nemo-view.c:8335
+#. tooltip
+#: src/nemo-view.c:8332
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into the "
 "selected folder"
@@ -2289,47 +2478,63 @@ msgstr ""
 "Gluais no cuir lethbhreac de dh'fhaidhlichean a thagh thu roimhe leis an "
 "àithne \"Gearr\" no \"Dèan lethbhreac\" dhan phasgan a thagh thu"
 
-#: src/nemo-view.c:8337
+#. name, stock id, label
+#: src/nemo-view.c:8334
 msgid "Cop_y to"
 msgstr "Cuir l_ethbhreac dheth gu"
 
-#: src/nemo-view.c:8338
+#. name, stock id, label
+#: src/nemo-view.c:8335
 msgid "M_ove to"
 msgstr "G_luais gu"
 
-#: src/nemo-view.c:8340 libnemo-private/nemo-clipboard.c:444
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8337 libnemo-private/nemo-clipboard.c:444
 msgid "Select _All"
 msgstr "Tagh n_a h-uile"
 
-#: src/nemo-view.c:8341
+#. tooltip
+#: src/nemo-view.c:8338
 msgid "Select all items in this window"
 msgstr "Tagh a h-uile nì a tha san uinneag seo"
 
-#: src/nemo-view.c:8344
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8341
 msgid "Select I_tems Matching..."
 msgstr "Tagh n_ithean a tha a' maidseadh..."
 
-#: src/nemo-view.c:8345
+#. tooltip
+#: src/nemo-view.c:8342
 msgid "Select items in this window matching a given pattern"
 msgstr "Tagh nithean san uinneag seo a tha a' maidseadh ri pàtran àraid"
 
-#: src/nemo-view.c:8348
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8345
 msgid "_Invert Selection"
 msgstr "Cuir an _taghadh bun os cionn"
 
-#: src/nemo-view.c:8349
+#. tooltip
+#: src/nemo-view.c:8346
 msgid "Select all and only the items that are not currently selected"
 msgstr "Na tagh ach na nithean nach eil air an taghadh an-dràsta fhèin"
 
-#: src/nemo-view.c:8352
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8349
 msgid "D_uplicate"
 msgstr "Dù_blaich"
 
-#: src/nemo-view.c:8353
+#. tooltip
+#: src/nemo-view.c:8350
 msgid "Duplicate each selected item"
 msgstr "Dùblaich gach nì a thagh thu"
 
-#: src/nemo-view.c:8356 src/nemo-view.c:9902
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8353 src/nemo-view.c:9897
 msgid "Ma_ke Link"
 msgid_plural "Ma_ke Links"
 msgstr[0] "Dè_an ceangal"
@@ -2337,150 +2542,201 @@ msgstr[1] "Dè_an ceanglaichean"
 msgstr[2] "Dè_an ceanglaichean"
 msgstr[3] "Dè_an ceanglaichean"
 
-#: src/nemo-view.c:8357
+#. tooltip
+#: src/nemo-view.c:8354
 msgid "Create a symbolic link for each selected item"
 msgstr "Cruthaich ceangal samhlachail airson gach nì a thagh thu"
 
-#: src/nemo-view.c:8360
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8357
 msgid "_Rename..."
 msgstr "Thoi_r ainm ùr air..."
 
-#: src/nemo-view.c:8361
+#. tooltip
+#: src/nemo-view.c:8358
 msgid "Rename selected item"
 msgstr "Thoir ainm ùr air an rud a thagh thu"
 
-#: src/nemo-view.c:8369 src/nemo-view.c:9854
+#. tooltip
+#: src/nemo-view.c:8366 src/nemo-view.c:9849
 msgid "Move each selected item to the Trash"
 msgstr "Gluais gach nì a thagh thu dhan sgudal"
 
-#: src/nemo-view.c:8373 src/nemo-view.c:9877
+#. tooltip
+#: src/nemo-view.c:8370 src/nemo-view.c:9872
 msgid "Delete each selected item, without moving to the Trash"
 msgstr "Shuab às gach nì a thagh thu gun a bhith 'gan gluasad dhan sgudal"
 
-#: src/nemo-view.c:8376 src/nemo-view.c:8494
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8373 src/nemo-view.c:8491
 msgid "_Restore"
 msgstr "_Aisig"
 
-#: src/nemo-view.c:8380 src/nemo-window-menus.c:1291
+#. name, stock id
+#. label, accelerator
+#. name, stock id, label
+#: src/nemo-view.c:8377 src/nemo-window-menus.c:1291
 msgid "_Undo"
 msgstr "_Neo-dhèan"
 
-#: src/nemo-view.c:8381
+#. tooltip
+#: src/nemo-view.c:8378
 msgid "Undo the last action"
 msgstr "Neo-dhèan an gnìomh mu dheireadh"
 
-#: src/nemo-view.c:8384
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8381
 msgid "_Redo"
 msgstr "_Ath-dhèan"
 
-#: src/nemo-view.c:8385
+#. tooltip
+#: src/nemo-view.c:8382
 msgid "Redo the last undone action"
 msgstr "Ath-dhèan an gnìomh mu dheireadh a chaidh a neo-dhèanamh"
 
-#: src/nemo-view.c:8394
+#. 
+#. * multiview-TODO: decide whether "Reset to Defaults" should
+#. * be window-wide, and not just view-wide.
+#. * Since this also resets the "Show hidden files" mode,
+#. * it is a mixture of both ATM.
+#. 
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8391
 msgid "Reset View to _Defaults"
 msgstr "Aisig na _bun-roghainnean"
 
-#: src/nemo-view.c:8395
+#. tooltip
+#: src/nemo-view.c:8392
 msgid "Reset sorting order and zoom level to match preferences for this view"
 msgstr ""
 "Ath-shuidhich òrdugh an t-seòrsachaidh agus ìre an t-sùm a-rèir roghainnean "
 "an t-seallaidh seo"
 
-#: src/nemo-view.c:8398
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8395
 msgid "Connect To This Server"
 msgstr "Ceangail ris an fhrithealaiche seo"
 
-#: src/nemo-view.c:8399
+#. tooltip
+#: src/nemo-view.c:8396
 msgid "Make a permanent connection to this server"
 msgstr "Dèan ceangal buan ris an fhrithealaiche seo"
 
-#: src/nemo-view.c:8403
+#. tooltip
+#: src/nemo-view.c:8400
 msgid "Mount the selected volume"
 msgstr "Munntaich an draibh a thagh thu"
 
-#: src/nemo-view.c:8407
+#. tooltip
+#: src/nemo-view.c:8404
 msgid "Unmount the selected volume"
 msgstr "Dì-mhunntaich an draibh a thagh thu"
 
-#: src/nemo-view.c:8411
+#. tooltip
+#: src/nemo-view.c:8408
 msgid "Eject the selected volume"
 msgstr "Gluais a-mach an draibh a thagh thu"
 
-#: src/nemo-view.c:8415
+#. tooltip
+#: src/nemo-view.c:8412
 msgid "Start the selected volume"
 msgstr "Tòisich an draibh a thagh thu"
 
-#: src/nemo-view.c:8419 src/nemo-view.c:9377
+#. tooltip
+#: src/nemo-view.c:8416 src/nemo-view.c:9374
 msgid "Stop the selected volume"
 msgstr "Cuir stad air an draibh a thagh thu"
 
-#: src/nemo-view.c:8423 src/nemo-view.c:8447 src/nemo-view.c:8519
+#. tooltip
+#: src/nemo-view.c:8420 src/nemo-view.c:8444 src/nemo-view.c:8516
 msgid "Detect media in the selected drive"
 msgstr "Mothaich do mheadhanan san draibh a thagh thu"
 
-#: src/nemo-view.c:8427
+#. tooltip
+#: src/nemo-view.c:8424
 msgid "Mount the volume associated with the open folder"
 msgstr "Munntaich an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:8431
+#. tooltip
+#: src/nemo-view.c:8428
 msgid "Unmount the volume associated with the open folder"
 msgstr ""
 "Dì-mhunntaich an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:8435
+#. tooltip
+#: src/nemo-view.c:8432
 msgid "Eject the volume associated with the open folder"
 msgstr ""
 "Gluais a-mach an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:8439
+#. tooltip
+#: src/nemo-view.c:8436
 msgid "Start the volume associated with the open folder"
 msgstr "Tòisich an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:8443
+#. tooltip
+#: src/nemo-view.c:8440
 msgid "Stop the volume associated with the open folder"
 msgstr ""
 "Cuir stad air an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:8450
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8447
 msgid "Open File and Close window"
 msgstr "Fosgail am faidhle is dùin an uinneag"
 
-#: src/nemo-view.c:8454
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8451
 msgid "Sa_ve Search"
 msgstr "Sà_bhail an lorg"
 
-#: src/nemo-view.c:8455
+#. tooltip
+#: src/nemo-view.c:8452
 msgid "Save the edited search"
 msgstr "Sàbhail an lorg deasaichte"
 
-#: src/nemo-view.c:8458
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8455
 msgid "Sa_ve Search As..."
 msgstr "Sà_bhail an lorg mar..."
 
-#: src/nemo-view.c:8459
+#. tooltip
+#: src/nemo-view.c:8456
 msgid "Save the current search as a file"
 msgstr "Sàbhail an lorg làithreach mar fhaidhle"
 
-#: src/nemo-view.c:8465
+#. tooltip
+#: src/nemo-view.c:8462
 msgid "Open this folder in a navigation window"
 msgstr "Fosgail am pasgan ann an uinneag seòladaireachd"
 
-#: src/nemo-view.c:8469
+#. tooltip
+#: src/nemo-view.c:8466
 msgid "Open this folder in a new tab"
 msgstr "Fosgail am pasgan seo ann an taba ùr"
 
-#: src/nemo-view.c:8474
+#. tooltip
+#: src/nemo-view.c:8471
 msgid "Prepare this folder to be moved with a Paste command"
 msgstr "Ullaich am pasgan seo gus a ghluasad leis an àithne \"Cuir ann\""
 
-#: src/nemo-view.c:8478
+#. tooltip
+#: src/nemo-view.c:8475
 msgid "Prepare this folder to be copied with a Paste command"
 msgstr ""
 "Ullaich am pasgan seo gus lethbhreac a dhèanamh dheth leis an àithne \"Cuir "
 "ann\""
 
-#: src/nemo-view.c:8482
+#. tooltip
+#: src/nemo-view.c:8479
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into this "
 "folder"
@@ -2488,111 +2744,125 @@ msgstr ""
 "Gluais no cuir lethbhreac de dh'fhaidhlichean a thagh thu roimhe leis an "
 "àithne \"Gearr\" no \"Dèan lethbhreac\" dhan pasgan seo"
 
-#: src/nemo-view.c:8487
+#. tooltip
+#: src/nemo-view.c:8484
 msgid "Move this folder to the Trash"
 msgstr "Gluais am pasgan seo dhan sgudal"
 
-#: src/nemo-view.c:8491
+#. tooltip
+#: src/nemo-view.c:8488
 msgid "Delete this folder, without moving to the Trash"
 msgstr "Sguab às am pasgan seo gun a bhith 'ga ghluasad dhan sgudal"
 
-#: src/nemo-view.c:8499
+#. tooltip
+#: src/nemo-view.c:8496
 msgid "Mount the volume associated with this folder"
 msgstr "Munntaich an draibh a tha co-cheangailte ris a' phasgan seo"
 
-#: src/nemo-view.c:8503
+#. tooltip
+#: src/nemo-view.c:8500
 msgid "Unmount the volume associated with this folder"
 msgstr "Dì-mhunntaich an draibh a tha co-cheangailte ris a' phasgan seo"
 
-#: src/nemo-view.c:8507
+#. tooltip
+#: src/nemo-view.c:8504
 msgid "Eject the volume associated with this folder"
 msgstr "Gluais a-mach an draibh a tha co-cheangailte ris a' phasgan seo"
 
-#: src/nemo-view.c:8511
+#. tooltip
+#: src/nemo-view.c:8508
 msgid "Start the volume associated with this folder"
 msgstr "Tòisich an draibh a tha co-cheangailte ris a' phasgan seo"
 
-#: src/nemo-view.c:8515
+#. tooltip
+#: src/nemo-view.c:8512
 msgid "Stop the volume associated with this folder"
 msgstr "Cuir stad air an draibh a tha co-cheangailte ris a' phasgan seo"
 
-#: src/nemo-view.c:8524
+#. tooltip
+#: src/nemo-view.c:8521
 msgid "View or modify the properties of this folder"
 msgstr "Seall no atharraich roghainnean a' phasgain seo"
 
-#: src/nemo-view.c:8527 src/nemo-view.c:8530
+#. name, stock id, label
+#: src/nemo-view.c:8524 src/nemo-view.c:8527
 msgid "_Other pane"
 msgstr "Leòsan _eile"
 
-#: src/nemo-view.c:8528
+#: src/nemo-view.c:8525
 msgid "Copy the current selection to the other pane in the window"
 msgstr "Cuir lethbhreac dhen taghadh làithreach dhan leòsan eile san uinneag"
 
-#: src/nemo-view.c:8531
+#: src/nemo-view.c:8528
 msgid "Move the current selection to the other pane in the window"
 msgstr "Gluais an taghadh làithreach dhan leòsan eile san uinneag"
 
-#: src/nemo-view.c:8534 src/nemo-view.c:8538 src/nemo-window-menus.c:1366
+#. name, stock id, label
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8531 src/nemo-view.c:8535 src/nemo-window-menus.c:1366
 #: src/nemo-window-menus.c:1580 src/nemo-window-menus.c:1818
 msgid "_Home"
 msgstr "_Dhachaigh"
 
-#: src/nemo-view.c:8535
+#: src/nemo-view.c:8532
 msgid "Copy the current selection to the home folder"
 msgstr "Cuir lethbhreac dhen taghadh làithreach dhan phasgan dachaigh"
 
-#: src/nemo-view.c:8539
+#: src/nemo-view.c:8536
 msgid "Move the current selection to the home folder"
 msgstr "Gluais an taghadh làithreach dhan phasgan dachaigh"
 
-#: src/nemo-view.c:8542 src/nemo-view.c:8546
+#. name, stock id, label
+#: src/nemo-view.c:8539 src/nemo-view.c:8543
 msgid "_Desktop"
 msgstr "_Desktop"
 
-#: src/nemo-view.c:8543
+#: src/nemo-view.c:8540
 msgid "Copy the current selection to the desktop"
 msgstr "Cuir lethbhreac dhen taghadh làithreach air an desktop"
 
-#: src/nemo-view.c:8547
+#: src/nemo-view.c:8544
 msgid "Move the current selection to the desktop"
 msgstr "Gluais an taghadh làithreach air an desktop"
 
-#: src/nemo-view.c:8550 src/nemo-view.c:8554
+#: src/nemo-view.c:8547 src/nemo-view.c:8551
 msgid "Browse…"
 msgstr "Brabhsaich..."
 
-#: src/nemo-view.c:8551
+#: src/nemo-view.c:8548
 msgid "Browse for a folder to move the selection to"
 msgstr "Brabhsaich airson pasgan gus na thagh thu a ghluasad ann"
 
-#: src/nemo-view.c:8555
+#: src/nemo-view.c:8552
 msgid "Browse for a folder to copy the selection to"
 msgstr "Brabhsaich airson pasgan gus lethbhreac dhe na thagh thu a chur ann"
 
-#: src/nemo-view.c:8559
+#: src/nemo-view.c:8556
 msgid ""
 "Pin the selected file so it always appears at the top of this location's "
 "file list"
 msgstr ""
 
-#: src/nemo-view.c:8563
+#: src/nemo-view.c:8560
 msgid "Unpin the selected file from the top of this location's file list"
 msgstr ""
 
-#: src/nemo-view.c:8638
+#: src/nemo-view.c:8635
 msgid "Run scripts"
 msgstr "Ruith sgriobtaichean"
 
-#: src/nemo-view.c:8640
+#. Create a script action here specially because its tooltip is dynamic
+#: src/nemo-view.c:8637
 msgid "_Scripts"
 msgstr "_Sgriobtaichean"
 
-#: src/nemo-view.c:9013
+#: src/nemo-view.c:9010
 #, c-format
 msgid "Move the open folder out of the trash to \"%s\""
 msgstr "Gluais am pasgan fosgailte a-mach às an sgudal dha \"%s\""
 
-#: src/nemo-view.c:9016
+#: src/nemo-view.c:9013
 #, c-format
 msgid "Move the selected folder out of the trash to \"%s\""
 msgid_plural "Move the selected folders out of the trash to \"%s\""
@@ -2601,7 +2871,7 @@ msgstr[1] "Gluais na pasganan a thagh thu a-mach às an sgudal dha “%s”"
 msgstr[2] "Gluais na pasganan a thagh thu a-mach às an sgudal dha “%s”"
 msgstr[3] "Gluais na pasganan a thagh thu a-mach às an sgudal dha “%s”"
 
-#: src/nemo-view.c:9020
+#: src/nemo-view.c:9017
 msgid "Move the selected folder out of the trash"
 msgid_plural "Move the selected folders out of the trash"
 msgstr[0] "Gluais am pasgan a thagh thu a-mach às an sgudal"
@@ -2609,7 +2879,7 @@ msgstr[1] "Gluais na pasganan a thagh thu a-mach às an sgudal"
 msgstr[2] "Gluais na pasganan a thagh thu a-mach às an sgudal"
 msgstr[3] "Gluais na pasganan a thagh thu a-mach às an sgudal"
 
-#: src/nemo-view.c:9026
+#: src/nemo-view.c:9023
 #, c-format
 msgid "Move the selected file out of the trash to \"%s\""
 msgid_plural "Move the selected files out of the trash to \"%s\""
@@ -2618,7 +2888,7 @@ msgstr[1] "Gluais na faidhlichean a thagh thu a-mach às an sgudal dha “%s”"
 msgstr[2] "Gluais na faidhlichean a thagh thu a-mach às an sgudal dha “%s”"
 msgstr[3] "Gluais na faidhlichean a thagh thu a-mach às an sgudal dha “%s”"
 
-#: src/nemo-view.c:9030
+#: src/nemo-view.c:9027
 msgid "Move the selected file out of the trash"
 msgid_plural "Move the selected files out of the trash"
 msgstr[0] "Gluais am faidhle a thagh thu a-mach às an sgudal"
@@ -2626,7 +2896,7 @@ msgstr[1] "Gluais na faidhlichean a thagh thu a-mach às an sgudal"
 msgstr[2] "Gluais na faidhlichean a thagh thu a-mach às an sgudal"
 msgstr[3] "Gluais na faidhlichean a thagh thu a-mach às an sgudal"
 
-#: src/nemo-view.c:9036
+#: src/nemo-view.c:9033
 #, c-format
 msgid "Move the selected item out of the trash to \"%s\""
 msgid_plural "Move the selected items out of the trash to \"%s\""
@@ -2635,7 +2905,7 @@ msgstr[1] "Gluais na nithean a thagh thu a-mach às an sgudal dha \"%s\""
 msgstr[2] "Gluais na nithean a thagh thu a-mach às an sgudal dha \"%s\""
 msgstr[3] "Gluais na nithean a thagh thu a-mach às an sgudal dha \"%s\""
 
-#: src/nemo-view.c:9040
+#: src/nemo-view.c:9037
 msgid "Move the selected item out of the trash"
 msgid_plural "Move the selected items out of the trash"
 msgstr[0] "Gluais an nì a thagh thu a-mach às an sgudal"
@@ -2643,122 +2913,122 @@ msgstr[1] "Gluais na nithean a thagh thu a-mach às an sgudal"
 msgstr[2] "Gluais na nithean taghte a-mach às an sgudal"
 msgstr[3] "Gluais na nithean a thagh thu a-mach às an sgudal"
 
-#: src/nemo-view.c:9157 src/nemo-view.c:9161 src/nemo-view.c:9348
-#: src/nemo-view.c:9352
+#: src/nemo-view.c:9154 src/nemo-view.c:9158 src/nemo-view.c:9345
+#: src/nemo-view.c:9349
 msgid "Start the selected drive"
 msgstr "Tòisich an draibh a thagh thu"
 
-#: src/nemo-view.c:9165 src/nemo-view.c:9356
+#: src/nemo-view.c:9162 src/nemo-view.c:9353
 msgid "Connect to the selected drive"
 msgstr "Ceangail ris an draibh a thagh thu"
 
-#: src/nemo-view.c:9168 src/nemo-view.c:9255 src/nemo-view.c:9359
+#: src/nemo-view.c:9165 src/nemo-view.c:9252 src/nemo-view.c:9356
 msgid "_Start Multi-disk Drive"
 msgstr "_Tòisich an draibh ioma-diosgach"
 
-#: src/nemo-view.c:9169 src/nemo-view.c:9360
+#: src/nemo-view.c:9166 src/nemo-view.c:9357
 msgid "Start the selected multi-disk drive"
 msgstr "Tòisich an draibh ioma-diosgach a thagh thu"
 
-#: src/nemo-view.c:9172
+#: src/nemo-view.c:9169
 msgid "U_nlock Drive"
 msgstr "Th_oir a' ghlas far an draibh"
 
-#: src/nemo-view.c:9173 src/nemo-view.c:9364
+#: src/nemo-view.c:9170 src/nemo-view.c:9361
 msgid "Unlock the selected drive"
 msgstr "Thoir a' ghlas far an draibh a thagh thu"
 
-#: src/nemo-view.c:9186
+#: src/nemo-view.c:9183
 msgid "Stop the selected drive"
 msgstr "Cuir stad air an draibh a thagh thu"
 
-#: src/nemo-view.c:9190 src/nemo-view.c:9381
+#: src/nemo-view.c:9187 src/nemo-view.c:9378
 msgid "Safely remove the selected drive"
 msgstr "Gluais a-mach an draibh a thagh thu gu sàbhailte"
 
-#: src/nemo-view.c:9193 src/nemo-view.c:9280 src/nemo-view.c:9384
+#: src/nemo-view.c:9190 src/nemo-view.c:9277 src/nemo-view.c:9381
 msgid "_Disconnect"
 msgstr "Bris an ceangal"
 
-#: src/nemo-view.c:9194 src/nemo-view.c:9385
+#: src/nemo-view.c:9191 src/nemo-view.c:9382
 msgid "Disconnect the selected drive"
 msgstr "Dì-cheangail an draibh a thagh thu"
 
-#: src/nemo-view.c:9197 src/nemo-view.c:9284 src/nemo-view.c:9388
+#: src/nemo-view.c:9194 src/nemo-view.c:9281 src/nemo-view.c:9385
 msgid "_Stop Multi-disk Drive"
 msgstr "_Cuir stad air an draibh ioma-diosgach a thagh thu"
 
-#: src/nemo-view.c:9198 src/nemo-view.c:9389
+#: src/nemo-view.c:9195 src/nemo-view.c:9386
 msgid "Stop the selected multi-disk drive"
 msgstr "Cuir stad air an draibh ioma-diosgach a thagh thu"
 
-#: src/nemo-view.c:9202 src/nemo-view.c:9393
+#: src/nemo-view.c:9199 src/nemo-view.c:9390
 msgid "Lock the selected drive"
 msgstr "Glais an draibh a thagh thu"
 
-#: src/nemo-view.c:9244 src/nemo-view.c:9248
+#: src/nemo-view.c:9241 src/nemo-view.c:9245
 msgid "Start the drive associated with the open folder"
 msgstr "Tòisich an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:9252
+#: src/nemo-view.c:9249
 msgid "Connect to the drive associated with the open folder"
 msgstr "Ceangail an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:9256
+#: src/nemo-view.c:9253
 msgid "Start the multi-disk drive associated with the open folder"
 msgstr ""
 "Tòisich an draibh ioma-diosgach a tha co-cheangailte ris a' phasgan "
 "fhosgailte"
 
-#: src/nemo-view.c:9260
+#: src/nemo-view.c:9257
 msgid "Unlock the drive associated with the open folder"
 msgstr ""
 "Thoir a' ghlas far an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:9273
+#: src/nemo-view.c:9270
 msgid "_Stop the drive associated with the open folder"
 msgstr ""
 "C_uir stad air an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:9277
+#: src/nemo-view.c:9274
 msgid "Safely remove the drive associated with the open folder"
 msgstr ""
 "Gluais a-mach an draibh a tha co-cheangailte ris a' phasgan fhosgailte gu "
 "sàbhailte"
 
-#: src/nemo-view.c:9281
+#: src/nemo-view.c:9278
 msgid "Disconnect the drive associated with the open folder"
 msgstr ""
 "Dì-cheangail an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:9285
+#: src/nemo-view.c:9282
 msgid "Stop the multi-disk drive associated with the open folder"
 msgstr ""
 "Cuir stad air an draibh ioma-dhiosgach a tha co-cheangailte ris a' phasgan "
 "fhosgailte"
 
-#: src/nemo-view.c:9289
+#: src/nemo-view.c:9286
 msgid "Lock the drive associated with the open folder"
 msgstr "Glais an draibh a tha co-cheangailte ris a' phasgan fhosgailte"
 
-#: src/nemo-view.c:9529 src/nemo-view.c:9849
+#: src/nemo-view.c:9526 src/nemo-view.c:9844
 msgid "_Delete Permanently"
 msgstr "Sgua_b às gu buan"
 
-#: src/nemo-view.c:9530
+#: src/nemo-view.c:9527
 msgid "Delete the open folder permanently"
 msgstr "Sguab às am pasgan fosgailte gu buan"
 
-#: src/nemo-view.c:9534
+#: src/nemo-view.c:9531
 msgid "Move the open folder to the Trash"
 msgstr "Gluais am pasgan fosgailte dhan sgudal"
 
-#: src/nemo-view.c:9763
+#: src/nemo-view.c:9758
 #, c-format
 msgid "_Open With %s"
 msgstr "_Fosgail le %s"
 
-#: src/nemo-view.c:9812
+#: src/nemo-view.c:9807
 #, c-format
 msgid "Open in %'d New _Window"
 msgid_plural "Open in %'d New _Windows"
@@ -2767,7 +3037,7 @@ msgstr[1] "Fosgail ann an %'d  _uinneag ùr"
 msgstr[2] "Fosgail ann an %'d  _uinneagan ùra"
 msgstr[3] "Fosgail ann an %'d  _uinneag ùr"
 
-#: src/nemo-view.c:9832
+#: src/nemo-view.c:9827
 #, c-format
 msgid "Open in %'d New _Tab"
 msgid_plural "Open in %'d New _Tabs"
@@ -2776,22 +3046,27 @@ msgstr[1] "Fosgail ann an %'d _thaba ùr"
 msgstr[2] "Fosgail ann an %'d _tabaichean ùra"
 msgstr[3] "Fosgail ann an %'d _taba ùr"
 
-#: src/nemo-view.c:9850
+#: src/nemo-view.c:9845
 msgid "Delete all selected items permanently"
 msgstr "Sguab às gach nì a thagh thu gu buan"
 
-#: src/nemo-view.c:9873
+#: src/nemo-view.c:9868
 msgid "Remo_ve from Recent"
 msgstr "Thoir air falbh _o na dh'fhosgladh o chionn goirid"
 
-#: src/nemo-view.c:9874
+#: src/nemo-view.c:9869
 msgid "Remove each selected item from the recently used list"
 msgstr "Thoir air falbh gach nì a thagh thu na dh'fhosgladh o chionn goirid"
 
-#: src/nemo-view.c:9915
+#: src/nemo-view.c:9910
 msgid "View or modify the properties of the open folder"
 msgstr "Seall no atharraich roghainnean a' phasgain fhosgailte"
 
+#. Note to localizers: convert file type string for file
+#. * (e.g. "folder", "plain text") to file type for symbolic link
+#. * to that kind of file (e.g. "link to folder").
+#. 
+#. appended to new link file
 #: src/nemo-view-dnd.c:125 libnemo-private/nemo-file.c:6861
 #: libnemo-private/nemo-file-operations.c:393
 #, c-format
@@ -2811,10 +3086,14 @@ msgstr ""
 msgid "An invalid drag type was used."
 msgstr "Chaidh slaodadh a dhèanamh air dòigh nach eil ceadaichte"
 
+#. Translator: This is the filename used for when you dnd text to a directory
 #: src/nemo-view-dnd.c:376
 msgid "dropped text.txt"
 msgstr "teacsa a chaidh a leigeil as.txt"
 
+#. Translator: This is the filename used for when you dnd raw
+#. * data to a directory, if the source didn't supply a name.
+#. 
 #: src/nemo-view-dnd.c:421
 msgid "dropped data"
 msgstr "dàta a chaidh a leigeil às"
@@ -2845,6 +3124,7 @@ msgstr "Rach gun ionad a tha an comharra-lìn seo a' sònrachadh"
 msgid "%s - File Browser"
 msgstr "%s - Brabhsair fhaidhlichean"
 
+#. Set initial window title
 #: src/nemo-window.c:1966 src/nemo-window-menus.c:339
 msgid "Nemo"
 msgstr "Nemo"
@@ -2896,6 +3176,11 @@ msgstr "Cha ghabh an t-ionad seo a mhunntachadh."
 msgid "Access was denied."
 msgstr "Chaidh inntrigeadh dha a dhiùltadh."
 
+#. This case can be hit for user-typed strings like "foo" due to
+#. * the code that guesses web addresses when there's no initial "/".
+#. * But this case is also hit for legitimate web addresses when
+#. * the proxy is set up wrong.
+#. 
 #: src/nemo-window-manage-views.c:1756
 #, c-format
 msgid "Could not display \"%s\", because the host could not be found."
@@ -2970,26 +3255,33 @@ msgstr ""
 "Bha mearachd ann a' taisbeanadh na cobharach: \n"
 "%s"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1274
 msgid "_File"
 msgstr "_Faidhle"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1275
 msgid "_Edit"
 msgstr "D_easaich"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1276
 msgid "_View"
 msgstr "_Seall"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1277
 msgid "_Help"
 msgstr "_Cobhair"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1279
 msgid "_Close"
 msgstr "_Dùin"
 
+#. tooltip
 #: src/nemo-window-menus.c:1280
 msgid "Close this folder"
 msgstr "Dùin am pasgan seo"
@@ -3015,6 +3307,7 @@ msgstr "Stiùirich leudachain, gnìomhan is sgriobtaichean"
 msgid "Undo the last text change"
 msgstr "Neo-dhèan an t-atharrachadh mu dheireadh"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1295
 msgid "Open _Parent"
 msgstr "Fosgail am _pàrant"
@@ -3023,22 +3316,29 @@ msgstr "Fosgail am _pàrant"
 msgid "Open the parent folder"
 msgstr "Fosgail pàrant a' phasgain"
 
+#. tooltip
 #: src/nemo-window-menus.c:1303
 msgid "Stop loading the current location"
 msgstr "Sguir a luchdadh an ionaid làithrich"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1306 src/nemo-window-menus.c:1566
 msgid "_Reload"
 msgstr "_Ath-luchdaich"
 
+#. tooltip
 #: src/nemo-window-menus.c:1307 src/nemo-window-menus.c:1568
 msgid "Reload the current location"
 msgstr "Ath-luchdaich an t-ionad làithreach"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1310
 msgid "_All Topics"
 msgstr "_A h-uile cuspair"
 
+#. tooltip
 #: src/nemo-window-menus.c:1311
 msgid "Display Nemo help"
 msgstr "Taisbean cobhair Nemo"
@@ -3051,54 +3351,89 @@ msgstr ""
 msgid "Display keyboard shortcuts"
 msgstr ""
 
+#. * name, stock id          { "NemoHelpSearch", NULL,
+#. label, accelerator        N_("Search for files"), NULL,
+#. tooltip                   N_("Locate files based on file name and type. Save your searches for later use."),
+#. G_CALLBACK (action_nemo_manual_callback) },
+#. name, stock id          { "NemoHelpSort", NULL,
+#. label, accelerator        N_("Sort files and folders"), NULL,
+#. tooltip                   N_("Arrange files by name, size, type, or when they were changed."),
+#. G_CALLBACK (action_nemo_manual_callback) },
+#. name, stock id          { "NemoHelpLost", NULL,
+#. label, accelerator        N_("Find a lost file"), NULL,
+#. tooltip                   N_("Follow these tips if you can't find a file you created or downloaded."),
+#. G_CALLBACK (action_nemo_manual_callback) },
+#. name, stock id          { "NemoHelpShare", NULL,
+#. label, accelerator        N_("Share and transfer files"), NULL,
+#. tooltip                   N_("Easily transfer files to your contacts and devices from the file manager."),
+#. G_CALLBACK (action_nemo_manual_callback) }, *
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1334
 msgid "_About"
 msgstr "M_u dhèidhinn"
 
+#. tooltip
 #: src/nemo-window-menus.c:1335
 msgid "Display credits for the creators of Nemo"
 msgstr "Taisbean creideasan airson cruthadairean Nemo"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1338
 msgid "Zoom _In"
 msgstr "Sùm a-_steach"
 
+#. tooltip
 #: src/nemo-window-menus.c:1339
 msgid "Increase the view size"
 msgstr "Meudaich an sealladh"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1350
 msgid "Zoom _Out"
 msgstr "Sùm a-_mach"
 
+#. tooltip
 #: src/nemo-window-menus.c:1351
 msgid "Decrease the view size"
 msgstr "Lùghdaich an sealladh"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1358
 msgid "Normal Si_ze"
 msgstr "Me_ud àbhaisteach"
 
+#. tooltip
 #: src/nemo-window-menus.c:1359
 msgid "Use the normal view size"
 msgstr "Seall e leis a' mheud àbhaisteach"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1362
 msgid "Connect to _Server..."
 msgstr "Ceangail ri _frithealaiche..."
 
+#. tooltip
 #: src/nemo-window-menus.c:1363
 msgid "Connect to a remote computer or shared disk"
 msgstr "Ceangail ri coimpiutair cèin no diosg co-roinnte"
 
+#. tooltip
 #: src/nemo-window-menus.c:1367
 msgid "Open your personal folder"
 msgstr "Fosgail am pasgan pearsanta agad"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1370 src/nemo-window-menus.c:1594
 msgid "_Computer"
 msgstr "_Coimpiutair"
 
+#. tooltip
 #: src/nemo-window-menus.c:1371
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
@@ -3106,43 +3441,56 @@ msgstr ""
 "Rùraich gach diosg is pasgan ionadail is cèin a ruigeas tu on choimpiutair "
 "seo"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1374
 msgid "_Network"
 msgstr "_Lìonra"
 
+#. tooltip
 #: src/nemo-window-menus.c:1375
 msgid "Browse bookmarked and local network locations"
 msgstr ""
 "Rùraich ionadan ionadail air an lìonra is feadhainn ris a bheil comharra-lìn"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1378
 msgid "T_emplates"
 msgstr "T_eamplaidean"
 
+#. tooltip
 #: src/nemo-window-menus.c:1379
 msgid "Open your personal templates folder"
 msgstr "Fosgail pasgan nan teamplaidean pearsanta agad"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1382
 msgid "_Trash"
 msgstr "An _sgudal"
 
+#. tooltip
 #: src/nemo-window-menus.c:1383
 msgid "Open your personal trash folder"
 msgstr "Fosgail pasgan an sgudail phearsanta agad"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1385
 msgid "_Go"
 msgstr "_Siuthad"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1386
 msgid "_Bookmarks"
 msgstr "_Comharran-leabhair"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1387
 msgid "_Tabs"
 msgstr "_Tabaichean"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1388
 msgid "New _Window"
 msgstr "_Uinneag ùr"
@@ -3151,6 +3499,7 @@ msgstr "_Uinneag ùr"
 msgid "Open another Nemo window for the displayed location"
 msgstr "Fosgail uinneag Nemo eile san ionad a tha 'ga shealltainn"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1391
 msgid "New _Tab"
 msgstr "_Taba ùr"
@@ -3159,6 +3508,7 @@ msgstr "_Taba ùr"
 msgid "Open another tab for the displayed location"
 msgstr "Fosgail taba eile airson an ionaid a tha 'ga shealltainn"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1394
 msgid "Close _All Windows"
 msgstr "Dùin a _h-uile uinneag"
@@ -3167,6 +3517,7 @@ msgstr "Dùin a _h-uile uinneag"
 msgid "Close all Navigation windows"
 msgstr "Dùin gach uinneag seòladaireachd"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1397 src/nemo-window-menus.c:1516
 msgid "_Back"
 msgstr "_Air ais"
@@ -3175,6 +3526,7 @@ msgstr "_Air ais"
 msgid "Go to the previous visited location"
 msgstr "Rach gun ionad air an do thadhail thu roimhe"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1400 src/nemo-window-menus.c:1532
 msgid "_Forward"
 msgstr "_Air adhart"
@@ -3183,6 +3535,7 @@ msgstr "_Air adhart"
 msgid "Go to the next visited location"
 msgstr "Rach gun ath-ionad air an do thadhail thu"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1403
 msgid "Toggle _Location Entry"
 msgstr "Tog_laich cur a-steach ionaid"
@@ -3191,6 +3544,7 @@ msgstr "Tog_laich cur a-steach ionaid"
 msgid "Switch between location entry and breadcrumbs"
 msgstr "Atharraich eadar cur a-steach ionaid is criomagan arain"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1406
 msgid "S_witch to Other Pane"
 msgstr "Gearr leum gun leòsan eile"
@@ -3199,6 +3553,7 @@ msgstr "Gearr leum gun leòsan eile"
 msgid "Move focus to the other pane in a split view window"
 msgstr "Gluais am fòcas gun leòsan eile ann an uinneag sgoilte"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1409
 msgid "Sa_me Location as Other Pane"
 msgstr "An dearbh-ionad 's a tha aig an leòsan eile"
@@ -3211,6 +3566,7 @@ msgstr "Rach dhan dearbh-ionad san leòsan eile"
 msgid "Add a bookmark for the current location to this menu"
 msgstr "Cuir comharra-lìn ris a' chlàr-taice seo airson an ionaid làithrich"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1415
 msgid "_Edit Bookmarks..."
 msgstr "_Deasaich na comharran-lìn..."
@@ -3257,75 +3613,110 @@ msgstr "Gluais an taba làithreach gun taobh _deas"
 msgid "Sidebar"
 msgstr "Bàr-taoibh"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1435
 msgid "Show _Hidden Files"
 msgstr "Seall faidhlichean _falaichte"
 
+#. tooltip
 #: src/nemo-window-menus.c:1436
 msgid "Toggle the display of hidden files in the current window"
 msgstr ""
 "Toglaich taisbeanadh nam faidhlichean falaichte san uinneag làithreach"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1440
 msgid "_Main Toolbar"
 msgstr "_Prìomh bhàr-inneal"
 
+#. tooltip
 #: src/nemo-window-menus.c:1441
 msgid "Change the visibility of this window's main toolbar"
 msgstr "Atharraich faicsinneachd prìomh bhàr-inneal na h-uinneige seo"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1445
 msgid "_Show Sidebar"
 msgstr "_Seall am bàr-taoibh"
 
+#. tooltip
 #: src/nemo-window-menus.c:1446
 msgid "Change the visibility of this window's side pane"
 msgstr "Atharraich faicsinneachd leòsan-taoibh na h-uinneige seo"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1450
 msgid "St_atusbar"
 msgstr "Bàr na staid"
 
+#. tooltip
 #: src/nemo-window-menus.c:1451
 msgid "Change the visibility of this window's statusbar"
 msgstr "Atharraich faicsinneachd bàr staid na h-uinneige seo"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1455
 msgid "M_enubar"
 msgstr "Bàr a' chlàir-thaice"
 
+#. tooltip
 #: src/nemo-window-menus.c:1456
 msgid "Change the default visibility of the menubar"
 msgstr "Atharraich faicsinneachd bhunaiteach bàr a' chlàir-thaice"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1460
 msgid "_Search for Files..."
 msgstr "_Lorg faidhlichean..."
 
+#. tooltip
 #: src/nemo-window-menus.c:1461 src/nemo-window-menus.c:1676
 msgid "Search documents and folders by name"
 msgstr "Lorg sgrìobhainnean is pasganan a-rèir ainm"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1465
 msgid "E_xtra Pane"
 msgstr "Leòsan a b_harrachd"
 
+#. tooltip
 #: src/nemo-window-menus.c:1466
 msgid "Open an extra folder view side-by-side"
 msgstr "Fosgail sealladh pasgain eile taobh ri taobh"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1470
 msgid "Show _Thumbnails"
 msgstr ""
 
+#. tooltip
 #: src/nemo-window-menus.c:1471
 msgid "Toggle the display of thumbnails in the current directory"
 msgstr ""
 
+#. callback
+#. default
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1475
 msgid "Use _full context menu"
 msgstr ""
 
+#. tooltip
 #: src/nemo-window-menus.c:1476
 msgid "Display additional actions in the context menu"
 msgstr ""
@@ -3464,6 +3855,7 @@ msgstr "Tha na faidhlichean seo air cluicheadair fuaime digiteach."
 msgid "The media contains software."
 msgstr "Tha bathar-bog air a' mheadhan seo."
 
+#. fallback to generic greeting
 #: src/nemo-x-content-bar.c:118
 #, c-format
 msgid "The media has been detected as \"%s\"."
@@ -3474,18 +3866,28 @@ msgstr "Mhothaich sinn gur e \"%s\" a tha sa mheadhan seo."
 msgid "Open %s"
 msgstr "Fosgail %s"
 
+#. name, stock id
+#. label, accelerator
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:433
 msgid "Cut the selected text to the clipboard"
 msgstr "Gearr an teacsa a thagh thu air an stòr-bhòrd"
 
+#. name, stock id
+#. label, accelerator
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:437
 msgid "Copy the selected text to the clipboard"
 msgstr "Cuir lethbhreac dhen teacsa a thagh thu air an stòr-bhòrd"
 
+#. name, stock id
+#. label, accelerator
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:441
 msgid "Paste the text stored on the clipboard"
 msgstr "Cuir an teacsa a tha air an stòr-bhòrd ann"
 
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:445
 msgid "Select all the text in a text field"
 msgstr "Tagh an teacsa air fad ann an raon teacsa"
@@ -3616,7 +4018,7 @@ msgstr "An t-ionad tùsail"
 msgid "Original location of file before moved to the Trash"
 msgstr "Ionad tùsail an fhaidhle mus deach a chur dhan sgudal"
 
-#: libnemo-private/nemo-desktop-directory-file.c:455
+#: libnemo-private/nemo-desktop-directory-file.c:459
 #: libnemo-private/nemo-desktop-icon-file.c:154
 msgid "on the desktop"
 msgstr "air an desktop"
@@ -3699,19 +4101,25 @@ msgstr "Cha ghabh ainm ùr a thoirt air ìomhaigheag an deasg"
 msgid "Unable to rename desktop file"
 msgstr "Cha ghabh ainm ùr a thoirt air faidhle an deasg"
 
+#. Translators: Time in 24h format
 #: libnemo-private/nemo-file.c:4943
 msgid "%H:%M"
 msgstr ""
 
+#. Translators: Time in 12h format
 #: libnemo-private/nemo-file.c:4946
 msgid "%l:%M %p"
 msgstr ""
 
+#. Translators: this is the word Yesterday followed by
+#. * a time in 24h format. i.e. "Yesterday 23:04"
 #: libnemo-private/nemo-file.c:4959
 #, no-c-format
 msgid "Yesterday %H:%M"
 msgstr ""
 
+#. Translators: this is the word Yesterday followed by
+#. * a time in 12h format. i.e. "Yesterday 9:04 PM"
 #: libnemo-private/nemo-file.c:4964
 #, no-c-format
 msgid "Yesterday %l:%M %p"
@@ -3722,41 +4130,61 @@ msgstr ""
 msgid "%A"
 msgstr ""
 
+#. Translators: this is the name of the week day followed by
+#. * a time in 24h format. i.e. "Monday 23:04"
 #: libnemo-private/nemo-file.c:4978
 #, no-c-format
 msgid "%A %H:%M"
 msgstr ""
 
+#. Translators: this is the week day name followed by
+#. * a time in 12h format. i.e. "Monday 9:04 PM"
 #: libnemo-private/nemo-file.c:4983
 #, no-c-format
 msgid "%A %l:%M %p"
 msgstr ""
 
+#. Translators: this is the day of the month followed
+#. * by the abbreviated month name i.e. "3 February"
 #: libnemo-private/nemo-file.c:4991
 #, no-c-format
 msgid "%-e %B"
 msgstr ""
 
+#. Translators: this is the day of the month followed
+#. * by the abbreviated month name followed by a time in
+#. * 24h format i.e. "3 February 23:04"
 #: libnemo-private/nemo-file.c:4998
 #, no-c-format
 msgid "%-e %B %H:%M"
 msgstr ""
 
+#. Translators: this is the day of the month followed
+#. * by the abbreviated month name followed by a time in
+#. * 12h format i.e. "3 February 9:04"
 #: libnemo-private/nemo-file.c:5004
 #, no-c-format
 msgid "%-e %B %l:%M %p"
 msgstr ""
 
+#. Translators: this is the day of the month followed by the abbreviated
+#. * month name followed by the year i.e. "3 Feb 2015"
 #: libnemo-private/nemo-file.c:5012
 #, no-c-format
 msgid "%-e %b %Y"
 msgstr ""
 
+#. Translators: this is the day number followed
+#. * by the abbreviated month name followed by the year followed
+#. * by a time in 24h format i.e. "3 Feb 2015 23:04"
 #: libnemo-private/nemo-file.c:5019
 #, no-c-format
 msgid "%-e %b %Y %H:%M"
 msgstr ""
 
+#. Translators: this is the day number followed
+#. * by the abbreviated month name followed by the year followed
+#. * by a time in 12h format i.e. "3 Feb 2015 9:04 PM"
 #: libnemo-private/nemo-file.c:5025
 #, no-c-format
 msgid "%-e %b %Y %l:%M %p"
@@ -3807,10 +4235,12 @@ msgstr[1] "%'u fhaidhle"
 msgstr[2] "%'u faidhlichean"
 msgstr[3] "%'u faidhle"
 
+#. This means no contents at all were readable
 #: libnemo-private/nemo-file.c:6682 libnemo-private/nemo-file.c:6698
 msgid "? items"
 msgstr "? nithean"
 
+#. This means no contents at all were readable
 #: libnemo-private/nemo-file.c:6688
 msgid "? bytes"
 msgstr "? baidhtean"
@@ -4024,6 +4454,7 @@ msgstr "Cuir na leanas 'na àite"
 msgid "Merge"
 msgstr "Co-aonaich"
 
+#. Setup the expander for the rename action
 #: libnemo-private/nemo-file-conflict-dialog.c:509
 msgid "_Select a new name for the destination"
 msgstr "_Tagh ainm ùr airson a' cheann-uidhe"
@@ -4032,6 +4463,7 @@ msgstr "_Tagh ainm ùr airson a' cheann-uidhe"
 msgid "Reset"
 msgstr "Ath-shuidhich"
 
+#. Setup the checkbox to apply the action to all files
 #: libnemo-private/nemo-file-conflict-dialog.c:535
 msgid "Apply this action to all files"
 msgstr "Dèan seo air a h-uile faidhle"
@@ -4122,39 +4554,57 @@ msgstr[1] "mu thuaiream %'d uair a thìde"
 msgstr[2] "mu thuaiream %'d uairean a thìde"
 msgstr[3] "mu thuaiream %'d uair a thìde"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:397
 #, c-format
 msgid "Another link to %s"
 msgstr "Ceangal eile ri %s"
 
+#. Localizers: Feel free to leave out the "st" suffix
+#. * if there's no way to do that nicely for a
+#. * particular language.
+#. 
 #: libnemo-private/nemo-file-operations.c:413
 #, c-format
 msgid "%'dst link to %s"
 msgstr "%'dd cheangal ri %s"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:417
 #, c-format
 msgid "%'dnd link to %s"
 msgstr "%'dna ceangal ri %s"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:421
 #, c-format
 msgid "%'drd link to %s"
 msgstr "%'ds ceangal ri %s"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:425
 #, c-format
 msgid "%'dth link to %s"
 msgstr "%'dmh ceangal ri %s"
 
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. 
+#. localizers: tag used to detect the first copy of a file
 #: libnemo-private/nemo-file-operations.c:464
 msgid " (copy)"
 msgstr " (lethbhreac)"
 
+#. localizers: tag used to detect the second copy of a file
 #: libnemo-private/nemo-file-operations.c:466
 msgid " (another copy)"
 msgstr " (lethbhreac eile)"
 
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
 #: libnemo-private/nemo-file-operations.c:469
 #: libnemo-private/nemo-file-operations.c:471
 #: libnemo-private/nemo-file-operations.c:473
@@ -4162,28 +4612,37 @@ msgstr " (lethbhreac eile)"
 msgid "th copy)"
 msgstr "mh lethbhreac)"
 
+#. localizers: tag used to detect the x1st copy of a file
 #: libnemo-private/nemo-file-operations.c:476
 msgid "st copy)"
 msgstr "d lethbhreac"
 
+#. localizers: tag used to detect the x2nd copy of a file
 #: libnemo-private/nemo-file-operations.c:478
 msgid "nd copy)"
 msgstr "na lethbhreac"
 
+#. localizers: tag used to detect the x3rd copy of a file
 #: libnemo-private/nemo-file-operations.c:480
 msgid "rd copy)"
 msgstr "s lethbhreac"
 
+#. localizers: appended to first file copy
 #: libnemo-private/nemo-file-operations.c:497
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (lethbhreac)%s"
 
+#. localizers: appended to second file copy
 #: libnemo-private/nemo-file-operations.c:499
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (lethbhreac eile)%s"
 
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
 #: libnemo-private/nemo-file-operations.c:502
 #: libnemo-private/nemo-file-operations.c:504
 #: libnemo-private/nemo-file-operations.c:506
@@ -4192,25 +4651,34 @@ msgstr "%s (lethbhreac eile)%s"
 msgid "%s (%'dth copy)%s"
 msgstr "%s (%'dmh lethbhreac)%s"
 
+#. localizers: if in your language there's no difference between 1st, 2nd, 3rd and nth
+#. * plurals, you can leave the st, nd, rd suffixes out and just make all the translated
+#. * strings look like "%s (copy %'d)%s".
+#. 
+#. localizers: appended to x1st file copy
 #: libnemo-private/nemo-file-operations.c:514
 #, c-format
 msgid "%s (%'dst copy)%s"
 msgstr "%s (%'dd lethbhreac)%s"
 
+#. localizers: appended to x2nd file copy
 #: libnemo-private/nemo-file-operations.c:516
 #, c-format
 msgid "%s (%'dnd copy)%s"
 msgstr "%s (%'dna lethbhreac)%s"
 
+#. localizers: appended to x3rd file copy
 #: libnemo-private/nemo-file-operations.c:518
 #, c-format
 msgid "%s (%'drd copy)%s"
 msgstr "%s (%'ds lethbhreac)%s"
 
+#. localizers: opening parentheses to match the "th copy)" string
 #: libnemo-private/nemo-file-operations.c:619
 msgid " ("
 msgstr " ("
 
+#. localizers: opening parentheses of the "th copy)" string
 #: libnemo-private/nemo-file-operations.c:627
 #, c-format
 msgid " (%'d"
@@ -4293,9 +4761,10 @@ msgstr[3] "A' feitheamh gus faidhlichean a cheangal o \"%1$s\" gu \"%2$s\""
 msgid "Are you sure you want to move \"%B\" to the trash?"
 msgstr ""
 
-#: libnemo-private/nemo-file-operations.c:1525
+#. translators: the singular form here can be skipped.
+#: libnemo-private/nemo-file-operations.c:1526
 #, c-format
-msgid "Are you sure you want to move the %'d selected items to the trash?"
+msgid "unused %'d"
 msgid_plural ""
 "Are you sure you want to move the %'d selected items to the trash?"
 msgstr[0] ""
@@ -4386,6 +4855,9 @@ msgstr[3] "Tha %'d faidhle ri sguabadh às fhathast"
 msgid "Deleting files"
 msgstr "A' sguabadh às nam faidhlichean"
 
+#. To translators: %T will expand to a time like "2 minutes".
+#. * The singular/plural form will be used depending on the remaining time (i.e. the %T argument).
+#. 
 #: libnemo-private/nemo-file-operations.c:1704
 msgid "%T left"
 msgid_plural "%T left"
@@ -4669,11 +5141,17 @@ msgstr "A' cur lethbhreac de dh'fhaidhle %'d à %'d dha \"%B\""
 msgid "Duplicating file %'d of %'d"
 msgstr "A' dùblachadh faidhle %'d à %'d"
 
+#. To translators: %S will expand to a size like "2 bytes" or "3 MB", so something like "4 kb of 4 MB"
 #: libnemo-private/nemo-file-operations.c:3271
 #, c-format
 msgid "%S of %S"
 msgstr "%S à %S"
 
+#. To translators: %S will expand to a size like "2 bytes" or "3 MB", %T to a time duration like
+#. * "2 minutes". So the whole thing will be something like "2 kb of 4 MB -- 2 hours left (4kb/sec)"
+#. *
+#. * The singular/plural form will be used depending on the remaining time (i.e. the %T argument).
+#. 
 #: libnemo-private/nemo-file-operations.c:3282
 msgid "%S of %S — %T left (%S/sec)"
 msgid_plural "%S of %S — %T left (%S/sec)"
@@ -4740,6 +5218,7 @@ msgid "Could not remove the already existing file %F."
 msgstr ""
 "Cha b' urrainn dhuinn am faidhle %F a tha an mu thràth a thoirt air falbh."
 
+#. the run_warning() frees all strings passed in automatically
 #: libnemo-private/nemo-file-operations.c:4375
 #: libnemo-private/nemo-file-operations.c:5090
 msgid "You cannot move a folder into itself."
@@ -4756,6 +5235,7 @@ msgstr ""
 msgid "The destination folder is inside the source folder."
 msgstr "Tha am pasgan cinn-uidhe am broinn a' phasgain thùsail."
 
+#. the run_warning() frees all strings passed in automatically
 #: libnemo-private/nemo-file-operations.c:4408
 msgid "You cannot move a file over itself."
 msgstr "Chan urrainn dhut faidlhe a ghluasad os a chionn fhèin."
@@ -4846,10 +5326,12 @@ msgstr ""
 msgid "Setting permissions"
 msgstr "A' suidheachadh nan cead"
 
+#. localizers: the initial name of a new folder
 #: libnemo-private/nemo-file-operations.c:6273
 msgid "Untitled Folder"
 msgstr "Pasgan gun tiotal"
 
+#. localizers: the initial name of a new empty document
 #: libnemo-private/nemo-file-operations.c:6285
 msgid "Untitled Document"
 msgstr "Sgrìobhainn gun tiotal"
@@ -5295,6 +5777,7 @@ msgstr ""
 "Chan eil seo 'na fhaidhle so-ghnìomhaichte dligheach. Feumaidh tu slais air "
 "ais (\\) a chur air beulaibh gach beàirn ann an slighe an fhaidhle."
 
+#. the %s here is a file extension
 #: libnemo-private/nemo-mime-application-chooser.c:419
 #: libnemo-private/nemo-mime-application-chooser.c:437
 #, c-format

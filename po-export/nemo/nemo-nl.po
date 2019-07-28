@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-06-29 18:00+0200\n"
-"PO-Revision-Date: 2019-06-30 08:19+0000\n"
+"POT-Creation-Date: 2019-07-10 13:09+0200\n"
+"PO-Revision-Date: 2019-07-18 17:41+0000\n"
 "Last-Translator: Pjotr12345 <Unknown>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-07-10 08:24+0000\n"
-"X-Generator: Launchpad (build 19007)\n"
+"X-Launchpad-Export-Date: 2019-07-28 09:31+0000\n"
+"X-Generator: Launchpad (build 19010)\n"
 
 #: src/nemo-action-config-widget.c:237
 msgid "No actions found"
@@ -81,6 +81,7 @@ msgstr "_Uitvoeren"
 msgid "Customize"
 msgstr "Aanpassen"
 
+#. hardcode "Desktop"
 #: src/nemo-blank-desktop-window.c:214 src/nemo-desktop-window.c:125
 #: src/nemo-desktop-window.c:294 src/nemo-pathbar.c:1440
 #: src/nemo-places-sidebar.c:779 libnemo-private/nemo-action.c:1330
@@ -166,6 +167,7 @@ msgstr "Er is een fout opgetreden bij het weergeven van de hulptekst."
 msgid "C_onnect"
 msgstr "_Verbinden"
 
+#. set dialog properties
 #: src/nemo-connect-server-dialog.c:842
 msgid "Connect to Server"
 msgstr "Verbinden met server"
@@ -174,22 +176,27 @@ msgstr "Verbinden met server"
 msgid "Server Details"
 msgstr "Serverdetails"
 
+#. first row: server entry + port spinbutton
 #: src/nemo-connect-server-dialog.c:885
 msgid "_Server:"
 msgstr "_Server:"
 
+#. port
 #: src/nemo-connect-server-dialog.c:905
 msgid "_Port:"
 msgstr "_Poort:"
 
+#. second row: type combobox
 #: src/nemo-connect-server-dialog.c:923
 msgid "_Type:"
 msgstr "_Type:"
 
+#. third row: share entry
 #: src/nemo-connect-server-dialog.c:993
 msgid "Sh_are:"
 msgstr "Ge_deelde map:"
 
+#. fourth row: folder entry
 #: src/nemo-connect-server-dialog.c:1008 src/nemo-view.c:1848
 msgid "_Folder:"
 msgstr "_Map:"
@@ -198,18 +205,22 @@ msgstr "_Map:"
 msgid "User Details"
 msgstr "Gebruikersgegevens"
 
+#. first row: domain entry
 #: src/nemo-connect-server-dialog.c:1050
 msgid "_Domain name:"
 msgstr "_Domeinnaam:"
 
+#. second row: username entry
 #: src/nemo-connect-server-dialog.c:1065
 msgid "_User name:"
 msgstr "_Gebruikersnaam:"
 
+#. third row: password entry
 #: src/nemo-connect-server-dialog.c:1080
 msgid "Pass_word:"
 msgstr "_Wachtwoord:"
 
+#. fourth row: remember checkbox
 #: src/nemo-connect-server-dialog.c:1096
 msgid "_Remember this password"
 msgstr "Dit wachtwoord _onthouden"
@@ -222,6 +233,8 @@ msgstr "Bewerking is afgebroken"
 msgid "Print but do not open the URI"
 msgstr "Het pad tonen maar niet openen"
 
+#. Translators: This is the --help description for the connect to server app,
+#. the initial newlines are between the command line arg and the description
 #: src/nemo-connect-server-dialog-main.c:131
 msgid ""
 "\n"
@@ -250,16 +263,22 @@ msgstr ""
 "\n"
 "Werkomgeving beheren met de bestandbeheerder"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:917 src/nemo-desktop-icon-view.c:682
-#: src/nemo-view.c:8316 src/nemo-view.c:9930
+#: src/nemo-view.c:8313 src/nemo-view.c:9925
 msgid "E_mpty Trash"
 msgstr "Prulle_nbak legen"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:1027
 #: gresources/nemo-desktop-overlay.glade:293
 msgid "Auto-arrange"
 msgstr "Automatisch rangschikken"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:1032
 #: gresources/nemo-desktop-overlay.glade:539
 msgid "Reverse sort"
@@ -293,7 +312,7 @@ msgstr "_Verticaal"
 msgid "_Horizontal"
 msgstr "_Horizontaal"
 
-#: src/nemo-desktop-icon-grid-view.c:1074 src/nemo-list-view.c:2329
+#: src/nemo-desktop-icon-grid-view.c:1074 src/nemo-list-view.c:2331
 #: libnemo-private/nemo-column-utilities.c:43
 #: gresources/nemo-desktop-overlay.glade:116
 msgid "Name"
@@ -316,20 +335,26 @@ msgstr "Type"
 msgid "Date"
 msgstr "Datum"
 
+#. name, stock id, label
 #: src/nemo-desktop-icon-grid-view.c:1092
 msgid "_Sort"
 msgstr "_Sorteren"
 
+#. name, stock id, label
 #: src/nemo-desktop-icon-grid-view.c:1093
 msgid "_Icon Size"
 msgstr "Pictogramgrootte"
 
+#. label, accelerator
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:1097 src/nemo-desktop-icon-view.c:723
 msgid "Empty Trash"
 msgstr "Prullenbak legen"
 
+#. tooltip
 #: src/nemo-desktop-icon-grid-view.c:1099 src/nemo-desktop-icon-view.c:724
-#: src/nemo-trash-bar.c:227 src/nemo-view.c:8317
+#: src/nemo-trash-bar.c:227 src/nemo-view.c:8314
 msgid "Delete all items in the Trash"
 msgstr "Alle dingen in de prullenbak verwijderen"
 
@@ -349,6 +374,8 @@ msgstr "Er is een fout opgetreden in de bureaubladweergave."
 msgid "The desktop view encountered an error while starting up."
 msgstr "Er trad een fout op bij het starten van de bureaubladweergave."
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-view.c:704 src/nemo-desktop-icon-view.c:719
 msgid "Restore Icons' Original Si_zes"
 msgstr "Oorspronkelijke pictogram_groottes herstellen"
@@ -357,14 +384,18 @@ msgstr "Oorspronkelijke pictogram_groottes herstellen"
 msgid "Restore Icon's Original Si_ze"
 msgstr "Oorspronkelijke pictogram_grootte herstellen"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-desktop-icon-view.c:715
 msgid "Resize Icon..."
 msgstr "Pictogram vergroten/verkleinen..."
 
+#. tooltip
 #: src/nemo-desktop-icon-view.c:716
 msgid "Make the selected icon resizable"
 msgstr "Vergroten/verkleinen van het geselecteerde pictogram mogelijk maken"
 
+#. tooltip
 #: src/nemo-desktop-icon-view.c:720
 msgid "Restore each selected icon to its original size"
 msgstr "Elk pictogram naar zijn oorspronkelijke grootte herstellen"
@@ -437,6 +468,7 @@ msgid ""
 "You do not have the permissions necessary to change the group of \"%s\"."
 msgstr "U hebt niet de benodigde rechten om de groep van '%s' te wijzigen."
 
+#. fall through
 #: src/nemo-error-reporting.c:120
 #, c-format
 msgid "Sorry, could not change the group of \"%s\": %s"
@@ -503,6 +535,7 @@ msgstr "De naam '%s' is ongeldig. Kies alstublieft een andere naam."
 msgid "The name \"%s\" is too long. Please use a different name."
 msgstr "De naam '%s' is te lang. Kies alstublieft een andere naam."
 
+#. fall through
 #: src/nemo-error-reporting.c:243
 #, c-format
 msgid "Sorry, could not rename \"%s\" to \"%s\": %s"
@@ -537,6 +570,10 @@ msgstr "Extensies"
 msgid "Extensions changed.  Restart required."
 msgstr "Extensies gewijzigd. Herstart is vereist."
 
+#. Translators: this is referred to captions under icons.
+#. Translators: this is referred to the permissions
+#. * the user has in a directory.
+#. 
 #: src/nemo-file-management-properties.c:288 src/nemo-properties-window.c:3927
 #: src/nemo-properties-window.c:3938
 msgid "None"
@@ -551,7 +588,7 @@ msgstr "Gisteren"
 msgid "by _Name"
 msgstr "op _naam"
 
-#: src/nemo-icon-view.c:138 src/nemo-icon-view.c:1427
+#: src/nemo-icon-view.c:138 src/nemo-icon-view.c:1429
 msgid "Keep icons sorted by name in rows"
 msgstr "Houd pictogrammen gesorteerd op naam in rijen"
 
@@ -559,7 +596,7 @@ msgstr "Houd pictogrammen gesorteerd op naam in rijen"
 msgid "by _Size"
 msgstr "op _grootte"
 
-#: src/nemo-icon-view.c:145 src/nemo-icon-view.c:1431
+#: src/nemo-icon-view.c:145 src/nemo-icon-view.c:1433
 msgid "Keep icons sorted by size in rows"
 msgstr "Houd pictogrammen gesorteerd op grootte in rijen"
 
@@ -567,7 +604,7 @@ msgstr "Houd pictogrammen gesorteerd op grootte in rijen"
 msgid "by _Type"
 msgstr "op _type"
 
-#: src/nemo-icon-view.c:152 src/nemo-icon-view.c:1435
+#: src/nemo-icon-view.c:152 src/nemo-icon-view.c:1437
 msgid "Keep icons sorted by type in rows"
 msgstr "Houd pictogrammen gesorteerd op type in rijen"
 
@@ -575,7 +612,7 @@ msgstr "Houd pictogrammen gesorteerd op type in rijen"
 msgid "by _Detailed Type"
 msgstr "op _opgegeven soort"
 
-#: src/nemo-icon-view.c:159 src/nemo-icon-view.c:1439
+#: src/nemo-icon-view.c:159 src/nemo-icon-view.c:1441
 msgid "Keep icons sorted by detailed type in rows"
 msgstr "Houd pictogrammen gesorteerd op opgegeven soort in rijen"
 
@@ -583,7 +620,7 @@ msgstr "Houd pictogrammen gesorteerd op opgegeven soort in rijen"
 msgid "by Modification _Date"
 msgstr "op wijzigings_datum"
 
-#: src/nemo-icon-view.c:166 src/nemo-icon-view.c:1443
+#: src/nemo-icon-view.c:166 src/nemo-icon-view.c:1445
 msgid "Keep icons sorted by modification date in rows"
 msgstr "Houd pictogrammen gesorteerd op wijzigingsdatum in rijen"
 
@@ -591,7 +628,7 @@ msgstr "Houd pictogrammen gesorteerd op wijzigingsdatum in rijen"
 msgid "by T_rash Time"
 msgstr "op _weggooitijdstip"
 
-#: src/nemo-icon-view.c:173 src/nemo-icon-view.c:1447
+#: src/nemo-icon-view.c:173 src/nemo-icon-view.c:1449
 msgid "Keep icons sorted by trash time in rows"
 msgstr "Houd pictogrammen gesorteerd op tijdstip van weggooien in rijen"
 
@@ -599,110 +636,126 @@ msgstr "Houd pictogrammen gesorteerd op tijdstip van weggooien in rijen"
 msgid "_Organize Desktop by Name"
 msgstr "Bureaublad _rangschikken op naam"
 
-#: src/nemo-icon-view.c:1399
+#. name, stock id, label
+#: src/nemo-icon-view.c:1401
 msgid "Arran_ge Items"
 msgstr "Elementen _ordenen"
 
-#: src/nemo-icon-view.c:1401
+#. name, stock id
+#. label, accelerator
+#: src/nemo-icon-view.c:1403
 msgid "_Organize by Name"
 msgstr "_Rangschikken op naam"
 
-#: src/nemo-icon-view.c:1402
+#. tooltip
+#: src/nemo-icon-view.c:1404
 msgid "Reposition icons to better fit in the window and avoid overlapping"
 msgstr ""
 "Pictogrammen opschuiven zodat ze beter in het venster passen en overlappen "
 "vermijden"
 
-#: src/nemo-icon-view.c:1409
+#. name, stock id
+#. label, accelerator
+#: src/nemo-icon-view.c:1411
 msgid "Re_versed Order"
 msgstr "Omgekeerde _volgorde"
 
-#: src/nemo-icon-view.c:1410
+#. tooltip
+#: src/nemo-icon-view.c:1412
 msgid "Display icons in the opposite order"
 msgstr "Pictogrammen in omgekeerde volgorde tonen"
 
-#: src/nemo-icon-view.c:1414
+#. name, stock id
+#. label, accelerator
+#: src/nemo-icon-view.c:1416
 msgid "_Keep Aligned"
 msgstr "Uitge_lijnd houden"
 
-#: src/nemo-icon-view.c:1415
+#. tooltip
+#: src/nemo-icon-view.c:1417
 msgid "Keep icons lined up on a grid"
 msgstr "Pictogrammen op een raster uitgelijnd houden"
 
-#: src/nemo-icon-view.c:1422
+#: src/nemo-icon-view.c:1424
 msgid "_Manually"
 msgstr "Hand_matig"
 
-#: src/nemo-icon-view.c:1423
+#: src/nemo-icon-view.c:1425
 msgid "Leave icons wherever they are dropped"
 msgstr "Laat pictogrammen staan waar ze zijn neergezet"
 
-#: src/nemo-icon-view.c:1426
+#: src/nemo-icon-view.c:1428
 msgid "By _Name"
 msgstr "Op _naam"
 
-#: src/nemo-icon-view.c:1430
+#: src/nemo-icon-view.c:1432
 msgid "By _Size"
 msgstr "Op _grootte"
 
-#: src/nemo-icon-view.c:1434
+#: src/nemo-icon-view.c:1436
 msgid "By _Type"
 msgstr "Op _type"
 
-#: src/nemo-icon-view.c:1438
+#: src/nemo-icon-view.c:1440
 msgid "By _Detailed Type"
 msgstr "Op opgegeven soort"
 
-#: src/nemo-icon-view.c:1442
+#: src/nemo-icon-view.c:1444
 msgid "By Modification _Date"
 msgstr "Op wijzigings_datum"
 
-#: src/nemo-icon-view.c:1446
+#: src/nemo-icon-view.c:1448
 msgid "By T_rash Time"
 msgstr "Op _weggooitijdstip"
 
-#: src/nemo-icon-view.c:2838 src/nemo-icon-view-container.c:2147
-#: src/nemo-icon-view-grid-container.c:1602 src/nemo-window-menus.c:1492
+#. translators: this is used in the view selection dropdown
+#. * of navigation windows and in the preferences dialog
+#: src/nemo-icon-view.c:2840 src/nemo-icon-view-container.c:2147
+#: src/nemo-icon-view-grid-container.c:1601 src/nemo-window-menus.c:1492
 #: src/nemo-window-menus.c:1642
 #: gresources/nemo-file-management-properties.glade:83
 msgid "Icon View"
 msgstr "Pictogramweergave"
 
-#: src/nemo-icon-view.c:2840
+#. translators: this is used in the view menu
+#: src/nemo-icon-view.c:2842
 msgid "_Icons"
 msgstr "_Pictogrammen"
 
-#: src/nemo-icon-view.c:2841
+#: src/nemo-icon-view.c:2843
 msgid "The icon view encountered an error."
 msgstr "De pictogrammenweergave is op een fout gestuit."
 
-#: src/nemo-icon-view.c:2842
+#: src/nemo-icon-view.c:2844
 msgid "The icon view encountered an error while starting up."
 msgstr "Er trad een fout op bij het starten van de pictogrammenweergave."
 
-#: src/nemo-icon-view.c:2843
+#: src/nemo-icon-view.c:2845
 msgid "Display this location with the icon view."
 msgstr "Deze locatie als pictogrammen weergeven."
 
-#: src/nemo-icon-view.c:2852 src/nemo-window-menus.c:1498
+#. translators: this is used in the view selection dropdown
+#. * of navigation windows and in the preferences dialog
+#: src/nemo-icon-view.c:2854 src/nemo-window-menus.c:1498
 #: src/nemo-window-menus.c:1665
 #: gresources/nemo-file-management-properties.glade:89
 msgid "Compact View"
 msgstr "Compacte weergave"
 
-#: src/nemo-icon-view.c:2854
+#. translators: this is used in the view menu
+#: src/nemo-icon-view.c:2856
 msgid "_Compact"
 msgstr "_Compact"
 
-#: src/nemo-icon-view.c:2855
+#: src/nemo-icon-view.c:2857
 msgid "The compact view encountered an error."
 msgstr "De compacte weergave is op een fout gestuit."
 
-#: src/nemo-icon-view.c:2856
+#: src/nemo-icon-view.c:2858
 msgid "The compact view encountered an error while starting up."
 msgstr "Er trad een fout op bij het starten van de compacte weergave."
 
-#: src/nemo-icon-view.c:2857
+#: src/nemo-icon-view.c:2859
 msgid "Display this location with the compact view."
 msgstr "Deze locatie met compacte weergave tonen."
 
@@ -765,6 +818,7 @@ msgstr "Cameramerk"
 msgid "Camera Model"
 msgstr "Cameramodel"
 
+#. Choose which date to show in order of relevance
 #: src/nemo-image-properties-page.c:386
 msgid "Date Taken"
 msgstr "Opnamedatum"
@@ -872,33 +926,36 @@ msgstr "Toon extra informatie over het maken van scripts"
 msgid "(Empty)"
 msgstr "(Leeg)"
 
-#: src/nemo-list-view.c:1969
+#: src/nemo-list-view.c:1971
 msgid "Use Default"
 msgstr "Gebruik standaard"
 
-#: src/nemo-list-view.c:1980
+#: src/nemo-list-view.c:1982
 msgid "Temporarily disable auto-sort"
 msgstr "Automatisch rangschikken tijdelijk uitschakelen"
 
-#: src/nemo-list-view.c:2415 src/nemo-list-view.c:4039
+#. translators: this is used in the view selection dropdown
+#. * of navigation windows and in the preferences dialog
+#: src/nemo-list-view.c:2417 src/nemo-list-view.c:4043
 #: src/nemo-window-menus.c:1495 src/nemo-window-menus.c:1653
 #: gresources/nemo-file-management-properties.glade:86
 msgid "List View"
 msgstr "Lijstweergave"
 
-#: src/nemo-list-view.c:4041
+#. translators: this is used in the view menu
+#: src/nemo-list-view.c:4045
 msgid "_List"
 msgstr "_Lijst"
 
-#: src/nemo-list-view.c:4042
+#: src/nemo-list-view.c:4046
 msgid "The list view encountered an error."
 msgstr "De lijstweergave is op een fout gestuit."
 
-#: src/nemo-list-view.c:4043
+#: src/nemo-list-view.c:4047
 msgid "The list view encountered an error while starting up."
 msgstr "Er trad een fout op bij het starten van de lijstweergave."
 
-#: src/nemo-list-view.c:4044
+#: src/nemo-list-view.c:4048
 msgid "Display this location with the list view."
 msgstr "Deze locatie tonen met de lijstweergave."
 
@@ -1035,9 +1092,11 @@ msgid "This link cannot be used, because its target \"%s\" doesn't exist."
 msgstr ""
 "Deze koppeling kan niet gebruikt worden, omdat haar doel '%s' niet bestaat."
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-mime-actions.c:659 src/nemo-tree-sidebar.c:1412
-#: src/nemo-view.c:8368 src/nemo-view.c:8486 src/nemo-view.c:9533
-#: src/nemo-view.c:9853
+#: src/nemo-view.c:8365 src/nemo-view.c:8483 src/nemo-view.c:9530
+#: src/nemo-view.c:9848
 msgid "Mo_ve to Trash"
 msgstr "Naar prullenbak _verplaatsen"
 
@@ -1141,11 +1200,11 @@ msgstr[0] "Dit zal %d afzonderlijke toepassing openen."
 msgstr[1] "Dit zal %d afzonderlijke toepassingen openen."
 
 #: src/nemo-mime-actions.c:1688 src/nemo-mime-actions.c:1962
-#: src/nemo-view.c:7486
+#: src/nemo-view.c:7483
 msgid "Unable to mount location"
 msgstr "Kon de locatie niet aankoppelen"
 
-#: src/nemo-mime-actions.c:2041 src/nemo-view.c:7633
+#: src/nemo-mime-actions.c:2041 src/nemo-view.c:7630
 msgid "Unable to start location"
 msgstr "Kon de locatie niet starten"
 
@@ -1165,6 +1224,8 @@ msgstr[1] "Bezig met openen van %d elementen."
 msgid "Close tab"
 msgstr "Tabblad sluiten"
 
+#. Translators: This is the --help description for the open-with app,
+#. the initial newlines are between the command line arg and the description
 #: src/nemo-open-with-main.c:104
 msgid ""
 "\n"
@@ -1285,26 +1346,32 @@ msgstr "Netwerk"
 msgid "Browse the contents of the network"
 msgstr "Door de inhoud van het netwerk bladeren"
 
+#. Adjust start/stop items to reflect the type of the drive
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:2275 src/nemo-places-sidebar.c:3553
-#: src/nemo-view.c:8414 src/nemo-view.c:8438 src/nemo-view.c:8510
-#: src/nemo-view.c:9156 src/nemo-view.c:9160 src/nemo-view.c:9243
-#: src/nemo-view.c:9247 src/nemo-view.c:9347 src/nemo-view.c:9351
+#: src/nemo-view.c:8411 src/nemo-view.c:8435 src/nemo-view.c:8507
+#: src/nemo-view.c:9153 src/nemo-view.c:9157 src/nemo-view.c:9240
+#: src/nemo-view.c:9244 src/nemo-view.c:9344 src/nemo-view.c:9348
 msgid "_Start"
 msgstr "_Starten"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:2276 src/nemo-places-sidebar.c:3560
-#: src/nemo-view.c:8418 src/nemo-view.c:8442 src/nemo-view.c:8514
-#: src/nemo-view.c:9185 src/nemo-view.c:9272 src/nemo-view.c:9376
+#: src/nemo-view.c:8415 src/nemo-view.c:8439 src/nemo-view.c:8511
+#: src/nemo-view.c:9182 src/nemo-view.c:9269 src/nemo-view.c:9373
 #: src/nemo-window-menus.c:1302
 msgid "_Stop"
 msgstr "_Stoppen"
 
+#. start() for type G_DRIVE_START_STOP_TYPE_SHUTDOWN is normally not used
 #: src/nemo-places-sidebar.c:2281
 msgid "_Power On"
 msgstr "_Aanzetten"
 
-#: src/nemo-places-sidebar.c:2282 src/nemo-view.c:9189 src/nemo-view.c:9276
-#: src/nemo-view.c:9380
+#: src/nemo-places-sidebar.c:2282 src/nemo-view.c:9186 src/nemo-view.c:9273
+#: src/nemo-view.c:9377
 msgid "_Safely Remove Drive"
 msgstr "_Station veilig verwijderen"
 
@@ -1324,12 +1391,13 @@ msgstr "Multischijfapparaat _starten"
 msgid "_Stop Multi-disk Device"
 msgstr "Multischijfapparaat _stoppen"
 
-#: src/nemo-places-sidebar.c:2294 src/nemo-view.c:9259 src/nemo-view.c:9363
+#. stop() for type G_DRIVE_START_STOP_TYPE_PASSWORD is normally not used
+#: src/nemo-places-sidebar.c:2294 src/nemo-view.c:9256 src/nemo-view.c:9360
 msgid "_Unlock Drive"
 msgstr "Station _ontgrendelen"
 
-#: src/nemo-places-sidebar.c:2295 src/nemo-view.c:9201 src/nemo-view.c:9288
-#: src/nemo-view.c:9392
+#: src/nemo-places-sidebar.c:2295 src/nemo-view.c:9198 src/nemo-view.c:9285
+#: src/nemo-view.c:9389
 msgid "_Lock Drive"
 msgstr "Station vergrende_len"
 
@@ -1354,23 +1422,30 @@ msgstr "Kan %s niet nakijken op mediawijzigingen"
 msgid "Unable to stop %s"
 msgstr "Kon %s niet stoppen"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3465 src/nemo-tree-sidebar.c:1304
-#: src/nemo-view.c:8275 src/nemo-view.c:9784
+#: src/nemo-view.c:8272 src/nemo-view.c:9779
 #: libnemo-private/nemo-mime-application-chooser.c:483
 msgid "_Open"
 msgstr "_Openen"
 
+#. add the "open in new tab" menu item
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3473 src/nemo-tree-sidebar.c:1315
-#: src/nemo-view.c:8287 src/nemo-view.c:8468 src/nemo-view.c:9480
-#: src/nemo-view.c:9830
+#: src/nemo-view.c:8284 src/nemo-view.c:8465 src/nemo-view.c:9477
+#: src/nemo-view.c:9825
 msgid "Open in New _Tab"
 msgstr "Openen in nieuw _tabblad"
 
+#. add the "open in new window" menu item
 #: src/nemo-places-sidebar.c:3483 src/nemo-tree-sidebar.c:1329
-#: src/nemo-view.c:9471 src/nemo-view.c:9810
+#: src/nemo-view.c:9468 src/nemo-view.c:9805
 msgid "Open in New _Window"
 msgstr "Openen in _nieuw venster"
 
+#. name, stock id, label
 #: src/nemo-places-sidebar.c:3494 src/nemo-window-menus.c:1412
 msgid "_Add Bookmark"
 msgstr "_Toevoegen aan bladwijzers"
@@ -1383,26 +1458,37 @@ msgstr "Verwijderen"
 msgid "Rename..."
 msgstr "Hernoemen..."
 
-#: src/nemo-places-sidebar.c:3525 src/nemo-view.c:8402 src/nemo-view.c:8426
-#: src/nemo-view.c:8498
+#. name, stock id
+#. label, accelerator
+#: src/nemo-places-sidebar.c:3525 src/nemo-view.c:8399 src/nemo-view.c:8423
+#: src/nemo-view.c:8495
 msgid "_Mount"
 msgstr "_Aankoppelen"
 
+#. add the "Unmount" menu item
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3532 src/nemo-tree-sidebar.c:1444
-#: src/nemo-view.c:8406 src/nemo-view.c:8430 src/nemo-view.c:8502
+#: src/nemo-view.c:8403 src/nemo-view.c:8427 src/nemo-view.c:8499
 msgid "_Unmount"
 msgstr "_Ontkoppelen"
 
+#. add the "Eject" menu item
+#. name, stock id
+#. label, accelerator
 #: src/nemo-places-sidebar.c:3539 src/nemo-tree-sidebar.c:1453
-#: src/nemo-view.c:8410 src/nemo-view.c:8434 src/nemo-view.c:8506
+#: src/nemo-view.c:8407 src/nemo-view.c:8431 src/nemo-view.c:8503
 msgid "_Eject"
 msgstr "_Uitwerpen"
 
-#: src/nemo-places-sidebar.c:3546 src/nemo-view.c:8422 src/nemo-view.c:8446
-#: src/nemo-view.c:8518
+#. name, stock id
+#. label, accelerator
+#: src/nemo-places-sidebar.c:3546 src/nemo-view.c:8419 src/nemo-view.c:8443
+#: src/nemo-view.c:8515
 msgid "_Detect Media"
 msgstr "Media _detecteren"
 
+#. Empty Trash menu item
 #: src/nemo-places-sidebar.c:3569 src/nemo-trash-bar.c:224
 #: libnemo-private/nemo-file-operations.c:1294
 #: libnemo-private/nemo-file-operations.c:1611
@@ -1410,7 +1496,9 @@ msgstr "Media _detecteren"
 msgid "Empty _Trash"
 msgstr "_Prullenbak legen"
 
-#: src/nemo-places-sidebar.c:3581 src/nemo-view.c:8257 src/nemo-view.c:8523
+#. name, stock id
+#. label, accelerator
+#: src/nemo-places-sidebar.c:3581 src/nemo-view.c:8254 src/nemo-view.c:8520
 msgid "_Properties"
 msgstr "_Eigenschappen"
 
@@ -1472,6 +1560,9 @@ msgstr "Eigenschappen"
 msgid "%s Properties"
 msgstr "Eigenschappen van %s"
 
+#. Fallback, use for both unknown attributes and attributes
+#. * for which we have no more appropriate default.
+#. 
 #: src/nemo-properties-window.c:1125 libnemo-private/nemo-file.c:6719
 msgid "unknown"
 msgstr "onbekend"
@@ -1510,14 +1601,22 @@ msgstr[1] "%1$s elementen, in totaal %2$s"
 msgid "(some contents unreadable)"
 msgstr "(sommige inhoud niet leesbaar)"
 
+#. Also set the title field here, with a trailing carriage return &
+#. * space if the value field has two lines. This is a hack to get the
+#. * "Contents:" title to line up with the first line of the
+#. * 2-line value. Maybe there's a better way to do this, but I
+#. * couldn't think of one.
+#. 
 #: src/nemo-properties-window.c:2141
 msgid "Contents:"
 msgstr "Inhoud:"
 
+#. Translators: "used" refers to the capacity of the filesystem
 #: src/nemo-properties-window.c:2919
 msgid "used"
 msgstr "gebruikt"
 
+#. Translators: "free" refers to the capacity of the filesystem
 #: src/nemo-properties-window.c:2926
 msgid "free"
 msgstr "vrij"
@@ -1586,6 +1685,9 @@ msgstr "_Schrijven"
 msgid "E_xecute"
 msgstr "_Uitvoeren"
 
+#. translators: this gets concatenated to "no read",
+#. * "no access", etc. (see following strings)
+#. 
 #: src/nemo-properties-window.c:3835 src/nemo-properties-window.c:3846
 #: src/nemo-properties-window.c:3858
 msgid "no "
@@ -1829,47 +1931,60 @@ msgstr "Geselecteerde elementen terugzetten"
 msgid "Restore selected items to their original position"
 msgstr "Geselecteerde elementen op hun oorspronkelijke plaats terugzetten"
 
-#: src/nemo-tree-sidebar.c:788 src/nemo-view.c:8562
+#: src/nemo-tree-sidebar.c:788 src/nemo-view.c:8559
 msgid "Unp_in"
 msgstr "_Losmaken"
 
 #: src/nemo-tree-sidebar.c:790 src/nemo-tree-sidebar.c:1396
-#: src/nemo-view.c:8558
+#: src/nemo-view.c:8555
 msgid "P_in"
 msgstr "_Vastzetten"
 
-#: src/nemo-tree-sidebar.c:965 src/nemo-view.c:6821
+#: src/nemo-tree-sidebar.c:965 src/nemo-view.c:6818
 #, c-format
 msgid "\"%s\" will be moved if you select the Paste command"
 msgstr "'%s' zal verplaatst worden als u de opdracht 'Plakken' geeft"
 
-#: src/nemo-tree-sidebar.c:969 src/nemo-view.c:6825
+#: src/nemo-tree-sidebar.c:969 src/nemo-view.c:6822
 #, c-format
 msgid "\"%s\" will be copied if you select the Paste command"
 msgstr "'%s' zal gekopieerd worden als u de opdracht 'Plakken' geeft"
 
-#: src/nemo-tree-sidebar.c:1008 src/nemo-view.c:7075
+#: src/nemo-tree-sidebar.c:1008 src/nemo-view.c:7072
 msgid "There is nothing on the clipboard to paste."
 msgstr "Er staat niets op het klembord om te plakken."
 
-#: src/nemo-tree-sidebar.c:1345 src/nemo-view.c:8265
+#. add the "create new folder" menu item
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1345 src/nemo-view.c:8262
 msgid "Create New _Folder"
 msgstr "Nieuwe _map aanmaken"
 
-#: src/nemo-tree-sidebar.c:1358 src/nemo-view.c:8320 src/nemo-view.c:8473
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1358 src/nemo-view.c:8317 src/nemo-view.c:8470
 msgid "Cu_t"
 msgstr "K_nippen"
 
-#: src/nemo-tree-sidebar.c:1370 src/nemo-view.c:8324 src/nemo-view.c:8477
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1370 src/nemo-view.c:8321 src/nemo-view.c:8474
 msgid "_Copy"
 msgstr "Ko_piëren"
 
-#: src/nemo-tree-sidebar.c:1382 src/nemo-view.c:8334 src/nemo-view.c:8481
+#. We make accelerator "" instead of null here to not inherit the stock
+#. accelerator for paste
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1382 src/nemo-view.c:8331 src/nemo-view.c:8478
 msgid "_Paste Into Folder"
 msgstr "In map _plakken"
 
-#: src/nemo-tree-sidebar.c:1426 src/nemo-view.c:8372 src/nemo-view.c:8490
-#: src/nemo-view.c:9876
+#. name, stock id
+#. label, accelerator
+#: src/nemo-tree-sidebar.c:1426 src/nemo-view.c:8369 src/nemo-view.c:8487
+#: src/nemo-view.c:9871
 msgid "_Delete"
 msgstr "_Verwijderen"
 
@@ -1921,6 +2036,7 @@ msgstr "Zoekopdracht_naam:"
 msgid "Select Folder to Save Search In"
 msgstr "Selecteer de map waarin de zoekopdracht wordt opgeslagen"
 
+#. Reset to default info
 #: src/nemo-view.c:2643 libnemo-private/nemo-file-undo-operations.c:147
 msgid "Undo"
 msgstr "Ongedaan maken"
@@ -1929,6 +2045,7 @@ msgstr "Ongedaan maken"
 msgid "Undo last action"
 msgstr "Laatste handeling ongedaan maken"
 
+#. Reset to default info
 #: src/nemo-view.c:2662 libnemo-private/nemo-file-undo-operations.c:154
 msgid "Redo"
 msgstr "Opnieuw uitvoeren"
@@ -1964,6 +2081,7 @@ msgid_plural " (containing %'d items)"
 msgstr[0] " (bevat %'d element)"
 msgstr[1] " (bevat %'d elementen)"
 
+#. translators: this is preceded with a string of form 'N folders' (N more than 1)
 #: src/nemo-view.c:3143
 #, c-format
 msgid " (containing a total of %'d item)"
@@ -1978,6 +2096,7 @@ msgid_plural "%'d items selected"
 msgstr[0] "%'d element geselecteerd"
 msgstr[1] "%'d elementen geselecteerd"
 
+#. Folders selected also, use "other" terminology
 #: src/nemo-view.c:3167
 #, c-format
 msgid "%'d other item selected"
@@ -1985,6 +2104,11 @@ msgid_plural "%'d other items selected"
 msgstr[0] "%'d ander element geselecteerd"
 msgstr[1] "%'d andere elementen geselecteerd"
 
+#. This is marked for translation in case a localiser
+#. * needs to use something other than parentheses. The
+#. * first message gives the number of items selected;
+#. * the message in parentheses the size of those items.
+#. 
 #: src/nemo-view.c:3184
 #, c-format
 msgid "%s (%s)"
@@ -2002,16 +2126,41 @@ msgstr[1] "%'u elementen"
 msgid "%s, Free space: %s"
 msgstr "%s, Vrije ruimte: %s"
 
+#. Marking this for translation, since you
+#. * might want to change "," to something else.
+#. * After the comma the amount of free space will
+#. * be shown.
+#. 
 #: src/nemo-view.c:3223
 #, c-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
+#. Marking this for translation, since you
+#. * might want to change "," to something else.
+#. * After the comma the amount of free space will
+#. * be shown.
+#. 
+#. This is marked for translation in case a localizer
+#. * needs to change ", " to something else. The comma
+#. * is between the message about the number of folders
+#. * and the number of items in those folders and the
+#. * message about the number of other items and the
+#. * total size of those items.
+#. 
 #: src/nemo-view.c:3242 src/nemo-view.c:3255
 #, c-format
 msgid "%s%s, %s"
 msgstr "%s%s, %s"
 
+#. This is marked for translation in case a localizer
+#. * needs to change ", " to something else. The first comma
+#. * is between the message about the number of folders
+#. * and the number of items in those folders and the
+#. * message about the number of other items and the
+#. * total size of those items. After the second comma
+#. * the free space is written.
+#. 
 #: src/nemo-view.c:3269
 #, c-format
 msgid "%s%s, %s, %s"
@@ -2034,12 +2183,12 @@ msgstr[1] "'%s' gebruiken om de geselecteerde elementen te openen"
 msgid "Run \"%s\" on any selected items"
 msgstr "'%s' uitvoeren op elk geselecteerd element"
 
-#: src/nemo-view.c:6532
+#: src/nemo-view.c:6529
 #, c-format
 msgid "Create a new document from template \"%s\""
 msgstr "Document aanmaken vanuit sjabloon '%s'"
 
-#: src/nemo-view.c:6832
+#: src/nemo-view.c:6829
 #, c-format
 msgid "The %'d selected item will be moved if you select the Paste command"
 msgid_plural ""
@@ -2051,7 +2200,7 @@ msgstr[1] ""
 "De %'d geselecteerde elementen zullen verplaatst worden als u de opdracht "
 "'Plakken' geeft"
 
-#: src/nemo-view.c:6839
+#: src/nemo-view.c:6836
 #, c-format
 msgid "The %'d selected item will be copied if you select the Paste command"
 msgid_plural ""
@@ -2063,157 +2212,197 @@ msgstr[1] ""
 "De %'d geselecteerde elementen zullen gekopieerd worden als u de opdracht "
 "'Plakken' geeft"
 
-#: src/nemo-view.c:7009
+#: src/nemo-view.c:7006
 msgid "Select Target Folder For Move"
 msgstr "Kies doelmap voor verplaatsing"
 
-#: src/nemo-view.c:7032
+#: src/nemo-view.c:7029
 msgid "Select Target Folder For Copy"
 msgstr "Kies doelmap voor kopiëren"
 
-#: src/nemo-view.c:7506
+#: src/nemo-view.c:7503
 msgid "Unable to unmount location"
 msgstr "Kon de locatie niet ontkoppelen"
 
-#: src/nemo-view.c:7526
+#: src/nemo-view.c:7523
 msgid "Unable to eject location"
 msgstr "Kon de locatie niet uitwerpen"
 
-#: src/nemo-view.c:7541
+#: src/nemo-view.c:7538
 msgid "Unable to stop drive"
 msgstr "Kon het station niet stoppen"
 
-#: src/nemo-view.c:8027
+#: src/nemo-view.c:8024
 #, c-format
 msgid "Connect to Server %s"
 msgstr "Verbinden met server %s"
 
-#: src/nemo-view.c:8032 src/nemo-view.c:9164 src/nemo-view.c:9251
-#: src/nemo-view.c:9355
+#: src/nemo-view.c:8029 src/nemo-view.c:9161 src/nemo-view.c:9248
+#: src/nemo-view.c:9352
 msgid "_Connect"
 msgstr "_Verbinden"
 
-#: src/nemo-view.c:8046
+#: src/nemo-view.c:8043
 msgid "Link _name:"
 msgstr "Koppelings_naam:"
 
-#: src/nemo-view.c:8253
+#. name, stock id, label
+#: src/nemo-view.c:8250
 msgid "Create New _Document"
 msgstr "Nieuw _document aanmaken"
 
-#: src/nemo-view.c:8254
+#. name, stock id, label
+#: src/nemo-view.c:8251
 msgid "Open Wit_h"
 msgstr "Openen _met"
 
-#: src/nemo-view.c:8255
+#: src/nemo-view.c:8252
 msgid "Choose a program with which to open the selected item"
 msgstr "Kies een toepassing om het geselecteerde element mee te openen"
 
-#: src/nemo-view.c:8258 src/nemo-view.c:9917
+#. tooltip
+#: src/nemo-view.c:8255 src/nemo-view.c:9912
 msgid "View or modify the properties of each selected item"
 msgstr "De eigenschappen van elk geselecteerd element bekijken of wijzigen"
 
-#: src/nemo-view.c:8266
+#. tooltip
+#: src/nemo-view.c:8263
 msgid "Create a new empty folder inside this folder"
 msgstr "Nieuwe lege map aanmaken in deze map"
 
-#: src/nemo-view.c:8268
+#. name, stock id, label
+#: src/nemo-view.c:8265
 msgid "No templates installed"
 msgstr "Geen sjablonen geïnstalleerd"
 
-#: src/nemo-view.c:8271
+#. name, stock id
+#. translators: this is used to indicate that a document doesn't contain anything
+#. label, accelerator
+#: src/nemo-view.c:8268
 msgid "_Empty Document"
 msgstr "_Leeg document"
 
-#: src/nemo-view.c:8272
+#. tooltip
+#: src/nemo-view.c:8269
 msgid "Create a new empty document inside this folder"
 msgstr "Nieuw leeg document aanmaken in deze map"
 
-#: src/nemo-view.c:8276
+#. tooltip
+#: src/nemo-view.c:8273
 msgid "Open the selected item in this window"
 msgstr "Geselecteerd element in dit venster openen"
 
-#: src/nemo-view.c:8283 src/nemo-view.c:8464
+#. name, stock id
+#. label, accelerator
+#. Location-specific actions
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8280 src/nemo-view.c:8461
 msgid "Open in Navigation Window"
 msgstr "Openen in navigatievenster"
 
-#: src/nemo-view.c:8284
+#. tooltip
+#: src/nemo-view.c:8281
 msgid "Open each selected item in a navigation window"
 msgstr "Elk geselecteerd element in een navigatievenster openen"
 
-#: src/nemo-view.c:8288
+#. tooltip
+#: src/nemo-view.c:8285
 msgid "Open each selected item in a new tab"
 msgstr "Elk geselecteerd element in een nieuw tabblad openen"
 
-#: src/nemo-view.c:8291 src/nemo-window-menus.c:1630
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8288 src/nemo-window-menus.c:1630
 msgid "Open in Terminal"
 msgstr "In terminal openen"
 
-#: src/nemo-view.c:8292
+#. tooltip
+#: src/nemo-view.c:8289
 msgid "Open terminal in the selected folder"
 msgstr "Terminal openen in de geselecteerde map"
 
-#: src/nemo-view.c:8295
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8292
 msgid "Open as Root"
 msgstr "Openen als beheerder"
 
-#: src/nemo-view.c:8296
+#. tooltip
+#: src/nemo-view.c:8293
 msgid "Open the folder with administration privileges"
 msgstr "Open deze map met beheerdersrechten"
 
-#: src/nemo-view.c:8300
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8297
 msgid "Follow link to original file"
 msgstr "Volg koppeling naar oorspronkelijk bestand"
 
-#: src/nemo-view.c:8301
+#. tooltip
+#: src/nemo-view.c:8298
 msgid "Navigate to the original file that this symbolic link points to"
 msgstr ""
 "Navigeer naar het oorspronkelijke bestand waarnaar deze symbolische "
 "koppeling verwijst"
 
-#: src/nemo-view.c:8304
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8301
 msgid "Open containing folder"
 msgstr "Open de map waar het in zit"
 
-#: src/nemo-view.c:8305
+#. tooltip
+#: src/nemo-view.c:8302
 msgid "Navigate to the folder that the selected item is stored in"
 msgstr "Navigeer naar de map waarin het geselecteerde element is opgeslagen"
 
-#: src/nemo-view.c:8308
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8305
 msgid "Other _Application..."
 msgstr "Andere _toepassing..."
 
-#: src/nemo-view.c:8309 src/nemo-view.c:8313
+#. tooltip
+#: src/nemo-view.c:8306 src/nemo-view.c:8310
 msgid "Choose another application with which to open the selected item"
 msgstr "Andere toepassing kiezen om het geselecteerde element mee te openen"
 
-#: src/nemo-view.c:8312
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8309
 msgid "Open With Other _Application..."
 msgstr "Met _andere toepassing openen..."
 
-#: src/nemo-view.c:8321
+#. tooltip
+#: src/nemo-view.c:8318
 msgid "Prepare the selected files to be moved with a Paste command"
 msgstr ""
 "Geselecteerde bestanden klaarmaken om verplaatst te worden met de Plakken-"
 "opdracht"
 
-#: src/nemo-view.c:8325
+#. tooltip
+#: src/nemo-view.c:8322
 msgid "Prepare the selected files to be copied with a Paste command"
 msgstr ""
 "Geselecteerde bestanden klaarmaken om gekopieerd te worden met de Plakken-"
 "opdracht"
 
-#: src/nemo-view.c:8328
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8325
 msgid "_Paste"
 msgstr "P_lakken"
 
-#: src/nemo-view.c:8329
+#. tooltip
+#: src/nemo-view.c:8326
 msgid "Move or copy files previously selected by a Cut or Copy command"
 msgstr ""
 "Bestanden verplaatsen of kopiëren die eerder bij een knip- of "
 "kopieeropdracht zijn geselecteerd"
 
-#: src/nemo-view.c:8335
+#. tooltip
+#: src/nemo-view.c:8332
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into the "
 "selected folder"
@@ -2221,194 +2410,261 @@ msgstr ""
 "Bestanden die eerder door een knip- of kopieeropdracht waren geselecteerd, "
 "verplaatsen of kopiëren naar de geselecteerde map"
 
-#: src/nemo-view.c:8337
+#. name, stock id, label
+#: src/nemo-view.c:8334
 msgid "Cop_y to"
 msgstr "_Kopiëren naar"
 
-#: src/nemo-view.c:8338
+#. name, stock id, label
+#: src/nemo-view.c:8335
 msgid "M_ove to"
 msgstr "_Verplaatsen naar"
 
-#: src/nemo-view.c:8340 libnemo-private/nemo-clipboard.c:444
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8337 libnemo-private/nemo-clipboard.c:444
 msgid "Select _All"
 msgstr "_Alles selecteren"
 
-#: src/nemo-view.c:8341
+#. tooltip
+#: src/nemo-view.c:8338
 msgid "Select all items in this window"
 msgstr "Alle elementen in dit venster selecteren"
 
-#: src/nemo-view.c:8344
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8341
 msgid "Select I_tems Matching..."
 msgstr "Kies elementen overeenkomend met..."
 
-#: src/nemo-view.c:8345
+#. tooltip
+#: src/nemo-view.c:8342
 msgid "Select items in this window matching a given pattern"
 msgstr ""
 "Kies elementen in dit venster die overeenkomen met een bepaald patroon"
 
-#: src/nemo-view.c:8348
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8345
 msgid "_Invert Selection"
 msgstr "Select_ie omkeren"
 
-#: src/nemo-view.c:8349
+#. tooltip
+#: src/nemo-view.c:8346
 msgid "Select all and only the items that are not currently selected"
 msgstr "Alleen die elementen selecteren die nu niet geselecteerd zijn"
 
-#: src/nemo-view.c:8352
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8349
 msgid "D_uplicate"
 msgstr "D_upliceren"
 
-#: src/nemo-view.c:8353
+#. tooltip
+#: src/nemo-view.c:8350
 msgid "Duplicate each selected item"
 msgstr "Elk geselecteerd element dupliceren"
 
-#: src/nemo-view.c:8356 src/nemo-view.c:9902
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8353 src/nemo-view.c:9897
 msgid "Ma_ke Link"
 msgid_plural "Ma_ke Links"
 msgstr[0] "Koppeling m_aken"
 msgstr[1] "Koppelingen ma_ken"
 
-#: src/nemo-view.c:8357
+#. tooltip
+#: src/nemo-view.c:8354
 msgid "Create a symbolic link for each selected item"
 msgstr "Symbolische koppeling maken voor elk geselecteerd element"
 
-#: src/nemo-view.c:8360
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8357
 msgid "_Rename..."
 msgstr "He_rnoemen..."
 
-#: src/nemo-view.c:8361
+#. tooltip
+#: src/nemo-view.c:8358
 msgid "Rename selected item"
 msgstr "Geselecteerd element hernoemen"
 
-#: src/nemo-view.c:8369 src/nemo-view.c:9854
+#. tooltip
+#: src/nemo-view.c:8366 src/nemo-view.c:9849
 msgid "Move each selected item to the Trash"
 msgstr "Verplaats elk geselecteerd element naar de prullenbak"
 
-#: src/nemo-view.c:8373 src/nemo-view.c:9877
+#. tooltip
+#: src/nemo-view.c:8370 src/nemo-view.c:9872
 msgid "Delete each selected item, without moving to the Trash"
 msgstr ""
 "Verwijder elk geselecteerd element zonder het naar de prullenbak te "
 "verplaatsen."
 
-#: src/nemo-view.c:8376 src/nemo-view.c:8494
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8373 src/nemo-view.c:8491
 msgid "_Restore"
 msgstr "_Terugzetten"
 
-#: src/nemo-view.c:8380 src/nemo-window-menus.c:1291
+#. name, stock id
+#. label, accelerator
+#. name, stock id, label
+#: src/nemo-view.c:8377 src/nemo-window-menus.c:1291
 msgid "_Undo"
 msgstr "O_ngedaan maken"
 
-#: src/nemo-view.c:8381
+#. tooltip
+#: src/nemo-view.c:8378
 msgid "Undo the last action"
 msgstr "Laatste handeling ongedaan maken"
 
-#: src/nemo-view.c:8384
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8381
 msgid "_Redo"
 msgstr "Op_nieuw uitvoeren"
 
-#: src/nemo-view.c:8385
+#. tooltip
+#: src/nemo-view.c:8382
 msgid "Redo the last undone action"
 msgstr "De laatste handeling die ongedaan werd gemaakt opnieuw uitvoeren"
 
-#: src/nemo-view.c:8394
+#. 
+#. * multiview-TODO: decide whether "Reset to Defaults" should
+#. * be window-wide, and not just view-wide.
+#. * Since this also resets the "Show hidden files" mode,
+#. * it is a mixture of both ATM.
+#. 
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8391
 msgid "Reset View to _Defaults"
 msgstr "Terug naar s_tandaardweergave"
 
-#: src/nemo-view.c:8395
+#. tooltip
+#: src/nemo-view.c:8392
 msgid "Reset sorting order and zoom level to match preferences for this view"
 msgstr ""
 "Zet sorteervolgorde en vergrotingsniveau terug naar de voorkeuren voor deze "
 "weergave"
 
-#: src/nemo-view.c:8398
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8395
 msgid "Connect To This Server"
 msgstr "Verbinding maken met deze server"
 
-#: src/nemo-view.c:8399
+#. tooltip
+#: src/nemo-view.c:8396
 msgid "Make a permanent connection to this server"
 msgstr "Permanente verbinding maken met deze server"
 
-#: src/nemo-view.c:8403
+#. tooltip
+#: src/nemo-view.c:8400
 msgid "Mount the selected volume"
 msgstr "Het geselecteerde medium aankoppelen."
 
-#: src/nemo-view.c:8407
+#. tooltip
+#: src/nemo-view.c:8404
 msgid "Unmount the selected volume"
 msgstr "Het geselecteerde medium ontkoppelen"
 
-#: src/nemo-view.c:8411
+#. tooltip
+#: src/nemo-view.c:8408
 msgid "Eject the selected volume"
 msgstr "Het geselecteerde medium uitwerpen"
 
-#: src/nemo-view.c:8415
+#. tooltip
+#: src/nemo-view.c:8412
 msgid "Start the selected volume"
 msgstr "Het geselecteerde medium starten"
 
-#: src/nemo-view.c:8419 src/nemo-view.c:9377
+#. tooltip
+#: src/nemo-view.c:8416 src/nemo-view.c:9374
 msgid "Stop the selected volume"
 msgstr "Het geselecteerde medium stoppen"
 
-#: src/nemo-view.c:8423 src/nemo-view.c:8447 src/nemo-view.c:8519
+#. tooltip
+#: src/nemo-view.c:8420 src/nemo-view.c:8444 src/nemo-view.c:8516
 msgid "Detect media in the selected drive"
 msgstr "Media detecteren in het geselecteerde station"
 
-#: src/nemo-view.c:8427
+#. tooltip
+#: src/nemo-view.c:8424
 msgid "Mount the volume associated with the open folder"
 msgstr "Het aan de geopende map verbonden medium aankoppelen"
 
-#: src/nemo-view.c:8431
+#. tooltip
+#: src/nemo-view.c:8428
 msgid "Unmount the volume associated with the open folder"
 msgstr "Het aan de geopende map verbonden medium ontkoppelen"
 
-#: src/nemo-view.c:8435
+#. tooltip
+#: src/nemo-view.c:8432
 msgid "Eject the volume associated with the open folder"
 msgstr "Het aan de geopende map verbonden medium uitwerpen"
 
-#: src/nemo-view.c:8439
+#. tooltip
+#: src/nemo-view.c:8436
 msgid "Start the volume associated with the open folder"
 msgstr "Het aan de geopende map verbonden medium starten"
 
-#: src/nemo-view.c:8443
+#. tooltip
+#: src/nemo-view.c:8440
 msgid "Stop the volume associated with the open folder"
 msgstr "Het met de geopende map verbonden medium stoppen"
 
-#: src/nemo-view.c:8450
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8447
 msgid "Open File and Close window"
 msgstr "Bestand openen en venster sluiten"
 
-#: src/nemo-view.c:8454
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8451
 msgid "Sa_ve Search"
 msgstr "Zoekopdracht op_slaan"
 
-#: src/nemo-view.c:8455
+#. tooltip
+#: src/nemo-view.c:8452
 msgid "Save the edited search"
 msgstr "De aangepaste zoekopdracht opslaan"
 
-#: src/nemo-view.c:8458
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8455
 msgid "Sa_ve Search As..."
 msgstr "Zoekopdracht opslaan _als..."
 
-#: src/nemo-view.c:8459
+#. tooltip
+#: src/nemo-view.c:8456
 msgid "Save the current search as a file"
 msgstr "De huidige zoekopdracht opslaan als een bestand"
 
-#: src/nemo-view.c:8465
+#. tooltip
+#: src/nemo-view.c:8462
 msgid "Open this folder in a navigation window"
 msgstr "Deze map in een navigatievenster openen"
 
-#: src/nemo-view.c:8469
+#. tooltip
+#: src/nemo-view.c:8466
 msgid "Open this folder in a new tab"
 msgstr "Deze map in een nieuw tabblad openen"
 
-#: src/nemo-view.c:8474
+#. tooltip
+#: src/nemo-view.c:8471
 msgid "Prepare this folder to be moved with a Paste command"
 msgstr "Deze map klaarmaken om verplaatst te worden met een plakopdracht"
 
-#: src/nemo-view.c:8478
+#. tooltip
+#: src/nemo-view.c:8475
 msgid "Prepare this folder to be copied with a Paste command"
 msgstr "Deze map klaarmaken om gekopieerd te worden met een plakopdracht"
 
-#: src/nemo-view.c:8482
+#. tooltip
+#: src/nemo-view.c:8479
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into this "
 "folder"
@@ -2416,89 +2672,102 @@ msgstr ""
 "Bestanden die eerder door een knip- of kopieeropdracht werden geselecteerd, "
 "verplaatsen of kopiëren naar deze map"
 
-#: src/nemo-view.c:8487
+#. tooltip
+#: src/nemo-view.c:8484
 msgid "Move this folder to the Trash"
 msgstr "Verplaats deze map naar de prullenbak"
 
-#: src/nemo-view.c:8491
+#. tooltip
+#: src/nemo-view.c:8488
 msgid "Delete this folder, without moving to the Trash"
 msgstr "Verwijder deze map zonder hem naar de prullenbak te verplaatsen"
 
-#: src/nemo-view.c:8499
+#. tooltip
+#: src/nemo-view.c:8496
 msgid "Mount the volume associated with this folder"
 msgstr "Het aan deze map verbonden medium aankoppelen"
 
-#: src/nemo-view.c:8503
+#. tooltip
+#: src/nemo-view.c:8500
 msgid "Unmount the volume associated with this folder"
 msgstr "Het aan deze map verbonden medium ontkoppelen"
 
-#: src/nemo-view.c:8507
+#. tooltip
+#: src/nemo-view.c:8504
 msgid "Eject the volume associated with this folder"
 msgstr "Het aan deze map verbonden medium uitwerpen"
 
-#: src/nemo-view.c:8511
+#. tooltip
+#: src/nemo-view.c:8508
 msgid "Start the volume associated with this folder"
 msgstr "Het aan deze map verbonden medium starten"
 
-#: src/nemo-view.c:8515
+#. tooltip
+#: src/nemo-view.c:8512
 msgid "Stop the volume associated with this folder"
 msgstr "Het aan deze map verbonden medium stoppen"
 
-#: src/nemo-view.c:8524
+#. tooltip
+#: src/nemo-view.c:8521
 msgid "View or modify the properties of this folder"
 msgstr "De eigenschappen van deze map bekijken of wijzigen"
 
-#: src/nemo-view.c:8527 src/nemo-view.c:8530
+#. name, stock id, label
+#: src/nemo-view.c:8524 src/nemo-view.c:8527
 msgid "_Other pane"
 msgstr "_Ander paneel"
 
-#: src/nemo-view.c:8528
+#: src/nemo-view.c:8525
 msgid "Copy the current selection to the other pane in the window"
 msgstr "De huidige selectie kopiëren naar het andere paneel in dit venster"
 
-#: src/nemo-view.c:8531
+#: src/nemo-view.c:8528
 msgid "Move the current selection to the other pane in the window"
 msgstr ""
 "De huidige selectie verplaatsen naar het andere paneel in dit venster"
 
-#: src/nemo-view.c:8534 src/nemo-view.c:8538 src/nemo-window-menus.c:1366
+#. name, stock id, label
+#. name, stock id
+#. label, accelerator
+#: src/nemo-view.c:8531 src/nemo-view.c:8535 src/nemo-window-menus.c:1366
 #: src/nemo-window-menus.c:1580 src/nemo-window-menus.c:1818
 msgid "_Home"
 msgstr "Persoonlijke _map"
 
-#: src/nemo-view.c:8535
+#: src/nemo-view.c:8532
 msgid "Copy the current selection to the home folder"
 msgstr "De huidige selectie kopiëren naar de persoonlijke map"
 
-#: src/nemo-view.c:8539
+#: src/nemo-view.c:8536
 msgid "Move the current selection to the home folder"
 msgstr "De huidige selectie verplaatsen naar de persoonlijke map"
 
-#: src/nemo-view.c:8542 src/nemo-view.c:8546
+#. name, stock id, label
+#: src/nemo-view.c:8539 src/nemo-view.c:8543
 msgid "_Desktop"
 msgstr "Bureaubla_d"
 
-#: src/nemo-view.c:8543
+#: src/nemo-view.c:8540
 msgid "Copy the current selection to the desktop"
 msgstr "De huidige selectie kopiëren naar het bureaublad"
 
-#: src/nemo-view.c:8547
+#: src/nemo-view.c:8544
 msgid "Move the current selection to the desktop"
 msgstr "De huidige selectie verplaatsen naar het bureaublad"
 
-#: src/nemo-view.c:8550 src/nemo-view.c:8554
+#: src/nemo-view.c:8547 src/nemo-view.c:8551
 msgid "Browse…"
 msgstr "Bladeren…"
 
-#: src/nemo-view.c:8551
+#: src/nemo-view.c:8548
 msgid "Browse for a folder to move the selection to"
 msgstr "Blader naar een map om de selectie naar te verplaatsen"
 
-#: src/nemo-view.c:8555
+#: src/nemo-view.c:8552
 msgid "Browse for a folder to copy the selection to"
 msgstr "Blader naar een map om de selectie naar te kopiëren"
 
-#: src/nemo-view.c:8559
+#: src/nemo-view.c:8556
 msgid ""
 "Pin the selected file so it always appears at the top of this location's "
 "file list"
@@ -2506,201 +2775,207 @@ msgstr ""
 "Zet het gekozen bestand vast zodat het altijd bovenaan staat in de "
 "bestandenlijst van deze locatie"
 
-#: src/nemo-view.c:8563
+#: src/nemo-view.c:8560
 msgid "Unpin the selected file from the top of this location's file list"
 msgstr ""
 "Maak het gekozen bestand los van de bovenkant van de bestandenlijst van deze "
 "locatie"
 
-#: src/nemo-view.c:8638
+#: src/nemo-view.c:8635
 msgid "Run scripts"
 msgstr "Scripts uitvoeren"
 
-#: src/nemo-view.c:8640
+#. Create a script action here specially because its tooltip is dynamic
+#: src/nemo-view.c:8637
 msgid "_Scripts"
 msgstr "_Scripts"
 
-#: src/nemo-view.c:9013
+#: src/nemo-view.c:9010
 #, c-format
 msgid "Move the open folder out of the trash to \"%s\""
 msgstr "Verplaats de geopende map uit de prullenbak naar '%s'"
 
-#: src/nemo-view.c:9016
+#: src/nemo-view.c:9013
 #, c-format
 msgid "Move the selected folder out of the trash to \"%s\""
 msgid_plural "Move the selected folders out of the trash to \"%s\""
 msgstr[0] "Verplaats de geselecteerde map uit de prullenbak naar '%s'"
 msgstr[1] "Verplaats de geselecteerde mappen uit de prullenbak naar '%s'"
 
-#: src/nemo-view.c:9020
+#: src/nemo-view.c:9017
 msgid "Move the selected folder out of the trash"
 msgid_plural "Move the selected folders out of the trash"
 msgstr[0] "Haal de geselecteerde map uit de prullenbak"
 msgstr[1] "Haal de geselecteerde mappen uit de prullenbak"
 
-#: src/nemo-view.c:9026
+#: src/nemo-view.c:9023
 #, c-format
 msgid "Move the selected file out of the trash to \"%s\""
 msgid_plural "Move the selected files out of the trash to \"%s\""
 msgstr[0] "Verplaats het geselecteerde bestand uit de prullenbak naar '%s'"
 msgstr[1] "Verplaats de geselecteerde bestanden uit de prullenbak naar '%s'"
 
-#: src/nemo-view.c:9030
+#: src/nemo-view.c:9027
 msgid "Move the selected file out of the trash"
 msgid_plural "Move the selected files out of the trash"
 msgstr[0] "Haal het geselecteerde bestand uit de prullenbak"
 msgstr[1] "Haal de geselecteerde bestanden uit de prullenbak"
 
-#: src/nemo-view.c:9036
+#: src/nemo-view.c:9033
 #, c-format
 msgid "Move the selected item out of the trash to \"%s\""
 msgid_plural "Move the selected items out of the trash to \"%s\""
 msgstr[0] "Verplaats het geselecteerde element uit de prullenbak naar '%s'"
 msgstr[1] "Verplaats de geselecteerde elementen uit de prullenbak naar '%s'"
 
-#: src/nemo-view.c:9040
+#: src/nemo-view.c:9037
 msgid "Move the selected item out of the trash"
 msgid_plural "Move the selected items out of the trash"
 msgstr[0] "Haal het geselecteerde element uit de prullenbak"
 msgstr[1] "Haal de geselecteerde elementen uit de prullenbak"
 
-#: src/nemo-view.c:9157 src/nemo-view.c:9161 src/nemo-view.c:9348
-#: src/nemo-view.c:9352
+#: src/nemo-view.c:9154 src/nemo-view.c:9158 src/nemo-view.c:9345
+#: src/nemo-view.c:9349
 msgid "Start the selected drive"
 msgstr "Het geselecteerde station starten"
 
-#: src/nemo-view.c:9165 src/nemo-view.c:9356
+#: src/nemo-view.c:9162 src/nemo-view.c:9353
 msgid "Connect to the selected drive"
 msgstr "Verbinden met het geselecteerde station"
 
-#: src/nemo-view.c:9168 src/nemo-view.c:9255 src/nemo-view.c:9359
+#: src/nemo-view.c:9165 src/nemo-view.c:9252 src/nemo-view.c:9356
 msgid "_Start Multi-disk Drive"
 msgstr "Multischijfstation _starten"
 
-#: src/nemo-view.c:9169 src/nemo-view.c:9360
+#: src/nemo-view.c:9166 src/nemo-view.c:9357
 msgid "Start the selected multi-disk drive"
 msgstr "Het geselecteerde multischijfstation starten"
 
-#: src/nemo-view.c:9172
+#: src/nemo-view.c:9169
 msgid "U_nlock Drive"
 msgstr "Station _ontgrendelen"
 
-#: src/nemo-view.c:9173 src/nemo-view.c:9364
+#: src/nemo-view.c:9170 src/nemo-view.c:9361
 msgid "Unlock the selected drive"
 msgstr "Het geselecteerde station ontgrendelen"
 
-#: src/nemo-view.c:9186
+#: src/nemo-view.c:9183
 msgid "Stop the selected drive"
 msgstr "Het geselecteerde station stoppen"
 
-#: src/nemo-view.c:9190 src/nemo-view.c:9381
+#: src/nemo-view.c:9187 src/nemo-view.c:9378
 msgid "Safely remove the selected drive"
 msgstr "Het geselecteerde station veilig verwijderen"
 
-#: src/nemo-view.c:9193 src/nemo-view.c:9280 src/nemo-view.c:9384
+#: src/nemo-view.c:9190 src/nemo-view.c:9277 src/nemo-view.c:9381
 msgid "_Disconnect"
 msgstr "_Verbinding verbreken"
 
-#: src/nemo-view.c:9194 src/nemo-view.c:9385
+#: src/nemo-view.c:9191 src/nemo-view.c:9382
 msgid "Disconnect the selected drive"
 msgstr "Verbinding met het geselecteerde station verbreken"
 
-#: src/nemo-view.c:9197 src/nemo-view.c:9284 src/nemo-view.c:9388
+#: src/nemo-view.c:9194 src/nemo-view.c:9281 src/nemo-view.c:9385
 msgid "_Stop Multi-disk Drive"
 msgstr "Multischijfstation _stoppen"
 
-#: src/nemo-view.c:9198 src/nemo-view.c:9389
+#: src/nemo-view.c:9195 src/nemo-view.c:9386
 msgid "Stop the selected multi-disk drive"
 msgstr "Het geselecteerde multischijfstation stoppen"
 
-#: src/nemo-view.c:9202 src/nemo-view.c:9393
+#: src/nemo-view.c:9199 src/nemo-view.c:9390
 msgid "Lock the selected drive"
 msgstr "Het geselecteerde station vergrendelen"
 
-#: src/nemo-view.c:9244 src/nemo-view.c:9248
+#: src/nemo-view.c:9241 src/nemo-view.c:9245
 msgid "Start the drive associated with the open folder"
 msgstr "Het station starten dat geassocieerd is met de open map"
 
-#: src/nemo-view.c:9252
+#: src/nemo-view.c:9249
 msgid "Connect to the drive associated with the open folder"
 msgstr "Verbinding maken met het station dat geassocieerd is met de open map"
 
-#: src/nemo-view.c:9256
+#: src/nemo-view.c:9253
 msgid "Start the multi-disk drive associated with the open folder"
 msgstr "Het multischijfstation starten dat geassocieerd is met de open map"
 
-#: src/nemo-view.c:9260
+#: src/nemo-view.c:9257
 msgid "Unlock the drive associated with the open folder"
 msgstr "Het station ontgrendelen dat geassocieerd is met de open map"
 
-#: src/nemo-view.c:9273
+#: src/nemo-view.c:9270
 msgid "_Stop the drive associated with the open folder"
 msgstr "Het station _stoppen dat geassocieerd is met de open map"
 
-#: src/nemo-view.c:9277
+#: src/nemo-view.c:9274
 msgid "Safely remove the drive associated with the open folder"
 msgstr "Het station veilig verwijderen dat geassocieerd is met de open map"
 
-#: src/nemo-view.c:9281
+#: src/nemo-view.c:9278
 msgid "Disconnect the drive associated with the open folder"
 msgstr ""
 "Verbinding verbreken met het station dat geassocieerd is met de open map"
 
-#: src/nemo-view.c:9285
+#: src/nemo-view.c:9282
 msgid "Stop the multi-disk drive associated with the open folder"
 msgstr "Het multischijfstation stoppen dat geassocieerd is met de open map"
 
-#: src/nemo-view.c:9289
+#: src/nemo-view.c:9286
 msgid "Lock the drive associated with the open folder"
 msgstr "Het station vergrendelen dat geassocieerd is met de open map"
 
-#: src/nemo-view.c:9529 src/nemo-view.c:9849
+#: src/nemo-view.c:9526 src/nemo-view.c:9844
 msgid "_Delete Permanently"
 msgstr "Permanent ver_wijderen"
 
-#: src/nemo-view.c:9530
+#: src/nemo-view.c:9527
 msgid "Delete the open folder permanently"
 msgstr "De geopende map permanent verwijderen"
 
-#: src/nemo-view.c:9534
+#: src/nemo-view.c:9531
 msgid "Move the open folder to the Trash"
 msgstr "Verplaats de geopende map naar de prullenbak"
 
-#: src/nemo-view.c:9763
+#: src/nemo-view.c:9758
 #, c-format
 msgid "_Open With %s"
 msgstr "_Openen met %s"
 
-#: src/nemo-view.c:9812
+#: src/nemo-view.c:9807
 #, c-format
 msgid "Open in %'d New _Window"
 msgid_plural "Open in %'d New _Windows"
 msgstr[0] "In %'d nieuw _venster openen"
 msgstr[1] "In %'d nieuwe _vensters openen"
 
-#: src/nemo-view.c:9832
+#: src/nemo-view.c:9827
 #, c-format
 msgid "Open in %'d New _Tab"
 msgid_plural "Open in %'d New _Tabs"
 msgstr[0] "In %'d nieuw _tabblad openen"
 msgstr[1] "In %'d nieuwe _tabbladen openen"
 
-#: src/nemo-view.c:9850
+#: src/nemo-view.c:9845
 msgid "Delete all selected items permanently"
 msgstr "Alle geselecteerde elementen permanent verwijderen"
 
-#: src/nemo-view.c:9873
+#: src/nemo-view.c:9868
 msgid "Remo_ve from Recent"
 msgstr "Verwijderen uit lijst van onlangs gebruikt"
 
-#: src/nemo-view.c:9874
+#: src/nemo-view.c:9869
 msgid "Remove each selected item from the recently used list"
 msgstr "Verwijder alle geselecteerde elementen uit de onlangs-gebruikt-lijst"
 
-#: src/nemo-view.c:9915
+#: src/nemo-view.c:9910
 msgid "View or modify the properties of the open folder"
 msgstr "De eigenschappen van de geopende map bekijken of wijzigen"
 
+#. Note to localizers: convert file type string for file
+#. * (e.g. "folder", "plain text") to file type for symbolic link
+#. * to that kind of file (e.g. "link to folder").
+#. 
+#. appended to new link file
 #: src/nemo-view-dnd.c:125 libnemo-private/nemo-file.c:6861
 #: libnemo-private/nemo-file-operations.c:393
 #, c-format
@@ -2720,10 +2995,14 @@ msgstr ""
 msgid "An invalid drag type was used."
 msgstr "Er werd een ongeldig sleeptype gebruikt."
 
+#. Translator: This is the filename used for when you dnd text to a directory
 #: src/nemo-view-dnd.c:376
 msgid "dropped text.txt"
 msgstr "versleepte tekst.txt"
 
+#. Translator: This is the filename used for when you dnd raw
+#. * data to a directory, if the source didn't supply a name.
+#. 
 #: src/nemo-view-dnd.c:421
 msgid "dropped data"
 msgstr "versleepte gegevens"
@@ -2753,6 +3032,7 @@ msgstr "Ga naar de locatie waarnaar deze bladwijzer verwijst"
 msgid "%s - File Browser"
 msgstr "%s - Bestandsbeheer"
 
+#. Set initial window title
 #: src/nemo-window.c:1966 src/nemo-window-menus.c:339
 msgid "Nemo"
 msgstr "Nemo"
@@ -2802,6 +3082,11 @@ msgstr "De locatie kon niet worden aangekoppeld."
 msgid "Access was denied."
 msgstr "Toegang werd geweigerd."
 
+#. This case can be hit for user-typed strings like "foo" due to
+#. * the code that guesses web addresses when there's no initial "/".
+#. * But this case is also hit for legitimate web addresses when
+#. * the proxy is set up wrong.
+#. 
 #: src/nemo-window-manage-views.c:1756
 #, c-format
 msgid "Could not display \"%s\", because the host could not be found."
@@ -2870,26 +3155,33 @@ msgstr ""
 "Er is een fout opgetreden bij het weergeven van de hulptekst:\n"
 "%s"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1274
 msgid "_File"
 msgstr "_Bestand"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1275
 msgid "_Edit"
 msgstr "Be_werken"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1276
 msgid "_View"
 msgstr "Beel_d"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1277
 msgid "_Help"
 msgstr "_Hulp"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1279
 msgid "_Close"
 msgstr "Sl_uiten"
 
+#. tooltip
 #: src/nemo-window-menus.c:1280
 msgid "Close this folder"
 msgstr "Deze map sluiten"
@@ -2915,6 +3207,7 @@ msgstr "Extensies, acties en scripts beheren"
 msgid "Undo the last text change"
 msgstr "Laatste tekstverandering ongedaan maken"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1295
 msgid "Open _Parent"
 msgstr "_Bovenliggende map openen"
@@ -2923,22 +3216,29 @@ msgstr "_Bovenliggende map openen"
 msgid "Open the parent folder"
 msgstr "De bovenliggende map openen"
 
+#. tooltip
 #: src/nemo-window-menus.c:1303
 msgid "Stop loading the current location"
 msgstr "Stoppen met laden van de huidige locatie"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1306 src/nemo-window-menus.c:1566
 msgid "_Reload"
 msgstr "He_rladen"
 
+#. tooltip
 #: src/nemo-window-menus.c:1307 src/nemo-window-menus.c:1568
 msgid "Reload the current location"
 msgstr "De huidige locatie herladen"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1310
 msgid "_All Topics"
 msgstr "_Alle onderwerpen"
 
+#. tooltip
 #: src/nemo-window-menus.c:1311
 msgid "Display Nemo help"
 msgstr "Nemo-hulp weergeven"
@@ -2951,54 +3251,89 @@ msgstr "_Sneltoetsen"
 msgid "Display keyboard shortcuts"
 msgstr "Sneltoetsen tonen"
 
+#. * name, stock id          { "NemoHelpSearch", NULL,
+#. label, accelerator        N_("Search for files"), NULL,
+#. tooltip                   N_("Locate files based on file name and type. Save your searches for later use."),
+#. G_CALLBACK (action_nemo_manual_callback) },
+#. name, stock id          { "NemoHelpSort", NULL,
+#. label, accelerator        N_("Sort files and folders"), NULL,
+#. tooltip                   N_("Arrange files by name, size, type, or when they were changed."),
+#. G_CALLBACK (action_nemo_manual_callback) },
+#. name, stock id          { "NemoHelpLost", NULL,
+#. label, accelerator        N_("Find a lost file"), NULL,
+#. tooltip                   N_("Follow these tips if you can't find a file you created or downloaded."),
+#. G_CALLBACK (action_nemo_manual_callback) },
+#. name, stock id          { "NemoHelpShare", NULL,
+#. label, accelerator        N_("Share and transfer files"), NULL,
+#. tooltip                   N_("Easily transfer files to your contacts and devices from the file manager."),
+#. G_CALLBACK (action_nemo_manual_callback) }, *
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1334
 msgid "_About"
 msgstr "I_nfo"
 
+#. tooltip
 #: src/nemo-window-menus.c:1335
 msgid "Display credits for the creators of Nemo"
 msgstr "Dankbetuiging aan de ontwikkelaars van Nemo weergeven"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1338
 msgid "Zoom _In"
 msgstr "Ver_groten"
 
+#. tooltip
 #: src/nemo-window-menus.c:1339
 msgid "Increase the view size"
 msgstr "Het beeld vergroten"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1350
 msgid "Zoom _Out"
 msgstr "Ver_kleinen"
 
+#. tooltip
 #: src/nemo-window-menus.c:1351
 msgid "Decrease the view size"
 msgstr "Het beeld verkleinen"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1358
 msgid "Normal Si_ze"
 msgstr "Normale _grootte"
 
+#. tooltip
 #: src/nemo-window-menus.c:1359
 msgid "Use the normal view size"
 msgstr "De normale beeldgrootte gebruiken"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1362
 msgid "Connect to _Server..."
 msgstr "Verbinding maken met _server..."
 
+#. tooltip
 #: src/nemo-window-menus.c:1363
 msgid "Connect to a remote computer or shared disk"
 msgstr "Verbinding maken met een andere computer of een gedeelde schijf"
 
+#. tooltip
 #: src/nemo-window-menus.c:1367
 msgid "Open your personal folder"
 msgstr "Uw persoonlijke map openen"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1370 src/nemo-window-menus.c:1594
 msgid "_Computer"
 msgstr "_Computer"
 
+#. tooltip
 #: src/nemo-window-menus.c:1371
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
@@ -3006,42 +3341,55 @@ msgstr ""
 "Bladeren door lokale schijven, schijven op afstand en mappen die vanaf deze "
 "computer toegankelijk zijn"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1374
 msgid "_Network"
 msgstr "_Netwerk"
 
+#. tooltip
 #: src/nemo-window-menus.c:1375
 msgid "Browse bookmarked and local network locations"
 msgstr "Opgeslagen en lokale netwerklocaties doorbladeren"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1378
 msgid "T_emplates"
 msgstr "S_jablonen"
 
+#. tooltip
 #: src/nemo-window-menus.c:1379
 msgid "Open your personal templates folder"
 msgstr "Uw persoonlijke sjablonenmap openen"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1382
 msgid "_Trash"
 msgstr "_Prullenbak"
 
+#. tooltip
 #: src/nemo-window-menus.c:1383
 msgid "Open your personal trash folder"
 msgstr "Uw persoonlijke prullenbakmap openen"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1385
 msgid "_Go"
 msgstr "_Ga naar"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1386
 msgid "_Bookmarks"
 msgstr "Bl_adwijzers"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1387
 msgid "_Tabs"
 msgstr "_Tabbladen"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1388
 msgid "New _Window"
 msgstr "Nieuw _venster"
@@ -3050,6 +3398,7 @@ msgstr "Nieuw _venster"
 msgid "Open another Nemo window for the displayed location"
 msgstr "Open een nieuw Nemo-venster voor de weergegeven locatie"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1391
 msgid "New _Tab"
 msgstr "Nieuw _tabblad"
@@ -3058,6 +3407,7 @@ msgstr "Nieuw _tabblad"
 msgid "Open another tab for the displayed location"
 msgstr "Open nog een tabblad voor de weergegeven locatie"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1394
 msgid "Close _All Windows"
 msgstr "_Alle vensters sluiten"
@@ -3066,6 +3416,7 @@ msgstr "_Alle vensters sluiten"
 msgid "Close all Navigation windows"
 msgstr "Alle navigatievensters sluiten"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1397 src/nemo-window-menus.c:1516
 msgid "_Back"
 msgstr "V_orige"
@@ -3074,6 +3425,7 @@ msgstr "V_orige"
 msgid "Go to the previous visited location"
 msgstr "Naar de vorige bezochte locatie gaan"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1400 src/nemo-window-menus.c:1532
 msgid "_Forward"
 msgstr "_Volgende"
@@ -3082,6 +3434,7 @@ msgstr "_Volgende"
 msgid "Go to the next visited location"
 msgstr "Naar de volgende bezochte locatie gaan"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1403
 msgid "Toggle _Location Entry"
 msgstr "Locatie-invoerveld omschakelen"
@@ -3090,6 +3443,7 @@ msgstr "Locatie-invoerveld omschakelen"
 msgid "Switch between location entry and breadcrumbs"
 msgstr "Schakelen tussen locatie-invoerveld en broodkruimels"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1406
 msgid "S_witch to Other Pane"
 msgstr "Naar ander _paneel overschakelen"
@@ -3099,6 +3453,7 @@ msgid "Move focus to the other pane in a split view window"
 msgstr ""
 "Verplaats de scherpstelling naar het andere paneel in een gesplitst venster"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1409
 msgid "Sa_me Location as Other Pane"
 msgstr "_Zelfde locatie als het andere paneel"
@@ -3111,6 +3466,7 @@ msgstr "Naar dezelfde locatie gaan als in het extra paneel"
 msgid "Add a bookmark for the current location to this menu"
 msgstr "Voeg bladwijzer voor huidige locatie toe aan dit menu"
 
+#. name, stock id, label
 #: src/nemo-window-menus.c:1415
 msgid "_Edit Bookmarks..."
 msgstr "Bladwijzers be_werken..."
@@ -3155,74 +3511,109 @@ msgstr "Huidig tabblad naar rechts verplaatsen"
 msgid "Sidebar"
 msgstr "Zijbalk"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1435
 msgid "Show _Hidden Files"
 msgstr "Ver_borgen bestanden tonen"
 
+#. tooltip
 #: src/nemo-window-menus.c:1436
 msgid "Toggle the display of hidden files in the current window"
 msgstr "De verborgen bestanden in het huidige venster tonen/verbergen"
 
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1440
 msgid "_Main Toolbar"
 msgstr "Hoofd_werkbalk"
 
+#. tooltip
 #: src/nemo-window-menus.c:1441
 msgid "Change the visibility of this window's main toolbar"
 msgstr "Zichtbaarheid veranderen van de hoofdwerkbalk van dit venster"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1445
 msgid "_Show Sidebar"
 msgstr "_Zijbalk tonen"
 
+#. tooltip
 #: src/nemo-window-menus.c:1446
 msgid "Change the visibility of this window's side pane"
 msgstr "Zichtbaarheid van het zijpaneel van dit venster veranderen"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1450
 msgid "St_atusbar"
 msgstr "_Statusbalk"
 
+#. tooltip
 #: src/nemo-window-menus.c:1451
 msgid "Change the visibility of this window's statusbar"
 msgstr "Zichtbaarheid van de statusbalk van dit venster veranderen"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1455
 msgid "M_enubar"
 msgstr "M_enubalk"
 
+#. tooltip
 #: src/nemo-window-menus.c:1456
 msgid "Change the default visibility of the menubar"
 msgstr "Standaardzichtbaarheid van de menubalk wijzigen"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1460
 msgid "_Search for Files..."
 msgstr "_Zoeken naar bestanden…"
 
+#. tooltip
 #: src/nemo-window-menus.c:1461 src/nemo-window-menus.c:1676
 msgid "Search documents and folders by name"
 msgstr "Documenten en mappen op naam zoeken"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1465
 msgid "E_xtra Pane"
 msgstr "E_xtra paneel"
 
+#. tooltip
 #: src/nemo-window-menus.c:1466
 msgid "Open an extra folder view side-by-side"
 msgstr "Een extra mapweergave ernaast openen"
 
+#. is_active
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1470
 msgid "Show _Thumbnails"
 msgstr "_Miniaturen tonen"
 
+#. tooltip
 #: src/nemo-window-menus.c:1471
 msgid "Toggle the display of thumbnails in the current directory"
 msgstr "Schakel de weergave van miniaturen in de huidige map om"
 
+#. callback
+#. default
+#. name, stock id
+#. label, accelerator
 #: src/nemo-window-menus.c:1475
 msgid "Use _full context menu"
 msgstr "Volledige contextmenu gebruiken"
 
+#. tooltip
 #: src/nemo-window-menus.c:1476
 msgid "Display additional actions in the context menu"
 msgstr "Toon extra acties in het contextmenu"
@@ -3361,6 +3752,7 @@ msgstr "Deze bestanden staan op een digitale audiospeler."
 msgid "The media contains software."
 msgstr "Het medium bevat programmatuur."
 
+#. fallback to generic greeting
 #: src/nemo-x-content-bar.c:118
 #, c-format
 msgid "The media has been detected as \"%s\"."
@@ -3371,18 +3763,28 @@ msgstr "Het medium is herkend als '%s'."
 msgid "Open %s"
 msgstr "%s openen"
 
+#. name, stock id
+#. label, accelerator
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:433
 msgid "Cut the selected text to the clipboard"
 msgstr "De geselecteerde tekst naar het klembord knippen"
 
+#. name, stock id
+#. label, accelerator
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:437
 msgid "Copy the selected text to the clipboard"
 msgstr "De geselecteerde tekst naar het klembord kopiëren"
 
+#. name, stock id
+#. label, accelerator
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:441
 msgid "Paste the text stored on the clipboard"
 msgstr "De opgeslagen tekst vanaf het klembord plakken"
 
+#. tooltip
 #: libnemo-private/nemo-clipboard.c:445
 msgid "Select all the text in a text field"
 msgstr "Alle tekst in een tekstveld selecteren"
@@ -3515,7 +3917,7 @@ msgstr ""
 "Oorspronkelijke locatie van het bestand voordat het naar de prullenbak "
 "verplaatst werd"
 
-#: libnemo-private/nemo-desktop-directory-file.c:455
+#: libnemo-private/nemo-desktop-directory-file.c:459
 #: libnemo-private/nemo-desktop-icon-file.c:154
 msgid "on the desktop"
 msgstr "op het bureaublad"
@@ -3597,19 +3999,25 @@ msgstr "Kon bureaubladpictogram niet hernoemen"
 msgid "Unable to rename desktop file"
 msgstr "Kon bureaubladbestand niet hernoemen"
 
+#. Translators: Time in 24h format
 #: libnemo-private/nemo-file.c:4943
 msgid "%H:%M"
 msgstr "%H:%M"
 
+#. Translators: Time in 12h format
 #: libnemo-private/nemo-file.c:4946
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
 
+#. Translators: this is the word Yesterday followed by
+#. * a time in 24h format. i.e. "Yesterday 23:04"
 #: libnemo-private/nemo-file.c:4959
 #, no-c-format
 msgid "Yesterday %H:%M"
 msgstr "Gisteren om %H:%M"
 
+#. Translators: this is the word Yesterday followed by
+#. * a time in 12h format. i.e. "Yesterday 9:04 PM"
 #: libnemo-private/nemo-file.c:4964
 #, no-c-format
 msgid "Yesterday %l:%M %p"
@@ -3620,41 +4028,61 @@ msgstr "Gisteren om %l:%M %p"
 msgid "%A"
 msgstr "%A"
 
+#. Translators: this is the name of the week day followed by
+#. * a time in 24h format. i.e. "Monday 23:04"
 #: libnemo-private/nemo-file.c:4978
 #, no-c-format
 msgid "%A %H:%M"
 msgstr "%A %H:%M"
 
+#. Translators: this is the week day name followed by
+#. * a time in 12h format. i.e. "Monday 9:04 PM"
 #: libnemo-private/nemo-file.c:4983
 #, no-c-format
 msgid "%A %l:%M %p"
 msgstr "%A %l:%M %p"
 
+#. Translators: this is the day of the month followed
+#. * by the abbreviated month name i.e. "3 February"
 #: libnemo-private/nemo-file.c:4991
 #, no-c-format
 msgid "%-e %B"
 msgstr "%-e %B"
 
+#. Translators: this is the day of the month followed
+#. * by the abbreviated month name followed by a time in
+#. * 24h format i.e. "3 February 23:04"
 #: libnemo-private/nemo-file.c:4998
 #, no-c-format
 msgid "%-e %B %H:%M"
 msgstr "%-e %B %H:%M"
 
+#. Translators: this is the day of the month followed
+#. * by the abbreviated month name followed by a time in
+#. * 12h format i.e. "3 February 9:04"
 #: libnemo-private/nemo-file.c:5004
 #, no-c-format
 msgid "%-e %B %l:%M %p"
 msgstr "%-e %B %l:%M %p"
 
+#. Translators: this is the day of the month followed by the abbreviated
+#. * month name followed by the year i.e. "3 Feb 2015"
 #: libnemo-private/nemo-file.c:5012
 #, no-c-format
 msgid "%-e %b %Y"
 msgstr "%-e %b %Y"
 
+#. Translators: this is the day number followed
+#. * by the abbreviated month name followed by the year followed
+#. * by a time in 24h format i.e. "3 Feb 2015 23:04"
 #: libnemo-private/nemo-file.c:5019
 #, no-c-format
 msgid "%-e %b %Y %H:%M"
 msgstr "%-e %b %Y %H:%M"
 
+#. Translators: this is the day number followed
+#. * by the abbreviated month name followed by the year followed
+#. * by a time in 12h format i.e. "3 Feb 2015 9:04 PM"
 #: libnemo-private/nemo-file.c:5025
 #, no-c-format
 msgid "%-e %b %Y %l:%M %p"
@@ -3701,10 +4129,12 @@ msgid_plural "%'u files"
 msgstr[0] "%'u bestand"
 msgstr[1] "%'u bestanden"
 
+#. This means no contents at all were readable
 #: libnemo-private/nemo-file.c:6682 libnemo-private/nemo-file.c:6698
 msgid "? items"
 msgstr "? elementen"
 
+#. This means no contents at all were readable
 #: libnemo-private/nemo-file.c:6688
 msgid "? bytes"
 msgstr "? bytes"
@@ -3912,6 +4342,7 @@ msgstr "Vervangen door"
 msgid "Merge"
 msgstr "Samenvoegen"
 
+#. Setup the expander for the rename action
 #: libnemo-private/nemo-file-conflict-dialog.c:509
 msgid "_Select a new name for the destination"
 msgstr "_Selecteer een nieuwe naam voor de bestemming"
@@ -3920,6 +4351,7 @@ msgstr "_Selecteer een nieuwe naam voor de bestemming"
 msgid "Reset"
 msgstr "Terugzetten op standaardwaarden"
 
+#. Setup the checkbox to apply the action to all files
 #: libnemo-private/nemo-file-conflict-dialog.c:535
 msgid "Apply this action to all files"
 msgstr "Deze actie toepassen op alle bestanden"
@@ -4002,39 +4434,57 @@ msgid_plural "approximately %'d hours"
 msgstr[0] "ongeveer %'d uur"
 msgstr[1] "ongeveer %'d uren"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:397
 #, c-format
 msgid "Another link to %s"
 msgstr "Nog een koppeling naar %s"
 
+#. Localizers: Feel free to leave out the "st" suffix
+#. * if there's no way to do that nicely for a
+#. * particular language.
+#. 
 #: libnemo-private/nemo-file-operations.c:413
 #, c-format
 msgid "%'dst link to %s"
 msgstr "%'de verwijzing naar %s"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:417
 #, c-format
 msgid "%'dnd link to %s"
 msgstr "%'de verwijzing naar %s"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:421
 #, c-format
 msgid "%'drd link to %s"
 msgstr "%'de verwijzing naar %s"
 
+#. appended to new link file
 #: libnemo-private/nemo-file-operations.c:425
 #, c-format
 msgid "%'dth link to %s"
 msgstr "%'de verwijzing naar %s"
 
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. 
+#. localizers: tag used to detect the first copy of a file
 #: libnemo-private/nemo-file-operations.c:464
 msgid " (copy)"
 msgstr " (exemplaar)"
 
+#. localizers: tag used to detect the second copy of a file
 #: libnemo-private/nemo-file-operations.c:466
 msgid " (another copy)"
 msgstr " (nog een exemplaar)"
 
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
 #: libnemo-private/nemo-file-operations.c:469
 #: libnemo-private/nemo-file-operations.c:471
 #: libnemo-private/nemo-file-operations.c:473
@@ -4042,28 +4492,37 @@ msgstr " (nog een exemplaar)"
 msgid "th copy)"
 msgstr "de exemplaar)"
 
+#. localizers: tag used to detect the x1st copy of a file
 #: libnemo-private/nemo-file-operations.c:476
 msgid "st copy)"
 msgstr "ste exemplaar)"
 
+#. localizers: tag used to detect the x2nd copy of a file
 #: libnemo-private/nemo-file-operations.c:478
 msgid "nd copy)"
 msgstr "de exemplaar)"
 
+#. localizers: tag used to detect the x3rd copy of a file
 #: libnemo-private/nemo-file-operations.c:480
 msgid "rd copy)"
 msgstr "de exemplaar)"
 
+#. localizers: appended to first file copy
 #: libnemo-private/nemo-file-operations.c:497
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (exemplaar)%s"
 
+#. localizers: appended to second file copy
 #: libnemo-private/nemo-file-operations.c:499
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (tweede exemplaar)%s"
 
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
 #: libnemo-private/nemo-file-operations.c:502
 #: libnemo-private/nemo-file-operations.c:504
 #: libnemo-private/nemo-file-operations.c:506
@@ -4072,25 +4531,34 @@ msgstr "%s (tweede exemplaar)%s"
 msgid "%s (%'dth copy)%s"
 msgstr "%s (%'de exemplaar)%s"
 
+#. localizers: if in your language there's no difference between 1st, 2nd, 3rd and nth
+#. * plurals, you can leave the st, nd, rd suffixes out and just make all the translated
+#. * strings look like "%s (copy %'d)%s".
+#. 
+#. localizers: appended to x1st file copy
 #: libnemo-private/nemo-file-operations.c:514
 #, c-format
 msgid "%s (%'dst copy)%s"
 msgstr "%s (%'de exemplaar)%s"
 
+#. localizers: appended to x2nd file copy
 #: libnemo-private/nemo-file-operations.c:516
 #, c-format
 msgid "%s (%'dnd copy)%s"
 msgstr "%s (%'de exemplaar)%s"
 
+#. localizers: appended to x3rd file copy
 #: libnemo-private/nemo-file-operations.c:518
 #, c-format
 msgid "%s (%'drd copy)%s"
 msgstr "%s (%'de exemplaar)%s"
 
+#. localizers: opening parentheses to match the "th copy)" string
 #: libnemo-private/nemo-file-operations.c:619
 msgid " ("
 msgstr " ("
 
+#. localizers: opening parentheses of the "th copy)" string
 #: libnemo-private/nemo-file-operations.c:627
 #, c-format
 msgid " (%'d"
@@ -4160,14 +4628,13 @@ msgstr[1] "Aan het wachten om bestanden te koppelen van '%1$s' naar '%2$s'"
 msgid "Are you sure you want to move \"%B\" to the trash?"
 msgstr "Weet u zeker dat u '%B' naar de prullenbak wilt verplaatsen?"
 
-#: libnemo-private/nemo-file-operations.c:1525
+#. translators: the singular form here can be skipped.
+#: libnemo-private/nemo-file-operations.c:1526
 #, c-format
-msgid "Are you sure you want to move the %'d selected items to the trash?"
+msgid "unused %'d"
 msgid_plural ""
 "Are you sure you want to move the %'d selected items to the trash?"
-msgstr[0] ""
-"Weet u zeker dat u de %'d gekozen elementen naar de prullenbak wilt "
-"verplaatsen?"
+msgstr[0] "ongebruikt %'d"
 msgstr[1] ""
 "Weet u zeker dat u de %'d gekozen elementen naar de prullenbak wilt "
 "verplaatsen?"
@@ -4242,6 +4709,9 @@ msgstr[1] "%'d resterende bestanden om te verwijderen"
 msgid "Deleting files"
 msgstr "Bestanden verwijderen"
 
+#. To translators: %T will expand to a time like "2 minutes".
+#. * The singular/plural form will be used depending on the remaining time (i.e. the %T argument).
+#. 
 #: libnemo-private/nemo-file-operations.c:1704
 msgid "%T left"
 msgid_plural "%T left"
@@ -4508,11 +4978,17 @@ msgstr "Kopiëren van bestand %'d van %'d naar '%B'"
 msgid "Duplicating file %'d of %'d"
 msgstr "Dupliceren van bestand %'d van %'d"
 
+#. To translators: %S will expand to a size like "2 bytes" or "3 MB", so something like "4 kb of 4 MB"
 #: libnemo-private/nemo-file-operations.c:3271
 #, c-format
 msgid "%S of %S"
 msgstr "%S van %S"
 
+#. To translators: %S will expand to a size like "2 bytes" or "3 MB", %T to a time duration like
+#. * "2 minutes". So the whole thing will be something like "2 kb of 4 MB -- 2 hours left (4kb/sec)"
+#. *
+#. * The singular/plural form will be used depending on the remaining time (i.e. the %T argument).
+#. 
 #: libnemo-private/nemo-file-operations.c:3282
 msgid "%S of %S — %T left (%S/sec)"
 msgid_plural "%S of %S — %T left (%S/sec)"
@@ -4573,6 +5049,7 @@ msgstr "Kon bestanden niet verwijderen uit de reeds bestaande map %F."
 msgid "Could not remove the already existing file %F."
 msgstr "Kon het reeds bestaande bestand %F niet verwijderen."
 
+#. the run_warning() frees all strings passed in automatically
 #: libnemo-private/nemo-file-operations.c:4375
 #: libnemo-private/nemo-file-operations.c:5090
 msgid "You cannot move a folder into itself."
@@ -4588,6 +5065,7 @@ msgstr "U kunt geen map in zichzelf kopiëren"
 msgid "The destination folder is inside the source folder."
 msgstr "De bestemmingsmap bevindt zich in de bronmap."
 
+#. the run_warning() frees all strings passed in automatically
 #: libnemo-private/nemo-file-operations.c:4408
 msgid "You cannot move a file over itself."
 msgstr "Een bestand kan niet naar zichzelf verplaatst worden."
@@ -4672,10 +5150,12 @@ msgstr ""
 msgid "Setting permissions"
 msgstr "Rechten instellen"
 
+#. localizers: the initial name of a new folder
 #: libnemo-private/nemo-file-operations.c:6273
 msgid "Untitled Folder"
 msgstr "Naamloze map"
 
+#. localizers: the initial name of a new empty document
 #: libnemo-private/nemo-file-operations.c:6285
 msgid "Untitled Document"
 msgstr "Naamloos document"
@@ -5083,6 +5563,7 @@ msgstr ""
 "Geen geldig uitvoerbaar bestand. Spaties in het bestandspad moeten worden "
 "vervangen door schuine streep naar rechts (\\)."
 
+#. the %s here is a file extension
 #: libnemo-private/nemo-mime-application-chooser.c:419
 #: libnemo-private/nemo-mime-application-chooser.c:437
 #, c-format
@@ -5294,11 +5775,11 @@ msgstr ""
 
 #: data/nemo-actions/action_i18n_strings.py:10
 msgid "Add Desklets"
-msgstr "Minitoepassingen toevoegen"
+msgstr "Werkbladmini's toevoegen"
 
 #: data/nemo-actions/action_i18n_strings.py:11
 msgid "Add Cinamon desklets"
-msgstr "Minitoepassingen toevoegen aan Cinnamon"
+msgstr "Werkbladmini's van Cinnamon toevoegen"
 
 #: data/nemo-actions/action_i18n_strings.py:12
 msgid "Mount archive"
