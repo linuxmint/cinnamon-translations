@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-06-29 16:25+0200\n"
-"PO-Revision-Date: 2019-07-19 19:47+0000\n"
-"Last-Translator: Kacper Paczos <Unknown>\n"
+"POT-Creation-Date: 2019-11-04 13:21+0000\n"
+"PO-Revision-Date: 2019-11-24 10:55+0000\n"
+"Last-Translator: Mariusz <wisniowy@g.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2019-07-28 09:37+0000\n"
-"X-Generator: Launchpad (build 19010)\n"
+"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 
 #: nemo-audio-tab/nemo-extension/nemo-audio-tab.py:41
 msgid "Audio"
@@ -95,9 +95,9 @@ msgstr "Diff N-źródłowy"
 msgid "Compare to: "
 msgstr "Porównaj z: "
 
-#: nemo-compare/src/nemo-compare.py:113
-msgid "Compare to the file remembered before"
-msgstr "Porównaj z wcześniej zapamiętanym plikiem"
+#: nemo-compare/src/nemo-compare.py:113 nemo-compare/src/nemo-compare.py:136
+msgid "Compare to the file previously selected"
+msgstr "Porównaj z poprzednio zaznaczonym plikiem"
 
 #: nemo-compare/src/nemo-compare.py:122
 msgid "Compare Later"
@@ -106,10 +106,6 @@ msgstr "Porównaj później"
 #: nemo-compare/src/nemo-compare.py:123
 msgid "Remember file for later comparison"
 msgstr "Zapamiętaj plik do późniejszego porównania"
-
-#: nemo-compare/src/nemo-compare.py:136
-msgid "Compare selected files to the file remembered before"
-msgstr "Porównaj wybrane pliki z plikiem zapamiętanym wcześniej"
 
 #: nemo-compare/src/nemo-compare.py:147
 msgid "Compare"
@@ -286,13 +282,14 @@ msgstr ""
 "  Adam Kroczyk https://launchpad.net/~ogotai\n"
 "  Bartek Zyzio https://launchpad.net/~bartek.zyzio\n"
 "  Borian https://launchpad.net/~konto-spamowe\n"
+"  Greg https://launchpad.net/~rehorek\n"
 "  Grzegorz Szyszlo https://launchpad.net/~znik70\n"
 "  Kacper Paczos https://launchpad.net/~pyroxar\n"
 "  Krzysztof https://launchpad.net/~latwylinux\n"
 "  Kuba Niewiarowski https://launchpad.net/~marsjaninzmarsa\n"
 "  Mariusz https://launchpad.net/~wisniowy-5\n"
 "  Mateusz Łukasik https://launchpad.net/~mati75\n"
-"  Paweł Pańczyk https://launchpad.net/~pawello213\n"
+"  Paweł Pańczyk https://launchpad.net/~vicat\n"
 "  Piotr Drąg https://launchpad.net/~piotrdrag\n"
 "  Piotr Strębski https://launchpad.net/~strebski"
 
@@ -1576,11 +1573,9 @@ msgstr "Zainstaluj"
 
 #: nemo-share/interfaces/share-dialog.ui.h:8
 msgid ""
-"Samba needs to be installed, and your user account needs to join the "
-"'sambashare' group."
+"Samba needs to be installed, appropriate firewall rules need to be added and "
+"your user account needs to join the 'sambashare' group."
 msgstr ""
-"Samba musi zostać zainstalowana, a Twoje konto użytkownika musi dołączyć do "
-"grupy \"sambashare\"."
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:44
 msgid "Nemo-Terminal Preferences"
@@ -1612,7 +1607,7 @@ msgstr ""
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:92
 msgid "Location mode"
-msgstr ""
+msgstr "Tryb położenia"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:100
 msgid "Terminal bell"
@@ -1633,6 +1628,7 @@ msgstr "Ogólne"
 #: nemo-terminal/src/nemo-terminal-prefs.py:171
 msgid "Shell to use (leave blank for system default)"
 msgstr ""
+"Używana powłoka (pozostaw puste, aby używać domyślnych ustawień systemowych)"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:187
 msgid "Terminal erase line key sequence"
@@ -1644,7 +1640,7 @@ msgstr ""
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:203
 msgid "Change directory command"
-msgstr ""
+msgstr "Komenda zmiany katalogu"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:208
 msgid "Restore defaults"
@@ -1657,7 +1653,7 @@ msgstr ""
 #: nemo-terminal/src/nemo-terminal-prefs.py:218
 #, python-format
 msgid "'%s' is replaced by the quoted directory name."
-msgstr ""
+msgstr "'%s' zastąpiono przez cytowaną nazwę katalogu."
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:225
 msgid "Advanced"

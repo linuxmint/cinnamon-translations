@@ -7,16 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-06-29 16:25+0200\n"
-"PO-Revision-Date: 2019-07-03 11:45+0000\n"
-"Last-Translator: lang-it <Unknown>\n"
+"POT-Creation-Date: 2019-11-04 13:21+0000\n"
+"PO-Revision-Date: 2019-11-10 19:33+0000\n"
+"Last-Translator: Dragone2 <Unknown>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-07-28 09:37+0000\n"
-"X-Generator: Launchpad (build 19010)\n"
+"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
+"Language: it\n"
 
 #: nemo-audio-tab/nemo-extension/nemo-audio-tab.py:41
 msgid "Audio"
@@ -94,9 +95,9 @@ msgstr "Diff su N File"
 msgid "Compare to: "
 msgstr "Confronta con: "
 
-#: nemo-compare/src/nemo-compare.py:113
-msgid "Compare to the file remembered before"
-msgstr "Confronta con il file memorizzato in precedenza"
+#: nemo-compare/src/nemo-compare.py:113 nemo-compare/src/nemo-compare.py:136
+msgid "Compare to the file previously selected"
+msgstr "Confronta con il file precedentemente selezionato"
 
 #: nemo-compare/src/nemo-compare.py:122
 msgid "Compare Later"
@@ -105,10 +106,6 @@ msgstr "Confronta Dopo"
 #: nemo-compare/src/nemo-compare.py:123
 msgid "Remember file for later comparison"
 msgstr "Memorizza il file per confrontarlo più tardi"
-
-#: nemo-compare/src/nemo-compare.py:136
-msgid "Compare selected files to the file remembered before"
-msgstr "Confronta i file selezionati con il file memorizzato in precedenza"
 
 #: nemo-compare/src/nemo-compare.py:147
 msgid "Compare"
@@ -192,7 +189,7 @@ msgstr "Nota"
 
 #: nemo-emblems/nemo-extension/nemo-emblems.py:50
 msgid "Ohno"
-msgstr "Oh, no!"
+msgstr "Oh, no"
 
 #: nemo-emblems/nemo-extension/nemo-emblems.py:50
 msgid "Package"
@@ -283,10 +280,13 @@ msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Claudio https://launchpad.net/~klauz84\n"
-"  Fabrizio Aliberti https://launchpad.net/~khameleon\n"
+"  Clement Lefebvre https://launchpad.net/~clementlefebvre\n"
+"  Dragone2 https://launchpad.net/~dragone2\n"
+"  Fabrizio Aliberti https://launchpad.net/~pomodori92\n"
 "  Fantu https://launchpad.net/~fantonifabio\n"
 "  Giorgio Ponza https://launchpad.net/~giorgio.ponza\n"
 "  Luca Polito https://launchpad.net/~adevur\n"
+"  Marco Fiaschi https://launchpad.net/~ubmf\n"
 "  karm https://launchpad.net/~melo-o\n"
 "  lang-it https://launchpad.net/~lang-it"
 
@@ -751,7 +751,7 @@ msgstr "Ri_nomina come \"%s\""
 #: nemo-repairer/src/nemo-filename-repairer.c:266
 #, c-format
 msgid "Rename as \"%s\"."
-msgstr "Rinomina come \"%s\""
+msgstr "Rinomina come \"%s\"."
 
 #: nemo-repairer/src/nemo-filename-repairer.c:410
 msgid "Select a filename"
@@ -1320,7 +1320,7 @@ msgstr "Pacchetto:"
 
 #: nemo-seahorse/tool/seahorse-multi-encrypt.xml.h:7
 msgid "Package Name:"
-msgstr "Nome del Pacchetto"
+msgstr "Nome del Pacchetto:"
 
 #: nemo-seahorse/tool/seahorse-multi-encrypt.xml.h:8
 msgid ""
@@ -1421,11 +1421,16 @@ msgid ""
 "by other users unless the option 'force user' is specified in "
 "/etc/samba/smb.conf."
 msgstr ""
+"Questa cartella si trova in una directory crittografata. Non sarà "
+"accessibile da altri utenti a meno che l'opzione 'force user' non sia "
+"specificata in /etc/samba/smb.conf."
 
 #: nemo-share/src/nemo-share.c:529
 #, c-format
 msgid "The permissions for %s prevent other users from accessing this share"
 msgstr ""
+"Le autorizzazioni per %s impediscono ad altri utenti di accedere a questa "
+"condivisione"
 
 #: nemo-share/src/nemo-share.c:577 nemo-share/src/nemo-share.c:881
 msgid "Modify _Share"
@@ -1557,11 +1562,11 @@ msgstr "Installare"
 
 #: nemo-share/interfaces/share-dialog.ui.h:8
 msgid ""
-"Samba needs to be installed, and your user account needs to join the "
-"'sambashare' group."
+"Samba needs to be installed, appropriate firewall rules need to be added and "
+"your user account needs to join the 'sambashare' group."
 msgstr ""
-"Samba deve essere installato, ed il tuo account utente deve unirsi al gruppo "
-"'sambashare'."
+"Samba deve essere installato, devono essere aggiunte le regole del firewall "
+"appropriate e il tuo account utente deve unirsi al gruppo 'sambashare'."
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:44
 msgid "Nemo-Terminal Preferences"
@@ -1617,15 +1622,15 @@ msgstr "Shell da usare (lascia vuoto per la predefinita di sistema)"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:187
 msgid "Terminal erase line key sequence"
-msgstr ""
+msgstr "Sequenza di tasti della riga di cancellazione terminale"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:195
 msgid "Terminal restore line key sequence"
-msgstr ""
+msgstr "Sequenza di tasti della riga di ripristino del terminale"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:203
 msgid "Change directory command"
-msgstr ""
+msgstr "Cambia il comando della cartella"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:208
 msgid "Restore defaults"
@@ -1633,12 +1638,12 @@ msgstr "Ripristina predefiniti"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:217
 msgid "Sequences must be escaped according to python rules."
-msgstr ""
+msgstr "Le sequenze devono essere sfuggite secondo le regole di Python."
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:218
 #, python-format
 msgid "'%s' is replaced by the quoted directory name."
-msgstr ""
+msgstr "'%s' è sostituito dal nome della directory tra virgolette."
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:225
 msgid "Advanced"
@@ -1646,4 +1651,4 @@ msgstr "Avanzato"
 
 #: nemo-terminal/src/nemo_terminal.py:149
 msgid "Paste Filenames"
-msgstr ""
+msgstr "Incolla i nomi dei file"
