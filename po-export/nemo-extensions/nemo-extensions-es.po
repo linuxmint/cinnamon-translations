@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2019-11-04 13:21+0000\n"
-"PO-Revision-Date: 2019-11-24 22:41+0000\n"
+"PO-Revision-Date: 2019-11-27 18:28+0000\n"
 "Last-Translator: Toni Estevez <toni.estevez@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2019-11-26 16:03+0000\n"
+"X-Launchpad-Export-Date: 2019-12-11 11:58+0000\n"
 "X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
 
 #: nemo-audio-tab/nemo-extension/nemo-audio-tab.py:41
@@ -899,7 +899,7 @@ msgstr "Firma caducada"
 #: nemo-seahorse/tool/seahorse-notification.c:617
 #, c-format
 msgid "Signed by <i><key id='%s'/> <b>Revoked</b></i> on %s."
-msgstr "Signé par <i><key id='%s'/> <b>Révoquée</b></i> le %s."
+msgstr "Firmado por <i><key id='%s'/> <b>Revocada</b></i> el %s."
 
 #: nemo-seahorse/tool/seahorse-notification.c:618
 msgid "Revoked Signature"
@@ -1057,8 +1057,8 @@ msgstr "Clave importada"
 #, c-format
 msgid "Imported %d key"
 msgid_plural "Imported %d keys"
-msgstr[0] "Se importó %d clave"
-msgstr[1] "Se importaron %d claves"
+msgstr[0] "%d clave importada"
+msgstr[1] "%d claves importadas"
 
 #: nemo-seahorse/tool/seahorse-tool.c:518
 #, c-format
@@ -1244,11 +1244,12 @@ msgstr "No se pudieron empaquetar los archivos"
 
 #: nemo-seahorse/tool/seahorse-util.c:170
 msgid "Decryption failed. You probably do not have the decryption key."
-msgstr "Falló el descifrado. Puede que no tenga usted la clave."
+msgstr ""
+"Falló el descifrado. Es probable que no tenga la clave de descifrado."
 
 #: nemo-seahorse/tool/seahorse-util.c:197
 msgid "%Y-%m-%d"
-msgstr "%Y-%m-%d"
+msgstr "%d-%m-%Y"
 
 #: nemo-seahorse/tool/seahorse-util.c:391
 msgid "Couldn't run file-roller"
@@ -1269,7 +1270,7 @@ msgstr "Todos los archivos"
 
 #: nemo-seahorse/tool/seahorse-util.c:473
 msgid "Archive files"
-msgstr "Archivos comprimidos"
+msgstr "Archivadores"
 
 #: nemo-seahorse/tool/seahorse-util.c:502
 msgid ""
@@ -1287,7 +1288,7 @@ msgstr "_Reemplazar"
 
 #: nemo-seahorse/tool/seahorse-multi-encrypt.xml.h:1
 msgid "Encrypt Multiple Files"
-msgstr "Cifrar varios archivos"
+msgstr "Cifrar múltiples archivos"
 
 #: nemo-seahorse/tool/seahorse-multi-encrypt.xml.h:2
 msgid "<b>You have selected multiple files or folders</b>"
@@ -1317,7 +1318,7 @@ msgstr "Nombre del paquete:"
 msgid ""
 "Because the files are located remotely, each file will be encrypted "
 "separately."
-msgstr "Al tratarse de archivos remotos, cada uno será cifrado por separado."
+msgstr "Al tratarse de archivos remotos, cada uno se cifrará por separado."
 
 #: nemo-seahorse/tool/seahorse-notify.xml.h:1
 msgid "Notification Messages"
@@ -1325,7 +1326,7 @@ msgstr "Mensajes de notificación"
 
 #: nemo-seahorse/tool/seahorse-progress.xml.h:1
 msgid "Progress Title"
-msgstr "Título de progreso"
+msgstr "Título del progreso"
 
 #: nemo-seahorse/nemo-ext/nemo-seahorse.c:159
 msgid "Encrypt..."
@@ -1352,8 +1353,7 @@ msgstr[1] "Firmar los archivos seleccionados"
 msgid ""
 "Nemo needs to add some permissions to your folder \"%s\" in order to share it"
 msgstr ""
-"Nemo necesita añadir algunos permisos a la carpeta «%s» para poder "
-"compartirla."
+"Nemo debe añadir algunos permisos a la carpeta «%s» para poder compartirla."
 
 #: nemo-share/src/nemo-share.c:129
 #, c-format
@@ -1362,9 +1362,9 @@ msgid ""
 "work:\n"
 "%s%s%sDo you want Nemo to add these permissions to the folder automatically?"
 msgstr ""
-"La carpeta \"%s\" necesita los siguientes permisos extra para poder "
+"La carpeta «%s» debe tener los permisos adicionales siguientes para poder "
 "compartirla:\n"
-"%s%s%s¿Quiere que Nemo añada estos permisos a la carpeta automáticamente?"
+"%s%s%s¿Quiere que Nemo añada  esos permisos a la carpeta automáticamente?"
 
 #: nemo-share/src/nemo-share.c:133
 msgid "  - read permission by others\n"
@@ -1393,7 +1393,7 @@ msgstr "El nombre del recurso compartido no puede estar vacío"
 
 #: nemo-share/src/nemo-share.c:473
 msgid "The share name is too long"
-msgstr "El nombre del recurso es demasiado largo"
+msgstr "El nombre del recurso compartido es demasiado largo"
 
 #: nemo-share/src/nemo-share.c:486
 #, c-format
@@ -1410,8 +1410,8 @@ msgid ""
 "by other users unless the option 'force user' is specified in "
 "/etc/samba/smb.conf."
 msgstr ""
-"Esta carpeta se encuentra en una carpeta encriptada. No será accesible para "
-"otros usuarios a menos que la opción «force user» se especifique en "
+"Esta carpeta se encuentra en una carpeta cifrada. No será accesible para "
+"otros usuarios a menos que se especifique la opción «force user» en "
 "/etc/samba/smb.conf."
 
 #: nemo-share/src/nemo-share.c:529
@@ -1438,12 +1438,12 @@ msgid ""
 "Something went wrong.  You may need to install samba and add your user to "
 "the 'sambashare' group manually."
 msgstr ""
-"Algo ha fallado. Puede que tenga que instalar samba y añadir su usuario al "
-"grupo «sambashare» manualmente."
+"Algo ha fallado. Puede que deba instalar samba y añadir su usuario al grupo "
+"«sambashare» manualmente."
 
 #: nemo-share/src/nemo-share.c:769
 msgid "There was an error while getting the sharing information"
-msgstr "Hubo un error al obtener la información de compartición"
+msgstr "Se produjo un error al obtener la información del recurso compartido"
 
 #: nemo-share/src/nemo-share.c:1172
 msgid "Share"
@@ -1451,7 +1451,7 @@ msgstr "Recurso compartido"
 
 #: nemo-share/src/nemo-share.c:1232 nemo-share/interfaces/share-dialog.ui.h:1
 msgid "Folder Sharing"
-msgstr "Compartir carpetas"
+msgstr "Compartición de carpetas"
 
 #: nemo-share/src/nemo-share.c:1273
 msgid "Sharing Options"
@@ -1464,7 +1464,7 @@ msgstr "Compartir esta carpeta"
 #: nemo-share/src/shares.c:125
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s %s %s volvió con señal %d"
+msgstr "%s %s %s devolvió la señal %d"
 
 #: nemo-share/src/shares.c:134
 #, c-format
@@ -1474,39 +1474,39 @@ msgstr "%s %s %s falló por una razón desconocida"
 #: nemo-share/src/shares.c:154
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "«net usershare» ha devuelto el error %d: %s"
+msgstr "«net usershare» devolvió el error %d: %s"
 
 #: nemo-share/src/shares.c:156
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "«net usershare» ha devuelto el error %d"
+msgstr "«net usershare» devolvió el error %d"
 
 #: nemo-share/src/shares.c:187
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "La salida de «net usershare» no tiene una codificación UTF-8 válida"
+msgstr "la salida de «net usershare» no tiene una codificación UTF-8 válida"
 
 #: nemo-share/src/shares.c:442 nemo-share/src/shares.c:616
 msgid "Failed"
-msgstr "Fallido"
+msgstr "Falló"
 
 #: nemo-share/src/shares.c:550
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "El 'testparm' de Samba terminó con la señal %d"
+msgstr "testparm de Samba devolvió la señal %d"
 
 #: nemo-share/src/shares.c:556
 msgid "Samba's testparm failed for an unknown reason"
-msgstr "El 'testparm' de Samba falló por una razón desconocida"
+msgstr "testparm de Samba falló por una razón desconocida"
 
 #: nemo-share/src/shares.c:571
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "El 'testparm' de Samba devolvió el error %d: %s"
+msgstr "testparm de Samba devolvió el error %d: %s"
 
 #: nemo-share/src/shares.c:573
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "El 'testparm' de Samba devolvió el error %d"
+msgstr "testparm de Samba devolvió el error %d"
 
 #: nemo-share/src/shares.c:684
 #, c-format
@@ -1565,11 +1565,11 @@ msgstr "Visible por defecto"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:74
 msgid "Top"
-msgstr "Parte superior"
+msgstr "Top"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:75
 msgid "Bottom"
-msgstr "Parte inferior"
+msgstr "Ampliación"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:80
 msgid "Terminal position"
@@ -1585,7 +1585,7 @@ msgstr "El terminal sigue la ubicación de la vista"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:92
 msgid "Location mode"
-msgstr "Modo de ubicación"
+msgstr "Modo de la ubicación"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:100
 msgid "Terminal bell"
@@ -1593,7 +1593,7 @@ msgstr "Timbre del terminal"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:109
 msgid "Default number of lines for the terminal"
-msgstr "Número predeterminado de líneas para el terminal"
+msgstr "Número predeterminado de líneas del terminal"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:149
 msgid "Keyboard shortcut"
@@ -1601,24 +1601,24 @@ msgstr "Atajo de teclado"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:152
 msgid "Basic"
-msgstr "Básico"
+msgstr "Básicas"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:171
 msgid "Shell to use (leave blank for system default)"
 msgstr ""
-"Shell que se usará (dejar en blanco para usar el predeterminado del sistema)"
+"Intérprete que se usará (dejar en blanco para el predeterminado del sistema)"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:187
 msgid "Terminal erase line key sequence"
-msgstr "Secuencia de teclas para borrado de línea en el terminal"
+msgstr "Secuencia de teclas para borrar una línia del terminal"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:195
 msgid "Terminal restore line key sequence"
-msgstr "Secuencia de teclas para restaurar línea en el terminal"
+msgstr "Secuencia de teclas para restaurar una línea del terminal"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:203
 msgid "Change directory command"
-msgstr "Comando de cambio de carpeta"
+msgstr "Orden para cambiar de carpeta"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:208
 msgid "Restore defaults"
@@ -1626,7 +1626,7 @@ msgstr "Restaurar valores por defecto"
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:217
 msgid "Sequences must be escaped according to python rules."
-msgstr "Las secuencias deben escaparse de acuerdo con las reglas de python."
+msgstr "Las secuencias deben escaparse de acuerdo con las reglas de Python."
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:218
 #, python-format
@@ -1635,7 +1635,7 @@ msgstr "«%s» se reemplaza por el nombre de la carpeta entrecomillada."
 
 #: nemo-terminal/src/nemo-terminal-prefs.py:225
 msgid "Advanced"
-msgstr "Avanzado"
+msgstr "Avanzadas"
 
 #: nemo-terminal/src/nemo_terminal.py:149
 msgid "Paste Filenames"
