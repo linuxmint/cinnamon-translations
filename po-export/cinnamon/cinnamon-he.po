@@ -7,19 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-06-21 12:25+0100\n"
-"PO-Revision-Date: 2020-06-19 13:45+0000\n"
+"POT-Creation-Date: 2020-12-09 12:24+0000\n"
+"PO-Revision-Date: 2020-11-26 08:30+0000\n"
 "Last-Translator: Rony Alaluf <Unknown>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2020-06-24 10:04+0000\n"
-"X-Generator: Launchpad (build 1cbd0aa39df153c901321817f9b57cf3f232b507)\n"
+"X-Launchpad-Export-Date: 2020-12-10 10:23+0000\n"
+"X-Generator: Launchpad (build 4853cb86c14c5a9e513816c8a61121c639b30835)\n"
 "Language: he\n"
 
-#: src/cinnamon-app.c:298 src/cinnamon-app.c:307
+#: src/cinnamon-app.c:314 src/cinnamon-app.c:323
 #: js/ui/notificationDaemon.js:585
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:65
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:94
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Unknown"
 msgstr "לא ידוע"
 
-#: src/cinnamon-app.c:583
+#: src/cinnamon-app.c:600
 #, c-format
 msgid "Failed to launch '%s'"
 msgstr "הרצת '%s' נכשלה"
@@ -41,9 +41,9 @@ msgid "File System"
 msgstr "מערכת קבצים"
 
 #: src/cinnamon-util.c:256
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:292
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:364
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:722
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:293
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:397
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:753
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:174
 msgid "Search"
 msgstr "חיפוש"
@@ -90,12 +90,12 @@ msgstr "מאפייני משגר"
 #: files/usr/share/cinnamon/cinnamon-desktop-editor/launcher-editor.ui.h:2
 #: files/usr/share/cinnamon/cinnamon-desktop-editor/directory-editor.ui.h:2
 #: files/usr/share/cinnamon/desklets/launcher@cinnamon.org/editorDialog.ui.h:3
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:756
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:786
 msgid "Name:"
 msgstr "שם:"
 
 #: files/usr/share/cinnamon/cinnamon-desktop-editor/launcher-editor.ui.h:3
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:757
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:787
 msgid "Command:"
 msgstr "פקודה:"
 
@@ -121,38 +121,69 @@ msgid "Main Menu"
 msgstr "תפריט ראשי"
 
 #: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:2
-msgid "Restore the default menu layout"
-msgstr "שחזור  פריסתה תפריט ברירת המחדל"
-
-#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:3
 msgid "Restore System Configuration"
 msgstr "שחזור הגדרות המערכת"
 
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "שחזור  פריסתה תפריט ברירת המחדל"
+
 #: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:4
+#: js/ui/workspace.js:1168
+#: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:381
+#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:949
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:408
+msgid "Close"
+msgstr "סגור"
+
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:5
 msgid "_New Menu"
 msgstr "_תפריט חדש"
 
-#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:5
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:6
 msgid "Ne_w Item"
 msgstr "פר_יט חדש"
 
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:7
+msgid "Cut"
+msgstr ""
+
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:8
+#: js/ui/cinnamonEntry.js:31
+msgid "Copy"
+msgstr "העתקה"
+
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:9
+#: js/ui/cinnamonEntry.js:36
+msgid "Paste"
+msgstr "הדבקה"
+
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:10
+#: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.ui.h:2
+msgid "Delete"
+msgstr "מחק"
+
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:11
+msgid "Properties"
+msgstr ""
+
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui.h:12
+msgid "Edit Desktop File"
+msgstr ""
+
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.ui.h:1
-#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:53
+#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:54
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:389
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py:54
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py:76
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:747
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:777
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:421
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:769
 msgid "Add"
 msgstr "הוספה"
 
-#: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.ui.h:2
-msgid "Delete"
-msgstr "מחק"
-
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.ui.h:3
-#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:57
+#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:58
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:427
 msgid "Edit"
 msgstr "עריכה"
@@ -190,28 +221,28 @@ msgstr "יישום מותאם אישית"
 msgid "Execution of '%s' failed:"
 msgstr "ביצוע '%s' כשל:"
 
-#: js/ui/applet.js:566 js/ui/desklet.js:245
+#: js/ui/applet.js:570 js/ui/desklet.js:245
 #, javascript-format
 msgid "Are you sure you want to remove '%s'?"
 msgstr "הנך בטוח שאת/ה רוצה להסיר את '%s'?"
 
-#: js/ui/applet.js:579
+#: js/ui/applet.js:583
 #: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:168
-#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:78
+#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:79
 #, javascript-format
 msgid "Remove '%s'"
 msgstr "הסרת '%s'"
 
-#: js/ui/applet.js:587 js/ui/desklet.js:229
+#: js/ui/applet.js:591 js/ui/desklet.js:229
 #: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:160
-#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:70
+#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:71
 #: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:878
 msgid "About..."
 msgstr "אודות..."
 
-#: js/ui/applet.js:604 js/ui/desklet.js:234
+#: js/ui/applet.js:608 js/ui/desklet.js:234
 #: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:164
-#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:74
+#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:75
 #: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:882
 msgid "Configure..."
 msgstr "הגדר..."
@@ -247,21 +278,13 @@ msgid ""
 "A suitable panel could not be found. The applet has been removed instead."
 msgstr "לא נמצא לוח מתאים. במקום זאת, היישומון הוסר."
 
-#: js/ui/appletManager.js:772
+#: js/ui/appletManager.js:792
 msgid ""
 "Certain applets do not allow multiple instances or were at their max number "
 "of instances so were not copied"
 msgstr ""
 "יישומונים מסוימים לא מתירים מופעים רבים או שהיו במספר המקסימלי של מופעיהם "
 "ולכן לא הועתקו"
-
-#: js/ui/cinnamonEntry.js:31
-msgid "Copy"
-msgstr "העתקה"
-
-#: js/ui/cinnamonEntry.js:36
-msgid "Paste"
-msgstr "הדבקה"
 
 #: js/ui/cinnamonEntry.js:86
 msgid "Show Text"
@@ -275,8 +298,8 @@ msgstr "הסתר מלל"
 msgid "Remove this desklet"
 msgstr "הסר יישומון"
 
-#: js/ui/expoThumbnail.js:900
-#: files/usr/share/cinnamon/applets/workspace-switcher@cinnamon.org/applet.js:318
+#: js/ui/expoThumbnail.js:902
+#: files/usr/share/cinnamon/applets/workspace-switcher@cinnamon.org/applet.js:319
 #, javascript-format
 msgid ""
 "Are you sure you want to remove workspace \"%s\"?\n"
@@ -297,27 +320,27 @@ msgstr "זמן הרצה (אלפיות השניה) "
 msgid "Loaded successfully"
 msgstr "הטעינה הסתיימה בהצלחה"
 
-#: js/ui/main.js:531
+#: js/ui/main.js:523
 msgid "Check your video drivers"
 msgstr "בדוק את התקני השמע שלך"
 
-#: js/ui/main.js:532
+#: js/ui/main.js:524
 msgid "Your system is currently running without video hardware acceleration."
 msgstr "המערכת פועלת כרגע ללא האצת חומרה גרפית."
 
-#: js/ui/main.js:534
+#: js/ui/main.js:526
 msgid "You may experience poor performance and high CPU usage."
 msgstr "יכול להיות שתחווה ביצועים ירודים ושימוש גבוהה במעבד."
 
-#: js/ui/main.js:538
+#: js/ui/main.js:530
 msgid "Launch Driver Manager"
 msgstr "הפעל את מנהל ההתקנים"
 
-#: js/ui/main.js:547
+#: js/ui/main.js:539
 msgid "Problems during Cinnamon startup"
 msgstr "תקלה בהפעלת Cinnamon"
 
-#: js/ui/main.js:548
+#: js/ui/main.js:540
 msgid ""
 "Cinnamon started successfully, but one or more applets, desklets or "
 "extensions failed to load.\n"
@@ -327,12 +350,12 @@ msgstr ""
 "הרחבות נכשלו להיטען.\n"
 "\n"
 
-#: js/ui/main.js:549
+#: js/ui/main.js:541
 msgid ""
 "Check your system log and the Cinnamon LookingGlass log for any issues.  "
 msgstr "בדוק/י ביומן המערכת וביומן של LookingGlass של Cinnamon לבעיות.  "
 
-#: js/ui/main.js:550
+#: js/ui/main.js:542
 msgid ""
 "You can disable the offending extension(s) in Cinnamon Settings to prevent "
 "this message from recurring.  "
@@ -340,15 +363,15 @@ msgstr ""
 "ניתן לבטל את ההרחבות העברייניות בהגדרות Cinnamon על מנת להימנע מהודעה זו "
 "שוב.  "
 
-#: js/ui/main.js:551
+#: js/ui/main.js:543
 msgid "Please contact the developer."
 msgstr "נא ליצור קשר עם המפתח."
 
-#: js/ui/main.js:601
+#: js/ui/main.js:593
 msgid "Workspace"
 msgstr "סביבת עבודה"
 
-#: js/ui/main.js:1542
+#: js/ui/main.js:1534
 msgid "Restarting Cinnamon..."
 msgstr "מאתחל מחדש את Cinnamon..."
 
@@ -357,13 +380,13 @@ msgid "System Information"
 msgstr "פרטי המערכת"
 
 #: js/ui/modalDialog.js:457
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:945
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:976
 #: files/usr/bin/cinnamon-launcher:35
 msgid "No"
 msgstr "לא"
 
 #: js/ui/modalDialog.js:461
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:944
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:975
 #: files/usr/bin/cinnamon-launcher:36
 msgid "Yes"
 msgstr "כן"
@@ -412,7 +435,7 @@ msgid "Move"
 msgstr "הזזה"
 
 #: js/ui/panel.js:1594
-#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:61
+#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:62
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py:55
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py:77
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:434
@@ -454,8 +477,8 @@ msgstr ""
 #: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:59
 #: generate_additional_files.py:24
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:48
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:374
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:695
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:375
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:696
 msgid "System Settings"
 msgstr "הגדרות מערכת"
 
@@ -552,16 +575,9 @@ msgstr ""
 "השתמש/י בחיצים או במקשי המספרים כדי להחליף סביבות עבודה תוך כדי גרירה"
 
 #: js/ui/workspace.js:536
-#: files/usr/share/cinnamon/applets/windows-quick-list@cinnamon.org/applet.js:103
+#: files/usr/share/cinnamon/applets/windows-quick-list@cinnamon.org/applet.js:142
 msgid "No open windows"
 msgstr "אין חלונות פתוחים"
-
-#: js/ui/workspace.js:1168
-#: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:381
-#: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:949
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:408
-msgid "Close"
-msgstr "סגור"
 
 #: js/ui/workspace.js:1172
 #: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:329
@@ -636,7 +652,7 @@ msgstr "קורא המסך"
 
 #: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:64
 msgid "Screen Keyboard"
-msgstr "מקלדת על המסך"
+msgstr "מקלדת מדומה"
 
 #: files/usr/share/cinnamon/applets/a11y@cinnamon.org/applet.js:68
 msgid "Sticky Keys"
@@ -676,6 +692,11 @@ msgstr "הגדרות תאריך ושעה"
 msgid "Expo"
 msgstr "אקספו"
 
+#. favorites@cinnamon.org->metadata.json->name
+#: files/usr/share/cinnamon/applets/favorites@cinnamon.org/applet.js:46
+msgid "Favorites"
+msgstr ""
+
 #: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:102
 #: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:819
 msgid "Move to the other monitor"
@@ -691,7 +712,7 @@ msgid "Move to another workspace"
 msgstr "העבר לסביבת עבודה אחרת"
 
 #: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:157
-#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:67
+#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:68
 #: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:875
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:65
 msgid "Preferences"
@@ -703,7 +724,7 @@ msgid "Grouped window list"
 msgstr "רשימת חלונות מקובצת"
 
 #: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:177
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2165
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2318
 msgid "Places"
 msgstr "מיקומים"
 
@@ -712,9 +733,9 @@ msgid "Recent"
 msgstr "לאחרונה"
 
 #: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:230
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:426
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:429
-#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:48
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:439
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:442
+#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:49
 msgid "Run with NVIDIA GPU"
 msgstr "הרץ עם NVIDIA GPU"
 
@@ -790,7 +811,7 @@ msgstr "מנע פעולת יישום"
 #: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:65
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:40
 msgid "Notifications"
-msgstr "התרעות"
+msgstr "התראות"
 
 #: files/usr/share/cinnamon/applets/keyboard@cinnamon.org/applet.js:145
 msgid "Show Keyboard Layout"
@@ -804,306 +825,310 @@ msgstr "הצגת טבלת תווים"
 msgid "Keyboard Settings"
 msgstr "הגדרות מקלדת"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:433
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:446
 msgid "Add to panel"
 msgstr "הוספה ללוח"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:437
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:450
 msgid "Add to desktop"
 msgstr "הוספה לשולחן העבודה"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:442
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:455
 msgid "Remove from favorites"
 msgstr "הסרה מהמועדפים"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:445
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:458
 msgid "Add to favorites"
 msgstr "הוספה למועדפים"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:450
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:774
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:463
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:805
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py:56
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py:78
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_extensions.py:56
 msgid "Uninstall"
 msgstr "הסר התקנה"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:683
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:711
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:819
 msgid "This file is no longer available"
 msgstr "הקובץ אינו זמין עוד"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:697
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:725
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:833
 msgid "Open with"
 msgstr "פתח באמצעות"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:743
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:771
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:879
 msgid "Other application..."
 msgstr "יישום אחר..."
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:758
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:894
 msgid "All Applications"
 msgstr "כל היישומים"
 
 #. menu@cinnamon.org->metadata.json->name
 #. menu@cinnamon.org->settings-schema.json->menu->title
 #. sound@cinnamon.org->settings-schema.json->section1->description
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1003
+#. network@cinnamon.org->settings-schema.json->section1->description
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1139
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_windows.py:51
 msgid "Menu"
 msgstr "תפריט"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2205
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2358
 msgid "Recent Files"
 msgstr "קבצים אחרונים"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2220
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2373
 #: files/usr/share/cinnamon/applets/recent@cinnamon.org/applet.js:121
 msgid "Clear list"
-msgstr "פינוי הרשימה"
+msgstr "ניקוי הרשימה"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2221
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2374
 msgid "Clear all recent documents"
-msgstr ""
+msgstr "ניקוי כל המסמכים האחרונים"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2361
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2552
 msgid "Logout"
 msgstr "יציאה"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2362
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2553
 msgid "Leave the session"
 msgstr "לעזוב את ההפעלה"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2373
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2564
 msgid "Quit"
 msgstr "יציאה"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2374
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2565
 msgid "Shut down the computer"
 msgstr "כבה את המחשב"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2433
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2624
 msgid "Type to search..."
 msgstr "יש להקליד כדי לחפש..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:68
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:69
 msgid "<unknown>"
 msgstr "<לא ידוע>"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:286
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:287
 msgid "disabled"
 msgstr "מנוטרל"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:493
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:494
 msgid "unmanaged"
 msgstr "לא מנוהל"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:495
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:496
 msgid "disconnecting..."
 msgstr "מתנתק..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:501
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:502
 msgid "connecting..."
 msgstr "מתחבר..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:504
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:505
 msgid "authentication required"
 msgstr "דרוש אימות"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:514
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:515
 msgid "firmware missing"
 msgstr "קושחה חסרה"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:521
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:522
 msgid "cable unplugged"
 msgstr "כבל מנותק"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:526
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:527
 msgid "unavailable"
 msgstr "לא זמין"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:528
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:529
 msgid "connection failed"
 msgstr "ההתחברות נכשלה"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:592
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1605
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:593
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1606
 msgid "More"
 msgstr "פרטים נוספים"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:628
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1524
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:629
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1525
 msgid "Connected (private)"
 msgstr "מחובר (פרטי)"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:688
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:689
 msgid "Ethernet"
 msgstr "רשת קווית"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:689
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:690
 msgid "Wifi"
 msgstr "אלחוטי"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:690
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:691
 msgid "Modem"
 msgstr "מודם"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:691
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:692
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:92
 msgid "Bluetooth"
 msgstr "בלוטות׳"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:721
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:722
 msgid "Auto Ethernet"
 msgstr "‏אתרנט אוטומטי"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:803
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:804
 msgid "Auto broadband"
 msgstr "רשת פס רחב אוטומטית"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:806
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:807
 msgid "Auto dial-up"
 msgstr "חיוג אוטומטי"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:928
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1536
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:929
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1537
 #, javascript-format
 msgid "Auto %s"
 msgstr "%s אוטומטי"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:930
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:931
 msgid "Auto bluetooth"
 msgstr "בלוטות׳ אוטומטי"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1538
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1539
 msgid "Auto wireless"
 msgstr "אינטרנט אלחוטי אוטומטי"
 
 #. network@cinnamon.org->metadata.json->name
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1642
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1643
 msgid "Network Manager"
 msgstr "מנהל הרשתות"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1688
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1697
 msgid "Enable networking"
 msgstr "הפעלת רשת"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1700
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1709
 msgid "Wired"
 msgstr "קווי"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1711
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1720
 msgid "Wireless"
 msgstr "אלחוטי"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1721
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1730
 msgid "Mobile broadband"
 msgstr "רשת סלולרית"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1731
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1740
 msgid "VPN Connections"
 msgstr "חיבור VPN"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1743
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1752
 msgid "Network Settings"
 msgstr "הגדרות רשת"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1744
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1753
 msgid "Network Connections"
 msgstr "חיבורי רשת"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1915
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1928
 msgid "Connection failed"
 msgstr "החיבור נכשל"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1916
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:1929
 msgid "Activation of network connection failed"
 msgstr "הפעלת חיבור רשת נכשלה"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2182
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2196
 msgid "Networking is disabled"
 msgstr "תקשורת רשת מנוטרלת"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2200
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2214
 msgid "No connection"
 msgstr "אין חיבור"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2206
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2220
 msgid "Connecting to the cellular network..."
 msgstr "מתבצעת התחברות לרשת סלולרית..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2210
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2224
 msgid "Connecting to the wireless network..."
 msgstr "מתבצעת התחברות לרשת אלחוטית..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2214
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2228
 msgid "Connecting to the wired network..."
 msgstr "מתבצע חיבור לרשת קווית..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2218
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2232
 msgid "Connecting to the VPN..."
 msgstr "מתבצע חיבור ל־VPN..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2224
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2238
 msgid "Connecting to the network..."
 msgstr "מתבצע חיבור לרשת..."
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2240
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2254
 msgid "Connected to the wireless network"
 msgstr "קיים חיבור לרשת אלחוטית"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2243
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2257
 msgid "Wireless connection"
 msgstr "חיבור אלחוטי"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2251
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2265
 msgid "Connected to the wired network"
 msgstr "קיים חיבור לרשת קווית"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2262
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2267
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2276
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2281
 msgid "Connected to the cellular network"
 msgstr "קיים חיבור לרשת סלולרית"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2271
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2285
 msgid "Connected to the VPN"
 msgstr "קיים חיבור ל־VPN"
 
-#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2277
+#: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:2291
 msgid "Connected to the network"
 msgstr "קיים חיבור לרשת"
 
 #. notifications@cinnamon.org->settings-schema.json->keyClear->description
 #: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:80
 msgid "Clear notifications"
-msgstr "פינוי ההתרעות"
+msgstr "פינוי ההתראות"
 
 #: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:115
 msgid "Notification Settings"
 msgstr "הגדרת התראות"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:289
-msgid "No notifications"
-msgstr "אין התרעות"
-
 #: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:291
+msgid "No notifications"
+msgstr "אין התראות"
+
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:293
 #, javascript-format
 msgid "%d notification"
 msgid_plural "%d notifications"
 msgstr[0] "התראה %d"
 msgstr[1] "%d התראות"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:308
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:310
 msgid "just now"
 msgstr "ממש עכשיו"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:311
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:313
 #, javascript-format
 msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "לפני שנייה %d"
 msgstr[1] "לפני %d שניות"
 
-#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:315
+#: files/usr/share/cinnamon/applets/notifications@cinnamon.org/applet.js:317
 #, javascript-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
@@ -1118,37 +1143,37 @@ msgstr "לחץ על מנת להציג מקלדת -מסך"
 msgid "Click to enable the on-screen keyboard"
 msgstr "לחץ על מנת לאפשר מקלדת-מסך"
 
-#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:43
+#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:44
 msgid "Launch"
 msgstr "הפעלה"
 
 #. panel-launchers@cinnamon.org->metadata.json->name
-#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:78
+#: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:79
 msgid "Panel launchers"
 msgstr "משגרי לוח"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:55
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:541
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:558
 msgid "Battery full"
 msgstr "הסוללה מלאה"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:57
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:543
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:560
 msgid "Battery almost full"
 msgstr "הסוללה כמעט מלאה"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:59
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:545
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:562
 msgid "Battery good"
 msgstr "הסוללה טובה"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:61
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:547
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:564
 msgid "Low battery"
 msgstr "סוללה מתרוקנת"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:63
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:549
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:566
 msgid "Critically low battery"
 msgstr "סוללה ריקה באופן קריטי"
 
@@ -1161,7 +1186,7 @@ msgid "Laptop battery"
 msgstr "סוללה של מחשב נייד"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:76
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:354
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:371
 msgid "UPS"
 msgstr "אל־פסק"
 
@@ -1179,7 +1204,7 @@ msgstr "עכבר"
 #. keyboard@cinnamon.org->metadata.json->name
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:82
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:140
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:211
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:232
 msgid "Keyboard"
 msgstr "מקלדת"
 
@@ -1192,30 +1217,30 @@ msgid "Cell phone"
 msgstr "טלפון סלולרי"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:88
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:454
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:471
 msgid "Media player"
 msgstr "נגן מדיה"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:90
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:153
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:445
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:462
 msgid "Tablet"
 msgstr "טאבלט"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:92
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:457
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:474
 msgid "Computer"
 msgstr "מחשב"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:337
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:642
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:230
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:237
 msgid "Brightness"
 msgstr "בהירות"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:338
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:648
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:256
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:263
 msgid "Keyboard backlight"
 msgstr "תאורה אחורית של המקלדת"
 
@@ -1224,7 +1249,7 @@ msgid "Power Settings"
 msgstr "הגדרות צריכת חשמל"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:416
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:385
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:402
 msgid "Charging"
 msgstr "בטעינה"
 
@@ -1267,12 +1292,12 @@ msgstr[0] "בטעינה - %d דקה עד לעינה מלאה"
 msgstr[1] "בטעינה - %d דקות עד לטעינה מלאה"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:433
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:407
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:424
 msgid "Fully charged"
 msgstr "סוללה מלאה"
 
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:437
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:387
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:404
 msgid "Using battery power"
 msgstr "מופעל באמצעות סוללה"
 
@@ -1295,8 +1320,8 @@ msgid_plural "Using battery power - %d minutes remaining"
 msgstr[0] "שימוש בסוללה - נותרה דקה %d"
 msgstr[1] "שימוש בסוללה - נותרו %d דקות"
 
-#. Label                          Executable                          Icon
-#. Category        Keywords for filter
+#. Label                              Executable
+#. Icon                     Category          Keywords for filter
 #. printers@cinnamon.org->metadata.json->name
 #: files/usr/share/cinnamon/applets/printers@cinnamon.org/applet.js:22
 #: files/usr/share/cinnamon/applets/printers@cinnamon.org/applet.js:131
@@ -1346,6 +1371,7 @@ msgid "Scale"
 msgstr "שינוי גודל"
 
 #. show-desktop@cinnamon.org->settings-schema.json->head->description
+#. favorites@cinnamon.org->settings-schema.json->head->description
 #: files/usr/share/cinnamon/applets/settings@cinnamon.org/applet.js:8
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_backgrounds.py:287
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_display.py:44
@@ -1427,118 +1453,118 @@ msgstr "מושהה"
 msgid "Stopped"
 msgstr "נעצר"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:507
-msgid "Open Player"
-msgstr "פתיחת הנגן"
-
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:520
-msgid "Quit Player"
-msgstr "יציאה מהנגן"
-
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:541
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:668
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:672
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:530
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:690
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:694
 msgid "Unknown Artist"
 msgstr "אמן לא ידוע"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:542
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:679
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:531
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:701
 msgid "Unknown Album"
 msgstr "אלבום לא ידוע"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:543
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:684
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:532
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:706
 msgid "Unknown Title"
 msgstr "כותר לא ידוע"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:565
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:554
 msgid "Previous"
 msgstr "הקודם"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:568
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:737
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:743
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:180
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:557
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:758
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:764
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:181
 msgid "Play"
 msgstr "נגינה"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:571
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:560
 msgid "Stop"
 msgstr "עצירה"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:574
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:563
 msgid "Next"
 msgstr "הבא"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:584
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:769
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:573
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:790
 msgid "Consecutive Playing"
 msgstr "מנגן ברצף"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:587
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:785
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:576
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:806
 msgid "No Shuffle"
 msgstr "ללא ערבוב"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:731
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:623
+msgid "Open Player"
+msgstr "פתיחת הנגן"
+
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:637
+msgid "Quit Player"
+msgstr "יציאה מהנגן"
+
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:752
 msgid "Pause"
 msgstr "השהה"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:771
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:792
 msgid "Repeat Single"
 msgstr "חזור על שיר אחד"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:773
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:794
 msgid "Repeat All"
 msgstr "חזור על הכל"
 
 #. photoframe@cinnamon.org->settings-schema.json->shuffle->description
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:785
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:189
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:806
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:190
 msgid "Shuffle"
 msgstr "ערבוב"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:955
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:977
 msgid "Mute output"
 msgstr "השתקת הפלט"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:956
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:978
 msgid "Mute input"
 msgstr "השתקת הקלט"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:962
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:984
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_sound.py:608
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_sound.py:614
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:902
 msgid "Applications"
 msgstr "יישומים"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:963
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:985
 msgid "Output device"
 msgstr "התקן פלט"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:970
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:992
 msgid "Microphone"
 msgstr "מיקרופון"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:972
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:994
 msgid "Input device"
 msgstr "התקן קלט"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1325
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1349
 msgid "Launch player"
 msgstr "הפעלת נגן"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1330
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1354
 msgid "Choose player controls"
 msgstr "בחירת פקדי נגן"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1336
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1424
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1360
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1450
 msgid "Volume"
 msgstr "עוצמת שמע"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1342
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1366
 msgid "Sound Settings"
 msgstr "הגדרות שמע"
 
@@ -1564,8 +1590,8 @@ msgid "Open Trash"
 msgstr "פתח את סל האשפה"
 
 #: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:67
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:610
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:615
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:627
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:632
 msgid "Lock Screen"
 msgstr "מסך נעילה"
 
@@ -1587,19 +1613,19 @@ msgstr "כיבוי..."
 msgid "Remove 'Window list'"
 msgstr "הסר \"רשימת חלונות\""
 
-#: files/usr/share/cinnamon/applets/windows-quick-list@cinnamon.org/applet.js:14
+#: files/usr/share/cinnamon/applets/windows-quick-list@cinnamon.org/applet.js:32
 msgid "All windows"
 msgstr "כל החלונות"
 
-#: files/usr/share/cinnamon/applets/workspace-switcher@cinnamon.org/applet.js:283
+#: files/usr/share/cinnamon/applets/workspace-switcher@cinnamon.org/applet.js:284
 msgid "Manage workspaces (Expo)"
 msgstr "ניהל סביבות עבודה (Expo)"
 
-#: files/usr/share/cinnamon/applets/workspace-switcher@cinnamon.org/applet.js:290
+#: files/usr/share/cinnamon/applets/workspace-switcher@cinnamon.org/applet.js:291
 msgid "Add a new workspace"
 msgstr "הוסף סביבת עבודה חדשה"
 
-#: files/usr/share/cinnamon/applets/workspace-switcher@cinnamon.org/applet.js:296
+#: files/usr/share/cinnamon/applets/workspace-switcher@cinnamon.org/applet.js:297
 msgid "Remove the current workspace"
 msgstr "הסר סביבת עבודה נוכחית"
 
@@ -1641,11 +1667,11 @@ msgstr "מוודא הגדרות תצוגה..."
 msgid "Clock"
 msgstr "שעון"
 
-#: files/usr/share/cinnamon/desklets/launcher@cinnamon.org/desklet.js:27
+#: files/usr/share/cinnamon/desklets/launcher@cinnamon.org/desklet.js:28
 msgid "Add new launcher"
 msgstr "הוסף משגר חדש"
 
-#: files/usr/share/cinnamon/desklets/launcher@cinnamon.org/desklet.js:31
+#: files/usr/share/cinnamon/desklets/launcher@cinnamon.org/desklet.js:32
 msgid "Edit launcher"
 msgstr "ערוך משגר"
 
@@ -1675,9 +1701,9 @@ msgid "Virtual keyboard"
 msgstr "מקלדת מדומה"
 
 #: generate_additional_files.py:49
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:198
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:199
 msgid "Turn on-screen keyboard on or off"
-msgstr "הפעלה/כיבוי של מקלדת על המסך"
+msgstr "הפעלה/כיבוי של המקלדת המדומה"
 
 #: files/usr/share/cinnamon/cinnamon-desktop-editor/cinnamon-desktop-editor.py:88
 msgid "Valid name"
@@ -1854,28 +1880,33 @@ msgid "user, users, account, accounts, group, groups, password"
 msgstr "משתמש, משתמשים, חשבונות, קבוצה, קבוצות, סיסמא"
 
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:92
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:93
 msgid "bluetooth, dongle, transfer, mobile"
 msgstr "בלוטוט', דונגל, העבר, מובייל"
 
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:93
+msgid "Blueman"
+msgstr ""
+
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:94
 msgid "Manage Services and Units"
 msgstr "ניהול שירותים ויחידות"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:93
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:94
 msgid "systemd, units, services, systemctl, init"
 msgstr "systemd, יחידות, שירותים, systemctl, init"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:94
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:95
 msgid "Disks"
 msgstr "כוננים"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:94
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:95
 msgid ""
 "disks, manage, hardware, management, hard, hdd, pendrive, format, erase, "
 "test, create, iso, ISO, disk, image"
 msgstr ""
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:285
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:286
 msgid "Back to all settings"
 msgstr "חזרה לכל ההגדרות"
 
@@ -1884,7 +1915,7 @@ msgstr "חזרה לכל ההגדרות"
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:389
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:442
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:647
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:752
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:782
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:765
 msgid "Cancel"
 msgstr "ביטול"
@@ -2045,8 +2076,8 @@ msgstr "תמונה"
 #. so object is the same index for
 #. settings-example@cinnamon.org->settings-schema.json->tree->columns->title
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:582
-#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:154
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:711
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:176
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:742
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:786
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:83
 msgid "Name"
@@ -2138,21 +2169,21 @@ msgstr "אפס לברירת המחדל"
 msgid "Reload %s"
 msgstr "טען מחדש את %s"
 
-#: files/usr/share/cinnamon/cinnamon-settings/xlet-settings.py:422
+#: files/usr/share/cinnamon/cinnamon-settings/xlet-settings.py:427
 #, python-format
 msgid "Settings for %s"
 msgstr "הגדרות ל %s"
 
-#: files/usr/share/cinnamon/cinnamon-settings/xlet-settings.py:514
+#: files/usr/share/cinnamon/cinnamon-settings/xlet-settings.py:519
 msgid "Select or enter file to export to"
 msgstr "בחר או הקלד קובץ לייצא אליו"
 
-#: files/usr/share/cinnamon/cinnamon-settings/xlet-settings.py:522
-#: files/usr/share/cinnamon/cinnamon-settings/xlet-settings.py:543
+#: files/usr/share/cinnamon/cinnamon-settings/xlet-settings.py:527
+#: files/usr/share/cinnamon/cinnamon-settings/xlet-settings.py:548
 msgid "JSON files"
 msgstr "קבצי JSON"
 
-#: files/usr/share/cinnamon/cinnamon-settings/xlet-settings.py:536
+#: files/usr/share/cinnamon/cinnamon-settings/xlet-settings.py:541
 msgid "Select a JSON file to import"
 msgstr "בחר קובץ JSON לייבוא"
 
@@ -2181,11 +2212,11 @@ msgstr "בטל את כל המשימות"
 msgid "Random"
 msgstr "אקראי"
 
-#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:167
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:189
 msgid "Show"
 msgstr "הצג"
 
-#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:175
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:197
 msgid "Item"
 msgstr "פריט"
 
@@ -2289,35 +2320,35 @@ msgstr "דקה"
 msgid "Second"
 msgstr "שניה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:234
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:248
 msgid "Configure"
 msgstr "הגדר"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:241
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:255
 msgid "This is a system applet. It cannot be removed."
 msgstr "זהו יישומון של המערכת, לא ניתן להסירו."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:243
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:257
 msgid "This is a system desklet. It cannot be removed."
 msgstr "זהו יישומן שולחן עבודה של המערכת. לא ניתן להסירו."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:245
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:259
 msgid "This is a system extension. It cannot be removed."
 msgstr "זוהי הרחבה של המערכת. לא ניתן להסירה."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:296
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:329
 msgid "This applet is currently enabled"
 msgstr "התהליך הזה מאופשר כרגע"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:298
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:331
 msgid "This desklet is currently enabled"
 msgstr "יישומון שולחן עבודה זה מאופשר כרגע"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:300
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:333
 msgid "This extension is currently enabled"
 msgstr "הרחבה זו פעילה כרגע"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:339
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:372
 msgid ""
 "This applet contains function calls that could potentially cause Cinnamon to "
 "crash or freeze. If you are experiencing crashes or freezing, please try "
@@ -2326,7 +2357,7 @@ msgstr ""
 "יישומון זה קורא לפונקציות שעלולות לגרום ל-Cinnamon לקרוס או לקפוא. אם הנך "
 "חווה קריסות או קפיאות, נס/י להסיר את היישומון."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:341
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:374
 msgid ""
 "This desklet contains function calls that could potentially cause Cinnamon "
 "to crash or freeze. If you are experiencing crashes or freezing, please try "
@@ -2335,7 +2366,7 @@ msgstr ""
 "יישומון שולחן עבודה זה קורא לפונקציות שעלולות לגרום ל-Cinnamon לקרוס או "
 "לקפוא. אם הנך חווה קריסות או קפיאות, נס/י להסיר את היישומון."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:343
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:376
 msgid ""
 "This extension contains function calls that could potentially cause Cinnamon "
 "to crash or freeze. If you are experiencing crashes or freezing, please try "
@@ -2344,38 +2375,34 @@ msgstr ""
 "הרחבה זו קוראת לפונקציות שעשויות לגרום ל-Cinnamon לקרוס או לקפוא. אם הנך "
 "חווה קריסות או קפיאות, אנה נס/י להסיר את ההרחבה."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:452
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:485
 msgid "About"
 msgstr "אודות"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:508
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:541
 #, python-format
-msgid ""
-"Extension %s is not compatible with current version of cinnamon. Using it "
-"may break your system. Load anyway?"
+msgid "Extension %s is not compatible with your version of Cinnamon."
 msgstr ""
-"ההרחבה %s אינה תואמת את הגרסה הנוכחית של Cinnamon. שימוש בה עשוי לשבש את "
-"פעולת המערכת. לטעון בכל זאת?"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:522
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:553
 msgid ""
 "There are multiple instances enabled. Are you sure you want to remove all of "
 "them?"
 msgstr "יישנם מספר ארועים מאופשרים. האם אתה בטוח כי ברצונך להסיר את כולם?"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:530
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:876
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:561
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:907
 #, python-format
 msgid "Are you sure you want to completely remove %s?"
 msgstr "האם אתה בטוח כי ברצונך להסיר את  %s?"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:538
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:569
 msgid ""
 "This will restore the default set of enabled applets. Are you sure you want "
 "to do this?"
 msgstr "זה ישחזר את האוסף ברירת המחדל של היישומונים. האם הנך בטוח/ה?"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:540
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:571
 msgid ""
 "This will restore the default set of enabled desklets. Are you sure you want "
 "to do this?"
@@ -2383,12 +2410,12 @@ msgstr ""
 "ישחזר את ברירות המחדל של סט יישומוני-שולחן-העבודה המאופשרים. אתה בטוח כי "
 "ברצונך לעשות זאת?"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:542
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:573
 msgid ""
 "This will disable all active extensions. Are you sure you want to do this?"
 msgstr "פעולה זו תנטרל את כל ההרחבות הפעילות. הנך בטוח/ה?"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:576
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:607
 #, python-format
 msgid ""
 "Something went wrong while loading %s. Please make sure you are using the "
@@ -2397,61 +2424,61 @@ msgstr ""
 "משהו השתבש בזמן טעינת %s. אנא וודא שאתה משתמש בגרסה האחרונה ודווח על כך "
 "למפתחים."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:651
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:682
 msgid "Install"
 msgstr "התקן"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:657
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:745
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:688
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:775
 msgid "Update"
 msgstr "עדכן"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:660
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:714
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:691
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:745
 msgid "Installed"
 msgstr "מותקן"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:701
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:732
 msgid "Sort by"
 msgstr "מיין לפי"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:712
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:743
 msgid "Popularity"
 msgstr "פופולריות"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:713
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:744
 msgid "Date"
 msgstr "תאריך"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:715
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:746
 msgid "Upgradable"
 msgstr "ניתן לשדרוג"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:767
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:798
 #: files/usr/bin/xlet-about-dialog:47
 msgid "More info"
 msgstr "מידע נוסף"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:787
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:818
 msgid "Refresh"
 msgstr "רענן"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:906
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:937
 msgid "Update all"
 msgstr "עדכן הכל"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:906
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:937
 #, python-format
 msgid "%d update available"
 msgid_plural "%d updates available"
 msgstr[0] "עדכון %d זמין"
 msgstr[1] "%d עדכונים זמינים"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:908
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:939
 msgid "No updates available"
 msgstr "לא זמינים עדכונים"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:938
+#: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:969
 msgid "Your cache is out of date. Would you like to update it now?"
 msgstr "המטמון לא מעודכן. האם לעדכן אותו?"
 
@@ -2524,49 +2551,49 @@ msgstr "_פתח"
 msgid "Sound files"
 msgstr "קבצי קול"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:300
+#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:301
 msgid "Downloading images:"
 msgstr "מוריד תמונות:"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:370
+#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:374
 msgid ""
 "An error occurred while trying to access the server. Please try again in a "
 "little while."
 msgstr "אירעה תקלה בעת ההתחברות לשרת. נסה/י שוב בקרוב."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:505
+#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:509
 msgid ""
 "Something went wrong with the spices download.  Please try refreshing the "
 "list again."
 msgstr "משהו השתבש בהורדת spices . אנא נסה לעדכן שוב את הרשימה."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:520
+#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:524
 msgid "Refreshing the cache"
 msgstr "מרענן את המטמון"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:601
+#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:605
 #, python-format
 msgid "Installing %s"
 msgstr "מתקין את %s"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:626
+#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:630
 #, python-format
 msgid ""
 "An error occurred during the installation of %s. Please report this incident "
 "to its developer."
 msgstr "אירעה תקלה בעת התקנת %s. אנא דווח/י על התקלה למפתחים."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:688
+#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:692
 #, python-format
 msgid "Uninstalling %s"
 msgstr "מסיר את %s"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:709
+#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:713
 #, python-format
 msgid "A problem occurred while removing %s."
 msgstr "אירעה תקלה בעת הסרת %s."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:731
+#: files/usr/share/cinnamon/cinnamon-settings/bin/Spices.py:735
 #, python-format
 msgid ""
 "\n"
@@ -2577,28 +2604,28 @@ msgstr ""
 "\n"
 "פרטים:  %s"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:177
-#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:265
+#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:181
+#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:269
 msgid "Add new entry"
 msgstr "הוסף בחירה חדשה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:181
+#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:185
 msgid "Remove selected entry"
 msgstr "הסר פריט שנבחר"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:186
+#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:190
 msgid "Edit selected entry"
 msgstr "ערוך את הפריט הנבחר"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:191
+#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:195
 msgid "Move selected entry up"
 msgstr "הזז למעלה את הפריט הנבחר"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:196
+#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:200
 msgid "Move selected entry down"
 msgstr "הזז למטה את הפריט הנבחר"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:267
+#: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:271
 msgid "Edit entry"
 msgstr "ערוף את הפריט"
 
@@ -2887,7 +2914,7 @@ msgstr "עיכוב קבלה"
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:293
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:319
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:418
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:232
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:253
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_mouse.py:69
 msgid "Short"
 msgstr "קצר"
@@ -2895,7 +2922,7 @@ msgstr "קצר"
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:293
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:319
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:418
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:232
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:253
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_mouse.py:69
 msgid "Long"
 msgstr "ארוך"
@@ -3338,9 +3365,9 @@ msgstr "פתח תיקייה"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:346
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:16
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:611
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:620
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:626
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:628
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:637
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:643
 msgid "Do nothing"
 msgstr "אל תעשה כלום"
 
@@ -3866,71 +3893,80 @@ msgstr "הקלד פקודה..."
 msgid "Activation delay (ms)"
 msgstr "השהיית הפעלה (מילישניות)"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:96
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:100
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:104
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:110
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:63
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:92
+msgid "Unknown size"
+msgstr ""
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:90
+msgid "Unknown CPU"
+msgstr ""
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:113
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:117
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:121
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:127
 msgid "Operating System"
 msgstr "מערכת הפעלה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:112
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:129
 msgid "Cinnamon Version"
 msgstr "גרסת Cinnamon"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:113
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:130
 msgid "Linux Kernel"
 msgstr "ליבת לינוקס"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:114
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:131
 msgid "Processor"
 msgstr "מעבד"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:116
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:118
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:133
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:135
 msgid "Memory"
 msgstr "זכרון"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:116
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:133
 msgid "GiB"
 msgstr "ג\"ב"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:122
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:139
 msgid "Hard Drives"
 msgstr "כוננים"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:124
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:141
 msgid "Hard Drive"
 msgstr "כונן"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:125
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:143
 msgid "GB"
 msgstr "ג\"ב"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:129
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:148
 msgid "Graphics Card"
 msgstr "כרטיס גרפי"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:137
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:156
 msgid "Display system information"
 msgstr "הצג מידע על המערכת"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:140
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:159
 msgid "system, information, details, graphic, sound, kernel, version"
 msgstr "מערכת, מידע, פרטים, גרפיקה, קול, ליבה, גירסא"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:141
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:160
 msgid "System Info"
 msgstr "מידע על המערכת"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:153
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:172
 msgid "System info"
 msgstr "מידע על המערכת"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:171
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:190
 msgid "Upload system information"
 msgstr "העלאת המידע על המערכת"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:172
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_info.py:191
 msgid "No personal information included"
 msgstr "מידע אישי אינו כלול"
 
@@ -4333,16 +4369,16 @@ msgstr "נעילת המסך"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:143
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:12
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:607
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:616
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:624
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:633
 msgid "Suspend"
 msgstr "השהייה"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:144
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:14
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:609
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:618
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:625
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:626
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:635
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:642
 msgid "Hibernate"
 msgstr "שינה"
 
@@ -4463,174 +4499,178 @@ msgid "Volume up"
 msgstr "הגברת ווליום"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:179
+msgid "Mic mute"
+msgstr ""
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:180
 msgid "Launch media player"
 msgstr "הפעלת נגן מדיה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:181
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:182
 msgid "Pause playback"
 msgstr "השהיית נגינה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:182
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:183
 msgid "Stop playback"
 msgstr "עצירת נגינה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:183
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:184
 msgid "Previous track"
 msgstr "רצועה קודמת"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:184
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:185
 msgid "Next track"
 msgstr "רצועה הבאה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:185
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:186
 msgid "Eject"
 msgstr "שליפה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:186
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:187
 msgid "Rewind"
 msgstr "האצה אחורה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:187
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:188
 msgid "Fast-forward"
 msgstr "האצה קדימה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:188
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:189
 msgid "Repeat"
 msgstr "חזרה (לולאה)"
 
 #. Sound and Media Quiet
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:191
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:192
 msgid "Volume mute (Quiet)"
 msgstr "השתקה (שקט)"
 
 #. Not sure this is even necessary
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:192
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:193
 msgid "Volume down (Quiet)"
 msgstr "החלשת ווליום (שקט)"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:193
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:194
 msgid "Volume up (Quiet)"
 msgstr "הגברת ווליום (שקט)"
 
 #. Universal Access
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:195
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:196
 msgid "Zoom in"
 msgstr "הגדלה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:196
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:197
 msgid "Zoom out"
 msgstr "הקטנה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:197
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:198
 msgid "Turn screen reader on or off"
 msgstr "הפעלה/כיבוי של קורא המסך"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:199
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:200
 msgid "Increase text size"
 msgstr "הגדלת טקסט"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:200
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:201
 msgid "Decrease text size"
 msgstr "הקטנת טקסט"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:201
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:202
 msgid "High contrast on or off"
 msgstr "הפעלה/כיבוי של ניגודיות גבוהה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:205
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:226
 msgid "Manage keyboard settings and shortcuts"
 msgstr "נהל הגדרות מקלדת וקיצורי דרך"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:210
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:231
 msgid "keyboard, shortcut, hotkey"
 msgstr "מקלדת, קיצורי-דרך, מקשים-חמים"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:225
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:246
 msgid "Key repeat"
 msgstr "חזרה על מקשים"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:227
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:248
 msgid "Typing"
 msgstr "הקלדה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:229
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:250
 msgid "Enable key repeat"
 msgstr "אפשר חזרה על מקשים"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:232
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:253
 msgid "Repeat delay:"
 msgstr "השהיית חזרה:"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:235
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:256
 msgid "Repeat speed:"
 msgstr "מהירות חזרה:"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:235
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:243
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:256
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:264
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_mouse.py:58
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_mouse.py:127
 msgid "Slow"
 msgstr "לאט"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:235
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:243
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:256
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:264
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_mouse.py:58
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_mouse.py:127
 msgid "Fast"
 msgstr "מהר"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:238
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:259
 msgid "Text cursor"
 msgstr "סמן לכתב"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:240
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:261
 msgid "Text cursor blinks"
 msgstr "הבהובי סמן כתיבה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:243
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:264
 msgid "Blink speed:"
 msgstr "מהירות הבהוב:"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:252
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:273
 msgid "Shortcuts"
 msgstr "קיצורי דרך"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:257
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:278
 msgid ""
 "To edit a keyboard binding, click it and press the new keys, or press "
 "backspace to clear it."
 msgstr ""
-"כדי לערוך קישור מקשים, יש ללחוץ עליו ואז להקיש את הצירוף החדש, או ללחוץ "
-"backspace כדי לנקות אותו."
+"כדי לערוך קיצור מקשים, יש ללחוץ עליו ולהקיש את הקיצור החדש, או ללחוץ על "
+"Backspace כדי לאפס אותו."
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:302
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:748
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:323
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:778
 msgid "Add custom shortcut"
 msgstr "הוספת קיצור דרך מותאם אישית"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:304
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:325
 msgid "Remove custom shortcut"
 msgstr "הסרת קיצור דרך מותאם אישית"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:326
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:347
 msgid "Categories"
 msgstr "קטגוריות"
 
 #. notifications@cinnamon.org->settings-schema.json->section3->description
 #. calendar@cinnamon.org->settings-schema.json->section2->description
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:341
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:362
 msgid "Keyboard shortcuts"
 msgstr "קיצורי מקשים"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:352
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:373
 msgid "Keyboard bindings"
 msgstr "קישורי מקשים"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:398
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:419
 msgid "Layouts"
 msgstr "פריסות"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:480
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:504
 #, python-format
 msgid ""
 "This key combination, <b>%(combination)s</b> is currently in use by "
@@ -4638,7 +4678,7 @@ msgid ""
 msgstr ""
 "צירוף מקשים זה,  <b>%(combination)s</b> נמצא בשימוש ל <b>%(old)s</b> .  "
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:481
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:505
 #, python-format
 msgid ""
 "If you continue, the combination will be reassigned to <b>%(new)s</b>.\n"
@@ -4647,15 +4687,15 @@ msgstr ""
 "אם תמשיך, הצירוף יישובץ מחדש ל<b>%(new)s</b>.\n"
 "\n"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:482
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:506
 msgid "Do you want to continue with this operation?"
 msgstr "האם ברצונך להמשיך עם התהליך?"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:635
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:664
 msgid "Reset to default"
 msgstr "אפס לברירת המחדל"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:765
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:795
 msgid "Select a file"
 msgstr "בחר קובץ"
 
@@ -4675,6 +4715,8 @@ msgstr "עכבר ולוח-מגע"
 msgid "Left handed (mouse buttons inverted)"
 msgstr "לשמאליים (כפתורי עכבר הפוכים)"
 
+#. workspace-switcher@cinnamon.org->settings-schema.json->reverse-
+#. scrolling->description
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_mouse.py:37
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_mouse.py:112
 msgid "Reverse scrolling direction"
@@ -4836,7 +4878,7 @@ msgstr "הצלחה!"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:35
 msgid "Notification preferences"
-msgstr "העדפות התרעות"
+msgstr "העדפות התראות"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:39
 msgid "notifications"
@@ -4844,23 +4886,23 @@ msgstr "התרעות"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:54
 msgid "Notification settings"
-msgstr "הגדרות התרעות"
+msgstr "הגדרות התראות"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:56
 msgid "Enable notifications"
-msgstr "אפשר התרעות"
+msgstr "אפשר התראות"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:59
 msgid "Remove notifications after their timeout is reached"
-msgstr "הסר התרעות לאחר שנגמר הזמן שלהן"
+msgstr "הסרת התראות לאחר שנגמר הזמן שלהן"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:62
 msgid "Show notifications on the bottom side of the screen"
-msgstr "הצג התרעות בצידו התחתון של המסך"
+msgstr "הצגת התראות בצידו התחתון של המסך"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:65
 msgid "Display a test notification"
-msgstr "הצג התרעת בדיקה"
+msgstr "הצג התראת בדיקה"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:68
 msgid "Media keys OSD"
@@ -5036,9 +5078,9 @@ msgid "Lock the screen"
 msgstr "נעילת המסך"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:13
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:608
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:617
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:624
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:625
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:634
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:641
 msgid "Shut down immediately"
 msgstr "כבה במיידי"
 
@@ -5201,115 +5243,124 @@ msgstr "אפשר שנה מעורבת"
 msgid "Replaces Suspend with Hybrid Sleep"
 msgstr "החלף השהייה בשינה היברידית"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:219
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:225
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:196
+msgid "Enable Hibernate after suspend"
+msgstr ""
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:197
+msgid ""
+"First suspend the machine and hibernate it after a certain amount of time."
+msgstr ""
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:226
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:232
 msgid "Power"
 msgstr "חשמל"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:220
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:227
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:296
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:304
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:234
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:313
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:321
 msgid "Batteries"
 msgstr "סוללות"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:234
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:235
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:241
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:242
 msgid "Screen brightness"
 msgstr "בהירות מסך"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:237
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:244
 msgid "On battery, dim screen when inactive"
 msgstr "על סוללה, החשך מסך כאשר אינו פעיל"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:239
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:246
 msgid "Brightness level when inactive"
 msgstr "רמת הבהירות כאשר אינו פעיל"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:241
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:248
 msgid "Dim screen after inactive for"
 msgstr "השחר מסך כאשר אינו פעיל במשך"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:257
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:264
 msgid "Backlight brightness"
 msgstr "בהירות תאורה-אחורית"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:314
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:331
 msgid "Devices"
 msgstr "מכשירים"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:340
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:357
 #, python-format
 msgid "Caution low UPS, %s remaining"
 msgstr "אזהרה עוצמת אל-פסק החלשה, נותרו %s"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:342
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:359
 #, python-format
 msgid "Using UPS power - %s remaining"
 msgstr "חשמל אל-פסק בשימוש - נותרו %s"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:348
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:365
 msgid "Caution low UPS"
 msgstr "אזהרה, עוצמת האל-פסק חלשה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:350
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:367
 msgid "Using UPS power"
 msgstr "משתמש בחשמל מה-UPS"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:375
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:392
 #, python-format
 msgid "Charging - %s until fully charged"
 msgstr "טוען- %s עד טעינה מלאה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:378
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:395
 #, python-format
 msgid "Caution low battery, %s remaining"
 msgstr "זהירות, סוללה חלשה, %s נשארו"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:380
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:397
 #, python-format
 msgid "Using battery power - %s remaining"
 msgstr "מופעל מסוללה- %s נשארו"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:389
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:406
 msgid "Charging - fully charged"
 msgstr "טעון במלואו"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:391
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:409
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:408
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:426
 msgid "Empty"
 msgstr "ריק"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:395
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:460
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:412
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:477
 msgid "Battery"
 msgstr "סוללה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:415
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:432
 msgid "Secondary battery"
 msgstr "סוללה משנית"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:436
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:453
 msgid "Uninterruptible power supply"
 msgstr "מקור מתח בלתי ניתן להפרעה"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:439
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:456
 msgid "Wireless mouse"
 msgstr "עכבר אלחוטי"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:442
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:459
 msgid "Wireless Keyboard"
 msgstr "מקלדת אלחוטית"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:448
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:465
 msgid "Personal digital assistant"
 msgstr "עוזר-אישי דיגיטאלי"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:451
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:468
 msgid "Cellphone"
 msgstr "טלפון סלולרי"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:619
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:636
 msgid "Ask"
 msgstr "שאל"
 
@@ -5574,7 +5625,7 @@ msgstr "להסיר מכשיר"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_sound.py:29
 msgid "Showing notifications"
-msgstr "הצגת התרעות"
+msgstr "הצגת התראות"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_sound.py:30
 msgid "Changing the sound volume"
@@ -6398,16 +6449,16 @@ msgstr "קיצורי מקלדת לסגירה ופתיחה של תפריט"
 
 #. menu@cinnamon.org->settings-schema.json->menu-custom->description
 msgid "Use a custom icon and label"
-msgstr "השתמש בסמל ותווית ייחודיים"
+msgstr "להשתמש בצלמית ותווית מותאמים"
 
 #. menu@cinnamon.org->settings-schema.json->menu-custom->tooltip
 msgid "Check this to specify a custom icon and label"
-msgstr "סמן את זה כדי לבחור סמל ותווית ייחודיים"
+msgstr "סמן את זה כדי להגדיר צלמית ותווית מותאמות"
 
 #. menu@cinnamon.org->settings-schema.json->menu-icon->description
 #. settings-example@cinnamon.org->settings-schema.json->tree->columns->title
 msgid "Icon"
-msgstr "סמל"
+msgstr "צלמית"
 
 #. menu@cinnamon.org->settings-schema.json->menu-icon->tooltip
 msgid "Select an icon to show in the panel."
@@ -6415,7 +6466,7 @@ msgstr "בחר סמל להצגה בלוח."
 
 #. menu@cinnamon.org->settings-schema.json->menu-icon-size->description
 msgid "Icon size"
-msgstr "גודל סמלים"
+msgstr "גודל צלמית"
 
 #. menu@cinnamon.org->settings-schema.json->menu-label->description
 msgid "Text"
@@ -6438,7 +6489,7 @@ msgstr ""
 
 #. menu@cinnamon.org->settings-schema.json->show-category-icons->description
 msgid "Show category icons"
-msgstr "הצג סמלים של קוגוריות"
+msgstr "הצג סמלי קטגוריות"
 
 #. menu@cinnamon.org->settings-schema.json->show-category-icons->tooltip
 msgid "Choose whether or not to show icons on categories."
@@ -6451,7 +6502,7 @@ msgstr "גודל סמלי קטגוריות"
 #. menu@cinnamon.org->settings-schema.json->show-application-
 #. icons->description
 msgid "Show application icons"
-msgstr "הצג סמלים של יישומים"
+msgstr "הצג סמלי יישומים"
 
 #. menu@cinnamon.org->settings-schema.json->show-application-icons->tooltip
 msgid "Choose whether or not to show icons on applications."
@@ -6463,7 +6514,7 @@ msgstr "גודל סמלי יישומים"
 
 #. menu@cinnamon.org->settings-schema.json->favbox-show->description
 msgid "Show favorites and session buttons"
-msgstr "הצג כפתורי מועדפים והפעלות"
+msgstr "הצג כפתורי מועדפים והפעלה"
 
 #. menu@cinnamon.org->settings-schema.json->favbox-show->tooltip
 msgid "Choose whether or not to show the left pane of the menu."
@@ -6472,6 +6523,14 @@ msgstr "בחר האם להציג או להסתיר את הלוח השמאלי ב
 #. menu@cinnamon.org->settings-schema.json->fav-icon-size->description
 msgid "Favorites icon size"
 msgstr "גודל סמלי מועדפים"
+
+#. menu@cinnamon.org->settings-schema.json->show-favorites->description
+msgid "Show favorites"
+msgstr ""
+
+#. menu@cinnamon.org->settings-schema.json->show-favorites->tooltip
+msgid "Choose whether or not to show favorite files in the menu."
+msgstr ""
 
 #. menu@cinnamon.org->settings-schema.json->show-places->description
 msgid "Show bookmarks and places"
@@ -6505,6 +6564,15 @@ msgstr "אפשר הזנה של נתיב מערכת-הקבצים בתיבת הח�
 #. menu@cinnamon.org->settings-schema.json->search-filesystem->tooltip
 msgid "Allows path entry in the menu search box."
 msgstr "אפשר הזנת נתיב בתיבת החיפוש של התפריט"
+
+#. menu@cinnamon.org->settings-schema.json->force-show-panel->description
+msgid "Force the panel to be visible when opening the menu"
+msgstr ""
+
+#. menu@cinnamon.org->settings-schema.json->force-show-panel->tooltip
+msgid ""
+"Opening the menu will also show the main panel (which may be auto-hidden)."
+msgstr ""
 
 #. menu@cinnamon.org->settings-schema.json->activate-on-hover->description
 msgid "Open the menu when I move my mouse over it"
@@ -6562,6 +6630,7 @@ msgid "Show Loop and Shuffle controls"
 msgstr "הצג פקדי לולאה ועירבול"
 
 #. sound@cinnamon.org->settings-schema.json->keyOpen->description
+#. network@cinnamon.org->settings-schema.json->keyOpen->description
 msgid "Show menu"
 msgstr "הצגת תפריט"
 
@@ -6611,7 +6680,7 @@ msgstr "הצג תמונת אלבום כסמל"
 
 #. sound@cinnamon.org->settings-schema.json->keepAlbumAspectRatio->description
 msgid "Keep album art aspect ratio"
-msgstr "שמור על יחס מתואם של תמונת אלבום"
+msgstr "שמירה על יחס הממדים של סמל האלבום"
 
 #. sound@cinnamon.org->settings-schema.json->hideSystray->description
 msgid "Hide system tray icons for compatible players"
@@ -6916,6 +6985,10 @@ msgstr "עכירות של חלון"
 msgid "Network manager applet"
 msgstr "יישומון ניהול הרשת"
 
+#. network@cinnamon.org->settings-schema.json->keyOpen->tooltip
+msgid "Set keybinding(s) to show the network applet menu."
+msgstr ""
+
 #. workspace-switcher@cinnamon.org->metadata.json->name
 msgid "Workspace switcher"
 msgstr "מחליף בין סביבות עבודה"
@@ -6924,27 +6997,32 @@ msgstr "מחליף בין סביבות עבודה"
 msgid "Select the workspace from the panel"
 msgstr "בחר את אזור העבודה מהלוח"
 
-#. workspace-switcher@cinnamon.org->settings-
-#. schema.json->display_type->description
+#. workspace-switcher@cinnamon.org->settings-schema.json->display-
+#. type->description
 msgid "Type of display"
 msgstr "סוג התצוגה"
 
-#. workspace-switcher@cinnamon.org->settings-
-#. schema.json->display_type->tooltip
+#. workspace-switcher@cinnamon.org->settings-schema.json->display-
+#. type->tooltip
 msgid ""
 "Note that the visual representation will only work if your panel is large "
 "enough to display it properly, otherwise the simple style will be used."
 msgstr ""
 
-#. workspace-switcher@cinnamon.org->settings-
-#. schema.json->display_type->options
+#. workspace-switcher@cinnamon.org->settings-schema.json->display-
+#. type->options
 msgid "A visual representation of the workspaces"
 msgstr "תצוגה ויזואלית של סביבת העבודה"
 
-#. workspace-switcher@cinnamon.org->settings-
-#. schema.json->display_type->options
+#. workspace-switcher@cinnamon.org->settings-schema.json->display-
+#. type->options
 msgid "Simple buttons"
 msgstr "כפתורים פשוטים"
+
+#. workspace-switcher@cinnamon.org->settings-schema.json->reverse-
+#. scrolling->tooltip
+msgid "Reverse the direction of the scroll in the workspace list."
+msgstr ""
 
 #. show-desktop@cinnamon.org->metadata.json->description
 msgid "Minimize all windows"
@@ -6978,6 +7056,14 @@ msgstr "השהייה לפני הצצה מראה את שולחן העבודה"
 #. show-desktop@cinnamon.org->settings-schema.json->peek-opacity->tooltip
 msgid "Change the opacity of windows when peeking at the desktop"
 msgstr "שנה את עכירות החלון כאשר מציצים על שולחן עבודה"
+
+#. favorites@cinnamon.org->metadata.json->description
+msgid "Access your favorite files"
+msgstr ""
+
+#. favorites@cinnamon.org->settings-schema.json->show-full-uri->description
+msgid "Display full paths in the list"
+msgstr ""
 
 #. trash@cinnamon.org->metadata.json->description
 msgid "Control the trash from the panel"
@@ -7491,7 +7577,7 @@ msgstr "אפשר גרירה של משגרים"
 
 #. notifications@cinnamon.org->metadata.json->description
 msgid "Click to display and manage system notifications"
-msgstr "הקש להציג ולנהל את התרעות המערכת"
+msgstr "הקש כדי להציג ולנהל את התראות המערכת"
 
 #. notifications@cinnamon.org->settings-
 #. schema.json->ignoreTransientNotifications->description
@@ -7506,11 +7592,11 @@ msgstr "בחר את זה כדי להתעלם מהתרעות ארעיות"
 #. notifications@cinnamon.org->settings-
 #. schema.json->showEmptyTray->description
 msgid "Show empty tray"
-msgstr "הצג מגש ריק"
+msgstr "הצגה תמיד"
 
 #. notifications@cinnamon.org->settings-schema.json->showEmptyTray->tooltip
 msgid "Check this to show the tray even when there are no new notifications."
-msgstr "בחר/י בזה כדי להציג את המגש אפילו כאשר אין התרעות חדשות."
+msgstr "בחר בזה כדי להציג את המגש גם כאשר אין התראות חדשות."
 
 #. notifications@cinnamon.org->settings-schema.json->keyOpen->description
 msgid "Show notifications"
@@ -7527,7 +7613,7 @@ msgstr ""
 #. notifications@cinnamon.org->settings-
 #. schema.json->btnSystemSettings->description
 msgid "Open notification settings"
-msgstr "פתיחת הגדרות התרעות"
+msgstr "פתיחת הגדרות ההתראות"
 
 #. inhibit@cinnamon.org->metadata.json->name
 msgid "Inhibit Applet"
@@ -7543,11 +7629,11 @@ msgstr ""
 
 #. on-screen-keyboard@cinnamon.org->metadata.json->name
 msgid "On-Screen keyboard"
-msgstr "מקלדת על המסך"
+msgstr "מקלדת מדומה"
 
 #. on-screen-keyboard@cinnamon.org->metadata.json->description
 msgid "A Cinnamon applet to launch the on-screen keyboard"
-msgstr "יישומון של Cinnamon להפעלת מקלדת על המסך"
+msgstr "יישומון של Cinnamon להפעלת המקלדת המדומה"
 
 #. calendar@cinnamon.org->metadata.json->name
 msgid "Calendar"
