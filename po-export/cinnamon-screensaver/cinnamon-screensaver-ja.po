@@ -10,89 +10,101 @@ msgstr ""
 "Project-Id-Version: cinnamon-screensaver master\n"
 "Report-Msgid-Bugs-To: https://launchpad.net/~linuxmint-translation-team-"
 "japanese\n"
-"POT-Creation-Date: 2017-10-23 15:09+0100\n"
-"PO-Revision-Date: 2020-12-21 16:13+0000\n"
-"Last-Translator: kmyyfz8q <Unknown>\n"
+"POT-Creation-Date: 2021-05-31 15:43+0100\n"
+"PO-Revision-Date: 2021-06-04 22:19+0000\n"
+"Last-Translator: vega m57 <Unknown>\n"
 "Language-Team: Japanese <https://launchpad.net/~linuxmint-translation-team-"
 "japanese>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2021-01-02 14:14+0000\n"
-"X-Generator: Launchpad (build 34b3ffd45c9543b7f7aa5aa313925241e9e7ca3f)\n"
+"X-Launchpad-Export-Date: 2021-06-09 14:17+0000\n"
+"X-Generator: Launchpad (build b45bdbe3a00b6b668fa7f2069bd545c35c41f7f4)\n"
 "Language: ja\n"
 
-#: src/cinnamon-screensaver-command.py:37
+#: src/cinnamon-screensaver-command.py:41
 msgid "Causes the screensaver to exit gracefully"
 msgstr "スクリーンセーバーを強制終了する"
 
-#: src/cinnamon-screensaver-command.py:39
+#: src/cinnamon-screensaver-command.py:43
 msgid "Query the state of the screensaver"
 msgstr "スクリーンセーバーの状態を問い合わせる"
 
-#: src/cinnamon-screensaver-command.py:41
-msgid "Query the length of time the screensaver has been active"
-msgstr "スクリーンセーバーが有効になっている時間を問い合わせる"
-
-#: src/cinnamon-screensaver-command.py:43
-msgid "Tells the running screensaver process to lock the screen immediately"
-msgstr "起動中のスクリーンセーバーに今すぐ画面をロックさせる"
-
 #: src/cinnamon-screensaver-command.py:45
-msgid "Turn the screensaver on (blank the screen)"
-msgstr "スクリーンセーバーを有効にする (ブランク・スクリーン)"
+msgid "Query the length of time the screensaver has been active"
+msgstr "スクリーンセーバーが起動してからの時間を問い合わせる"
 
 #: src/cinnamon-screensaver-command.py:47
-msgid "If the screensaver is active then deactivate it (un-blank the screen)"
-msgstr "有効になっているスクリーンセーバーを無効にする (ブランク・スクリーン解除)"
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr "起動中のスクリーンセーバープロセスで画面をすぐにロックさせる"
 
 #: src/cinnamon-screensaver-command.py:49
+msgid "Turn the screensaver on (blank the screen)"
+msgstr "スクリーンセーバーを起動する (ブランク画面)"
+
+#: src/cinnamon-screensaver-command.py:51
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr "起動中のスクリーンセーバーを終了する (ブランク画面解除)"
+
+#: src/cinnamon-screensaver-command.py:53
 msgid "Version of this application"
 msgstr "このアプリケーションのバージョン"
 
-#: src/cinnamon-screensaver-command.py:51
+#: src/cinnamon-screensaver-command.py:55
 msgid "Message to be displayed in lock screen"
-msgstr "ロック画面に表示されるメッセージ"
+msgstr "ロック画面に表示するメッセージ"
 
-#: src/cinnamon-screensaver-command.py:80
+#: src/cinnamon-screensaver-command.py:105
 msgid "The screensaver is active\n"
-msgstr "スクリーンセーバーは有効です\n"
+msgstr "スクリーンセーバーは起動中です\n"
 
-#: src/cinnamon-screensaver-command.py:82
+#: src/cinnamon-screensaver-command.py:107
 msgid "The screensaver is inactive\n"
-msgstr "スクリーンセーバーは無効です\n"
+msgstr "スクリーンセーバーは起動していません\n"
 
-#: src/cinnamon-screensaver-command.py:86
+#: src/cinnamon-screensaver-command.py:111
 msgid "The screensaver is not currently active.\n"
-msgstr "スクリーンセーバーは現在、有効になっていません。\n"
+msgstr "現在、スクリーンセーバーは起動していません。\n"
 
-#: src/cinnamon-screensaver-command.py:88
+#: src/cinnamon-screensaver-command.py:113
 #, python-format
 msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
-msgstr[0] "スクリーンセーバーは %d 秒間有効になっています。\n"
+msgstr[0] "スクリーンセーバーが起動して %d 秒が経過しています。\n"
 
-#: src/passwordEntry.py:23 src/unlock.py:203
+#: src/manager.py:287
+msgid "Cinnamon Screensaver has experienced an error"
+msgstr "Cinnamon スクリーンセーバーにエラーが発生しました"
+
+#: src/manager.py:289
+msgid ""
+"The 'cs-backup-locker' process terminated before the screensaver did. Please "
+"report this issue and try to describe any actions you may have performed "
+"prior to this occurring."
+msgstr ""
+"スクリーンセーバーの終了前に 'cs-backup-locker' プロセスが中断されました。この問題が発生した経緯も含めて、バグ報告をお願いします。"
+
+#: src/passwordEntry.py:23 src/unlock.py:221
 msgid "Please enter your password..."
-msgstr "パスワードを入力してください…"
+msgstr "パスワードを入力してください..."
 
-#: src/unlock.py:90
+#: src/unlock.py:96
 msgid "Unlock"
 msgstr "ロックの解除"
 
-#: src/unlock.py:98
+#: src/unlock.py:107
 msgid "Switch User"
 msgstr "ユーザーの切り替え"
 
-#: src/unlock.py:181
+#: src/unlock.py:194
 msgid "Incorrect password"
 msgstr "パスワードが正しくありません"
 
-#: src/unlock.py:195
+#: src/unlock.py:211
 msgid "Checking..."
 msgstr "確認しています..."
 
-#: src/unlock.py:241
+#: src/unlock.py:254
 msgid "You have the Caps Lock key on."
 msgstr "Caps Lock キーが押されています。"
