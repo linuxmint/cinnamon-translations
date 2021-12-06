@@ -19,22 +19,22 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "settings-daemon&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2021-06-02 15:46+0100\n"
-"PO-Revision-Date: 2021-04-28 10:12+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"PO-Revision-Date: 2021-10-02 21:52+0000\n"
+"Last-Translator: Sallecta (Alexander Gribkov) <Unknown>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2021-06-25 10:42+0000\n"
-"X-Generator: Launchpad (build 40cc6dba4163ba9ca785b26ad91f43c87d70ba4d)\n"
+"X-Launchpad-Export-Date: 2021-12-06 15:06+0000\n"
+"X-Generator: Launchpad (build f92b6e0bb2624f8a9125e3f45b7621c6e230c5ff)\n"
 "Language: ru\n"
 
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:377
 #, c-format
 msgid "There was an error displaying help: %s"
-msgstr "Произошла ошибка при отображении справки: %s"
+msgstr "При отображении справки произошла ошибка: %s"
 
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:501
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:563
@@ -52,8 +52,9 @@ msgid ""
 "You just held down the Shift key for 8 seconds.  This is the shortcut for "
 "the Slow Keys feature, which affects the way your keyboard works."
 msgstr ""
-"Вы только что удержали клавишу Shift нажатой 8 секунд. Это — комбинация для "
-"функции «медленные» клавиши, которая влияет на способ работы с клавиатурой."
+"Вы только что удержали клавишу Shift нажатой 8 секунд.  Это комбинация для "
+"функции «Медленные клавиши», которая влияет на способ работы вашей "
+"клавиатуры."
 
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:521
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:656
@@ -70,17 +71,15 @@ msgstr "Выключить"
 msgid "Turn On"
 msgstr "Включить"
 
-# Оставить включёнными (про залипающие и медленные клавиши)
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:533
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:668
 msgid "Leave On"
-msgstr "Оставить"
+msgstr "Оставить включёнными"
 
-# Оставить включёнными (про залипающие и медленные клавиши)
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:533
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:668
 msgid "Leave Off"
-msgstr "Оставить"
+msgstr "Оставить выключенными"
 
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:586
 #: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c:724
@@ -499,7 +498,7 @@ msgstr "Низкий заряд батареи мыши"
 
 #: plugins/power/csd-power-manager.c:1272
 msgid "Wireless mouse is low in power"
-msgstr ""
+msgstr "Низкий уровень заряда беспроводной мыши"
 
 #: plugins/power/csd-power-manager.c:1276
 #: plugins/power/csd-power-manager.c:1441
@@ -508,7 +507,7 @@ msgstr "Низкий заряд батареи клавиатуры"
 
 #: plugins/power/csd-power-manager.c:1279
 msgid "Wireless keyboard is low in power"
-msgstr ""
+msgstr "Низкий уровень заряда беспроводной клавиатуры"
 
 #: plugins/power/csd-power-manager.c:1283
 #: plugins/power/csd-power-manager.c:1449
@@ -616,12 +615,16 @@ msgid ""
 "Wireless mouse is very low in power. This device will soon stop functioning "
 "if not charged."
 msgstr ""
+"Критически низкий уровень заряда беспроводной мыши. Это устройство "
+"перестанет функционировать, если не будет заряжено."
 
 #: plugins/power/csd-power-manager.c:1444
 msgid ""
 "Wireless keyboard is very low in power. This device will soon stop "
 "functioning if not charged."
 msgstr ""
+"Критически низкий уровень заряда беспроводной клавиатуры. Это устройство "
+"перестанет функционировать, если не будет заряжено."
 
 #: plugins/power/csd-power-manager.c:1452
 #, c-format
@@ -629,6 +632,8 @@ msgid ""
 "PDA is very low in power (%.0f%%). This device will soon stop functioning if "
 "not charged."
 msgstr ""
+"Критически низкий уровень заряда КПК ( %.0f%%). Это устройство перестанет "
+"функционировать, если не будет заряжено."
 
 #: plugins/power/csd-power-manager.c:1462
 #, c-format
@@ -636,6 +641,8 @@ msgid ""
 "Cell phone is very low in power (%.0f%%). This device will soon stop "
 "functioning if not charged."
 msgstr ""
+"Критически низкий уровень заряда сотового телефона ( %.0f%%). Это устройство "
+"перестанет функционировать, если не будет заряжено."
 
 #: plugins/power/csd-power-manager.c:1472
 #, c-format
@@ -643,6 +650,8 @@ msgid ""
 "Media player is very low in power (%.0f%%). This device will soon stop "
 "functioning if not charged."
 msgstr ""
+"Критически низкий уровень заряда медиаплеера ( %.0f%%). Это устройство "
+"перестанет функционировать, если не будет заряжено."
 
 #: plugins/power/csd-power-manager.c:1481
 #, c-format
@@ -650,6 +659,8 @@ msgid ""
 "Tablet is very low in power (%.0f%%). This device will soon stop functioning "
 "if not charged."
 msgstr ""
+"Критически низкий уровень заряда планшета ( %.0f%%). Это устройство "
+"перестанет функционировать, если не будет заряжено."
 
 #: plugins/power/csd-power-manager.c:1490
 #, c-format
