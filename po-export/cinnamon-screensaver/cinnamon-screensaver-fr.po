@@ -17,16 +17,16 @@ msgstr ""
 "Project-Id-Version: cinnamon-screensaver master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "screensaver&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2021-05-31 15:43+0100\n"
-"PO-Revision-Date: 2021-06-02 14:50+0000\n"
+"POT-Creation-Date: 2022-12-02 21:29+0000\n"
+"PO-Revision-Date: 2022-12-16 11:01+0000\n"
 "Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-16 12:08+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 
 #: src/cinnamon-screensaver-command.py:41
 msgid "Causes the screensaver to exit gracefully"
@@ -82,11 +82,11 @@ msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "L'économiseur d'écran a été actif pendant %d seconde.\n"
 msgstr[1] "L'économiseur d'écran a été actif pendant %d secondes.\n"
 
-#: src/manager.py:287
+#: src/manager.py:315
 msgid "Cinnamon Screensaver has experienced an error"
 msgstr "L'économiseur d'écran de Cinnamon a rencontré une erreur"
 
-#: src/manager.py:289
+#: src/manager.py:317
 msgid ""
 "The 'cs-backup-locker' process terminated before the screensaver did. Please "
 "report this issue and try to describe any actions you may have performed "
@@ -97,7 +97,7 @@ msgstr ""
 "circonstances et les actions que vous avez prises avant que le problème ne "
 "se produise."
 
-#: src/passwordEntry.py:23 src/unlock.py:221
+#: src/passwordEntry.py:23 src/unlock.py:216
 msgid "Please enter your password..."
 msgstr "Veuillez saisir votre mot de passe…"
 
@@ -109,14 +109,52 @@ msgstr "Déverrouiller"
 msgid "Switch User"
 msgstr "Changer d'utilisateur"
 
-#: src/unlock.py:194
+#: src/unlock.py:189
 msgid "Incorrect password"
 msgstr "Mot de passe incorrect"
 
-#: src/unlock.py:211
+#: src/unlock.py:206
 msgid "Checking..."
 msgstr "Vérification..."
 
-#: src/unlock.py:254
+#: src/unlock.py:250
 msgid "You have the Caps Lock key on."
 msgstr "Votre verrouillage des majuscules est activé."
+
+#. This is the first line of text for the backup-locker, explaining how to switch to tty
+#. and run 'cinnamon-unlock-desktop' command.  This appears if the screensaver crashes.
+#: backup-locker/cs-backup-locker.c:255
+msgid "Something went wrong with the screensaver."
+msgstr "Une erreur est survenue dans l'économiseur d'écran."
+
+#. (continued) This is a subtitle
+#: backup-locker/cs-backup-locker.c:265
+msgid "We'll help you get your desktop back"
+msgstr "Voici comment récupérer votre session"
+
+#. (new section) Bulleted list of steps to take to unlock the desktop;
+#: backup-locker/cs-backup-locker.c:276
+#, c-format
+msgid "Switch to a console using <Control-Alt-F%u>."
+msgstr "Passez en mode console avec <Control-Alt-F%u>."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:278
+msgid "Log in by typing your user name followed by your password."
+msgstr "Identifiez-vous avec votre nom d'utilisateur et votre mot de passe."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:280
+msgid "At the prompt, type 'cinnamon-unlock-desktop' and press Enter."
+msgstr "Tapez la commande 'cinnamon-unlock-desktop' et appuyez sur Entrée."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:282
+#, c-format
+msgid "Switch back to your unlocked desktop using <Control-Alt-F%u>."
+msgstr "Revenez en mode session avec <Control-Alt-F%u>."
+
+#. (end section) Final words after the list of steps
+#: backup-locker/cs-backup-locker.c:287
+msgid "If you can reproduce this behavior, please file a report here:"
+msgstr "Si ce problème continue à survenir, créez un rapport de bogue à :"

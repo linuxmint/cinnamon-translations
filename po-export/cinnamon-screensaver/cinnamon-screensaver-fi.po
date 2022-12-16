@@ -10,25 +10,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-screensaver\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-31 15:43+0100\n"
-"PO-Revision-Date: 2022-07-18 10:46+0000\n"
+"POT-Creation-Date: 2022-12-02 21:29+0000\n"
+"PO-Revision-Date: 2022-12-04 10:06+0000\n"
 "Last-Translator: Kimmo Kujansuu <Unknown>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-16 12:08+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "Language: fi\n"
 
 #: src/cinnamon-screensaver-command.py:41
 msgid "Causes the screensaver to exit gracefully"
-msgstr "Sammuttaa näytönsäästäjän sulavasti"
+msgstr "Näytönsäästäjä poistuu sulavasti"
 
 #: src/cinnamon-screensaver-command.py:43
 msgid "Query the state of the screensaver"
-msgstr "Kysy näytönsäästäjän tila"
+msgstr "Kysy näytönsäästäjän tilaa"
 
 #: src/cinnamon-screensaver-command.py:45
 msgid "Query the length of time the screensaver has been active"
@@ -42,11 +42,12 @@ msgstr ""
 
 #: src/cinnamon-screensaver-command.py:49
 msgid "Turn the screensaver on (blank the screen)"
-msgstr "Laita näytönsäästäjä päälle (tyhjentää näytön)"
+msgstr "Laita näytönsäästäjä päälle (tyhjennä näyttö)"
 
 #: src/cinnamon-screensaver-command.py:51
 msgid "If the screensaver is active then deactivate it (un-blank the screen)"
-msgstr "Sulje näytönsäästäjä, jos se on aktiivisena (palauta näyttö)"
+msgstr ""
+"Jos näytönsäästäjä on aktiivinen, poista se käytöstä (palauta näyttö)"
 
 #: src/cinnamon-screensaver-command.py:53
 msgid "Version of this application"
@@ -66,7 +67,7 @@ msgstr "Näytönsäästäjä ei ole käynnissä\n"
 
 #: src/cinnamon-screensaver-command.py:111
 msgid "The screensaver is not currently active.\n"
-msgstr "Näytönsäästäjä ei ole tällä hetkellä aktiivinen.\n"
+msgstr "Näytönsäästäjä ei ole aktiivinen.\n"
 
 #: src/cinnamon-screensaver-command.py:113
 #, python-format
@@ -75,23 +76,23 @@ msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "Näytönsäästäjä on ollut käynnissä %d sekunnin.\n"
 msgstr[1] "Näytönsäästäjä on ollut käynnissä %d sekuntia.\n"
 
-#: src/manager.py:287
+#: src/manager.py:315
 msgid "Cinnamon Screensaver has experienced an error"
-msgstr "Cinnamon ruudunsäästäjä kohtasi virheen"
+msgstr "Cinnamon näytönsäästäjä kohtasi virheen"
 
-#: src/manager.py:289
+#: src/manager.py:317
 msgid ""
 "The 'cs-backup-locker' process terminated before the screensaver did. Please "
 "report this issue and try to describe any actions you may have performed "
 "prior to this occurring."
 msgstr ""
-"Prosessi \"Cs-backup-locker\" päättyi ennen näytönsäästäjää. Ilmoita "
-"ongelmasta ja kuvaa kaikki toimet, jotka olet mahdollisesti suorittanut "
-"ennen tämän tapahtumista."
+"Prosessi \"cs-backup-locker\" päättyi ennen näytönsäästäjää. Ilmoita "
+"ongelmasta ja kerro toimet, jotka olet mahdollisesti tehnyt ennen tämän "
+"tapahtumista."
 
-#: src/passwordEntry.py:23 src/unlock.py:221
+#: src/passwordEntry.py:23 src/unlock.py:216
 msgid "Please enter your password..."
-msgstr "Kirjoita salasanasi..."
+msgstr "Salasanasi..."
 
 #: src/unlock.py:96
 msgid "Unlock"
@@ -101,14 +102,52 @@ msgstr "Avaa lukitus"
 msgid "Switch User"
 msgstr "Vaihda käyttäjää"
 
-#: src/unlock.py:194
+#: src/unlock.py:189
 msgid "Incorrect password"
 msgstr "Väärä salasana"
 
-#: src/unlock.py:211
+#: src/unlock.py:206
 msgid "Checking..."
 msgstr "Tarkistetaan…"
 
-#: src/unlock.py:254
+#: src/unlock.py:250
 msgid "You have the Caps Lock key on."
-msgstr "Näppäimistössä on Caps Lock päällä."
+msgstr "Sinulla on Caps Lock päällä."
+
+#. This is the first line of text for the backup-locker, explaining how to switch to tty
+#. and run 'cinnamon-unlock-desktop' command.  This appears if the screensaver crashes.
+#: backup-locker/cs-backup-locker.c:255
+msgid "Something went wrong with the screensaver."
+msgstr "Jotain meni vikaan näytönsäästäjässä."
+
+#. (continued) This is a subtitle
+#: backup-locker/cs-backup-locker.c:265
+msgid "We'll help you get your desktop back"
+msgstr "Autamme sinua saamaan työpöytäsi takaisin"
+
+#. (new section) Bulleted list of steps to take to unlock the desktop;
+#: backup-locker/cs-backup-locker.c:276
+#, c-format
+msgid "Switch to a console using <Control-Alt-F%u>."
+msgstr "Vaihda konsoliin painamalla <Control-Alt-F%u>."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:278
+msgid "Log in by typing your user name followed by your password."
+msgstr "Kirjaudu kirjoittamalla sinun käyttäjätunnus ja salasana."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:280
+msgid "At the prompt, type 'cinnamon-unlock-desktop' and press Enter."
+msgstr "Kirjoita kehotteeseen \"cinnamon-unlock-desktop\" ja paina Enter."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:282
+#, c-format
+msgid "Switch back to your unlocked desktop using <Control-Alt-F%u>."
+msgstr "Vaihda takaisin lukitsemattomaan työpöytään <Control-Alt-F%u>."
+
+#. (end section) Final words after the list of steps
+#: backup-locker/cs-backup-locker.c:287
+msgid "If you can reproduce this behavior, please file a report here:"
+msgstr "Jos pystyt toistamaan tämän ongelman, tee raportti täällä:"

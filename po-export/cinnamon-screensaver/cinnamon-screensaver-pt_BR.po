@@ -14,42 +14,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-screensaver\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-31 15:43+0100\n"
-"PO-Revision-Date: 2021-05-31 22:13+0000\n"
+"POT-Creation-Date: 2022-12-02 21:29+0000\n"
+"PO-Revision-Date: 2022-12-05 22:05+0000\n"
 "Last-Translator: Gilberto vagner <vagner.unix@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-16 12:08+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "X-Poedit-Country: Brazil\n"
 "X-Poedit-Language: Portuguese\n"
 
 #: src/cinnamon-screensaver-command.py:41
 msgid "Causes the screensaver to exit gracefully"
-msgstr "Faz a proteção de tela sair suavemente"
+msgstr "Faz com que o protetor de tela saia normalmente"
 
 #: src/cinnamon-screensaver-command.py:43
 msgid "Query the state of the screensaver"
-msgstr "Consulta o estado da proteção de tela"
+msgstr "Consultar o estado do protetor de tela"
 
 #: src/cinnamon-screensaver-command.py:45
 msgid "Query the length of time the screensaver has been active"
-msgstr "Consultar quanto tempo a proteção de tela ficou  ativa"
+msgstr "Consultar o tempo que o protetor de tela está ativo"
 
 #: src/cinnamon-screensaver-command.py:47
 msgid "Tells the running screensaver process to lock the screen immediately"
-msgstr "Faz o processo da proteção travar a tela imediatamente"
+msgstr ""
+"Diz ao processo de proteção de tela em execução para bloquear a tela "
+"imediatamente"
 
 #: src/cinnamon-screensaver-command.py:49
 msgid "Turn the screensaver on (blank the screen)"
-msgstr "Ativa a proteção de tela (tela em branco)"
+msgstr "Ativar o protetor de tela (apagar a tela)"
 
 #: src/cinnamon-screensaver-command.py:51
 msgid "If the screensaver is active then deactivate it (un-blank the screen)"
-msgstr "Se a proteção de tela estiver ativa então desative-a (exibe a tela)"
+msgstr ""
+"Se o protetor de tela estiver ativo, desative-o (desative a tela em branco)"
 
 #: src/cinnamon-screensaver-command.py:53
 msgid "Version of this application"
@@ -57,11 +60,11 @@ msgstr "Versão deste aplicativo"
 
 #: src/cinnamon-screensaver-command.py:55
 msgid "Message to be displayed in lock screen"
-msgstr "Mensagem a ser exibida na tela bloqueada"
+msgstr "Mensagem a ser exibida na tela de bloqueio"
 
 #: src/cinnamon-screensaver-command.py:105
 msgid "The screensaver is active\n"
-msgstr "A proteção de tela está ativa\n"
+msgstr "O protetor de tela está ativo\n"
 
 #: src/cinnamon-screensaver-command.py:107
 msgid "The screensaver is inactive\n"
@@ -78,11 +81,11 @@ msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "A proteção de tela está ativa por %d segundo.\n"
 msgstr[1] "A proteção de tela está ativa por %d segundos.\n"
 
-#: src/manager.py:287
+#: src/manager.py:315
 msgid "Cinnamon Screensaver has experienced an error"
 msgstr "Cinnamon Screensaver apresentou um erro"
 
-#: src/manager.py:289
+#: src/manager.py:317
 msgid ""
 "The 'cs-backup-locker' process terminated before the screensaver did. Please "
 "report this issue and try to describe any actions you may have performed "
@@ -92,7 +95,7 @@ msgstr ""
 "Relate este problema e tente descrever quaisquer ações que você possa ter "
 "realizado antes que isso ocorresse."
 
-#: src/passwordEntry.py:23 src/unlock.py:221
+#: src/passwordEntry.py:23 src/unlock.py:216
 msgid "Please enter your password..."
 msgstr "Por favor, insira sua senha..."
 
@@ -104,14 +107,53 @@ msgstr "Desbloquear"
 msgid "Switch User"
 msgstr "Trocar Usuário"
 
-#: src/unlock.py:194
+#: src/unlock.py:189
 msgid "Incorrect password"
 msgstr "Senha incorreta"
 
-#: src/unlock.py:211
+#: src/unlock.py:206
 msgid "Checking..."
 msgstr "Verificando..."
 
-#: src/unlock.py:254
+#: src/unlock.py:250
 msgid "You have the Caps Lock key on."
 msgstr "A tecla Caps Lock está ativada."
+
+#. This is the first line of text for the backup-locker, explaining how to switch to tty
+#. and run 'cinnamon-unlock-desktop' command.  This appears if the screensaver crashes.
+#: backup-locker/cs-backup-locker.c:255
+msgid "Something went wrong with the screensaver."
+msgstr "Algo deu errado com o protetor de tela."
+
+#. (continued) This is a subtitle
+#: backup-locker/cs-backup-locker.c:265
+msgid "We'll help you get your desktop back"
+msgstr "Ajudaremos você a recuperar sua área de trabalho"
+
+#. (new section) Bulleted list of steps to take to unlock the desktop;
+#: backup-locker/cs-backup-locker.c:276
+#, c-format
+msgid "Switch to a console using <Control-Alt-F%u>."
+msgstr "Mude para um console usando <Control-Alt-F%u>."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:278
+msgid "Log in by typing your user name followed by your password."
+msgstr "Faça login digitando seu nome de usuário seguido de sua senha."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:280
+msgid "At the prompt, type 'cinnamon-unlock-desktop' and press Enter."
+msgstr "No prompt, digite 'cinnamon-unlock-desktop' e pressione Enter."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:282
+#, c-format
+msgid "Switch back to your unlocked desktop using <Control-Alt-F%u>."
+msgstr "Volte para a área de trabalho desbloqueada usando <Control-Alt-F%u>."
+
+#. (end section) Final words after the list of steps
+#: backup-locker/cs-backup-locker.c:287
+msgid "If you can reproduce this behavior, please file a report here:"
+msgstr ""
+"Se você conseguir reproduzir esse comportamento, registre um relatório aqui:"

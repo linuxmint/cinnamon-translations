@@ -16,16 +16,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-screensaver\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-31 15:43+0100\n"
-"PO-Revision-Date: 2021-05-31 14:53+0000\n"
+"POT-Creation-Date: 2022-12-02 21:29+0000\n"
+"PO-Revision-Date: 2022-12-02 23:25+0000\n"
 "Last-Translator: Pjotr12345 <Unknown>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-16 12:08+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "Language: nl\n"
 
 #: src/cinnamon-screensaver-command.py:41
@@ -83,11 +83,11 @@ msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "De schermbeveiliging is gedurende %d seconde actief geweest.\n"
 msgstr[1] "De schermbeveiliging is gedurende %d seconden actief geweest.\n"
 
-#: src/manager.py:287
+#: src/manager.py:315
 msgid "Cinnamon Screensaver has experienced an error"
 msgstr "Cinnamon Schermbeveiliging is getroffen door een fout"
 
-#: src/manager.py:289
+#: src/manager.py:317
 msgid ""
 "The 'cs-backup-locker' process terminated before the screensaver did. Please "
 "report this issue and try to describe any actions you may have performed "
@@ -97,7 +97,7 @@ msgstr ""
 "fout a.u.b. en probeer om de handelingen te beschrijven die u wellicht hebt "
 "verricht alvorens dit gebeurde."
 
-#: src/passwordEntry.py:23 src/unlock.py:221
+#: src/passwordEntry.py:23 src/unlock.py:216
 msgid "Please enter your password..."
 msgstr "Voer a.u.b. uw wachtwoord in..."
 
@@ -109,14 +109,56 @@ msgstr "Ontgrendelen"
 msgid "Switch User"
 msgstr "Gebruiker wisselen"
 
-#: src/unlock.py:194
+#: src/unlock.py:189
 msgid "Incorrect password"
 msgstr "Onjuist wachtwoord"
 
-#: src/unlock.py:211
+#: src/unlock.py:206
 msgid "Checking..."
 msgstr "Bezig met controleren..."
 
-#: src/unlock.py:254
+#: src/unlock.py:250
 msgid "You have the Caps Lock key on."
 msgstr "De Caps Lock-toets staat aan."
+
+#. This is the first line of text for the backup-locker, explaining how to switch to tty
+#. and run 'cinnamon-unlock-desktop' command.  This appears if the screensaver crashes.
+#: backup-locker/cs-backup-locker.c:255
+msgid "Something went wrong with the screensaver."
+msgstr "Er is iets mis gegaan met de schermbeveiliging."
+
+#. (continued) This is a subtitle
+#: backup-locker/cs-backup-locker.c:265
+msgid "We'll help you get your desktop back"
+msgstr "We zullen u helpen om uw bureaublad weer terug te krijgen."
+
+#. (new section) Bulleted list of steps to take to unlock the desktop;
+#: backup-locker/cs-backup-locker.c:276
+#, c-format
+msgid "Switch to a console using <Control-Alt-F%u>."
+msgstr "Schakel over naar een terminal met behulp van <Control-Alt-F%u>."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:278
+msgid "Log in by typing your user name followed by your password."
+msgstr ""
+"Meld u aan door uw gebruikersnaam in te tikken, gevolgd door uw wachtwoord."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:280
+msgid "At the prompt, type 'cinnamon-unlock-desktop' and press Enter."
+msgstr ""
+"In de terminal tikt u dan in: 'cinnamon-unlock-desktop' (zonder de "
+"aanhalingstekens). Druk daarna op Enter."
+
+#. (list continued)
+#: backup-locker/cs-backup-locker.c:282
+#, c-format
+msgid "Switch back to your unlocked desktop using <Control-Alt-F%u>."
+msgstr "Schakel terug naar uw bureaublad met behulp van <Control-Alt-F%u>."
+
+#. (end section) Final words after the list of steps
+#: backup-locker/cs-backup-locker.c:287
+msgid "If you can reproduce this behavior, please file a report here:"
+msgstr ""
+"Indien u dit gedrag kunt reproduceren, vul dan a.u.b. hier een melding in:"
