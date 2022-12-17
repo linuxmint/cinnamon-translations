@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center-2.0 trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 16:20+0200\n"
-"PO-Revision-Date: 2022-06-18 18:00+0000\n"
-"Last-Translator: Umidjon Almasov <umidjon@almasov.uz>\n"
+"POT-Creation-Date: 2022-12-16 13:55+0000\n"
+"PO-Revision-Date: 2022-11-19 09:57+0000\n"
+"Last-Translator: Umidjon Almasov <Unknown>\n"
 "Language-Team: Uzbek\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-17 05:02+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "Language: uz\n"
 
 #. TRANSLATORS: this is where the user can click and import a profile
@@ -615,7 +615,8 @@ msgstr "_Unutish"
 msgid "History"
 msgstr "Tarix"
 
-#: panels/network/net-device-wifi.c:1903
+#: panels/network/net-device-wifi.c:1903 panels/wacom/cc-wacom-page.c:468
+#: panels/wacom/button-mapping.ui.h:2
 msgid "_Close"
 msgstr "_Yopish"
 
@@ -960,163 +961,53 @@ msgid "Layout"
 msgstr "Tugmalar tartibi"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:227
+#: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "Default"
 msgstr "Andoza"
 
-#: panels/wacom/cc-wacom-mapping-panel.c:298
+#: panels/wacom/cc-wacom-button-row.c:248
+#, c-format
+msgid "Button %d"
+msgstr "%d tugmasi"
+
+#: panels/wacom/cc-wacom-mapping-panel.c:232
 msgid "Output:"
 msgstr "CHiqishda:"
 
 #. Keep ratio switch
-#: panels/wacom/cc-wacom-mapping-panel.c:310
+#: panels/wacom/cc-wacom-mapping-panel.c:244
 msgid "Keep aspect ratio (letterbox):"
 msgstr "Tomonlar nisbatini saqlang (letterbox):"
 
-#. Apply screen rotation
-#: panels/wacom/cc-wacom-mapping-panel.c:321
-msgid "Rotate the tablet when the screen is rotated:"
-msgstr "Ekran aylantirilganda planshetni aylantiring:"
-
 #. Whole-desktop checkbox
-#: panels/wacom/cc-wacom-mapping-panel.c:332
+#: panels/wacom/cc-wacom-mapping-panel.c:255
 msgid "Map to single monitor"
 msgstr "YOlg‘iz monitorga moslash"
 
-#: panels/wacom/cc-wacom-nav-button.c:89
+#: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
 msgid "%d of %d"
 msgstr "%d ning %d"
 
-#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
-msgctxt "Wacom action-type"
-msgid "None"
-msgstr "Hech biri"
-
-#: panels/wacom/cc-wacom-page.c:119
-msgctxt "Wacom action-type"
-msgid "Send Keystroke"
-msgstr "Kalitlar satrini yuborish"
-
-#: panels/wacom/cc-wacom-page.c:120
-msgctxt "Wacom action-type"
-msgid "Switch Monitor"
-msgstr "Monitorni o‘zgartirish"
-
-#: panels/wacom/cc-wacom-page.c:121
-msgctxt "Wacom action-type"
-msgid "Show On-Screen Help"
-msgstr "Ekrandagi yordamni ko‘rsatish"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Up"
-msgstr "Yuqoriga"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Down"
-msgstr "Pastga"
-
-#: panels/wacom/cc-wacom-page.c:663
-msgid "Switch Modes"
-msgstr "Rejimlarni o‘zgartirish"
-
-#: panels/wacom/cc-wacom-page.c:753 panels/wacom/cc-wacom-stylus-page.c:394
-msgid "Button"
-msgstr "Tugma"
-
-#: panels/wacom/cc-wacom-page.c:790
-msgid "Type"
-msgstr "Turi"
-
-#: panels/wacom/cc-wacom-page.c:811
-msgid "Action"
-msgstr "Amal"
-
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:465
 msgid "Display Mapping"
 msgstr "Ekranni joylashtirish"
 
-#. If no mode is available, we use "left-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1115
-msgid "Left Ring"
-msgstr "Chap halqa"
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+msgid "Stylus"
+msgstr "Pero"
 
-#: panels/wacom/csd-wacom-device.c:1125
-#, c-format
-msgid "Left Ring Mode #%d"
-msgstr "Chap halqa rejimi #%d"
+#: panels/wacom/cc-wacom-panel.c:669
+msgid "Tablet"
+msgstr "Planshet"
 
-#. If no mode is available, we use "right-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1144
-msgid "Right Ring"
-msgstr "O‘ng halqa"
+#: panels/wacom/cc-wacom-stylus-page.c:362
+msgid "Button"
+msgstr "Tugma"
 
-#: panels/wacom/csd-wacom-device.c:1154
-#, c-format
-msgid "Right Ring Mode #%d"
-msgstr "O‘ng halqa rejimi #%d"
-
-#. If no mode is available, we use "left-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1195
-msgid "Left Touchstrip"
-msgstr "Chap sensorli chiziq"
-
-#: panels/wacom/csd-wacom-device.c:1205
-#, c-format
-msgid "Left Touchstrip Mode #%d"
-msgstr "Chap sensorli chiziq rejimi #%d"
-
-#. If no mode is available, we use "right-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1224
-msgid "Right Touchstrip"
-msgstr "O‘ng sensorli chiziq"
-
-#: panels/wacom/csd-wacom-device.c:1234
-#, c-format
-msgid "Right Touchstrip Mode #%d"
-msgstr "O‘ng sensorli chiziq rejimi #%d"
-
-#: panels/wacom/csd-wacom-device.c:1259
-msgid "Left Touchring Mode Switch"
-msgstr "Chapga teginish rejimini almashtirish"
-
-#: panels/wacom/csd-wacom-device.c:1261
-msgid "Right Touchring Mode Switch"
-msgstr "O‘ng teginish rejimini almashtirish"
-
-#: panels/wacom/csd-wacom-device.c:1264
-msgid "Left Touchstrip Mode Switch"
-msgstr "Chap sensorli chiziq rejimini almashtirish"
-
-#: panels/wacom/csd-wacom-device.c:1266
-msgid "Right Touchstrip Mode Switch"
-msgstr "O‘ng sensorli chiziq rejimini almashtirish"
-
-#: panels/wacom/csd-wacom-device.c:1271
-#, c-format
-msgid "Mode Switch #%d"
-msgstr "#%d ga o‘zgartirish rejimi"
-
-#: panels/wacom/csd-wacom-device.c:1375
-#, c-format
-msgid "Left Button #%d"
-msgstr "#%d Tugma chapga"
-
-#: panels/wacom/csd-wacom-device.c:1378
-#, c-format
-msgid "Right Button #%d"
-msgstr "#%d Tugma o‘ngga"
-
-#: panels/wacom/csd-wacom-device.c:1381
-#, c-format
-msgid "Top Button #%d"
-msgstr "#%d tugma yuqoriga"
-
-#: panels/wacom/csd-wacom-device.c:1384
-#, c-format
-msgid "Bottom Button #%d"
-msgstr "#%d Tugmapastga"
+#: panels/wacom/csd-wacom-key-shortcut-button.c:217
+msgid "New shortcut…"
+msgstr "Yangi yorliq…"
 
 #: panels/network/connection-editor/ce-page-8021x-security.c:101
 #: panels/network/connection-editor/ce-page-security.c:459
@@ -1623,22 +1514,6 @@ msgid "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
 msgstr ""
 "noto‘gri wpa-psk: 64 baytli kalitni hex sifatida talqin qilib bo‘lmaydi"
 
-#. Text printed on screen
-#: panels/wacom/calibrator/gui_gtk.c:78
-msgid "Screen Calibration"
-msgstr "Ekranni kalibrlash/sozlash"
-
-#: panels/wacom/calibrator/gui_gtk.c:79
-msgid ""
-"Please tap the target markers as they appear on screen to calibrate the "
-"tablet."
-msgstr ""
-"Ekranni kalibrlash (sozlash) uchun ekranda chiqqan belgilarni bosing."
-
-#: panels/wacom/calibrator/gui_gtk.c:368
-msgid "Mis-click detected, restarting..."
-msgstr "Noto‘gri bosish aniqlandi, qayta yuklanmoqda..."
-
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
 msgstr "_Barcha Parametrlar"
@@ -1688,7 +1563,7 @@ msgctxt "hotspot"
 msgid "Hotspot"
 msgstr "Hotspot"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:20
+#: panels/color/color.ui.h:3 generate_additional_files.py:23
 msgid "Color"
 msgstr "Rang"
 
@@ -1914,7 +1789,7 @@ msgstr "IMEI"
 msgid "Provider"
 msgstr "Provayder"
 
-#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:50
+#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:63
 msgid "Network"
 msgstr "Tarmoq"
 
@@ -2351,142 +2226,131 @@ msgstr ""
 msgid "Map Buttons"
 msgstr "Tugmalar xaritasi"
 
-#: panels/wacom/button-mapping.ui.h:2
+#: panels/wacom/button-mapping.ui.h:3
 msgid "Map buttons to functions"
 msgstr "Tugmalarni funksiyalarga moslash"
 
-#: panels/wacom/button-mapping.ui.h:3
+#: panels/wacom/button-mapping.ui.h:4
 msgid ""
-"To edit a shortcut, click the row and hold down the new keys or press "
-"Backspace to clear."
+"To edit a shortcut, choose the “Send Keystroke” action, press the keyboard "
+"shortcut button and hold down the new keys or press Backspace to clear."
 msgstr ""
-"Tezkor usulni tahrirlash uchun satrni sichqoncha ko‘rsatgichi bilan tanlang "
-"va yangi tugmalarni bosing yoki  Backspace tugmasi bilan tozalang."
+"Yorliqni tahrirlash uchun “Klaviaturani yuborish” amalini tanlang, "
+"klaviatura yorliq tugmasini bosing va yangi tugmachalarni bosib turing yoki "
+"tozalash uchun Backspace tugmasini bosing."
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:1
-msgid "Tablet (absolute)"
-msgstr "Planshet (mutlaqo)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:2
-msgid "Touchpad (relative)"
-msgstr "Tachpad (nisbiy)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:3
-msgid "Tablet Preferences"
-msgstr "Planshet parametrlari"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:4
 msgid "No tablet detected"
 msgstr "Birorta ham planshet topilmadi"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:5
-msgid "Please plug in or turn on your graphics tablet"
-msgstr "Grafik planshetni ulang yoki uni yoqing"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:2
+msgid "Please plug in or turn on your Wacom tablet"
+msgstr "Wacom planshetingizni ulang yoki yoqing"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+#: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Bluetooth Settings"
 msgstr "Bluetooth parametrlari"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:60
-msgid "Graphics Tablet"
-msgstr "Grafik Planshet"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:4
+msgid "Wacom Tablet"
+msgstr "Wacom plansheti"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:8
+#: panels/wacom/cinnamon-wacom-properties.ui.h:5
+msgid "Tracking Mode"
+msgstr "Kuzatuv rejimi"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+msgid "Left-Handed Orientation"
+msgstr "CHap-Qo‘l Orientasiya"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Map to Monitor…"
 msgstr "Monitorga moslash…"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:9
+#: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map Buttons…"
 msgstr "Tugmalarni joylash…"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+#: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Calibrate…"
 msgstr "Kalibrlash…"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+msgid "Adjust mouse settings"
+msgstr "Sichqoncha parametrlarini sozlash"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
 msgstr "Ekranning ruxsat berilgan imkoniyatini sozlash"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:12
-msgid "Tracking Mode"
-msgstr "Kuzatuv rejimi"
+msgid "Decouple Display"
+msgstr "Displeyni ajratish"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
-msgid "Left-Handed Orientation"
-msgstr "CHap-Qo‘l Orientasiya"
+msgid "Tablet (absolute)"
+msgstr "Planshet (mutlaqo)"
 
-#: panels/wacom/wacom-stylus-page.ui.h:1
-msgid "No Action"
-msgstr "Harakat yoʻq"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:14
+msgid "Touchpad (relative)"
+msgstr "Tachpad (nisbiy)"
 
 #: panels/wacom/wacom-stylus-page.ui.h:2
-msgid "Left Mouse Button Click"
-msgstr "Sichqonchaning chap tugmasini bosish"
-
-#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Middle Mouse Button Click"
 msgstr "Sichqonchaning o‘rta tugmasini bosish"
 
-#: panels/wacom/wacom-stylus-page.ui.h:4
+#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Right Mouse Button Click"
 msgstr "Sichqonchaning o‘ng tugmasini bosish"
 
-#: panels/wacom/wacom-stylus-page.ui.h:5
-msgid "Scroll Up"
-msgstr "Yuqoriga varaqlash"
-
-#: panels/wacom/wacom-stylus-page.ui.h:6
-msgid "Scroll Down"
-msgstr "Pastga varaqlash"
-
-#: panels/wacom/wacom-stylus-page.ui.h:7
-msgid "Scroll Left"
-msgstr "CHapga varaqlash"
-
-#: panels/wacom/wacom-stylus-page.ui.h:8
-msgid "Scroll Right"
-msgstr "O‘ngga varaqlash"
-
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:4
 msgid "Back"
 msgstr "Orqaga"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:5
 msgid "Forward"
 msgstr "Oldinga"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
-msgid "Stylus"
-msgstr "Pero"
+#: panels/wacom/wacom-stylus-page.ui.h:6
+msgid "No stylus found"
+msgstr "Stylus topilmadi"
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:7
+msgid ""
+"Please move your stylus to the proximity of the tablet to configure it"
+msgstr "Stilusni sozlash uchun uni planshetga yaqin joyga olib boring"
+
+#: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Eraser Pressure Feel"
 msgstr "O‘chirg‘ich bosimi sezgisi"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Soft"
 msgstr "Programma"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Firm"
 msgstr "Drayver"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Top Button"
 msgstr "YUqori Tugma"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Lower Button"
 msgstr "Pastki Tugma"
 
-#: panels/wacom/wacom-stylus-page.ui.h:17
+#: panels/wacom/wacom-stylus-page.ui.h:14
+msgid "Lowest Button"
+msgstr "Eng past tugma"
+
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Tip Pressure Feel"
 msgstr "Kesgich Bosimi Sezgisi"
 
-#: panels/wacom/wacom-stylus-page.ui.h:18
-msgid "Lowest Button"
-msgstr "Eng past tugma"
+#: panels/wacom/wacom-stylus-page.ui.h:16
+msgid "Test Your _Settings"
+msgstr "_Sozlamalarni tekshirib ko‘ring"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
@@ -2754,34 +2618,69 @@ msgstr "WEP inde_ks"
 msgid "_Type"
 msgstr "_Turi"
 
-#: generate_additional_files.py:20
+#: panels/wacom/calibrator/calibrator.ui.h:1
+msgid "Screen Calibration"
+msgstr "Ekranni kalibrlash/sozlash"
+
+#: panels/wacom/calibrator/calibrator.ui.h:2
+msgid ""
+"Please tap the target markers as they appear on screen to calibrate the "
+"tablet."
+msgstr ""
+"Ekranni kalibrlash (sozlash) uchun ekranda chiqqan belgilarni bosing."
+
+#: panels/wacom/calibrator/calibrator.ui.h:3
+msgid "Mis-click detected, restarting…"
+msgstr "Noto‘g‘ri bosish aniqlandi, qayta ishga tushirilmoqda…"
+
+#: generate_additional_files.py:23
 msgid "Color management settings"
 msgstr "Ranglarni boshqarish moslamalari"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:23
+msgid "Color, ICC, Profile, Calibrate, Printer, Display"
+msgstr "Rang, ICC, Profil, Kalibrlash, Printer, Displey"
+
+#: generate_additional_files.py:37
 msgid "Region & Language"
 msgstr "Regeon & Til"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:37
 msgid "Change your region and language settings"
 msgstr "Region va til moslamalarini o‘zgartirish"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Display"
 msgstr "Ekran"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Change resolution and position of monitors and projectors"
 msgstr ""
 "Monitorlar va proektorlar uchun ruxsat berilgan parametrlar (resolution) va "
 "ularning joyini o‘zgartirish"
 
 #: generate_additional_files.py:50
+msgid "Panel, Projector, xrandr, Screen, Resolution, Refresh"
+msgstr "Panel, Proyektor, xrandr, Ekran, Ruxsat, Yangilash"
+
+#: generate_additional_files.py:63
 msgid "Network settings"
 msgstr "Tarmoq moslamalari"
 
-#: generate_additional_files.py:60
+#: generate_additional_files.py:63
+msgid "Network, Wireless, IP, LAN, Proxy, Internet, WiFi"
+msgstr "Tarmoq, Simsiz, IP, LAN, Proksi, Internet, WiFi"
+
+#: generate_additional_files.py:76
+msgid "Graphics Tablet"
+msgstr "Grafik Planshet"
+
+#: generate_additional_files.py:76
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Grafik planshet uchun tugma joylarini o‘rnatish va pero sezgirligini moslash"
+
+#: generate_additional_files.py:76
+msgid "Tablet, Wacom, Stylus, Eraser, Mouse"
+msgstr "Planshet, Wacom, Stylus, Eraser, Sichqoncha"

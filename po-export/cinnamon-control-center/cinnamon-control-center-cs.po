@@ -21,18 +21,18 @@ msgstr ""
 "Report-Msgid-Bugs-To: "
 "http://bugzilla.gnome.org/enter_bug.cgi?product=cinnamon-control-"
 "center&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2022-06-15 16:20+0200\n"
-"PO-Revision-Date: 2022-07-16 13:09+0000\n"
+"POT-Creation-Date: 2022-12-16 13:55+0000\n"
+"PO-Revision-Date: 2022-11-18 10:43+0000\n"
 "Last-Translator: Marek Hladík <mhladik@seznam.cz>\n"
 "Language-Team: Czech <cinnamon-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
-"Language: cs\n"
+"X-Launchpad-Export-Date: 2022-12-17 04:59+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "X-Project-Style: gnome\n"
+"Language: cs\n"
 
 #. TRANSLATORS: this is where the user can click and import a profile
 #: panels/color/cc-color-panel.c:108
@@ -60,7 +60,7 @@ msgstr "Testovací profil: "
 #. TRANSLATORS: this is when the profile should be set for all users
 #: panels/color/cc-color-panel.c:185 panels/color/color.ui.h:9
 msgid "Set for all users"
-msgstr "Pro všechny uživatele"
+msgstr "Nastavit pro všechny uživatele"
 
 #. TRANSLATORS: this is when the profile should be set for all users
 #: panels/color/cc-color-panel.c:192
@@ -70,7 +70,7 @@ msgstr "Vytvořit virtuální zařízení"
 #. TRANSLATORS: an ICC profile is a file containing colorspace data
 #: panels/color/cc-color-panel.c:227
 msgid "Select ICC Profile File"
-msgstr "Výběr souboru s profilem ICC"
+msgstr "Vybrat souboru s profilem ICC"
 
 #: panels/color/cc-color-panel.c:230
 msgid "_Import"
@@ -628,7 +628,8 @@ msgstr "_Zapomenout"
 msgid "History"
 msgstr "Historie"
 
-#: panels/network/net-device-wifi.c:1903
+#: panels/network/net-device-wifi.c:1903 panels/wacom/cc-wacom-page.c:468
+#: panels/wacom/button-mapping.ui.h:2
 msgid "_Close"
 msgstr "_Zavřít"
 
@@ -973,163 +974,53 @@ msgid "Layout"
 msgstr "Rozvržení"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:227
+#: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "Default"
 msgstr "Výchozí"
 
-#: panels/wacom/cc-wacom-mapping-panel.c:298
+#: panels/wacom/cc-wacom-button-row.c:248
+#, c-format
+msgid "Button %d"
+msgstr "Tlačítko %d"
+
+#: panels/wacom/cc-wacom-mapping-panel.c:232
 msgid "Output:"
 msgstr "Výstup:"
 
 #. Keep ratio switch
-#: panels/wacom/cc-wacom-mapping-panel.c:310
+#: panels/wacom/cc-wacom-mapping-panel.c:244
 msgid "Keep aspect ratio (letterbox):"
 msgstr "Zachovat poměr (přidá černé pruhy):"
 
-#. Apply screen rotation
-#: panels/wacom/cc-wacom-mapping-panel.c:321
-msgid "Rotate the tablet when the screen is rotated:"
-msgstr "Otočit tablet když je otočená obrazovka:"
-
 #. Whole-desktop checkbox
-#: panels/wacom/cc-wacom-mapping-panel.c:332
+#: panels/wacom/cc-wacom-mapping-panel.c:255
 msgid "Map to single monitor"
 msgstr "Mapovat na jedinou obrazovku"
 
-#: panels/wacom/cc-wacom-nav-button.c:89
+#: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
 msgid "%d of %d"
 msgstr "%d z %d"
 
-#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
-msgctxt "Wacom action-type"
-msgid "None"
-msgstr "Žádná"
-
-#: panels/wacom/cc-wacom-page.c:119
-msgctxt "Wacom action-type"
-msgid "Send Keystroke"
-msgstr "Vyvolat stisk klávesy"
-
-#: panels/wacom/cc-wacom-page.c:120
-msgctxt "Wacom action-type"
-msgid "Switch Monitor"
-msgstr "Přepnout monitor"
-
-#: panels/wacom/cc-wacom-page.c:121
-msgctxt "Wacom action-type"
-msgid "Show On-Screen Help"
-msgstr "Zobrazit nápovědu na obrazovce"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Up"
-msgstr "Nahoru"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Down"
-msgstr "Dolů"
-
-#: panels/wacom/cc-wacom-page.c:663
-msgid "Switch Modes"
-msgstr "Přepnout režimy"
-
-#: panels/wacom/cc-wacom-page.c:753 panels/wacom/cc-wacom-stylus-page.c:394
-msgid "Button"
-msgstr "Tlačítko"
-
-#: panels/wacom/cc-wacom-page.c:790
-msgid "Type"
-msgstr "Typ"
-
-#: panels/wacom/cc-wacom-page.c:811
-msgid "Action"
-msgstr "Akce"
-
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:465
 msgid "Display Mapping"
 msgstr "Mapování zobrazení"
 
-#. If no mode is available, we use "left-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1115
-msgid "Left Ring"
-msgstr "Levý dotykový prstenec"
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+msgid "Stylus"
+msgstr "Pero"
 
-#: panels/wacom/csd-wacom-device.c:1125
-#, c-format
-msgid "Left Ring Mode #%d"
-msgstr "Režim levého dotykového prstence č. %d"
+#: panels/wacom/cc-wacom-panel.c:669
+msgid "Tablet"
+msgstr "Tablet"
 
-#. If no mode is available, we use "right-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1144
-msgid "Right Ring"
-msgstr "Pravý dotykový prstenec"
+#: panels/wacom/cc-wacom-stylus-page.c:362
+msgid "Button"
+msgstr "Tlačítko"
 
-#: panels/wacom/csd-wacom-device.c:1154
-#, c-format
-msgid "Right Ring Mode #%d"
-msgstr "Režim pravého dotykového prstence č. %d"
-
-#. If no mode is available, we use "left-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1195
-msgid "Left Touchstrip"
-msgstr "Levý dotykový pruh"
-
-#: panels/wacom/csd-wacom-device.c:1205
-#, c-format
-msgid "Left Touchstrip Mode #%d"
-msgstr "Režim levého dotykového pruhu č. %d"
-
-#. If no mode is available, we use "right-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1224
-msgid "Right Touchstrip"
-msgstr "Pravý dotykový pruh"
-
-#: panels/wacom/csd-wacom-device.c:1234
-#, c-format
-msgid "Right Touchstrip Mode #%d"
-msgstr "Režim pravého dotykového pruhu č. %d"
-
-#: panels/wacom/csd-wacom-device.c:1259
-msgid "Left Touchring Mode Switch"
-msgstr "Přepínač režimů levého dotykového prstence"
-
-#: panels/wacom/csd-wacom-device.c:1261
-msgid "Right Touchring Mode Switch"
-msgstr "Přepínač režimů pravého dotykového prstence"
-
-#: panels/wacom/csd-wacom-device.c:1264
-msgid "Left Touchstrip Mode Switch"
-msgstr "Přepínač režimů levého dotykového pruhu"
-
-#: panels/wacom/csd-wacom-device.c:1266
-msgid "Right Touchstrip Mode Switch"
-msgstr "Přepínač režimů pravého dotykového pruhu"
-
-#: panels/wacom/csd-wacom-device.c:1271
-#, c-format
-msgid "Mode Switch #%d"
-msgstr "Přepínač režimů č. %d"
-
-#: panels/wacom/csd-wacom-device.c:1375
-#, c-format
-msgid "Left Button #%d"
-msgstr "Levé tlačítko č. %d"
-
-#: panels/wacom/csd-wacom-device.c:1378
-#, c-format
-msgid "Right Button #%d"
-msgstr "Pravé tlačítko č. %d"
-
-#: panels/wacom/csd-wacom-device.c:1381
-#, c-format
-msgid "Top Button #%d"
-msgstr "Horní tlačítko č. %d"
-
-#: panels/wacom/csd-wacom-device.c:1384
-#, c-format
-msgid "Bottom Button #%d"
-msgstr "Dolní tlačítko č. %d"
+#: panels/wacom/csd-wacom-key-shortcut-button.c:217
+msgid "New shortcut…"
+msgstr "Nová klávesová zkratka…"
 
 #: panels/network/connection-editor/ce-page-8021x-security.c:101
 #: panels/network/connection-editor/ce-page-security.c:459
@@ -1336,7 +1227,7 @@ msgstr "Přidat VPN"
 
 #: panels/network/connection-editor/vpn-helpers.c:141
 msgid "Cannot import VPN connection"
-msgstr ""
+msgstr "Nelze importovat připojení VPN"
 
 #: panels/network/connection-editor/vpn-helpers.c:143
 #, c-format
@@ -1346,10 +1237,14 @@ msgid ""
 "\n"
 "Error: %s."
 msgstr ""
+"Soubor „%s“ nelze přečíst nebo neobsahuje rozpoznatelné informace o "
+"připojení VPN\n"
+"\n"
+"Chyba: %s."
 
 #: panels/network/connection-editor/vpn-helpers.c:178
 msgid "Select file to import"
-msgstr ""
+msgstr "Vybrat soubor pro import"
 
 #: panels/network/connection-editor/vpn-helpers.c:182
 msgid "_Open"
@@ -1367,7 +1262,7 @@ msgstr "Nah_radit"
 #: panels/network/connection-editor/vpn-helpers.c:234
 #, c-format
 msgid "Do you want to replace %s with the VPN connection you are saving?"
-msgstr ""
+msgstr "Chcete nahradit %s připojením VPN, které ukládáte?"
 
 #: panels/network/connection-editor/vpn-helpers.c:270
 msgid "Cannot export VPN connection"
@@ -1380,6 +1275,9 @@ msgid ""
 "\n"
 "Error: %s."
 msgstr ""
+"Připojení VPN „%s“ nemůže být exportováno do %s.\n"
+"\n"
+"Chyba: %s."
 
 #: panels/network/connection-editor/vpn-helpers.c:307
 msgid "Export VPN connection"
@@ -1427,79 +1325,83 @@ msgstr "MSCHAPv2"
 
 #: panels/network/wireless-security/eap-method-fast.c:406
 msgid "Choose a PAC file"
-msgstr ""
+msgstr "Vybrat soubor PAC"
 
 #: panels/network/wireless-security/eap-method-fast.c:413
 msgid "PAC files (*.pac)"
-msgstr ""
+msgstr "Soubory PAC (*.pac)"
 
 #: panels/network/wireless-security/eap-method-leap.c:65
 msgid "missing EAP-LEAP username"
-msgstr ""
+msgstr "chybí uživatelské jméno pro EAP-LEAP"
 
 #: panels/network/wireless-security/eap-method-leap.c:74
 msgid "missing EAP-LEAP password"
-msgstr ""
+msgstr "chybí heslo pro EAP-LEAP"
 
 #: panels/network/wireless-security/eap-method-peap.c:63
 #, c-format
 msgid "invalid EAP-PEAP CA certificate: %s"
-msgstr ""
+msgstr "neplatný certifikát EAP-PEAP certifikační autority: %s"
 
 #: panels/network/wireless-security/eap-method-peap.c:68
 msgid "invalid EAP-PEAP CA certificate: no certificate specified"
 msgstr ""
+"neplatný certifikát EAP-PEAP certifikační autority: žádný certifikát není "
+"zadán"
 
 #: panels/network/wireless-security/eap-method-peap.c:287
 #: panels/network/wireless-security/eap-method-ttls.c:318
 #: panels/network/wireless-security/wireless-security.c:439
 msgid "MD5"
-msgstr ""
+msgstr "MD5"
 
 #: panels/network/wireless-security/eap-method-peap.c:381
 #: panels/network/wireless-security/eap-method-tls.c:501
 #: panels/network/wireless-security/eap-method-ttls.c:412
 msgid "Choose a Certificate Authority certificate"
-msgstr ""
+msgstr "Vybrat certifikát certifikační autority"
 
 #: panels/network/wireless-security/eap-method-simple.c:74
 msgid "missing EAP username"
-msgstr ""
+msgstr "chybí uživatelské jméno pro EAP"
 
 #: panels/network/wireless-security/eap-method-simple.c:87
 msgid "missing EAP password"
-msgstr ""
+msgstr "chybí heslo pro EAP"
 
 #: panels/network/wireless-security/eap-method-tls.c:68
 msgid "missing EAP-TLS identity"
-msgstr ""
+msgstr "chybí identita pro EAP-TLS"
 
 #: panels/network/wireless-security/eap-method-tls.c:77
 #, c-format
 msgid "invalid EAP-TLS CA certificate: %s"
-msgstr ""
+msgstr "neplatný certifikát EAP-TLS certifikační autority: %s"
 
 #: panels/network/wireless-security/eap-method-tls.c:84
 msgid "invalid EAP-TLS CA certificate: no certificate specified"
 msgstr ""
+"neplatný certifikát EAP-TLS certifikační autority: žádný certifikát není "
+"zadán"
 
 #: panels/network/wireless-security/eap-method-tls.c:95
 msgid "invalid EAP-TLS password: missing"
-msgstr ""
+msgstr "neplatné heslo pro EAP-TLS: chybí"
 
 #: panels/network/wireless-security/eap-method-tls.c:109
 #, c-format
 msgid "invalid EAP-TLS private-key: %s"
-msgstr ""
+msgstr "neplatný soukromý klíč pro EAP-TLS: %s"
 
 #: panels/network/wireless-security/eap-method-tls.c:119
 #, c-format
 msgid "invalid EAP-TLS user-certificate: %s"
-msgstr ""
+msgstr "neplatný uživatelský certifikát pro EAP-TLS: %s"
 
 #: panels/network/wireless-security/eap-method-tls.c:316
 msgid "Unencrypted private keys are insecure"
-msgstr ""
+msgstr "Nešifrované soukromé klíče nejsou bezpečné"
 
 #: panels/network/wireless-security/eap-method-tls.c:319
 msgid ""
@@ -1509,83 +1411,92 @@ msgid ""
 "\n"
 "(You can password-protect your private key with openssl)"
 msgstr ""
+"Zdá se, že vybraný soukromý klíč není chráněn heslem. Mohlo by dojít ke "
+"kompromitaci vašich bezpečnostních údajů. Vyberte prosím soukromý klíč "
+"chráněný heslem.\n"
+"\n"
+"(Svůj soukromý klíč můžete chránit heslem pomocí openssl)"
 
 #: panels/network/wireless-security/eap-method-tls.c:495
 msgid "Choose your personal certificate"
-msgstr ""
+msgstr "Vyberte svůj osobní certifikát"
 
 #: panels/network/wireless-security/eap-method-tls.c:507
 msgid "Choose your private key"
-msgstr ""
+msgstr "Vyberte svůj soukromý klíč"
 
 #: panels/network/wireless-security/eap-method-ttls.c:63
 #, c-format
 msgid "invalid EAP-TTLS CA certificate: %s"
-msgstr ""
+msgstr "neplatný certifikát EAP-TTLS certifikační autority: %s"
 
 #: panels/network/wireless-security/eap-method-ttls.c:68
 msgid "invalid EAP-TTLS CA certificate: no certificate specified"
 msgstr ""
+"neplatný certifikát EAP-TTLS certifikační autority: žádný certifikát není "
+"zadán"
 
 #: panels/network/wireless-security/eap-method-ttls.c:258
 msgid "PAP"
-msgstr ""
+msgstr "PAP"
 
 #: panels/network/wireless-security/eap-method-ttls.c:273
 msgid "MSCHAP"
-msgstr ""
+msgstr "MSCHAP"
 
 #: panels/network/wireless-security/eap-method-ttls.c:303
 msgid "CHAP"
-msgstr ""
+msgstr "CHAP"
 
 #: panels/network/wireless-security/wireless-security.c:87
 msgid "Unknown error validating 802.1x security"
-msgstr ""
+msgstr "Neznámá chyba při ověřování bezpečnosti 802.1x"
 
 #: panels/network/wireless-security/wireless-security.c:451
 msgid "TLS"
-msgstr ""
+msgstr "TLS"
 
 #: panels/network/wireless-security/wireless-security.c:475
 msgid "PWD"
-msgstr ""
+msgstr "PWD"
 
 #: panels/network/wireless-security/wireless-security.c:486
 msgid "FAST"
-msgstr ""
+msgstr "FAST"
 
 #: panels/network/wireless-security/wireless-security.c:497
 msgid "Tunneled TLS"
-msgstr ""
+msgstr "Tunelované TLS"
 
 #: panels/network/wireless-security/wireless-security.c:508
 msgid "Protected EAP (PEAP)"
-msgstr ""
+msgstr "Chráněné EAP (PEAP)"
 
 #: panels/network/wireless-security/ws-leap.c:63
 msgid "missing leap-username"
-msgstr ""
+msgstr "chybí uživatelské jméno pro LEAP"
 
 #: panels/network/wireless-security/ws-leap.c:74
 msgid "missing leap-password"
-msgstr ""
+msgstr "chybí heslo pro LEAP"
 
 #: panels/network/wireless-security/ws-wep-key.c:107
 msgid "missing wep-key"
-msgstr ""
+msgstr "chybí klíč WEP"
 
 #: panels/network/wireless-security/ws-wep-key.c:116
 #, c-format
 msgid ""
 "invalid wep-key: key with a length of %zu must contain only hex-digits"
 msgstr ""
+"neplatný klíč WEP: klíč s délkou %zu musí obsahovat jen šestnáctkové číslice"
 
 #: panels/network/wireless-security/ws-wep-key.c:124
 #, c-format
 msgid ""
 "invalid wep-key: key with a length of %zu must contain only ascii characters"
 msgstr ""
+"neplatný klíč WEP: klíč s délkou %zu musí obsahovat jen znaky sady ASCII"
 
 #: panels/network/wireless-security/ws-wep-key.c:130
 #, c-format
@@ -1593,14 +1504,16 @@ msgid ""
 "invalid wep-key: wrong key length %zu. A key must be either of length 5/13 "
 "(ascii) or 10/26 (hex)"
 msgstr ""
+"neplatný klíč WEP: nesprávná délka klíče %zu. Klíč musí mít délku 5/13 "
+"(ASCII) nebo 10/26 (HEX)"
 
 #: panels/network/wireless-security/ws-wep-key.c:137
 msgid "invalid wep-key: passphrase must be non-empty"
-msgstr ""
+msgstr "neplatný klíč WEP: heslo nesmí být prázdné"
 
 #: panels/network/wireless-security/ws-wep-key.c:139
 msgid "invalid wep-key: passphrase must be shorter than 64 characters"
-msgstr ""
+msgstr "neplatný klíč WEP: heslo musí být kratší než 64 znaků"
 
 #: panels/network/wireless-security/ws-wpa-psk.c:70
 #, c-format
@@ -1608,25 +1521,13 @@ msgid ""
 "invalid wpa-psk: invalid key-length %zu. Must be [8,63] bytes or 64 hex "
 "digits"
 msgstr ""
+"neplatný klíč WPA-PSK: neplatná délka klíče %zu. Musí být [8,63] bajtů nebo "
+"64 šestnáctkových číslic"
 
 #: panels/network/wireless-security/ws-wpa-psk.c:79
 msgid "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
 msgstr ""
-
-#. Text printed on screen
-#: panels/wacom/calibrator/gui_gtk.c:78
-msgid "Screen Calibration"
-msgstr ""
-
-#: panels/wacom/calibrator/gui_gtk.c:79
-msgid ""
-"Please tap the target markers as they appear on screen to calibrate the "
-"tablet."
-msgstr ""
-
-#: panels/wacom/calibrator/gui_gtk.c:368
-msgid "Mis-click detected, restarting..."
-msgstr ""
+"neplatný klíč WPA-PSK: nelze zpracovat klíč s 64 bajty jako šestnáctkový"
 
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
@@ -1677,7 +1578,7 @@ msgctxt "hotspot"
 msgid "Hotspot"
 msgstr "Hotspot"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:20
+#: panels/color/color.ui.h:3 generate_additional_files.py:23
 msgid "Color"
 msgstr "Barva"
 
@@ -1841,7 +1742,7 @@ msgstr "Prosinec"
 
 #: panels/display/cc-display-panel.ui.h:1
 msgid "Display Arrangement"
-msgstr ""
+msgstr "Uspořádání displeje"
 
 #: panels/display/cc-display-panel.ui.h:2
 msgid "Set as Primary"
@@ -1849,31 +1750,31 @@ msgstr "Nastavit jako hlavní"
 
 #: panels/display/cc-display-panel.ui.h:3
 msgid "Display Configuration"
-msgstr ""
+msgstr "Nastavení displeje"
 
 #: panels/display/cc-display-panel.ui.h:4
 msgid "Join Displays"
-msgstr ""
+msgstr "Sloučit displeje"
 
 #: panels/display/cc-display-panel.ui.h:5
 msgid "Mirror"
-msgstr ""
+msgstr "Zrcadlit"
 
 #: panels/display/cc-display-panel.ui.h:6
 msgid "Displays"
-msgstr ""
+msgstr "Displeje"
 
 #: panels/display/cc-display-panel.ui.h:7
 msgid "Reset to Defaults"
-msgstr ""
+msgstr "Obnovit na výchozí hodnoty"
 
 #: panels/display/cc-display-panel.ui.h:8
 msgid "Cancel changes"
-msgstr ""
+msgstr "Zrušit změny"
 
 #: panels/display/cc-display-panel.ui.h:9
 msgid "Apply"
-msgstr ""
+msgstr "Použít"
 
 #: panels/display/cc-display-settings.ui.h:1
 msgid "Resolution"
@@ -1889,7 +1790,7 @@ msgstr "Otočení"
 
 #: panels/display/cc-display-settings.ui.h:5
 msgid "Adjust for TV"
-msgstr ""
+msgstr "Přizpůsobit pro TV"
 
 #: panels/network/network-ethernet.ui.h:2
 msgid "_Add Profile…"
@@ -1903,7 +1804,7 @@ msgstr "IMEI"
 msgid "Provider"
 msgstr "Poskytovatel"
 
-#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:50
+#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:63
 msgid "Network"
 msgstr "Síť"
 
@@ -2339,142 +2240,132 @@ msgstr ""
 msgid "Map Buttons"
 msgstr "Mapování tlačítek"
 
-#: panels/wacom/button-mapping.ui.h:2
+#: panels/wacom/button-mapping.ui.h:3
 msgid "Map buttons to functions"
 msgstr "Mapování tlačítek na funkce"
 
-#: panels/wacom/button-mapping.ui.h:3
+#: panels/wacom/button-mapping.ui.h:4
 msgid ""
-"To edit a shortcut, click the row and hold down the new keys or press "
-"Backspace to clear."
+"To edit a shortcut, choose the “Send Keystroke” action, press the keyboard "
+"shortcut button and hold down the new keys or press Backspace to clear."
 msgstr ""
-"Zkratku upravíte kliknutím na odpovídající řádek a stiknutím nových kláves, "
-"vymazání provedete klávesou Backspace."
+"Chcete-li upravit zkratku, vyberte akci „Vyvolat klávesovou zkratku“, "
+"stiskněte tlačítko klávesové zkratky a podržte nové klávesy, nebo stisknutím "
+"klávesy Backspace vymažte."
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:1
-msgid "Tablet (absolute)"
-msgstr "Jako tablet (absolutně)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:2
-msgid "Touchpad (relative)"
-msgstr "Jako touchpad (relativně)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:3
-msgid "Tablet Preferences"
-msgstr "Předvolby tabletu"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:4
 msgid "No tablet detected"
 msgstr "Nenalezen žádný tablet"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:5
-msgid "Please plug in or turn on your graphics tablet"
-msgstr "Zapojte nebo zapněte svůj tablet"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:2
+msgid "Please plug in or turn on your Wacom tablet"
+msgstr "Zapojte nebo zapněte tablet Wacom"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+#: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Bluetooth Settings"
 msgstr "Nastavení Bluetooth"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:60
-msgid "Graphics Tablet"
-msgstr "Grafický tablet"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:4
+msgid "Wacom Tablet"
+msgstr "Grafický tablet Wacom"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:8
+#: panels/wacom/cinnamon-wacom-properties.ui.h:5
+msgid "Tracking Mode"
+msgstr "Režim sledování stopy:"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+msgid "Left-Handed Orientation"
+msgstr "Orientace pro leváky"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Map to Monitor…"
 msgstr "Namapovat na monitor…"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:9
+#: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map Buttons…"
 msgstr "Namapovat tlačítka…"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+#: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Calibrate…"
 msgstr "Kalibrovat…"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+msgid "Adjust mouse settings"
+msgstr "Přizpůsobit nastavení myši"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
 msgstr "Přizpůsobit rozlišení displeje"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:12
-msgid "Tracking Mode"
-msgstr "Režim sledování stopy:"
+msgid "Decouple Display"
+msgstr "Rozdělit displej"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
-msgid "Left-Handed Orientation"
-msgstr "Orientace pro leváky"
+msgid "Tablet (absolute)"
+msgstr "Jako tablet (absolutně)"
 
-#: panels/wacom/wacom-stylus-page.ui.h:1
-msgid "No Action"
-msgstr "Žádná činnost"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:14
+msgid "Touchpad (relative)"
+msgstr "Jako touchpad (relativně)"
 
 #: panels/wacom/wacom-stylus-page.ui.h:2
-msgid "Left Mouse Button Click"
-msgstr "Kliknutí levým tlačítkem myši"
-
-#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Middle Mouse Button Click"
 msgstr "Kliknutí prostředním tlačítkem myši"
 
-#: panels/wacom/wacom-stylus-page.ui.h:4
+#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Right Mouse Button Click"
 msgstr "Kliknutí pravým tlačítkem myši"
 
-#: panels/wacom/wacom-stylus-page.ui.h:5
-msgid "Scroll Up"
-msgstr "Posunování nahoru"
-
-#: panels/wacom/wacom-stylus-page.ui.h:6
-msgid "Scroll Down"
-msgstr "Posunování dolů"
-
-#: panels/wacom/wacom-stylus-page.ui.h:7
-msgid "Scroll Left"
-msgstr "Posunování vlevo"
-
-#: panels/wacom/wacom-stylus-page.ui.h:8
-msgid "Scroll Right"
-msgstr "Posunování vpravo"
-
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:4
 msgid "Back"
 msgstr "Zpět"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:5
 msgid "Forward"
 msgstr "Vpřed"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
-msgid "Stylus"
-msgstr "Pero"
+#: panels/wacom/wacom-stylus-page.ui.h:6
+msgid "No stylus found"
+msgstr "Nebyl nalezen žádný stylus"
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:7
+msgid ""
+"Please move your stylus to the proximity of the tablet to configure it"
+msgstr ""
+"Přesuňte stylus pero do blízkosti tabletu, aby jej bylo možné nastavit"
+
+#: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Eraser Pressure Feel"
 msgstr "Pocit z přítlaku gumy"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Soft"
 msgstr "Měkký"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Firm"
 msgstr "Tvrdý"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Top Button"
 msgstr "Horní tlačítko"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Lower Button"
 msgstr "Dolní tlačítko"
 
-#: panels/wacom/wacom-stylus-page.ui.h:17
+#: panels/wacom/wacom-stylus-page.ui.h:14
+msgid "Lowest Button"
+msgstr "Tlačítko nejníže"
+
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Tip Pressure Feel"
 msgstr "Pocit z přítlaku hrotu"
 
-#: panels/wacom/wacom-stylus-page.ui.h:18
-msgid "Lowest Button"
-msgstr "Tlačítko nejníže"
+#: panels/wacom/wacom-stylus-page.ui.h:16
+msgid "Test Your _Settings"
+msgstr "Vyzkoušet na_stavení"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
@@ -2741,32 +2632,68 @@ msgstr "WEP inde_x"
 msgid "_Type"
 msgstr "_Typ"
 
-#: generate_additional_files.py:20
+#: panels/wacom/calibrator/calibrator.ui.h:1
+msgid "Screen Calibration"
+msgstr "Kalibrace obrazovky"
+
+#: panels/wacom/calibrator/calibrator.ui.h:2
+msgid ""
+"Please tap the target markers as they appear on screen to calibrate the "
+"tablet."
+msgstr ""
+"Chcete-li tablet zkalibrovat, klepněte na cílové značky zobrazené na "
+"obrazovce."
+
+#: panels/wacom/calibrator/calibrator.ui.h:3
+msgid "Mis-click detected, restarting…"
+msgstr "Zjištěno chybné kliknutí, začíná se znovu…"
+
+#: generate_additional_files.py:23
 msgid "Color management settings"
 msgstr "Nastavení správy barev"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:23
+msgid "Color, ICC, Profile, Calibrate, Printer, Display"
+msgstr "Barva, ICC, profil, kalibrace, tisk, displeje"
+
+#: generate_additional_files.py:37
 msgid "Region & Language"
 msgstr "Region a jazyk"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:37
 msgid "Change your region and language settings"
 msgstr "Změňte svůj region a nastavení jazyka"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Display"
 msgstr "Displej"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Change resolution and position of monitors and projectors"
 msgstr "Změnit rozlišení a polohu monitorů a projektorů"
 
 #: generate_additional_files.py:50
+msgid "Panel, Projector, xrandr, Screen, Resolution, Refresh"
+msgstr "Panel, projektor, xrandr, obrazovka, rozlišení, obnovení"
+
+#: generate_additional_files.py:63
 msgid "Network settings"
 msgstr "Nastavení sítě"
 
-#: generate_additional_files.py:60
+#: generate_additional_files.py:63
+msgid "Network, Wireless, IP, LAN, Proxy, Internet, WiFi"
+msgstr "Síť, bezdrátová, IP, LAN, proxy, Internet, WiFi"
+
+#: generate_additional_files.py:76
+msgid "Graphics Tablet"
+msgstr "Grafický tablet"
+
+#: generate_additional_files.py:76
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Nastavit mapování tlačítek a přizpůsobit citlivost grafických tabletů"
+
+#: generate_additional_files.py:76
+msgid "Tablet, Wacom, Stylus, Eraser, Mouse"
+msgstr "Tablet, Wacom, stylus, guma, myš"

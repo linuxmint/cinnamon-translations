@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: cinnamon-control-center master\n"
 "Report-Msgid-Bugs-To: https://launchpad.net/~linuxmint-translation-team-"
 "japanese\n"
-"POT-Creation-Date: 2022-06-15 16:20+0200\n"
+"POT-Creation-Date: 2022-12-16 13:55+0000\n"
 "PO-Revision-Date: 2022-06-18 23:27+0000\n"
 "Last-Translator: vega m57 <Unknown>\n"
 "Language-Team: Japanese <https://launchpad.net/~linuxmint-translation-team-"
@@ -28,8 +28,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-17 05:00+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "Language: ja\n"
 
 #. TRANSLATORS: this is where the user can click and import a profile
@@ -609,7 +609,8 @@ msgstr "破棄 (_F)"
 msgid "History"
 msgstr "履歴"
 
-#: panels/network/net-device-wifi.c:1903
+#: panels/network/net-device-wifi.c:1903 panels/wacom/cc-wacom-page.c:468
+#: panels/wacom/button-mapping.ui.h:2
 msgid "_Close"
 msgstr "閉じる (_C)"
 
@@ -952,163 +953,53 @@ msgid "Layout"
 msgstr "レイアウト"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:227
+#: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "Default"
 msgstr "既定"
 
-#: panels/wacom/cc-wacom-mapping-panel.c:298
+#: panels/wacom/cc-wacom-button-row.c:248
+#, c-format
+msgid "Button %d"
+msgstr ""
+
+#: panels/wacom/cc-wacom-mapping-panel.c:232
 msgid "Output:"
 msgstr "出力:"
 
 #. Keep ratio switch
-#: panels/wacom/cc-wacom-mapping-panel.c:310
+#: panels/wacom/cc-wacom-mapping-panel.c:244
 msgid "Keep aspect ratio (letterbox):"
 msgstr "縦横比を保持 (レターボックス):"
 
-#. Apply screen rotation
-#: panels/wacom/cc-wacom-mapping-panel.c:321
-msgid "Rotate the tablet when the screen is rotated:"
-msgstr "画面の回転に合わせ、タブレットも回転:"
-
 #. Whole-desktop checkbox
-#: panels/wacom/cc-wacom-mapping-panel.c:332
+#: panels/wacom/cc-wacom-mapping-panel.c:255
 msgid "Map to single monitor"
 msgstr "ひとつのモニターに割り当てる"
 
-#: panels/wacom/cc-wacom-nav-button.c:89
+#: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
 msgid "%d of %d"
 msgstr "%d / %d"
 
-#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
-msgctxt "Wacom action-type"
-msgid "None"
-msgstr "なし"
-
-#: panels/wacom/cc-wacom-page.c:119
-msgctxt "Wacom action-type"
-msgid "Send Keystroke"
-msgstr "キーストロークを送信"
-
-#: panels/wacom/cc-wacom-page.c:120
-msgctxt "Wacom action-type"
-msgid "Switch Monitor"
-msgstr "モニターを切り替える"
-
-#: panels/wacom/cc-wacom-page.c:121
-msgctxt "Wacom action-type"
-msgid "Show On-Screen Help"
-msgstr "画面ヘルプを表示"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Up"
-msgstr "上へ"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Down"
-msgstr "下へ"
-
-#: panels/wacom/cc-wacom-page.c:663
-msgid "Switch Modes"
-msgstr "モードの切り替え"
-
-#: panels/wacom/cc-wacom-page.c:753 panels/wacom/cc-wacom-stylus-page.c:394
-msgid "Button"
-msgstr "ボタン"
-
-#: panels/wacom/cc-wacom-page.c:790
-msgid "Type"
-msgstr "種類"
-
-#: panels/wacom/cc-wacom-page.c:811
-msgid "Action"
-msgstr "動作"
-
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:465
 msgid "Display Mapping"
 msgstr "画面のマッピング"
 
-#. If no mode is available, we use "left-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1115
-msgid "Left Ring"
-msgstr "左タッチホイール"
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+msgid "Stylus"
+msgstr "スタイラス"
 
-#: panels/wacom/csd-wacom-device.c:1125
-#, c-format
-msgid "Left Ring Mode #%d"
-msgstr "左タッチホイールのモード #%d"
+#: panels/wacom/cc-wacom-panel.c:669
+msgid "Tablet"
+msgstr ""
 
-#. If no mode is available, we use "right-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1144
-msgid "Right Ring"
-msgstr "右タッチホイール"
+#: panels/wacom/cc-wacom-stylus-page.c:362
+msgid "Button"
+msgstr "ボタン"
 
-#: panels/wacom/csd-wacom-device.c:1154
-#, c-format
-msgid "Right Ring Mode #%d"
-msgstr "右タッチホイールのモード #%d"
-
-#. If no mode is available, we use "left-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1195
-msgid "Left Touchstrip"
-msgstr "左トラックパッド"
-
-#: panels/wacom/csd-wacom-device.c:1205
-#, c-format
-msgid "Left Touchstrip Mode #%d"
-msgstr "左トラックパッドのモード #%d"
-
-#. If no mode is available, we use "right-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1224
-msgid "Right Touchstrip"
-msgstr "右トラックパッド"
-
-#: panels/wacom/csd-wacom-device.c:1234
-#, c-format
-msgid "Right Touchstrip Mode #%d"
-msgstr "右トラックパッドのモード #%d"
-
-#: panels/wacom/csd-wacom-device.c:1259
-msgid "Left Touchring Mode Switch"
-msgstr "左タッチホイールのモード切り替え"
-
-#: panels/wacom/csd-wacom-device.c:1261
-msgid "Right Touchring Mode Switch"
-msgstr "右タッチホイールのモード切り替え"
-
-#: panels/wacom/csd-wacom-device.c:1264
-msgid "Left Touchstrip Mode Switch"
-msgstr "左トラックパッドのモード切り替え"
-
-#: panels/wacom/csd-wacom-device.c:1266
-msgid "Right Touchstrip Mode Switch"
-msgstr "右トラックパッドのモード切り替え"
-
-#: panels/wacom/csd-wacom-device.c:1271
-#, c-format
-msgid "Mode Switch #%d"
-msgstr "モード切り替え #%d"
-
-#: panels/wacom/csd-wacom-device.c:1375
-#, c-format
-msgid "Left Button #%d"
-msgstr "左ボタン #%d"
-
-#: panels/wacom/csd-wacom-device.c:1378
-#, c-format
-msgid "Right Button #%d"
-msgstr "右ボタン #%d"
-
-#: panels/wacom/csd-wacom-device.c:1381
-#, c-format
-msgid "Top Button #%d"
-msgstr "上ボタン #%d"
-
-#: panels/wacom/csd-wacom-device.c:1384
-#, c-format
-msgid "Bottom Button #%d"
-msgstr "下ボタン #%d"
+#: panels/wacom/csd-wacom-key-shortcut-button.c:217
+msgid "New shortcut…"
+msgstr ""
 
 #: panels/network/connection-editor/ce-page-8021x-security.c:101
 #: panels/network/connection-editor/ce-page-security.c:459
@@ -1604,21 +1495,6 @@ msgstr ""
 msgid "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
 msgstr "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
 
-#. Text printed on screen
-#: panels/wacom/calibrator/gui_gtk.c:78
-msgid "Screen Calibration"
-msgstr ""
-
-#: panels/wacom/calibrator/gui_gtk.c:79
-msgid ""
-"Please tap the target markers as they appear on screen to calibrate the "
-"tablet."
-msgstr ""
-
-#: panels/wacom/calibrator/gui_gtk.c:368
-msgid "Mis-click detected, restarting..."
-msgstr ""
-
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
 msgstr "全ての設定 (_A)"
@@ -1667,7 +1543,7 @@ msgctxt "hotspot"
 msgid "Hotspot"
 msgstr "アクセスポイント"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:20
+#: panels/color/color.ui.h:3 generate_additional_files.py:23
 msgid "Color"
 msgstr "色"
 
@@ -1889,7 +1765,7 @@ msgstr "識別番号"
 msgid "Provider"
 msgstr "プロバイダー"
 
-#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:50
+#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:63
 msgid "Network"
 msgstr "ネットワーク"
 
@@ -2315,140 +2191,128 @@ msgstr "現在のキーボードレイアウトの設定を、既定のものに
 msgid "Map Buttons"
 msgstr "ボタンの割り当て"
 
-#: panels/wacom/button-mapping.ui.h:2
+#: panels/wacom/button-mapping.ui.h:3
 msgid "Map buttons to functions"
 msgstr "ボタンへ機能を割り当てます"
 
-#: panels/wacom/button-mapping.ui.h:3
+#: panels/wacom/button-mapping.ui.h:4
 msgid ""
-"To edit a shortcut, click the row and hold down the new keys or press "
-"Backspace to clear."
-msgstr "ショートカットを編集するには、対応する行をクリックし、新しいキーの組み合わせを押すか、Backspace キーで取り消してください。"
+"To edit a shortcut, choose the “Send Keystroke” action, press the keyboard "
+"shortcut button and hold down the new keys or press Backspace to clear."
+msgstr ""
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:1
-msgid "Tablet (absolute)"
-msgstr "タブレット (絶対座標)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:2
-msgid "Touchpad (relative)"
-msgstr "タッチパッド (相対座標)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:3
-msgid "Tablet Preferences"
-msgstr "タブレットの設定"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:4
 msgid "No tablet detected"
 msgstr "タブレットを検出できません"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:5
-msgid "Please plug in or turn on your graphics tablet"
-msgstr "グラフィックタブレットを接続するか、電源を入れてください"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:2
+msgid "Please plug in or turn on your Wacom tablet"
+msgstr ""
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+#: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Bluetooth Settings"
 msgstr "Bluetooth の設定"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:60
-msgid "Graphics Tablet"
-msgstr "グラフィックタブレット"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:4
+msgid "Wacom Tablet"
+msgstr ""
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:8
+#: panels/wacom/cinnamon-wacom-properties.ui.h:5
+msgid "Tracking Mode"
+msgstr "検出モード"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+msgid "Left-Handed Orientation"
+msgstr "左手用"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Map to Monitor…"
 msgstr "モニターに割り当て…"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:9
+#: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map Buttons…"
 msgstr "ボタンの割り当て…"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+#: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Calibrate…"
 msgstr "較正…"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+msgid "Adjust mouse settings"
+msgstr ""
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
 msgstr "ディスプレイの解像度を調整"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:12
-msgid "Tracking Mode"
-msgstr "検出モード"
+msgid "Decouple Display"
+msgstr ""
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
-msgid "Left-Handed Orientation"
-msgstr "左手用"
+msgid "Tablet (absolute)"
+msgstr "タブレット (絶対座標)"
 
-#: panels/wacom/wacom-stylus-page.ui.h:1
-msgid "No Action"
-msgstr "何もしない"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:14
+msgid "Touchpad (relative)"
+msgstr "タッチパッド (相対座標)"
 
 #: panels/wacom/wacom-stylus-page.ui.h:2
-msgid "Left Mouse Button Click"
-msgstr "マウスの左ボタンクリック"
-
-#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Middle Mouse Button Click"
 msgstr "マウスの中ボタンクリック"
 
-#: panels/wacom/wacom-stylus-page.ui.h:4
+#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Right Mouse Button Click"
 msgstr "マウスの右ボタンクリック"
 
-#: panels/wacom/wacom-stylus-page.ui.h:5
-msgid "Scroll Up"
-msgstr "上にスクロール"
-
-#: panels/wacom/wacom-stylus-page.ui.h:6
-msgid "Scroll Down"
-msgstr "下にスクロール"
-
-#: panels/wacom/wacom-stylus-page.ui.h:7
-msgid "Scroll Left"
-msgstr "左にスクロール"
-
-#: panels/wacom/wacom-stylus-page.ui.h:8
-msgid "Scroll Right"
-msgstr "右にスクロール"
-
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:4
 msgid "Back"
 msgstr "戻る"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:5
 msgid "Forward"
 msgstr "進む"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
-msgid "Stylus"
-msgstr "スタイラス"
+#: panels/wacom/wacom-stylus-page.ui.h:6
+msgid "No stylus found"
+msgstr ""
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:7
+msgid ""
+"Please move your stylus to the proximity of the tablet to configure it"
+msgstr ""
+
+#: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Eraser Pressure Feel"
 msgstr "消しゴムの感触"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Soft"
 msgstr "柔らかい"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Firm"
 msgstr "硬い"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Top Button"
 msgstr "上のボタン"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Lower Button"
 msgstr "下のボタン"
 
-#: panels/wacom/wacom-stylus-page.ui.h:17
+#: panels/wacom/wacom-stylus-page.ui.h:14
+msgid "Lowest Button"
+msgstr "一番下のボタン"
+
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Tip Pressure Feel"
 msgstr "ペン先の感触"
 
-#: panels/wacom/wacom-stylus-page.ui.h:18
-msgid "Lowest Button"
-msgstr "一番下のボタン"
+#: panels/wacom/wacom-stylus-page.ui.h:16
+msgid "Test Your _Settings"
+msgstr ""
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
@@ -2711,31 +2575,65 @@ msgstr "WEPインデックス (_X)"
 msgid "_Type"
 msgstr "種類 (_T)"
 
-#: generate_additional_files.py:20
+#: panels/wacom/calibrator/calibrator.ui.h:1
+msgid "Screen Calibration"
+msgstr ""
+
+#: panels/wacom/calibrator/calibrator.ui.h:2
+msgid ""
+"Please tap the target markers as they appear on screen to calibrate the "
+"tablet."
+msgstr ""
+
+#: panels/wacom/calibrator/calibrator.ui.h:3
+msgid "Mis-click detected, restarting…"
+msgstr ""
+
+#: generate_additional_files.py:23
 msgid "Color management settings"
 msgstr "色管理の設定"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:23
+msgid "Color, ICC, Profile, Calibrate, Printer, Display"
+msgstr ""
+
+#: generate_additional_files.py:37
 msgid "Region & Language"
 msgstr "地域と言語"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:37
 msgid "Change your region and language settings"
 msgstr "地域と言語の設定を変更します"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Display"
 msgstr "ディスプレイ"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Change resolution and position of monitors and projectors"
 msgstr "モニターやプロジェクターの解像度と位置を変更します"
 
 #: generate_additional_files.py:50
+msgid "Panel, Projector, xrandr, Screen, Resolution, Refresh"
+msgstr ""
+
+#: generate_additional_files.py:63
 msgid "Network settings"
 msgstr "ネットワークの設定"
 
-#: generate_additional_files.py:60
+#: generate_additional_files.py:63
+msgid "Network, Wireless, IP, LAN, Proxy, Internet, WiFi"
+msgstr ""
+
+#: generate_additional_files.py:76
+msgid "Graphics Tablet"
+msgstr "グラフィックタブレット"
+
+#: generate_additional_files.py:76
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr "グラフィックタブレットのボタン割り当てや、スタイラス感度を調整します"
+
+#: generate_additional_files.py:76
+msgid "Tablet, Wacom, Stylus, Eraser, Mouse"
+msgstr ""

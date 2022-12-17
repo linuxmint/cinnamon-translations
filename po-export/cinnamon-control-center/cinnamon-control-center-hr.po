@@ -5,23 +5,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 16:20+0200\n"
-"PO-Revision-Date: 2022-06-26 11:14+0000\n"
-"Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
+"POT-Creation-Date: 2022-12-16 13:55+0000\n"
+"PO-Revision-Date: 2022-11-17 13:26+0000\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-17 05:01+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "Language: hr\n"
 
 #. TRANSLATORS: this is where the user can click and import a profile
 #: panels/color/cc-color-panel.c:108
 msgid "Other profile…"
-msgstr "Drugi profil..."
+msgstr "Drugi profil…"
 
 #. TRANSLATORS: this is a profile prefix to signify the
 #. * profile has been auto-generated for this hardware
@@ -235,7 +235,7 @@ msgstr "Engleski"
 
 #: panels/common/cc-common-language.c:535
 msgid "British English"
-msgstr "Britanski Engleski"
+msgstr "Britanski engleski"
 
 #: panels/common/cc-common-language.c:538
 msgid "German"
@@ -613,7 +613,8 @@ msgstr "_Zaboravi"
 msgid "History"
 msgstr "Povijest"
 
-#: panels/network/net-device-wifi.c:1903
+#: panels/network/net-device-wifi.c:1903 panels/wacom/cc-wacom-page.c:468
+#: panels/wacom/button-mapping.ui.h:2
 msgid "_Close"
 msgstr "_Zatvori"
 
@@ -958,163 +959,53 @@ msgid "Layout"
 msgstr "Izgled"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:227
+#: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "Default"
 msgstr "Uobičajeno"
 
-#: panels/wacom/cc-wacom-mapping-panel.c:298
+#: panels/wacom/cc-wacom-button-row.c:248
+#, c-format
+msgid "Button %d"
+msgstr "Tipka %d"
+
+#: panels/wacom/cc-wacom-mapping-panel.c:232
 msgid "Output:"
 msgstr "Izlaz:"
 
 #. Keep ratio switch
-#: panels/wacom/cc-wacom-mapping-panel.c:310
+#: panels/wacom/cc-wacom-mapping-panel.c:244
 msgid "Keep aspect ratio (letterbox):"
 msgstr "Zadrži omjer slike (letterbox):"
 
-#. Apply screen rotation
-#: panels/wacom/cc-wacom-mapping-panel.c:321
-msgid "Rotate the tablet when the screen is rotated:"
-msgstr "Zakreći tablet kada se zaslon zakreće:"
-
 #. Whole-desktop checkbox
-#: panels/wacom/cc-wacom-mapping-panel.c:332
+#: panels/wacom/cc-wacom-mapping-panel.c:255
 msgid "Map to single monitor"
 msgstr "Mapiraj na jedan zaslon"
 
-#: panels/wacom/cc-wacom-nav-button.c:89
+#: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
 msgid "%d of %d"
 msgstr "%d od %d"
 
-#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
-msgctxt "Wacom action-type"
-msgid "None"
-msgstr "Nikakva"
-
-#: panels/wacom/cc-wacom-page.c:119
-msgctxt "Wacom action-type"
-msgid "Send Keystroke"
-msgstr "Pošalji pritisak tipke"
-
-#: panels/wacom/cc-wacom-page.c:120
-msgctxt "Wacom action-type"
-msgid "Switch Monitor"
-msgstr "Prebaci zaslon"
-
-#: panels/wacom/cc-wacom-page.c:121
-msgctxt "Wacom action-type"
-msgid "Show On-Screen Help"
-msgstr "Prikaži zaslonsku pomoć"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Up"
-msgstr "Gore"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Down"
-msgstr "Dolje"
-
-#: panels/wacom/cc-wacom-page.c:663
-msgid "Switch Modes"
-msgstr "Prebaci načine rada"
-
-#: panels/wacom/cc-wacom-page.c:753 panels/wacom/cc-wacom-stylus-page.c:394
-msgid "Button"
-msgstr "Tipka"
-
-#: panels/wacom/cc-wacom-page.c:790
-msgid "Type"
-msgstr "Vrsta"
-
-#: panels/wacom/cc-wacom-page.c:811
-msgid "Action"
-msgstr "Radnja"
-
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:465
 msgid "Display Mapping"
 msgstr "Prikaži mapiranje"
 
-#. If no mode is available, we use "left-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1115
-msgid "Left Ring"
-msgstr "Lijevi prsten"
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+msgid "Stylus"
+msgstr "Olovka"
 
-#: panels/wacom/csd-wacom-device.c:1125
-#, c-format
-msgid "Left Ring Mode #%d"
-msgstr "Način lijevog prstena #%d"
+#: panels/wacom/cc-wacom-panel.c:669
+msgid "Tablet"
+msgstr "Tablet"
 
-#. If no mode is available, we use "right-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1144
-msgid "Right Ring"
-msgstr "Desni prsten"
+#: panels/wacom/cc-wacom-stylus-page.c:362
+msgid "Button"
+msgstr "Tipka"
 
-#: panels/wacom/csd-wacom-device.c:1154
-#, c-format
-msgid "Right Ring Mode #%d"
-msgstr "Način desnog prstena #%d"
-
-#. If no mode is available, we use "left-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1195
-msgid "Left Touchstrip"
-msgstr "Dodirna traka"
-
-#: panels/wacom/csd-wacom-device.c:1205
-#, c-format
-msgid "Left Touchstrip Mode #%d"
-msgstr "Način lijeve dodirne trake #%d"
-
-#. If no mode is available, we use "right-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1224
-msgid "Right Touchstrip"
-msgstr "Desna dodirna traka"
-
-#: panels/wacom/csd-wacom-device.c:1234
-#, c-format
-msgid "Right Touchstrip Mode #%d"
-msgstr "Način desne dodirne trake #%d"
-
-#: panels/wacom/csd-wacom-device.c:1259
-msgid "Left Touchring Mode Switch"
-msgstr "Način prebacivanja lijevog dodirnog prstena"
-
-#: panels/wacom/csd-wacom-device.c:1261
-msgid "Right Touchring Mode Switch"
-msgstr "Način prebacivanja desnog dodirnog prstena"
-
-#: panels/wacom/csd-wacom-device.c:1264
-msgid "Left Touchstrip Mode Switch"
-msgstr "Način prebacivanja lijeve dodirne trake"
-
-#: panels/wacom/csd-wacom-device.c:1266
-msgid "Right Touchstrip Mode Switch"
-msgstr "Način prebacivanja desne dodirne trake"
-
-#: panels/wacom/csd-wacom-device.c:1271
-#, c-format
-msgid "Mode Switch #%d"
-msgstr "Način prebacivanja #%d"
-
-#: panels/wacom/csd-wacom-device.c:1375
-#, c-format
-msgid "Left Button #%d"
-msgstr "Lijeva tipka #%d"
-
-#: panels/wacom/csd-wacom-device.c:1378
-#, c-format
-msgid "Right Button #%d"
-msgstr "Desna tipka #%d"
-
-#: panels/wacom/csd-wacom-device.c:1381
-#, c-format
-msgid "Top Button #%d"
-msgstr "Gornja tipka #%d"
-
-#: panels/wacom/csd-wacom-device.c:1384
-#, c-format
-msgid "Bottom Button #%d"
-msgstr "Donja tipka #%d"
+#: panels/wacom/csd-wacom-key-shortcut-button.c:217
+msgid "New shortcut…"
+msgstr "Novi prečac…"
 
 #: panels/network/connection-editor/ce-page-8021x-security.c:101
 #: panels/network/connection-editor/ce-page-security.c:459
@@ -1618,23 +1509,6 @@ msgid "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
 msgstr ""
 "nevaljani wpa-psk: nemoguće protumačiti ključ od 64 bajta kao heksadecimalni"
 
-#. Text printed on screen
-#: panels/wacom/calibrator/gui_gtk.c:78
-msgid "Screen Calibration"
-msgstr "Kalibracija zaslona"
-
-#: panels/wacom/calibrator/gui_gtk.c:79
-msgid ""
-"Please tap the target markers as they appear on screen to calibrate the "
-"tablet."
-msgstr ""
-"Dodirnite ciljne markere kako se oni pojavljuju na zaslonu za kalibraciju "
-"tableta."
-
-#: panels/wacom/calibrator/gui_gtk.c:368
-msgid "Mis-click detected, restarting..."
-msgstr "Loš klik otkriven, ponovno pokretanje..."
-
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
 msgstr "_Sve postavke"
@@ -1683,7 +1557,7 @@ msgctxt "hotspot"
 msgid "Hotspot"
 msgstr "Pristupna točka"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:20
+#: panels/color/color.ui.h:3 generate_additional_files.py:23
 msgid "Color"
 msgstr "Boja"
 
@@ -1909,7 +1783,7 @@ msgstr "IMEI"
 msgid "Provider"
 msgstr "Pružatelj usluge"
 
-#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:50
+#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:63
 msgid "Network"
 msgstr "Mreža"
 
@@ -2345,142 +2219,131 @@ msgstr ""
 msgid "Map Buttons"
 msgstr "Mapiraj tipke"
 
-#: panels/wacom/button-mapping.ui.h:2
+#: panels/wacom/button-mapping.ui.h:3
 msgid "Map buttons to functions"
 msgstr "Mapiraj tipke na funkcije"
 
-#: panels/wacom/button-mapping.ui.h:3
+#: panels/wacom/button-mapping.ui.h:4
 msgid ""
-"To edit a shortcut, click the row and hold down the new keys or press "
-"Backspace to clear."
+"To edit a shortcut, choose the “Send Keystroke” action, press the keyboard "
+"shortcut button and hold down the new keys or press Backspace to clear."
 msgstr ""
-"Kako bi uredili prečac, kliknite na redak i pritisnite nove tipke ili "
-"pritisnite 'Backspace' za očistiti."
+"Kako bi uredili prečac, odaberite \"Pošalji pritisak tipke\" radnju, "
+"pritisnite tipku prečaca i držite pritisnutim nove tipke ili pritisnite "
+"Backspace za uklanjanje tipke prečaca."
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:1
-msgid "Tablet (absolute)"
-msgstr "Tablet (apsolutno)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:2
-msgid "Touchpad (relative)"
-msgstr "Touchpad (relativno)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:3
-msgid "Tablet Preferences"
-msgstr "Osobitosti tableta"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:4
 msgid "No tablet detected"
 msgstr "Nema prepoznatog tableta"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:5
-msgid "Please plug in or turn on your graphics tablet"
-msgstr "Spojite ili uključite vaš grafički tablet"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:2
+msgid "Please plug in or turn on your Wacom tablet"
+msgstr "Priključite ili upalite vaš Wacom tablet"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+#: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Bluetooth Settings"
 msgstr "Bluetooth postavke"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:60
-msgid "Graphics Tablet"
-msgstr "Grafički tablet"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:4
+msgid "Wacom Tablet"
+msgstr "Wacom tablet"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:8
+#: panels/wacom/cinnamon-wacom-properties.ui.h:5
+msgid "Tracking Mode"
+msgstr "Način praćenja"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+msgid "Left-Handed Orientation"
+msgstr "Lijeva orijentacija"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Map to Monitor…"
 msgstr "Mapiraj na zaslon..."
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:9
+#: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map Buttons…"
 msgstr "Mapiraj tipke..."
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+#: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Calibrate…"
 msgstr "Kalibriraj..."
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+msgid "Adjust mouse settings"
+msgstr "Prilagodi postavke miša"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
 msgstr "Prilagodi razlučivost zaslona"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:12
-msgid "Tracking Mode"
-msgstr "Način praćenja"
+msgid "Decouple Display"
+msgstr "Odvojivi zaslon"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
-msgid "Left-Handed Orientation"
-msgstr "Lijeva orijentacija"
+msgid "Tablet (absolute)"
+msgstr "Tablet (apsolutno)"
 
-#: panels/wacom/wacom-stylus-page.ui.h:1
-msgid "No Action"
-msgstr "Bez radnje"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:14
+msgid "Touchpad (relative)"
+msgstr "Touchpad (relativno)"
 
 #: panels/wacom/wacom-stylus-page.ui.h:2
-msgid "Left Mouse Button Click"
-msgstr "Klik lijevom tipkom miša"
-
-#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Middle Mouse Button Click"
 msgstr "Klik srednjom tipkom miša"
 
-#: panels/wacom/wacom-stylus-page.ui.h:4
+#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Right Mouse Button Click"
 msgstr "Klik desnom tipkom miša"
 
-#: panels/wacom/wacom-stylus-page.ui.h:5
-msgid "Scroll Up"
-msgstr "Klizi prema gore"
-
-#: panels/wacom/wacom-stylus-page.ui.h:6
-msgid "Scroll Down"
-msgstr "Klizi prema dolje"
-
-#: panels/wacom/wacom-stylus-page.ui.h:7
-msgid "Scroll Left"
-msgstr "Klizi lijevo"
-
-#: panels/wacom/wacom-stylus-page.ui.h:8
-msgid "Scroll Right"
-msgstr "Klizi desno"
-
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:4
 msgid "Back"
 msgstr "Natrag"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:5
 msgid "Forward"
 msgstr "Naprijed"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
-msgid "Stylus"
-msgstr "Olovka"
+#: panels/wacom/wacom-stylus-page.ui.h:6
+msgid "No stylus found"
+msgstr "Nema pronađenih pisaljka"
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:7
+msgid ""
+"Please move your stylus to the proximity of the tablet to configure it"
+msgstr "Pomičite svoju pisaljku u blizini vašeg tableta kako bi ju podesili"
+
+#: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Eraser Pressure Feel"
-msgstr "Osjet pritiska gumice brisanja"
+msgstr "Osjet pritiska brisaljke"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Soft"
 msgstr "Mekano"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Firm"
 msgstr "Čvrsto"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Top Button"
 msgstr "Gornja tipka"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Lower Button"
 msgstr "Donja tipka"
 
-#: panels/wacom/wacom-stylus-page.ui.h:17
+#: panels/wacom/wacom-stylus-page.ui.h:14
+msgid "Lowest Button"
+msgstr "Najniža tipka"
+
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Tip Pressure Feel"
 msgstr "Osjet pritiska vrha"
 
-#: panels/wacom/wacom-stylus-page.ui.h:18
-msgid "Lowest Button"
-msgstr "Najniža tipka"
+#: panels/wacom/wacom-stylus-page.ui.h:16
+msgid "Test Your _Settings"
+msgstr "Testirajte svoje _postavke"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
@@ -2745,32 +2608,68 @@ msgstr "WEP sadr_žaj"
 msgid "_Type"
 msgstr "_Vrsta"
 
-#: generate_additional_files.py:20
+#: panels/wacom/calibrator/calibrator.ui.h:1
+msgid "Screen Calibration"
+msgstr "Kalibracija zaslona"
+
+#: panels/wacom/calibrator/calibrator.ui.h:2
+msgid ""
+"Please tap the target markers as they appear on screen to calibrate the "
+"tablet."
+msgstr ""
+"Dodirnite ciljne markere kako se oni pojavljuju na zaslonu za kalibraciju "
+"tableta."
+
+#: panels/wacom/calibrator/calibrator.ui.h:3
+msgid "Mis-click detected, restarting…"
+msgstr "Loš klik otkriven, ponovno pokretanje…"
+
+#: generate_additional_files.py:23
 msgid "Color management settings"
 msgstr "Postavke upravljanja bojom"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:23
+msgid "Color, ICC, Profile, Calibrate, Printer, Display"
+msgstr "Boja, ICC, Profil, Kalibracija, Pisač, Zaslon"
+
+#: generate_additional_files.py:37
 msgid "Region & Language"
 msgstr "Regija i Jezik"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:37
 msgid "Change your region and language settings"
 msgstr "Promijenite vašu regiju i jezične postavke"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Display"
 msgstr "Zaslon"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Change resolution and position of monitors and projectors"
 msgstr "Promijenite razlučivost i položaj zaslona i projektora"
 
 #: generate_additional_files.py:50
+msgid "Panel, Projector, xrandr, Screen, Resolution, Refresh"
+msgstr "Panel, Projektor, xrandr, Zaslon, Razlučivost, Osvježavanje"
+
+#: generate_additional_files.py:63
 msgid "Network settings"
 msgstr "Mrežne postavke"
 
-#: generate_additional_files.py:60
+#: generate_additional_files.py:63
+msgid "Network, Wireless, IP, LAN, Proxy, Internet, WiFi"
+msgstr "Mreža, Bežična mreža, IP, LAN, Proxy, Internet, WiFi"
+
+#: generate_additional_files.py:76
+msgid "Graphics Tablet"
+msgstr "Grafički tablet"
+
+#: generate_additional_files.py:76
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Postavi tipke mapiranja i prilagodi osjetljivost igle grafičkih tableta"
+
+#: generate_additional_files.py:76
+msgid "Tablet, Wacom, Stylus, Eraser, Mouse"
+msgstr "Tablet, Wacom, Pisaljak, Brisaljka, Miš"

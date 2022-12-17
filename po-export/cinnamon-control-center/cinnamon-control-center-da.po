@@ -45,16 +45,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 16:20+0200\n"
-"PO-Revision-Date: 2022-06-16 17:15+0000\n"
+"POT-Creation-Date: 2022-12-16 13:55+0000\n"
+"PO-Revision-Date: 2022-11-17 16:33+0000\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-17 04:59+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "Language: da\n"
 
 #. TRANSLATORS: this is where the user can click and import a profile
@@ -652,7 +652,8 @@ msgstr "_Glem"
 msgid "History"
 msgstr "Historik"
 
-#: panels/network/net-device-wifi.c:1903
+#: panels/network/net-device-wifi.c:1903 panels/wacom/cc-wacom-page.c:468
+#: panels/wacom/button-mapping.ui.h:2
 msgid "_Close"
 msgstr "_Luk"
 
@@ -999,163 +1000,53 @@ msgid "Layout"
 msgstr "Layout"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:227
+#: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "Default"
 msgstr "Standard"
 
-#: panels/wacom/cc-wacom-mapping-panel.c:298
+#: panels/wacom/cc-wacom-button-row.c:248
+#, c-format
+msgid "Button %d"
+msgstr "Knap %d"
+
+#: panels/wacom/cc-wacom-mapping-panel.c:232
 msgid "Output:"
 msgstr "Output:"
 
 #. Keep ratio switch
-#: panels/wacom/cc-wacom-mapping-panel.c:310
+#: panels/wacom/cc-wacom-mapping-panel.c:244
 msgid "Keep aspect ratio (letterbox):"
 msgstr "Bevar proportionerne (letterboxformat):"
 
-#. Apply screen rotation
-#: panels/wacom/cc-wacom-mapping-panel.c:321
-msgid "Rotate the tablet when the screen is rotated:"
-msgstr "Rotér tabletten, når skærmen er roteret:"
-
 #. Whole-desktop checkbox
-#: panels/wacom/cc-wacom-mapping-panel.c:332
+#: panels/wacom/cc-wacom-mapping-panel.c:255
 msgid "Map to single monitor"
 msgstr "Afbild på én skærm"
 
-#: panels/wacom/cc-wacom-nav-button.c:89
+#: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
 msgid "%d of %d"
 msgstr "%d af %d"
 
-#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
-msgctxt "Wacom action-type"
-msgid "None"
-msgstr "Ingen"
-
-#: panels/wacom/cc-wacom-page.c:119
-msgctxt "Wacom action-type"
-msgid "Send Keystroke"
-msgstr "Send tastetryk"
-
-#: panels/wacom/cc-wacom-page.c:120
-msgctxt "Wacom action-type"
-msgid "Switch Monitor"
-msgstr "Skift skærm"
-
-#: panels/wacom/cc-wacom-page.c:121
-msgctxt "Wacom action-type"
-msgid "Show On-Screen Help"
-msgstr "Vis hjælp på skærmen"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Up"
-msgstr "Op"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Down"
-msgstr "Ned"
-
-#: panels/wacom/cc-wacom-page.c:663
-msgid "Switch Modes"
-msgstr "Skift tilstand"
-
-#: panels/wacom/cc-wacom-page.c:753 panels/wacom/cc-wacom-stylus-page.c:394
-msgid "Button"
-msgstr "Knap"
-
-#: panels/wacom/cc-wacom-page.c:790
-msgid "Type"
-msgstr "Type"
-
-#: panels/wacom/cc-wacom-page.c:811
-msgid "Action"
-msgstr "Handling"
-
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:465
 msgid "Display Mapping"
 msgstr "Skærmafbildning"
 
-#. If no mode is available, we use "left-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1115
-msgid "Left Ring"
-msgstr "Venstre ring"
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+msgid "Stylus"
+msgstr "Pen"
 
-#: panels/wacom/csd-wacom-device.c:1125
-#, c-format
-msgid "Left Ring Mode #%d"
-msgstr "Venstre ringtilstand #%d"
+#: panels/wacom/cc-wacom-panel.c:669
+msgid "Tablet"
+msgstr "Tegneplade"
 
-#. If no mode is available, we use "right-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1144
-msgid "Right Ring"
-msgstr "Højre ring"
+#: panels/wacom/cc-wacom-stylus-page.c:362
+msgid "Button"
+msgstr "Knap"
 
-#: panels/wacom/csd-wacom-device.c:1154
-#, c-format
-msgid "Right Ring Mode #%d"
-msgstr "Højre ringtilstand #%d"
-
-#. If no mode is available, we use "left-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1195
-msgid "Left Touchstrip"
-msgstr "Venstre berøringsstribe"
-
-#: panels/wacom/csd-wacom-device.c:1205
-#, c-format
-msgid "Left Touchstrip Mode #%d"
-msgstr "Venstre berøringsstribetilstand #%d"
-
-#. If no mode is available, we use "right-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1224
-msgid "Right Touchstrip"
-msgstr "Højre berøringsstribe"
-
-#: panels/wacom/csd-wacom-device.c:1234
-#, c-format
-msgid "Right Touchstrip Mode #%d"
-msgstr "Højre berøringsstribetilstand #%d"
-
-#: panels/wacom/csd-wacom-device.c:1259
-msgid "Left Touchring Mode Switch"
-msgstr "Tilstandsskift for venstre berøringsring"
-
-#: panels/wacom/csd-wacom-device.c:1261
-msgid "Right Touchring Mode Switch"
-msgstr "Tilstandsskift for højre berøringsring"
-
-#: panels/wacom/csd-wacom-device.c:1264
-msgid "Left Touchstrip Mode Switch"
-msgstr "Tilstandsskift for venstre berøringsstribe"
-
-#: panels/wacom/csd-wacom-device.c:1266
-msgid "Right Touchstrip Mode Switch"
-msgstr "Tilstandsskift for højre berøringsstribe"
-
-#: panels/wacom/csd-wacom-device.c:1271
-#, c-format
-msgid "Mode Switch #%d"
-msgstr "Tilstandsskift #%d"
-
-#: panels/wacom/csd-wacom-device.c:1375
-#, c-format
-msgid "Left Button #%d"
-msgstr "Venstre knap #%d"
-
-#: panels/wacom/csd-wacom-device.c:1378
-#, c-format
-msgid "Right Button #%d"
-msgstr "Højre knap #%d"
-
-#: panels/wacom/csd-wacom-device.c:1381
-#, c-format
-msgid "Top Button #%d"
-msgstr "Topknap #%d"
-
-#: panels/wacom/csd-wacom-device.c:1384
-#, c-format
-msgid "Bottom Button #%d"
-msgstr "Bundknap #%d"
+#: panels/wacom/csd-wacom-key-shortcut-button.c:217
+msgid "New shortcut…"
+msgstr "Ny genvej …"
 
 #: panels/network/connection-editor/ce-page-8021x-security.c:101
 #: panels/network/connection-editor/ce-page-security.c:459
@@ -1655,23 +1546,6 @@ msgstr ""
 msgid "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
 msgstr "ugyldig wpa-psk: kan ikke fortolke nøgle med 64 byte som hex"
 
-#. Text printed on screen
-#: panels/wacom/calibrator/gui_gtk.c:78
-msgid "Screen Calibration"
-msgstr "Skærmkalibrering"
-
-#: panels/wacom/calibrator/gui_gtk.c:79
-msgid ""
-"Please tap the target markers as they appear on screen to calibrate the "
-"tablet."
-msgstr ""
-"Rør ved målmarkørerne, efterhånden som de vises på skærmen, for at kalibrere "
-"tegnepladen."
-
-#: panels/wacom/calibrator/gui_gtk.c:368
-msgid "Mis-click detected, restarting..."
-msgstr "Fejlklik detekteret, genstarter …"
-
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
 msgstr "_Alle indstillinger"
@@ -1721,7 +1595,7 @@ msgctxt "hotspot"
 msgid "Hotspot"
 msgstr "Hotspot"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:20
+#: panels/color/color.ui.h:3 generate_additional_files.py:23
 msgid "Color"
 msgstr "Farve"
 
@@ -1945,7 +1819,7 @@ msgstr "IMEI"
 msgid "Provider"
 msgstr "Udbyder"
 
-#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:50
+#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:63
 msgid "Network"
 msgstr "Netværk"
 
@@ -2382,142 +2256,131 @@ msgstr ""
 msgid "Map Buttons"
 msgstr "Tildel knapper"
 
-#: panels/wacom/button-mapping.ui.h:2
+#: panels/wacom/button-mapping.ui.h:3
 msgid "Map buttons to functions"
 msgstr "Tildel funktioner til knapper"
 
-#: panels/wacom/button-mapping.ui.h:3
+#: panels/wacom/button-mapping.ui.h:4
 msgid ""
-"To edit a shortcut, click the row and hold down the new keys or press "
-"Backspace to clear."
+"To edit a shortcut, choose the “Send Keystroke” action, press the keyboard "
+"shortcut button and hold down the new keys or press Backspace to clear."
 msgstr ""
-"En genvejstast ændres ved at klikke på rækken og trykke på de nye taster "
-"eller trykke tilbagetast for at rydde."
+"Redigér en genvej ved at vælge handlingen “Send tastetryk”, klik på "
+"tastaturgenvejstasten og hold de nye taster nede. Brug slet tilbage-tasten "
+"for at rydde."
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:1
-msgid "Tablet (absolute)"
-msgstr "Tegneplade (absolut)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:2
-msgid "Touchpad (relative)"
-msgstr "Touchpad (relativ)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:3
-msgid "Tablet Preferences"
-msgstr "Indstillinger for tegneplade"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:4
 msgid "No tablet detected"
 msgstr "Ingen tegneplade fundet"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:5
-msgid "Please plug in or turn on your graphics tablet"
-msgstr "Tilslut eller tænd venligst din tegneplade"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:2
+msgid "Please plug in or turn on your Wacom tablet"
+msgstr "Vær venlig at tilslutte eller tænde din Wacom-tegneplade"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+#: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Bluetooth Settings"
 msgstr "Bluetooth-indstillinger"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:60
-msgid "Graphics Tablet"
-msgstr "Tegneplade"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:4
+msgid "Wacom Tablet"
+msgstr "Wacom-tegneplade"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:8
+#: panels/wacom/cinnamon-wacom-properties.ui.h:5
+msgid "Tracking Mode"
+msgstr "Sporingstilstand"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+msgid "Left-Handed Orientation"
+msgstr "Venstrehåndsorientering"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Map to Monitor…"
 msgstr "Afbild på skærm …"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:9
+#: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map Buttons…"
 msgstr "Tildel knapper …"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+#: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Calibrate…"
 msgstr "Kalibrér …"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+msgid "Adjust mouse settings"
+msgstr "Justér museindstillinger"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
 msgstr "Justér skærmopløsning"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:12
-msgid "Tracking Mode"
-msgstr "Sporingstilstand"
+msgid "Decouple Display"
+msgstr "Afkobl skærm"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
-msgid "Left-Handed Orientation"
-msgstr "Venstrehåndsorientering"
+msgid "Tablet (absolute)"
+msgstr "Tegneplade (absolut)"
 
-#: panels/wacom/wacom-stylus-page.ui.h:1
-msgid "No Action"
-msgstr "Ingen handling"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:14
+msgid "Touchpad (relative)"
+msgstr "Touchpad (relativ)"
 
 #: panels/wacom/wacom-stylus-page.ui.h:2
-msgid "Left Mouse Button Click"
-msgstr "Venstre museklik"
-
-#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Middle Mouse Button Click"
 msgstr "Midtermuseklik"
 
-#: panels/wacom/wacom-stylus-page.ui.h:4
+#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Right Mouse Button Click"
 msgstr "Højre museklik"
 
-#: panels/wacom/wacom-stylus-page.ui.h:5
-msgid "Scroll Up"
-msgstr "Rul opad"
-
-#: panels/wacom/wacom-stylus-page.ui.h:6
-msgid "Scroll Down"
-msgstr "Rul nedad"
-
-#: panels/wacom/wacom-stylus-page.ui.h:7
-msgid "Scroll Left"
-msgstr "Rul til venstre"
-
-#: panels/wacom/wacom-stylus-page.ui.h:8
-msgid "Scroll Right"
-msgstr "Rul til højre"
-
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:4
 msgid "Back"
 msgstr "Tilbage"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:5
 msgid "Forward"
 msgstr "Frem"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
-msgid "Stylus"
-msgstr "Pen"
+#: panels/wacom/wacom-stylus-page.ui.h:6
+msgid "No stylus found"
+msgstr "Ingen pen fundet"
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:7
+msgid ""
+"Please move your stylus to the proximity of the tablet to configure it"
+msgstr "Flyt din pen hen til tegnepladen for at konfigurere den"
+
+#: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Eraser Pressure Feel"
 msgstr "Følelsen af pres med viskelæder"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Soft"
 msgstr "Blød"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Firm"
 msgstr "Fast"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Top Button"
 msgstr "Øvre knap"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Lower Button"
 msgstr "Nedre knap"
 
-#: panels/wacom/wacom-stylus-page.ui.h:17
+#: panels/wacom/wacom-stylus-page.ui.h:14
+msgid "Lowest Button"
+msgstr "Underste knap"
+
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Tip Pressure Feel"
 msgstr "Følelsen af pres med spidsen"
 
-#: panels/wacom/wacom-stylus-page.ui.h:18
-msgid "Lowest Button"
-msgstr "Underste knap"
+#: panels/wacom/wacom-stylus-page.ui.h:16
+msgid "Test Your _Settings"
+msgstr "A_fprøv dine indstillinger"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
@@ -2784,33 +2647,69 @@ msgstr "WEP-inde_ks"
 msgid "_Type"
 msgstr "_Type"
 
-#: generate_additional_files.py:20
+#: panels/wacom/calibrator/calibrator.ui.h:1
+msgid "Screen Calibration"
+msgstr "Skærmkalibrering"
+
+#: panels/wacom/calibrator/calibrator.ui.h:2
+msgid ""
+"Please tap the target markers as they appear on screen to calibrate the "
+"tablet."
+msgstr ""
+"Rør ved målmarkørerne, efterhånden som de vises på skærmen, for at kalibrere "
+"tegnepladen."
+
+#: panels/wacom/calibrator/calibrator.ui.h:3
+msgid "Mis-click detected, restarting…"
+msgstr "Fejlklik registreret, genstarter …"
+
+#: generate_additional_files.py:23
 msgid "Color management settings"
 msgstr "Farvestyringsindstillinger"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:23
+msgid "Color, ICC, Profile, Calibrate, Printer, Display"
+msgstr "Farve, ICC, Profil, Kalibrere, Printer, Skærm"
+
+#: generate_additional_files.py:37
 msgid "Region & Language"
 msgstr "Region og sprog"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:37
 msgid "Change your region and language settings"
 msgstr "Ændr indstillinger for sprog og region"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Display"
 msgstr "Skærm"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Change resolution and position of monitors and projectors"
 msgstr "Ændr opløsning og placering af skærme og projektorer"
 
 #: generate_additional_files.py:50
+msgid "Panel, Projector, xrandr, Screen, Resolution, Refresh"
+msgstr "Panel, Projektor, xrandr, Skærm, Opløsning, Genopfrisk, Genindlæs"
+
+#: generate_additional_files.py:63
 msgid "Network settings"
 msgstr "Netværksindstillinger"
 
-#: generate_additional_files.py:60
+#: generate_additional_files.py:63
+msgid "Network, Wireless, IP, LAN, Proxy, Internet, WiFi"
+msgstr "Netværk, Trådløs, IP, LAN, Proxy, Internet, Wi-fi"
+
+#: generate_additional_files.py:76
+msgid "Graphics Tablet"
+msgstr "Tegneplade"
+
+#: generate_additional_files.py:76
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Angiv tildeling af knapper og justér følsomhed for digital pen til "
 "tegneplader"
+
+#: generate_additional_files.py:76
+msgid "Tablet, Wacom, Stylus, Eraser, Mouse"
+msgstr "Tegneplade, Wacom, Pen, Stylus, Viskelæder, Slette, Mus"

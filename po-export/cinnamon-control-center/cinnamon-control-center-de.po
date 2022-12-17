@@ -23,19 +23,19 @@ msgstr ""
 "Report-Msgid-Bugs-To: "
 "http://bugzilla.gnome.org/enter_bug.cgi?product=cinnamon-control-"
 "center&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2022-06-15 16:20+0200\n"
-"PO-Revision-Date: 2022-06-16 13:54+0000\n"
+"POT-Creation-Date: 2022-12-16 13:55+0000\n"
+"PO-Revision-Date: 2022-11-22 20:08+0000\n"
 "Last-Translator: Tobias Bannert <tobannert@gmail.com>\n"
 "Language-Team: Deutsch <cinnamon-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
-"X-Poedit-Country: GERMANY\n"
+"X-Launchpad-Export-Date: 2022-12-17 04:59+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "Language: de\n"
 "X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
 
 #. TRANSLATORS: this is where the user can click and import a profile
 #: panels/color/cc-color-panel.c:108
@@ -63,7 +63,7 @@ msgstr "Testprofil: "
 #. TRANSLATORS: this is when the profile should be set for all users
 #: panels/color/cc-color-panel.c:185 panels/color/color.ui.h:9
 msgid "Set for all users"
-msgstr "Für alle Benutzer festlegen"
+msgstr "Für alle Benutzer*innen festlegen"
 
 #. TRANSLATORS: this is when the profile should be set for all users
 #: panels/color/cc-color-panel.c:192
@@ -367,12 +367,12 @@ msgstr "%.2lf Hz"
 
 #: panels/display/cc-display-settings.c:469
 msgid "Monitor scale"
-msgstr "Bildschirmscalierung"
+msgstr "Bildschirmskalierung"
 
 #: panels/display/cc-display-settings.c:473
 #: panels/display/cc-display-settings.ui.h:4
 msgid "User interface scale"
-msgstr "Maßstab der Benutzeroberfläche"
+msgstr "Maßstab der Anwendungsoberfläche"
 
 #: panels/network/cc-network-panel.c:906
 msgid "Network proxy"
@@ -596,7 +596,8 @@ msgstr ""
 
 #: panels/network/net-device-wifi.c:1350
 msgid "Stop hotspot and disconnect any users?"
-msgstr "Den drahtlosen Zugangspunkt beenden und verbundene Benutzer trennen?"
+msgstr ""
+"Den drahtlosen Zugangspunkt beenden und verbundene Benutzer*innen trennen?"
 
 #: panels/network/net-device-wifi.c:1352 panels/network/net-device-wifi.c:1592
 #: panels/network/connection-editor/vpn-helpers.c:181
@@ -636,7 +637,8 @@ msgstr "_Vergessen"
 msgid "History"
 msgstr "Verlauf"
 
-#: panels/network/net-device-wifi.c:1903
+#: panels/network/net-device-wifi.c:1903 panels/wacom/cc-wacom-page.c:468
+#: panels/wacom/button-mapping.ui.h:2
 msgid "_Close"
 msgstr "_Schließen"
 
@@ -982,163 +984,53 @@ msgid "Layout"
 msgstr "Tastaturbelegung"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:227
+#: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "Default"
 msgstr "Vorgabe"
 
-#: panels/wacom/cc-wacom-mapping-panel.c:298
+#: panels/wacom/cc-wacom-button-row.c:248
+#, c-format
+msgid "Button %d"
+msgstr "Knopf %d"
+
+#: panels/wacom/cc-wacom-mapping-panel.c:232
 msgid "Output:"
 msgstr "Ausgang:"
 
 #. Keep ratio switch
-#: panels/wacom/cc-wacom-mapping-panel.c:310
+#: panels/wacom/cc-wacom-mapping-panel.c:244
 msgid "Keep aspect ratio (letterbox):"
 msgstr "Seitenverhältnis beibehalten (schwarze Balken hinzufügen):"
 
-#. Apply screen rotation
-#: panels/wacom/cc-wacom-mapping-panel.c:321
-msgid "Rotate the tablet when the screen is rotated:"
-msgstr "Das Tablet drehen, wenn der Bildschirm gedreht ist:"
-
 #. Whole-desktop checkbox
-#: panels/wacom/cc-wacom-mapping-panel.c:332
+#: panels/wacom/cc-wacom-mapping-panel.c:255
 msgid "Map to single monitor"
 msgstr "Einem einzelnen Bildschirm zuordnen"
 
-#: panels/wacom/cc-wacom-nav-button.c:89
+#: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
 msgid "%d of %d"
 msgstr "%d von %d"
 
-#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
-msgctxt "Wacom action-type"
-msgid "None"
-msgstr "Keine"
-
-#: panels/wacom/cc-wacom-page.c:119
-msgctxt "Wacom action-type"
-msgid "Send Keystroke"
-msgstr "Tasteneingabe senden"
-
-#: panels/wacom/cc-wacom-page.c:120
-msgctxt "Wacom action-type"
-msgid "Switch Monitor"
-msgstr "Bildschirm wechseln"
-
-#: panels/wacom/cc-wacom-page.c:121
-msgctxt "Wacom action-type"
-msgid "Show On-Screen Help"
-msgstr "Bildschirmhilfe anzeigen"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Up"
-msgstr "Hoch"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Down"
-msgstr "Runter"
-
-#: panels/wacom/cc-wacom-page.c:663
-msgid "Switch Modes"
-msgstr "Modus wechseln"
-
-#: panels/wacom/cc-wacom-page.c:753 panels/wacom/cc-wacom-stylus-page.c:394
-msgid "Button"
-msgstr "Knopf"
-
-#: panels/wacom/cc-wacom-page.c:790
-msgid "Type"
-msgstr "Typ"
-
-#: panels/wacom/cc-wacom-page.c:811
-msgid "Action"
-msgstr "Aktion"
-
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:465
 msgid "Display Mapping"
 msgstr "Zuordnung anzeigen"
 
-#. If no mode is available, we use "left-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1115
-msgid "Left Ring"
-msgstr "Linker Ringmodus"
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+msgid "Stylus"
+msgstr "Stylus"
 
-#: panels/wacom/csd-wacom-device.c:1125
-#, c-format
-msgid "Left Ring Mode #%d"
-msgstr "Linker Ringmodus #%d"
+#: panels/wacom/cc-wacom-panel.c:669
+msgid "Tablet"
+msgstr "Tablett"
 
-#. If no mode is available, we use "right-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1144
-msgid "Right Ring"
-msgstr "Rechter Ringmodus"
+#: panels/wacom/cc-wacom-stylus-page.c:362
+msgid "Button"
+msgstr "Knopf"
 
-#: panels/wacom/csd-wacom-device.c:1154
-#, c-format
-msgid "Right Ring Mode #%d"
-msgstr "Rechter Ringmodus #%d"
-
-#. If no mode is available, we use "left-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1195
-msgid "Left Touchstrip"
-msgstr "Linker Berührungsstreifen-Modus"
-
-#: panels/wacom/csd-wacom-device.c:1205
-#, c-format
-msgid "Left Touchstrip Mode #%d"
-msgstr "Linker Berührungsstreifen-Modus #%d"
-
-#. If no mode is available, we use "right-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1224
-msgid "Right Touchstrip"
-msgstr "Rechter Berührungsstreifen-Modus"
-
-#: panels/wacom/csd-wacom-device.c:1234
-#, c-format
-msgid "Right Touchstrip Mode #%d"
-msgstr "Rechter Berührungsstreifen-Modus #%d"
-
-#: panels/wacom/csd-wacom-device.c:1259
-msgid "Left Touchring Mode Switch"
-msgstr "Moduswechsel des linken Berührungsrings"
-
-#: panels/wacom/csd-wacom-device.c:1261
-msgid "Right Touchring Mode Switch"
-msgstr "Moduswechsel des rechten Berührungsrings"
-
-#: panels/wacom/csd-wacom-device.c:1264
-msgid "Left Touchstrip Mode Switch"
-msgstr "Moduswechsel des linken Berührungsstreifens"
-
-#: panels/wacom/csd-wacom-device.c:1266
-msgid "Right Touchstrip Mode Switch"
-msgstr "Moduswechsel des rechten Berührungsstreifens"
-
-#: panels/wacom/csd-wacom-device.c:1271
-#, c-format
-msgid "Mode Switch #%d"
-msgstr "Moduswechsel #%d"
-
-#: panels/wacom/csd-wacom-device.c:1375
-#, c-format
-msgid "Left Button #%d"
-msgstr "Linker Knopf #%d"
-
-#: panels/wacom/csd-wacom-device.c:1378
-#, c-format
-msgid "Right Button #%d"
-msgstr "Rechter Knopf #%d"
-
-#: panels/wacom/csd-wacom-device.c:1381
-#, c-format
-msgid "Top Button #%d"
-msgstr "Oberster Knopf #%d"
-
-#: panels/wacom/csd-wacom-device.c:1384
-#, c-format
-msgid "Bottom Button #%d"
-msgstr "Unterer Knopf #%d"
+#: panels/wacom/csd-wacom-key-shortcut-button.c:217
+msgid "New shortcut…"
+msgstr "Neue Tastenkombination …"
 
 #: panels/network/connection-editor/ce-page-8021x-security.c:101
 #: panels/network/connection-editor/ce-page-security.c:459
@@ -1647,23 +1539,6 @@ msgstr ""
 "Ungültiger WPA-PSK: Schlüssel kann nicht als 64-Byte-hexadezimal "
 "interpretiert werden"
 
-#. Text printed on screen
-#: panels/wacom/calibrator/gui_gtk.c:78
-msgid "Screen Calibration"
-msgstr "Bildschirmkalibrierung"
-
-#: panels/wacom/calibrator/gui_gtk.c:79
-msgid ""
-"Please tap the target markers as they appear on screen to calibrate the "
-"tablet."
-msgstr ""
-"Bitte berühren Sie die Zielmarkierungen auf dem Bildschirm, um das "
-"Grafiktablett zu kalibrieren."
-
-#: panels/wacom/calibrator/gui_gtk.c:368
-msgid "Mis-click detected, restarting..."
-msgstr "Falscher Klick wurde erkannt, Neustart …"
-
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
 msgstr "_Alle Einstellungen"
@@ -1714,7 +1589,7 @@ msgctxt "hotspot"
 msgid "Hotspot"
 msgstr "Zugangspunkt"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:20
+#: panels/color/color.ui.h:3 generate_additional_files.py:23
 msgid "Color"
 msgstr "Farbe"
 
@@ -1742,7 +1617,7 @@ msgstr "Gerät entfernen"
 
 #: panels/color/color.ui.h:10
 msgid "Set this profile for all users on this computer"
-msgstr "Dieses Profil für alle Benutzer dieses Rechners einrichten"
+msgstr "Dieses Profil für alle Benutzer*innen dieses Rechners einrichten"
 
 #: panels/color/color.ui.h:11
 msgid "Add profile"
@@ -1940,7 +1815,7 @@ msgstr "IMEI"
 msgid "Provider"
 msgstr "Anbieter"
 
-#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:50
+#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:63
 msgid "Network"
 msgstr "Netzwerk"
 
@@ -2096,7 +1971,7 @@ msgstr "Passwort an_zeigen"
 
 #: panels/network/network-wifi.ui.h:23
 msgid "Make available to other users"
-msgstr "Anderen Benutzern zur Verfügung stellen"
+msgstr "Anderen Benutzer*innen zur Verfügung stellen"
 
 #: panels/network/network-wifi.ui.h:24
 msgid "identity"
@@ -2380,143 +2255,132 @@ msgstr ""
 msgid "Map Buttons"
 msgstr "Knöpfe zuweisen"
 
-#: panels/wacom/button-mapping.ui.h:2
+#: panels/wacom/button-mapping.ui.h:3
 msgid "Map buttons to functions"
 msgstr "Knöpfen Funktionen zuweisen"
 
-#: panels/wacom/button-mapping.ui.h:3
+#: panels/wacom/button-mapping.ui.h:4
 msgid ""
-"To edit a shortcut, click the row and hold down the new keys or press "
-"Backspace to clear."
+"To edit a shortcut, choose the “Send Keystroke” action, press the keyboard "
+"shortcut button and hold down the new keys or press Backspace to clear."
 msgstr ""
-"Um ein Tastenkürzel zu bearbeiten, klicken Sie bitte auf die Zeile und "
-"drücken Sie die neue Tastenkombination, oder drücken Sie die Rücktaste, um "
-"sie zu löschen."
+"Um eine Tastenkombination zu bearbeiten, wählen Sie die Aktion "
+"»Tastenkombination senden« und drücken Sie die neue Tastenkombination, oder "
+"drücken Sie die Zurücktaste, um sie zu löschen."
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:1
-msgid "Tablet (absolute)"
-msgstr "Tablett (absolut)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:2
-msgid "Touchpad (relative)"
-msgstr "Touchpad (relativ)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:3
-msgid "Tablet Preferences"
-msgstr "Tablett-Einstellungen"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:4
 msgid "No tablet detected"
 msgstr "Kein Tablett erkannt"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:5
-msgid "Please plug in or turn on your graphics tablet"
-msgstr "Bitte das Grafiktablett anschließen oder einschalten"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:2
+msgid "Please plug in or turn on your Wacom tablet"
+msgstr "Bitte schließen Sie Ihr Wacom-Tablett an oder schalten Sie es ein"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+#: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Bluetooth Settings"
 msgstr "Bluetooth-Einstellungen"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:60
-msgid "Graphics Tablet"
-msgstr "Grafiktablett"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:4
+msgid "Wacom Tablet"
+msgstr "Wacom-Grafiktablett"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:8
+#: panels/wacom/cinnamon-wacom-properties.ui.h:5
+msgid "Tracking Mode"
+msgstr "Mausverfolgungsmodus"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+msgid "Left-Handed Orientation"
+msgstr "Linkshändige Ausrichtung"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Map to Monitor…"
 msgstr "Zum Monitor zuweisen …"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:9
+#: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map Buttons…"
 msgstr "Knöpfe zuweisen …"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+#: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Calibrate…"
 msgstr "Kalibrieren …"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+msgid "Adjust mouse settings"
+msgstr "Mauseinstellungen anpassen"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
 msgstr "Die Bildschirmauflösung anpassen"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:12
-msgid "Tracking Mode"
-msgstr "Mausverfolgungsmodus"
+msgid "Decouple Display"
+msgstr "Bildschirm entkoppeln"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
-msgid "Left-Handed Orientation"
-msgstr "Linkshändige Ausrichtung"
+msgid "Tablet (absolute)"
+msgstr "Tablett (absolut)"
 
-#: panels/wacom/wacom-stylus-page.ui.h:1
-msgid "No Action"
-msgstr "Keine Aktion"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:14
+msgid "Touchpad (relative)"
+msgstr "Touchpad (relativ)"
 
 #: panels/wacom/wacom-stylus-page.ui.h:2
-msgid "Left Mouse Button Click"
-msgstr "Klick der linken Maustaste"
-
-#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Middle Mouse Button Click"
 msgstr "Klick der mittleren Maustaste"
 
-#: panels/wacom/wacom-stylus-page.ui.h:4
+#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Right Mouse Button Click"
 msgstr "Klick der rechten Maustaste"
 
-#: panels/wacom/wacom-stylus-page.ui.h:5
-msgid "Scroll Up"
-msgstr "Hochrollen"
-
-#: panels/wacom/wacom-stylus-page.ui.h:6
-msgid "Scroll Down"
-msgstr "Herunterrollen"
-
-#: panels/wacom/wacom-stylus-page.ui.h:7
-msgid "Scroll Left"
-msgstr "Links rollen"
-
-#: panels/wacom/wacom-stylus-page.ui.h:8
-msgid "Scroll Right"
-msgstr "Rechts rollen"
-
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:4
 msgid "Back"
 msgstr "Zurück"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:5
 msgid "Forward"
 msgstr "Vorwärts"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
-msgid "Stylus"
-msgstr "Stylus"
+#: panels/wacom/wacom-stylus-page.ui.h:6
+msgid "No stylus found"
+msgstr "Kein Stylus gefunden"
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:7
+msgid ""
+"Please move your stylus to the proximity of the tablet to configure it"
+msgstr ""
+"Bitte bewegen Sie Ihren Stylus in die Nähe des Tablets, um ihn einzustellen"
+
+#: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Eraser Pressure Feel"
 msgstr "Druckschwelle des Radiergummis"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Soft"
 msgstr "Weich"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Firm"
 msgstr "Fest"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Top Button"
 msgstr "Oberer Knopf"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Lower Button"
 msgstr "Unterer Knopf"
 
-#: panels/wacom/wacom-stylus-page.ui.h:17
+#: panels/wacom/wacom-stylus-page.ui.h:14
+msgid "Lowest Button"
+msgstr "Unterster Knopf"
+
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Tip Pressure Feel"
 msgstr "Druckempfindlichkeit der Stiftspitze"
 
-#: panels/wacom/wacom-stylus-page.ui.h:18
-msgid "Lowest Button"
-msgstr "Unterster Knopf"
+#: panels/wacom/wacom-stylus-page.ui.h:16
+msgid "Test Your _Settings"
+msgstr "Ihre Einstellungen _Testen"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
@@ -2602,7 +2466,7 @@ msgstr "Bytes"
 #: panels/network/connection-editor/ethernet-page.ui.h:15
 #: panels/network/connection-editor/vpn-page.ui.h:3
 msgid "Make available to other _users"
-msgstr "Anderen Benutzern _zur Verfügung stellen"
+msgstr "Anderen Benutzer*innen _zur Verfügung stellen"
 
 #: panels/network/connection-editor/ethernet-page.ui.h:16
 #: panels/network/connection-editor/wifi-page.ui.h:7
@@ -2646,7 +2510,7 @@ msgstr "(Fehler: VPN-Verbindungsbearbeitung kann nicht geladen werden)"
 
 #: panels/network/connection-editor/wifi-page.ui.h:6
 msgid "Make available to _other users"
-msgstr "Anderen Benutzern _zur Verfügung stellen"
+msgstr "Anderen Benutzer*innen _zur Verfügung stellen"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:1
 #: panels/network/wireless-security/eap-method-peap.ui.h:1
@@ -2782,33 +2646,75 @@ msgstr "_WEP-Index"
 msgid "_Type"
 msgstr "_Typ"
 
-#: generate_additional_files.py:20
+#: panels/wacom/calibrator/calibrator.ui.h:1
+msgid "Screen Calibration"
+msgstr "Bildschirmkalibrierung"
+
+#: panels/wacom/calibrator/calibrator.ui.h:2
+msgid ""
+"Please tap the target markers as they appear on screen to calibrate the "
+"tablet."
+msgstr ""
+"Bitte berühren Sie die Zielmarkierungen auf dem Bildschirm, um das "
+"Grafiktablett zu kalibrieren."
+
+#: panels/wacom/calibrator/calibrator.ui.h:3
+msgid "Mis-click detected, restarting…"
+msgstr "Falscher Klick wurde erkannt, Neustart …"
+
+#: generate_additional_files.py:23
 msgid "Color management settings"
 msgstr "Einstellungen der Farbverwaltung"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:23
+msgid "Color, ICC, Profile, Calibrate, Printer, Display"
+msgstr ""
+"Color, ICC, Profile, Calibrate, Printer, Display, Farbe, Kalibrieren, "
+"Drucker, Bildschirm, Anzeige"
+
+#: generate_additional_files.py:37
 msgid "Region & Language"
 msgstr "Region und Sprache"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:37
 msgid "Change your region and language settings"
 msgstr "Einstellungen für Region und Sprache ändern"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Display"
 msgstr "Bildschirm"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Change resolution and position of monitors and projectors"
 msgstr "Auflösung und Anordnung der Bildschirme und Projektoren ändern"
 
 #: generate_additional_files.py:50
+msgid "Panel, Projector, xrandr, Screen, Resolution, Refresh"
+msgstr ""
+"Panel, Projector, xrandr, Screen, Resolution, Refresh, Paneel, Projektor, "
+"xrandr, Bildschirm, Auflösung, Aktualisieren, Auffrischen"
+
+#: generate_additional_files.py:63
 msgid "Network settings"
 msgstr "Netzwerkeinstellungen"
 
-#: generate_additional_files.py:60
+#: generate_additional_files.py:63
+msgid "Network, Wireless, IP, LAN, Proxy, Internet, WiFi"
+msgstr ""
+"Network, Wireless, IP, LAN, Proxy, Internet, WiFi, Netzwerk, drahtlos, "
+"Vermittlung, WLAN"
+
+#: generate_additional_files.py:76
+msgid "Graphics Tablet"
+msgstr "Grafiktablett"
+
+#: generate_additional_files.py:76
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Knopfzuordnung einstellen und die Empfindlichkeit des Stiftes für "
 "Grafiktabletts einstellen"
+
+#: generate_additional_files.py:76
+msgid "Tablet, Wacom, Stylus, Eraser, Mouse"
+msgstr "Tablet, Wacom, Stylus, Eraser, Mouse, Maus"

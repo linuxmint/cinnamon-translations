@@ -17,16 +17,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 16:20+0200\n"
-"PO-Revision-Date: 2018-12-06 13:23+0000\n"
-"Last-Translator: spacy01 <Unknown>\n"
+"POT-Creation-Date: 2022-12-16 13:55+0000\n"
+"PO-Revision-Date: 2022-09-20 21:52+0000\n"
+"Last-Translator: Nikolay Trifonov <trifonov88@gmail.com>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-17 04:59+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "Language: bg\n"
 
 #. TRANSLATORS: this is where the user can click and import a profile
@@ -350,7 +350,7 @@ msgstr ""
 #: panels/display/cc-display-settings.c:190
 #, c-format
 msgid "%.2lf Hz"
-msgstr ""
+msgstr "%.2lf Hz"
 
 #: panels/display/cc-display-settings.c:469
 msgid "Monitor scale"
@@ -623,7 +623,8 @@ msgstr "_Забравяне"
 msgid "History"
 msgstr "История"
 
-#: panels/network/net-device-wifi.c:1903
+#: panels/network/net-device-wifi.c:1903 panels/wacom/cc-wacom-page.c:468
+#: panels/wacom/button-mapping.ui.h:2
 msgid "_Close"
 msgstr "_Затваряне"
 
@@ -987,163 +988,53 @@ msgstr "Оформление"
 # На едното място е в женски род — подредба, на другото май е мъжки.
 # Затова вместо „стандартно“ ползвам „По подразбиране“.
 #: panels/region/cinnamon-region-panel-xkbot.c:227
+#: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "Default"
 msgstr "По подразбиране"
 
-#: panels/wacom/cc-wacom-mapping-panel.c:298
+#: panels/wacom/cc-wacom-button-row.c:248
+#, c-format
+msgid "Button %d"
+msgstr ""
+
+#: panels/wacom/cc-wacom-mapping-panel.c:232
 msgid "Output:"
 msgstr "Изход:"
 
 #. Keep ratio switch
-#: panels/wacom/cc-wacom-mapping-panel.c:310
+#: panels/wacom/cc-wacom-mapping-panel.c:244
 msgid "Keep aspect ratio (letterbox):"
 msgstr "Запазване на пропорцията (портрет):"
 
-#. Apply screen rotation
-#: panels/wacom/cc-wacom-mapping-panel.c:321
-msgid "Rotate the tablet when the screen is rotated:"
-msgstr "Завърти таблета при завъртане на екрана:"
-
 #. Whole-desktop checkbox
-#: panels/wacom/cc-wacom-mapping-panel.c:332
+#: panels/wacom/cc-wacom-mapping-panel.c:255
 msgid "Map to single monitor"
 msgstr "Карта на един монитор"
 
-#: panels/wacom/cc-wacom-nav-button.c:89
+#: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
 msgid "%d of %d"
 msgstr "%d от %d"
 
-#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
-msgctxt "Wacom action-type"
-msgid "None"
-msgstr "Няма"
-
-#: panels/wacom/cc-wacom-page.c:119
-msgctxt "Wacom action-type"
-msgid "Send Keystroke"
-msgstr "Натискане на бутон"
-
-#: panels/wacom/cc-wacom-page.c:120
-msgctxt "Wacom action-type"
-msgid "Switch Monitor"
-msgstr "Смяна на монитора"
-
-#: panels/wacom/cc-wacom-page.c:121
-msgctxt "Wacom action-type"
-msgid "Show On-Screen Help"
-msgstr "Покажи ръководството"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Up"
-msgstr "Нагоре"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Down"
-msgstr "Надолу"
-
-#: panels/wacom/cc-wacom-page.c:663
-msgid "Switch Modes"
-msgstr "Режими на превключвателите"
-
-#: panels/wacom/cc-wacom-page.c:753 panels/wacom/cc-wacom-stylus-page.c:394
-msgid "Button"
-msgstr "Бутон"
-
-#: panels/wacom/cc-wacom-page.c:790
-msgid "Type"
-msgstr "Тип"
-
-#: panels/wacom/cc-wacom-page.c:811
-msgid "Action"
-msgstr "Действиe"
-
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:465
 msgid "Display Mapping"
 msgstr "Показване на карта"
 
-#. If no mode is available, we use "left-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1115
-msgid "Left Ring"
-msgstr "Ляв пръстен"
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+msgid "Stylus"
+msgstr "Писалка"
 
-#: panels/wacom/csd-wacom-device.c:1125
-#, c-format
-msgid "Left Ring Mode #%d"
-msgstr "Режим на левия пръстен № %d"
+#: panels/wacom/cc-wacom-panel.c:669
+msgid "Tablet"
+msgstr ""
 
-#. If no mode is available, we use "right-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1144
-msgid "Right Ring"
-msgstr "Десен пръстен"
+#: panels/wacom/cc-wacom-stylus-page.c:362
+msgid "Button"
+msgstr "Бутон"
 
-#: panels/wacom/csd-wacom-device.c:1154
-#, c-format
-msgid "Right Ring Mode #%d"
-msgstr "Режим на десния пръстен № %d"
-
-#. If no mode is available, we use "left-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1195
-msgid "Left Touchstrip"
-msgstr "Лява сензорна лента"
-
-#: panels/wacom/csd-wacom-device.c:1205
-#, c-format
-msgid "Left Touchstrip Mode #%d"
-msgstr "Режим на лявата сензорна лента № %d"
-
-#. If no mode is available, we use "right-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1224
-msgid "Right Touchstrip"
-msgstr "Дясна сензорна лента"
-
-#: panels/wacom/csd-wacom-device.c:1234
-#, c-format
-msgid "Right Touchstrip Mode #%d"
-msgstr "Режим на дясната сензорна лента № %d"
-
-#: panels/wacom/csd-wacom-device.c:1259
-msgid "Left Touchring Mode Switch"
-msgstr "Превключвател на режима на левия сензорен пръстен"
-
-#: panels/wacom/csd-wacom-device.c:1261
-msgid "Right Touchring Mode Switch"
-msgstr "Превключвател на режима на десния сензорен пръстен"
-
-#: panels/wacom/csd-wacom-device.c:1264
-msgid "Left Touchstrip Mode Switch"
-msgstr "Превключвател на режима на лявата сензорна лента"
-
-#: panels/wacom/csd-wacom-device.c:1266
-msgid "Right Touchstrip Mode Switch"
-msgstr "Превключвател на режима на дясната сензорна лента"
-
-#: panels/wacom/csd-wacom-device.c:1271
-#, c-format
-msgid "Mode Switch #%d"
-msgstr "Превключвател на режима № %d"
-
-#: panels/wacom/csd-wacom-device.c:1375
-#, c-format
-msgid "Left Button #%d"
-msgstr "Ляв бутон № %d"
-
-#: panels/wacom/csd-wacom-device.c:1378
-#, c-format
-msgid "Right Button #%d"
-msgstr "Десен бутон № %d"
-
-#: panels/wacom/csd-wacom-device.c:1381
-#, c-format
-msgid "Top Button #%d"
-msgstr "Горен бутон № %d"
-
-#: panels/wacom/csd-wacom-device.c:1384
-#, c-format
-msgid "Bottom Button #%d"
-msgstr "Долен бутон № %d"
+#: panels/wacom/csd-wacom-key-shortcut-button.c:217
+msgid "New shortcut…"
+msgstr ""
 
 #: panels/network/connection-editor/ce-page-8021x-security.c:101
 #: panels/network/connection-editor/ce-page-security.c:459
@@ -1159,19 +1050,19 @@ msgstr ""
 #: panels/network/connection-editor/ce-page.c:521
 #, c-format
 msgid "Profile %d"
-msgstr ""
+msgstr "Профил %d"
 
 #: panels/network/connection-editor/ce-page-details.c:89
 msgid "Never"
-msgstr ""
+msgstr "Никога"
 
 #: panels/network/connection-editor/ce-page-details.c:100
 msgid "Today"
-msgstr ""
+msgstr "Днес"
 
 #: panels/network/connection-editor/ce-page-details.c:102
 msgid "Yesterday"
-msgstr ""
+msgstr "Вчера"
 
 #: panels/network/connection-editor/ce-page-details.c:225
 #: panels/network/network-wifi.ui.h:47
@@ -1190,7 +1081,7 @@ msgstr "Идентичност"
 #: panels/network/connection-editor/ce-page-ip6.c:180
 #: panels/network/connection-editor/ce-page-ip6.c:427
 msgid "Address"
-msgstr ""
+msgstr "Адрес"
 
 #: panels/network/connection-editor/ce-page-ip4.c:215
 #: panels/network/connection-editor/ce-page-ip4.c:474
@@ -1213,12 +1104,12 @@ msgstr ""
 #: panels/network/connection-editor/ce-page-ip4.c:305
 #: panels/network/connection-editor/ce-page-ip6.c:277
 msgid "Add"
-msgstr ""
+msgstr "Добавяне"
 
 #: panels/network/connection-editor/ce-page-ip4.c:368
 #: panels/network/connection-editor/ce-page-ip6.c:334
 msgid "Server"
-msgstr ""
+msgstr "Сървър"
 
 #: panels/network/connection-editor/ce-page-ip4.c:385
 #: panels/network/connection-editor/ce-page-ip6.c:351
@@ -1322,7 +1213,7 @@ msgstr ""
 
 #: panels/network/connection-editor/firewall-helpers.c:50
 msgid "The zone defines the trust level of the connection"
-msgstr ""
+msgstr "Зоната определя нивото на доверие към връзката"
 
 #: panels/network/connection-editor/net-connection-editor.c:295
 msgid "Unable to open connection editor"
@@ -1330,15 +1221,15 @@ msgstr ""
 
 #: panels/network/connection-editor/net-connection-editor.c:313
 msgid "New Profile"
-msgstr ""
+msgstr "Нов профил"
 
 #: panels/network/connection-editor/net-connection-editor.c:545
 msgid "_Add"
-msgstr ""
+msgstr "_Добавяне"
 
 #: panels/network/connection-editor/net-connection-editor.c:634
 msgid "VPN"
-msgstr ""
+msgstr "VPN"
 
 #: panels/network/connection-editor/net-connection-editor.c:782
 msgid "Import from file…"
@@ -1367,16 +1258,16 @@ msgstr ""
 
 #: panels/network/connection-editor/vpn-helpers.c:182
 msgid "_Open"
-msgstr ""
+msgstr "_Отваряне"
 
 #: panels/network/connection-editor/vpn-helpers.c:230
 #, c-format
 msgid "A file named “%s” already exists."
-msgstr ""
+msgstr "Вече съществува файл с име „%s“."
 
 #: panels/network/connection-editor/vpn-helpers.c:232
 msgid "_Replace"
-msgstr ""
+msgstr "_Замяна"
 
 #: panels/network/connection-editor/vpn-helpers.c:234
 #, c-format
@@ -1401,7 +1292,7 @@ msgstr ""
 
 #: panels/network/connection-editor/vpn-helpers.c:311
 msgid "_Save"
-msgstr ""
+msgstr "_Запазване"
 
 #: panels/network/wireless-security/eap-method.c:69
 msgid "undefined error in 802.1x security (wpa-eap)"
@@ -1409,7 +1300,7 @@ msgstr ""
 
 #: panels/network/wireless-security/eap-method.c:245
 msgid "no file selected"
-msgstr ""
+msgstr "не е избран файл"
 
 #: panels/network/wireless-security/eap-method.c:276
 msgid "unspecified error validating eap-method file"
@@ -1431,21 +1322,21 @@ msgstr ""
 #: panels/network/wireless-security/eap-method-peap.c:302
 #: panels/network/wireless-security/eap-method-ttls.c:333
 msgid "GTC"
-msgstr ""
+msgstr "GTC"
 
 #: panels/network/wireless-security/eap-method-fast.c:283
 #: panels/network/wireless-security/eap-method-peap.c:272
 #: panels/network/wireless-security/eap-method-ttls.c:288
 msgid "MSCHAPv2"
-msgstr ""
+msgstr "MSCHAPv2"
 
 #: panels/network/wireless-security/eap-method-fast.c:406
 msgid "Choose a PAC file"
-msgstr ""
+msgstr "Избор на файл PAC"
 
 #: panels/network/wireless-security/eap-method-fast.c:413
 msgid "PAC files (*.pac)"
-msgstr ""
+msgstr "Файлове във формат PAC (*.pac)"
 
 #: panels/network/wireless-security/eap-method-leap.c:65
 msgid "missing EAP-LEAP username"
@@ -1468,7 +1359,7 @@ msgstr ""
 #: panels/network/wireless-security/eap-method-ttls.c:318
 #: panels/network/wireless-security/wireless-security.c:439
 msgid "MD5"
-msgstr ""
+msgstr "MD5"
 
 #: panels/network/wireless-security/eap-method-peap.c:381
 #: panels/network/wireless-security/eap-method-tls.c:501
@@ -1478,11 +1369,11 @@ msgstr ""
 
 #: panels/network/wireless-security/eap-method-simple.c:74
 msgid "missing EAP username"
-msgstr ""
+msgstr "липсва потребителско име за EAP"
 
 #: panels/network/wireless-security/eap-method-simple.c:87
 msgid "missing EAP password"
-msgstr ""
+msgstr "липсва парола за EAP"
 
 #: panels/network/wireless-security/eap-method-tls.c:68
 msgid "missing EAP-TLS identity"
@@ -1526,7 +1417,7 @@ msgstr ""
 
 #: panels/network/wireless-security/eap-method-tls.c:495
 msgid "Choose your personal certificate"
-msgstr ""
+msgstr "Изберете личния си сертификат"
 
 #: panels/network/wireless-security/eap-method-tls.c:507
 msgid "Choose your private key"
@@ -1543,15 +1434,15 @@ msgstr ""
 
 #: panels/network/wireless-security/eap-method-ttls.c:258
 msgid "PAP"
-msgstr ""
+msgstr "PAP"
 
 #: panels/network/wireless-security/eap-method-ttls.c:273
 msgid "MSCHAP"
-msgstr ""
+msgstr "MSCHAP"
 
 #: panels/network/wireless-security/eap-method-ttls.c:303
 msgid "CHAP"
-msgstr ""
+msgstr "CHAP"
 
 #: panels/network/wireless-security/wireless-security.c:87
 msgid "Unknown error validating 802.1x security"
@@ -1559,15 +1450,15 @@ msgstr ""
 
 #: panels/network/wireless-security/wireless-security.c:451
 msgid "TLS"
-msgstr ""
+msgstr "TLS"
 
 #: panels/network/wireless-security/wireless-security.c:475
 msgid "PWD"
-msgstr ""
+msgstr "PWD"
 
 #: panels/network/wireless-security/wireless-security.c:486
 msgid "FAST"
-msgstr ""
+msgstr "FAST"
 
 #: panels/network/wireless-security/wireless-security.c:497
 msgid "Tunneled TLS"
@@ -1575,19 +1466,19 @@ msgstr ""
 
 #: panels/network/wireless-security/wireless-security.c:508
 msgid "Protected EAP (PEAP)"
-msgstr ""
+msgstr "Защитен EAP (PEAP)"
 
 #: panels/network/wireless-security/ws-leap.c:63
 msgid "missing leap-username"
-msgstr ""
+msgstr "липсва потребителско име за leap"
 
 #: panels/network/wireless-security/ws-leap.c:74
 msgid "missing leap-password"
-msgstr ""
+msgstr "липсва парола за leap"
 
 #: panels/network/wireless-security/ws-wep-key.c:107
 msgid "missing wep-key"
-msgstr ""
+msgstr "липсва ключ за wep"
 
 #: panels/network/wireless-security/ws-wep-key.c:116
 #, c-format
@@ -1625,21 +1516,6 @@ msgstr ""
 
 #: panels/network/wireless-security/ws-wpa-psk.c:79
 msgid "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
-msgstr ""
-
-#. Text printed on screen
-#: panels/wacom/calibrator/gui_gtk.c:78
-msgid "Screen Calibration"
-msgstr ""
-
-#: panels/wacom/calibrator/gui_gtk.c:79
-msgid ""
-"Please tap the target markers as they appear on screen to calibrate the "
-"tablet."
-msgstr ""
-
-#: panels/wacom/calibrator/gui_gtk.c:368
-msgid "Mis-click detected, restarting..."
 msgstr ""
 
 #: shell/cc-shell-nav-bar.c:117
@@ -1691,7 +1567,7 @@ msgctxt "hotspot"
 msgid "Hotspot"
 msgstr "Точка за достъп"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:20
+#: panels/color/color.ui.h:3 generate_additional_files.py:23
 msgid "Color"
 msgstr "Цвят"
 
@@ -1854,7 +1730,7 @@ msgstr "Декември"
 
 #: panels/display/cc-display-panel.ui.h:1
 msgid "Display Arrangement"
-msgstr ""
+msgstr "Подредба на екраните"
 
 #: panels/display/cc-display-panel.ui.h:2
 msgid "Set as Primary"
@@ -1862,11 +1738,11 @@ msgstr "Задаване като основен"
 
 #: panels/display/cc-display-panel.ui.h:3
 msgid "Display Configuration"
-msgstr ""
+msgstr "Настройки на екрана"
 
 #: panels/display/cc-display-panel.ui.h:4
 msgid "Join Displays"
-msgstr ""
+msgstr "Обединяване на екраните"
 
 #: panels/display/cc-display-panel.ui.h:5
 msgid "Mirror"
@@ -1874,11 +1750,11 @@ msgstr ""
 
 #: panels/display/cc-display-panel.ui.h:6
 msgid "Displays"
-msgstr ""
+msgstr "Екрани"
 
 #: panels/display/cc-display-panel.ui.h:7
 msgid "Reset to Defaults"
-msgstr ""
+msgstr "Възстановяване на стандартните настройки"
 
 #: panels/display/cc-display-panel.ui.h:8
 msgid "Cancel changes"
@@ -1886,19 +1762,19 @@ msgstr ""
 
 #: panels/display/cc-display-panel.ui.h:9
 msgid "Apply"
-msgstr ""
+msgstr "Прилагане"
 
 #: panels/display/cc-display-settings.ui.h:1
 msgid "Resolution"
-msgstr ""
+msgstr "Разделителна способност"
 
 #: panels/display/cc-display-settings.ui.h:2
 msgid "Refresh Rate"
-msgstr ""
+msgstr "Честота на опресняване"
 
 #: panels/display/cc-display-settings.ui.h:3
 msgid "Rotation"
-msgstr ""
+msgstr "Завъртане"
 
 #: panels/display/cc-display-settings.ui.h:5
 msgid "Adjust for TV"
@@ -1916,7 +1792,7 @@ msgstr "Международен идентификатор за мобилни 
 msgid "Provider"
 msgstr "Доставчик"
 
-#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:50
+#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:63
 msgid "Network"
 msgstr "Мрежа"
 
@@ -2354,142 +2230,128 @@ msgstr ""
 msgid "Map Buttons"
 msgstr "Функции на бутоните"
 
-#: panels/wacom/button-mapping.ui.h:2
+#: panels/wacom/button-mapping.ui.h:3
 msgid "Map buttons to functions"
 msgstr "Настройване на функциите на бутоните"
 
-#: panels/wacom/button-mapping.ui.h:3
+#: panels/wacom/button-mapping.ui.h:4
 msgid ""
-"To edit a shortcut, click the row and hold down the new keys or press "
-"Backspace to clear."
+"To edit a shortcut, choose the “Send Keystroke” action, press the keyboard "
+"shortcut button and hold down the new keys or press Backspace to clear."
 msgstr ""
-"За да редактирате клавишната комбинация, натиснете върху съответния ред и "
-"въведете новата комбинация, или натиснете „Backspace“ за изчистване."
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:1
-msgid "Tablet (absolute)"
-msgstr "Таблет (абсолютни координати)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:2
-msgid "Touchpad (relative)"
-msgstr "Сензорен панел (относителни координати)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:3
-msgid "Tablet Preferences"
-msgstr "Настройки на таблет"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:4
 msgid "No tablet detected"
 msgstr "Не е открит таблет"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:5
-msgid "Please plug in or turn on your graphics tablet"
-msgstr "Моля включете Вашият графичен таблет"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:2
+msgid "Please plug in or turn on your Wacom tablet"
+msgstr ""
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+#: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Bluetooth Settings"
 msgstr "Блутут настройки"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:60
-msgid "Graphics Tablet"
-msgstr "Графичен таблет"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:4
+msgid "Wacom Tablet"
+msgstr ""
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:8
+#: panels/wacom/cinnamon-wacom-properties.ui.h:5
+msgid "Tracking Mode"
+msgstr "Режим на следене"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+msgid "Left-Handed Orientation"
+msgstr "Ориентация за лява ръка"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Map to Monitor…"
 msgstr "Настройки на монитора..."
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:9
+#: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map Buttons…"
 msgstr "Настройка на бутоните..."
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+#: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Calibrate…"
 msgstr "Калибриране..."
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+msgid "Adjust mouse settings"
+msgstr ""
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
 msgstr "Задаване на разделителната способност на екрана"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:12
-msgid "Tracking Mode"
-msgstr "Режим на следене"
+msgid "Decouple Display"
+msgstr ""
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
-msgid "Left-Handed Orientation"
-msgstr "Ориентация за лява ръка"
+msgid "Tablet (absolute)"
+msgstr "Таблет (абсолютни координати)"
 
-#: panels/wacom/wacom-stylus-page.ui.h:1
-msgid "No Action"
-msgstr "Без действие"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:14
+msgid "Touchpad (relative)"
+msgstr "Сензорен панел (относителни координати)"
 
 #: panels/wacom/wacom-stylus-page.ui.h:2
-msgid "Left Mouse Button Click"
-msgstr "Натискане на левия бутон на мишката"
-
-#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Middle Mouse Button Click"
 msgstr "Натискане на среден бутон на мишката"
 
-#: panels/wacom/wacom-stylus-page.ui.h:4
+#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Right Mouse Button Click"
 msgstr "Натискане на десен бутон на мишката"
 
-#: panels/wacom/wacom-stylus-page.ui.h:5
-msgid "Scroll Up"
-msgstr "Придвижване нагоре"
-
-#: panels/wacom/wacom-stylus-page.ui.h:6
-msgid "Scroll Down"
-msgstr "Придвижване надолу"
-
-#: panels/wacom/wacom-stylus-page.ui.h:7
-msgid "Scroll Left"
-msgstr "Придвижване наляво"
-
-#: panels/wacom/wacom-stylus-page.ui.h:8
-msgid "Scroll Right"
-msgstr "Придвижване надясно"
-
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:4
 msgid "Back"
 msgstr "Назад"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:5
 msgid "Forward"
 msgstr "Напред"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
-msgid "Stylus"
-msgstr "Писалка"
+#: panels/wacom/wacom-stylus-page.ui.h:6
+msgid "No stylus found"
+msgstr ""
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:7
+msgid ""
+"Please move your stylus to the proximity of the tablet to configure it"
+msgstr ""
+
+#: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Eraser Pressure Feel"
 msgstr "Усещане на натиска на гумата"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Soft"
 msgstr "Меко"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Firm"
 msgstr "Твърдо"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Top Button"
 msgstr "Горен бутон"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Lower Button"
 msgstr "Долен бутон"
 
-#: panels/wacom/wacom-stylus-page.ui.h:17
+#: panels/wacom/wacom-stylus-page.ui.h:14
+msgid "Lowest Button"
+msgstr "Най-долния бутон"
+
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Tip Pressure Feel"
 msgstr "Усещане на натиска на писеца"
 
-#: panels/wacom/wacom-stylus-page.ui.h:18
-msgid "Lowest Button"
-msgstr "Най-долния бутон"
+#: panels/wacom/wacom-stylus-page.ui.h:16
+msgid "Test Your _Settings"
+msgstr ""
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
@@ -2756,34 +2618,68 @@ msgstr "Индек_с в WEP"
 msgid "_Type"
 msgstr "_Вид"
 
-#: generate_additional_files.py:20
+#: panels/wacom/calibrator/calibrator.ui.h:1
+msgid "Screen Calibration"
+msgstr "Калибриране на екрана"
+
+#: panels/wacom/calibrator/calibrator.ui.h:2
+msgid ""
+"Please tap the target markers as they appear on screen to calibrate the "
+"tablet."
+msgstr ""
+
+#: panels/wacom/calibrator/calibrator.ui.h:3
+msgid "Mis-click detected, restarting…"
+msgstr ""
+
+#: generate_additional_files.py:23
 msgid "Color management settings"
 msgstr "Настройка на цвета"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:23
+msgid "Color, ICC, Profile, Calibrate, Printer, Display"
+msgstr ""
+
+#: generate_additional_files.py:37
 msgid "Region & Language"
 msgstr "Регион и език"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:37
 msgid "Change your region and language settings"
 msgstr "Променете своите регионални и езикови настройки"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Display"
 msgstr "Екран"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Change resolution and position of monitors and projectors"
 msgstr ""
 "Промяна на разделителната способност и положението на екраните и проекторите"
 
 #: generate_additional_files.py:50
+msgid "Panel, Projector, xrandr, Screen, Resolution, Refresh"
+msgstr ""
+
+#: generate_additional_files.py:63
 msgid "Network settings"
 msgstr "Мрежови настройки"
 
-#: generate_additional_files.py:60
+#: generate_additional_files.py:63
+msgid "Network, Wireless, IP, LAN, Proxy, Internet, WiFi"
+msgstr ""
+
+#: generate_additional_files.py:76
+msgid "Graphics Tablet"
+msgstr "Графичен таблет"
+
+#: generate_additional_files.py:76
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Настройка на бутоните и чувствителността на стилуса чувствителност за "
 "графичните таблети"
+
+#: generate_additional_files.py:76
+msgid "Tablet, Wacom, Stylus, Eraser, Mouse"
+msgstr ""

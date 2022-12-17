@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 16:20+0200\n"
-"PO-Revision-Date: 2022-07-07 12:26+0000\n"
+"POT-Creation-Date: 2022-12-16 13:55+0000\n"
+"PO-Revision-Date: 2022-11-23 16:35+0000\n"
 "Last-Translator: Rostyslav Haitkulov <Unknown>\n"
 "Language-Team: linux.org.ua\n"
 "MIME-Version: 1.0\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
-"Language: uk\n"
+"X-Launchpad-Export-Date: 2022-12-17 05:02+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "X-Project-Style: gnome\n"
+"Language: uk\n"
 
 #. TRANSLATORS: this is where the user can click and import a profile
 #: panels/color/cc-color-panel.c:108
@@ -616,7 +616,8 @@ msgstr "_Забути"
 msgid "History"
 msgstr "Дієпис"
 
-#: panels/network/net-device-wifi.c:1903
+#: panels/network/net-device-wifi.c:1903 panels/wacom/cc-wacom-page.c:468
+#: panels/wacom/button-mapping.ui.h:2
 msgid "_Close"
 msgstr "_Закрити"
 
@@ -961,163 +962,53 @@ msgid "Layout"
 msgstr "Розкладка"
 
 #: panels/region/cinnamon-region-panel-xkbot.c:227
+#: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "Default"
 msgstr "Типово"
 
-#: panels/wacom/cc-wacom-mapping-panel.c:298
+#: panels/wacom/cc-wacom-button-row.c:248
+#, c-format
+msgid "Button %d"
+msgstr "Кнопка %d"
+
+#: panels/wacom/cc-wacom-mapping-panel.c:232
 msgid "Output:"
 msgstr "Вивід:"
 
 #. Keep ratio switch
-#: panels/wacom/cc-wacom-mapping-panel.c:310
+#: panels/wacom/cc-wacom-mapping-panel.c:244
 msgid "Keep aspect ratio (letterbox):"
 msgstr "Зберегти співвідношення сторін (поштова скринька):"
 
-#. Apply screen rotation
-#: panels/wacom/cc-wacom-mapping-panel.c:321
-msgid "Rotate the tablet when the screen is rotated:"
-msgstr "Поворот екрану при повороті планшету:"
-
 #. Whole-desktop checkbox
-#: panels/wacom/cc-wacom-mapping-panel.c:332
+#: panels/wacom/cc-wacom-mapping-panel.c:255
 msgid "Map to single monitor"
 msgstr "Прив’язати до одного монітора"
 
-#: panels/wacom/cc-wacom-nav-button.c:89
+#: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
 msgid "%d of %d"
 msgstr "%d з %d"
 
-#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
-msgctxt "Wacom action-type"
-msgid "None"
-msgstr "Жодні"
-
-#: panels/wacom/cc-wacom-page.c:119
-msgctxt "Wacom action-type"
-msgid "Send Keystroke"
-msgstr "Надіслати натискання клавіші"
-
-#: panels/wacom/cc-wacom-page.c:120
-msgctxt "Wacom action-type"
-msgid "Switch Monitor"
-msgstr "Перемкнути монітор"
-
-#: panels/wacom/cc-wacom-page.c:121
-msgctxt "Wacom action-type"
-msgid "Show On-Screen Help"
-msgstr "Показати екранну довідку"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Up"
-msgstr "Угору"
-
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Down"
-msgstr "Униз"
-
-#: panels/wacom/cc-wacom-page.c:663
-msgid "Switch Modes"
-msgstr "Режими перемикання"
-
-#: panels/wacom/cc-wacom-page.c:753 panels/wacom/cc-wacom-stylus-page.c:394
-msgid "Button"
-msgstr "Кнопка"
-
-#: panels/wacom/cc-wacom-page.c:790
-msgid "Type"
-msgstr "Тип"
-
-#: panels/wacom/cc-wacom-page.c:811
-msgid "Action"
-msgstr "Дія"
-
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:465
 msgid "Display Mapping"
 msgstr "Показ на екран"
 
-#. If no mode is available, we use "left-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1115
-msgid "Left Ring"
-msgstr "Ліве сенсорне кільце"
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+msgid "Stylus"
+msgstr "Стилус"
 
-#: panels/wacom/csd-wacom-device.c:1125
-#, c-format
-msgid "Left Ring Mode #%d"
-msgstr "Режим лівого кільця #%d"
+#: panels/wacom/cc-wacom-panel.c:669
+msgid "Tablet"
+msgstr "Планшет"
 
-#. If no mode is available, we use "right-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1144
-msgid "Right Ring"
-msgstr "Праве сенсорне кільце"
+#: panels/wacom/cc-wacom-stylus-page.c:362
+msgid "Button"
+msgstr "Кнопка"
 
-#: panels/wacom/csd-wacom-device.c:1154
-#, c-format
-msgid "Right Ring Mode #%d"
-msgstr "Режим правого кільця #%d"
-
-#. If no mode is available, we use "left-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1195
-msgid "Left Touchstrip"
-msgstr "Ліва сенсорна смуга"
-
-#: panels/wacom/csd-wacom-device.c:1205
-#, c-format
-msgid "Left Touchstrip Mode #%d"
-msgstr "Режим лівої сенсорної смуги #%d"
-
-#. If no mode is available, we use "right-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1224
-msgid "Right Touchstrip"
-msgstr "Права сенсорна смуга"
-
-#: panels/wacom/csd-wacom-device.c:1234
-#, c-format
-msgid "Right Touchstrip Mode #%d"
-msgstr "Режим правої сенсорної смуги #%d"
-
-#: panels/wacom/csd-wacom-device.c:1259
-msgid "Left Touchring Mode Switch"
-msgstr "Перемикач режиму лівої сенсорної смуги"
-
-#: panels/wacom/csd-wacom-device.c:1261
-msgid "Right Touchring Mode Switch"
-msgstr "Перемикач режиму правої сенсорної смуги"
-
-#: panels/wacom/csd-wacom-device.c:1264
-msgid "Left Touchstrip Mode Switch"
-msgstr "Перемикач режиму лівої сенсорної смуги"
-
-#: panels/wacom/csd-wacom-device.c:1266
-msgid "Right Touchstrip Mode Switch"
-msgstr "Перемикач режиму правої сенсорної смуги"
-
-#: panels/wacom/csd-wacom-device.c:1271
-#, c-format
-msgid "Mode Switch #%d"
-msgstr "Перемикач режиму #%d"
-
-#: panels/wacom/csd-wacom-device.c:1375
-#, c-format
-msgid "Left Button #%d"
-msgstr "Ліва кнопка #%d"
-
-#: panels/wacom/csd-wacom-device.c:1378
-#, c-format
-msgid "Right Button #%d"
-msgstr "Права кнопка #%d"
-
-#: panels/wacom/csd-wacom-device.c:1381
-#, c-format
-msgid "Top Button #%d"
-msgstr "Верхня кнопка #%d"
-
-#: panels/wacom/csd-wacom-device.c:1384
-#, c-format
-msgid "Bottom Button #%d"
-msgstr "Нижня кнопка #%d"
+#: panels/wacom/csd-wacom-key-shortcut-button.c:217
+msgid "New shortcut…"
+msgstr "Нове скорочення…"
 
 #: panels/network/connection-editor/ce-page-8021x-security.c:101
 #: panels/network/connection-editor/ce-page-security.c:459
@@ -1133,19 +1024,19 @@ msgstr "автоматично"
 #: panels/network/connection-editor/ce-page.c:521
 #, c-format
 msgid "Profile %d"
-msgstr ""
+msgstr "Профіль %d"
 
 #: panels/network/connection-editor/ce-page-details.c:89
 msgid "Never"
-msgstr ""
+msgstr "Ніколи"
 
 #: panels/network/connection-editor/ce-page-details.c:100
 msgid "Today"
-msgstr ""
+msgstr "Сьогодні"
 
 #: panels/network/connection-editor/ce-page-details.c:102
 msgid "Yesterday"
-msgstr ""
+msgstr "Учора"
 
 #: panels/network/connection-editor/ce-page-details.c:225
 #: panels/network/network-wifi.ui.h:47
@@ -1164,12 +1055,12 @@ msgstr "Ідентифікатор"
 #: panels/network/connection-editor/ce-page-ip6.c:180
 #: panels/network/connection-editor/ce-page-ip6.c:427
 msgid "Address"
-msgstr ""
+msgstr "Адреса"
 
 #: panels/network/connection-editor/ce-page-ip4.c:215
 #: panels/network/connection-editor/ce-page-ip4.c:474
 msgid "Netmask"
-msgstr ""
+msgstr "Маска"
 
 #: panels/network/connection-editor/ce-page-ip4.c:229
 #: panels/network/connection-editor/ce-page-ip4.c:487
@@ -1182,34 +1073,34 @@ msgstr "Шлюз"
 #: panels/network/connection-editor/ce-page-ip4.c:250
 #: panels/network/connection-editor/ce-page-ip6.c:223
 msgid "Delete Address"
-msgstr ""
+msgstr "Вилучити адресу"
 
 #: panels/network/connection-editor/ce-page-ip4.c:305
 #: panels/network/connection-editor/ce-page-ip6.c:277
 msgid "Add"
-msgstr ""
+msgstr "Додати"
 
 #: panels/network/connection-editor/ce-page-ip4.c:368
 #: panels/network/connection-editor/ce-page-ip6.c:334
 msgid "Server"
-msgstr ""
+msgstr "Сервер"
 
 #: panels/network/connection-editor/ce-page-ip4.c:385
 #: panels/network/connection-editor/ce-page-ip6.c:351
 msgid "Delete DNS Server"
-msgstr ""
+msgstr "Вилучити сервер DNS"
 
 #. Translators: Please see https://en.wikipedia.org/wiki/Metrics_(networking)
 #: panels/network/connection-editor/ce-page-ip4.c:501
 #: panels/network/connection-editor/ce-page-ip6.c:467
 msgctxt "network parameters"
 msgid "Metric"
-msgstr ""
+msgstr "Метрика"
 
 #: panels/network/connection-editor/ce-page-ip4.c:522
 #: panels/network/connection-editor/ce-page-ip6.c:484
 msgid "Delete Route"
-msgstr ""
+msgstr "Вилучити маршрут"
 
 #: panels/network/connection-editor/ce-page-ip4.c:626
 #: panels/network/network-wifi.ui.h:28
@@ -1225,7 +1116,7 @@ msgstr "Вручну"
 #: panels/network/connection-editor/ce-page-ip4.c:634
 #: panels/network/connection-editor/ce-page-ip6.c:596
 msgid "Link-Local Only"
-msgstr ""
+msgstr "Лише Link-Local"
 
 #: panels/network/connection-editor/ce-page-ip4.c:980
 #: panels/network/network-wifi.ui.h:49
@@ -1235,7 +1126,7 @@ msgstr "IPv4"
 #: panels/network/connection-editor/ce-page-ip6.c:193
 #: panels/network/connection-editor/ce-page-ip6.c:440
 msgid "Prefix"
-msgstr ""
+msgstr "Префікс"
 
 #: panels/network/connection-editor/ce-page-ip6.c:584
 #: panels/network/connection-editor/ethernet-page.ui.h:1
@@ -1247,7 +1138,7 @@ msgstr "Автоматично"
 
 #: panels/network/connection-editor/ce-page-ip6.c:588
 msgid "Automatic, DHCP only"
-msgstr ""
+msgstr "Автоматично, лише DHCP"
 
 #: panels/network/connection-editor/ce-page-ip6.c:898
 #: panels/network/network-wifi.ui.h:50
@@ -1256,75 +1147,75 @@ msgstr "IPv6"
 
 #: panels/network/connection-editor/ce-page-reset.c:78
 msgid "Reset"
-msgstr ""
+msgstr "Скинути"
 
 #: panels/network/connection-editor/ce-page-security.c:248
 msgctxt "Wi-Fi/Ethernet security"
 msgid "None"
-msgstr ""
+msgstr "Жодний"
 
 #: panels/network/connection-editor/ce-page-security.c:271
 msgid "WEP 40/128-bit Key (Hex or ASCII)"
-msgstr ""
+msgstr "WEP 40/128-бітний ключ (Hex або ASCII)"
 
 #: panels/network/connection-editor/ce-page-security.c:281
 msgid "WEP 128-bit Passphrase"
-msgstr ""
+msgstr "WEP 128-и бітна ключова фраза"
 
 #: panels/network/connection-editor/ce-page-security.c:294
 #: panels/network/wireless-security/wireless-security.c:463
 msgid "LEAP"
-msgstr ""
+msgstr "LEAP"
 
 #: panels/network/connection-editor/ce-page-security.c:307
 msgid "Dynamic WEP (802.1x)"
-msgstr ""
+msgstr "Динамічний WEP (802.1x)"
 
 #: panels/network/connection-editor/ce-page-security.c:321
 msgid "WPA & WPA2 Personal"
-msgstr ""
+msgstr "WPA & WPA2 Personal"
 
 #: panels/network/connection-editor/ce-page-security.c:335
 msgid "WPA & WPA2 Enterprise"
-msgstr ""
+msgstr "WPA & WPA2 Enterprise"
 
 #: panels/network/connection-editor/firewall-helpers.c:49
 #: panels/network/connection-editor/firewall-helpers.c:118
 msgctxt "Firewall zone"
 msgid "Default"
-msgstr ""
+msgstr "Типово"
 
 #: panels/network/connection-editor/firewall-helpers.c:50
 msgid "The zone defines the trust level of the connection"
-msgstr ""
+msgstr "Зона визначає рівень довіри зв'язку"
 
 #: panels/network/connection-editor/net-connection-editor.c:295
 msgid "Unable to open connection editor"
-msgstr ""
+msgstr "Не вдалося відкрити редактор з'єднань"
 
 #: panels/network/connection-editor/net-connection-editor.c:313
 msgid "New Profile"
-msgstr ""
+msgstr "Новий профіль"
 
 #: panels/network/connection-editor/net-connection-editor.c:545
 msgid "_Add"
-msgstr ""
+msgstr "_Додати"
 
 #: panels/network/connection-editor/net-connection-editor.c:634
 msgid "VPN"
-msgstr ""
+msgstr "VPN"
 
 #: panels/network/connection-editor/net-connection-editor.c:782
 msgid "Import from file…"
-msgstr ""
+msgstr "Імпортувати з файла…"
 
 #: panels/network/connection-editor/net-connection-editor.c:816
 msgid "Add VPN"
-msgstr ""
+msgstr "Додати VPN"
 
 #: panels/network/connection-editor/vpn-helpers.c:141
 msgid "Cannot import VPN connection"
-msgstr ""
+msgstr "Не вдалось імпортувати з'єднання з VPN"
 
 #: panels/network/connection-editor/vpn-helpers.c:143
 #, c-format
@@ -1334,32 +1225,36 @@ msgid ""
 "\n"
 "Error: %s."
 msgstr ""
+"Файл «%s» неможливо прочитати або він містить невідому інформацію про "
+"з'єднання з VPN\n"
+"\n"
+"Помилка: %s."
 
 #: panels/network/connection-editor/vpn-helpers.c:178
 msgid "Select file to import"
-msgstr ""
+msgstr "Виберіть файл для імпорту"
 
 #: panels/network/connection-editor/vpn-helpers.c:182
 msgid "_Open"
-msgstr ""
+msgstr "_Відкрити"
 
 #: panels/network/connection-editor/vpn-helpers.c:230
 #, c-format
 msgid "A file named “%s” already exists."
-msgstr ""
+msgstr "Файл з назвою «%s» вже існує."
 
 #: panels/network/connection-editor/vpn-helpers.c:232
 msgid "_Replace"
-msgstr ""
+msgstr "_Замінити"
 
 #: panels/network/connection-editor/vpn-helpers.c:234
 #, c-format
 msgid "Do you want to replace %s with the VPN connection you are saving?"
-msgstr ""
+msgstr "Бажаєте замінити %s на з'єднання з VPN, яке ви зберігаєте?"
 
 #: panels/network/connection-editor/vpn-helpers.c:270
 msgid "Cannot export VPN connection"
-msgstr ""
+msgstr "Неможливо експортувати з'єднання з VPN"
 
 #: panels/network/connection-editor/vpn-helpers.c:272
 #, c-format
@@ -1368,126 +1263,129 @@ msgid ""
 "\n"
 "Error: %s."
 msgstr ""
+"З'єднання з VPN «%s» неможливо експортувати в %s.\n"
+"\n"
+"Помилка: %s."
 
 #: panels/network/connection-editor/vpn-helpers.c:307
 msgid "Export VPN connection"
-msgstr ""
+msgstr "Експорт з'єднання з VPN"
 
 #: panels/network/connection-editor/vpn-helpers.c:311
 msgid "_Save"
-msgstr ""
+msgstr "З_берегти"
 
 #: panels/network/wireless-security/eap-method.c:69
 msgid "undefined error in 802.1x security (wpa-eap)"
-msgstr ""
+msgstr "невідома помилка безпеки 802.1x (wpa-eap)"
 
 #: panels/network/wireless-security/eap-method.c:245
 msgid "no file selected"
-msgstr ""
+msgstr "не вибрано файла"
 
 #: panels/network/wireless-security/eap-method.c:276
 msgid "unspecified error validating eap-method file"
-msgstr ""
+msgstr "Невизначена помилка завірення файла з методом eap"
 
 #: panels/network/wireless-security/eap-method.c:321
 msgid "DER, PEM, or PKCS#12 private keys (*.der, *.pem, *.p12, *.key)"
-msgstr ""
+msgstr "Приватні ключі DER, PEM або PKCS#12 (*.der, *.pem, *.p12, *.key)"
 
 #: panels/network/wireless-security/eap-method.c:324
 msgid "DER or PEM certificates (*.der, *.pem, *.crt, *.cer)"
-msgstr ""
+msgstr "Сертифікати DER або PEM (*.der, *.pem, *.crt, *.cer)"
 
 #: panels/network/wireless-security/eap-method-fast.c:72
 msgid "missing EAP-FAST PAC file"
-msgstr ""
+msgstr "відсутній файл EAP-FAST PAC"
 
 #: panels/network/wireless-security/eap-method-fast.c:268
 #: panels/network/wireless-security/eap-method-peap.c:302
 #: panels/network/wireless-security/eap-method-ttls.c:333
 msgid "GTC"
-msgstr ""
+msgstr "GTC"
 
 #: panels/network/wireless-security/eap-method-fast.c:283
 #: panels/network/wireless-security/eap-method-peap.c:272
 #: panels/network/wireless-security/eap-method-ttls.c:288
 msgid "MSCHAPv2"
-msgstr ""
+msgstr "MSCHAPv2"
 
 #: panels/network/wireless-security/eap-method-fast.c:406
 msgid "Choose a PAC file"
-msgstr ""
+msgstr "Виберіть файл PAC"
 
 #: panels/network/wireless-security/eap-method-fast.c:413
 msgid "PAC files (*.pac)"
-msgstr ""
+msgstr "Файли PAC (*.pac)"
 
 #: panels/network/wireless-security/eap-method-leap.c:65
 msgid "missing EAP-LEAP username"
-msgstr ""
+msgstr "бракує імені користувача EAP-LEAP"
 
 #: panels/network/wireless-security/eap-method-leap.c:74
 msgid "missing EAP-LEAP password"
-msgstr ""
+msgstr "бракує паролю EAP-LEAP"
 
 #: panels/network/wireless-security/eap-method-peap.c:63
 #, c-format
 msgid "invalid EAP-PEAP CA certificate: %s"
-msgstr ""
+msgstr "недійсний EAP-PEAP CA сертифікат: %s"
 
 #: panels/network/wireless-security/eap-method-peap.c:68
 msgid "invalid EAP-PEAP CA certificate: no certificate specified"
-msgstr ""
+msgstr "недійсний сертифікат EAP-PEAP CA: не вказано сертифікат"
 
 #: panels/network/wireless-security/eap-method-peap.c:287
 #: panels/network/wireless-security/eap-method-ttls.c:318
 #: panels/network/wireless-security/wireless-security.c:439
 msgid "MD5"
-msgstr ""
+msgstr "MD5"
 
 #: panels/network/wireless-security/eap-method-peap.c:381
 #: panels/network/wireless-security/eap-method-tls.c:501
 #: panels/network/wireless-security/eap-method-ttls.c:412
 msgid "Choose a Certificate Authority certificate"
-msgstr ""
+msgstr "Виберіть сертифікат видавця"
 
 #: panels/network/wireless-security/eap-method-simple.c:74
 msgid "missing EAP username"
-msgstr ""
+msgstr "бракує імені користувача EAP"
 
 #: panels/network/wireless-security/eap-method-simple.c:87
 msgid "missing EAP password"
-msgstr ""
+msgstr "бракує паролю EAP"
 
 #: panels/network/wireless-security/eap-method-tls.c:68
 msgid "missing EAP-TLS identity"
-msgstr ""
+msgstr "бракує ототожнення EAP-TLS"
 
 #: panels/network/wireless-security/eap-method-tls.c:77
 #, c-format
 msgid "invalid EAP-TLS CA certificate: %s"
-msgstr ""
+msgstr "недійсний EAP-TLS CA сертифікат: %s"
 
 #: panels/network/wireless-security/eap-method-tls.c:84
 msgid "invalid EAP-TLS CA certificate: no certificate specified"
-msgstr ""
+msgstr "Недійсний сертифікат ЦА EAP-TLS: не вказано сертифікату"
 
 #: panels/network/wireless-security/eap-method-tls.c:95
 msgid "invalid EAP-TLS password: missing"
-msgstr ""
+msgstr "невірний пароль EAP-TLS: відсутній"
 
 #: panels/network/wireless-security/eap-method-tls.c:109
 #, c-format
 msgid "invalid EAP-TLS private-key: %s"
-msgstr ""
+msgstr "невірний приватний ключ EAP-TLS: %s"
 
 #: panels/network/wireless-security/eap-method-tls.c:119
 #, c-format
 msgid "invalid EAP-TLS user-certificate: %s"
-msgstr ""
+msgstr "недійсний сертифікат користувача EAP-TLS: %s"
 
 #: panels/network/wireless-security/eap-method-tls.c:316
 msgid "Unencrypted private keys are insecure"
-msgstr ""
+msgstr "Небезпечно використовувати приватні ключі без шифрування"
 
 #: panels/network/wireless-security/eap-method-tls.c:319
 msgid ""
@@ -1497,83 +1395,90 @@ msgid ""
 "\n"
 "(You can password-protect your private key with openssl)"
 msgstr ""
+"Вибраний приватний ключ не є захищений паролем. Це може поставити під "
+"загрозу ваші важливі дані. Виберіть захищений паролем приватний ключ.\n"
+"\n"
+"(можете зробити це за допомогою openssl)"
 
 #: panels/network/wireless-security/eap-method-tls.c:495
 msgid "Choose your personal certificate"
-msgstr ""
+msgstr "Виберіть ваш особистий сертифікат"
 
 #: panels/network/wireless-security/eap-method-tls.c:507
 msgid "Choose your private key"
-msgstr ""
+msgstr "Виберіть ваш приватний ключ"
 
 #: panels/network/wireless-security/eap-method-ttls.c:63
 #, c-format
 msgid "invalid EAP-TTLS CA certificate: %s"
-msgstr ""
+msgstr "невірний сертифікат ЦС EAP-TTLS: %s"
 
 #: panels/network/wireless-security/eap-method-ttls.c:68
 msgid "invalid EAP-TTLS CA certificate: no certificate specified"
-msgstr ""
+msgstr "невірний сертифікат ЦА EAP-TTLS: не вказано сертифікату"
 
 #: panels/network/wireless-security/eap-method-ttls.c:258
 msgid "PAP"
-msgstr ""
+msgstr "PAP"
 
 #: panels/network/wireless-security/eap-method-ttls.c:273
 msgid "MSCHAP"
-msgstr ""
+msgstr "MSCHAP"
 
 #: panels/network/wireless-security/eap-method-ttls.c:303
 msgid "CHAP"
-msgstr ""
+msgstr "CHAP"
 
 #: panels/network/wireless-security/wireless-security.c:87
 msgid "Unknown error validating 802.1x security"
-msgstr ""
+msgstr "Невідома помилка перевірки безпеки 802.1x"
 
 #: panels/network/wireless-security/wireless-security.c:451
 msgid "TLS"
-msgstr ""
+msgstr "TLS"
 
 #: panels/network/wireless-security/wireless-security.c:475
 msgid "PWD"
-msgstr ""
+msgstr "PWD"
 
 #: panels/network/wireless-security/wireless-security.c:486
 msgid "FAST"
-msgstr ""
+msgstr "ХУТКО"
 
 #: panels/network/wireless-security/wireless-security.c:497
 msgid "Tunneled TLS"
-msgstr ""
+msgstr "Тунельний TLS"
 
 #: panels/network/wireless-security/wireless-security.c:508
 msgid "Protected EAP (PEAP)"
-msgstr ""
+msgstr "Захищений EAP (PEAP)"
 
 #: panels/network/wireless-security/ws-leap.c:63
 msgid "missing leap-username"
-msgstr ""
+msgstr "не вказано leap-username"
 
 #: panels/network/wireless-security/ws-leap.c:74
 msgid "missing leap-password"
-msgstr ""
+msgstr "не вказано leap-password"
 
 #: panels/network/wireless-security/ws-wep-key.c:107
 msgid "missing wep-key"
-msgstr ""
+msgstr "не вказано wep-ключ"
 
 #: panels/network/wireless-security/ws-wep-key.c:116
 #, c-format
 msgid ""
 "invalid wep-key: key with a length of %zu must contain only hex-digits"
 msgstr ""
+"невірний ключ WEP: ключ з довжиною %zu має містити тільки шістнадцяткові "
+"числа"
 
 #: panels/network/wireless-security/ws-wep-key.c:124
 #, c-format
 msgid ""
 "invalid wep-key: key with a length of %zu must contain only ascii characters"
 msgstr ""
+"невірний ключ WEP: ключ з довжиною %zu має містити тільки символи ascii"
 
 #: panels/network/wireless-security/ws-wep-key.c:130
 #, c-format
@@ -1581,14 +1486,16 @@ msgid ""
 "invalid wep-key: wrong key length %zu. A key must be either of length 5/13 "
 "(ascii) or 10/26 (hex)"
 msgstr ""
+"невірний ключ WEP: хибна довжина ключа %zu. Ключ має бути або довжиною 5/13 "
+"(ascii), або 10/26 (шістнадцятковий)."
 
 #: panels/network/wireless-security/ws-wep-key.c:137
 msgid "invalid wep-key: passphrase must be non-empty"
-msgstr ""
+msgstr "невірний ключ WEP: пароль не може бути порожнім"
 
 #: panels/network/wireless-security/ws-wep-key.c:139
 msgid "invalid wep-key: passphrase must be shorter than 64 characters"
-msgstr ""
+msgstr "невірний ключ WEP: пароль має бути коротшим за 64 символи"
 
 #: panels/network/wireless-security/ws-wpa-psk.c:70
 #, c-format
@@ -1596,25 +1503,14 @@ msgid ""
 "invalid wpa-psk: invalid key-length %zu. Must be [8,63] bytes or 64 hex "
 "digits"
 msgstr ""
+"невірний  ключ PSK: неправильна довжина ключа %zu. Має бути [8,63] байти або "
+"64 шістнадцяткових числа"
 
 #: panels/network/wireless-security/ws-wpa-psk.c:79
 msgid "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
 msgstr ""
-
-#. Text printed on screen
-#: panels/wacom/calibrator/gui_gtk.c:78
-msgid "Screen Calibration"
-msgstr ""
-
-#: panels/wacom/calibrator/gui_gtk.c:79
-msgid ""
-"Please tap the target markers as they appear on screen to calibrate the "
-"tablet."
-msgstr ""
-
-#: panels/wacom/calibrator/gui_gtk.c:368
-msgid "Mis-click detected, restarting..."
-msgstr ""
+"невірний WPA-PSK: неможливо інтерпретувати ключ шз 64 байтами як "
+"шістнадцяткове число."
 
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
@@ -1665,7 +1561,7 @@ msgctxt "hotspot"
 msgid "Hotspot"
 msgstr "Точка доступу"
 
-#: panels/color/color.ui.h:3 generate_additional_files.py:20
+#: panels/color/color.ui.h:3 generate_additional_files.py:23
 msgid "Color"
 msgstr "Колір"
 
@@ -1828,7 +1724,7 @@ msgstr "Грудень"
 
 #: panels/display/cc-display-panel.ui.h:1
 msgid "Display Arrangement"
-msgstr ""
+msgstr "Розташування дисплеїв"
 
 #: panels/display/cc-display-panel.ui.h:2
 msgid "Set as Primary"
@@ -1836,31 +1732,31 @@ msgstr "Зробити основним"
 
 #: panels/display/cc-display-panel.ui.h:3
 msgid "Display Configuration"
-msgstr ""
+msgstr "Налаштування дисплею"
 
 #: panels/display/cc-display-panel.ui.h:4
 msgid "Join Displays"
-msgstr ""
+msgstr "З'єднання дисплеїв"
 
 #: panels/display/cc-display-panel.ui.h:5
 msgid "Mirror"
-msgstr ""
+msgstr "Дзеркало"
 
 #: panels/display/cc-display-panel.ui.h:6
 msgid "Displays"
-msgstr ""
+msgstr "Дисплеї"
 
 #: panels/display/cc-display-panel.ui.h:7
 msgid "Reset to Defaults"
-msgstr ""
+msgstr "Відновити типові значення"
 
 #: panels/display/cc-display-panel.ui.h:8
 msgid "Cancel changes"
-msgstr ""
+msgstr "Відмінити зміни"
 
 #: panels/display/cc-display-panel.ui.h:9
 msgid "Apply"
-msgstr ""
+msgstr "Застосувати"
 
 #: panels/display/cc-display-settings.ui.h:1
 msgid "Resolution"
@@ -1876,7 +1772,7 @@ msgstr "Обертання"
 
 #: panels/display/cc-display-settings.ui.h:5
 msgid "Adjust for TV"
-msgstr ""
+msgstr "Підкоригувати для ТБ"
 
 #: panels/network/network-ethernet.ui.h:2
 msgid "_Add Profile…"
@@ -1890,7 +1786,7 @@ msgstr "IMEI"
 msgid "Provider"
 msgstr "Постачальник"
 
-#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:50
+#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:63
 msgid "Network"
 msgstr "Мережа"
 
@@ -2328,142 +2224,132 @@ msgstr ""
 msgid "Map Buttons"
 msgstr "Призначити кнопки"
 
-#: panels/wacom/button-mapping.ui.h:2
+#: panels/wacom/button-mapping.ui.h:3
 msgid "Map buttons to functions"
 msgstr "Призначити кнопки функціям"
 
-#: panels/wacom/button-mapping.ui.h:3
+#: panels/wacom/button-mapping.ui.h:4
 msgid ""
-"To edit a shortcut, click the row and hold down the new keys or press "
-"Backspace to clear."
+"To edit a shortcut, choose the “Send Keystroke” action, press the keyboard "
+"shortcut button and hold down the new keys or press Backspace to clear."
 msgstr ""
-"Щоб змінити сполучення клавіш, клацніть у відповідному рядку та введіть нові "
-"клавіші, або натисніть Backspace для очищення."
+"Щоб змінити комбінацію клавіш, виберіть дію «Надіслати натискання клавіші», "
+"натисніть кнопку скорочення й утримайте нові клавіші або натисніть "
+"Backspace, щоб очистити."
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:1
-msgid "Tablet (absolute)"
-msgstr "Планшет (цілковитий)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:2
-msgid "Touchpad (relative)"
-msgstr "Тачпад (відносний)"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:3
-msgid "Tablet Preferences"
-msgstr "Параметри планшета"
-
-#: panels/wacom/cinnamon-wacom-properties.ui.h:4
 msgid "No tablet detected"
 msgstr "Не виявлено планшета"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:5
-msgid "Please plug in or turn on your graphics tablet"
-msgstr "Будь ласка під'єднайте або увімкніть графічний планшет"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:2
+msgid "Please plug in or turn on your Wacom tablet"
+msgstr "Під'єднайте або ввімкніть планшет Wacom"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+#: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Bluetooth Settings"
 msgstr "Налаштування Bluetooth"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:60
-msgid "Graphics Tablet"
-msgstr "Графічний планшет"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:4
+msgid "Wacom Tablet"
+msgstr "Планшет Wacom"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:8
+#: panels/wacom/cinnamon-wacom-properties.ui.h:5
+msgid "Tracking Mode"
+msgstr "Режим стеження"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+msgid "Left-Handed Orientation"
+msgstr "Орієнтація на шульгів"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Map to Monitor…"
 msgstr "Пов’язати з монітором…"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:9
+#: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map Buttons…"
 msgstr "Пов’язати кнопки…"
 
-#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+#: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Calibrate…"
 msgstr "Калібрувати…"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+msgid "Adjust mouse settings"
+msgstr "Скоригувати параметри миші"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
 msgstr "Коригувати роздільність екрану"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:12
-msgid "Tracking Mode"
-msgstr "Режим стеження"
+msgid "Decouple Display"
+msgstr "Роз'єднати дисплей"
 
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
-msgid "Left-Handed Orientation"
-msgstr "Орієнтація на шульгів"
+msgid "Tablet (absolute)"
+msgstr "Планшет (цілковитий)"
 
-#: panels/wacom/wacom-stylus-page.ui.h:1
-msgid "No Action"
-msgstr "Без дій"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:14
+msgid "Touchpad (relative)"
+msgstr "Тачпад (відносний)"
 
 #: panels/wacom/wacom-stylus-page.ui.h:2
-msgid "Left Mouse Button Click"
-msgstr "Натиск лівою кнопкою миші"
-
-#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Middle Mouse Button Click"
 msgstr "Натиск середньою кнопкою миші"
 
-#: panels/wacom/wacom-stylus-page.ui.h:4
+#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Right Mouse Button Click"
 msgstr "Натиск правою кнопкою миші"
 
-#: panels/wacom/wacom-stylus-page.ui.h:5
-msgid "Scroll Up"
-msgstr "Гортати догори"
-
-#: panels/wacom/wacom-stylus-page.ui.h:6
-msgid "Scroll Down"
-msgstr "Гортати донизу"
-
-#: panels/wacom/wacom-stylus-page.ui.h:7
-msgid "Scroll Left"
-msgstr "Гортати ліворуч"
-
-#: panels/wacom/wacom-stylus-page.ui.h:8
-msgid "Scroll Right"
-msgstr "Гортати праворуч"
-
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:4
 msgid "Back"
 msgstr "Назад"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:5
 msgid "Forward"
 msgstr "Далі"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
-msgid "Stylus"
-msgstr "Стилус"
+#: panels/wacom/wacom-stylus-page.ui.h:6
+msgid "No stylus found"
+msgstr "Стилус не знайдено"
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:7
+msgid ""
+"Please move your stylus to the proximity of the tablet to configure it"
+msgstr ""
+"Будь ласка, перемістіть ваш стилус ближче до планшету, для його налаштування"
+
+#: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Eraser Pressure Feel"
 msgstr "Чутливість гумки"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Soft"
 msgstr "М'яка"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Firm"
 msgstr "Тверда"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Top Button"
 msgstr "Верхня кнопка"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Lower Button"
 msgstr "Нижня кнопка"
 
-#: panels/wacom/wacom-stylus-page.ui.h:17
+#: panels/wacom/wacom-stylus-page.ui.h:14
+msgid "Lowest Button"
+msgstr "Найнижча кнопка"
+
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Tip Pressure Feel"
 msgstr "Чутливість дотику"
 
-#: panels/wacom/wacom-stylus-page.ui.h:18
-msgid "Lowest Button"
-msgstr "Найнижча кнопка"
+#: panels/wacom/wacom-stylus-page.ui.h:16
+msgid "Test Your _Settings"
+msgstr "Випробувати ваші _параметри"
 
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
 msgid "802.1x _Security"
@@ -2730,33 +2616,70 @@ msgstr "_Індекс WEP"
 msgid "_Type"
 msgstr "_Тип"
 
-#: generate_additional_files.py:20
+#: panels/wacom/calibrator/calibrator.ui.h:1
+msgid "Screen Calibration"
+msgstr "Калібрування екрана"
+
+#: panels/wacom/calibrator/calibrator.ui.h:2
+msgid ""
+"Please tap the target markers as they appear on screen to calibrate the "
+"tablet."
+msgstr ""
+"Торкніться цільового маркера, коли той з'явиться на екрані, щоб калібрувати "
+"планшет."
+
+#: panels/wacom/calibrator/calibrator.ui.h:3
+msgid "Mis-click detected, restarting…"
+msgstr "Виявлено місклік, перезавантаження…"
+
+#: generate_additional_files.py:23
 msgid "Color management settings"
 msgstr "Налаштування керування кольором"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:23
+msgid "Color, ICC, Profile, Calibrate, Printer, Display"
+msgstr "Колір, ICC, Профіль, Калібрування, Принтер, Дисплей"
+
+#: generate_additional_files.py:37
 msgid "Region & Language"
 msgstr "Регіон і мова"
 
-#: generate_additional_files.py:30
+#: generate_additional_files.py:37
 msgid "Change your region and language settings"
 msgstr "Зміна налаштувань Вашого регіону та мови"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Display"
 msgstr "Дисплей"
 
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Change resolution and position of monitors and projectors"
 msgstr "Змінити роздільність і розташування моніторів та проєкторів"
 
 #: generate_additional_files.py:50
+msgid "Panel, Projector, xrandr, Screen, Resolution, Refresh"
+msgstr "Панель, Проектор, xrandr, Екран, Роздільна здатність, Оновити"
+
+#: generate_additional_files.py:63
 msgid "Network settings"
 msgstr "Налаштування мережі"
 
-#: generate_additional_files.py:60
+#: generate_additional_files.py:63
+msgid "Network, Wireless, IP, LAN, Proxy, Internet, WiFi"
+msgstr ""
+"Мережа, Бездротові мережі, IP, Локальна мережа, Проксі, Інтернет, WiFi"
+
+#: generate_additional_files.py:76
+msgid "Graphics Tablet"
+msgstr "Графічний планшет"
+
+#: generate_additional_files.py:76
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Визначити прив’язку кнопок і скоригувати чутливість сенсора для графічних "
 "планшетів"
+
+#: generate_additional_files.py:76
+msgid "Tablet, Wacom, Stylus, Eraser, Mouse"
+msgstr "Планшет, Wacom, Стилус, Стирач, Миша"

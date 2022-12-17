@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-15 16:20+0200\n"
+"POT-Creation-Date: 2022-12-16 13:55+0000\n"
 "PO-Revision-Date: 2021-09-17 21:16+0000\n"
 "Last-Translator: amosbatto <amosbatto@yahoo.com>\n"
 "Language-Team: Aymara <aym@li.org>\n"
@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Launchpad-Export-Date: 2022-07-24 09:38+0000\n"
-"X-Generator: Launchpad (build 025a39fd866a641b6ae33074cda0d02a2c712d38)\n"
+"X-Launchpad-Export-Date: 2022-12-17 04:59+0000\n"
+"X-Generator: Launchpad (build 31c78762a8046acf7ab47372e5d588ebb3759d2e)\n"
 "Language: ay\n"
 
 #  [es] "Otro perfil…"
@@ -717,7 +717,8 @@ msgid "History"
 msgstr "Nayra amuyunaka"
 
 #  [es] "_Cerrar"
-#: panels/network/net-device-wifi.c:1903
+#: panels/network/net-device-wifi.c:1903 panels/wacom/cc-wacom-page.c:468
+#: panels/wacom/button-mapping.ui.h:2
 msgid "_Close"
 msgstr "_Jist'aña"
 
@@ -1129,196 +1130,60 @@ msgstr "Kunjams uskuta"
 
 #  [es] "Predeterminado"
 #: panels/region/cinnamon-region-panel-xkbot.c:227
+#: panels/wacom/wacom-stylus-page.ui.h:1
 msgid "Default"
 msgstr "Qalltatpach uskuta"
 
+#: panels/wacom/cc-wacom-button-row.c:248
+#, c-format
+msgid "Button %d"
+msgstr ""
+
 #  [es] "Salida:"
-#: panels/wacom/cc-wacom-mapping-panel.c:298
+#: panels/wacom/cc-wacom-mapping-panel.c:232
 msgid "Output:"
 msgstr "Mistuwi:"
 
 #  [es] "Mantener la relación de aspecto (buzón):"
 #. Keep ratio switch
-#: panels/wacom/cc-wacom-mapping-panel.c:310
+#: panels/wacom/cc-wacom-mapping-panel.c:244
 msgid "Keep aspect ratio (letterbox):"
 msgstr "Altura/añchu kikpaki jan mayjaptayasa (chaski kaja):"
 
-#  [es] "Girar la tableta al girar la pantalla:"
-#. Apply screen rotation
-#: panels/wacom/cc-wacom-mapping-panel.c:321
-msgid "Rotate the tablet when the screen is rotated:"
-msgstr "Pantall muytayasax tableta muytayaña:"
-
 #  [es] "Asignar a un solo monitor"
 #. Whole-desktop checkbox
-#: panels/wacom/cc-wacom-mapping-panel.c:332
+#: panels/wacom/cc-wacom-mapping-panel.c:255
 msgid "Map to single monitor"
 msgstr "Mä munituraruk churaña"
 
 #  [es] "%d de %d"
-#: panels/wacom/cc-wacom-nav-button.c:89
+#: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
 msgid "%d of %d"
 msgstr "%d ukat %d"
 
-#  [es] "Desactivar"
-#: panels/wacom/cc-wacom-page.c:118 panels/wacom/cc-wacom-page.c:385
-msgctxt "Wacom action-type"
-msgid "None"
-msgstr "Nï kuna"
-
-#  [es] "Enviar una pulsación de tecla"
-#: panels/wacom/cc-wacom-page.c:119
-msgctxt "Wacom action-type"
-msgid "Send Keystroke"
-msgstr "Mä limt'aw tiklat apayaña"
-
-#  [es] "Cambiar de monitor"
-#: panels/wacom/cc-wacom-page.c:120
-msgctxt "Wacom action-type"
-msgid "Switch Monitor"
-msgstr "Yaqha muniturar saraña"
-
-#  [es] "Mostrar la ayuda en pantalla"
-#: panels/wacom/cc-wacom-page.c:121
-msgctxt "Wacom action-type"
-msgid "Show On-Screen Help"
-msgstr "Pantallan yanap uñachayaña"
-
-#  [es] "Arriba"
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Up"
-msgstr "Alaya"
-
-#  [es] "Abajo"
-#: panels/wacom/cc-wacom-page.c:622
-msgctxt "Wacom tablet button"
-msgid "Down"
-msgstr "Aynacha"
-
-#  [es] "Cambiar los modos"
-#: panels/wacom/cc-wacom-page.c:663
-msgid "Switch Modes"
-msgstr "Yaqha kunjamas luraña ukar saraña"
-
-#  [es] "Botón"
-#: panels/wacom/cc-wacom-page.c:753 panels/wacom/cc-wacom-stylus-page.c:394
-msgid "Button"
-msgstr "Wutuna"
-
-#  [es] "Tipo"
-#: panels/wacom/cc-wacom-page.c:790
-msgid "Type"
-msgstr "Kasta"
-
-#  [es] "Acción"
-#: panels/wacom/cc-wacom-page.c:811
-msgid "Action"
-msgstr "Lurawi"
-
 #  [es] "Mostrar la asignación"
-#: panels/wacom/cc-wacom-page.c:921
+#: panels/wacom/cc-wacom-page.c:465
 msgid "Display Mapping"
 msgstr "Uñacht'ayaw uñachayaña"
 
-#  [es] "Anillo izquierdo"
-#. If no mode is available, we use "left-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1115
-msgid "Left Ring"
-msgstr "Ch'iqa surtija"
+#  [es] "Lápiz"
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+msgid "Stylus"
+msgstr "Lapisa"
 
-#  [es] "Modo del anillo izquierdo nº %d"
-#: panels/wacom/csd-wacom-device.c:1125
-#, c-format
-msgid "Left Ring Mode #%d"
-msgstr "Kunjamas ch'iqa surtijana #%d"
+#: panels/wacom/cc-wacom-panel.c:669
+msgid "Tablet"
+msgstr ""
 
-#  [es] "Anillo derecho"
-#. If no mode is available, we use "right-ring-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1144
-msgid "Right Ring"
-msgstr "Kupi tuq surtija"
+#  [es] "Botón"
+#: panels/wacom/cc-wacom-stylus-page.c:362
+msgid "Button"
+msgstr "Wutuna"
 
-#  [es] "Modo del anillo derecho nº %d"
-#: panels/wacom/csd-wacom-device.c:1154
-#, c-format
-msgid "Right Ring Mode #%d"
-msgstr "Kunjamas kupi surtijana #%d"
-
-#  [es] "Banda táctil izquierda"
-#. If no mode is available, we use "left-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1195
-msgid "Left Touchstrip"
-msgstr "Ch'iqa llamkhaw wak'a"
-
-#  [es] "Modo de la banda táctil izquierda nº %d"
-#: panels/wacom/csd-wacom-device.c:1205
-#, c-format
-msgid "Left Touchstrip Mode #%d"
-msgstr "Kunjamas ch'iqa llamkhaw wak'a #%d"
-
-#  [es] "Banda táctil derecha"
-#. If no mode is available, we use "right-strip-mode-1" for backward compat
-#: panels/wacom/csd-wacom-device.c:1224
-msgid "Right Touchstrip"
-msgstr "Kupi llamkhaw wak'a"
-
-#  [es] "Modo de la banda táctil derecha nº %d"
-#: panels/wacom/csd-wacom-device.c:1234
-#, c-format
-msgid "Right Touchstrip Mode #%d"
-msgstr "Kunjamas kupi llamkhaw wak'a #%d"
-
-#  [es] "Cambiar el modo del anillo táctil izquierdo"
-#: panels/wacom/csd-wacom-device.c:1259
-msgid "Left Touchring Mode Switch"
-msgstr "Kunjamas ch'iqa llamkhaw surtija uk mayjaptayaña"
-
-#  [es] "Cambiar el modo del anillo táctil derecho"
-#: panels/wacom/csd-wacom-device.c:1261
-msgid "Right Touchring Mode Switch"
-msgstr "Kunjamas kupi llamkhaw surtija uk mayjaptayaña"
-
-#  [es] "Cambiar el modo de la banda táctil izquierda"
-#: panels/wacom/csd-wacom-device.c:1264
-msgid "Left Touchstrip Mode Switch"
-msgstr "Kunjamas ch'iqa llamkhaw wak'a uk mayjaptayaña"
-
-#  [es] "Cambiar el modo de la banda táctil derecha"
-#: panels/wacom/csd-wacom-device.c:1266
-msgid "Right Touchstrip Mode Switch"
-msgstr "Kunjamas kupi llamkhaw wak'a uk mayjaptayaña"
-
-#  [es] "Cambio de modo nº %d"
-#: panels/wacom/csd-wacom-device.c:1271
-#, c-format
-msgid "Mode Switch #%d"
-msgstr "Kunjams luraña uk mayjaptayaña #%d"
-
-#  [es] "Botón izquierdo n.º %d"
-#: panels/wacom/csd-wacom-device.c:1375
-#, c-format
-msgid "Left Button #%d"
-msgstr "Ch'iqa wutuna #%d"
-
-#  [es] "Botón derecho n.º %d"
-#: panels/wacom/csd-wacom-device.c:1378
-#, c-format
-msgid "Right Button #%d"
-msgstr "Kupi wutuna #%d"
-
-#  [es] "Botón superior n.º %d"
-#: panels/wacom/csd-wacom-device.c:1381
-#, c-format
-msgid "Top Button #%d"
-msgstr "Alax wutuna #%d"
-
-#  [es] "Botón inferior nº %d"
-#: panels/wacom/csd-wacom-device.c:1384
-#, c-format
-msgid "Bottom Button #%d"
-msgstr "Aynachankir wutuna #%d"
+#: panels/wacom/csd-wacom-key-shortcut-button.c:217
+msgid "New shortcut…"
+msgstr ""
 
 #  [es] "Seguridad"
 #: panels/network/connection-editor/ce-page-8021x-security.c:101
@@ -1811,21 +1676,6 @@ msgstr ""
 msgid "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
 msgstr ""
 
-#. Text printed on screen
-#: panels/wacom/calibrator/gui_gtk.c:78
-msgid "Screen Calibration"
-msgstr ""
-
-#: panels/wacom/calibrator/gui_gtk.c:79
-msgid ""
-"Please tap the target markers as they appear on screen to calibrate the "
-"tablet."
-msgstr ""
-
-#: panels/wacom/calibrator/gui_gtk.c:368
-msgid "Mis-click detected, restarting..."
-msgstr ""
-
 #  [es] "_Toda la configuración"
 #: shell/cc-shell-nav-bar.c:117
 msgid "_All Settings"
@@ -1888,7 +1738,7 @@ msgid "Hotspot"
 msgstr "Mantaw ch'aqa"
 
 #  [es] "Color"
-#: panels/color/color.ui.h:3 generate_additional_files.py:20
+#: panels/color/color.ui.h:3 generate_additional_files.py:23
 msgid "Color"
 msgstr "Sami"
 
@@ -2164,7 +2014,7 @@ msgid "Provider"
 msgstr "Lakiriri"
 
 #  [es] "Red"
-#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:50
+#: panels/network/network-mobile.ui.h:8 generate_additional_files.py:63
 msgid "Network"
 msgstr "Llika"
 
@@ -2712,176 +2562,149 @@ msgid "Map Buttons"
 msgstr "Wutunanak uñacht'ayaña"
 
 #  [es] "Asignar los botones a las funciones"
-#: panels/wacom/button-mapping.ui.h:2
+#: panels/wacom/button-mapping.ui.h:3
 msgid "Map buttons to functions"
 msgstr "Funciones ukanakar wutunanak uñacht'ayaña"
 
-#  [es] ""
-#  [es] "Para editar un atajo, haga clic en la fila y pulse la combinación de teclas "
-#  [es] "nueva o pulse Retroceso para borrarla."
-#: panels/wacom/button-mapping.ui.h:3
+#: panels/wacom/button-mapping.ui.h:4
 msgid ""
-"To edit a shortcut, click the row and hold down the new keys or press "
-"Backspace to clear."
+"To edit a shortcut, choose the “Send Keystroke” action, press the keyboard "
+"shortcut button and hold down the new keys or press Backspace to clear."
 msgstr ""
-"Mä jank'ak tikla askichañatakix, siqin klik luram ukatxa machaq kisantaw "
-"tiklanak limt'am, jan ukax ← (Qhipar) uk limt'am chhaqtayañataki."
-
-#  [es] "Tableta (absoluto)"
-#: panels/wacom/cinnamon-wacom-properties.ui.h:1
-msgid "Tablet (absolute)"
-msgstr "Tableta (absoluta)"
-
-#  [es] "Panel táctil (relativo)"
-#: panels/wacom/cinnamon-wacom-properties.ui.h:2
-msgid "Touchpad (relative)"
-msgstr "LLamkhaw kaja (relativo)"
-
-#  [es] "Preferencias de la tableta"
-#: panels/wacom/cinnamon-wacom-properties.ui.h:3
-msgid "Tablet Preferences"
-msgstr "Tabletan ajlliñanaka"
 
 #  [es] "No se ha detectado ninguna tableta"
-#: panels/wacom/cinnamon-wacom-properties.ui.h:4
+#: panels/wacom/cinnamon-wacom-properties.ui.h:1
 msgid "No tablet detected"
 msgstr "Janiw tableta jikiskiti"
 
-#  [es] "Conecte o encienda la tableta gráfica"
-#: panels/wacom/cinnamon-wacom-properties.ui.h:5
-msgid "Please plug in or turn on your graphics tablet"
-msgstr "Jamuqan tableta chikasim jan ukax naktayama"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:2
+msgid "Please plug in or turn on your Wacom tablet"
+msgstr ""
 
 #  [es] "Configuración del Bluetooth"
-#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+#: panels/wacom/cinnamon-wacom-properties.ui.h:3
 msgid "Bluetooth Settings"
 msgstr "Bluetooth mayjachawi"
 
-#  [es] "Tableta gràfica"
-#: panels/wacom/cinnamon-wacom-properties.ui.h:7
-#: generate_additional_files.py:60
-msgid "Graphics Tablet"
-msgstr "Jamuqamp tableta"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:4
+msgid "Wacom Tablet"
+msgstr ""
+
+#  [es] "Modo de seguimiento"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:5
+msgid "Tracking Mode"
+msgstr "Arkawjama"
+
+#  [es] "Orientación para zurdos"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:6
+msgid "Left-Handed Orientation"
+msgstr "Ch'qachunakataki kunkachawi"
 
 #  [es] "Asignar al monitor..."
-#: panels/wacom/cinnamon-wacom-properties.ui.h:8
+#: panels/wacom/cinnamon-wacom-properties.ui.h:7
 msgid "Map to Monitor…"
 msgstr "Muniturar uñacht'ayaña…"
 
 #  [es] "Asignar los botones..."
-#: panels/wacom/cinnamon-wacom-properties.ui.h:9
+#: panels/wacom/cinnamon-wacom-properties.ui.h:8
 msgid "Map Buttons…"
 msgstr "Wutunanak uñacht'ayaña…"
 
 #  [es] "Calibrar…"
-#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+#: panels/wacom/cinnamon-wacom-properties.ui.h:9
 msgid "Calibrate…"
 msgstr "Wali walichaña…"
+
+#: panels/wacom/cinnamon-wacom-properties.ui.h:10
+msgid "Adjust mouse settings"
+msgstr ""
 
 #  [es] "Ajustar la resolución de la pantalla"
 #: panels/wacom/cinnamon-wacom-properties.ui.h:11
 msgid "Adjust display resolution"
 msgstr "Pantallan resolucion walichaña"
 
-#  [es] "Modo de seguimiento"
 #: panels/wacom/cinnamon-wacom-properties.ui.h:12
-msgid "Tracking Mode"
-msgstr "Arkawjama"
+msgid "Decouple Display"
+msgstr ""
 
-#  [es] "Orientación para zurdos"
+#  [es] "Tableta (absoluto)"
 #: panels/wacom/cinnamon-wacom-properties.ui.h:13
-msgid "Left-Handed Orientation"
-msgstr "Ch'qachunakataki kunkachawi"
+msgid "Tablet (absolute)"
+msgstr "Tableta (absoluta)"
 
-#  [es] "Sin acción"
-#: panels/wacom/wacom-stylus-page.ui.h:1
-msgid "No Action"
-msgstr "Janiw lurawinikiti"
-
-#  [es] "Clic del botón izquierdo del ratón"
-#: panels/wacom/wacom-stylus-page.ui.h:2
-msgid "Left Mouse Button Click"
-msgstr "Achakun klik ch'iqa wutunana"
+#  [es] "Panel táctil (relativo)"
+#: panels/wacom/cinnamon-wacom-properties.ui.h:14
+msgid "Touchpad (relative)"
+msgstr "LLamkhaw kaja (relativo)"
 
 #  [es] "Clic del botón central del ratón"
-#: panels/wacom/wacom-stylus-page.ui.h:3
+#: panels/wacom/wacom-stylus-page.ui.h:2
 msgid "Middle Mouse Button Click"
 msgstr "Achakun taypinkir wutuna klik luraña"
 
 #  [es] "Clic del botón derecho del ratón"
-#: panels/wacom/wacom-stylus-page.ui.h:4
+#: panels/wacom/wacom-stylus-page.ui.h:3
 msgid "Right Mouse Button Click"
 msgstr "Achakun kupi wutuna klik"
 
-#  [es] "Desplazar hacia arriba"
-#: panels/wacom/wacom-stylus-page.ui.h:5
-msgid "Scroll Up"
-msgstr "Alayar unuqiyaña"
-
-#  [es] "Desplazar hacia abajo"
-#: panels/wacom/wacom-stylus-page.ui.h:6
-msgid "Scroll Down"
-msgstr "Aynachar unuqiyaña"
-
-#  [es] "Desplazar a la izquierda"
-#: panels/wacom/wacom-stylus-page.ui.h:7
-msgid "Scroll Left"
-msgstr "Ch'iqa tuqiru unxtayaña"
-
-#  [es] "Desplazar a la derecha"
-#: panels/wacom/wacom-stylus-page.ui.h:8
-msgid "Scroll Right"
-msgstr "Kupi tuqiru unxtayaña"
-
 #  [es] "Atrás"
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:4
 msgid "Back"
 msgstr "Nayriri"
 
 #  [es] "Adelante"
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:5
 msgid "Forward"
 msgstr "Jutiri"
 
-#  [es] "Lápiz"
-#: panels/wacom/wacom-stylus-page.ui.h:11
-msgid "Stylus"
-msgstr "Lapisa"
+#: panels/wacom/wacom-stylus-page.ui.h:6
+msgid "No stylus found"
+msgstr ""
+
+#: panels/wacom/wacom-stylus-page.ui.h:7
+msgid ""
+"Please move your stylus to the proximity of the tablet to configure it"
+msgstr ""
 
 #  [es] "Sensibilidad de presión del borrador"
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Eraser Pressure Feel"
 msgstr "Kunjamas turpa chhaqtayirixa"
 
 #  [es] "Suave"
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Soft"
 msgstr "Jasampiki"
 
 #  [es] "Firme"
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Firm"
 msgstr "Ch'amampi"
 
 #  [es] "Botón superior"
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Top Button"
 msgstr "Alax wutuna"
 
 #  [es] "Botón inferior"
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Lower Button"
 msgstr "Aynach wutuna"
 
+#  [es] "Botón inferior"
+#: panels/wacom/wacom-stylus-page.ui.h:14
+msgid "Lowest Button"
+msgstr "Aynach wutuna"
+
 #  [es] "Sensibilidad de presión del lápiz"
-#: panels/wacom/wacom-stylus-page.ui.h:17
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Tip Pressure Feel"
 msgstr "Kunjamasa turpa lapisaxa"
 
-#  [es] "Botón inferior"
-#: panels/wacom/wacom-stylus-page.ui.h:18
-msgid "Lowest Button"
-msgstr "Aynach wutuna"
+#: panels/wacom/wacom-stylus-page.ui.h:16
+msgid "Test Your _Settings"
+msgstr ""
 
 #  [es] "_Seguridad 802.1x"
 #: panels/network/connection-editor/8021x-security-page.ui.h:1
@@ -3208,44 +3031,79 @@ msgstr "WEP _tanta utjirinaka"
 msgid "_Type"
 msgstr "_Kasta"
 
+#: panels/wacom/calibrator/calibrator.ui.h:1
+msgid "Screen Calibration"
+msgstr ""
+
+#: panels/wacom/calibrator/calibrator.ui.h:2
+msgid ""
+"Please tap the target markers as they appear on screen to calibrate the "
+"tablet."
+msgstr ""
+
+#: panels/wacom/calibrator/calibrator.ui.h:3
+msgid "Mis-click detected, restarting…"
+msgstr ""
+
 #  [es] "Configuración de la gestión de color"
-#: generate_additional_files.py:20
+#: generate_additional_files.py:23
 msgid "Color management settings"
 msgstr "Sami irpaw mayjachawi"
 
+#: generate_additional_files.py:23
+msgid "Color, ICC, Profile, Calibrate, Printer, Display"
+msgstr ""
+
 #  [es] "Región e idioma"
-#: generate_additional_files.py:30
+#: generate_additional_files.py:37
 msgid "Region & Language"
 msgstr "Suyumpi arumpi"
 
 #  [es] "Cambiar la configuración de la región y el idioma"
-#: generate_additional_files.py:30
+#: generate_additional_files.py:37
 msgid "Change your region and language settings"
 msgstr "Suyumpi arumpi mayjachaña"
 
 #  [es] "Visualización"
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Display"
 msgstr "Uñjachawi"
 
 #  [es] "Cambie la resolución y la posición de monitores y proyectores"
-#: generate_additional_files.py:40
+#: generate_additional_files.py:50
 msgid "Change resolution and position of monitors and projectors"
 msgstr ""
 "Munituranaka ukhamaraki uñtayirinaka (proyectores) ukan qawqha "
 "ch'aqanakanisa ukhamaraki kawkhans uskuta uk mayjachaña"
 
-#  [es] "Configuración de la red"
 #: generate_additional_files.py:50
+msgid "Panel, Projector, xrandr, Screen, Resolution, Refresh"
+msgstr ""
+
+#  [es] "Configuración de la red"
+#: generate_additional_files.py:63
 msgid "Network settings"
 msgstr "Llikan mayjachawi"
+
+#: generate_additional_files.py:63
+msgid "Network, Wireless, IP, LAN, Proxy, Internet, WiFi"
+msgstr ""
+
+#  [es] "Tableta gràfica"
+#: generate_additional_files.py:76
+msgid "Graphics Tablet"
+msgstr "Jamuqamp tableta"
 
 #  [es] ""
 #  [es] "Asigne los botones y ajuste la sensibilidad del lápiz óptico de las tabletas "
 #  [es] "gráficas"
-#: generate_additional_files.py:60
+#: generate_additional_files.py:76
 msgid ""
 "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Wutunanak uñacht'ayaña ukhamaraki lapisan turpa mayjachaña jamuqampi "
 "tabletanakataki"
+
+#: generate_additional_files.py:76
+msgid "Tablet, Wacom, Stylus, Eraser, Mouse"
+msgstr ""
