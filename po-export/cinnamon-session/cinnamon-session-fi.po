@@ -14,15 +14,15 @@ msgstr ""
 "Project-Id-Version: cinnamon-session\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-23 14:05+0100\n"
-"PO-Revision-Date: 2018-01-01 21:46+0000\n"
-"Last-Translator: Ari Ervasti <ari.ervasti87@gmail.com>\n"
+"PO-Revision-Date: 2023-07-03 06:53+0000\n"
+"Last-Translator: Kimmo Kujansuu <Unknown>\n"
 "Language-Team: Finnish <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2023-06-08 10:20+0000\n"
-"X-Generator: Launchpad (build 620cd5280e3a973662e263ebf9346837ed657a46)\n"
+"X-Launchpad-Export-Date: 2023-07-07 12:55+0000\n"
+"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
 "Language: fi\n"
 
 #: cinnamon-session/csm-inhibit-dialog.c:251
@@ -43,20 +43,20 @@ msgid ""
 "Waiting for the program to finish.  Interrupting the program may cause you "
 "to lose work."
 msgstr ""
-"Odotetaan ohjelman lopettamista. Ohjelman suorituksen keskeyttäminen voi "
-"aiheuttaa töiden häviämistä."
+"Odotetaan ohjelman sulkeutumista. Ohjelman keskeyttäminen saattaa kadottaa "
+"tekemäsi työn."
 
 #: cinnamon-session/csm-inhibit-dialog.c:641 data/csm-inhibit-dialog.glade.h:1
 msgid "Some programs are still running:"
-msgstr "Joitakin ohjelmia on vielä käynnissä:"
+msgstr "Ohjelmia on vielä käynnissä:"
 
 #: cinnamon-session/csm-inhibit-dialog.c:642
 msgid ""
 "Waiting for programs to finish.  Interrupting these programs may cause you "
 "to lose work."
 msgstr ""
-"Odotetaan ohjelmien lopettamista. Ohjelmien suorituksen keskeyttäminen voi "
-"aiheuttaa töiden häviämistä."
+"Odotetaan ohjelmien sulkeutumista. Ohjelman keskeyttäminen saattaa kadottaa "
+"tekemäsi työn."
 
 #: cinnamon-session/csm-inhibit-dialog.c:872
 msgid "Switch User Anyway"
@@ -68,11 +68,11 @@ msgstr "Kirjaudu ulos kaikesta huolimatta"
 
 #: cinnamon-session/csm-inhibit-dialog.c:878
 msgid "Suspend Anyway"
-msgstr "Siirry valmiustilaan kaikesta huolimatta"
+msgstr "Valmiustilaan kaikesta huolimatta"
 
 #: cinnamon-session/csm-inhibit-dialog.c:881
 msgid "Hibernate Anyway"
-msgstr "Siirry lepotilaan kaikesta huolimatta"
+msgstr "Lepotilaan kaikesta huolimatta"
 
 #: cinnamon-session/csm-inhibit-dialog.c:884
 msgid "Shut Down Anyway"
@@ -80,7 +80,7 @@ msgstr "Sammuta kaikesta huolimatta"
 
 #: cinnamon-session/csm-inhibit-dialog.c:887
 msgid "Restart Anyway"
-msgstr "Käynnistä uudelleen kaikesta huolimatta"
+msgstr "Käynnistä kaikesta huolimatta"
 
 #: cinnamon-session/csm-inhibit-dialog.c:895
 msgid "Lock Screen"
@@ -101,8 +101,8 @@ msgstr[1] "Sinut kirjataan ulos %d sekunnin kuluttua."
 #, c-format
 msgid "This system will be automatically shut down in %d second."
 msgid_plural "This system will be shut down in %d seconds."
-msgstr[0] "Järjestelmä sammutetaan automaattisesti %d sekunnin kuluttua."
-msgstr[1] "Järjestelmä sammutetaan %d sekunnin kuluttua."
+msgstr[0] "Järjestelmä sammuu automaattisesti %d sekunnin kuluttua."
+msgstr[1] "Järjestelmä sammuu %d sekunnin kuluttua."
 
 #: cinnamon-session/csm-logout-dialog.c:273
 #, c-format
@@ -115,7 +115,7 @@ msgstr[1] "Järjestelmä käynnistetään uudelleen %d sekunnin kuluttua."
 #: cinnamon-session/csm-logout-dialog.c:297
 #, c-format
 msgid "You are currently logged in as \"%s\"."
-msgstr "Olet kirjautunut sisään käyttäjänä ”%s”."
+msgstr "Olet kirjautunut käyttäjänä ”%s”."
 
 #: cinnamon-session/csm-logout-dialog.c:359
 msgid "Session"
@@ -186,7 +186,7 @@ msgstr "Pysäytetty signaalilla %d"
 #: cinnamon-session/csm-util.c:413
 msgid "Unable to start login session (and unable to connect to the X server)"
 msgstr ""
-"Kirjautumisistuntoa ei voi käynnistää (eikä X-palvelimeen voitu yhdistää)"
+"Isistunnon aloittaminen ei onnistu (eikä saada yhteyttä X-palvelimeen)"
 
 #: cinnamon-session/csm-xsmp-client.c:559
 msgid "Remembered Application"
@@ -201,17 +201,16 @@ msgid ""
 "Refusing new client connection because the session is currently being shut "
 "down\n"
 msgstr ""
-"Kieltäydytään uudesta asiakasyhteydestä, koska istuntoa ollaan parhaillaan "
-"sulkemassa\n"
+"Uudet istunnot hylätään, koska istuntoa ollaan parhaillaan sulkemassa\n"
 
 #: cinnamon-session/csm-xsmp-server.c:609
 #, c-format
 msgid "Could not create ICE listening socket: %s"
-msgstr "ICE-kuuntelupistoketta ei voi luoda: %s"
+msgstr "ICE-kuuntelun porttia ei voi luoda: %s"
 
 #: cinnamon-session/main.c:243
 msgid "Override standard autostart directories"
-msgstr "Korvaa automaattikäynnistyksen oletuskansiot"
+msgstr "Ohita automaattisen käynnistyksen oletuskansiot"
 
 #: cinnamon-session/main.c:243
 msgid "AUTOSTART_DIR"
@@ -275,12 +274,12 @@ msgstr "Ohjelmaa kutsuttiin ristiriitaisilla valitsimilla"
 
 #: egg/eggdesktopfile.c:165
 msgid "File is not a valid .desktop file"
-msgstr "Tiedosto ei ole kelvollinen .desktop-tiedosto"
+msgstr "Tämä ei ole kelvollinen .desktop tiedosto"
 
 #: egg/eggdesktopfile.c:191
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr "Tuntematon desktop-tiedoston versio ”%s”"
+msgstr "Tämä on .desktop tiedoston tuntematon versio ”%s”"
 
 #: egg/eggdesktopfile.c:973
 #, c-format
@@ -294,23 +293,23 @@ msgstr "Sovellus ei hyväksy asiakirjoja komentoriviltä"
 #: egg/eggdesktopfile.c:1182
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr "Tuntematon käynnistinvalitsin: %d"
+msgstr "Tuntematon käynnistimen asetus: %d"
 
 #: egg/eggdesktopfile.c:1383
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Asiakirja-URIa ei voida antaa ”Type=Link”-työpöytäkohteelle"
+msgstr "Ei voi välittää asiakirjan URI:a ”Type=Link”-desktop kohteelle"
 
 #: egg/eggdesktopfile.c:1404
 msgid "Not a launchable item"
-msgstr "Kohde ei ole käynnistettävä"
+msgstr "Ei ole käynnistettävä kohde"
 
 #: egg/eggsmclient.c:226
 msgid "Disable connection to session manager"
-msgstr "Ota yhteys istunnonhallintaan pois käytöstä"
+msgstr "Poista yhteys istunnonhallintaan"
 
 #: egg/eggsmclient.c:229
 msgid "Specify file containing saved configuration"
-msgstr "Anna tallennetut asetukset sisältävä tiedosto"
+msgstr "Määritä asetukset sisältävä tiedosto"
 
 #: egg/eggsmclient.c:229
 msgid "FILE"
@@ -318,7 +317,7 @@ msgstr "TIEDOSTO"
 
 #: egg/eggsmclient.c:232
 msgid "Specify session management ID"
-msgstr "Anna istunnonhallinnan tunniste (ID)"
+msgstr "Määritä istunnonhallinnan tunniste (ID)"
 
 #: egg/eggsmclient.c:232
 msgid "ID"
