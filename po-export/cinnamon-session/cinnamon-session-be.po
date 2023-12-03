@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-session.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-23 14:05+0100\n"
-"PO-Revision-Date: 2022-02-11 21:01+0000\n"
+"POT-Creation-Date: 2023-11-19 14:25+0000\n"
+"PO-Revision-Date: 2023-11-22 16:42+0000\n"
 "Last-Translator: Anton Hryb <Unknown>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -14,75 +14,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2023-07-07 12:55+0000\n"
-"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
+"X-Launchpad-Export-Date: 2023-12-03 13:32+0000\n"
+"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
 "Language: be\n"
 
-#: cinnamon-session/csm-inhibit-dialog.c:251
-#, c-format
-msgid "Icon '%s' not found"
-msgstr "Значок \"%s\" не знойдзены"
+#: cinnamon-session-quit/cinnamon-session-quit.py:57
+msgid "Log out"
+msgstr "Выйсці з сеанса"
 
-#: cinnamon-session/csm-inhibit-dialog.c:586
-msgid "Unknown"
-msgstr "Невядома"
+#: cinnamon-session-quit/cinnamon-session-quit.py:59
+msgid "Power off"
+msgstr "Выключыць"
 
-#: cinnamon-session/csm-inhibit-dialog.c:637
-msgid "A program is still running:"
-msgstr "Праграма ўсё яшчэ выконваецца:"
+#: cinnamon-session-quit/cinnamon-session-quit.py:63
+msgid "Ignoring any existing inhibitors"
+msgstr "Ігнараваць усіх наяўных блакіроўшчыкаў"
 
-#: cinnamon-session/csm-inhibit-dialog.c:638 data/csm-inhibit-dialog.glade.h:2
-msgid ""
-"Waiting for the program to finish.  Interrupting the program may cause you "
-"to lose work."
-msgstr ""
-"Чакаецца завяршэнне працы праграмы. Перарваўшы праграму, можна страціць "
-"напрацоўкі."
+#: cinnamon-session-quit/cinnamon-session-quit.py:65
+msgid "Don't prompt for user confirmation"
+msgstr "Не прасіць пацвярджэння ад карыстальніка"
 
-#: cinnamon-session/csm-inhibit-dialog.c:641 data/csm-inhibit-dialog.glade.h:1
-msgid "Some programs are still running:"
-msgstr "Некаторыя праграмы яшчэ выконваюцца:"
+#: cinnamon-session-quit/cinnamon-session-quit.py:245
+msgid "Log out of this system now?"
+msgstr "Выйсці з сеанса цяпер?"
 
-#: cinnamon-session/csm-inhibit-dialog.c:642
-msgid ""
-"Waiting for programs to finish.  Interrupting these programs may cause you "
-"to lose work."
-msgstr ""
-"Чакаецца завяршэнне працы праграм. Перарваўшы іх, можна страціць напрацоўкі."
+#: cinnamon-session-quit/cinnamon-session-quit.py:251
+msgid "Shut down this system now?"
+msgstr "Выключыць камп'ютар?"
 
-#: cinnamon-session/csm-inhibit-dialog.c:872
-msgid "Switch User Anyway"
-msgstr "Прымусова пераключыць карыстальніка"
+#: cinnamon-session-quit/cinnamon-session-quit.py:263
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:10
+msgid "Restart this system now?"
+msgstr "Перазагрузіць камп'ютар цяпер?"
 
-#: cinnamon-session/csm-inhibit-dialog.c:875
-msgid "Log Out Anyway"
-msgstr "Прымусова выйсці з сеанса"
-
-#: cinnamon-session/csm-inhibit-dialog.c:878
-msgid "Suspend Anyway"
-msgstr "Усё роўна прыпыніць"
-
-#: cinnamon-session/csm-inhibit-dialog.c:881
-msgid "Hibernate Anyway"
-msgstr "Усё роўна заснуць"
-
-#: cinnamon-session/csm-inhibit-dialog.c:884
-msgid "Shut Down Anyway"
-msgstr "Усё роўна выключыць"
-
-#: cinnamon-session/csm-inhibit-dialog.c:887
-msgid "Restart Anyway"
-msgstr "Усё роўна перазагрузіць"
-
-#: cinnamon-session/csm-inhibit-dialog.c:895
-msgid "Lock Screen"
-msgstr "Заблакіраваць экран"
-
-#: cinnamon-session/csm-inhibit-dialog.c:898
-msgid "Cancel"
-msgstr "Скасаваць"
-
-#: cinnamon-session/csm-logout-dialog.c:257
+#: cinnamon-session-quit/cinnamon-session-quit.py:312
 #, c-format
 msgid "You will be automatically logged out in %d second."
 msgid_plural "You will be logged out in %d seconds."
@@ -90,7 +55,7 @@ msgstr[0] "Аўтаматычны выхад з сеанса праз %d сек�
 msgstr[1] "Аўтаматычны выхад з сеанса праз %d секунды."
 msgstr[2] "Аўтаматычны выхад з сеанса праз %d секунд."
 
-#: cinnamon-session/csm-logout-dialog.c:265
+#: cinnamon-session-quit/cinnamon-session-quit.py:318
 #, c-format
 msgid "This system will be automatically shut down in %d second."
 msgid_plural "This system will be shut down in %d seconds."
@@ -98,7 +63,7 @@ msgstr[0] "Аўтаматычнае выключэнне камп'ютара п�
 msgstr[1] "Аўтаматычнае выключэнне камп'ютара праз %d секунды."
 msgstr[2] "Аўтаматычнае выключэнне камп'ютара праз %d секунд."
 
-#: cinnamon-session/csm-logout-dialog.c:273
+#: cinnamon-session-quit/cinnamon-session-quit.py:324
 #, c-format
 msgid "This system will be automatically restarted in %d second."
 msgid_plural "This system will be restarted in %d seconds."
@@ -106,59 +71,7 @@ msgstr[0] "Аўтаматычная перазагрузка камп'ютара
 msgstr[1] "Аўтаматычная перазагрузка камп'ютара праз %d секунды."
 msgstr[2] "Аўтаматычная перазагрузка камп'ютара праз %d секунд."
 
-#: cinnamon-session/csm-logout-dialog.c:297
-#, c-format
-msgid "You are currently logged in as \"%s\"."
-msgstr "Вы ўвайшлі ў сістэму як \"%s\"."
-
-#: cinnamon-session/csm-logout-dialog.c:359
-msgid "Session"
-msgstr "Сеанс"
-
-#: cinnamon-session/csm-logout-dialog.c:374
-msgid "Log out of this system now?"
-msgstr "Выйсці з сеанса цяпер?"
-
-#: cinnamon-session/csm-logout-dialog.c:380
-msgid "_Switch User"
-msgstr "Пераключыць _карыстальніка"
-
-#: cinnamon-session/csm-logout-dialog.c:385
-#: cinnamon-session/csm-logout-dialog.c:418
-#: cinnamon-session/csm-logout-dialog.c:434
-msgid "_Cancel"
-msgstr "_Скасаваць"
-
-#: cinnamon-session/csm-logout-dialog.c:389 cinnamon-session/csm-util.c:429
-msgid "_Log Out"
-msgstr "_Выйсці"
-
-#: cinnamon-session/csm-logout-dialog.c:395
-msgid "Shut down this system now?"
-msgstr "Выключыць камп'ютар?"
-
-#: cinnamon-session/csm-logout-dialog.c:401
-msgid "S_uspend"
-msgstr "_Прыпыніць"
-
-#: cinnamon-session/csm-logout-dialog.c:407
-msgid "_Hibernate"
-msgstr "_Гібернацыя"
-
-#: cinnamon-session/csm-logout-dialog.c:413
-#: cinnamon-session/csm-logout-dialog.c:439
-msgid "_Restart"
-msgstr "Пера_загрузіць"
-
-#: cinnamon-session/csm-logout-dialog.c:423
-msgid "_Shut Down"
-msgstr "_Выключыць"
-
-#: cinnamon-session/csm-logout-dialog.c:429
-msgid "Restart this system now?"
-msgstr "Перазагрузіць камп'ютар цяпер?"
-
-#: cinnamon-session/csm-manager.c:1490 cinnamon-session/csm-manager.c:2271
+#: cinnamon-session/csm-manager.c:1436 cinnamon-session/csm-manager.c:3146
 msgid "Not responding"
 msgstr "Не адказвае"
 
@@ -177,15 +90,11 @@ msgstr "Працэс забіты сігналам %d"
 msgid "Stopped by signal %d"
 msgstr "Працэс спынены сігналам %d"
 
-#: cinnamon-session/csm-util.c:413
-msgid "Unable to start login session (and unable to connect to the X server)"
-msgstr "Немагчыма запусціць сеанс (і немагчыма злучыцца з X-серверам)"
-
-#: cinnamon-session/csm-xsmp-client.c:559
+#: cinnamon-session/csm-xsmp-client.c:558
 msgid "Remembered Application"
 msgstr "Запомненыя праграмы"
 
-#: cinnamon-session/csm-xsmp-client.c:1198
+#: cinnamon-session/csm-xsmp-client.c:1197
 msgid "This program is blocking logout."
 msgstr "Гэта праграма блакіруе выхад з сеанса."
 
@@ -200,126 +109,89 @@ msgstr "Адмова ў новым кліенцкім злучэнні з-за �
 msgid "Could not create ICE listening socket: %s"
 msgstr "Немагчыма стварыць ICE-сокет: %s"
 
-#: cinnamon-session/main.c:243
+#: cinnamon-session/inhibit-dialog-info.c:131
+msgid "Unknown"
+msgstr "Невядома"
+
+#: cinnamon-session/main.c:209
 msgid "Override standard autostart directories"
 msgstr "Перавызначыць стандартныя каталогі аўтазапуску"
 
-#: cinnamon-session/main.c:243
+#: cinnamon-session/main.c:209
 msgid "AUTOSTART_DIR"
 msgstr "КАТАЛОГ_АЎТАЗАПУСКУ"
 
-#: cinnamon-session/main.c:244
+#: cinnamon-session/main.c:210
 msgid "Session to use"
 msgstr "Патрэбны сеанс"
 
-#: cinnamon-session/main.c:244
+#: cinnamon-session/main.c:210
 msgid "SESSION_NAME"
 msgstr "НАЗВА_СЕАНСА"
 
-#: cinnamon-session/main.c:245
+#: cinnamon-session/main.c:211
 msgid "Enable debugging code"
 msgstr "Уключыць адладачны код"
 
-#: cinnamon-session/main.c:246
+#: cinnamon-session/main.c:212
 msgid "Do not load user-specified applications"
 msgstr "Не запускаць праграм карыстальніка"
 
-#: cinnamon-session/main.c:247
+#: cinnamon-session/main.c:213
 msgid "Version of this application"
 msgstr "Версія гэтай праграмы"
 
-#: cinnamon-session/main.c:249
+#: cinnamon-session/main.c:215
 msgid "Show the fail whale dialog for testing"
 msgstr "Паказаць збой у акенцы для тэставання"
 
-#: cinnamon-session/main.c:278
+#: cinnamon-session/main.c:246
 msgid " - the Cinnamon session manager"
 msgstr " -  кіраўнік сесіі Cinnamon"
 
-#: tools/cinnamon-session-quit.c:53
-msgid "Log out"
-msgstr "Выйсці з сеанса"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:1
+msgid "Session"
+msgstr "Сеанс"
 
-#: tools/cinnamon-session-quit.c:54
-msgid "Power off"
-msgstr "Выключыць"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:2
+msgid "S_uspend"
+msgstr "_Прыпыніць"
 
-#: tools/cinnamon-session-quit.c:55
-msgid "Reboot"
-msgstr "Перазагрузіць"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:3
+msgid "_Hibernate"
+msgstr "_Гібернацыя"
 
-#: tools/cinnamon-session-quit.c:56
-msgid "Ignoring any existing inhibitors"
-msgstr "Ігнараваць усіх наяўных блакіроўшчыкаў"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:4
+msgid "_Switch User"
+msgstr "Пераключыць _карыстальніка"
 
-#: tools/cinnamon-session-quit.c:57
-msgid "Don't prompt for user confirmation"
-msgstr "Не прасіць пацвярджэння ад карыстальніка"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:5
+msgid "_Cancel"
+msgstr "_Скасаваць"
 
-#: tools/cinnamon-session-quit.c:91 tools/cinnamon-session-quit.c:101
-msgid "Could not connect to the session manager"
-msgstr "Немагчыма злучыцца з кіраўніком сэансаў"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:6
+msgid "_Restart"
+msgstr "Пера_загрузіць"
 
-#: tools/cinnamon-session-quit.c:203
-msgid "Program called with conflicting options"
-msgstr "Праграма запушчана з несумяшчальнымі опцыямі"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:7
+msgid "_Log Out"
+msgstr "_Выйсці"
 
-#: egg/eggdesktopfile.c:165
-msgid "File is not a valid .desktop file"
-msgstr "Няправільны .desktop-файл"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:8
+msgid "_Shut Down"
+msgstr "_Выключыць"
 
-#: egg/eggdesktopfile.c:191
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Невядомая версія desktop-файла \"%s\""
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:9
+msgid "_Ignore and continue"
+msgstr "І_гнараваць і працягнуць"
 
-#: egg/eggdesktopfile.c:973
-#, c-format
-msgid "Starting %s"
-msgstr "Запуск %s"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:11
+msgid "Some programs are still running:"
+msgstr "Некаторыя праграмы яшчэ выконваюцца:"
 
-#: egg/eggdesktopfile.c:1114
-msgid "Application does not accept documents on command line"
-msgstr "Праграма не прымае дакументы з каманднага радка"
-
-#: egg/eggdesktopfile.c:1182
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Невядомая опцыя запуску: %d"
-
-#: egg/eggdesktopfile.c:1383
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:12
+msgid ""
+"Waiting for programs to finish.  Interrupting these programs may cause you "
+"to lose work."
 msgstr ""
-"Немагчыма перадаць URI-адрасы дакументаў desktop-элементу з \"Type=Link\""
-
-#: egg/eggdesktopfile.c:1404
-msgid "Not a launchable item"
-msgstr "Незапускальны элемент"
-
-#: egg/eggsmclient.c:226
-msgid "Disable connection to session manager"
-msgstr "Адключыць злучэнне з кіраўніком сеансаў"
-
-#: egg/eggsmclient.c:229
-msgid "Specify file containing saved configuration"
-msgstr "Вызначыць файл, які захоўвае канфігурацыю"
-
-#: egg/eggsmclient.c:229
-msgid "FILE"
-msgstr "ФАЙЛ"
-
-#: egg/eggsmclient.c:232
-msgid "Specify session management ID"
-msgstr "Задаць ID кіравання сеансам"
-
-#: egg/eggsmclient.c:232
-msgid "ID"
-msgstr "ID"
-
-#: egg/eggsmclient.c:253
-msgid "Session management options:"
-msgstr "Опцыі кіравання сеансам:"
-
-#: egg/eggsmclient.c:254
-msgid "Show session management options"
-msgstr "Паказаць опцыі кіравання сеансам"
+"Чакаецца завяршэнне працы праграм. Перарваўшы іх, можна страціць напрацоўкі."

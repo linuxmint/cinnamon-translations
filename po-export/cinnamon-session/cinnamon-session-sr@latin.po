@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-session\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-23 14:05+0100\n"
+"POT-Creation-Date: 2023-11-19 14:25+0000\n"
 "PO-Revision-Date: 2020-05-17 12:40+0000\n"
 "Last-Translator: Saša Marjanović <Unknown>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
@@ -19,79 +19,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2023-07-07 12:55+0000\n"
-"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
+"X-Launchpad-Export-Date: 2023-12-03 13:32+0000\n"
+"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
 "X-Project-Style: gnome\n"
 "Language: sr\n"
 
-#: cinnamon-session/csm-inhibit-dialog.c:251
-#, c-format
-msgid "Icon '%s' not found"
-msgstr "Ikona '%s' nije nađena"
+#: cinnamon-session-quit/cinnamon-session-quit.py:57
+msgid "Log out"
+msgstr "Odjavi me"
 
-#: cinnamon-session/csm-inhibit-dialog.c:586
-msgid "Unknown"
-msgstr "Nepoznat"
+#: cinnamon-session-quit/cinnamon-session-quit.py:59
+msgid "Power off"
+msgstr "Isključi"
 
-#: cinnamon-session/csm-inhibit-dialog.c:637
-msgid "A program is still running:"
-msgstr "Program je još uvek pokrenut:"
+#: cinnamon-session-quit/cinnamon-session-quit.py:63
+msgid "Ignoring any existing inhibitors"
+msgstr "Zanemarujem sve postojeće inhibitore"
 
-#: cinnamon-session/csm-inhibit-dialog.c:638 data/csm-inhibit-dialog.glade.h:2
-msgid ""
-"Waiting for the program to finish.  Interrupting the program may cause you "
-"to lose work."
-msgstr ""
-"Čekam na program da završi sa radom.  Prekid programa može dovesti do "
-"gubitka vašeg rada."
+#: cinnamon-session-quit/cinnamon-session-quit.py:65
+msgid "Don't prompt for user confirmation"
+msgstr "Ne traži potvrdu od korisnika"
 
-#: cinnamon-session/csm-inhibit-dialog.c:641 data/csm-inhibit-dialog.glade.h:1
-msgid "Some programs are still running:"
-msgstr "Neki programi su još uvek pokrenuti:"
+#: cinnamon-session-quit/cinnamon-session-quit.py:245
+msgid "Log out of this system now?"
+msgstr "Da se odjavim sa ovog sistema odmah?"
 
-#: cinnamon-session/csm-inhibit-dialog.c:642
-msgid ""
-"Waiting for programs to finish.  Interrupting these programs may cause you "
-"to lose work."
-msgstr ""
-"Čekam da programi završe sa radom. Izlazak iz ovih programa može dovesti do "
-"gubitka vašeg rada."
+#: cinnamon-session-quit/cinnamon-session-quit.py:251
+msgid "Shut down this system now?"
+msgstr "Da isključim ovaj sistem odmah?"
 
-# Kako je potrebno da bude što kraće usudih se da promenim konstrukciju
-# „Promeni korisnika i pored toga“ u „Ipak promeni korisnika“ ~ Miloš
-#: cinnamon-session/csm-inhibit-dialog.c:872
-msgid "Switch User Anyway"
-msgstr "Ipak promeni korisnika"
+#: cinnamon-session-quit/cinnamon-session-quit.py:263
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:10
+msgid "Restart this system now?"
+msgstr "Da ponovo pokrenem ovaj sistem odmah?"
 
-#: cinnamon-session/csm-inhibit-dialog.c:875
-msgid "Log Out Anyway"
-msgstr "Ipak se odjavi"
-
-#: cinnamon-session/csm-inhibit-dialog.c:878
-msgid "Suspend Anyway"
-msgstr "Ipak obustavi rad"
-
-#: cinnamon-session/csm-inhibit-dialog.c:881
-msgid "Hibernate Anyway"
-msgstr "Ipak hiberniraj računar"
-
-#: cinnamon-session/csm-inhibit-dialog.c:884
-msgid "Shut Down Anyway"
-msgstr "Ipak isključi računar"
-
-#: cinnamon-session/csm-inhibit-dialog.c:887
-msgid "Restart Anyway"
-msgstr "Ipak ponovo pokreni"
-
-#: cinnamon-session/csm-inhibit-dialog.c:895
-msgid "Lock Screen"
-msgstr "Zaključaj ekran"
-
-#: cinnamon-session/csm-inhibit-dialog.c:898
-msgid "Cancel"
-msgstr "Otkaži"
-
-#: cinnamon-session/csm-logout-dialog.c:257
+#: cinnamon-session-quit/cinnamon-session-quit.py:312
 #, c-format
 msgid "You will be automatically logged out in %d second."
 msgid_plural "You will be logged out in %d seconds."
@@ -99,7 +61,7 @@ msgstr[0] "Bićete odjavljeni u roku od %d sekunde."
 msgstr[1] "Bićete odjavljeni u roku od %d sekunde."
 msgstr[2] "Bićete odjavljeni u roku od %d sekundi."
 
-#: cinnamon-session/csm-logout-dialog.c:265
+#: cinnamon-session-quit/cinnamon-session-quit.py:318
 #, c-format
 msgid "This system will be automatically shut down in %d second."
 msgid_plural "This system will be shut down in %d seconds."
@@ -107,7 +69,7 @@ msgstr[0] "Ovaj sistem će se automatski isključiti za %d sekundu."
 msgstr[1] "Ovaj sistem će se isključiti za %d sekunde."
 msgstr[2] "Ovaj sistem će se isključiti za %d sekundi."
 
-#: cinnamon-session/csm-logout-dialog.c:273
+#: cinnamon-session-quit/cinnamon-session-quit.py:324
 #, c-format
 msgid "This system will be automatically restarted in %d second."
 msgid_plural "This system will be restarted in %d seconds."
@@ -115,59 +77,7 @@ msgstr[0] "Ovaj sistem će se automatski ponovno pokrenuti za %d sekundu."
 msgstr[1] "Ovaj sistem će se ponovno pokrenuti za %d sekundi."
 msgstr[2] "Ovaj sistem bi će ponovno pokrenuti za %d sekundi."
 
-#: cinnamon-session/csm-logout-dialog.c:297
-#, c-format
-msgid "You are currently logged in as \"%s\"."
-msgstr "Trenutno ste prijavljeni kao \"%s\"."
-
-#: cinnamon-session/csm-logout-dialog.c:359
-msgid "Session"
-msgstr "Sesija"
-
-#: cinnamon-session/csm-logout-dialog.c:374
-msgid "Log out of this system now?"
-msgstr "Da se odjavim sa ovog sistema odmah?"
-
-#: cinnamon-session/csm-logout-dialog.c:380
-msgid "_Switch User"
-msgstr "_Promeni korisnika"
-
-#: cinnamon-session/csm-logout-dialog.c:385
-#: cinnamon-session/csm-logout-dialog.c:418
-#: cinnamon-session/csm-logout-dialog.c:434
-msgid "_Cancel"
-msgstr "_Otkaži"
-
-#: cinnamon-session/csm-logout-dialog.c:389 cinnamon-session/csm-util.c:429
-msgid "_Log Out"
-msgstr "O_djava"
-
-#: cinnamon-session/csm-logout-dialog.c:395
-msgid "Shut down this system now?"
-msgstr "Da isključim ovaj sistem odmah?"
-
-#: cinnamon-session/csm-logout-dialog.c:401
-msgid "S_uspend"
-msgstr "_Suspenduj"
-
-#: cinnamon-session/csm-logout-dialog.c:407
-msgid "_Hibernate"
-msgstr "_Hiberniraj"
-
-#: cinnamon-session/csm-logout-dialog.c:413
-#: cinnamon-session/csm-logout-dialog.c:439
-msgid "_Restart"
-msgstr "_Ponovo pokreni"
-
-#: cinnamon-session/csm-logout-dialog.c:423
-msgid "_Shut Down"
-msgstr "_Isključi računar"
-
-#: cinnamon-session/csm-logout-dialog.c:429
-msgid "Restart this system now?"
-msgstr "Da ponovo pokrenem ovaj sistem odmah?"
-
-#: cinnamon-session/csm-manager.c:1490 cinnamon-session/csm-manager.c:2271
+#: cinnamon-session/csm-manager.c:1436 cinnamon-session/csm-manager.c:3146
 msgid "Not responding"
 msgstr "Ne reaguje"
 
@@ -186,17 +96,11 @@ msgstr "Ubijen signalom %d"
 msgid "Stopped by signal %d"
 msgstr "Zaustavljen signalom %d"
 
-#: cinnamon-session/csm-util.c:413
-msgid "Unable to start login session (and unable to connect to the X server)"
-msgstr ""
-"Ne mogu da pokrenem sesiju prijavljivanja (i ne mogu da se povežem na X "
-"server)"
-
-#: cinnamon-session/csm-xsmp-client.c:559
+#: cinnamon-session/csm-xsmp-client.c:558
 msgid "Remembered Application"
 msgstr "Zapamćeni program"
 
-#: cinnamon-session/csm-xsmp-client.c:1198
+#: cinnamon-session/csm-xsmp-client.c:1197
 msgid "This program is blocking logout."
 msgstr "Ovaj program blokira odjavu."
 
@@ -211,127 +115,90 @@ msgstr "Odbacujem vezu sa novim klijentom jer je u toku gašenje sesije\n"
 msgid "Could not create ICE listening socket: %s"
 msgstr "Ne mogu da napravim  ICE soket za osluškivanje: %s"
 
-#: cinnamon-session/main.c:243
+#: cinnamon-session/inhibit-dialog-info.c:131
+msgid "Unknown"
+msgstr "Nepoznat"
+
+#: cinnamon-session/main.c:209
 msgid "Override standard autostart directories"
 msgstr "Zaobiđi standardne direktorijume sa samopokrećućim programima"
 
-#: cinnamon-session/main.c:243
+#: cinnamon-session/main.c:209
 msgid "AUTOSTART_DIR"
 msgstr "DIREKTORIJUM_SAMOPOKRETANJA"
 
-#: cinnamon-session/main.c:244
+#: cinnamon-session/main.c:210
 msgid "Session to use"
 msgstr "Sesija koje će se koristiti"
 
-#: cinnamon-session/main.c:244
+#: cinnamon-session/main.c:210
 msgid "SESSION_NAME"
 msgstr "NAZIV_SESIJE"
 
-#: cinnamon-session/main.c:245
+#: cinnamon-session/main.c:211
 msgid "Enable debugging code"
 msgstr "Uključi kod za dibaging"
 
-#: cinnamon-session/main.c:246
+#: cinnamon-session/main.c:212
 msgid "Do not load user-specified applications"
 msgstr "Ne učitavaj programe koje je naznačio korisnik"
 
-#: cinnamon-session/main.c:247
+#: cinnamon-session/main.c:213
 msgid "Version of this application"
 msgstr "Verzija ove aplikacije"
 
-#: cinnamon-session/main.c:249
+#: cinnamon-session/main.c:215
 msgid "Show the fail whale dialog for testing"
 msgstr "Prikaži ``fail whale`` dijalog za testiranje"
 
-#: cinnamon-session/main.c:278
+#: cinnamon-session/main.c:246
 msgid " - the Cinnamon session manager"
 msgstr " - Menadžer sesije Cinnamona"
 
-#: tools/cinnamon-session-quit.c:53
-msgid "Log out"
-msgstr "Odjavi me"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:1
+msgid "Session"
+msgstr "Sesija"
 
-#: tools/cinnamon-session-quit.c:54
-msgid "Power off"
-msgstr "Isključi"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:2
+msgid "S_uspend"
+msgstr "_Suspenduj"
 
-#: tools/cinnamon-session-quit.c:55
-msgid "Reboot"
-msgstr "Ponovo pokreni"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:3
+msgid "_Hibernate"
+msgstr "_Hiberniraj"
 
-#: tools/cinnamon-session-quit.c:56
-msgid "Ignoring any existing inhibitors"
-msgstr "Zanemarujem sve postojeće inhibitore"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:4
+msgid "_Switch User"
+msgstr "_Promeni korisnika"
 
-#: tools/cinnamon-session-quit.c:57
-msgid "Don't prompt for user confirmation"
-msgstr "Ne traži potvrdu od korisnika"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:5
+msgid "_Cancel"
+msgstr "_Otkaži"
 
-#: tools/cinnamon-session-quit.c:91 tools/cinnamon-session-quit.c:101
-msgid "Could not connect to the session manager"
-msgstr "Ne mogu da se povežem sa menadžerom sesije"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:6
+msgid "_Restart"
+msgstr "_Ponovo pokreni"
 
-#: tools/cinnamon-session-quit.c:203
-msgid "Program called with conflicting options"
-msgstr "Program je pozvan sa protivrečnim opcijama"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:7
+msgid "_Log Out"
+msgstr "O_djava"
 
-#: egg/eggdesktopfile.c:165
-msgid "File is not a valid .desktop file"
-msgstr "Ovo nije ispravna .desktop datoteka"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:8
+msgid "_Shut Down"
+msgstr "_Isključi računar"
 
-#: egg/eggdesktopfile.c:191
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Neprepoznata verzija '%s' datoteke radne površine"
-
-#: egg/eggdesktopfile.c:973
-#, c-format
-msgid "Starting %s"
-msgstr "Pokrećem %s"
-
-#: egg/eggdesktopfile.c:1114
-msgid "Application does not accept documents on command line"
-msgstr "Program ne prihvata dokumente na komandnoj liniji"
-
-#: egg/eggdesktopfile.c:1182
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Nepoznata opcija pokretanja: %d"
-
-#: egg/eggdesktopfile.c:1383
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:9
+msgid "_Ignore and continue"
 msgstr ""
-"Ne mogu da prosledim URI adrese dokumenta do 'Type=Link' odrednice na radnoj "
-"površini"
 
-#: egg/eggdesktopfile.c:1404
-msgid "Not a launchable item"
-msgstr "Nije stavka koja se može pokrenuti"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:11
+msgid "Some programs are still running:"
+msgstr "Neki programi su još uvek pokrenuti:"
 
-#: egg/eggsmclient.c:226
-msgid "Disable connection to session manager"
-msgstr "Onemogući vezu sa menadžerom sesije"
-
-#: egg/eggsmclient.c:229
-msgid "Specify file containing saved configuration"
-msgstr "Navedite datoteku koja zadrži sačuvanu konfiguraciju"
-
-#: egg/eggsmclient.c:229
-msgid "FILE"
-msgstr "DATOTEKA"
-
-#: egg/eggsmclient.c:232
-msgid "Specify session management ID"
-msgstr "Navedite IB upravljanja sesijom"
-
-#: egg/eggsmclient.c:232
-msgid "ID"
-msgstr "IB"
-
-#: egg/eggsmclient.c:253
-msgid "Session management options:"
-msgstr "Opcije upravljanja sesijom:"
-
-#: egg/eggsmclient.c:254
-msgid "Show session management options"
-msgstr "Prikaži opcije upravljanja sesijom"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:12
+msgid ""
+"Waiting for programs to finish.  Interrupting these programs may cause you "
+"to lose work."
+msgstr ""
+"Čekam da programi završe sa radom. Izlazak iz ovih programa može dovesti do "
+"gubitka vašeg rada."

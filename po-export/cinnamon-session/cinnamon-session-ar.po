@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-session.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-23 14:05+0100\n"
+"POT-Creation-Date: 2023-11-19 14:25+0000\n"
 "PO-Revision-Date: 2018-04-09 18:31+0000\n"
 "Last-Translator: انور الاسكندرانى <Unknown>\n"
 "Language-Team: anwar AL_iskandrany <anwareleskndrany13@gmail.com>\n"
@@ -11,73 +11,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2023-07-07 12:55+0000\n"
-"X-Generator: Launchpad (build 2ac9e3bf4ab511504f8fc651371e24a6a047ba12)\n"
+"X-Launchpad-Export-Date: 2023-12-03 13:32+0000\n"
+"X-Generator: Launchpad (build 886068b1e1d10de444fbd53b0c7d3f6d4fb3e658)\n"
 "Language: ar_EG\n"
 
-#: cinnamon-session/csm-inhibit-dialog.c:251
-#, c-format
-msgid "Icon '%s' not found"
-msgstr "أيقونة '%s' غير موجودة"
+#: cinnamon-session-quit/cinnamon-session-quit.py:57
+msgid "Log out"
+msgstr "تسجيل خروج"
 
-#: cinnamon-session/csm-inhibit-dialog.c:586
-msgid "Unknown"
-msgstr "غير معروف"
+#: cinnamon-session-quit/cinnamon-session-quit.py:59
+msgid "Power off"
+msgstr "إيقاف الطاقة"
 
-#: cinnamon-session/csm-inhibit-dialog.c:637
-msgid "A program is still running:"
-msgstr "ما زال البرنامج قيد التشغيل:"
+#: cinnamon-session-quit/cinnamon-session-quit.py:63
+msgid "Ignoring any existing inhibitors"
+msgstr "تجاهل أي مثبطات موجودة"
 
-#: cinnamon-session/csm-inhibit-dialog.c:638 data/csm-inhibit-dialog.glade.h:2
-msgid ""
-"Waiting for the program to finish.  Interrupting the program may cause you "
-"to lose work."
-msgstr "في انتظار انتهاء البرنامج. قد تؤدي مقاطعة البرنامج إلى فقدان العمل."
+#: cinnamon-session-quit/cinnamon-session-quit.py:65
+msgid "Don't prompt for user confirmation"
+msgstr "عدم المطالبة بتأكيد المستخدم"
 
-#: cinnamon-session/csm-inhibit-dialog.c:641 data/csm-inhibit-dialog.glade.h:1
-msgid "Some programs are still running:"
-msgstr "لا تزال بعض البرامج قيد التشغيل:"
+#: cinnamon-session-quit/cinnamon-session-quit.py:245
+msgid "Log out of this system now?"
+msgstr "تسجيل الخروج من هذا النظام الآن؟"
 
-#: cinnamon-session/csm-inhibit-dialog.c:642
-msgid ""
-"Waiting for programs to finish.  Interrupting these programs may cause you "
-"to lose work."
-msgstr ""
-"في انتظار انتهاء البرامج. قد تؤدي مقاطعة هذه البرامج إلى فقدان العمل."
+#: cinnamon-session-quit/cinnamon-session-quit.py:251
+msgid "Shut down this system now?"
+msgstr "إيقاف تشغيل هذا النظام الآن؟"
 
-#: cinnamon-session/csm-inhibit-dialog.c:872
-msgid "Switch User Anyway"
-msgstr "تبديل المستخدم على أي حال"
+#: cinnamon-session-quit/cinnamon-session-quit.py:263
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:10
+msgid "Restart this system now?"
+msgstr "إعادة تشغيل هذا النظام الآن؟"
 
-#: cinnamon-session/csm-inhibit-dialog.c:875
-msgid "Log Out Anyway"
-msgstr "تسجيل الخروج على أي حال"
-
-#: cinnamon-session/csm-inhibit-dialog.c:878
-msgid "Suspend Anyway"
-msgstr "تعليق على أي حال"
-
-#: cinnamon-session/csm-inhibit-dialog.c:881
-msgid "Hibernate Anyway"
-msgstr "إسبات على أي حال"
-
-#: cinnamon-session/csm-inhibit-dialog.c:884
-msgid "Shut Down Anyway"
-msgstr "إيقاف تشغيل علي اي حال"
-
-#: cinnamon-session/csm-inhibit-dialog.c:887
-msgid "Restart Anyway"
-msgstr "إعادة تشغيل على أي حال"
-
-#: cinnamon-session/csm-inhibit-dialog.c:895
-msgid "Lock Screen"
-msgstr "قفل الشاشة"
-
-#: cinnamon-session/csm-inhibit-dialog.c:898
-msgid "Cancel"
-msgstr "إلغاء"
-
-#: cinnamon-session/csm-logout-dialog.c:257
+#: cinnamon-session-quit/cinnamon-session-quit.py:312
 #, c-format
 msgid "You will be automatically logged out in %d second."
 msgid_plural "You will be logged out in %d seconds."
@@ -88,7 +55,7 @@ msgstr[3] "سيتم تسجيل الخروج تلقائيًا خلال %d ثوا�
 msgstr[4] "سيتم تسجيل الخروج تلقائيًا خلال %d ثواني."
 msgstr[5] "سيتم تسجيل الخروج تلقائيًا خلال %d ثواني."
 
-#: cinnamon-session/csm-logout-dialog.c:265
+#: cinnamon-session-quit/cinnamon-session-quit.py:318
 #, c-format
 msgid "This system will be automatically shut down in %d second."
 msgid_plural "This system will be shut down in %d seconds."
@@ -99,7 +66,7 @@ msgstr[3] "سيتم إيقاف تشغيل هذا النظام تلقائيًا �
 msgstr[4] "سيتم إيقاف تشغيل هذا النظام تلقائيًا خلال %d ثواني."
 msgstr[5] "سيتم إيقاف تشغيل هذا النظام تلقائيًا خلال %d ثواني."
 
-#: cinnamon-session/csm-logout-dialog.c:273
+#: cinnamon-session-quit/cinnamon-session-quit.py:324
 #, c-format
 msgid "This system will be automatically restarted in %d second."
 msgid_plural "This system will be restarted in %d seconds."
@@ -110,59 +77,7 @@ msgstr[3] "سيتم إعادة تشغيل هذا النظام تلقائيًا �
 msgstr[4] "سيتم إعادة تشغيل هذا النظام تلقائيًا في %d ثواني."
 msgstr[5] "سيتم إعادة تشغيل هذا النظام تلقائيًا في %d ثواني."
 
-#: cinnamon-session/csm-logout-dialog.c:297
-#, c-format
-msgid "You are currently logged in as \"%s\"."
-msgstr "لقد قمت بتسجيل الدخول حالياً بإسم \"%s\"."
-
-#: cinnamon-session/csm-logout-dialog.c:359
-msgid "Session"
-msgstr "الجلسة"
-
-#: cinnamon-session/csm-logout-dialog.c:374
-msgid "Log out of this system now?"
-msgstr "تسجيل الخروج من هذا النظام الآن؟"
-
-#: cinnamon-session/csm-logout-dialog.c:380
-msgid "_Switch User"
-msgstr "_تبديل المستخدم"
-
-#: cinnamon-session/csm-logout-dialog.c:385
-#: cinnamon-session/csm-logout-dialog.c:418
-#: cinnamon-session/csm-logout-dialog.c:434
-msgid "_Cancel"
-msgstr "_إلغاء"
-
-#: cinnamon-session/csm-logout-dialog.c:389 cinnamon-session/csm-util.c:429
-msgid "_Log Out"
-msgstr "_تسجيل الخروج"
-
-#: cinnamon-session/csm-logout-dialog.c:395
-msgid "Shut down this system now?"
-msgstr "إيقاف تشغيل هذا النظام الآن؟"
-
-#: cinnamon-session/csm-logout-dialog.c:401
-msgid "S_uspend"
-msgstr "ت_عليق"
-
-#: cinnamon-session/csm-logout-dialog.c:407
-msgid "_Hibernate"
-msgstr "_إسبات"
-
-#: cinnamon-session/csm-logout-dialog.c:413
-#: cinnamon-session/csm-logout-dialog.c:439
-msgid "_Restart"
-msgstr "_إعادة تشغيل"
-
-#: cinnamon-session/csm-logout-dialog.c:423
-msgid "_Shut Down"
-msgstr "_إيقاف تشغيل"
-
-#: cinnamon-session/csm-logout-dialog.c:429
-msgid "Restart this system now?"
-msgstr "إعادة تشغيل هذا النظام الآن؟"
-
-#: cinnamon-session/csm-manager.c:1490 cinnamon-session/csm-manager.c:2271
+#: cinnamon-session/csm-manager.c:1436 cinnamon-session/csm-manager.c:3146
 msgid "Not responding"
 msgstr "لا يستجيب"
 
@@ -181,15 +96,11 @@ msgstr "قتل بواسطة الإشاره %d"
 msgid "Stopped by signal %d"
 msgstr "متوقف بواسطة الإشارة %d"
 
-#: cinnamon-session/csm-util.c:413
-msgid "Unable to start login session (and unable to connect to the X server)"
-msgstr "غير قادر على بدء جلسة تسجيل الدخول (وغير قادر على الاتصال بخادم X)"
-
-#: cinnamon-session/csm-xsmp-client.c:559
+#: cinnamon-session/csm-xsmp-client.c:558
 msgid "Remembered Application"
 msgstr "تذكر التطبيق"
 
-#: cinnamon-session/csm-xsmp-client.c:1198
+#: cinnamon-session/csm-xsmp-client.c:1197
 msgid "This program is blocking logout."
 msgstr "هذا البرنامج يمنع تسجيل الخروج."
 
@@ -204,125 +115,89 @@ msgstr "رفض اتصال العميل الجديد لأنه يتم حاليًا
 msgid "Could not create ICE listening socket: %s"
 msgstr "تعذر إنشاء مأخذ توصيل ICE: %s"
 
-#: cinnamon-session/main.c:243
+#: cinnamon-session/inhibit-dialog-info.c:131
+msgid "Unknown"
+msgstr "غير معروف"
+
+#: cinnamon-session/main.c:209
 msgid "Override standard autostart directories"
 msgstr "تجاوز دلائل البدء التلقائي القياسية"
 
-#: cinnamon-session/main.c:243
+#: cinnamon-session/main.c:209
 msgid "AUTOSTART_DIR"
 msgstr "AUTOSTART_DIR"
 
-#: cinnamon-session/main.c:244
+#: cinnamon-session/main.c:210
 msgid "Session to use"
 msgstr "الجلسة للاستخدام"
 
-#: cinnamon-session/main.c:244
+#: cinnamon-session/main.c:210
 msgid "SESSION_NAME"
 msgstr "SESSION_NAME"
 
-#: cinnamon-session/main.c:245
+#: cinnamon-session/main.c:211
 msgid "Enable debugging code"
 msgstr "تمكين رمز التصحيح"
 
-#: cinnamon-session/main.c:246
+#: cinnamon-session/main.c:212
 msgid "Do not load user-specified applications"
 msgstr "عدم تحميل التطبيقات المحددة من قبل المستخدم"
 
-#: cinnamon-session/main.c:247
+#: cinnamon-session/main.c:213
 msgid "Version of this application"
 msgstr "إصدار هذا التطبيق"
 
-#: cinnamon-session/main.c:249
+#: cinnamon-session/main.c:215
 msgid "Show the fail whale dialog for testing"
 msgstr "عرض مربع حوار فشل حوت الاختبار"
 
-#: cinnamon-session/main.c:278
+#: cinnamon-session/main.c:246
 msgid " - the Cinnamon session manager"
 msgstr " - مدير جلسة Cinnamon"
 
-#: tools/cinnamon-session-quit.c:53
-msgid "Log out"
-msgstr "تسجيل خروج"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:1
+msgid "Session"
+msgstr "الجلسة"
 
-#: tools/cinnamon-session-quit.c:54
-msgid "Power off"
-msgstr "إيقاف الطاقة"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:2
+msgid "S_uspend"
+msgstr "ت_عليق"
 
-#: tools/cinnamon-session-quit.c:55
-msgid "Reboot"
-msgstr "إعادة تمهيد"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:3
+msgid "_Hibernate"
+msgstr "_إسبات"
 
-#: tools/cinnamon-session-quit.c:56
-msgid "Ignoring any existing inhibitors"
-msgstr "تجاهل أي مثبطات موجودة"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:4
+msgid "_Switch User"
+msgstr "_تبديل المستخدم"
 
-#: tools/cinnamon-session-quit.c:57
-msgid "Don't prompt for user confirmation"
-msgstr "عدم المطالبة بتأكيد المستخدم"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:5
+msgid "_Cancel"
+msgstr "_إلغاء"
 
-#: tools/cinnamon-session-quit.c:91 tools/cinnamon-session-quit.c:101
-msgid "Could not connect to the session manager"
-msgstr "تعذر الاتصال بمدير الجلسة"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:6
+msgid "_Restart"
+msgstr "_إعادة تشغيل"
 
-#: tools/cinnamon-session-quit.c:203
-msgid "Program called with conflicting options"
-msgstr "البرنامج متصل مع خيارات متضاربة"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:7
+msgid "_Log Out"
+msgstr "_تسجيل الخروج"
 
-#: egg/eggdesktopfile.c:165
-msgid "File is not a valid .desktop file"
-msgstr "الملف غير صالح .ملف سطح المكتب"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:8
+msgid "_Shut Down"
+msgstr "_إيقاف تشغيل"
 
-#: egg/eggdesktopfile.c:191
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "إصدار ملف سطح المكتب غير معروف '%s'"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:9
+msgid "_Ignore and continue"
+msgstr ""
 
-#: egg/eggdesktopfile.c:973
-#, c-format
-msgid "Starting %s"
-msgstr "بدء تشغيل %s"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:11
+msgid "Some programs are still running:"
+msgstr "لا تزال بعض البرامج قيد التشغيل:"
 
-#: egg/eggdesktopfile.c:1114
-msgid "Application does not accept documents on command line"
-msgstr "التطبيق لا يقبل المستندات على سطر الأوامر"
-
-#: egg/eggdesktopfile.c:1182
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "خيار الإطلاق غير معروف: %d"
-
-#: egg/eggdesktopfile.c:1383
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "لا يمكن تمرير مستند URIs إلى 'Type=Link' إدخال سطح المكتب"
-
-#: egg/eggdesktopfile.c:1404
-msgid "Not a launchable item"
-msgstr "لا يمكن إطلاق العنصر"
-
-#: egg/eggsmclient.c:226
-msgid "Disable connection to session manager"
-msgstr "تعطيل الاتصال بمدير الجلسة"
-
-#: egg/eggsmclient.c:229
-msgid "Specify file containing saved configuration"
-msgstr "تحديد ملف يحتوي على التكوين المحفوظة"
-
-#: egg/eggsmclient.c:229
-msgid "FILE"
-msgstr "الملف"
-
-#: egg/eggsmclient.c:232
-msgid "Specify session management ID"
-msgstr "حدد معرف إدارة الجلسة"
-
-#: egg/eggsmclient.c:232
-msgid "ID"
-msgstr "المعرف"
-
-#: egg/eggsmclient.c:253
-msgid "Session management options:"
-msgstr "خيارات إدارة الجلسة:"
-
-#: egg/eggsmclient.c:254
-msgid "Show session management options"
-msgstr "عرض خيارات إدارة الجلسة"
+#: cinnamon-session-quit/cinnamon-session-quit.glade.h:12
+msgid ""
+"Waiting for programs to finish.  Interrupting these programs may cause you "
+"to lose work."
+msgstr ""
+"في انتظار انتهاء البرامج. قد تؤدي مقاطعة هذه البرامج إلى فقدان العمل."
