@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: "
 "http://bugzilla.gnome.org/enter_bug.cgi?product=cinnamon-control-"
 "center&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2022-12-16 13:55+0000\n"
+"POT-Creation-Date: 2024-03-27 13:58+0000\n"
 "PO-Revision-Date: 2022-10-21 18:40+0000\n"
 "Last-Translator: Ernestas Karalius <Unknown>\n"
 "Language-Team: Lithuanian\n"
@@ -25,8 +25,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2024-01-04 14:56+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
+"X-Launchpad-Export-Date: 2024-06-18 17:53+0000\n"
+"X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 "X-Poedit-Country: LITHUANIA\n"
 "Language: lt\n"
 "X-Poedit-Language: Lithuanian\n"
@@ -308,24 +308,24 @@ msgstr "Nenurodyta"
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
 #. 
-#: panels/display/cc-display-labeler.c:408
-#: panels/display/cc-display-panel.c:625
+#: panels/display/cc-display-labeler.c:369
+#: panels/display/cc-display-panel.c:748
 msgid "Mirrored Displays"
 msgstr "Dubliuoti ekranai"
 
-#: panels/display/cc-display-panel.c:995
+#: panels/display/cc-display-panel.c:1150
 msgid "Confirm reset to defaults"
 msgstr ""
 
-#: panels/display/cc-display-panel.c:997
+#: panels/display/cc-display-panel.c:1152
 msgid "Cancel"
 msgstr ""
 
-#: panels/display/cc-display-panel.c:997
+#: panels/display/cc-display-panel.c:1152
 msgid "Continue"
 msgstr ""
 
-#: panels/display/cc-display-panel.c:1010
+#: panels/display/cc-display-panel.c:1165
 msgid ""
 "This will remove all existing display configurations and reset the current "
 "layout."
@@ -356,11 +356,11 @@ msgstr ""
 msgid "%.2lf Hz"
 msgstr "%.2lf Hz"
 
-#: panels/display/cc-display-settings.c:469
+#: panels/display/cc-display-settings.c:471
 msgid "Monitor scale"
 msgstr ""
 
-#: panels/display/cc-display-settings.c:473
+#: panels/display/cc-display-settings.c:475
 #: panels/display/cc-display-settings.ui.h:4
 msgid "User interface scale"
 msgstr "Naudotojo sąsajos mastelis"
@@ -484,12 +484,12 @@ msgstr "Paskiausiai naudotas"
 #. * profile. It is also used to display ethernet in the
 #. * device list.
 #. 
-#: panels/network/net-device-ethernet.c:299
+#: panels/network/net-device-ethernet.c:292
 #: panels/network/network-ethernet.ui.h:1 panels/network/network-simple.ui.h:1
 msgid "Wired"
 msgstr "Laidinis"
 
-#: panels/network/net-device-ethernet.c:367
+#: panels/network/net-device-ethernet.c:360
 #: panels/network/net-device-wifi.c:1751 panels/network/network-ethernet.ui.h:3
 #: panels/network/network-mobile.ui.h:9 panels/network/network-simple.ui.h:9
 #: panels/network/network-vpn.ui.h:7
@@ -941,30 +941,6 @@ msgstr "Trūksta aparatinės programinės įrangos"
 msgid "Cable unplugged"
 msgstr "Kabelis neįjungtas"
 
-#: panels/online-accounts/cc-online-accounts-panel.c:148
-msgctxt "Online Account"
-msgid "Other"
-msgstr "Kita"
-
-#. translators: This is the title of the "Show Account" dialog. The
-#. * %s is the name of the provider. e.g., 'Google'.
-#: panels/online-accounts/cc-online-accounts-panel.c:593
-#, c-format
-msgid "%s Account"
-msgstr "%s paskyra"
-
-#: panels/online-accounts/cc-online-accounts-panel.c:888
-msgid "Error removing account"
-msgstr "Klaida šalinant paskyrą"
-
-#. Translators: The %s is the username (eg., debarshi.ray@gmail.com
-#. * or rishi).
-#. 
-#: panels/online-accounts/cc-online-accounts-panel.c:953
-#, c-format
-msgid "<b>%s</b> removed"
-msgstr "<b>%s</b> pašalinta"
-
 #: panels/region/cinnamon-region-panel-xkblt.c:208
 msgid "Layout"
 msgstr "Išdėstymas"
@@ -1002,7 +978,7 @@ msgstr "%d iš %d"
 msgid "Display Mapping"
 msgstr "Ekrano susiejimas"
 
-#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Stylus"
 msgstr "Pieštukas"
 
@@ -1958,7 +1934,7 @@ msgstr "Tik vietiniai susiejimai"
 msgid "Shared with other computers"
 msgstr "Dalinamasi su kitais kompiuteriais"
 
-#: panels/network/network-wifi.ui.h:32
+#: panels/network/network-wifi.ui.h:32 panels/wacom/wacom-stylus-page.ui.h:6
 msgid "Disabled"
 msgstr "Išjungta"
 
@@ -2086,24 +2062,6 @@ msgstr "Saugos tipas"
 #: panels/network/network-wifi.ui.h:64
 msgid "Password"
 msgstr "Slaptažodis"
-
-#: panels/online-accounts/online-accounts.ui.h:1
-msgid "Undo"
-msgstr "Atšaukti"
-
-#: panels/online-accounts/online-accounts.ui.h:2
-msgid "No internet connection — connect to set up new online accounts"
-msgstr ""
-"Nėra interneto ryšio — prisijunkite, norėdami nusistatyti naujas "
-"internetines paskyras"
-
-#: panels/online-accounts/online-accounts.ui.h:3
-msgid "Add an account"
-msgstr "Pridėti paskyrą"
-
-#: panels/online-accounts/online-accounts.ui.h:4
-msgid "Remove Account"
-msgstr "Šalinti paskyrą"
 
 #: panels/region/cinnamon-region-panel-layout-chooser.ui.h:1
 msgid "Choose a Layout"
@@ -2295,44 +2253,44 @@ msgstr "Atgal"
 msgid "Forward"
 msgstr "Pirmyn"
 
-#: panels/wacom/wacom-stylus-page.ui.h:6
+#: panels/wacom/wacom-stylus-page.ui.h:7
 msgid "No stylus found"
 msgstr ""
 
-#: panels/wacom/wacom-stylus-page.ui.h:7
+#: panels/wacom/wacom-stylus-page.ui.h:8
 msgid ""
 "Please move your stylus to the proximity of the tablet to configure it"
 msgstr ""
 
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Eraser Pressure Feel"
 msgstr "Trintuko spaudimo jutimas"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Soft"
 msgstr "Minkštas"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Firm"
 msgstr "Kietas"
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Top Button"
 msgstr "Viršutinysis mygtukas"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:14
 msgid "Lower Button"
 msgstr "Apatinysis mygtukas"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Lowest Button"
 msgstr "Žemiausias mygtukas"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:16
 msgid "Tip Pressure Feel"
 msgstr "Pieštuko spaudimo jutimas"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:17
 msgid "Test Your _Settings"
 msgstr ""
 

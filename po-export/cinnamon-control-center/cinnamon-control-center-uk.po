@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-control-center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-16 13:55+0000\n"
+"POT-Creation-Date: 2024-03-27 13:58+0000\n"
 "PO-Revision-Date: 2022-11-23 16:35+0000\n"
 "Last-Translator: Rostyslav Haitkulov <Unknown>\n"
 "Language-Team: linux.org.ua\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2024-01-04 14:56+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
+"X-Launchpad-Export-Date: 2024-06-18 17:53+0000\n"
+"X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 "X-Project-Style: gnome\n"
 "Language: uk\n"
 
@@ -299,24 +299,24 @@ msgstr "Не вказано"
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
 #. 
-#: panels/display/cc-display-labeler.c:408
-#: panels/display/cc-display-panel.c:625
+#: panels/display/cc-display-labeler.c:369
+#: panels/display/cc-display-panel.c:748
 msgid "Mirrored Displays"
 msgstr "Дзеркальні екрани"
 
-#: panels/display/cc-display-panel.c:995
+#: panels/display/cc-display-panel.c:1150
 msgid "Confirm reset to defaults"
 msgstr "Підтвердження скидання до налаштувань за замовчуванням"
 
-#: panels/display/cc-display-panel.c:997
+#: panels/display/cc-display-panel.c:1152
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: panels/display/cc-display-panel.c:997
+#: panels/display/cc-display-panel.c:1152
 msgid "Continue"
 msgstr "Продовжити"
 
-#: panels/display/cc-display-panel.c:1010
+#: panels/display/cc-display-panel.c:1165
 msgid ""
 "This will remove all existing display configurations and reset the current "
 "layout."
@@ -348,11 +348,11 @@ msgstr "Альбомна перевернута"
 msgid "%.2lf Hz"
 msgstr "%.2lf Hz"
 
-#: panels/display/cc-display-settings.c:469
+#: panels/display/cc-display-settings.c:471
 msgid "Monitor scale"
 msgstr "Масштабування монітору"
 
-#: panels/display/cc-display-settings.c:473
+#: panels/display/cc-display-settings.c:475
 #: panels/display/cc-display-settings.ui.h:4
 msgid "User interface scale"
 msgstr "Масштаб інтерфейсу"
@@ -477,12 +477,12 @@ msgstr "Востаннє використано"
 #. * profile. It is also used to display ethernet in the
 #. * device list.
 #. 
-#: panels/network/net-device-ethernet.c:299
+#: panels/network/net-device-ethernet.c:292
 #: panels/network/network-ethernet.ui.h:1 panels/network/network-simple.ui.h:1
 msgid "Wired"
 msgstr "Дротовий"
 
-#: panels/network/net-device-ethernet.c:367
+#: panels/network/net-device-ethernet.c:360
 #: panels/network/net-device-wifi.c:1751 panels/network/network-ethernet.ui.h:3
 #: panels/network/network-mobile.ui.h:9 panels/network/network-simple.ui.h:9
 #: panels/network/network-vpn.ui.h:7
@@ -933,30 +933,6 @@ msgstr "Бракує мікропрограми"
 msgid "Cable unplugged"
 msgstr "Кабель від'єднано"
 
-#: panels/online-accounts/cc-online-accounts-panel.c:148
-msgctxt "Online Account"
-msgid "Other"
-msgstr "Інший"
-
-#. translators: This is the title of the "Show Account" dialog. The
-#. * %s is the name of the provider. e.g., 'Google'.
-#: panels/online-accounts/cc-online-accounts-panel.c:593
-#, c-format
-msgid "%s Account"
-msgstr "%s Обліківка"
-
-#: panels/online-accounts/cc-online-accounts-panel.c:888
-msgid "Error removing account"
-msgstr "Помилка вилучення облікового запису"
-
-#. Translators: The %s is the username (eg., debarshi.ray@gmail.com
-#. * or rishi).
-#. 
-#: panels/online-accounts/cc-online-accounts-panel.c:953
-#, c-format
-msgid "<b>%s</b> removed"
-msgstr "<b>%s</b> вилучено"
-
 #: panels/region/cinnamon-region-panel-xkblt.c:208
 msgid "Layout"
 msgstr "Розкладка"
@@ -994,7 +970,7 @@ msgstr "%d з %d"
 msgid "Display Mapping"
 msgstr "Показ на екран"
 
-#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Stylus"
 msgstr "Стилус"
 
@@ -1971,7 +1947,7 @@ msgstr "Лише для локальної мережі"
 msgid "Shared with other computers"
 msgstr "Спільний з іншими комп’ютерами"
 
-#: panels/network/network-wifi.ui.h:32
+#: panels/network/network-wifi.ui.h:32 panels/wacom/wacom-stylus-page.ui.h:6
 msgid "Disabled"
 msgstr "Вимкнено"
 
@@ -2099,23 +2075,6 @@ msgstr "Тип безпеки"
 #: panels/network/network-wifi.ui.h:64
 msgid "Password"
 msgstr "Пароль"
-
-#: panels/online-accounts/online-accounts.ui.h:1
-msgid "Undo"
-msgstr "Повернути"
-
-#: panels/online-accounts/online-accounts.ui.h:2
-msgid "No internet connection — connect to set up new online accounts"
-msgstr ""
-"Немає Інтернету — під'єднайтеся до мережі, щоб створювати облікові записи"
-
-#: panels/online-accounts/online-accounts.ui.h:3
-msgid "Add an account"
-msgstr "Додати обліковий запис"
-
-#: panels/online-accounts/online-accounts.ui.h:4
-msgid "Remove Account"
-msgstr "Вилучити обліковий запис"
 
 #: panels/region/cinnamon-region-panel-layout-chooser.ui.h:1
 msgid "Choose a Layout"
@@ -2309,45 +2268,45 @@ msgstr "Назад"
 msgid "Forward"
 msgstr "Далі"
 
-#: panels/wacom/wacom-stylus-page.ui.h:6
+#: panels/wacom/wacom-stylus-page.ui.h:7
 msgid "No stylus found"
 msgstr "Стилус не знайдено"
 
-#: panels/wacom/wacom-stylus-page.ui.h:7
+#: panels/wacom/wacom-stylus-page.ui.h:8
 msgid ""
 "Please move your stylus to the proximity of the tablet to configure it"
 msgstr ""
 "Будь ласка, перемістіть ваш стилус ближче до планшету, для його налаштування"
 
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Eraser Pressure Feel"
 msgstr "Чутливість гумки"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Soft"
 msgstr "М'яка"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Firm"
 msgstr "Тверда"
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Top Button"
 msgstr "Верхня кнопка"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:14
 msgid "Lower Button"
 msgstr "Нижня кнопка"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Lowest Button"
 msgstr "Найнижча кнопка"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:16
 msgid "Tip Pressure Feel"
 msgstr "Чутливість дотику"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:17
 msgid "Test Your _Settings"
 msgstr "Випробувати ваші _параметри"
 

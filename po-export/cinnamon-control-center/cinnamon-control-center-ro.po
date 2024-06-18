@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: "
 "http://bugzilla.gnome.org/enter_bug.cgi?product=cinnamon-control-"
 "center&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2022-12-16 13:55+0000\n"
+"POT-Creation-Date: 2024-03-27 13:58+0000\n"
 "PO-Revision-Date: 2023-02-25 14:27+0000\n"
 "Last-Translator: Daniel Slavu <detectivdan@gmail.com>\n"
 "Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
@@ -26,8 +26,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
 "== 0) && (n != 0))) ? 2: 1));\n"
-"X-Launchpad-Export-Date: 2024-01-04 14:56+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
+"X-Launchpad-Export-Date: 2024-06-18 17:53+0000\n"
+"X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 "Language: ro\n"
 
 #. TRANSLATORS: this is where the user can click and import a profile
@@ -309,24 +309,24 @@ msgstr "Nespecificat"
 #. * Here, "Mirrored" is being used as an adjective.  For example,
 #. * the Spanish translation could be "Pantallas en Espejo".
 #. 
-#: panels/display/cc-display-labeler.c:408
-#: panels/display/cc-display-panel.c:625
+#: panels/display/cc-display-labeler.c:369
+#: panels/display/cc-display-panel.c:748
 msgid "Mirrored Displays"
 msgstr "Monitoare duplicate"
 
-#: panels/display/cc-display-panel.c:995
+#: panels/display/cc-display-panel.c:1150
 msgid "Confirm reset to defaults"
 msgstr "Confirmați resetarea la valorile implicite"
 
-#: panels/display/cc-display-panel.c:997
+#: panels/display/cc-display-panel.c:1152
 msgid "Cancel"
 msgstr "Renunță"
 
-#: panels/display/cc-display-panel.c:997
+#: panels/display/cc-display-panel.c:1152
 msgid "Continue"
 msgstr "Continuă"
 
-#: panels/display/cc-display-panel.c:1010
+#: panels/display/cc-display-panel.c:1165
 msgid ""
 "This will remove all existing display configurations and reset the current "
 "layout."
@@ -359,11 +359,11 @@ msgstr "Peisaj (întors)"
 msgid "%.2lf Hz"
 msgstr "%.2lf Hz"
 
-#: panels/display/cc-display-settings.c:469
+#: panels/display/cc-display-settings.c:471
 msgid "Monitor scale"
 msgstr "Monitorizare scală"
 
-#: panels/display/cc-display-settings.c:473
+#: panels/display/cc-display-settings.c:475
 #: panels/display/cc-display-settings.ui.h:4
 msgid "User interface scale"
 msgstr "Scala interfeței utilizatorului"
@@ -489,12 +489,12 @@ msgstr "Ultima utilizare"
 #. * profile. It is also used to display ethernet in the
 #. * device list.
 #. 
-#: panels/network/net-device-ethernet.c:299
+#: panels/network/net-device-ethernet.c:292
 #: panels/network/network-ethernet.ui.h:1 panels/network/network-simple.ui.h:1
 msgid "Wired"
 msgstr "Cu fir"
 
-#: panels/network/net-device-ethernet.c:367
+#: panels/network/net-device-ethernet.c:360
 #: panels/network/net-device-wifi.c:1751 panels/network/network-ethernet.ui.h:3
 #: panels/network/network-mobile.ui.h:9 panels/network/network-simple.ui.h:9
 #: panels/network/network-vpn.ui.h:7
@@ -945,30 +945,6 @@ msgstr "Lipsă firmware"
 msgid "Cable unplugged"
 msgstr "Cablu deconectat"
 
-#: panels/online-accounts/cc-online-accounts-panel.c:148
-msgctxt "Online Account"
-msgid "Other"
-msgstr "Altele"
-
-#. translators: This is the title of the "Show Account" dialog. The
-#. * %s is the name of the provider. e.g., 'Google'.
-#: panels/online-accounts/cc-online-accounts-panel.c:593
-#, c-format
-msgid "%s Account"
-msgstr "Cont %s"
-
-#: panels/online-accounts/cc-online-accounts-panel.c:888
-msgid "Error removing account"
-msgstr "Eroare la îndepărtarea contului"
-
-#. Translators: The %s is the username (eg., debarshi.ray@gmail.com
-#. * or rishi).
-#. 
-#: panels/online-accounts/cc-online-accounts-panel.c:953
-#, c-format
-msgid "<b>%s</b> removed"
-msgstr "<b>%s</b> îndepartat"
-
 #: panels/region/cinnamon-region-panel-xkblt.c:208
 msgid "Layout"
 msgstr "Aranjament"
@@ -1006,7 +982,7 @@ msgstr "%d din %d"
 msgid "Display Mapping"
 msgstr "Afișează alocarea"
 
-#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:8
+#: panels/wacom/cc-wacom-panel.c:666 panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Stylus"
 msgstr "Stylus"
 
@@ -1985,7 +1961,7 @@ msgstr "Doar legătură locală"
 msgid "Shared with other computers"
 msgstr "Partajată cu alte computere"
 
-#: panels/network/network-wifi.ui.h:32
+#: panels/network/network-wifi.ui.h:32 panels/wacom/wacom-stylus-page.ui.h:6
 msgid "Disabled"
 msgstr "Dezactivat"
 
@@ -2114,24 +2090,6 @@ msgstr "Tip de securitate"
 #: panels/network/network-wifi.ui.h:64
 msgid "Password"
 msgstr "Parolă"
-
-#: panels/online-accounts/online-accounts.ui.h:1
-msgid "Undo"
-msgstr "Revenire"
-
-#: panels/online-accounts/online-accounts.ui.h:2
-msgid "No internet connection — connect to set up new online accounts"
-msgstr ""
-"Nicio conexiune la internet — conectați-vă pentru a configura noi conturi "
-"online"
-
-#: panels/online-accounts/online-accounts.ui.h:3
-msgid "Add an account"
-msgstr "Adaugă un cont"
-
-#: panels/online-accounts/online-accounts.ui.h:4
-msgid "Remove Account"
-msgstr "Şterge cont"
 
 #: panels/region/cinnamon-region-panel-layout-chooser.ui.h:1
 msgid "Choose a Layout"
@@ -2323,44 +2281,44 @@ msgstr "Înapoi"
 msgid "Forward"
 msgstr "Înainte"
 
-#: panels/wacom/wacom-stylus-page.ui.h:6
+#: panels/wacom/wacom-stylus-page.ui.h:7
 msgid "No stylus found"
 msgstr "Nu s-a găsit stylus"
 
-#: panels/wacom/wacom-stylus-page.ui.h:7
+#: panels/wacom/wacom-stylus-page.ui.h:8
 msgid ""
 "Please move your stylus to the proximity of the tablet to configure it"
 msgstr "Mutați stylusul în proximitatea tabletei pentru a-l configura"
 
-#: panels/wacom/wacom-stylus-page.ui.h:9
+#: panels/wacom/wacom-stylus-page.ui.h:10
 msgid "Eraser Pressure Feel"
 msgstr "Determinare presiune radieră"
 
-#: panels/wacom/wacom-stylus-page.ui.h:10
+#: panels/wacom/wacom-stylus-page.ui.h:11
 msgid "Soft"
 msgstr "Fină"
 
-#: panels/wacom/wacom-stylus-page.ui.h:11
+#: panels/wacom/wacom-stylus-page.ui.h:12
 msgid "Firm"
 msgstr "Puternică"
 
-#: panels/wacom/wacom-stylus-page.ui.h:12
+#: panels/wacom/wacom-stylus-page.ui.h:13
 msgid "Top Button"
 msgstr "Buton superior"
 
-#: panels/wacom/wacom-stylus-page.ui.h:13
+#: panels/wacom/wacom-stylus-page.ui.h:14
 msgid "Lower Button"
 msgstr "Buton inferior"
 
-#: panels/wacom/wacom-stylus-page.ui.h:14
+#: panels/wacom/wacom-stylus-page.ui.h:15
 msgid "Lowest Button"
 msgstr "Buton inferior"
 
-#: panels/wacom/wacom-stylus-page.ui.h:15
+#: panels/wacom/wacom-stylus-page.ui.h:16
 msgid "Tip Pressure Feel"
 msgstr "Determinare presiune indiciu"
 
-#: panels/wacom/wacom-stylus-page.ui.h:16
+#: panels/wacom/wacom-stylus-page.ui.h:17
 msgid "Test Your _Settings"
 msgstr "Testează _configurările"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2023-11-19 14:04+0000\n"
+"POT-Creation-Date: 2024-06-12 14:52+0100\n"
 "PO-Revision-Date: 2021-06-27 19:23+0000\n"
 "Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2024-01-04 14:55+0000\n"
-"X-Generator: Launchpad (build e1eeab5b20e19239bd7d5f36676f7a52988db88b)\n"
+"X-Launchpad-Export-Date: 2024-06-18 17:52+0000\n"
+"X-Generator: Launchpad (build bbfa2351d9d6a9ddfe262109428f7bf5516e65d1)\n"
 
 #. (itstool) path: mime-type/_comment
 #: data/nemo.xml.in:5
@@ -37,9 +37,13 @@ msgstr ""
 msgid "No actions found"
 msgstr "ምንም ተግባሮች አልተገኙም"
 
-#: src/nemo-action-config-widget.c:449
+#: src/nemo-action-config-widget.c:455
 msgid "Actions"
 msgstr "ተግባሮች"
+
+#: src/nemo-action-config-widget.c:473
+msgid "Edit layout"
+msgstr ""
 
 #: src/nemo-application.c:422
 #, c-format
@@ -87,14 +91,19 @@ msgstr ""
 msgid "_Run"
 msgstr "_ማስኬጃ"
 
-#: src/nemo-blank-desktop-window.c:154
-msgid "Customize"
-msgstr "ማስተካከያ"
+#: src/nemo-blank-desktop-window.c:86 src/nemo-desktop-icon-grid-view.c:1103
+#: gresources/nemo-file-management-properties.glade:4148
+msgid "_Customize"
+msgstr "_ማስተካከያ"
+
+#: src/nemo-blank-desktop-window.c:86 src/nemo-desktop-icon-grid-view.c:1104
+msgid "Adjust the desktop layout for this monitor"
+msgstr ""
 
 #. hardcode "Desktop"
-#: src/nemo-blank-desktop-window.c:231 src/nemo-desktop-window.c:125
+#: src/nemo-blank-desktop-window.c:291 src/nemo-desktop-window.c:125
 #: src/nemo-desktop-window.c:279 src/nemo-pathbar.c:1439
-#: src/nemo-places-sidebar.c:828 libnemo-private/nemo-action.c:1424
+#: src/nemo-places-sidebar.c:816 libnemo-private/nemo-action.c:1359
 #: gresources/nemo-file-management-properties.glade:4125
 msgid "Desktop"
 msgstr "ዴስክቶፕ"
@@ -103,11 +112,11 @@ msgstr "ዴስክቶፕ"
 msgid "No bookmarks defined"
 msgstr "ምንም ምልክት የተደረገበቸው አልተገለጹም"
 
-#: src/nemo-config-base-widget.c:70
+#: src/nemo-config-base-widget.c:73
 msgid "Disable all"
 msgstr "ሁሉንም ማሰናከያ"
 
-#: src/nemo-config-base-widget.c:73
+#: src/nemo-config-base-widget.c:80
 msgid "Enable all"
 msgstr "ሁሉንም ማስቻያ"
 
@@ -272,7 +281,7 @@ msgstr ""
 #. name, stock id
 #. label, accelerator
 #: src/nemo-desktop-icon-grid-view.c:917 src/nemo-desktop-icon-view.c:682
-#: src/nemo-view.c:8307 src/nemo-view.c:9940
+#: src/nemo-view.c:8254 src/nemo-view.c:9887
 msgid "E_mpty Trash"
 msgstr "ቆሻሻውን ባ_ዶ ምድረጊያ"
 
@@ -319,7 +328,7 @@ msgstr "በ _ቁመት"
 msgid "_Horizontal"
 msgstr "በ _አግድም"
 
-#: src/nemo-desktop-icon-grid-view.c:1074 src/nemo-list-view.c:2656
+#: src/nemo-desktop-icon-grid-view.c:1074 src/nemo-list-view.c:2654
 #: libnemo-private/nemo-column-utilities.c:43
 #: gresources/nemo-desktop-overlay.glade:116
 msgid "Name"
@@ -361,18 +370,9 @@ msgstr "ቆሻሻውን ባዶ ማድረጊያ"
 
 #. tooltip
 #: src/nemo-desktop-icon-grid-view.c:1099 src/nemo-desktop-icon-view.c:724
-#: src/nemo-trash-bar.c:227 src/nemo-view.c:8308
+#: src/nemo-trash-bar.c:227 src/nemo-view.c:8255
 msgid "Delete all items in the Trash"
 msgstr "ሁሉም ቆሻሻ ውስጥ ያሉትን እቃዎች ማጥፊያ"
-
-#: src/nemo-desktop-icon-grid-view.c:1103
-#: gresources/nemo-file-management-properties.glade:4148
-msgid "_Customize"
-msgstr "_ማስተካከያ"
-
-#: src/nemo-desktop-icon-grid-view.c:1104
-msgid "Adjust the desktop layout for this monitor"
-msgstr ""
 
 #: src/nemo-desktop-icon-grid-view.c:1195 src/nemo-desktop-icon-view.c:787
 msgid "The desktop view encountered an error."
@@ -714,8 +714,8 @@ msgstr "በተ_ጣሉበት ጊዜ"
 #. translators: this is used in the view selection dropdown
 #. * of navigation windows and in the preferences dialog
 #: src/nemo-icon-view.c:2850 src/nemo-icon-view-container.c:2157
-#: src/nemo-icon-view-grid-container.c:1593 src/nemo-window-menus.c:1579
-#: src/nemo-window-menus.c:1738
+#: src/nemo-icon-view-grid-container.c:1593 src/nemo-window-menus.c:1595
+#: src/nemo-window-menus.c:1754
 #: gresources/nemo-file-management-properties.glade:127
 #: gresources/nemo-file-management-properties.glade:4045
 msgid "Icon View"
@@ -740,8 +740,8 @@ msgstr "ይህን አካባቢ በምልክት መመልከቻው ማሳያ"
 
 #. translators: this is used in the view selection dropdown
 #. * of navigation windows and in the preferences dialog
-#: src/nemo-icon-view.c:2864 src/nemo-window-menus.c:1585
-#: src/nemo-window-menus.c:1761
+#: src/nemo-icon-view.c:2864 src/nemo-window-menus.c:1601
+#: src/nemo-window-menus.c:1777
 #: gresources/nemo-file-management-properties.glade:133
 msgid "Compact View"
 msgstr "በትንንሽ መመልከቻ"
@@ -868,7 +868,7 @@ msgstr "የ ፎካል እርዝመት"
 msgid "Software"
 msgstr "ሶፍትዌር"
 
-#: src/nemo-image-properties-page.c:413 src/nemo-window-menus.c:1703
+#: src/nemo-image-properties-page.c:413 src/nemo-window-menus.c:1719
 #: libnemo-private/nemo-column-utilities.c:159
 msgid "Location"
 msgstr "አካባቢ"
@@ -936,26 +936,26 @@ msgstr "በራሱ-መለያ ለጊዜው ማሰናከያ"
 
 #. translators: this is used in the view selection dropdown
 #. * of navigation windows and in the preferences dialog
-#: src/nemo-list-view.c:2758 src/nemo-list-view.c:4459
-#: src/nemo-window-menus.c:1582 src/nemo-window-menus.c:1749
+#: src/nemo-list-view.c:2756 src/nemo-list-view.c:4457
+#: src/nemo-window-menus.c:1598 src/nemo-window-menus.c:1765
 #: gresources/nemo-file-management-properties.glade:130
 msgid "List View"
 msgstr "ዝርዝር መመልከቻ"
 
 #. translators: this is used in the view menu
-#: src/nemo-list-view.c:4461
+#: src/nemo-list-view.c:4459
 msgid "_List"
 msgstr "_ዝርዝር"
 
-#: src/nemo-list-view.c:4462
+#: src/nemo-list-view.c:4460
 msgid "The list view encountered an error."
 msgstr "የዝርዝር መመልከቻው ችግር ገጥሞታል"
 
-#: src/nemo-list-view.c:4463
+#: src/nemo-list-view.c:4461
 msgid "The list view encountered an error while starting up."
 msgstr "በመጀመር ላይ እንዳለ የዝርዝር መመልከቻው ችግር ገጥሞታል"
 
-#: src/nemo-list-view.c:4464
+#: src/nemo-list-view.c:4462
 msgid "Display this location with the list view."
 msgstr "ይህን አካባቢ በዝርዝር መመልከቻው ማሳያ"
 
@@ -1041,11 +1041,11 @@ msgstr ""
 "\n"
 "በፋይል አስተዳዳሪ የፋይል ስርአቱን መቃኛ"
 
-#: src/nemo-main-application.c:863
+#: src/nemo-main-application.c:868
 msgid "Nemo's main menu is now hidden"
 msgstr "የ ኔሞ ዋናው ዝርዝር አሁን ተደብቋል"
 
-#: src/nemo-main-application.c:866
+#: src/nemo-main-application.c:871
 msgid ""
 "You have chosen to hide the main menu.  You can get it back temporarily by:\n"
 "\n"
@@ -1063,7 +1063,7 @@ msgstr ""
 "- በቀኝ-ይጫኑ በዋናው ሁኔታ መደርደሪያ ባዶ ቦታ ላይ\n"
 "በቋሚነት እንደ ነበር ለ መመለስ ይችላሉ ከ መመልከቻው ዝርዝር ምርጫዎች ውስጥ በመምረጥ"
 
-#: src/nemo-main-application.c:877
+#: src/nemo-main-application.c:882
 msgid "Don't show this message again."
 msgstr "ይህን መልእክት በድጋሚ አታሳየኝ"
 
@@ -1088,9 +1088,9 @@ msgstr "ይህን አገናኝ መጠቀም አይቻልም ምክንያቱም �
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-mime-actions.c:664 src/nemo-tree-sidebar.c:1471
-#: src/nemo-view.c:8359 src/nemo-view.c:8468 src/nemo-view.c:9525
-#: src/nemo-view.c:9862 gresources/nemo-file-management-properties.glade:3802
+#: src/nemo-mime-actions.c:664 src/nemo-tree-sidebar.c:1357
+#: src/nemo-view.c:8306 src/nemo-view.c:8415 src/nemo-view.c:9472
+#: src/nemo-view.c:9809 gresources/nemo-file-management-properties.glade:3802
 msgid "Mo_ve to Trash"
 msgstr "ወደ ቆሻሻ ማን_ቀሳቀሻ"
 
@@ -1189,11 +1189,11 @@ msgstr[0] "ይህ የሚከፍተው %d የተለየ መተግበሪያ ነው"
 msgstr[1] "ይህ የሚከፍተው %d የተለዩ መተግበሪያዎችን ነው"
 
 #: src/nemo-mime-actions.c:1833 src/nemo-mime-actions.c:2107
-#: src/nemo-view.c:7477
+#: src/nemo-view.c:7424
 msgid "Unable to mount location"
 msgstr "አካባቢውን መጫን አልተቻለም"
 
-#: src/nemo-mime-actions.c:2186 src/nemo-view.c:7624
+#: src/nemo-mime-actions.c:2186 src/nemo-view.c:7571
 msgid "Unable to start location"
 msgstr "አካባቢውን ማስጀመር አልተቻለም"
 
@@ -1226,20 +1226,20 @@ msgstr ""
 "\n"
 "ማሳያ መክፈቻ-በ ንግግር የ ተሰጠውን uri, ተጠቃሚውን ለ ማስቻል ነባሩን ለ መቀየር የ mimetype ያዢውን"
 
-#: src/nemo-places-sidebar.c:376
+#: src/nemo-places-sidebar.c:364
 msgid "Devices"
 msgstr "አካላቶች"
 
-#: src/nemo-places-sidebar.c:673 src/nemo-view.c:3192
+#: src/nemo-places-sidebar.c:661 src/nemo-view.c:3192
 #, c-format
 msgid "Free space: %s"
 msgstr "ነጻ ባታ : %s"
 
-#: src/nemo-places-sidebar.c:796
+#: src/nemo-places-sidebar.c:784
 msgid "My Computer"
 msgstr "የኔ ኮምፒዩተር"
 
-#: src/nemo-places-sidebar.c:807
+#: src/nemo-places-sidebar.c:795
 #, c-format
 msgid ""
 "Open your personal folder\n"
@@ -1248,7 +1248,7 @@ msgstr ""
 "የ እርስዎን የግል ፎልደር መክፈቻ \n"
 "%s"
 
-#: src/nemo-places-sidebar.c:811 src/nemo-tree-sidebar.c:1612
+#: src/nemo-places-sidebar.c:799 src/nemo-tree-sidebar.c:1490
 #: libnemo-private/nemo-bookmark.c:130 libnemo-private/nemo-desktop-link.c:118
 #: libnemo-private/nemo-file-utilities.c:66
 #: libnemo-private/nemo-file-utilities.c:114 generate_additional_file:41
@@ -1257,27 +1257,27 @@ msgstr ""
 msgid "Home"
 msgstr "ቤት"
 
-#: src/nemo-places-sidebar.c:830
+#: src/nemo-places-sidebar.c:818
 msgid "Open the contents of your desktop in a folder"
 msgstr "የዴስክቶፕ ይዞታዎችን በፎልደር መክፈቻ"
 
-#: src/nemo-places-sidebar.c:883 src/nemo-tree-sidebar.c:1617
+#: src/nemo-places-sidebar.c:871 src/nemo-tree-sidebar.c:1495
 msgid "Favorites"
 msgstr "የምወዳቸው"
 
-#: src/nemo-places-sidebar.c:885
+#: src/nemo-places-sidebar.c:873
 msgid "Favorite files"
 msgstr "የምወዳቸው ፋይሎች"
 
-#: src/nemo-places-sidebar.c:900
+#: src/nemo-places-sidebar.c:888
 msgid "Recent"
 msgstr "የቅርብ ጊዜ"
 
-#: src/nemo-places-sidebar.c:902
+#: src/nemo-places-sidebar.c:890
 msgid "Recent files"
 msgstr "የቅርብ ጊዜ ፋይሎች"
 
-#: src/nemo-places-sidebar.c:917
+#: src/nemo-places-sidebar.c:905
 #, c-format
 msgid ""
 "Open the contents of the File System\n"
@@ -1286,25 +1286,25 @@ msgstr ""
 "የፋይል ስርአቱን ይዞታዎች መክፈቻ \n"
 "%s"
 
-#: src/nemo-places-sidebar.c:921 src/nemo-tree-sidebar.c:1621
+#: src/nemo-places-sidebar.c:909 src/nemo-tree-sidebar.c:1499
 msgid "File System"
 msgstr "የፋይል ስርአት"
 
-#: src/nemo-places-sidebar.c:937 src/nemo-trash-bar.c:211
+#: src/nemo-places-sidebar.c:925 src/nemo-trash-bar.c:211
 #: libnemo-private/nemo-desktop-link.c:135 generate_additional_file:55
 #: gresources/nemo-desktop-preferences.glade:289
 msgid "Trash"
 msgstr "ቆሻሻ"
 
-#: src/nemo-places-sidebar.c:939
+#: src/nemo-places-sidebar.c:927
 msgid "Open the trash"
 msgstr "የቆሻሻውን ማጠራቀሚያውን መክፈቻ"
 
-#: src/nemo-places-sidebar.c:945
+#: src/nemo-places-sidebar.c:933
 msgid "Bookmarks"
 msgstr "እልባቶች"
 
-#: src/nemo-places-sidebar.c:1072
+#: src/nemo-places-sidebar.c:1060
 #, c-format
 msgid ""
 "%s (%s)\n"
@@ -1313,17 +1313,17 @@ msgstr ""
 "%s (%s)\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:1105
+#: src/nemo-places-sidebar.c:1093
 #, c-format
 msgid "Mount and open %s (%s)"
 msgstr "መጫኛ እና መክፈቻ %s (%s)"
 
-#: src/nemo-places-sidebar.c:1133 src/nemo-places-sidebar.c:1257
+#: src/nemo-places-sidebar.c:1121 src/nemo-places-sidebar.c:1245
 #, c-format
 msgid "Mount and open %s"
 msgstr "መጫኛ እና መክፈቻ %s"
 
-#: src/nemo-places-sidebar.c:1182
+#: src/nemo-places-sidebar.c:1170
 #, c-format
 msgid ""
 "%s\n"
@@ -1332,174 +1332,167 @@ msgstr ""
 "%s\n"
 "%s"
 
-#: src/nemo-places-sidebar.c:1244 src/nemo-places-sidebar.c:1299
-#: src/nemo-tree-sidebar.c:1625 libnemo-private/nemo-desktop-link.c:146
+#: src/nemo-places-sidebar.c:1232 src/nemo-places-sidebar.c:1287
+#: src/nemo-tree-sidebar.c:1503 libnemo-private/nemo-desktop-link.c:146
 #: gresources/nemo-desktop-preferences.glade:445
 msgid "Network"
 msgstr "ኔትዎርክ"
 
-#: src/nemo-places-sidebar.c:1301
+#: src/nemo-places-sidebar.c:1289
 msgid "Browse the contents of the network"
 msgstr "የኔትዎርክ ይዞታዎችን መቃኛ"
 
-#. Adjust start/stop items to reflect the type of the drive
 #. name, stock id
 #. label, accelerator
-#: src/nemo-places-sidebar.c:2397 src/nemo-places-sidebar.c:3642
-#: src/nemo-view.c:8405 src/nemo-view.c:8429 src/nemo-view.c:8492
-#: src/nemo-view.c:9146 src/nemo-view.c:9150 src/nemo-view.c:9233
-#: src/nemo-view.c:9237 src/nemo-view.c:9337 src/nemo-view.c:9341
+#: src/nemo-places-sidebar.c:2374 src/nemo-places-sidebar.c:3531
+#: src/nemo-view.c:8352 src/nemo-view.c:8376 src/nemo-view.c:8439
+#: src/nemo-view.c:9093 src/nemo-view.c:9097 src/nemo-view.c:9180
+#: src/nemo-view.c:9184 src/nemo-view.c:9284 src/nemo-view.c:9288
 msgid "_Start"
 msgstr "_መጀመሪያ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-places-sidebar.c:2398 src/nemo-places-sidebar.c:3649
-#: src/nemo-view.c:8409 src/nemo-view.c:8433 src/nemo-view.c:8496
-#: src/nemo-view.c:9175 src/nemo-view.c:9262 src/nemo-view.c:9366
-#: src/nemo-window-menus.c:1393
+#: src/nemo-places-sidebar.c:2375 src/nemo-places-sidebar.c:3532
+#: src/nemo-view.c:8356 src/nemo-view.c:8380 src/nemo-view.c:8443
+#: src/nemo-view.c:9122 src/nemo-view.c:9209 src/nemo-view.c:9313
+#: src/nemo-window-menus.c:1409
 msgid "_Stop"
 msgstr "_ማቆሚያ"
 
 #. start() for type G_DRIVE_START_STOP_TYPE_SHUTDOWN is normally not used
-#: src/nemo-places-sidebar.c:2403
+#: src/nemo-places-sidebar.c:2380
 msgid "_Power On"
 msgstr "_ማብሪያ"
 
-#: src/nemo-places-sidebar.c:2404 src/nemo-view.c:9179 src/nemo-view.c:9266
-#: src/nemo-view.c:9370
+#: src/nemo-places-sidebar.c:2381 src/nemo-view.c:9126 src/nemo-view.c:9213
+#: src/nemo-view.c:9317
 msgid "_Safely Remove Drive"
 msgstr "_በደህንንነት አካሎችን ማስወገጃ"
 
-#: src/nemo-places-sidebar.c:2407
+#: src/nemo-places-sidebar.c:2384
 msgid "_Connect Drive"
 msgstr "ከአካሉ ጋር _መገናኛ"
 
-#: src/nemo-places-sidebar.c:2408
+#: src/nemo-places-sidebar.c:2385
 msgid "_Disconnect Drive"
 msgstr "አካሉን _መለያያ"
 
-#: src/nemo-places-sidebar.c:2411
+#: src/nemo-places-sidebar.c:2388
 msgid "_Start Multi-disk Device"
 msgstr "የበርካታ - ዲስክ አካሎችን _ማስጀመሪያ"
 
-#: src/nemo-places-sidebar.c:2412
+#: src/nemo-places-sidebar.c:2389
 msgid "_Stop Multi-disk Device"
 msgstr "የበርካታ - ዲስክ አካሎችን _ማስቆሚያ"
 
 #. stop() for type G_DRIVE_START_STOP_TYPE_PASSWORD is normally not used
-#: src/nemo-places-sidebar.c:2416 src/nemo-view.c:9249 src/nemo-view.c:9353
+#: src/nemo-places-sidebar.c:2393 src/nemo-view.c:9196 src/nemo-view.c:9300
 msgid "_Unlock Drive"
 msgstr "አካሉን _መክፈቻ"
 
-#: src/nemo-places-sidebar.c:2417 src/nemo-view.c:9191 src/nemo-view.c:9278
-#: src/nemo-view.c:9382
+#: src/nemo-places-sidebar.c:2394 src/nemo-view.c:9138 src/nemo-view.c:9225
+#: src/nemo-view.c:9329
 msgid "_Lock Drive"
 msgstr "አካሉን _መቆለፊያ"
 
-#: src/nemo-places-sidebar.c:2532 src/nemo-places-sidebar.c:3152
+#: src/nemo-places-sidebar.c:2472 src/nemo-places-sidebar.c:3092
 #, c-format
 msgid "Unable to start %s"
 msgstr "ማስጀመር አልተቻለም %s"
 
-#: src/nemo-places-sidebar.c:2918 src/nemo-places-sidebar.c:2944
-#: src/nemo-places-sidebar.c:2970
+#: src/nemo-places-sidebar.c:2858 src/nemo-places-sidebar.c:2884
+#: src/nemo-places-sidebar.c:2910
 #, c-format
 msgid "Unable to eject %s"
 msgstr "ማውጣት አልተቻለም %s"
 
-#: src/nemo-places-sidebar.c:3108
+#: src/nemo-places-sidebar.c:3048
 #, c-format
 msgid "Unable to poll %s for media changes"
 msgstr "መመዝገብ አልተቻለም %s የመገናኛውን ለውጦች"
 
-#: src/nemo-places-sidebar.c:3206
+#: src/nemo-places-sidebar.c:3146
 #, c-format
 msgid "Unable to stop %s"
 msgstr "ማቆም አልተቻለም %s"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-places-sidebar.c:3554 src/nemo-tree-sidebar.c:1351
-#: src/nemo-view.c:8266 src/nemo-view.c:9794
+#: src/nemo-places-sidebar.c:3521 src/nemo-tree-sidebar.c:1348
+#: src/nemo-view.c:8213 src/nemo-view.c:9741
 #: libnemo-private/nemo-mime-application-chooser.c:483
 #: gresources/nemo-file-management-properties.glade:3500
 msgid "_Open"
 msgstr "_መክፈቻ"
 
-#. add the "open in new tab" menu item
 #. name, stock id
 #. label, accelerator
-#: src/nemo-places-sidebar.c:3562 src/nemo-tree-sidebar.c:1362
-#: src/nemo-view.c:8278 src/nemo-view.c:8450 src/nemo-view.c:9472
-#: src/nemo-view.c:9840 gresources/nemo-file-management-properties.glade:3519
+#: src/nemo-places-sidebar.c:3522 src/nemo-tree-sidebar.c:1349
+#: src/nemo-view.c:8225 src/nemo-view.c:8397 src/nemo-view.c:9419
+#: src/nemo-view.c:9787 gresources/nemo-file-management-properties.glade:3519
 msgid "Open in New _Tab"
 msgstr "በአዲስ _ንዑስ መስኮት መክፈቻ"
 
-#. add the "open in new window" menu item
-#: src/nemo-places-sidebar.c:3572 src/nemo-tree-sidebar.c:1376
-#: src/nemo-view.c:9463 src/nemo-view.c:9820
+#: src/nemo-places-sidebar.c:3523 src/nemo-tree-sidebar.c:1350
+#: src/nemo-view.c:9410 src/nemo-view.c:9767
 #: gresources/nemo-file-management-properties.glade:3538
 msgid "Open in New _Window"
 msgstr "በአዲስ _መስኮት መክፈቻ"
 
 #. name, stock id, label
-#: src/nemo-places-sidebar.c:3583 src/nemo-window-menus.c:1503
+#: src/nemo-places-sidebar.c:3524 src/nemo-window-menus.c:1519
 msgid "_Add Bookmark"
 msgstr "ምልክት ማድረገያዎችን _መጨመሪያ"
 
-#: src/nemo-places-sidebar.c:3589
+#: src/nemo-places-sidebar.c:3525
+#: action-layout-editor/nemo-action-layout-editor.glade:102
 msgid "Remove"
 msgstr "ማስወገጃ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-places-sidebar.c:3598 src/nemo-view.c:8351
+#: src/nemo-places-sidebar.c:3526 src/nemo-view.c:8298
 #: gresources/nemo-file-management-properties.glade:3709
 msgid "_Rename..."
 msgstr "_እንደገና መሰየሚያ..."
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-places-sidebar.c:3614 src/nemo-view.c:8393 src/nemo-view.c:8417
-#: src/nemo-view.c:8480
+#: src/nemo-places-sidebar.c:3527 src/nemo-view.c:8340 src/nemo-view.c:8364
+#: src/nemo-view.c:8427
 msgid "_Mount"
 msgstr "_መጫኛ"
 
-#. add the "Unmount" menu item
 #. name, stock id
 #. label, accelerator
-#: src/nemo-places-sidebar.c:3621 src/nemo-tree-sidebar.c:1503
-#: src/nemo-view.c:8397 src/nemo-view.c:8421 src/nemo-view.c:8484
+#: src/nemo-places-sidebar.c:3528 src/nemo-tree-sidebar.c:1359
+#: src/nemo-view.c:8344 src/nemo-view.c:8368 src/nemo-view.c:8431
 msgid "_Unmount"
 msgstr "_ማውረጃ"
 
-#. add the "Eject" menu item
 #. name, stock id
 #. label, accelerator
-#: src/nemo-places-sidebar.c:3628 src/nemo-tree-sidebar.c:1512
-#: src/nemo-view.c:8401 src/nemo-view.c:8425 src/nemo-view.c:8488
+#: src/nemo-places-sidebar.c:3529 src/nemo-tree-sidebar.c:1360
+#: src/nemo-view.c:8348 src/nemo-view.c:8372 src/nemo-view.c:8435
 msgid "_Eject"
 msgstr "_ማውጫ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-places-sidebar.c:3635 src/nemo-view.c:8413 src/nemo-view.c:8437
-#: src/nemo-view.c:8500
+#: src/nemo-places-sidebar.c:3530 src/nemo-view.c:8360 src/nemo-view.c:8384
+#: src/nemo-view.c:8447
 msgid "_Detect Media"
 msgstr "_ፈልጎ ማግኛ መገናኛውን"
 
-#. Empty Trash menu item
-#: src/nemo-places-sidebar.c:3658 src/nemo-trash-bar.c:224
-#: libnemo-private/nemo-file-operations.c:1314
-#: libnemo-private/nemo-file-operations.c:1631
-#: libnemo-private/nemo-file-operations.c:2566
-msgid "Empty _Trash"
-msgstr "ቆሻሻውን _ባዶ ማድረጊያ"
+#: src/nemo-places-sidebar.c:3533
+msgid "_Empty _Trash"
+msgstr ""
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-places-sidebar.c:3670 src/nemo-view.c:8248 src/nemo-view.c:8505
+#: src/nemo-places-sidebar.c:3534 src/nemo-tree-sidebar.c:1361
+#: src/nemo-view.c:8195 src/nemo-view.c:8452
 #: gresources/nemo-file-management-properties.glade:3821
 #: gresources/nemo-file-management-properties.glade:4007
 msgid "_Properties"
@@ -1645,7 +1638,7 @@ msgstr "መስረታዊ"
 msgid "Type:"
 msgstr "አይነት :"
 
-#: src/nemo-properties-window.c:3150 libnemo-private/nemo-file.c:8159
+#: src/nemo-properties-window.c:3150 libnemo-private/nemo-file.c:8158
 msgid "Link target:"
 msgstr "የአገናኝ ኢላም :"
 
@@ -1861,11 +1854,11 @@ msgstr "ወደ ነበረበት መመለሻ"
 msgid "Not supported in this location"
 msgstr ""
 
-#: src/nemo-script-config-widget.c:148
+#: src/nemo-script-config-widget.c:149
 msgid "No scripts found"
 msgstr "ምንም ጽሁፍ አልተገኘም"
 
-#: src/nemo-script-config-widget.c:336
+#: src/nemo-script-config-widget.c:337
 msgid "Scripts"
 msgstr "ጽሁፍ"
 
@@ -1915,38 +1908,43 @@ msgstr "የተመረጡትን እቃዎች እንደነበር መመለሻ"
 msgid "Restore selected items to their original position"
 msgstr "የተመረጡትን እቃዎች ወደ ነበሩበት ሁኔታ መመለሻ"
 
-#: src/nemo-tree-sidebar.c:1012 src/nemo-view.c:6794
+#: src/nemo-trash-bar.c:224 libnemo-private/nemo-file-operations.c:1314
+#: libnemo-private/nemo-file-operations.c:1631
+#: libnemo-private/nemo-file-operations.c:2566
+msgid "Empty _Trash"
+msgstr "ቆሻሻውን _ባዶ ማድረጊያ"
+
+#: src/nemo-tree-sidebar.c:974 src/nemo-view.c:6726
 #, c-format
 msgid "\"%s\" will be moved if you select the Paste command"
 msgstr "\"%s\" የመለጠፊያ ትእዛዝን ከመረጡ ይንቀሳቀሳል"
 
-#: src/nemo-tree-sidebar.c:1016 src/nemo-view.c:6798
+#: src/nemo-tree-sidebar.c:978 src/nemo-view.c:6730
 #, c-format
 msgid "\"%s\" will be copied if you select the Paste command"
 msgstr "\"%s\" የመለጠፊያ ትእዛዝን ከመረጡ ኮፒ ይደረጋል"
 
-#: src/nemo-tree-sidebar.c:1055 src/nemo-view.c:7050
+#: src/nemo-tree-sidebar.c:1017 src/nemo-view.c:6982
 msgid "There is nothing on the clipboard to paste."
 msgstr "በቁራጭ ሰሌዳው ላይ የሚለጠፍ ምንም ነገር የለም"
 
-#. add the "create new folder" menu item
 #. name, stock id
 #. label, accelerator
-#: src/nemo-tree-sidebar.c:1392 src/nemo-view.c:8256
+#: src/nemo-tree-sidebar.c:1351 src/nemo-view.c:8203
 #: gresources/nemo-file-management-properties.glade:3895
 msgid "Create New _Folder"
 msgstr "አዲስ _ፎልደር መፍጠሪያ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-tree-sidebar.c:1405 src/nemo-view.c:8311 src/nemo-view.c:8455
+#: src/nemo-tree-sidebar.c:1352 src/nemo-view.c:8258 src/nemo-view.c:8402
 #: gresources/nemo-file-management-properties.glade:3576
 msgid "Cu_t"
 msgstr "መቁረ_ጫ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-tree-sidebar.c:1417 src/nemo-view.c:8315 src/nemo-view.c:8459
+#: src/nemo-tree-sidebar.c:1353 src/nemo-view.c:8262 src/nemo-view.c:8406
 #: gresources/nemo-file-management-properties.glade:3595
 msgid "_Copy"
 msgstr "_ኮፒ"
@@ -1955,31 +1953,27 @@ msgstr "_ኮፒ"
 #. accelerator for paste
 #. name, stock id
 #. label, accelerator
-#: src/nemo-tree-sidebar.c:1429 src/nemo-view.c:8325 src/nemo-view.c:8463
+#: src/nemo-tree-sidebar.c:1354 src/nemo-view.c:8272 src/nemo-view.c:8410
 msgid "_Paste Into Folder"
 msgstr "ወደ ፎልደር _መለጠፊያ"
 
-#: src/nemo-tree-sidebar.c:1443 src/nemo-view.c:8540
+#: src/nemo-tree-sidebar.c:1355 src/nemo-view.c:8487
 #: gresources/nemo-file-management-properties.glade:3652
 msgid "P_in"
 msgstr ""
 
-#: src/nemo-tree-sidebar.c:1455 src/nemo-view.c:8544
+#: src/nemo-tree-sidebar.c:1356 src/nemo-view.c:8491
 msgid "Unp_in"
 msgstr ""
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-tree-sidebar.c:1485 src/nemo-view.c:8363 src/nemo-view.c:8472
-#: src/nemo-view.c:9886
+#: src/nemo-tree-sidebar.c:1358 src/nemo-view.c:8310 src/nemo-view.c:8419
+#: src/nemo-view.c:9833
 msgid "_Delete"
 msgstr "_ማጥፊያ"
 
-#: src/nemo-tree-sidebar.c:1527
-msgid "P_roperties"
-msgstr "ባ_ህሪዎች"
-
-#: src/nemo-tree-sidebar.c:1607 libnemo-private/nemo-desktop-link.c:126
+#: src/nemo-tree-sidebar.c:1485 libnemo-private/nemo-desktop-link.c:126
 #: generate_additional_file:48 gresources/nemo-desktop-preferences.glade:133
 #: gresources/nemo-file-management-properties.glade:3034
 msgid "Computer"
@@ -2103,18 +2097,18 @@ msgid_plural "Use \"%s\" to open the selected items"
 msgstr[0] "ይጠቀሙ \"%s\" የተመረጠውን እቃ ለመክፈት"
 msgstr[1] "ይጠቀሙ \"%s\" የተመረጡትን እቃዎች ለመክፈት"
 
-#: src/nemo-view.c:6096
+#: src/nemo-view.c:6092
 #, c-format
 msgid "Run \"%s\" on any selected items"
 msgstr "ማስኬጃ \"%s\" በተመረጠው እቃ ላይ"
 
-#: src/nemo-view.c:6501
+#: src/nemo-view.c:6433
 #, c-format
 msgid "Create a new document from template \"%s\""
 msgstr "ከቴምፕሌት አዲስ ሰነድ መፍጠሪያ \"%s\""
 
 #. translators: this is preceded with a string of form 'N selected items' (N more than 1)
-#: src/nemo-view.c:6806
+#: src/nemo-view.c:6738
 #, c-format
 msgid "The %'d selected item will be moved if you select the Paste command"
 msgid_plural ""
@@ -2123,7 +2117,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: this is preceded with a string of form 'N selected items' (N more than 1)
-#: src/nemo-view.c:6814
+#: src/nemo-view.c:6746
 #, c-format
 msgid "The %'d selected item will be copied if you select the Paste command"
 msgid_plural ""
@@ -2131,83 +2125,83 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/nemo-view.c:6984
+#: src/nemo-view.c:6916
 msgid "Select Target Folder For Move"
 msgstr "ለማንቀሳቀስ ኢላማውን ፎልደር ይምረጡ"
 
-#: src/nemo-view.c:7007
+#: src/nemo-view.c:6939
 msgid "Select Target Folder For Copy"
 msgstr "ኮፒ ለማድረግ ኢላማውን ፎልደር ይምረጡ"
 
-#: src/nemo-view.c:7497
+#: src/nemo-view.c:7444
 msgid "Unable to unmount location"
 msgstr "አካባቢውን ማውረድ አልተቻለም"
 
-#: src/nemo-view.c:7517
+#: src/nemo-view.c:7464
 msgid "Unable to eject location"
 msgstr "አካባቢውን ማውጣት አልተቻለም"
 
-#: src/nemo-view.c:7532
+#: src/nemo-view.c:7479
 msgid "Unable to stop drive"
 msgstr "አካሉን ማስቆም አልተቻለም"
 
-#: src/nemo-view.c:8018
+#: src/nemo-view.c:7965
 #, c-format
 msgid "Connect to Server %s"
 msgstr "ወደ ሰርቨር መገናኛ %s"
 
-#: src/nemo-view.c:8023 src/nemo-view.c:9154 src/nemo-view.c:9241
-#: src/nemo-view.c:9345
+#: src/nemo-view.c:7970 src/nemo-view.c:9101 src/nemo-view.c:9188
+#: src/nemo-view.c:9292
 msgid "_Connect"
 msgstr "_መገናኛ"
 
-#: src/nemo-view.c:8037
+#: src/nemo-view.c:7984
 msgid "Link _name:"
 msgstr "የአገናኝ _ስም :"
 
 #. name, stock id, label
-#: src/nemo-view.c:8244
+#: src/nemo-view.c:8191
 msgid "Create New _Document"
 msgstr "አዲስ _ሰነድ መፍጠሪያ"
 
 #. name, stock id, label
-#: src/nemo-view.c:8245
+#: src/nemo-view.c:8192
 msgid "Open Wit_h"
 msgstr "መክፈቻ _በ"
 
-#: src/nemo-view.c:8246
+#: src/nemo-view.c:8193
 msgid "Choose a program with which to open the selected item"
 msgstr "ለተመረጠውን እቃ መክፈቻ የሚሆን መተግበሪያ ይምረጡ"
 
 #. tooltip
-#: src/nemo-view.c:8249 src/nemo-view.c:9927
+#: src/nemo-view.c:8196 src/nemo-view.c:9874
 msgid "View or modify the properties of each selected item"
 msgstr "እያንዳንዱ የተመረጠውን እቃ ባህሪ መመልከቻ ወይንም ማረሚያ"
 
 #. tooltip
-#: src/nemo-view.c:8257
+#: src/nemo-view.c:8204
 msgid "Create a new empty folder inside this folder"
 msgstr "በዚህ ፎልደር ውስጥ አዲስ ባዶ ፎልደር መፍጠሪያ"
 
 #. name, stock id, label
-#: src/nemo-view.c:8259
+#: src/nemo-view.c:8206
 msgid "No templates installed"
 msgstr "ምንም ቴምፕሌቶች አልተገጠሙም"
 
 #. name, stock id
 #. translators: this is used to indicate that a document doesn't contain anything
 #. label, accelerator
-#: src/nemo-view.c:8262
+#: src/nemo-view.c:8209
 msgid "_Empty Document"
 msgstr "_ባዶ ሰነድ"
 
 #. tooltip
-#: src/nemo-view.c:8263
+#: src/nemo-view.c:8210
 msgid "Create a new empty document inside this folder"
 msgstr "በዚህ ፎልደር ውስጥ አዲስ ባዶ ሰነድ መፍጠሪያ"
 
 #. tooltip
-#: src/nemo-view.c:8267
+#: src/nemo-view.c:8214
 msgid "Open the selected item in this window"
 msgstr "የተመረጠውን እቃ በዚህ መስኮት ውስጥ መክፈቻ"
 
@@ -2216,108 +2210,108 @@ msgstr "የተመረጠውን እቃ በዚህ መስኮት ውስጥ መክፈ�
 #. Location-specific actions
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8274 src/nemo-view.c:8446
+#: src/nemo-view.c:8221 src/nemo-view.c:8393
 msgid "Open in Navigation Window"
 msgstr "በመቃኛ መስኮት ውስጥ መክፈቻ"
 
 #. tooltip
-#: src/nemo-view.c:8275
+#: src/nemo-view.c:8222
 msgid "Open each selected item in a navigation window"
 msgstr "እያንዳንዱ የተመረጡትን እቃዎች በመቃኛ መስኮቶች መክፈቻ"
 
 #. tooltip
-#: src/nemo-view.c:8279
+#: src/nemo-view.c:8226
 msgid "Open each selected item in a new tab"
 msgstr "እያንዳንዱ የተመረጠውን እቃ በአዲስ ንዑስ መስኮት መክፈቻ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8282 src/nemo-window-menus.c:1726
+#: src/nemo-view.c:8229 src/nemo-window-menus.c:1742
 #: gresources/nemo-file-management-properties.glade:3766
 #: gresources/nemo-file-management-properties.glade:3933
 msgid "Open in Terminal"
 msgstr "በተርሚናል ውስጥ መክፈቻ"
 
 #. tooltip
-#: src/nemo-view.c:8283
+#: src/nemo-view.c:8230
 msgid "Open terminal in the selected folder"
 msgstr "በተመረጠው ፎልደር ውስጥ ተርሚናል መክፈቻ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8286 gresources/nemo-file-management-properties.glade:3784
+#: src/nemo-view.c:8233 gresources/nemo-file-management-properties.glade:3784
 #: gresources/nemo-file-management-properties.glade:3951
 msgid "Open as Root"
 msgstr "እንደ Root መክፈቻ"
 
 #. tooltip
-#: src/nemo-view.c:8287
+#: src/nemo-view.c:8234
 msgid "Open the folder with administration privileges"
 msgstr "ፎልደሩን በአስተዳዳሪ መብት መክፈቻ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8291
+#: src/nemo-view.c:8238
 msgid "Follow link to original file"
 msgstr "አገናኙን ተከተል ወደ ዋናው ፋይል"
 
 #. tooltip
-#: src/nemo-view.c:8292
+#: src/nemo-view.c:8239
 msgid "Navigate to the original file that this symbolic link points to"
 msgstr "ወደ ዋናው ፋይል መቃኛ ይህ የ ምልክት አገናኝ ወደሚጠቁመው"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8295
+#: src/nemo-view.c:8242
 msgid "Open containing folder"
 msgstr "ፎልደሩን የያዘውን መክፈቻ"
 
 #. tooltip
-#: src/nemo-view.c:8296
+#: src/nemo-view.c:8243
 msgid "Navigate to the folder that the selected item is stored in"
 msgstr "የ ተመረጠው እቃ የ ተጠራቀመበትን ፎልደር መቃኛ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8299
+#: src/nemo-view.c:8246
 msgid "Other _Application..."
 msgstr "ሌሎች _መተግበሪያዎች..."
 
 #. tooltip
-#: src/nemo-view.c:8300 src/nemo-view.c:8304
+#: src/nemo-view.c:8247 src/nemo-view.c:8251
 msgid "Choose another application with which to open the selected item"
 msgstr "ለተመረጠውን እቃ መክፈቻ የሚሆን ሌላ መተግበሪያ ይምረጡ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8303
+#: src/nemo-view.c:8250
 msgid "Open With Other _Application..."
 msgstr "በሌላ _መተግበሪያ መክፈቻ..."
 
 #. tooltip
-#: src/nemo-view.c:8312
+#: src/nemo-view.c:8259
 msgid "Prepare the selected files to be moved with a Paste command"
 msgstr "የተመረጡትን ፋይሎች በመለጠፊያ ትእዛዝ  ለማንቀሳቀስ በማዘጋጀት ላይ"
 
 #. tooltip
-#: src/nemo-view.c:8316
+#: src/nemo-view.c:8263
 msgid "Prepare the selected files to be copied with a Paste command"
 msgstr "የተመረጡትን ፋይሎች በመለጠፊያ ትእዛዝ  ኮፒ እንዲደረጉ በማዘጋጀት ላይ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8319 gresources/nemo-file-management-properties.glade:3614
+#: src/nemo-view.c:8266 gresources/nemo-file-management-properties.glade:3614
 #: gresources/nemo-file-management-properties.glade:3988
 msgid "_Paste"
 msgstr "_መለጠፊያ"
 
 #. tooltip
-#: src/nemo-view.c:8320
+#: src/nemo-view.c:8267
 msgid "Move or copy files previously selected by a Cut or Copy command"
 msgstr "ማንቀሳቀሻ ወይንም ኮፒ ማድረጊያ ቀደም ብለው የተመረጡትን ፋይሎች በመቁረጫ ወይንም በመለጠፊያ ትእዛዝ"
 
 #. tooltip
-#: src/nemo-view.c:8326
+#: src/nemo-view.c:8273
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into the "
 "selected folder"
@@ -2325,63 +2319,63 @@ msgstr ""
 "ማንቀሳቀሻ ወይንም ኮፒ ማድረጊያ ቀደም ብለው የተመረጡትን ፋይሎች በመቁረጫ ወይንም በመለጠፊያ ትእዛዝ  ከተመረጠው ፎልደር"
 
 #. name, stock id, label
-#: src/nemo-view.c:8328 gresources/nemo-file-management-properties.glade:3728
+#: src/nemo-view.c:8275 gresources/nemo-file-management-properties.glade:3728
 msgid "Cop_y to"
 msgstr "ኮ_ፒ ወደ"
 
 #. name, stock id, label
-#: src/nemo-view.c:8329 gresources/nemo-file-management-properties.glade:3747
+#: src/nemo-view.c:8276 gresources/nemo-file-management-properties.glade:3747
 msgid "M_ove to"
 msgstr "ማ_ንቀሳቀሻ ወደ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8331 libnemo-private/nemo-clipboard.c:444
+#: src/nemo-view.c:8278 libnemo-private/nemo-clipboard.c:444
 msgid "Select _All"
 msgstr "_ሁሉንም መምረጫ"
 
 #. tooltip
-#: src/nemo-view.c:8332
+#: src/nemo-view.c:8279
 msgid "Select all items in this window"
 msgstr "በዚህ መስኮት ውስጥ ያሉትን ሁሉንም እቃዎች መምረጫ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8335
+#: src/nemo-view.c:8282
 msgid "Select I_tems Matching..."
 msgstr "የሚመሳሰሉ እ_ቃዎችን መምረጫ..."
 
 #. tooltip
-#: src/nemo-view.c:8336
+#: src/nemo-view.c:8283
 msgid "Select items in this window matching a given pattern"
 msgstr "በዚህ መስኮት ውስጥ እቃ መምረጫ የ ተሰጠውን ንድፍ የሚመሳሰል"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8339
+#: src/nemo-view.c:8286
 msgid "_Invert Selection"
 msgstr "_መገልበጫ ምርጫውን"
 
 #. tooltip
-#: src/nemo-view.c:8340
+#: src/nemo-view.c:8287
 msgid "Select all and only the items that are not currently selected"
 msgstr "ይምረጡ ሁሉንም እና አሁን ያልተመረጡትን እቃዎች ብቻ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8343 libnemo-private/nemo-file-conflict-dialog.c:561
+#: src/nemo-view.c:8290 libnemo-private/nemo-file-conflict-dialog.c:561
 #: gresources/nemo-file-management-properties.glade:3633
 msgid "D_uplicate"
 msgstr "ማ_ባዣ"
 
 #. tooltip
-#: src/nemo-view.c:8344
+#: src/nemo-view.c:8291
 msgid "Duplicate each selected item"
 msgstr "እየንዳንዱ የተመረጡትን እቃዎች ማባዣ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8347 src/nemo-view.c:9912
+#: src/nemo-view.c:8294 src/nemo-view.c:9859
 #: gresources/nemo-file-management-properties.glade:3690
 msgid "Ma_ke Link"
 msgid_plural "Ma_ke Links"
@@ -2389,51 +2383,51 @@ msgstr[0] "አገ_ናኝ መፍጠሪያ"
 msgstr[1] "አገ_ናኞች መፍጠሪያ"
 
 #. tooltip
-#: src/nemo-view.c:8348
+#: src/nemo-view.c:8295
 msgid "Create a symbolic link for each selected item"
 msgstr "ለ እያንዳንዱ ለተመረጠው እቃ  ባለ ምልክት ማያያዣ መፍጠሪያ"
 
 #. tooltip
-#: src/nemo-view.c:8352
+#: src/nemo-view.c:8299
 msgid "Rename selected item"
 msgstr "የተመረጠውን እቃ እንደገና መሰየሚያ"
 
 #. tooltip
-#: src/nemo-view.c:8360 src/nemo-view.c:9863
+#: src/nemo-view.c:8307 src/nemo-view.c:9810
 msgid "Move each selected item to the Trash"
 msgstr "እያንዳንዱ የተመረጠውን እቃ ወደ ቆሻሻ ማንቀሳቀሻ"
 
 #. tooltip
-#: src/nemo-view.c:8364 src/nemo-view.c:9887
+#: src/nemo-view.c:8311 src/nemo-view.c:9834
 msgid "Delete each selected item, without moving to the Trash"
 msgstr "እያንዳንዱ የተመረጠውን እቃ ማጥፊያ ወደ ቆሻሻ ሳያንቀሳቅሱ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8367 src/nemo-view.c:8476
+#: src/nemo-view.c:8314 src/nemo-view.c:8423
 msgid "_Restore"
 msgstr "_እንደነበር መመለሻ"
 
 #. name, stock id
 #. label, accelerator
 #. name, stock id, label
-#: src/nemo-view.c:8371 src/nemo-window-menus.c:1382
+#: src/nemo-view.c:8318 src/nemo-window-menus.c:1398
 msgid "_Undo"
 msgstr "_መተው"
 
 #. tooltip
-#: src/nemo-view.c:8372
+#: src/nemo-view.c:8319
 msgid "Undo the last action"
 msgstr "የመጨረሻውን ተግባር መተው"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8375
+#: src/nemo-view.c:8322
 msgid "_Redo"
 msgstr "_እንደገና መስሪያ"
 
 #. tooltip
-#: src/nemo-view.c:8376
+#: src/nemo-view.c:8323
 msgid "Redo the last undone action"
 msgstr "መጨረሻ የተተወውን ተግባር እንደገና መስሪያ"
 
@@ -2445,109 +2439,109 @@ msgstr "መጨረሻ የተተወውን ተግባር እንደገና መስሪ�
 #. 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8385
+#: src/nemo-view.c:8332
 msgid "Reset View to _Defaults"
 msgstr "ለ _ነባሮች መመልከቻውን እንደነበር መመለሻ"
 
 #. tooltip
-#: src/nemo-view.c:8386
+#: src/nemo-view.c:8333
 msgid "Reset sorting order and zoom level to match preferences for this view"
 msgstr "የ መለያ ቅደም ተከተል እንደ ነበር መመለሻ እና የ ማሳያ መጠን እንዲስማማ ከ ምርጫዎች ጋር ለዚህ መመልከቻ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8389
+#: src/nemo-view.c:8336
 msgid "Connect To This Server"
 msgstr "ወደዚህ ሰርቨር መገናኛ"
 
 #. tooltip
-#: src/nemo-view.c:8390
+#: src/nemo-view.c:8337
 msgid "Make a permanent connection to this server"
 msgstr "ወደ እዚህ ሰርቨሩ ቋሚ ግንኙነት መፍጠሪያ"
 
 #. tooltip
-#: src/nemo-view.c:8394
+#: src/nemo-view.c:8341
 msgid "Mount the selected volume"
 msgstr "የተመረጠውን መጠን መጫኛ"
 
 #. tooltip
-#: src/nemo-view.c:8398
+#: src/nemo-view.c:8345
 msgid "Unmount the selected volume"
 msgstr "የተመረጠውን መጠን ማውረጃ"
 
 #. tooltip
-#: src/nemo-view.c:8402
+#: src/nemo-view.c:8349
 msgid "Eject the selected volume"
 msgstr "የተመረጠውን መጠን ማውጫ"
 
 #. tooltip
-#: src/nemo-view.c:8406
+#: src/nemo-view.c:8353
 msgid "Start the selected volume"
 msgstr "የተመረጠውን መጠን ማስጀመሪያ"
 
 #. tooltip
-#: src/nemo-view.c:8410 src/nemo-view.c:9367
+#: src/nemo-view.c:8357 src/nemo-view.c:9314
 msgid "Stop the selected volume"
 msgstr "የተመረጠውን መጠን ማስቆሚያ"
 
 #. tooltip
-#: src/nemo-view.c:8414 src/nemo-view.c:8438 src/nemo-view.c:8501
+#: src/nemo-view.c:8361 src/nemo-view.c:8385 src/nemo-view.c:8448
 msgid "Detect media in the selected drive"
 msgstr "በተመረጠው አካል ውስጥ መገናኛ ፈልጎ ማግኛ"
 
 #. tooltip
-#: src/nemo-view.c:8418
+#: src/nemo-view.c:8365
 msgid "Mount the volume associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመደውን መጠን መጫኛ"
 
 #. tooltip
-#: src/nemo-view.c:8422
+#: src/nemo-view.c:8369
 msgid "Unmount the volume associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመደውን መጠን ማውረጃ"
 
 #. tooltip
-#: src/nemo-view.c:8426
+#: src/nemo-view.c:8373
 msgid "Eject the volume associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመደውን መጠን ማውጫ"
 
 #. tooltip
-#: src/nemo-view.c:8430
+#: src/nemo-view.c:8377
 msgid "Start the volume associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመደውን መጠን ማስጀመሪያ"
 
 #. tooltip
-#: src/nemo-view.c:8434
+#: src/nemo-view.c:8381
 msgid "Stop the volume associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመደውን መጠን ማስቆሚያ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8441
+#: src/nemo-view.c:8388
 msgid "Open File and Close window"
 msgstr "ፋይል መክፈቻ እና መስኮት መዝጊያ"
 
 #. tooltip
-#: src/nemo-view.c:8447
+#: src/nemo-view.c:8394
 msgid "Open this folder in a navigation window"
 msgstr "ይህን ፎልደር በመስኮት መቃኛው ውስጥ መክፈቻ"
 
 #. tooltip
-#: src/nemo-view.c:8451
+#: src/nemo-view.c:8398
 msgid "Open this folder in a new tab"
 msgstr "ይህን ፎልደር በአዲስ ንዑስ መስኮት መክፈቻ"
 
 #. tooltip
-#: src/nemo-view.c:8456
+#: src/nemo-view.c:8403
 msgid "Prepare this folder to be moved with a Paste command"
 msgstr "በመለጠፊያ ትእዛዝ ይህን ፎልደር ለማንቀሳቀስ ማሰናጃ"
 
 #. tooltip
-#: src/nemo-view.c:8460
+#: src/nemo-view.c:8407
 msgid "Prepare this folder to be copied with a Paste command"
 msgstr "በመለጠፊያ ትእዛዝ ይህን ፎልደር ኮፒ ለማድረግ ማሰናጃ"
 
 #. tooltip
-#: src/nemo-view.c:8464
+#: src/nemo-view.c:8411
 msgid ""
 "Move or copy files previously selected by a Cut or Copy command into this "
 "folder"
@@ -2555,312 +2549,312 @@ msgstr ""
 "ቀደም ብለው የተመረጡትን ፋይሎች ለማንቀሳቀስ ወይንም ኮፒ ለማድረግ በመቁረጫ ወይንም በኮፒ ትእዛዝ ወደዚህ ፎልደር"
 
 #. tooltip
-#: src/nemo-view.c:8469
+#: src/nemo-view.c:8416
 msgid "Move this folder to the Trash"
 msgstr "ይህን ፎልደር ወደ ቆሻሻ ማንቀሳቀሻ"
 
 #. tooltip
-#: src/nemo-view.c:8473
+#: src/nemo-view.c:8420
 msgid "Delete this folder, without moving to the Trash"
 msgstr "ይህን ፎልደር ማጥፊያ ወደ ቆሻሻ ሳይንቀሳቀስ"
 
 #. tooltip
-#: src/nemo-view.c:8481
+#: src/nemo-view.c:8428
 msgid "Mount the volume associated with this folder"
 msgstr "ከዚህ ፎልደር ጋር የሚዛመዱትን መጠኖች መጫኛ"
 
 #. tooltip
-#: src/nemo-view.c:8485
+#: src/nemo-view.c:8432
 msgid "Unmount the volume associated with this folder"
 msgstr "ከዚህ ፎልደር ጋር የሚዛመዱትን መጠኖች ማውረጃ"
 
 #. tooltip
-#: src/nemo-view.c:8489
+#: src/nemo-view.c:8436
 msgid "Eject the volume associated with this folder"
 msgstr "ከዚህ ፎልደር ጋር የሚዛመዱትን መጠኖች ማስወጫ"
 
 #. tooltip
-#: src/nemo-view.c:8493
+#: src/nemo-view.c:8440
 msgid "Start the volume associated with this folder"
 msgstr "ከዚህ ፎልደር ጋር የሚዛመዱትን መጠኖች ማስጀመሪያ"
 
 #. tooltip
-#: src/nemo-view.c:8497
+#: src/nemo-view.c:8444
 msgid "Stop the volume associated with this folder"
 msgstr "ከዚህ ፎልደር ጋር የሚዛመዱትን መጠኖች ማስቆሚያ"
 
 #. tooltip
-#: src/nemo-view.c:8506
+#: src/nemo-view.c:8453
 msgid "View or modify the properties of this folder"
 msgstr "የዚህን ፎልደር ባህሪዎች ማሻሻያ ወይንም መመልከቻ"
 
 #. name, stock id, label
-#: src/nemo-view.c:8509 src/nemo-view.c:8512
+#: src/nemo-view.c:8456 src/nemo-view.c:8459
 msgid "_Other pane"
 msgstr "_ሌላ ክፍል"
 
-#: src/nemo-view.c:8510
+#: src/nemo-view.c:8457
 msgid "Copy the current selection to the other pane in the window"
 msgstr "የአሁኑን ምርጫ ወደ ሌላው መስኮት ክፍል ኮፒ ማድርጊያ"
 
-#: src/nemo-view.c:8513
+#: src/nemo-view.c:8460
 msgid "Move the current selection to the other pane in the window"
 msgstr "የአሁኑን ምርጫ ወደ ሌላው መስኮት ክፍል ማንቀሳቀሻ"
 
 #. name, stock id, label
 #. name, stock id
 #. label, accelerator
-#: src/nemo-view.c:8516 src/nemo-view.c:8520 src/nemo-window-menus.c:1457
-#: src/nemo-window-menus.c:1676 src/nemo-window-menus.c:1929
+#: src/nemo-view.c:8463 src/nemo-view.c:8467 src/nemo-window-menus.c:1473
+#: src/nemo-window-menus.c:1692 src/nemo-window-menus.c:1945
 msgid "_Home"
 msgstr "_ቤት"
 
-#: src/nemo-view.c:8517
+#: src/nemo-view.c:8464
 msgid "Copy the current selection to the home folder"
 msgstr "የአሁኑን አካባቢ ወደ ፎልደር ቤት ኮፒ ማድረጊያ"
 
-#: src/nemo-view.c:8521
+#: src/nemo-view.c:8468
 msgid "Move the current selection to the home folder"
 msgstr "የአሁኑን አካባቢ ምርጫ ወደ ፎልደር ቤት ማንቀሳቀሻ"
 
 #. name, stock id, label
-#: src/nemo-view.c:8524 src/nemo-view.c:8528
+#: src/nemo-view.c:8471 src/nemo-view.c:8475
 msgid "_Desktop"
 msgstr "_ዴስክቶፕ"
 
-#: src/nemo-view.c:8525
+#: src/nemo-view.c:8472
 msgid "Copy the current selection to the desktop"
 msgstr "የአሁኑን አካባቢ ምርጫ ወደ ዴስክቶፕ ኮፒ ማድረጊያ"
 
-#: src/nemo-view.c:8529
+#: src/nemo-view.c:8476
 msgid "Move the current selection to the desktop"
 msgstr "የአሁኑን አካባቢ ምርጫ ወደ ዴስክቶፕ ማንቀሳቀሻ"
 
-#: src/nemo-view.c:8532 src/nemo-view.c:8536
+#: src/nemo-view.c:8479 src/nemo-view.c:8483
 msgid "Browse..."
 msgstr "መቃኛ..."
 
-#: src/nemo-view.c:8533
+#: src/nemo-view.c:8480
 msgid "Browse for a folder to move the selection to"
 msgstr "ፎልደር መቃኛ የተመረጠውን ለማንቀሳቀስ ወደ"
 
-#: src/nemo-view.c:8537
+#: src/nemo-view.c:8484
 msgid "Browse for a folder to copy the selection to"
 msgstr "ፎልደር መቃኛ የተመረጠውን ኮፒ ለማድረግ ወደ"
 
-#: src/nemo-view.c:8541
+#: src/nemo-view.c:8488
 msgid ""
 "Pin the selected file so it always appears at the top of this location's "
 "file list"
 msgstr ""
 
-#: src/nemo-view.c:8545
+#: src/nemo-view.c:8492
 msgid "Unpin the selected file from the top of this location's file list"
 msgstr ""
 
-#: src/nemo-view.c:8548
+#: src/nemo-view.c:8495
 msgid "Add to favorites"
 msgstr "ወደ የምወደው ውስጥ መጨመሪያ"
 
-#: src/nemo-view.c:8549
+#: src/nemo-view.c:8496
 msgid "Add the selected file to your favorites"
 msgstr "የ ተመረጠ ፋይል ወደ እርስዎ የሚወዷቸው ውስጥ መጨመሪያ"
 
-#: src/nemo-view.c:8552
+#: src/nemo-view.c:8499
 msgid "Remove from favorites"
 msgstr "ከ የምወደው ውስጥ ማስወገጃ"
 
-#: src/nemo-view.c:8553
+#: src/nemo-view.c:8500
 msgid "Remove the selected file from your favorites"
 msgstr "የ ተመረጠ ፋይል ከ እርስዎ የሚወዷቸው ውስጥ ማስወገጃ"
 
-#: src/nemo-view.c:8628
+#: src/nemo-view.c:8575
 msgid "Run scripts"
 msgstr "ጽሁፍ ማስኬጃ"
 
 #. Create a script action here specially because its tooltip is dynamic
-#: src/nemo-view.c:8630 gresources/nemo-file-management-properties.glade:3557
+#: src/nemo-view.c:8577 gresources/nemo-file-management-properties.glade:3557
 #: gresources/nemo-file-management-properties.glade:3914
 msgid "_Scripts"
 msgstr "ጽሁፎች"
 
-#: src/nemo-view.c:9003
+#: src/nemo-view.c:8950
 #, c-format
 msgid "Move the open folder out of the trash to \"%s\""
 msgstr "የተከፈተውን ፎልደር ከቆሻሻ ማጠራቀሚያው ውስጥ ማውጫ ወደ \"%s\""
 
-#: src/nemo-view.c:9006
+#: src/nemo-view.c:8953
 #, c-format
 msgid "Move the selected folder out of the trash to \"%s\""
 msgid_plural "Move the selected folders out of the trash to \"%s\""
 msgstr[0] "የተመረጠውን ፎልደር ከቆሻሻ ማጠራቀሚያው ውስጥ ማውጫ ወደ \"%s\""
 msgstr[1] "የተመረጡትን ፎልደሮች ከቆሻሻ ማጠራቀሚያው ውስጥ ማውጫ ወደ \"%s\""
 
-#: src/nemo-view.c:9010
+#: src/nemo-view.c:8957
 msgid "Move the selected folder out of the trash"
 msgid_plural "Move the selected folders out of the trash"
 msgstr[0] "የተመረጠውን ፎልደር ከቆሻሻ ማጠራቀሚያው ውስጥ ማንቀሳቀሻ"
 msgstr[1] "የተመረጡትን ፎልደሮች ከቆሻሻ ማጠራቀሚያው ውስጥ ማንቀሳቀሻ"
 
-#: src/nemo-view.c:9016
+#: src/nemo-view.c:8963
 #, c-format
 msgid "Move the selected file out of the trash to \"%s\""
 msgid_plural "Move the selected files out of the trash to \"%s\""
 msgstr[0] "የተመረጠውን ፋይል ከቆሻሻ ማጠራቀሚያው ውስጥ ማንቀሳቀሻ ወደ \"%s\""
 msgstr[1] "የተመረጡትን ፋይሎች ከቆሻሻ ማጠራቀሚያው ውስጥ ማንቀሳቀሻ ወደ \"%s\""
 
-#: src/nemo-view.c:9020
+#: src/nemo-view.c:8967
 msgid "Move the selected file out of the trash"
 msgid_plural "Move the selected files out of the trash"
 msgstr[0] "የተመረጠውን ፋይል ከቆሻሻ ማጠራቀሚያው ውስጥ ማንቀሳቀሻ"
 msgstr[1] "የተመረጡትን ፋይሎች ከቆሻሻ ማጠራቀሚያው ውስጥ ማንቀሳቀሻ"
 
-#: src/nemo-view.c:9026
+#: src/nemo-view.c:8973
 #, c-format
 msgid "Move the selected item out of the trash to \"%s\""
 msgid_plural "Move the selected items out of the trash to \"%s\""
 msgstr[0] "የተመረጠውን እቃ ከቆሻሻ ማጠራቀሚያው ውስጥ ማንቀሳቀሻ ወደ \"%s\""
 msgstr[1] "የተመረጡትን እቃዎች ከቆሻሻ ማጠራቀሚያው ውስጥ ማንቀሳቀሻ ወደ \"%s\""
 
-#: src/nemo-view.c:9030
+#: src/nemo-view.c:8977
 msgid "Move the selected item out of the trash"
 msgid_plural "Move the selected items out of the trash"
 msgstr[0] "የተመረጠውን እቃ ከቆሻሻ ማጠራቀሚያው ውስጥ ማንቀሳቀሻ"
 msgstr[1] "የተመረጡትን እቃዎች ከቆሻሻ ማጠራቀሚያው ውስጥ ማንቀሳቀሻ"
 
-#: src/nemo-view.c:9147 src/nemo-view.c:9151 src/nemo-view.c:9338
-#: src/nemo-view.c:9342
+#: src/nemo-view.c:9094 src/nemo-view.c:9098 src/nemo-view.c:9285
+#: src/nemo-view.c:9289
 msgid "Start the selected drive"
 msgstr "የተመረጠውን አካል ማስጀመሪያ"
 
-#: src/nemo-view.c:9155 src/nemo-view.c:9346
+#: src/nemo-view.c:9102 src/nemo-view.c:9293
 msgid "Connect to the selected drive"
 msgstr "የተመረጠውን አካል መገናኛ"
 
-#: src/nemo-view.c:9158 src/nemo-view.c:9245 src/nemo-view.c:9349
+#: src/nemo-view.c:9105 src/nemo-view.c:9192 src/nemo-view.c:9296
 msgid "_Start Multi-disk Drive"
 msgstr "የበርካታ - ዲስክ አካሎችን _ማስጀመሪያ"
 
-#: src/nemo-view.c:9159 src/nemo-view.c:9350
+#: src/nemo-view.c:9106 src/nemo-view.c:9297
 msgid "Start the selected multi-disk drive"
 msgstr "የተመረጠውን የበርካታ - ዲስክ አካሎችን ማስጀመሪያ"
 
-#: src/nemo-view.c:9162
+#: src/nemo-view.c:9109
 msgid "U_nlock Drive"
 msgstr "ያ _ልታወቀ አካል"
 
-#: src/nemo-view.c:9163 src/nemo-view.c:9354
+#: src/nemo-view.c:9110 src/nemo-view.c:9301
 msgid "Unlock the selected drive"
 msgstr "የተመረጠውን አካል መክፈቻ"
 
-#: src/nemo-view.c:9176
+#: src/nemo-view.c:9123
 msgid "Stop the selected drive"
 msgstr "የተመረጠውን አካል ማስቀሚያ"
 
-#: src/nemo-view.c:9180 src/nemo-view.c:9371
+#: src/nemo-view.c:9127 src/nemo-view.c:9318
 msgid "Safely remove the selected drive"
 msgstr "የተመረጠውን አካል በደህንነት ማስወገጃ"
 
-#: src/nemo-view.c:9183 src/nemo-view.c:9270 src/nemo-view.c:9374
+#: src/nemo-view.c:9130 src/nemo-view.c:9217 src/nemo-view.c:9321
 msgid "_Disconnect"
 msgstr "_መለያያ"
 
-#: src/nemo-view.c:9184 src/nemo-view.c:9375
+#: src/nemo-view.c:9131 src/nemo-view.c:9322
 msgid "Disconnect the selected drive"
 msgstr "የተመረጠውን አካል መለያያ"
 
-#: src/nemo-view.c:9187 src/nemo-view.c:9274 src/nemo-view.c:9378
+#: src/nemo-view.c:9134 src/nemo-view.c:9221 src/nemo-view.c:9325
 msgid "_Stop Multi-disk Drive"
 msgstr "የበርካታ - ዲስክ አካሎችን _ማስቆሚያ"
 
-#: src/nemo-view.c:9188 src/nemo-view.c:9379
+#: src/nemo-view.c:9135 src/nemo-view.c:9326
 msgid "Stop the selected multi-disk drive"
 msgstr "የበርካታ - ዲስክ አካሎችን _ማስቆሚያ"
 
-#: src/nemo-view.c:9192 src/nemo-view.c:9383
+#: src/nemo-view.c:9139 src/nemo-view.c:9330
 msgid "Lock the selected drive"
 msgstr "የተመረጠውን አካል መቆለፊያ"
 
-#: src/nemo-view.c:9234 src/nemo-view.c:9238
+#: src/nemo-view.c:9181 src/nemo-view.c:9185
 msgid "Start the drive associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመዱ አካሎችን ማስጀመሪያ"
 
-#: src/nemo-view.c:9242
+#: src/nemo-view.c:9189
 msgid "Connect to the drive associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመዱ አካሎች ጋር መገናኛ"
 
-#: src/nemo-view.c:9246
+#: src/nemo-view.c:9193
 msgid "Start the multi-disk drive associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመዱ የበርካታ - ዲስክ አካሎችን ማስጀመሪያ"
 
-#: src/nemo-view.c:9250
+#: src/nemo-view.c:9197
 msgid "Unlock the drive associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመዱ አካሎችን መክፈቻ"
 
-#: src/nemo-view.c:9263
+#: src/nemo-view.c:9210
 msgid "_Stop the drive associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመዱ አካሎች _ማስቆሚያ"
 
-#: src/nemo-view.c:9267
+#: src/nemo-view.c:9214
 msgid "Safely remove the drive associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመዱ አካሎችን በደህንነት ማስወገጃ"
 
-#: src/nemo-view.c:9271
+#: src/nemo-view.c:9218
 msgid "Disconnect the drive associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመዱ አካሎችን መለያያ"
 
-#: src/nemo-view.c:9275
+#: src/nemo-view.c:9222
 msgid "Stop the multi-disk drive associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመዱ የበርካታ - ዲስክ አካሎችን ማስቆሚያ"
 
-#: src/nemo-view.c:9279
+#: src/nemo-view.c:9226
 msgid "Lock the drive associated with the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመዱ አክሎችን መቆለፊያ"
 
-#: src/nemo-view.c:9521 src/nemo-view.c:9858
+#: src/nemo-view.c:9468 src/nemo-view.c:9805
 msgid "_Delete Permanently"
 msgstr "በቋሚነት _ማጥፊያ"
 
-#: src/nemo-view.c:9522
+#: src/nemo-view.c:9469
 msgid "Delete the open folder permanently"
 msgstr "የተከፈተውን ፎልደር በቋሚነት ማጥፊያ"
 
-#: src/nemo-view.c:9526
+#: src/nemo-view.c:9473
 msgid "Move the open folder to the Trash"
 msgstr "የተከፈተውን ፎልደር ወደ ቆሻሻ ማንቀሳቀሻ"
 
-#: src/nemo-view.c:9773
+#: src/nemo-view.c:9720
 #, c-format
 msgid "_Open With %s"
 msgstr "_መክፈቻ በ %s"
 
-#: src/nemo-view.c:9822
+#: src/nemo-view.c:9769
 #, c-format
 msgid "Open in %'d New _Window"
 msgid_plural "Open in %'d New _Windows"
 msgstr[0] "መክፈቻ በ %'d አዲስ _መስኮት"
 msgstr[1] "መክፈቻ በ %'d አዲስ _መስኮቶች"
 
-#: src/nemo-view.c:9842
+#: src/nemo-view.c:9789
 #, c-format
 msgid "Open in %'d New _Tab"
 msgid_plural "Open in %'d New _Tabs"
 msgstr[0] "መክፈቻ በ %'d አዲስ _ንዑስ መስኮት"
 msgstr[1] "መክፈቻ በ %'d አዲስ _ንዑስ መስኮቶች"
 
-#: src/nemo-view.c:9859
+#: src/nemo-view.c:9806
 msgid "Delete all selected items permanently"
 msgstr "የተመረጡን እቃዎች በቋሚነት ማጥፊያ"
 
-#: src/nemo-view.c:9883
+#: src/nemo-view.c:9830
 msgid "Remo_ve from Recent"
 msgstr "ከ ቅርብ ጊዜ ውስጥ ማስወ_ገጃ"
 
-#: src/nemo-view.c:9884
+#: src/nemo-view.c:9831
 msgid "Remove each selected item from the recently used list"
 msgstr "እያንዳንዱ የ ተመረጠውን እቃ ማስወገጃ በ ቅርብ ጊዜ ከ ተጠቀሙት ዝርዝር ውስጥ"
 
-#: src/nemo-view.c:9925
+#: src/nemo-view.c:9872
 msgid "View or modify the properties of the open folder"
 msgstr "ከተከፈተው ፎልደር ጋር የሚዛመዱ ባህሪዎችን መመልከቻ ወይንም ማሻሻያ"
 
@@ -2918,15 +2912,15 @@ msgstr "ምልክት የተደረገበት በአካባቢው የሌለ"
 msgid "Go to the location specified by this bookmark"
 msgstr "በምልክት ማድረጊያው የተወሰነው ቦታ መሄጃ"
 
-#: src/nemo-window.c:1393
+#. Set initial window title
+#: src/nemo-window.c:629 src/nemo-window.c:2021 src/nemo-window-menus.c:345
+msgid "Nemo"
+msgstr "ኔሞ"
+
+#: src/nemo-window.c:1409
 #, c-format
 msgid "%s - File Browser"
 msgstr "%s - ፋይል መቃኛ"
-
-#. Set initial window title
-#: src/nemo-window.c:2005 src/nemo-window-menus.c:345
-msgid "Nemo"
-msgstr "ኔሞ"
 
 #: src/nemo-window-manage-views.c:1232
 msgid "Searching..."
@@ -3044,98 +3038,98 @@ msgstr ""
 "%s"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1365
+#: src/nemo-window-menus.c:1381
 msgid "_File"
 msgstr "_ፋይል"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1366
+#: src/nemo-window-menus.c:1382
 msgid "_Edit"
 msgstr "_ማረሚያ"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1367
+#: src/nemo-window-menus.c:1383
 msgid "_View"
 msgstr "_መመልከቻ"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1368
+#: src/nemo-window-menus.c:1384
 msgid "_Help"
 msgstr "_እርዳታ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1370
+#: src/nemo-window-menus.c:1386
 msgid "_Close"
 msgstr "_መዝጊያ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1371
+#: src/nemo-window-menus.c:1387
 msgid "Close this folder"
 msgstr "ይህን ፎልደር መዝጊያ"
 
-#: src/nemo-window-menus.c:1374
+#: src/nemo-window-menus.c:1390
 msgid "Prefere_nces"
 msgstr "ምርጫ_ዎች"
 
-#: src/nemo-window-menus.c:1375
+#: src/nemo-window-menus.c:1391
 msgid "Edit Nemo preferences"
 msgstr "የኔሞ ምርጫዎችን ማረሚያ"
 
-#: src/nemo-window-menus.c:1378
+#: src/nemo-window-menus.c:1394
 #: gresources/nemo-file-management-properties.glade:4240
 msgid "Plugins"
 msgstr "ተሰኪዎች"
 
-#: src/nemo-window-menus.c:1379
+#: src/nemo-window-menus.c:1395
 msgid "Manage extensions, actions and scripts"
 msgstr "የ ተጨማሪዎች አስተዳዳሪ: ተግባሮች እና ጽሁፎች"
 
-#: src/nemo-window-menus.c:1383
+#: src/nemo-window-menus.c:1399
 msgid "Undo the last text change"
 msgstr "የመጨረሻውን የጽሁፍ ለውጥ መተው"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1386
+#: src/nemo-window-menus.c:1402
 msgid "Open _Parent"
 msgstr "ወላጁን _መክፈቻ"
 
-#: src/nemo-window-menus.c:1387
+#: src/nemo-window-menus.c:1403
 msgid "Open the parent folder"
 msgstr "ወላጅ ፎልደሩን መክፈቻ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1394
+#: src/nemo-window-menus.c:1410
 msgid "Stop loading the current location"
 msgstr "የአሁኑን አካባቢ መጫን ማስቆሚያ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1397 src/nemo-window-menus.c:1662
+#: src/nemo-window-menus.c:1413 src/nemo-window-menus.c:1678
 msgid "_Reload"
 msgstr "_እንደገና መጫኛ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1398 src/nemo-window-menus.c:1664
+#: src/nemo-window-menus.c:1414 src/nemo-window-menus.c:1680
 msgid "Reload the current location"
 msgstr "የአሁኑን አካባቢ እንደገና መጫኛ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1401
+#: src/nemo-window-menus.c:1417
 msgid "_All Topics"
 msgstr "_ሁሉንም አርእስቶች"
 
 #. tooltip
-#: src/nemo-window-menus.c:1402
+#: src/nemo-window-menus.c:1418
 msgid "Display Nemo help"
 msgstr "የኔሞን እርዳታ ማሳያ"
 
-#: src/nemo-window-menus.c:1405
+#: src/nemo-window-menus.c:1421
 msgid "_Keyboard Shortcuts"
 msgstr "የ _ፊደል ገበታ አቋራጭ"
 
-#: src/nemo-window-menus.c:1406
+#: src/nemo-window-menus.c:1422
 msgid "Display keyboard shortcuts"
 msgstr "የ ፊደል ገበታ አቋራጭ ማሳያ"
 
@@ -3157,431 +3151,431 @@ msgstr "የ ፊደል ገበታ አቋራጭ ማሳያ"
 #. G_CALLBACK (action_nemo_manual_callback) }, *
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1425
+#: src/nemo-window-menus.c:1441
 msgid "_About"
 msgstr "_ስለ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1426
+#: src/nemo-window-menus.c:1442
 msgid "Display credits for the creators of Nemo"
 msgstr "ለኔሞ ፈጣሪውች ምስጋና ማሳያ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1429
+#: src/nemo-window-menus.c:1445
 msgid "Zoom _In"
 msgstr "በቅርብ _ማሳያ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1430
+#: src/nemo-window-menus.c:1446
 msgid "Increase the view size"
 msgstr "የመመልከቻውን መጠን መጨመሪያ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1441
+#: src/nemo-window-menus.c:1457
 msgid "Zoom _Out"
 msgstr "በርቀት ማሳያ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1442
+#: src/nemo-window-menus.c:1458
 msgid "Decrease the view size"
 msgstr "የመመልከቻውን መጠን መቀነሻ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1449
+#: src/nemo-window-menus.c:1465
 msgid "Normal Si_ze"
 msgstr "መደበኛ መጠ_ን"
 
 #. tooltip
-#: src/nemo-window-menus.c:1450
+#: src/nemo-window-menus.c:1466
 msgid "Use the normal view size"
 msgstr "መደበኛ የመመልከቻውን መጠን መጠቀሚያ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1453
+#: src/nemo-window-menus.c:1469
 msgid "Connect to _Server..."
 msgstr "ወደ _ሰርቨር መገናኛ..."
 
 #. tooltip
-#: src/nemo-window-menus.c:1454
+#: src/nemo-window-menus.c:1470
 msgid "Connect to a remote computer or shared disk"
 msgstr "መገናኛ በርቀት ካለ ኮምፒዩተር ወይንም ዲስክ መካፈያ ጋር"
 
 #. tooltip
-#: src/nemo-window-menus.c:1458
+#: src/nemo-window-menus.c:1474
 msgid "Open your personal folder"
 msgstr "የግል ፎልደር መክፈቻ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1461 src/nemo-window-menus.c:1690
+#: src/nemo-window-menus.c:1477 src/nemo-window-menus.c:1706
 msgid "_Computer"
 msgstr "_ኮምፒዩተር"
 
 #. tooltip
-#: src/nemo-window-menus.c:1462
+#: src/nemo-window-menus.c:1478
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr "መቃኘት ሁሉንም አካባቢ እና የርቀት ዲስኮች እና ፎልደሮች ይህ ኮምፒዩተር የሚደርስበት"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1465
+#: src/nemo-window-menus.c:1481
 msgid "_Network"
 msgstr "_ኔትዎርክ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1466
+#: src/nemo-window-menus.c:1482
 msgid "Browse bookmarked and local network locations"
 msgstr "የኔትዎርክ አካባቢዎችን እና ምልክት የተደረገበትን መቃኛ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1469
+#: src/nemo-window-menus.c:1485
 msgid "T_emplates"
 msgstr "ቴ_ምፕሌቶች"
 
 #. tooltip
-#: src/nemo-window-menus.c:1470
+#: src/nemo-window-menus.c:1486
 msgid "Open your personal templates folder"
 msgstr "የእርስዎን የግል ቴምፕሌትስ ፎልደር መክፈቻ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1473
+#: src/nemo-window-menus.c:1489
 msgid "_Trash"
 msgstr "_ቆሻሻ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1474
+#: src/nemo-window-menus.c:1490
 msgid "Open your personal trash folder"
 msgstr "የእርስዎን የቆሻሻ ፎልደር መክፈቻ"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1476
+#: src/nemo-window-menus.c:1492
 msgid "_Go"
 msgstr "_መሄጃ"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1477
+#: src/nemo-window-menus.c:1493
 msgid "_Bookmarks"
 msgstr "_ምልክት የተደረገባቸው"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1478
+#: src/nemo-window-menus.c:1494
 msgid "_Tabs"
 msgstr "_ንዑስ መስኮቶች"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1479
+#: src/nemo-window-menus.c:1495
 msgid "New _Window"
 msgstr "አዲስ _መስኮት"
 
-#: src/nemo-window-menus.c:1480
+#: src/nemo-window-menus.c:1496
 msgid "Open another Nemo window for the displayed location"
 msgstr "አሁን ለሚታየው አካባቢ አዲስ የኔሞ መስኮት መክፈቻ"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1482
+#: src/nemo-window-menus.c:1498
 msgid "New _Tab"
 msgstr "አዲስ _ንዑስ መስኮት"
 
-#: src/nemo-window-menus.c:1483
+#: src/nemo-window-menus.c:1499
 msgid "Open another tab for the displayed location"
 msgstr "ለሚታየው አካባቢ አዲስ ንዑስ መስኮት መክፈቻ"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1485
+#: src/nemo-window-menus.c:1501
 msgid "Close _All Windows"
 msgstr "_ሁሉንም መስኮቶች መዝጊያ"
 
-#: src/nemo-window-menus.c:1486
+#: src/nemo-window-menus.c:1502
 msgid "Close all Navigation windows"
 msgstr "ሁሉንም መቃኛ መስኮቶች መዝጊያ"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1488 src/nemo-window-menus.c:1612
+#: src/nemo-window-menus.c:1504 src/nemo-window-menus.c:1628
 msgid "_Back"
 msgstr "_ወደ ኋላ"
 
-#: src/nemo-window-menus.c:1489 src/nemo-window-menus.c:1614
+#: src/nemo-window-menus.c:1505 src/nemo-window-menus.c:1630
 msgid "Go to the previous visited location"
 msgstr "ቀደም ብሎ ወደ ተጎበኘው አካባቢ መሄጃ"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1491 src/nemo-window-menus.c:1628
+#: src/nemo-window-menus.c:1507 src/nemo-window-menus.c:1644
 msgid "_Forward"
 msgstr "_ወደ ፊት"
 
-#: src/nemo-window-menus.c:1492 src/nemo-window-menus.c:1630
+#: src/nemo-window-menus.c:1508 src/nemo-window-menus.c:1646
 msgid "Go to the next visited location"
 msgstr "ቀጥሎ ወደ ተጎበኘው አካባቢ መሄጃ"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1494
+#: src/nemo-window-menus.c:1510
 msgid "Toggle _Location Entry"
 msgstr "መቀያየሪያ የ _አካባቢ ማስገቢያ"
 
-#: src/nemo-window-menus.c:1495
+#: src/nemo-window-menus.c:1511
 msgid "Switch between location entry and breadcrumbs"
 msgstr "መቀየሪያ በ አካባቢ ማስገቢያ እና በ ሁለተኛ መቃኛ መካከል"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1497
+#: src/nemo-window-menus.c:1513
 msgid "S_witch to Other Pane"
 msgstr "መ_ቀየሪያ ወደ ሌላ ክፍል"
 
-#: src/nemo-window-menus.c:1498
+#: src/nemo-window-menus.c:1514
 msgid "Move focus to the other pane in a split view window"
 msgstr "ትኩረት ማንቀሳቀሻ ወደ ሌላ ክፍል በ ተከፈለው መመልከቻ መስኮት ውስጥ"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1500
+#: src/nemo-window-menus.c:1516
 msgid "Sa_me Location as Other Pane"
 msgstr "ተመ_ሳሳይ አካባቢ እንደ ሌላ ክፍል"
 
-#: src/nemo-window-menus.c:1501
+#: src/nemo-window-menus.c:1517
 msgid "Go to the same location as in the extra pane"
 msgstr "ወደ ተመሳሳይ አካባቢ መሄጃ እንደ ተጨማሪ ሌላ ክፍል"
 
-#: src/nemo-window-menus.c:1504
+#: src/nemo-window-menus.c:1520
 msgid "Add a bookmark for the current location to this menu"
 msgstr "ምልክት ማድረጊያ መጨመሪያ  አሁኑ አካባቢ ዚህ ዝርዝር"
 
 #. name, stock id, label
-#: src/nemo-window-menus.c:1506
+#: src/nemo-window-menus.c:1522
 msgid "_Edit Bookmarks..."
 msgstr "_ማረሚያ ምልክት ማድረጊያዎችን..."
 
-#: src/nemo-window-menus.c:1507
+#: src/nemo-window-menus.c:1523
 msgid "Display a window that allows editing the bookmarks in this menu"
 msgstr "መስኮት ማሳያ እርስዎን የ ምልክት ማድረጊያ ማረም የሚያስችሎት በዚህ ዝርዝር ውስጥ"
 
-#: src/nemo-window-menus.c:1509
+#: src/nemo-window-menus.c:1525
 msgid "_Previous Tab"
 msgstr "_ያለፈው Tab"
 
-#: src/nemo-window-menus.c:1510
+#: src/nemo-window-menus.c:1526
 msgid "Activate previous tab"
 msgstr "ያለፈውን Tab ማስጀመሪያ"
 
-#: src/nemo-window-menus.c:1512
+#: src/nemo-window-menus.c:1528
 msgid "_Next Tab"
 msgstr "_የሚቀጥለው Tab"
 
-#: src/nemo-window-menus.c:1513
+#: src/nemo-window-menus.c:1529
 msgid "Activate next tab"
 msgstr "የሚቀጥለውን Tab ማስጀመሪያ"
 
-#: src/nemo-window-menus.c:1515 src/nemo-window-pane.c:537
+#: src/nemo-window-menus.c:1531 src/nemo-window-pane.c:537
 msgid "Move Tab _Left"
 msgstr "ንዑስ መስኮቱን _ወደ ግራ ማንቀሳቀሻ"
 
-#: src/nemo-window-menus.c:1516
+#: src/nemo-window-menus.c:1532
 msgid "Move current tab to left"
 msgstr "የ አሁኑን tab ወደ ግራ ማንቀሳቀሻ"
 
-#: src/nemo-window-menus.c:1518 src/nemo-window-pane.c:545
+#: src/nemo-window-menus.c:1534 src/nemo-window-pane.c:545
 msgid "Move Tab _Right"
 msgstr "ንዑስ መስኮቱን _ወደ ቀኝ ማንቀሳቀሻ"
 
-#: src/nemo-window-menus.c:1519
+#: src/nemo-window-menus.c:1535
 msgid "Move current tab to right"
 msgstr "የ አሁኑን tab ወደ ቀኝ ማንቀሳቀሻ"
 
-#: src/nemo-window-menus.c:1521
+#: src/nemo-window-menus.c:1537
 msgid "Sidebar"
 msgstr "የጎን መደርደሪያ"
 
-#: src/nemo-window-menus.c:1522
+#: src/nemo-window-menus.c:1538
 #: gresources/nemo-file-management-properties.glade:3423
 msgid "Toolbar"
 msgstr "እቃ መደርደሪያ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1527
+#: src/nemo-window-menus.c:1543
 #: gresources/nemo-file-management-properties.glade:3969
 msgid "Show _Hidden Files"
 msgstr "_የተደበቁ ፋይሎችን ማሳያ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1528
+#: src/nemo-window-menus.c:1544
 msgid "Toggle the display of hidden files in the current window"
 msgstr "ለአሁኑ መስኮት የተደበቁ ፋይሎችን ማሳያ መቀያየሪያ"
 
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1532
+#: src/nemo-window-menus.c:1548
 msgid "_Main Toolbar"
 msgstr "_ዋናው ቱልባር"
 
 #. tooltip
-#: src/nemo-window-menus.c:1533
+#: src/nemo-window-menus.c:1549
 msgid "Change the visibility of this window's main toolbar"
 msgstr "የዚህን መስኮት ዋናውን እቃ መደርደሪያ መመልከቻ መቀየሪያ"
 
 #. is_active
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1537
+#: src/nemo-window-menus.c:1553
 msgid "_Show Sidebar"
 msgstr "የጎን መደርደሪያውን ማሳያ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1538
+#: src/nemo-window-menus.c:1554
 msgid "Change the visibility of this window's side pane"
 msgstr "የዚህን መስኮት የጎን ክፍል መመልከቻ መቀየሪያ"
 
 #. is_active
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1542
+#: src/nemo-window-menus.c:1558
 msgid "St_atusbar"
 msgstr "የሁ_ኔታዎች መደርደሪያ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1543
+#: src/nemo-window-menus.c:1559
 msgid "Change the visibility of this window's statusbar"
 msgstr "የዚህን መስኮት የሁ_ኔታዎች መደርደሪያ መመልከቻ መቀየሪያ"
 
 #. is_active
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1547
+#: src/nemo-window-menus.c:1563
 msgid "M_enubar"
 msgstr "ዝ_ርዝር መደርደሪያ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1548
+#: src/nemo-window-menus.c:1564
 msgid "Change the default visibility of the menubar"
 msgstr "የዝርዝር መደርደሪያ ነባር መመልከቻን መቀየሪያ"
 
 #. is_active
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1552
+#: src/nemo-window-menus.c:1568
 msgid "_Search for Files..."
 msgstr "ፋይሎች _መፈለጊያ..."
 
 #. tooltip
-#: src/nemo-window-menus.c:1553 src/nemo-window-menus.c:1772
+#: src/nemo-window-menus.c:1569 src/nemo-window-menus.c:1788
 msgid "Search documents and folders"
 msgstr ""
 
 #. is_active
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1557
+#: src/nemo-window-menus.c:1573
 msgid "E_xtra Pane"
 msgstr "ተ_ጨማሪ ክፍል"
 
 #. tooltip
-#: src/nemo-window-menus.c:1558
+#: src/nemo-window-menus.c:1574
 msgid "Open an extra folder view side-by-side"
 msgstr "ተጨማሪ ፎልደር መክፈቻ እና ጎን - ለ - ጎን መመልከቻ"
 
 #. is_active
 #. name, stock id
 #. label, accelerator
-#: src/nemo-window-menus.c:1562
+#: src/nemo-window-menus.c:1578
 msgid "Show _Thumbnails"
 msgstr "በ _አውራ ጥፍር ልክ ማሳያ"
 
 #. tooltip
-#: src/nemo-window-menus.c:1563
+#: src/nemo-window-menus.c:1579
 msgid "Toggle the display of thumbnails in the current directory"
 msgstr ""
 
-#: src/nemo-window-menus.c:1570
+#: src/nemo-window-menus.c:1586
 msgid "Places"
 msgstr "ቦታዎች"
 
-#: src/nemo-window-menus.c:1570
+#: src/nemo-window-menus.c:1586
 msgid "Select Places as the default sidebar"
 msgstr "ነባር የጎን መደርደሪያ ቦታዎች መምረጫ"
 
-#: src/nemo-window-menus.c:1573
+#: src/nemo-window-menus.c:1589
 msgid "Tree"
 msgstr "ዛፍ"
 
-#: src/nemo-window-menus.c:1573
+#: src/nemo-window-menus.c:1589
 msgid "Select Tree as the default sidebar"
 msgstr "ለነባር የጎን መደርደሪያ ዛፍ መምረጫ"
 
-#: src/nemo-window-menus.c:1591
+#: src/nemo-window-menus.c:1607
 msgid "Path Bar"
 msgstr ""
 
-#: src/nemo-window-menus.c:1591
+#: src/nemo-window-menus.c:1607
 msgid "Always prefer the path bar"
 msgstr ""
 
-#: src/nemo-window-menus.c:1594
+#: src/nemo-window-menus.c:1610
 msgid "Location Entry"
 msgstr ""
 
-#: src/nemo-window-menus.c:1594
+#: src/nemo-window-menus.c:1610
 msgid "Always prefer the location entry"
 msgstr ""
 
-#: src/nemo-window-menus.c:1615
+#: src/nemo-window-menus.c:1631
 msgid "Back history"
 msgstr "ያለፈው ታሪክ"
 
-#: src/nemo-window-menus.c:1631 src/nemo-window-menus.c:1650
+#: src/nemo-window-menus.c:1647 src/nemo-window-menus.c:1666
 msgid "Forward history"
 msgstr "ወደ ፊት ታሪክ"
 
-#: src/nemo-window-menus.c:1647 src/nemo-window-menus.c:1926
+#: src/nemo-window-menus.c:1663 src/nemo-window-menus.c:1942
 msgid "_Up"
 msgstr "_ወደ ላይ"
 
-#: src/nemo-window-menus.c:1649
+#: src/nemo-window-menus.c:1665
 msgid "Go to parent folder"
 msgstr "ወደ ወላጅ ፎልደር መሄጃ"
 
-#: src/nemo-window-menus.c:1678
+#: src/nemo-window-menus.c:1694
 msgid "Go to home directory"
 msgstr "ወደ ቤት ዳይሬክቶሪ መሄጃ"
 
-#: src/nemo-window-menus.c:1692
+#: src/nemo-window-menus.c:1708
 msgid "Go to Computer"
 msgstr "ወደ ኮምፒዩተር መሄጃ"
 
-#: src/nemo-window-menus.c:1704
+#: src/nemo-window-menus.c:1720
 msgid "Toggle Location Entry"
 msgstr "የ አካባቢ ማስገቢያ መቀያየሪያ"
 
-#: src/nemo-window-menus.c:1716
+#: src/nemo-window-menus.c:1732
 #: gresources/nemo-file-management-properties.glade:3182
 msgid "New folder"
 msgstr "አዲስ ፎልደር"
 
-#: src/nemo-window-menus.c:1717
+#: src/nemo-window-menus.c:1733
 msgid "Create a new folder"
 msgstr "አዲስ ፎልደር መፍጠሪያ"
 
-#: src/nemo-window-menus.c:1727
+#: src/nemo-window-menus.c:1743
 msgid "Open a terminal in the active folder"
 msgstr "በ ንቁ ፎልደር ውስጥ ተርሚናል መክፈቻ"
 
-#: src/nemo-window-menus.c:1737
+#: src/nemo-window-menus.c:1753
 msgid "Icons"
 msgstr "ምልክቶች"
 
-#: src/nemo-window-menus.c:1748
+#: src/nemo-window-menus.c:1764
 msgid "List"
 msgstr "ዝርዝር"
 
-#: src/nemo-window-menus.c:1760
+#: src/nemo-window-menus.c:1776
 msgid "Compact"
 msgstr "በትንንሽ"
 
-#: src/nemo-window-menus.c:1772 libnemo-private/nemo-query.c:189
+#: src/nemo-window-menus.c:1788 libnemo-private/nemo-query.c:189
 #: libnemo-private/nemo-search-directory-file.c:164
 #: libnemo-private/nemo-search-directory-file.c:198
 #: libnemo-private/nemo-search-directory-file.c:232
@@ -3589,12 +3583,12 @@ msgstr "በትንንሽ"
 msgid "Search"
 msgstr "መፈለጊያ"
 
-#: src/nemo-window-menus.c:1781 src/nemo-window-menus.c:1782
+#: src/nemo-window-menus.c:1797 src/nemo-window-menus.c:1798
 #: gresources/nemo-file-management-properties.glade:3367
 msgid "Show Thumbnails"
 msgstr "በ አውራ ጥፍር ልክ ማሳያ"
 
-#: src/nemo-window-menus.c:1932
+#: src/nemo-window-menus.c:1948
 msgid "_Location"
 msgstr "_አካባቢ"
 
@@ -3843,19 +3837,20 @@ msgid ""
 "popup menu of the volume."
 msgstr "እባክዎን \"መጠኑን ማውረድ \" ከፈለጉ ከብቅ ባይ ዝርዝር ውስጥ መጠን ማውረጃ የሚለውን ይጠቀሙ"
 
-#: libnemo-private/nemo-dnd.c:869
+#: libnemo-private/nemo-dnd.c:882
 msgid "_Move Here"
 msgstr "ወደ እዚህ _ማንቀሳቀሻ"
 
-#: libnemo-private/nemo-dnd.c:874
+#: libnemo-private/nemo-dnd.c:887
 msgid "_Copy Here"
 msgstr "ወደ እዚህ _ኮፒ ማድረጊያ"
 
-#: libnemo-private/nemo-dnd.c:879
+#: libnemo-private/nemo-dnd.c:892
 msgid "_Link Here"
 msgstr "ወደ እዚህ _ማገናኛ"
 
-#: libnemo-private/nemo-dnd.c:886
+#: libnemo-private/nemo-dnd.c:899
+#: action-layout-editor/nemo-action-layout-editor.glade:269
 msgid "Cancel"
 msgstr "መሰረዣ"
 
@@ -3906,8 +3901,8 @@ msgstr "%ሰ:%ደ"
 
 #. Translators: Time in 12h format
 #: libnemo-private/nemo-file.c:5175
-msgid "%l:%M %p"
-msgstr "%l:%M %p"
+msgid "%-l:%M %p"
+msgstr ""
 
 #. Translators: this is the word Yesterday followed by
 #. * a time in 24h format. i.e. "Yesterday 23:04"
@@ -3920,8 +3915,8 @@ msgstr "ትናንትና %H:%M"
 #. * a time in 12h format. i.e. "Yesterday 9:04 PM"
 #: libnemo-private/nemo-file.c:5193
 #, no-c-format
-msgid "Yesterday %l:%M %p"
-msgstr "ትናንት %l:%M %p"
+msgid "Yesterday %-l:%M %p"
+msgstr ""
 
 #: libnemo-private/nemo-file.c:5201
 #, no-c-format
@@ -3939,8 +3934,8 @@ msgstr "%A %H:%M"
 #. * a time in 12h format. i.e. "Monday 9:04 PM"
 #: libnemo-private/nemo-file.c:5212
 #, no-c-format
-msgid "%A %l:%M %p"
-msgstr "%A %l:%M %p"
+msgid "%A %-l:%M %p"
+msgstr ""
 
 #. Translators: this is the day of the month followed
 #. * by the abbreviated month name i.e. "3 February"
@@ -3962,8 +3957,8 @@ msgstr "%-e %B %H:%M"
 #. * 12h format i.e. "3 February 9:04"
 #: libnemo-private/nemo-file.c:5233
 #, no-c-format
-msgid "%-e %B %l:%M %p"
-msgstr "%-e %B %l:%M %p"
+msgid "%-e %B %-l:%M %p"
+msgstr ""
 
 #. Translators: this is the day of the month followed by the abbreviated
 #. * month name followed by the year i.e. "3 Feb 2015"
@@ -3985,8 +3980,8 @@ msgstr "%-e %b %Y %H:%M"
 #. * by a time in 12h format i.e. "3 Feb 2015 9:04 PM"
 #: libnemo-private/nemo-file.c:5254
 #, no-c-format
-msgid "%-e %b %Y %l:%M %p"
-msgstr "%-e %b %Y %l:%M %p"
+msgid "%-e %b %Y %-l:%M %p"
+msgstr ""
 
 #: libnemo-private/nemo-file.c:5264
 #, no-c-format
@@ -4040,6 +4035,7 @@ msgid "? bytes"
 msgstr "? ባይትስ"
 
 #: libnemo-private/nemo-file.c:6936
+#: action-layout-editor/nemo_action_layout_editor.py:95
 msgid "Unknown"
 msgstr "ያልታወቀ"
 
@@ -4110,49 +4106,49 @@ msgstr "አገናኝ"
 msgid "link (broken)"
 msgstr "አገናኙ (አይሰራም)"
 
-#: libnemo-private/nemo-file.c:8088
+#: libnemo-private/nemo-file.c:8087
 #, c-format
 msgid "Name: %s"
 msgstr "ስም: %s"
 
-#: libnemo-private/nemo-file.c:8095
+#: libnemo-private/nemo-file.c:8094
 #, c-format
 msgid "Type: %s"
 msgstr "አይነት: %s"
 
-#: libnemo-private/nemo-file.c:8105
+#: libnemo-private/nemo-file.c:8104
 #, c-format
 msgid "%s item"
 msgid_plural "%s items"
 msgstr[0] "%s እቃው"
 msgstr[1] "%s እቃዎቹ"
 
-#: libnemo-private/nemo-file.c:8107
+#: libnemo-private/nemo-file.c:8106
 #, c-format
 msgid "Contains: %s"
 msgstr "የያዛቸው: %s"
 
-#: libnemo-private/nemo-file.c:8117
+#: libnemo-private/nemo-file.c:8116
 #, c-format
 msgid "Size: %s"
 msgstr "መጠኑ: %s"
 
-#: libnemo-private/nemo-file.c:8125
+#: libnemo-private/nemo-file.c:8124
 #, c-format
 msgid "Accessed: %s"
 msgstr "የ ተደረሰበት: %s"
 
-#: libnemo-private/nemo-file.c:8133
+#: libnemo-private/nemo-file.c:8132
 #, c-format
 msgid "Modified: %s"
 msgstr "የተሻሻለው: %s"
 
-#: libnemo-private/nemo-file.c:8141
+#: libnemo-private/nemo-file.c:8140
 #, c-format
 msgid "Created: %s"
 msgstr "የተፈጠረው: %s"
 
-#: libnemo-private/nemo-file.c:8151
+#: libnemo-private/nemo-file.c:8150
 #, c-format
 msgid "Location: %s"
 msgstr "አካባቢው: %s"
@@ -5595,7 +5591,7 @@ msgstr "ሁሉንም መምረጫ"
 msgid "Input Methods"
 msgstr "የማስገቢያ ዘዴዎች"
 
-#: eel/eel-gtk-extensions.c:355
+#: eel/eel-gtk-extensions.c:358
 msgid "Show more _details"
 msgstr "ተጨማሪ _ዝርዝር ማሳያ"
 
@@ -6704,4 +6700,78 @@ msgstr ""
 #: gresources/nemo-shortcuts.ui:419
 msgctxt "shortcut window"
 msgid "Show item properties"
+msgstr ""
+
+#: action-layout-editor/nemo-action-layout-editor.glade:19
+msgid "Customize the layout and appearance of your actions in Nemo's menus"
+msgstr ""
+
+#: action-layout-editor/nemo-action-layout-editor.glade:82
+msgid "Add a submenu or a separator"
+msgstr ""
+
+#: action-layout-editor/nemo-action-layout-editor.glade:140
+msgid "Icon"
+msgstr ""
+
+#: action-layout-editor/nemo-action-layout-editor.glade:154
+msgid "Label"
+msgstr ""
+
+#: action-layout-editor/nemo-action-layout-editor.glade:160
+#: action-layout-editor/nemo-action-layout-editor.glade:161
+msgid "Restore the original label"
+msgstr ""
+
+#: action-layout-editor/nemo-action-layout-editor.glade:188
+msgid "Enabled"
+msgstr ""
+
+#: action-layout-editor/nemo-action-layout-editor.glade:252
+msgid "Save"
+msgstr ""
+
+#: action-layout-editor/nemo-action-layout-editor.glade:283
+msgid "Restore default layout"
+msgstr ""
+
+#: action-layout-editor/nemo-action-layout-editor.glade:323
+msgid "Nemo Actions Layout Editor"
+msgstr ""
+
+#: action-layout-editor/nemo_action_layout_editor.py:150
+msgid "No icon"
+msgstr ""
+
+#: action-layout-editor/nemo_action_layout_editor.py:155
+msgid "Use the original icon (if there is one)"
+msgstr ""
+
+#: action-layout-editor/nemo_action_layout_editor.py:159
+msgid "Choose..."
+msgstr ""
+
+#: action-layout-editor/nemo_action_layout_editor.py:170
+#: action-layout-editor/nemo_action_layout_editor.py:613
+msgid "New submenu"
+msgstr ""
+
+#: action-layout-editor/nemo_action_layout_editor.py:174
+msgid "New separator"
+msgstr ""
+
+#: action-layout-editor/nemo_action_layout_editor.py:1014
+msgid "The layout has changed. Save it?"
+msgstr ""
+
+#: action-layout-editor/nemo_action_layout_editor.py:1017
+msgid "Unsaved changes"
+msgstr ""
+
+#: action-layout-editor/nemo_action_layout_editor.py:1041
+msgid "Open user actions folder"
+msgstr ""
+
+#: action-layout-editor/nemo_action_layout_editor.py:1045
+msgid "Quit"
 msgstr ""
