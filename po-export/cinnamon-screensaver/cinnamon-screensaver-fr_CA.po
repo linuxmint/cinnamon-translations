@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2022-12-02 21:29+0000\n"
-"PO-Revision-Date: 2022-12-03 23:52+0000\n"
-"Last-Translator: guwrt <guwrt77@gmail.com>\n"
+"PO-Revision-Date: 2024-12-30 19:27+0000\n"
+"Last-Translator: AO <Unknown>\n"
 "Language-Team: French (Canada) <fr_CA@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2024-12-05 10:15+0000\n"
-"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+"X-Launchpad-Export-Date: 2025-01-06 11:56+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 
 #: src/cinnamon-screensaver-command.py:41
 msgid "Causes the screensaver to exit gracefully"
-msgstr "Entraîne une fermeture gracieuse de l’économiseur d’écran"
+msgstr "Demande à l’économiseur d’écran de se fermer proprement"
 
 #: src/cinnamon-screensaver-command.py:43
 msgid "Query the state of the screensaver"
@@ -32,17 +32,16 @@ msgstr "Obtenir la durée d’activité de l’économiseur d'écran"
 
 #: src/cinnamon-screensaver-command.py:47
 msgid "Tells the running screensaver process to lock the screen immediately"
-msgstr ""
-"Indique à l’économiseur d’écran en cours de verrouiller l’écran immédiatement"
+msgstr "Demande à l’économiseur d’écran de verrouiller l’écran immédiatement"
 
 #: src/cinnamon-screensaver-command.py:49
 msgid "Turn the screensaver on (blank the screen)"
-msgstr "Activer l'économiseur d'écran (éteindre l'écran)"
+msgstr "Activer l'économiseur d'écran (cache l’écran)"
 
 #: src/cinnamon-screensaver-command.py:51
 msgid "If the screensaver is active then deactivate it (un-blank the screen)"
 msgstr ""
-"Si l’économiseur d’écran est actif, alors le désactiver (allume l'écran)"
+"Si l’économiseur d’écran est actif, le désactiver (réaffiche l’écran)"
 
 #: src/cinnamon-screensaver-command.py:53
 msgid "Version of this application"
@@ -62,18 +61,18 @@ msgstr "L'économiseur d'écran est inactif\n"
 
 #: src/cinnamon-screensaver-command.py:111
 msgid "The screensaver is not currently active.\n"
-msgstr "L'économiseur d'écran n'est actuellement pas actif.\n"
+msgstr "L'économiseur d'écran est inactif présentement.\n"
 
 #: src/cinnamon-screensaver-command.py:113
 #, python-format
 msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
-msgstr[0] "L'économiseur d'écran a été actif pendant %d seconde.\n"
-msgstr[1] "L'économiseur d'écran a été actif pendant %d secondes.\n"
+msgstr[0] "Durée d’activité de l’économiseur d’écran : %d seconde.\n"
+msgstr[1] "Durée d’activité de l’économiseur d’écran : %d secondes.\n"
 
 #: src/manager.py:315
 msgid "Cinnamon Screensaver has experienced an error"
-msgstr "L'économiseur d'écran de Cinnamon a rencontré une erreur"
+msgstr "Une erreur est survenue dans l’économiseur d’écran de Cinnamon"
 
 #: src/manager.py:317
 msgid ""
@@ -81,14 +80,13 @@ msgid ""
 "report this issue and try to describe any actions you may have performed "
 "prior to this occurring."
 msgstr ""
-"Le processus 'cs-backup-locker' s'est terminé avant la fin de "
-"l'économisateur d'écran. Veuillez rapporter ce problème et détaillez les "
-"circonstances et les actions que vous avez prises avant que le problème ne "
-"se produise."
+"Le processus 'cs-backup-locker' s’est arrêté avant que l’économiseur d’écran "
+"ne soit inactif. Signalez ce problème en décrivant précisément les actions "
+"que vous avez effectuées avant qu’il se produise."
 
 #: src/passwordEntry.py:23 src/unlock.py:216
 msgid "Please enter your password..."
-msgstr "Veuillez saisir votre mot de passe…"
+msgstr "Saisissez votre mot de passe…"
 
 #: src/unlock.py:96
 msgid "Unlock"
@@ -104,52 +102,47 @@ msgstr "Le mot de passe est erroné"
 
 #: src/unlock.py:206
 msgid "Checking..."
-msgstr "Vérification…"
+msgstr ""
 
 #: src/unlock.py:250
 msgid "You have the Caps Lock key on."
-msgstr "La touche Verr. Maj. est activée."
+msgstr "Les majuscules sont verrouillées."
 
 #. This is the first line of text for the backup-locker, explaining how to switch to tty
 #. and run 'cinnamon-unlock-desktop' command.  This appears if the screensaver crashes.
 #: backup-locker/cs-backup-locker.c:255
 msgid "Something went wrong with the screensaver."
-msgstr "Quelque chose n'a pas bien fonctionné avec l'économiseur d'écran"
+msgstr "Une erreur est survenue dans l’économiseur d’écran."
 
 #. (continued) This is a subtitle
 #: backup-locker/cs-backup-locker.c:265
 msgid "We'll help you get your desktop back"
-msgstr "Nous vous aidrons pour récupérer votre bureau"
+msgstr "Voici comment récupérer votre session"
 
 #. (new section) Bulleted list of steps to take to unlock the desktop;
 #: backup-locker/cs-backup-locker.c:276
 #, c-format
 msgid "Switch to a console using <Control-Alt-F%u>."
-msgstr "Basculer vers la console en utilisant <Control-Alt-F%u>."
+msgstr "Passez en mode console avec <Control-Alt-F%u>."
 
 #. (list continued)
 #: backup-locker/cs-backup-locker.c:278
 msgid "Log in by typing your user name followed by your password."
 msgstr ""
-"Connectez vous en saisissant votre nom d'utilisateur suivi de votre mot de "
-"passe."
+"Connectez-vous en saisissant votre nom d’utilisateur et votre mot de passe."
 
 #. (list continued)
 #: backup-locker/cs-backup-locker.c:280
 msgid "At the prompt, type 'cinnamon-unlock-desktop' and press Enter."
-msgstr ""
-"A l'invite, saisissez 'cinnamon-unlock-desktop' puis appuyez sur la touche "
-"Entré."
+msgstr "Tapez la commande 'cinnamon-unlock-desktop' et appuyez sur Entrée."
 
 #. (list continued)
 #: backup-locker/cs-backup-locker.c:282
 #, c-format
 msgid "Switch back to your unlocked desktop using <Control-Alt-F%u>."
-msgstr "Revenir à votre bureau déverrouillé en utilisant <Control-Alt-F%u>."
+msgstr "Revenez en mode session avec <Control-Alt-F%u>."
 
 #. (end section) Final words after the list of steps
 #: backup-locker/cs-backup-locker.c:287
 msgid "If you can reproduce this behavior, please file a report here:"
-msgstr ""
-"Si vous pouvez reproduire ce comportement, veuillez, s'il vous plaît, "
-"produire un rapport ici:"
+msgstr "Si ce problème persiste, signalez ce bogue ici :"
