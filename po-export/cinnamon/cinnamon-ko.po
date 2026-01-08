@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2025-12-12 12:06+0000\n"
-"PO-Revision-Date: 2025-12-12 11:58+0000\n"
+"POT-Creation-Date: 2026-01-07 21:27+0000\n"
+"PO-Revision-Date: 2026-01-07 22:01+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2025-12-12 13:27+0000\n"
-"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
+"X-Launchpad-Export-Date: 2026-01-08 15:36+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
 
 #: src/cinnamon-app.c:374 src/cinnamon-app.c:383 js/ui/endSessionDialog.js:290
 #: js/ui/notificationDaemon.js:607
@@ -33,8 +33,8 @@ msgstr "'%s'의 실행에 실패했습니다"
 
 #: src/cinnamon-keyring-prompt.c:765
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:324
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:451
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:452
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:461
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:462
 msgid "Passwords do not match"
 msgstr "비밀번호가 다릅니다"
 
@@ -56,7 +56,8 @@ msgid "File System"
 msgstr "파일 시스템"
 
 #: src/cinnamon-util.c:259
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:301
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2577
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:302
 #: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:446
 #: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:860
 #: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingTable.py:225
@@ -68,7 +69,7 @@ msgstr "검색"
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
-#: src/main.c:279
+#: src/main.c:284
 msgid "Print version"
 msgstr "버전 표시"
 
@@ -88,21 +89,23 @@ msgstr "미리보기"
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:385
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:451
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:656
-#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:331
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:762
+#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:158
+#: files/usr/share/cinnamon/cinnamon-settings/bin/XkbSettings.py:224
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:768
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:771
 msgid "Cancel"
 msgstr "취소"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:52
-#: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:207
+#: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:221
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.ui:59
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.ui:163
 #: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:54
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:385
+#: files/usr/share/cinnamon/cinnamon-settings/bin/XkbSettings.py:176
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py:55
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py:79
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:757
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:763
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:425
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:775
 msgid "Add"
@@ -110,26 +113,31 @@ msgstr "추가"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:78
 msgid "Type to search layouts"
-msgstr "입력해서 레이아웃을 확인하시면 됩니다"
+msgstr "글자를 입력해서 자판을 확인해보세요."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:151
+#: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:130
+msgid "Include less-common layouts"
+msgstr "흔치 않은 레이아웃 포함"
+
+#: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:165
 msgid "Enabled layouts"
-msgstr "사용하는 레이아웃"
+msgstr "사용하는 입력 방식"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:220
+#: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:234
 #: js/ui/panel.js:1746
 #: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:62
+#: files/usr/share/cinnamon/cinnamon-settings/bin/XkbSettings.py:181
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py:56
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_desklets.py:80
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:438
 msgid "Remove"
 msgstr "제거"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:273
-msgid "View layout"
-msgstr "레이아웃 보기"
-
 #: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:287
+msgid "View layout"
+msgstr "배열 보기"
+
+#: files/usr/share/cinnamon/cinnamon-settings/bin/input-sources-list.ui:301
 #: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:306
 msgid "Configure"
 msgstr "설정"
@@ -183,19 +191,19 @@ msgstr "런처 속성"
 #: files/usr/share/cinnamon/cinnamon-desktop-editor/launcher-editor.ui:97
 #: files/usr/share/cinnamon/cinnamon-desktop-editor/directory-editor.ui:97
 #: files/usr/share/cinnamon/desklets/launcher@cinnamon.org/editorDialog.ui:104
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:766
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:772
 msgid "Name:"
 msgstr "이름:"
 
 #: files/usr/share/cinnamon/cinnamon-desktop-editor/launcher-editor.ui:112
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:767
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:773
 msgid "Command:"
 msgstr "명령어:"
 
 #: files/usr/share/cinnamon/cinnamon-desktop-editor/launcher-editor.ui:127
 #: files/usr/share/cinnamon/cinnamon-desktop-editor/directory-editor.ui:114
 msgid "Comment:"
-msgstr "코멘트:"
+msgstr "설명:"
 
 #: files/usr/share/cinnamon/cinnamon-desktop-editor/launcher-editor.ui:171
 msgid "Browse"
@@ -229,7 +237,7 @@ msgstr "기본 메뉴 레이아웃으로 되돌리기"
 #: js/ui/workspace.js:1169
 #: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:341
 #: files/usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js:1031
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:482
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:483
 msgid "Close"
 msgstr "닫기"
 
@@ -262,7 +270,7 @@ msgid "Delete"
 msgstr "삭제"
 
 #: files/usr/share/cinnamon/cinnamon-menu-editor/cinnamon-menu-editor.ui:278
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:491
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:534
 msgid "Properties"
 msgstr "속성"
 
@@ -281,7 +289,7 @@ msgid "Add/Edit Launcher"
 msgstr "런처 추가/수정"
 
 #: files/usr/share/cinnamon/desklets/launcher@cinnamon.org/editorDialog.ui:87
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:505
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:506
 msgid "Type:"
 msgstr "종류:"
 
@@ -353,7 +361,7 @@ msgstr "정보..."
 msgid "Configure..."
 msgstr "설정..."
 
-#: js/ui/appletManager.js:452
+#: js/ui/appletManager.js:453
 msgid ""
 "This applet does not support panels of that type. This can cause visual "
 "glitches in the panel. Would you like to continue using it anyway, remove it "
@@ -362,24 +370,24 @@ msgstr ""
 "이 애플릿은 해당 유형의 패널을 지원하지 않습니다. 이로 인해 패널에 시각적 오류가 발생할 수 있습니다. 그래도 계속 사용하시겠습니까, "
 "패널에서 제거하시겠습니까, 아니면 다른 패널로 옮기시겠습니까?"
 
-#: js/ui/appletManager.js:461
+#: js/ui/appletManager.js:462
 msgid "Leave it"
 msgstr "그대로 두기"
 
-#: js/ui/appletManager.js:468
+#: js/ui/appletManager.js:469
 msgid "Remove it"
 msgstr "빼내기"
 
-#: js/ui/appletManager.js:475
+#: js/ui/appletManager.js:476
 msgid "Move to another panel"
 msgstr "다른 패널로 옮기기"
 
-#: js/ui/appletManager.js:534
+#: js/ui/appletManager.js:535
 msgid ""
 "A suitable panel could not be found. The applet has been removed instead."
 msgstr "알맞는 패널을 못 찾았습니다. 그래서 대신 애플릿을 뺐습니다."
 
-#: js/ui/appletManager.js:811
+#: js/ui/appletManager.js:812
 msgid ""
 "Certain applets do not allow multiple instances or were at their max number "
 "of instances so were not copied"
@@ -390,7 +398,7 @@ msgid "Select Audio Device"
 msgstr "오디오 장치 선택"
 
 #: js/ui/audioDeviceSelection.js:79
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1519
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1526
 msgid "Sound Settings"
 msgstr "소리설정"
 
@@ -405,7 +413,7 @@ msgid "Headset"
 msgstr "헤드셋"
 
 #: js/ui/audioDeviceSelection.js:90
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1083
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1084
 msgid "Microphone"
 msgstr "마이크"
 
@@ -457,7 +465,7 @@ msgid "Switch User"
 msgstr "사용자 전환"
 
 #: js/ui/endSessionDialog.js:142 js/ui/endSessionDialog.js:149
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2345
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2410
 msgid "Log Out"
 msgstr "로그 아웃"
 
@@ -485,7 +493,7 @@ msgid "Restart"
 msgstr "다시 시작"
 
 #: js/ui/endSessionDialog.js:185 js/ui/endSessionDialog.js:193
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2358
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2423
 msgid "Shut Down"
 msgstr "컴퓨터 끄기"
 
@@ -521,23 +529,23 @@ msgstr ""
 "\"%s\" 작업 공간을 정말로 지우시겠습니까?\n"
 "\n"
 
-#: js/ui/extension.js:522
+#: js/ui/extension.js:524
 msgid "Initializing"
 msgstr "초기화 중"
 
-#: js/ui/extension.js:524
+#: js/ui/extension.js:526
 msgid "Loaded"
 msgstr "불러옴"
 
-#: js/ui/extension.js:526
+#: js/ui/extension.js:528
 msgid "Error"
 msgstr "오류"
 
-#: js/ui/extension.js:528
+#: js/ui/extension.js:530
 msgid "Out of date"
 msgstr "오래 된 버전"
 
-#: js/ui/extension.js:530
+#: js/ui/extension.js:532
 msgid "Not compatible with Wayland"
 msgstr "웨이랜드와 호환되지 않습니다"
 
@@ -601,11 +609,11 @@ msgstr "개발자에게 연락해 주세요."
 msgid "Workspace"
 msgstr "작업 공간"
 
-#: js/ui/main.js:1619
+#: js/ui/main.js:1621
 msgid "Restarting Cinnamon..."
 msgstr "시나몬 다시 시작 중.."
 
-#: js/ui/messageTray.js:1106
+#: js/ui/messageTray.js:1109
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:85
 msgid "System Information"
 msgstr "시스템 정보"
@@ -803,9 +811,9 @@ msgstr ""
 #: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:72
 #: generate_additional_files.py:24
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:41
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:195
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:389
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:733
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:196
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:390
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:734
 msgid "System Settings"
 msgstr "시스템 설정"
 
@@ -841,12 +849,12 @@ msgstr "%s (%s)을(를) 정지시킬 수 없습니다."
 #: js/ui/placesManager.js:223
 #, javascript-format
 msgid "%s (%s) can be safely unplugged."
-msgstr "%s (%s)을(를) 안전하게 제거할 수 있습니다."
+msgstr "%s (%s)의 연결을 안전하게 끊었습니다."
 
 #: js/ui/placesManager.js:224
 #, javascript-format
 msgid "Device %s can be removed."
-msgstr "%s을(를) 제거할 수 있습니다."
+msgstr "%s를 꺼내셔도 좋습니다."
 
 #: js/ui/placesManager.js:226
 #, javascript-format
@@ -865,12 +873,12 @@ msgstr "%s (%s)을(를) 분리할 수 없습니다."
 #: js/ui/placesManager.js:249
 #, javascript-format
 msgid "Successfully unmounted %s (%s)"
-msgstr "%s (%s) 언마운트 했습니다"
+msgstr "%s (%s)의 연결이 해제되었습니다"
 
 #: js/ui/placesManager.js:287
 #, javascript-format
 msgid "Failed to unmount %s (%s)"
-msgstr "%s(%s)을(를) 마운트 해제하는데 실패했습니다."
+msgstr "%s(%s)의 연결을 해제하지 못했습니다"
 
 #: js/ui/polkitAuthenticationAgent.js:54
 #, javascript-format
@@ -1255,7 +1263,7 @@ msgstr "작업 공간 보이기"
 #. menu@cinnamon.org->settings-schema.json->show-favorites->description
 #. favorites@cinnamon.org->metadata.json->name
 #: files/usr/share/cinnamon/applets/favorites@cinnamon.org/applet.js:46
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2232
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2284
 msgid "Favorites"
 msgstr "즐겨찾기"
 
@@ -1289,7 +1297,7 @@ msgid "Recent"
 msgstr "최근 사용 기록"
 
 #: files/usr/share/cinnamon/applets/grouped-window-list@cinnamon.org/menus.js:209
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:468
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:511
 #: files/usr/share/cinnamon/applets/panel-launchers@cinnamon.org/applet.js:49
 msgid "Run with dedicated GPU"
 msgstr "별도의 GPU를 사용하여 실행"
@@ -1386,25 +1394,25 @@ msgstr "문자표 보이기"
 msgid "Manage keyboard layouts"
 msgstr "키보드 레이아웃 관리"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:390
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:481
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:414
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:524
 msgid "Remove from favorites"
 msgstr "즐겨찾기에서 제거"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:397
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:484
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:421
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:527
 msgid "Add to favorites"
 msgstr "즐겨찾기에 추가"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:472
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:515
 msgid "Add to panel"
 msgstr "패널에 추가"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:476
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:519
 msgid "Add to desktop"
 msgstr "바탕화면에 추가"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:496
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:539
 #: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:912
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_actions.py:84
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_applets.py:57
@@ -1413,8 +1421,8 @@ msgstr "바탕화면에 추가"
 msgid "Uninstall"
 msgstr "프로그램 제거"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:750
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:791
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:782
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:823
 msgid "This file is no longer available"
 msgstr "이 파일은 더 이상 이용할 수 없습니다."
 
@@ -1422,56 +1430,66 @@ msgstr "이 파일은 더 이상 이용할 수 없습니다."
 #. menu@cinnamon.org->settings-schema.json->behavior-menu->title
 #. sound@cinnamon.org->settings-schema.json->section1->description
 #. network@cinnamon.org->settings-schema.json->section1->description
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1092
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1131
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_windows.py:57
 msgid "Menu"
 msgstr "메뉴"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1097
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:1136
 msgid "Edit menu"
 msgstr "메뉴 편집"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2169
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2221
 msgid "Recent Files"
 msgstr "최근 사용 기록"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2185
-#: files/usr/share/cinnamon/applets/recent@cinnamon.org/applet.js:121
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2237
+#: files/usr/share/cinnamon/applets/recent@cinnamon.org/applet.js:125
 msgid "Clear list"
 msgstr "사용 기록 지우기"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2186
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2238
 msgid "Clear all recent documents"
 msgstr "최근 사용한 문서 기록 지우기"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2202
-#: files/usr/share/cinnamon/applets/recent@cinnamon.org/applet.js:126
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2254
+#: files/usr/share/cinnamon/applets/recent@cinnamon.org/applet.js:130
 msgid "No recent documents"
 msgstr "최근 사용한 기록 없음"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2269
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2302
+msgid "No favorite documents"
+msgstr "즐겨찾는 문서 없음"
+
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2334
 msgid "All Applications"
 msgstr "모든 애플리케이션"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2319
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2384
 #: files/usr/share/cinnamon/applets/user@cinnamon.org/applet.js:80
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:610
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:615
 msgid "Lock Screen"
 msgstr "화면 잠금"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2320
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2385
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:11
 msgid "Lock the screen"
 msgstr "화면 잠그기"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2346
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2411
 msgid "Leave the session"
 msgstr "세션에서 나가기"
 
-#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2359
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2424
 msgid "Shut down the computer"
 msgstr "시스템을 종료합니다."
+
+#: files/usr/share/cinnamon/applets/menu@cinnamon.org/applet.js:2502
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:38
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:52
+msgid "Account details"
+msgstr "사용자 정보"
 
 #: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:88
 msgid "<unknown>"
@@ -1557,8 +1575,8 @@ msgid "Modem"
 msgstr "모뎀"
 
 #: files/usr/share/cinnamon/applets/network@cinnamon.org/applet.js:714
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:98
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:99
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:100
 msgid "Bluetooth"
 msgstr "블루투스"
 
@@ -1836,7 +1854,7 @@ msgstr "마우스"
 #: files/usr/share/cinnamon/applets/power@cinnamon.org/applet.js:63
 #: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingTable.py:70
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:147
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:34
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:35
 msgid "Keyboard"
 msgstr "키보드"
 
@@ -2040,7 +2058,7 @@ msgid "Send to front"
 msgstr "앞으로 보내기"
 
 #. recent@cinnamon.org->metadata.json->name
-#: files/usr/share/cinnamon/applets/recent@cinnamon.org/applet.js:35
+#: files/usr/share/cinnamon/applets/recent@cinnamon.org/applet.js:39
 msgid "Recent documents"
 msgstr "최근 문서"
 
@@ -2069,7 +2087,7 @@ msgstr "스케일"
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_display.py:48
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_gestures.py:244
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_screensaver.py:73
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:268
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:270
 msgid "Settings"
 msgstr "설정"
 
@@ -2144,8 +2162,8 @@ msgid "Stopped"
 msgstr "정지됨"
 
 #: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:97
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1374
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1513
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1381
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1520
 msgid "Volume"
 msgstr "음량"
 
@@ -2153,7 +2171,7 @@ msgstr "음량"
 #: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:740
 #: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:743
 #: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:746
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1381
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1388
 msgid "Unknown Artist"
 msgstr "알 수 없는 아티스트"
 
@@ -2164,7 +2182,7 @@ msgstr "알 수 없는 앨범"
 
 #: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:572
 #: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:758
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1384
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1391
 msgid "Unknown Title"
 msgstr "알 수 없는 제목"
 
@@ -2223,35 +2241,35 @@ msgstr "모두 반복"
 msgid "Shuffle"
 msgstr "섞기"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1064
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1065
 msgid "Mute output"
 msgstr "음소거"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1065
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1066
 msgid "Mute input"
 msgstr "입력음 소거"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1075
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1076
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_sound.py:614
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_sound.py:620
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:910
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:249
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:251
 msgid "Applications"
 msgstr "애플리케이션"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1076
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1077
 msgid "Output device"
 msgstr "출력 장치"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1085
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1086
 msgid "Input device"
 msgstr "입력 장치"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1502
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1509
 msgid "Launch player"
 msgstr "플레이어 실행"
 
-#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1507
+#: files/usr/share/cinnamon/applets/sound@cinnamon.org/applet.js:1514
 msgid "Choose player controls"
 msgstr "플레이어 컨트롤 선택하기"
 
@@ -2362,7 +2380,7 @@ msgid "Control Center"
 msgstr "제어판"
 
 #: generate_additional_files.py:37
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:97
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:98
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:472
 msgid "Users and Groups"
 msgstr "사용자와 그룹"
@@ -2497,106 +2515,114 @@ msgid "info, usb, pci, gpu, bios, report, crash, system"
 msgstr "정보, USB, PCI, GPU, BIOS, 리포트, 충돌, 시스템"
 
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:86
+msgid "System Administration"
+msgstr "시스템 관리"
+
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:86
+msgid "adminitration, grub, boot, system"
+msgstr "관리, grub, boot, 시스템"
+
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:87
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:88
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:89
 msgid "Login Window"
 msgstr "로그인 창"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:86
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:87
 msgid "login, lightdm, mdm, gdm, manager, user, password, startup, switch"
 msgstr "로그인, lightdm, mdm, gdm, 매니저, 사용자, 비밀번호, 시작, 전환"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:87
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:88
 msgid "login, lightdm, manager, settings, editor"
 msgstr "login, lightdm, 매니저, 설정, 편집기"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:88
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:89
 msgid "login, gdm, manager, user, startup, switch"
 msgstr "login, gdm, manager, user, startup, switch"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:89
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:90
 msgid "Driver Manager"
 msgstr "드라이버 매니저"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:89
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:90
 msgid ""
 "video, driver, wifi, card, hardware, proprietary, nvidia, radeon, nouveau, "
 "fglrx"
 msgstr "비디오, 드라이버, 와이파이, 카드, 하드웨어, 독점, nVIDIA, RADEON, NOUVEAU, FGLRX"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:90
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:91
 msgid "Nvidia Settings"
 msgstr "Nvidia 설정"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:90
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:91
 msgid "video, driver, proprietary, nvidia, settings"
 msgstr "비디오, 드라이버, 독점, nvidia, 설정"
 
 #. Label                  Executable                  Icon
 #. Category  Keywords for filter
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:91
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:107
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:92
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:108
 msgid "Software Sources"
 msgstr "소프트웨어 소스"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:91
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:92
 msgid "ppa, repository, package, source, download"
 msgstr "PPA, 저장소, 패키지, 소스, 다운로드"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:92
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:93
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:94
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:95
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:96
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:108
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:97
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:109
 msgid "Package Management"
 msgstr "패키지 관리"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:92
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:93
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:94
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:95
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:96
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:108
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:97
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:109
 msgid "update, install, repository, package, source, download"
 msgstr "업데이트, 설치, 저장소, 패키지, 소스, 다운로드"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:97
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:98
 msgid "user, users, account, accounts, group, groups, password"
 msgstr "사용자, 사용자, 계정, 계정, 그룹, 그룹, 비밀번호"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:98
 #: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:99
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:100
 msgid "bluetooth, dongle, transfer, mobile"
 msgstr "블루투스, 동글, 옮기기, 모바일"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:100
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:101
 msgid "Manage Services and Units"
 msgstr "서비스와 유닛 관리"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:100
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:101
 msgid "systemd, units, services, systemctl, init"
 msgstr "systemd, units, services, systemctl, init"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:101
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:102
 msgid "Disks"
 msgstr "디스크"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:101
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:102
 msgid ""
 "disks, manage, hardware, management, hard, hdd, pendrive, format, erase, "
 "test, create, iso, ISO, disk, image"
 msgstr "디스크, 관리, 하드웨어, 하드, hdd, 펜드라이브, 포멧, 지우기, 테스트, 생성, ISO, 디스크, 이미지"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:102
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:103
 msgid "Online Accounts"
 msgstr "온라인 계정"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:102
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:103
 msgid "google, microsoft, nextcloud, owncloud"
 msgstr "google, microsoft, nextcloud, owncloud"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:107
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:108
 msgid ""
 "ppa, repository, package, source, download, video, driver, wifi, card, "
 "hardware, proprietary, nvidia, radeon, nouveau, fglrx"
@@ -2604,7 +2630,7 @@ msgstr ""
 "ppa, repository, package, source, download, video, driver, wifi, card, "
 "hardware, proprietary, nvidia, radeon, nouveau, fglrx"
 
-#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:294
+#: files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py:295
 msgid "Back to all settings"
 msgstr "전체 설정으로 되돌아가기"
 
@@ -2656,27 +2682,27 @@ msgid "Change"
 msgstr "바꾸기"
 
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:328
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:457
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:467
 msgid "Too short"
 msgstr "너무 짧음"
 
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:331
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:460
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:470
 msgid "Weak"
 msgstr "취약함"
 
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:334
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:463
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:473
 msgid "Fair"
 msgstr "적당함"
 
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:337
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:466
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:476
 msgid "Good"
 msgstr "좋음"
 
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:340
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:469
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:479
 msgid "Strong"
 msgstr "강력함"
 
@@ -2747,8 +2773,8 @@ msgstr "사진"
 #. so object is the same index for
 #. settings-example@cinnamon.org->settings-schema.json->tree->columns->title
 #: files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py:591
-#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:176
-#: files/usr/share/cinnamon/cinnamon-settings/bin/AddKeyboardLayout.py:73
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:179
+#: files/usr/share/cinnamon/cinnamon-settings/bin/AddKeyboardLayout.py:79
 #: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:849
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:792
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:83
@@ -2879,19 +2905,19 @@ msgstr "모든 작업 취소"
 msgid "Random"
 msgstr "순서 없이"
 
-#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:189
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:192
 msgid "Show"
 msgstr "보이기"
 
-#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:197
+#: files/usr/share/cinnamon/cinnamon-menu-editor/cme/MainWindow.py:200
 msgid "Item"
 msgstr "항목"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/AddKeyboardLayout.py:81
+#: files/usr/share/cinnamon/cinnamon-settings/bin/AddKeyboardLayout.py:87
 msgid "Input method"
 msgstr "한글 입력"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/AddKeyboardLayout.py:194
+#: files/usr/share/cinnamon/cinnamon-settings/bin/AddKeyboardLayout.py:211
 msgid "IBus"
 msgstr "IBus"
 
@@ -3045,7 +3071,7 @@ msgid "Install"
 msgstr "설치"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/ExtensionCore.py:796
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:755
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:761
 msgid "Update"
 msgstr "업데이트"
 
@@ -3101,55 +3127,55 @@ msgstr "옵션"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:61
 msgid "Remember the last layout used for each window"
-msgstr "각 창에 쓰인 마지막 레이아웃 기억하기"
+msgstr "각 창에 쓰인 마지막 조합 기억하기"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:67
 msgid "Use a country flag, if available, to represent keyboard layouts"
-msgstr "가능하다면 국기로 키보드 레이아웃을 표현해 주세요"
+msgstr "가능하다면 국기로 키보드를 표현해 주세요"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:72
 msgid "Use the layout name, not the group name, to represent a layout"
-msgstr "레이아웃을 표현할 때는 그룹 이름이 아닌 레이아웃 이름으로 해주세요."
+msgstr "키보드를 표현할 때는 그룹 이름이 아닌 키보드 배열 이름으로 해주세요"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:77
 msgid "Use upper-case when using text to represent a layout"
-msgstr "레이아웃을 표현하는 문자는 대문자로 해주세요"
+msgstr "키보드를 표현하는 문자는 대문자로 해주세요"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:82
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:93
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:139
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:94
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:140
 msgid "Shortcuts"
 msgstr "단축키"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:84
 #: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingTable.py:72
 msgid "Switch to next layout"
-msgstr "다음 레이아웃으로 바꾸기"
+msgstr "다음 조합으로 바꾸기"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:90
 #: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingTable.py:73
 msgid "Switch to previous layout"
-msgstr "이전 레이아웃으로 바꾸기"
+msgstr "이전 조합으로 바꾸기"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:96
 #: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingTable.py:74
 msgid "Switch to first layout"
-msgstr "첫 번째 레이아웃으로 바꾸기"
+msgstr "첫 번째 조합으로 바꾸기"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:102
 #: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingTable.py:75
 msgid "Switch to second layout"
-msgstr "두 번째 레이아웃으로 바꾸기"
+msgstr "두 번째 조합으로 바꾸기"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:108
 #: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingTable.py:76
 msgid "Switch to third layout"
-msgstr "세 번째 레이아웃으로 바꾸기"
+msgstr "세 번째 조합으로 바꾸기"
 
 #: files/usr/share/cinnamon/cinnamon-settings/bin/InputSources.py:114
 #: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingTable.py:77
 msgid "Switch to fourth layout"
-msgstr "네 번째 레이아웃으로 바꾸기"
+msgstr "네 번째 조합으로 바꾸기"
 
 #. grouped-window-list@cinnamon.org->settings-schema.json->generalPage->title
 #: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingTable.py:42
@@ -3808,31 +3834,29 @@ msgstr "이 키 조합은, <b>%(combination)s</b> 현재 여러 작업에 할당
 msgid "Choose the assignment you wish to keep. The others will be cleared."
 msgstr "유지하고 싶은 설정을 고르세요. 나머지는 지워집니다."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:146
+#. l10n constants - get them translated here so they use Cinnamon's gettext
+#. context
+#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:150
 msgid "Click to set a new accelerator key."
 msgstr "클릭을 하여 새 단축키를 설정합니다."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:147
+#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:151
 msgid "Press Escape or click again to cancel the operation."
 msgstr "ESC 키를 누르시거나 한 번 더 눌러서 취소하세요."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:148
+#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:152
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "현재 키 설정값을 초기화하시려면 백스페이스키를 누르세요."
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:183
+#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:153
 msgid "unassigned"
-msgstr "설정되지 않음"
+msgstr "미지정"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:227
+#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:154
 msgid "Pick an accelerator"
 msgstr "단축키를 선택하세요"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:332
-msgid "Continue"
-msgstr "계속"
-
-#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:336
+#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:155
 #, python-format
 msgid ""
 "\n"
@@ -3842,7 +3866,7 @@ msgstr ""
 "\n"
 "이 키 조합은 '<b>%s</b>' 키로 입력할 수 없게 되므로 사용해서는 안 됩니다. "
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:337
+#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:156
 msgid ""
 "Please try again using a modifier key such as Control, Alt or Super (Windows "
 "key).\n"
@@ -3851,30 +3875,34 @@ msgstr ""
 "Control, Alt 또는 Super(Windows 키)와 같은 보조 키를 사용해서 다시 설정해 보세요..\n"
 "\n"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:338
+#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:157
 msgid ""
 "Continue only if you are certain this is what you want, otherwise press "
 "cancel.\n"
 msgstr "명확히 설정하고자 하는 것이 맞는다면 계속하시고, 그렇지 않으면 취소를 누르세요.\n"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/SettingsWidgets.py:176
+#: files/usr/share/cinnamon/cinnamon-settings/bin/KeybindingWidgets.py:159
+msgid "Continue"
+msgstr "계속"
+
+#: files/usr/share/cinnamon/cinnamon-settings/bin/SettingsWidgets.py:179
 msgid "Checking dependencies"
 msgstr "의존성 확인 중"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/SettingsWidgets.py:177
+#: files/usr/share/cinnamon/cinnamon-settings/bin/SettingsWidgets.py:180
 #, python-format
 msgid "Please install: %s"
 msgstr "다음 항목을 설치해주세요 : %s"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/SettingsWidgets.py:376
+#: files/usr/share/cinnamon/cinnamon-settings/bin/SettingsWidgets.py:379
 msgid "_Cancel"
 msgstr "취소(_C)"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/SettingsWidgets.py:377
+#: files/usr/share/cinnamon/cinnamon-settings/bin/SettingsWidgets.py:380
 msgid "_Open"
 msgstr "열기(_O)"
 
-#: files/usr/share/cinnamon/cinnamon-settings/bin/SettingsWidgets.py:390
+#: files/usr/share/cinnamon/cinnamon-settings/bin/SettingsWidgets.py:393
 msgid "Sound files"
 msgstr "사운드 파일"
 
@@ -3955,6 +3983,16 @@ msgstr "선택한 항목 아래로 내리기"
 #: files/usr/share/cinnamon/cinnamon-settings/bin/TreeListWidgets.py:280
 msgid "Edit entry"
 msgstr "항목 편집하기"
+
+#: files/usr/share/cinnamon/cinnamon-settings/bin/XkbSettings.py:195
+#: files/usr/share/cinnamon/cinnamon-settings/bin/XkbSettings.py:380
+#: files/usr/share/cinnamon/cinnamon-settings/bin/XkbSettings.py:468
+msgid "Select an option"
+msgstr "옵션 선택"
+
+#: files/usr/share/cinnamon/cinnamon-settings/bin/XkbSettings.py:219
+msgid "Back"
+msgstr "뒤로"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:26
 msgid "Configure accessibility features"
@@ -4230,7 +4268,7 @@ msgstr "적용 지연 시간"
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:291
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:317
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:395
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:76
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:77
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_mouse.py:75
 msgid "Short"
 msgstr "짧게"
@@ -4238,7 +4276,7 @@ msgstr "짧게"
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:291
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:317
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_accessibility.py:395
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:76
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:77
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_mouse.py:75
 msgid "Long"
 msgstr "길게"
@@ -4499,70 +4537,118 @@ msgstr "이미지를 순서 없이 실행하기"
 msgid "Picture aspect"
 msgstr "사진 모양"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:15
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:20
 msgid "Manage date and time settings"
 msgstr "날짜 및 시간 설정 관리"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:19
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:24
 msgid "time, date, calendar, format, network, sync"
 msgstr "시간, 날짜, 달력, 형식, 네트워크, 동기화"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:20
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:25
 msgid "Date & Time"
 msgstr "날짜 & 시간"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:29
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:34
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_screensaver.py:101
 msgid "Date and Time"
 msgstr "날짜와 시간"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:39
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:44
 msgid "Network time"
 msgstr "네트워크 시간"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:45
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:50
 msgid "Manually set date and time"
 msgstr "수동으로 시간 설정"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:53
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:58
 msgid "Format"
 msgstr "형식"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:54
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:59
 msgid "Use 24h clock"
 msgstr "24시간 형식 사용"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:55
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:60
 msgid "Display the date"
 msgstr "날짜 표시"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:56
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:61
 msgid "Display seconds"
 msgstr "초 표시"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:57
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:62
 msgid "Use locale default"
 msgstr "기본 로케일 값 사용"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:57
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:62
 msgid "Sunday"
 msgstr "일요일"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:57
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:62
 msgid "Monday"
 msgstr "월요일"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:58
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:63
 msgid "First day of week"
 msgstr "한 주 첫날"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:223
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:228
 msgid "Region"
 msgstr "지역"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:226
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:231
 msgid "City"
 msgstr "도시"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:250
+msgid "Africa"
+msgstr "아프리카"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:251
+msgid "America"
+msgstr "아메리카"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:252
+msgid "Antarctica"
+msgstr "남극"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:253
+msgid "Arctic"
+msgstr "북극"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:254
+msgid "Asia"
+msgstr "아시아"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:255
+msgid "Atlantic Ocean"
+msgstr "대서양"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:256
+msgid "Australia"
+msgstr "호주"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:257
+msgid "Canada"
+msgstr "캐나다"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:258
+msgid "Europe"
+msgstr "유럽"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:259
+msgid "Indian Ocean"
+msgstr "인도양"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:260
+msgid "Pacific Ocean"
+msgstr "태평양"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_calendar.py:261
+msgid "USA"
+msgstr "미국"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:42
 msgid "Internet"
@@ -4619,16 +4705,16 @@ msgid "Plain Text"
 msgstr "일반 텍스트"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:178
-msgid "CD audio"
-msgstr "CD 오디오"
+msgid "Audio CD"
+msgstr "오디오 CD"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:178
 msgid "Select an application for audio CDs"
 msgstr "오디오 CD에 사용할 애플리케이션을 선택하세요"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:179
-msgid "DVD video"
-msgstr "DVD 비디오"
+msgid "Video DVD"
+msgstr "비디오 DVD"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:179
 msgid "Select an application for video DVDs"
@@ -4660,32 +4746,32 @@ msgstr "소프트웨어 CD에 사용할 애플리케이션을 선택하세요"
 #. If the shared-mime-info translation works for your language,
 #. simply leave these untranslated.
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:190
-msgid "audio DVD"
+msgid "Audio DVD"
 msgstr "오디오 DVD"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:191
-msgid "blank Blu-ray disc"
-msgstr "빈 Blu-ray 디스크"
+msgid "Blank Blu-ray disc"
+msgstr "블루레이 빈 디스크"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:192
-msgid "blank CD disc"
-msgstr "빈 CD 디스크"
+msgid "Blank CD disc"
+msgstr "CD 빈 디스크"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:193
-msgid "blank DVD disc"
-msgstr "빈 DVD 디스크"
+msgid "Blank DVD disc"
+msgstr "DVD 빈 디스크"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:194
-msgid "blank HD DVD disc"
-msgstr "빈 HD DVD 디스크"
+msgid "Blank HD DVD disc"
+msgstr "HD DVD 디스크"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:195
 msgid "Blu-ray video disc"
 msgstr "Blu-ray 비디오 디스크"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:196
-msgid "e-book reader"
-msgstr "전자책 리더"
+msgid "E-book reader"
+msgstr "E-book 리더"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:197
 msgid "HD DVD video disc"
@@ -4707,20 +4793,24 @@ msgstr "비디오 CD"
 msgid "Windows software"
 msgstr "Windows 소프트웨어"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:352
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:203
+msgid "OSTree Software Updates"
+msgstr "OSTree 소프트웨어 엡데이트"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:353
 msgid "Command-line option for your terminal to execute a passed-in command."
 msgstr "터미널을 위해 전달된 명령을 실행하기 위한 명령줄 옵션입니다."
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:416
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:417
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:15
 msgid "Ask what to do"
 msgstr "작업 내용 확인하기"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:418
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:419
 msgid "Open folder"
 msgstr "폴더 열기"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:420
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:421
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:16
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:611
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_power.py:620
@@ -4728,11 +4818,11 @@ msgstr "폴더 열기"
 msgid "Do nothing"
 msgstr "아무것도 하지 않기"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:478
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:479
 msgid "Other Media"
 msgstr "다른 미디어 장비"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:508
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:509
 msgid "Select how other media should be handled"
 msgstr "기타 미디어를 어떻게 처리할지 고르십시오"
 
@@ -4767,7 +4857,7 @@ msgstr "터미널"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:641
 msgid "Arguments"
-msgstr "인자"
+msgstr "아규먼트"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:662
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_default.py:669
@@ -4859,7 +4949,7 @@ msgstr "바탕화면, 홈, 버튼, 휴지통"
 
 #. menu@cinnamon.org->settings-schema.json->show-desktop->description
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_desktop.py:23
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:255
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:257
 msgid "Desktop"
 msgstr "바탕화면"
 
@@ -5489,112 +5579,116 @@ msgstr "개인 정보는 포함되지 않습니다"
 msgid "Copy to clipboard"
 msgstr "클립보드에 복사"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:28
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:29
 msgid "Manage keyboard settings and shortcuts"
 msgstr "키보드 설정과 단축키 관리"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:33
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:34
 msgid "keyboard, shortcut, hotkey"
 msgstr "키보드, 단축키, 핫 키"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:69
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:70
 msgid "Key repeat"
 msgstr "키 반복"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:71
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:72
 msgid "Typing"
 msgstr "입력"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:73
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:74
 msgid "Enable key repeat"
 msgstr "키 반복 입력 실행"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:76
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:77
 msgid "Repeat delay:"
 msgstr "반복 지연시간:"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:79
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:80
 msgid "Repeat speed:"
 msgstr "반복 속도:"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:79
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:87
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:80
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:88
 msgid "Slow"
 msgstr "느리게"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:79
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:87
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:80
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:88
 msgid "Fast"
 msgstr "빠르게"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:82
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:83
 msgid "Text cursor"
 msgstr "텍스트 커서"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:84
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:85
 msgid "Text cursor blinks"
 msgstr "글자 커서 깜빡임"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:87
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:88
 msgid "Blink speed:"
 msgstr "깜빡임 속도:"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:99
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:100
 msgid ""
 "To edit a keyboard binding, click it and press the new keys, or press "
 "backspace to clear it."
 msgstr "키보드 설정을 바꾸시려면 클릭하고 새로운 키 조합을 누르거나, 백스페이스를 눌러서 초기화하세요."
 
 #. Text entry search field
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:114
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:115
 msgid "Type to search shortcuts"
 msgstr "바로 가기 검색"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:127
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:128
 msgid "Press Escape to cancel the search."
 msgstr "esc 눌러서 검색 취소하기."
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:129
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:130
 msgid "Click to search by accelerator"
 msgstr "클릭해서 가속기로 검색하기"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:140
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:141
 msgid "Bindings"
 msgstr "바인딩"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:200
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:758
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:201
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:764
 msgid "Add custom shortcut"
 msgstr "사용자 지정 단축키 추가"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:202
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:203
 msgid "Remove custom shortcut"
 msgstr "사용자지정 단축키 제거"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:227
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:228
 msgid "Categories"
 msgstr "분류"
 
 #. notifications@cinnamon.org->settings-schema.json->section3->description
 #. inhibit@cinnamon.org->settings-schema.json->section1->description
 #. calendar@cinnamon.org->settings-schema.json->section2->description
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:247
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:248
 msgid "Keyboard shortcuts"
 msgstr "키보드 단축키"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:259
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:260
 msgid "Keyboard bindings"
 msgstr "단축키 설정값"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:302
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:303
 msgid "Layouts"
-msgstr "배치"
+msgstr "한글 입력 설정"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:673
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:306
+msgid "XKB Options"
+msgstr "XKB 옵션"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:679
 msgid "Reset to default"
 msgstr "기본값으로 초기화"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:775
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_keyboard.py:781
 msgid "Select a file"
 msgstr "파일 선택"
 
@@ -5864,6 +5958,10 @@ msgstr "미디어 키 OSD"
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:83
 msgid "Show media keys OSD"
 msgstr "미디어 키 OSD 보이기"
+
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_notifications.py:87
+msgid "This is a test notification"
+msgstr "테스트용 알림입니다"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py:39
 msgid "Center Zone"
@@ -6834,7 +6932,7 @@ msgstr "찾아보기..."
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:820
 msgid "Comment"
-msgstr "의견"
+msgstr "설명"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_startup.py:830
 msgid "Startup delay"
@@ -6869,59 +6967,59 @@ msgid "themes, style"
 msgstr "테마, 스타일"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:101
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:242
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:244
 msgid "Themes"
 msgstr "테마"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:246
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:248
 msgid "Mouse Pointer"
 msgstr "마우스 포인터"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:252
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:254
 msgid "Icons"
 msgstr "아이콘"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:259
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:261
 msgid "Simplified settings..."
 msgstr "간편 설정..."
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:265
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:267
 msgid "Add/Remove"
 msgstr "추가 / 제거"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:270
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:272
 msgid "Miscellaneous options"
 msgstr "기타 옵션"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:272
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:274
 msgid "Let applications decide"
 msgstr "애플리케이션이 결정하도록 합니다"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:273
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:275
 msgid "Prefer dark mode"
 msgstr "다크 모드 선호"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:274
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:276
 msgid "Prefer light mode"
 msgstr "라이트 모드 선호"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:275
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:277
 msgid "Dark mode"
 msgstr "다크 모드"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:276
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:278
 msgid "This setting only affects applications which support dark mode"
 msgstr "이 설정은 다크 모드를 지원하는 애플리케이션에만 영향을 미칩니다"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:279
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:281
 msgid "Show icons in menus"
 msgstr "메뉴에 아이콘 보이기"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:282
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:284
 msgid "Show icons on buttons"
 msgstr "버튼에 아이콘 보이기"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:285
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:287
 msgid "Scrollbar behavior"
 msgstr "스크롤바 동작"
 
@@ -6929,31 +7027,31 @@ msgstr "스크롤바 동작"
 #. rides in.  This setting determines whether clicking in that trough
 #. somewhere
 #. jumps directly to the new position, or if it only scrolls towards it.
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:290
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:292
 msgid "Jump to position when clicking in a trough"
 msgstr "스크롤바 영역에서 클릭하면 새 위치로 이동하기"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:293
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:295
 msgid "Use overlay scroll bars"
 msgstr "오버레이 스크롤바 사용하기"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:298
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:300
 msgid "Override the current theme's scrollbar width"
 msgstr "사용 중인 테마의 스크롤바 폭 바꾸기"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:302
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:304
 msgid "Scrollbar width"
 msgstr "스크롤바 폭"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:323
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:325
 msgid ""
 "Changes may not apply to already-running programs, and may not affect all "
 "applications."
 msgstr "변경 사항은 이미 실행 중인 프로그램에 적용되지 않을 수 있으며 모든 애플리케이션에 영향을 미치지 않을 수도 있습니다."
 
 #. Position style combo on "Custom"
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:524
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:578
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:526
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_themes.py:580
 msgid "Custom"
 msgstr "사용자 지정"
 
@@ -7001,7 +7099,7 @@ msgstr "신뢰함"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_thunderbolt.py:223
 msgid "Forget"
-msgstr "저장 안함"
+msgstr "지우기"
 
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_thunderbolt.py:234
 msgid "lanes"
@@ -7040,11 +7138,6 @@ msgstr "사용자 설정과 비밀번호를 바꿉니다"
 msgid "user, account, information, details, password"
 msgstr "사용자, 계정, 정보, 자세한 내용, 비밀번호"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:38
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:52
-msgid "Account details"
-msgstr "사용자 정보"
-
 #: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:58
 msgid "Click to change your picture"
 msgstr "클릭하셔서 사진을 바꾸세요"
@@ -7065,13 +7158,13 @@ msgstr "클릭하셔서 비밀번호를 바꾸세요"
 msgid "Current password"
 msgstr "현재 비밀번호를 입력하세요"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:399
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:400
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:409
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:410
 msgid "Wrong password"
 msgstr "잘못된 비밀번호 입니다"
 
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:404
-#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:405
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:414
+#: files/usr/share/cinnamon/cinnamon-settings/modules/cs_user.py:415
 msgid "Internal Error"
 msgstr "내부 오류"
 
@@ -7598,6 +7691,10 @@ msgstr "아래"
 msgid "Sidebar icon size"
 msgstr "사이드바 아이콘 크기"
 
+#. menu@cinnamon.org->settings-schema.json->sidebar-max-width->description
+msgid "Maximum sidebar width (px)"
+msgstr "사이드바 최대 폭 (px)"
+
 #. menu@cinnamon.org->settings-schema.json->show-recents->description
 msgid "Recents"
 msgstr "최근 사용 기록"
@@ -7658,7 +7755,7 @@ msgstr "메뉴 항목을 설정하려면 이 버튼을 누르십시오."
 #. menu@cinnamon.org->settings-schema.json->reset-menu-size-
 #. button->description
 msgid "Restore the menu to its original size"
-msgstr "메뉴를 원래 크기로 복원"
+msgstr "메뉴를 원래 크기로 되돌리기"
 
 #. xapp-status@cinnamon.org->metadata.json->name
 msgid "XApp Status Applet"
@@ -7871,12 +7968,12 @@ msgstr "모든 모니터에서"
 #. grouped-window-list@cinnamon.org->settings-
 #. schema.json->cycleMenusHotkey->description
 msgid "Global hotkey for cycling through thumbnail menus"
-msgstr "섬네일 메뉴를 전환하는 전역 단축키 설정"
+msgstr "썸네일 메뉴를 전환하는 단축키 설정"
 
 #. grouped-window-list@cinnamon.org->settings-schema.json->show-apps-order-
 #. hotkey->description
 msgid "Global hotkey to show the order of apps"
-msgstr "앱 순서를 보여주는 전역단축키"
+msgstr "앱 순서를 보여주는 단축키"
 
 #. grouped-window-list@cinnamon.org->settings-schema.json->show-apps-order-
 #. timeout->description
@@ -8994,82 +9091,3 @@ msgstr "버튼을 클릭하셔서 새로 글자색을 선택하세요"
 msgid ""
 "Check this to define a custom format for the time in the clock desklet."
 msgstr "클릭하셔서 시계 데스크릿의 시간형식을 설정하세요."
-
-#~ msgid "Choose whether or not to show the left pane of the menu."
-#~ msgstr "메뉴의 왼쪽 줄을 보일지 말지를 결정합니다."
-
-#~ msgid ""
-#~ "Choose whether or not to enable smooth autoscrolling in the application list."
-#~ msgstr "애플리케이션 목록에서 부드러운 자동 스크롤 활성화 여부를 선택하십시오."
-
-#~ msgid "Check this to specify a custom icon and label"
-#~ msgstr "사용자가 지정하는 아이콘이나 레이블을 사용하려고 할 땐 이 옵션을 체크하세요"
-
-#~ msgid "Choose whether or not to show favorite files in the menu."
-#~ msgstr "메뉴에서 즐겨찾기 파일을 표시할지 여부를 선택합니다."
-
-#~ msgid "Choose whether or not to change categories by hovering."
-#~ msgstr "호버링 할 때 카테고리를 바꿀 것인지를 결정합니다."
-
-#~ msgid "Choose whether or not to show recents in the menu."
-#~ msgstr "메뉴에서 최근 사용 기록을 보일지 여부를 선택합니다."
-
-#~ msgid "Select an icon to show in the panel."
-#~ msgstr "패널에 보여줄 아이콘을 선택합니다."
-
-#~ msgid "Enter custom text to show in the panel."
-#~ msgstr "패널에 보여줄 문장을 입력합니다."
-
-#~ msgid "Cinnamon on Wayland (Experimental)"
-#~ msgstr "웨이랜드 시나몬 (실험적)"
-
-#~ msgid "This session logs you into Cinnamon"
-#~ msgstr "시나몬에 로그인하는 세션입니다"
-
-#~ msgid "Cinnamon"
-#~ msgstr "시나몬"
-
-#~ msgid "Cinnamon (Software Rendering)"
-#~ msgstr "시나몬 (소프트웨어 렌더링)"
-
-#~ msgid "This session logs you into Cinnamon (using software rendering)"
-#~ msgstr "시나몬에 로그인하는 세션입니다 (소프트웨어 렌더링 사용)"
-
-#~ msgid "Cinnamon (Wayland session)"
-#~ msgstr "시나몬 (웨이랜드 세션)"
-
-#~ msgid "Window management and application launching"
-#~ msgstr "창 관리 및 앱 실행"
-
-#~ msgid "Cinnamon 2D"
-#~ msgstr "시나몬 2D"
-
-#~ msgid "Choose whether or not to show the documents folder."
-#~ msgstr "문서 폴더를 보일지 말지를 결정합니다."
-
-#~ msgid "Choose whether or not to show the downloads folder."
-#~ msgstr "다운로드 폴더를 보일지 말지를 결정합니다."
-
-#~ msgid "Choose whether or not to show the music folder."
-#~ msgstr "음악 폴더를 보일지 말지를 결정합니다."
-
-#~ msgid "Choose whether or not to show the pictures folder."
-#~ msgstr "사진 폴더를 보일지 말지를 결정합니다."
-
-#~ msgid "Choose whether or not to show the videos folder."
-#~ msgstr "비디오 폴더를 보일지 말지를 결정합니다."
-
-#~ msgid "Choose whether or not to use symbolic icons for categories."
-#~ msgstr "카테고리용 심볼릭 아이콘을 사용할지 말지를 결정합니다."
-
-#~ msgid "Choose whether or not to show the avatar."
-#~ msgstr "아바타를 보일지 말지를 결정합니다."
-
-#~ msgid "Choose whether or not to show the home directory."
-#~ msgstr "홈 디렉토리를 보일지 말지를 결정합니다."
-
-#~ msgid "Choose whether or not to show the desktop."
-#~ msgstr "바탕화면을 보일지 말지를 결정합니다."
-
-#~ msgid "Choose whether or not to show other bookmarks."
-#~ msgstr "다른 책갈피를 보일지 말지를 결정합니다."

@@ -13,27 +13,28 @@ msgstr ""
 "http://bugzilla.gnome.org/enter_bug.cgi?product=cinnamon-"
 "screensaver&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2022-12-02 21:29+0000\n"
-"PO-Revision-Date: 2025-09-09 16:10+0000\n"
+"PO-Revision-Date: 2025-12-23 19:27+0000\n"
 "Last-Translator: Klavs Petersons <Unknown>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2025-12-12 13:29+0000\n"
-"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
+"X-Launchpad-Export-Date: 2026-01-08 15:39+0000\n"
+"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"Language: lv\n"
 
 #: src/cinnamon-screensaver-command.py:41
 msgid "Causes the screensaver to exit gracefully"
-msgstr "Veicina ekrānsaudzētāja veiksmīgu izslēgšanos"
+msgstr "Izraisa ekrānsaudzētāja pakāpenisku izeju"
 
 #: src/cinnamon-screensaver-command.py:43
 msgid "Query the state of the screensaver"
-msgstr "Vaicāt ekrānsaudzētāja stāvokli"
+msgstr "Pārbaudi ekrānsaudzētāja stāvokli"
 
 #: src/cinnamon-screensaver-command.py:45
 msgid "Query the length of time the screensaver has been active"
-msgstr "Vaicāt, cik ilgi ekrānsaudzētājs ir bijis aktīvs"
+msgstr "Pārbaudi, cik ilgi ekrānsaudzētājs ir bijis aktīvs"
 
 #: src/cinnamon-screensaver-command.py:47
 msgid "Tells the running screensaver process to lock the screen immediately"
@@ -45,9 +46,7 @@ msgstr "Ieslēgt ekrānsaudzētāju (tukšot ekrānu)"
 
 #: src/cinnamon-screensaver-command.py:51
 msgid "If the screensaver is active then deactivate it (un-blank the screen)"
-msgstr ""
-"Ja ekrānsaudzētājs ir aktīvs, tad to deaktivizējiet (atceliet ekrāna "
-"izslēgšanu)"
+msgstr "Ja ekrānsaudzētājs ir aktīvs, deaktivizē to (noņemot ekrāna atzīmi)"
 
 #: src/cinnamon-screensaver-command.py:53
 msgid "Version of this application"
@@ -55,7 +54,7 @@ msgstr "Šīs lietojumprogrammas versija"
 
 #: src/cinnamon-screensaver-command.py:55
 msgid "Message to be displayed in lock screen"
-msgstr "Ziņojums, kas tiks parādīts bloķēšanas ekrānā"
+msgstr "Bloķēšanas ekrānā parādāmais ziņojums"
 
 #: src/cinnamon-screensaver-command.py:105
 msgid "The screensaver is active\n"
@@ -76,7 +75,7 @@ msgid "The screensaver has been active for %d second.\n"
 msgid_plural "The screensaver has been active for %d seconds.\n"
 msgstr[0] "Ekrānsaudzētājs ir bijis aktīvs %d sekundi.\n"
 msgstr[1] "Ekrānsaudzētājs ir bijis aktīvs %d sekundes.\n"
-msgstr[2] "Ekrānsaudzētājs ir bijis aktīvs %d sekundes.\n"
+msgstr[2] "Ekrānsaudzētājs ir bijis aktīvs %d sekunžu.\n"
 
 #: src/manager.py:315
 msgid "Cinnamon Screensaver has experienced an error"
@@ -89,12 +88,12 @@ msgid ""
 "prior to this occurring."
 msgstr ""
 "Process 'cs-backup-locker' tika pārtraukts pirms ekrānsaudzētāja. Lūdzu, "
-"ziņojiet par šo problēmu un mēģiniet aprakstīt visas darbības, ko veicāt "
-"pirms šīs problēmas rašanās."
+"ziņo par šo problēmu un mēģini aprakstīt visas darbības, ko veici pirms šīs "
+"problēmas rašanās."
 
 #: src/passwordEntry.py:23 src/unlock.py:216
 msgid "Please enter your password..."
-msgstr "Lūdzu, ievadiet savu paroli..."
+msgstr "Lūdzu, ievadi savu paroli..."
 
 #: src/unlock.py:96
 msgid "Unlock"
@@ -114,44 +113,43 @@ msgstr "Notiek pārbaude..."
 
 #: src/unlock.py:250
 msgid "You have the Caps Lock key on."
-msgstr "Jums ir ieslēgts Caps Lock taustiņš."
+msgstr "Tev ir ieslēgts Caps Lock taustiņš."
 
 #. This is the first line of text for the backup-locker, explaining how to switch to tty
 #. and run 'cinnamon-unlock-desktop' command.  This appears if the screensaver crashes.
 #: backup-locker/cs-backup-locker.c:255
 msgid "Something went wrong with the screensaver."
-msgstr "Radās ar ekrānsaudzētāju saistīta problēma"
+msgstr "Ar ekrānsaudzētāju kaut kas nogāja greizi."
 
 #. (continued) This is a subtitle
 #: backup-locker/cs-backup-locker.c:265
 msgid "We'll help you get your desktop back"
-msgstr "Mēs palīdzēsim atgūt jūsu darbvirsmu"
+msgstr "Mēs palīdzēsim atgūt tavu darbvirsmu"
 
 #. (new section) Bulleted list of steps to take to unlock the desktop;
 #: backup-locker/cs-backup-locker.c:276
 #, c-format
 msgid "Switch to a console using <Control-Alt-F%u>."
-msgstr "Pārejiet uz konsoli, izmantojot <Control-Alt-F%u>."
+msgstr "Pārej uz konsoli, izmantojot <Control-Alt-F%u>."
 
 #. (list continued)
 #: backup-locker/cs-backup-locker.c:278
 msgid "Log in by typing your user name followed by your password."
-msgstr "Piesakieties, ievadot savu lietotājvārdu un paroli."
+msgstr "Piesakies, ierakstot savu lietotājvārdu, kam seko parole."
 
 #. (list continued)
 #: backup-locker/cs-backup-locker.c:280
 msgid "At the prompt, type 'cinnamon-unlock-desktop' and press Enter."
 msgstr ""
-"Kad parādās uzvedne, ievadiet 'cinnamon-unlock-desktop' un nospiediet Enter."
+"Kad parādās uzvedne, ievadi 'cinnamon-unlock-desktop' un nospied Enter."
 
 #. (list continued)
 #: backup-locker/cs-backup-locker.c:282
 #, c-format
 msgid "Switch back to your unlocked desktop using <Control-Alt-F%u>."
-msgstr "Atgriezieties atbloķētajā darbvirsmā, izmantojot <Control-Alt-F%u>."
+msgstr "Atgriezies atbloķētajā darbvirsmā, izmantojot <Control-Alt-F%u>."
 
 #. (end section) Final words after the list of steps
 #: backup-locker/cs-backup-locker.c:287
 msgid "If you can reproduce this behavior, please file a report here:"
-msgstr ""
-"Ja jūs varat reproducēt šo uzvedību, lūdzu, iesniedziet ziņojumu šeit:"
+msgstr "Ja tu vari reproducēt šo uzvedību, lūdzu, iesniedz ziņojumu šeit:"
