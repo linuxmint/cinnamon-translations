@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-settings-daemon.HEAD.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-25 14:28+0000\n"
+"POT-Creation-Date: 2026-11-02 13:35+0000\n"
 "PO-Revision-Date: 2021-04-28 10:12+0000\n"
 "Last-Translator: Launchpad Translations Administrators <Unknown>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -22,8 +22,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:42+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 11:59+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 "Language: ta\n"
 
 #: plugins/a11y-settings/csd-a11y-settings-manager.c:264
@@ -43,7 +43,7 @@ msgstr ""
 msgid "Unable to mount %s"
 msgstr "%s ஐ ஏற்ற முடியவில்லை"
 
-#: plugins/automount/csd-automount-manager.c:278
+#: plugins/automount/csd-automount-manager.c:276
 #, c-format
 msgid "Unable to open a folder for %s"
 msgstr "%s க்கு ஒரு அடைவை திறக்க முடியவில்லை"
@@ -200,12 +200,12 @@ msgstr "நிற அளவீடு சாதனம் சேர்க்கப
 msgid "Color calibration device removed"
 msgstr "நிற அளவீடு சாதனம் நீக்கப்பட்டது"
 
-#: plugins/housekeeping/csd-disk-space.c:334
+#: plugins/housekeeping/csd-disk-space.c:307
 #, c-format
 msgid "Low Disk Space on \"%s\""
 msgstr "\"%s\" இல் குறைந்த வட்டு இடம்"
 
-#: plugins/housekeeping/csd-disk-space.c:336
+#: plugins/housekeeping/csd-disk-space.c:309
 #, c-format
 msgid ""
 "The volume \"%s\" has only %s disk space remaining.  You may free up some "
@@ -214,18 +214,16 @@ msgstr ""
 "தொகுதி  \"%s\" இல் %s வட்டு இடம் மட்டுமே மீதி உள்ளது. குப்பைத்தொட்டியை காலி "
 "செய்வதால் கொஞ்சம் காலி இடத்தை பெறலாம்."
 
-#: plugins/housekeeping/csd-disk-space.c:340
-#: plugins/housekeeping/csd-ldsm-dialog.c:78
+#: plugins/housekeeping/csd-disk-space.c:313
 #, c-format
 msgid "The volume \"%s\" has only %s disk space remaining."
 msgstr "தொகுதி  \"%s\" இல் %s வட்டு இடம் மட்டுமே மீதி உள்ளது."
 
-#: plugins/housekeeping/csd-disk-space.c:345
-#: plugins/housekeeping/csd-ldsm-dialog.c:202
+#: plugins/housekeeping/csd-disk-space.c:318
 msgid "Low Disk Space"
 msgstr "குறைந்த வட்டு இடம்"
 
-#: plugins/housekeeping/csd-disk-space.c:347
+#: plugins/housekeeping/csd-disk-space.c:320
 #, c-format
 msgid ""
 "This computer has only %s disk space remaining.  You may free up some space "
@@ -234,72 +232,39 @@ msgstr ""
 "கணினியில் %s வட்டு இடம் மட்டுமே மீதி உள்ளது. குப்பைத்தொட்டியை காலி செய்வதால் "
 "கொஞ்சம் காலி இடத்தை பெறலாம்."
 
-#: plugins/housekeeping/csd-disk-space.c:350
-#: plugins/housekeeping/csd-ldsm-dialog.c:81
+#: plugins/housekeeping/csd-disk-space.c:323
 #, c-format
 msgid "This computer has only %s disk space remaining."
 msgstr "கணினியில் %s வட்டு இடம் மட்டுமே மீதி உள்ளது"
 
-#: plugins/housekeeping/csd-disk-space.c:365
+#: plugins/housekeeping/csd-disk-space.c:334
 msgid "Disk space"
 msgstr "வட்டு இடம்"
 
-#: plugins/housekeeping/csd-disk-space.c:372
+#: plugins/housekeeping/csd-disk-space.c:341
 msgid "Examine"
 msgstr "சோதி"
 
-#: plugins/housekeeping/csd-disk-space.c:380
-#: plugins/housekeeping/csd-ldsm-dialog.c:434
+#: plugins/housekeeping/csd-disk-space.c:349
 msgid "Empty Trash"
 msgstr "குப்பையை காலி செய்"
 
-#: plugins/housekeeping/csd-disk-space.c:387
-#: plugins/housekeeping/csd-ldsm-dialog.c:449
+#: plugins/housekeeping/csd-disk-space.c:356
 msgid "Ignore"
 msgstr "உதாசீனம் செய்"
 
-#: plugins/housekeeping/csd-ldsm-dialog.c:63
-msgid "Don't show any warnings again for this file system"
-msgstr "இந்த கோப்பு முறைக்கு எச்சரிக்கைகளை இனிமேல் காண்பிக்க வேண்டாம்"
-
-#: plugins/housekeeping/csd-ldsm-dialog.c:65
-msgid "Don't show any warnings again"
-msgstr "எச்சரிக்கைகளை இனிமேல் காண்பிக்க வேண்டாம்"
-
-#: plugins/housekeeping/csd-ldsm-dialog.c:97
-msgid ""
-"You can free up disk space by emptying the Trash, removing unused programs "
-"or files, or moving files to another disk or partition."
+#: plugins/housekeeping/csd-systemd-notify.c:89
+#: plugins/housekeeping/csd-systemd-notify.c:96
+#, c-format
+msgid "%s Stopped"
 msgstr ""
-"குப்பையை காலி செய்வதாலும், பயன்படாத நிரல்கள் அல்லது கோப்புகளை நீக்குவதாலும், "
-"கோப்புகளை வேறு வட்டு அல்லது பகிர்வுக்கு மாற்றுவதாலும் வட்டு இடத்தை மீட்கலாம்."
 
-#: plugins/housekeeping/csd-ldsm-dialog.c:100
-msgid ""
-"You can free up disk space by removing unused programs or files, or by "
-"moving files to another disk or partition."
+#: plugins/housekeeping/csd-systemd-notify.c:93
+msgid "Virtual Terminal Stopped"
 msgstr ""
-"பயன்படாத நிரல்கள் அல்லது கோப்புகளை நீக்குவதாலும், கோப்புகளை வேறு வட்டு "
-"அல்லது பகிர்வுக்கு மாற்றுவதாலும் வட்டு இடத்தை மீட்கலாம்."
 
-#: plugins/housekeeping/csd-ldsm-dialog.c:105
-msgid ""
-"You can free up disk space by emptying the Trash, removing unused programs "
-"or files, or moving files to an external disk."
-msgstr ""
-"குப்பையை காலி செய்வதாலும், பயன்படாத நிரல்கள் அல்லது கோப்புகளை நீக்குவதாலும், "
-"கோப்புகளை வெளி  வட்டுக்கு மாற்றுவதாலும் வட்டு இடத்தை மீட்கலாம்."
-
-#: plugins/housekeeping/csd-ldsm-dialog.c:108
-msgid ""
-"You can free up disk space by removing unused programs or files, or by "
-"moving files to an external disk."
-msgstr ""
-"பயன்படாத நிரல்கள் அல்லது கோப்புகளை நீக்குவதாலும், கோப்புகளை வெளி  வட்டுக்கு "
-"மாற்றுவதாலும் வட்டு இடத்தை மீட்கலாம்."
-
-#: plugins/housekeeping/csd-ldsm-dialog.c:442
-msgid "Examine..."
+#: plugins/housekeeping/csd-systemd-notify.c:100
+msgid "System memory is nearly full and the program was forced to stop."
 msgstr ""
 
 #: plugins/media-keys/csd-media-keys-manager.c:649
@@ -314,164 +279,164 @@ msgstr ""
 msgid "Disabled"
 msgstr ""
 
-#: plugins/media-keys/csd-media-keys-manager.c:1249
+#: plugins/media-keys/csd-media-keys-manager.c:1266
 msgid "Unavailable"
 msgstr ""
 
-#: plugins/media-keys/csd-media-keys-manager.c:1346
+#: plugins/media-keys/csd-media-keys-manager.c:1363
 msgid "Rotation Locked"
 msgstr ""
 
-#: plugins/media-keys/csd-media-keys-manager.c:1349
+#: plugins/media-keys/csd-media-keys-manager.c:1366
 msgid "Rotation Allowed"
 msgstr ""
 
-#: plugins/power/csd-power-manager.c:1008
+#: plugins/power/csd-power-manager.c:1075
 msgid "UPS Discharging"
 msgstr "யூபிஎஸ் மின் சக்தி இறங்குகிறது"
 
-#: plugins/power/csd-power-manager.c:1013
+#: plugins/power/csd-power-manager.c:1080
 #, c-format
 msgid "%s of UPS backup power remaining"
 msgstr "யூபிஎஸ் மின்சக்தியில்  %s  மீதமுள்ளது"
 
-#: plugins/power/csd-power-manager.c:1032
-#: plugins/power/csd-power-manager.c:1244
-#: plugins/power/csd-power-manager.c:1422
-#: plugins/power/csd-power-manager.c:1571
+#: plugins/power/csd-power-manager.c:1099
+#: plugins/power/csd-power-manager.c:1311
+#: plugins/power/csd-power-manager.c:1489
+#: plugins/power/csd-power-manager.c:1638
 msgid "Power"
 msgstr "சக்தி"
 
-#: plugins/power/csd-power-manager.c:1156
+#: plugins/power/csd-power-manager.c:1223
 msgid "Battery low"
 msgstr "மின்கல சக்தி குறைவு"
 
-#: plugins/power/csd-power-manager.c:1159
+#: plugins/power/csd-power-manager.c:1226
 msgid "Laptop battery low"
 msgstr "மடிகணினி மின்கல சக்தி குறைவு"
 
-#: plugins/power/csd-power-manager.c:1166
+#: plugins/power/csd-power-manager.c:1233
 #, c-format
 msgid "Approximately %s remaining (%.0f%%)"
 msgstr "தோராயமாக %s மீதமுள்ளது (%.0f%%)"
 
-#: plugins/power/csd-power-manager.c:1171
+#: plugins/power/csd-power-manager.c:1238
 msgid "UPS low"
 msgstr "யூபிஎஸ் குறைவு"
 
-#: plugins/power/csd-power-manager.c:1177
+#: plugins/power/csd-power-manager.c:1244
 #, c-format
 msgid "Approximately %s of remaining UPS backup power (%.0f%%)"
 msgstr "தோராயமாக  %s யூபிஎஸ் காப்பு மின்சக்தி மீதமுள்ளது (%.0f%%)"
 
-#: plugins/power/csd-power-manager.c:1182
-#: plugins/power/csd-power-manager.c:1347
+#: plugins/power/csd-power-manager.c:1249
+#: plugins/power/csd-power-manager.c:1414
 msgid "Mouse battery low"
 msgstr "சொடுக்கி மின்கல சக்தி குறைவு"
 
-#: plugins/power/csd-power-manager.c:1185
+#: plugins/power/csd-power-manager.c:1252
 msgid "Wireless mouse is low in power"
 msgstr ""
 
-#: plugins/power/csd-power-manager.c:1189
-#: plugins/power/csd-power-manager.c:1354
+#: plugins/power/csd-power-manager.c:1256
+#: plugins/power/csd-power-manager.c:1421
 msgid "Keyboard battery low"
 msgstr "விசைப்பலகை மின்கல சக்தி குறைவு"
 
-#: plugins/power/csd-power-manager.c:1192
+#: plugins/power/csd-power-manager.c:1259
 msgid "Wireless keyboard is low in power"
 msgstr ""
 
-#: plugins/power/csd-power-manager.c:1196
-#: plugins/power/csd-power-manager.c:1362
+#: plugins/power/csd-power-manager.c:1263
+#: plugins/power/csd-power-manager.c:1429
 msgid "PDA battery low"
 msgstr "பிடிஏ மின்கல சக்தி குறைவு"
 
-#: plugins/power/csd-power-manager.c:1199
+#: plugins/power/csd-power-manager.c:1266
 #, c-format
 msgid "PDA is low in power (%.0f%%)"
 msgstr "பிடிஏ மின்சக்தி குறைவு  (%.0f%%)"
 
-#: plugins/power/csd-power-manager.c:1203
-#: plugins/power/csd-power-manager.c:1372
-#: plugins/power/csd-power-manager.c:1382
+#: plugins/power/csd-power-manager.c:1270
+#: plugins/power/csd-power-manager.c:1439
+#: plugins/power/csd-power-manager.c:1449
 msgid "Cell phone battery low"
 msgstr "அலைபேசி மின்கல சக்தி குறைவு"
 
-#: plugins/power/csd-power-manager.c:1206
+#: plugins/power/csd-power-manager.c:1273
 #, c-format
 msgid "Cell phone is low in power (%.0f%%)"
 msgstr "அலைபேசி மின்சக்தி குறைவு  (%.0f%%)"
 
-#: plugins/power/csd-power-manager.c:1210
+#: plugins/power/csd-power-manager.c:1277
 msgid "Media player battery low"
 msgstr "ஊடக இயக்கி மின்கல சக்தி குறைவு"
 
-#: plugins/power/csd-power-manager.c:1213
+#: plugins/power/csd-power-manager.c:1280
 #, c-format
 msgid "Media player is low in power (%.0f%%)"
 msgstr "ஊடக இயக்கி மின்சக்தி குறைவு  (%.0f%%)"
 
-#: plugins/power/csd-power-manager.c:1217
-#: plugins/power/csd-power-manager.c:1391
+#: plugins/power/csd-power-manager.c:1284
+#: plugins/power/csd-power-manager.c:1458
 msgid "Tablet battery low"
 msgstr "தொடுபலகை மின்கல சக்தி குறைவு"
 
-#: plugins/power/csd-power-manager.c:1220
+#: plugins/power/csd-power-manager.c:1287
 #, c-format
 msgid "Tablet is low in power (%.0f%%)"
 msgstr "தொடுபலகை மின்சக்தி குறைவு  (%.0f%%)"
 
-#: plugins/power/csd-power-manager.c:1224
-#: plugins/power/csd-power-manager.c:1400
+#: plugins/power/csd-power-manager.c:1291
+#: plugins/power/csd-power-manager.c:1467
 msgid "Attached computer battery low"
 msgstr "இணைத்துள்ள கணினியின் மின்கல சக்தி குறைவு"
 
-#: plugins/power/csd-power-manager.c:1227
+#: plugins/power/csd-power-manager.c:1294
 #, c-format
 msgid "Attached computer is low in power (%.0f%%)"
 msgstr "இணைத்துள்ள கணினியின் மின்கல சக்தி குறைவு (%.0f%%)"
 
-#: plugins/power/csd-power-manager.c:1261
+#: plugins/power/csd-power-manager.c:1328
 msgid "Battery is low"
 msgstr "மின்கல சக்தி குறைவு"
 
-#: plugins/power/csd-power-manager.c:1303
+#: plugins/power/csd-power-manager.c:1370
 msgid "Battery critically low"
 msgstr "மின்கல சக்தி ஆபத்து அளவுக்கு குறைவு"
 
-#: plugins/power/csd-power-manager.c:1306
-#: plugins/power/csd-power-manager.c:1487
+#: plugins/power/csd-power-manager.c:1373
+#: plugins/power/csd-power-manager.c:1554
 msgid "Laptop battery critically low"
 msgstr "மடிகணினி மின்கல சக்தி ஆபத்து அளவுக்கு குறைவு"
 
-#: plugins/power/csd-power-manager.c:1315
+#: plugins/power/csd-power-manager.c:1382
 msgid "Plug in your AC adapter to avoid losing data."
 msgstr "தரவு இழப்பை தவிர்க்க  ஏசி தகைவியை பொருத்தவும்"
 
-#: plugins/power/csd-power-manager.c:1319
+#: plugins/power/csd-power-manager.c:1386
 msgid "Computer will suspend very soon unless it is plugged in."
 msgstr ""
 "மின்சக்தி வாயில் சொருகாவிட்டால் இந்த கணினி இயக்கம் சீக்கிரம் இடை நிறுத்தம் "
 "செய்யப்படப்போகிறது"
 
-#: plugins/power/csd-power-manager.c:1323
+#: plugins/power/csd-power-manager.c:1390
 msgid "Computer will hibernate very soon unless it is plugged in."
 msgstr ""
 "மின்சக்தி வாயில் சொருகாவிட்டால் இந்த கணினி இயக்கம் சீக்கிரம் உறங்கப்போகிறது"
 
-#: plugins/power/csd-power-manager.c:1327
+#: plugins/power/csd-power-manager.c:1394
 msgid "Computer will shutdown very soon unless it is plugged in."
 msgstr ""
 "மின்சக்தி வாயில் சொருகாவிட்டால் இந்த கணினி இயக்கம் சீக்கிரம் "
 "நிறுத்தப்படப்போகிறது"
 
-#: plugins/power/csd-power-manager.c:1335
-#: plugins/power/csd-power-manager.c:1523
+#: plugins/power/csd-power-manager.c:1402
+#: plugins/power/csd-power-manager.c:1590
 msgid "UPS critically low"
 msgstr "யூபிஎஸ் சக்தி ஆபத்து அளவுக்கு குறைவு"
 
-#: plugins/power/csd-power-manager.c:1341
+#: plugins/power/csd-power-manager.c:1408
 #, c-format
 msgid ""
 "Approximately %s of remaining UPS power (%.0f%%). Restore AC power to your "
@@ -480,47 +445,47 @@ msgstr ""
 "தோராயமாக %s யூபிஎஸ் காப்பு மின்சக்தி மீதமுள்ளது  (%.0f%%). தரவு இழப்பை "
 "தவிர்க்க கணினிக்கு ஏசி சக்தியை மீட்டமைக்கவும்."
 
-#: plugins/power/csd-power-manager.c:1350
+#: plugins/power/csd-power-manager.c:1417
 msgid ""
 "Wireless mouse is very low in power. This device will soon stop functioning "
 "if not charged."
 msgstr ""
 
-#: plugins/power/csd-power-manager.c:1357
+#: plugins/power/csd-power-manager.c:1424
 msgid ""
 "Wireless keyboard is very low in power. This device will soon stop "
 "functioning if not charged."
 msgstr ""
 
-#: plugins/power/csd-power-manager.c:1365
+#: plugins/power/csd-power-manager.c:1432
 #, c-format
 msgid ""
 "PDA is very low in power (%.0f%%). This device will soon stop functioning if "
 "not charged."
 msgstr ""
 
-#: plugins/power/csd-power-manager.c:1375
+#: plugins/power/csd-power-manager.c:1442
 #, c-format
 msgid ""
 "Cell phone is very low in power (%.0f%%). This device will soon stop "
 "functioning if not charged."
 msgstr ""
 
-#: plugins/power/csd-power-manager.c:1385
+#: plugins/power/csd-power-manager.c:1452
 #, c-format
 msgid ""
 "Media player is very low in power (%.0f%%). This device will soon stop "
 "functioning if not charged."
 msgstr ""
 
-#: plugins/power/csd-power-manager.c:1394
+#: plugins/power/csd-power-manager.c:1461
 #, c-format
 msgid ""
 "Tablet is very low in power (%.0f%%). This device will soon stop functioning "
 "if not charged."
 msgstr ""
 
-#: plugins/power/csd-power-manager.c:1403
+#: plugins/power/csd-power-manager.c:1470
 #, c-format
 msgid ""
 "Attached computer is very low in power (%.0f%%). The device will soon "
@@ -529,13 +494,13 @@ msgstr ""
 "இணைத்துள்ள கணினியின் மின்கல சக்தி மிகக் குறைவு (%.0f%%). "
 "மின்னேற்றப்படாவிட்டால் இந்த சாதனம் சீக்கிரம் இயக்க நிறுத்தம் செய்யப்படும்."
 
-#: plugins/power/csd-power-manager.c:1440
-#: plugins/power/csd-power-manager.c:1450
-#: plugins/power/csd-power-manager.c:1586
+#: plugins/power/csd-power-manager.c:1507
+#: plugins/power/csd-power-manager.c:1517
+#: plugins/power/csd-power-manager.c:1653
 msgid "Battery is critically low"
 msgstr "மின்கல சக்தி ஆபத்து அளவுக்கு குறைவு"
 
-#: plugins/power/csd-power-manager.c:1495
+#: plugins/power/csd-power-manager.c:1562
 msgid ""
 "The battery is below the critical level and this computer will <b>power-"
 "off</b> when the battery becomes completely empty."
@@ -543,7 +508,7 @@ msgstr ""
 "மின்கல சக்தி ஆபத்து மட்டத்தில் உள்ளது; யூபிஎஸ் முழுதும் காலியாகும்போது  இந்த "
 "கணினி இயக்கம் <b>நிறுத்தப்படப்போகிறது</b>"
 
-#: plugins/power/csd-power-manager.c:1501
+#: plugins/power/csd-power-manager.c:1568
 msgid ""
 "The battery is below the critical level and this computer is about to "
 "suspend.\n"
@@ -554,13 +519,13 @@ msgstr ""
 "நிறுத்தப்படப்போகிறது.\n"
 "<b>NOTE:</b> சிறிதளவு சக்தி இந்த நிலைக்கு தேவை."
 
-#: plugins/power/csd-power-manager.c:1508
+#: plugins/power/csd-power-manager.c:1575
 msgid ""
 "The battery is below the critical level and this computer is about to "
 "hibernate."
 msgstr "மின்கல சக்தி ஆபத்து மட்டத்தில் உள்லது; இந்த கணினி உறங்கப்போகிறது"
 
-#: plugins/power/csd-power-manager.c:1513
+#: plugins/power/csd-power-manager.c:1580
 msgid ""
 "The battery is below the critical level and this computer is about to "
 "shutdown."
@@ -568,7 +533,7 @@ msgstr ""
 "மின்கல சக்தி ஆபத்து மட்டத்தில் உள்லது; இந்த கணினி இயக்கம் "
 "நிறுத்தப்படப்போகிறது."
 
-#: plugins/power/csd-power-manager.c:1531
+#: plugins/power/csd-power-manager.c:1598
 msgid ""
 "UPS is below the critical level and this computer will <b>power-off</b> when "
 "the UPS becomes completely empty."
@@ -576,56 +541,56 @@ msgstr ""
 "யூபிஎஸ் சக்தி ஆபத்து மட்டத்தில் உள்ளது; யூபிஎஸ் முழுதும் காலியாகும்போது  "
 "இந்த கணினி இயக்கம் <b>நிறுத்தப்படப்போகிறது</b>"
 
-#: plugins/power/csd-power-manager.c:1537
+#: plugins/power/csd-power-manager.c:1604
 msgid ""
 "UPS is below the critical level and this computer is about to hibernate."
 msgstr "யூபிஎஸ் சக்தி ஆபத்து மட்டத்தில் உள்லது; இந்த கணினி உறங்கப்போகிறது"
 
-#: plugins/power/csd-power-manager.c:1542
+#: plugins/power/csd-power-manager.c:1609
 msgid ""
 "UPS is below the critical level and this computer is about to shutdown."
 msgstr ""
 "யூபிஎஸ் சக்தி ஆபத்து மட்டத்தில் உள்லது; இந்த கணினி இயக்கம் "
 "நிறுத்தப்படப்போகிறது."
 
-#: plugins/power/csd-power-manager.c:2138
+#: plugins/power/csd-power-manager.c:2023
 msgid "Lid has been opened"
 msgstr "மூடி திறக்கப்பட்டது"
 
-#: plugins/power/csd-power-manager.c:2271
+#: plugins/power/csd-power-manager.c:2156
 msgid "Lid has been closed"
 msgstr "மூடி மூடப்பட்டது"
 
-#: plugins/power/gpm-common.c:47
+#: plugins/power/gpm-common.c:56
 msgid "Unknown time"
 msgstr "தெரியாத நேரம்"
 
-#: plugins/power/gpm-common.c:52
+#: plugins/power/gpm-common.c:61
 #, c-format
 msgid "%i minute"
 msgid_plural "%i minutes"
 msgstr[0] "%i நிமிடம்"
 msgstr[1] "%i நிமிடங்கள்"
 
-#: plugins/power/gpm-common.c:62
+#: plugins/power/gpm-common.c:71
 #, c-format
 msgid "%i hour"
 msgid_plural "%i hours"
 msgstr[0] "%i மணிநேரம்"
 msgstr[1] "%i மணிநேரங்கள்"
 
-#: plugins/power/gpm-common.c:68
+#: plugins/power/gpm-common.c:77
 #, c-format
 msgid "%i %s %i %s"
 msgstr "%i %s %i %s"
 
-#: plugins/power/gpm-common.c:69
+#: plugins/power/gpm-common.c:78
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "மணி"
 msgstr[1] "மணிகள்"
 
-#: plugins/power/gpm-common.c:70
+#: plugins/power/gpm-common.c:79
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "நிமிடம்"

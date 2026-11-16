@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cinnamon-settings-daemon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-25 14:28+0000\n"
+"POT-Creation-Date: 2026-11-02 13:35+0000\n"
 "PO-Revision-Date: 2021-09-17 21:16+0000\n"
 "Last-Translator: amosbatto <amosbatto@yahoo.com>\n"
 "Language-Team: Aymara <aym@li.org>\n"
@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:43+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 11:59+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 "Language: ay\n"
 
 #  [es] "No se encuentra el lector de pantalla."
@@ -36,7 +36,7 @@ msgid "Unable to mount %s"
 msgstr "Janiw %s apnaqañ(montar) atkiti"
 
 #  [es] "No se ha podido abrir una carpeta para %s"
-#: plugins/automount/csd-automount-manager.c:278
+#: plugins/automount/csd-automount-manager.c:276
 #, c-format
 msgid "Unable to open a folder for %s"
 msgstr "%s ukataki, janiw q'ipi jist'arañ atkiti"
@@ -234,7 +234,7 @@ msgid "Color calibration device removed"
 msgstr "Mä dispositivo samin samichawimpi chhaqtayasi"
 
 #  [es] "Poco espacio de disco en «%s»"
-#: plugins/housekeeping/csd-disk-space.c:334
+#: plugins/housekeeping/csd-disk-space.c:307
 #, c-format
 msgid "Low Disk Space on \"%s\""
 msgstr "\"%s\" tiskux (disco) ukan juk'a ch'usawjaniwa"
@@ -242,7 +242,7 @@ msgstr "\"%s\" tiskux (disco) ukan juk'a ch'usawjaniwa"
 #  [es] ""
 #  [es] "El volumen «%s» solo tiene %s de espacio disponible. Puede liberar espacio "
 #  [es] "vaciando la papelera."
-#: plugins/housekeeping/csd-disk-space.c:336
+#: plugins/housekeeping/csd-disk-space.c:309
 #, c-format
 msgid ""
 "The volume \"%s\" has only %s disk space remaining.  You may free up some "
@@ -252,22 +252,20 @@ msgstr ""
 "ch'usawj antutasma."
 
 #  [es] "El volumen «%s» solo tiene %s de espacio disponible."
-#: plugins/housekeeping/csd-disk-space.c:340
-#: plugins/housekeeping/csd-ldsm-dialog.c:78
+#: plugins/housekeeping/csd-disk-space.c:313
 #, c-format
 msgid "The volume \"%s\" has only %s disk space remaining."
 msgstr "«%s» tiskux (disco) %s ch'usawja ukjanikiwa."
 
 #  [es] "Poco espacio de disco"
-#: plugins/housekeeping/csd-disk-space.c:345
-#: plugins/housekeeping/csd-ldsm-dialog.c:202
+#: plugins/housekeeping/csd-disk-space.c:318
 msgid "Low Disk Space"
 msgstr "Tiskun (disco) juk'a ch'usawjaniwa"
 
 #  [es] ""
 #  [es] "Este equipo solo tiene %s de espacio de disco disponible. Puede liberar "
 #  [es] "espacio vaciando la papelera."
-#: plugins/housekeeping/csd-disk-space.c:347
+#: plugins/housekeeping/csd-disk-space.c:320
 #, c-format
 msgid ""
 "This computer has only %s disk space remaining.  You may free up some space "
@@ -277,96 +275,44 @@ msgstr ""
 "ch'usachasa, ukjaw ch'usawj antutasma."
 
 #  [es] "Este equipo solo tiene %s de espacio de disco disponible."
-#: plugins/housekeeping/csd-disk-space.c:350
-#: plugins/housekeeping/csd-ldsm-dialog.c:81
+#: plugins/housekeeping/csd-disk-space.c:323
 #, c-format
 msgid "This computer has only %s disk space remaining."
 msgstr "Aka kumputaturax %s tisku(disco) ch'usawjanikiwa."
 
 #  [es] "Espacio de disco"
-#: plugins/housekeeping/csd-disk-space.c:365
+#: plugins/housekeeping/csd-disk-space.c:334
 msgid "Disk space"
 msgstr "Tiskun (disco) ch'usawja"
 
 #  [es] "Examinar"
-#: plugins/housekeeping/csd-disk-space.c:372
+#: plugins/housekeeping/csd-disk-space.c:341
 msgid "Examine"
 msgstr "Uñakipaña"
 
 #  [es] "Vaciar la papelera"
-#: plugins/housekeeping/csd-disk-space.c:380
-#: plugins/housekeeping/csd-ldsm-dialog.c:434
+#: plugins/housekeeping/csd-disk-space.c:349
 msgid "Empty Trash"
 msgstr "T'una ch'usachaña"
 
 #  [es] "Ignorar"
-#: plugins/housekeeping/csd-disk-space.c:387
-#: plugins/housekeeping/csd-ldsm-dialog.c:449
+#: plugins/housekeeping/csd-disk-space.c:356
 msgid "Ignore"
 msgstr "Jani yatiña"
 
-#  [es] "No mostrar más avisos para este sistema de archivos"
-#: plugins/housekeeping/csd-ldsm-dialog.c:63
-msgid "Don't show any warnings again for this file system"
+#: plugins/housekeeping/csd-systemd-notify.c:89
+#: plugins/housekeeping/csd-systemd-notify.c:96
+#, c-format
+msgid "%s Stopped"
 msgstr ""
-"Aka sistema wayaqanakatakixa, janiw juk'amp yatiyawinak uñacht'ayañakiti"
 
-#  [es] "No mostrar más avisos"
-#: plugins/housekeeping/csd-ldsm-dialog.c:65
-msgid "Don't show any warnings again"
-msgstr "Janiw juk'amp yatiyawinak uñacht'ayañakiti"
-
-#  [es] ""
-#  [es] "Puede liberar espacio de disco vaciando la papelera, eliminando los "
-#  [es] "programas o archivos que no use, o moviendo archivos a otro disco o "
-#  [es] "partición."
-#: plugins/housekeeping/csd-ldsm-dialog.c:97
-msgid ""
-"You can free up disk space by emptying the Trash, removing unused programs "
-"or files, or moving files to another disk or partition."
+#: plugins/housekeeping/csd-systemd-notify.c:93
+msgid "Virtual Terminal Stopped"
 msgstr ""
-"T'una uchaw ch'usachasa, prukramanak jan ukjax wayaqanak chhaqhtayasa, jan "
-"ukjax yaqha tisku (disco) jan ukjax partición ukar wayaqanak unjtayasa, "
-"ukjaw tisku ch'usawj antutasma."
 
-#  [es] ""
-#  [es] "Puede liberar espacio eliminando programas o archivos que no use o moviendo "
-#  [es] "archivos a otro disco o partición."
-#: plugins/housekeeping/csd-ldsm-dialog.c:100
-msgid ""
-"You can free up disk space by removing unused programs or files, or by "
-"moving files to another disk or partition."
+#: plugins/housekeeping/csd-systemd-notify.c:100
+msgid "System memory is nearly full and the program was forced to stop."
 msgstr ""
-"Prukramanak jan ukjax wayaqanak chhaqhtayasa, jan ukjax yaqha tisku (disco) "
-"jan ukjax partición ukar wayaqanak unjtayasa, ukjaw tisku ch'usawj antutasma."
-
-#  [es] ""
-#  [es] "Puede liberar espacio de disco vaciando la papelera, eliminando programas o "
-#  [es] "archivos que no use, o moviendo archivos a un disco externo."
-#: plugins/housekeeping/csd-ldsm-dialog.c:105
-msgid ""
-"You can free up disk space by emptying the Trash, removing unused programs "
-"or files, or moving files to an external disk."
-msgstr ""
-"T'una uchaw ch'usachasa, prukramanak jan ukjax wayaqanak chhaqhtayasa, jan "
-"ukjax anqaxa tisku (disco) ukar wayaqanak unjtayasa, ukjaw tisku ch'usawj "
-"antutasma."
-
-#  [es] ""
-#  [es] "Puede liberar espacio de disco eliminando los programas o archivos que no "
-#  [es] "use, o moviendo archivos a un disco externo."
-#: plugins/housekeeping/csd-ldsm-dialog.c:108
-msgid ""
-"You can free up disk space by removing unused programs or files, or by "
-"moving files to an external disk."
-msgstr ""
-"Prukramanak jan ukjax wayaqanak chhaqhtayasa, jan ukjax anqaxa tisku (disco) "
-"ukar wayaqanak unjtayasa, ukjaw tisku ch'usawj antutasma."
-
-#  [es] "Examinar..."
-#: plugins/housekeeping/csd-ldsm-dialog.c:442
-msgid "Examine..."
-msgstr "Uñakipaña..."
 
 #: plugins/media-keys/csd-media-keys-manager.c:649
 msgid "Eject"
@@ -380,194 +326,194 @@ msgstr ""
 msgid "Disabled"
 msgstr ""
 
-#: plugins/media-keys/csd-media-keys-manager.c:1249
+#: plugins/media-keys/csd-media-keys-manager.c:1266
 msgid "Unavailable"
 msgstr ""
 
-#: plugins/media-keys/csd-media-keys-manager.c:1346
+#: plugins/media-keys/csd-media-keys-manager.c:1363
 msgid "Rotation Locked"
 msgstr ""
 
-#: plugins/media-keys/csd-media-keys-manager.c:1349
+#: plugins/media-keys/csd-media-keys-manager.c:1366
 msgid "Rotation Allowed"
 msgstr ""
 
 #  [es] "SAI descargándose"
-#: plugins/power/csd-power-manager.c:1008
+#: plugins/power/csd-power-manager.c:1075
 msgid "UPS Discharging"
 msgstr "UPS juk'aptaskiwa"
 
 #  [es] "Quedan %s de energía de reserva del SAI"
-#: plugins/power/csd-power-manager.c:1013
+#: plugins/power/csd-power-manager.c:1080
 #, c-format
 msgid "%s of UPS backup power remaining"
 msgstr "Utjaskiwa  %s UPS ch'ama"
 
 #  [es] "Energía"
-#: plugins/power/csd-power-manager.c:1032
-#: plugins/power/csd-power-manager.c:1244
-#: plugins/power/csd-power-manager.c:1422
-#: plugins/power/csd-power-manager.c:1571
+#: plugins/power/csd-power-manager.c:1099
+#: plugins/power/csd-power-manager.c:1311
+#: plugins/power/csd-power-manager.c:1489
+#: plugins/power/csd-power-manager.c:1638
 msgid "Power"
 msgstr "Ch'ama"
 
 #  [es] "Batería baja"
-#: plugins/power/csd-power-manager.c:1156
+#: plugins/power/csd-power-manager.c:1223
 msgid "Battery low"
 msgstr "Ch'ama - pirwax juk'anikiwa"
 
 #  [es] "Batería del portátil baja"
-#: plugins/power/csd-power-manager.c:1159
+#: plugins/power/csd-power-manager.c:1226
 msgid "Laptop battery low"
 msgstr "Laptop ukan ch'ama - pirwax juk'akiwa"
 
 #  [es] "Quedan aproximadamente %s (%.0f%%)"
-#: plugins/power/csd-power-manager.c:1166
+#: plugins/power/csd-power-manager.c:1233
 #, c-format
 msgid "Approximately %s remaining (%.0f%%)"
 msgstr "Utjaskiwa niya %s (%.0f%%)"
 
 #  [es] "Carga del SAI baja"
-#: plugins/power/csd-power-manager.c:1171
+#: plugins/power/csd-power-manager.c:1238
 msgid "UPS low"
 msgstr "UPS juk'akiwa"
 
 #  [es] "Quedan aproximadamente %s de energía de reserva del SAI (%.0f%%)"
-#: plugins/power/csd-power-manager.c:1177
+#: plugins/power/csd-power-manager.c:1244
 #, c-format
 msgid "Approximately %s of remaining UPS backup power (%.0f%%)"
 msgstr "Utjaskiwa niya %s UPS ch'ama (%.0f%%)"
 
 #  [es] "Batería del ratón baja"
-#: plugins/power/csd-power-manager.c:1182
-#: plugins/power/csd-power-manager.c:1347
+#: plugins/power/csd-power-manager.c:1249
+#: plugins/power/csd-power-manager.c:1414
 msgid "Mouse battery low"
 msgstr "Achakun ch'ama - pirwax juk'anikiwa"
 
-#: plugins/power/csd-power-manager.c:1185
+#: plugins/power/csd-power-manager.c:1252
 msgid "Wireless mouse is low in power"
 msgstr "Jan jiru ch'ankhamp achakux juk'a ch'ama-pirwanikiwa"
 
 #  [es] "Batería del teclado baja"
-#: plugins/power/csd-power-manager.c:1189
-#: plugins/power/csd-power-manager.c:1354
+#: plugins/power/csd-power-manager.c:1256
+#: plugins/power/csd-power-manager.c:1421
 msgid "Keyboard battery low"
 msgstr "Tiklarun ch'ama - pirwax juk'aptatawa"
 
-#: plugins/power/csd-power-manager.c:1192
+#: plugins/power/csd-power-manager.c:1259
 msgid "Wireless keyboard is low in power"
 msgstr "Jan jiru ch'akhamp tiklarux juk'a ch'ama-pirwanikiwa"
 
 #  [es] "Batería del PDA baja"
-#: plugins/power/csd-power-manager.c:1196
-#: plugins/power/csd-power-manager.c:1362
+#: plugins/power/csd-power-manager.c:1263
+#: plugins/power/csd-power-manager.c:1429
 msgid "PDA battery low"
 msgstr "PDA ch'ama - pirwax juk'akiwa"
 
 #  [es] "El PDA tiene poca batería (%.0f%%)"
-#: plugins/power/csd-power-manager.c:1199
+#: plugins/power/csd-power-manager.c:1266
 #, c-format
 msgid "PDA is low in power (%.0f%%)"
 msgstr "PDA juk'a ch'ama - pirwanikiwa (%.0f%%)"
 
 #  [es] "Batería del teléfono móvil baja"
-#: plugins/power/csd-power-manager.c:1203
-#: plugins/power/csd-power-manager.c:1372
-#: plugins/power/csd-power-manager.c:1382
+#: plugins/power/csd-power-manager.c:1270
+#: plugins/power/csd-power-manager.c:1439
+#: plugins/power/csd-power-manager.c:1449
 msgid "Cell phone battery low"
 msgstr "Silularan ch'ama - pirwax juk'anikiwa"
 
 #  [es] "El teléfono móvil tiene poca batería (%.0f%%)"
-#: plugins/power/csd-power-manager.c:1206
+#: plugins/power/csd-power-manager.c:1273
 #, c-format
 msgid "Cell phone is low in power (%.0f%%)"
 msgstr "Silularan ch'ama-pirwax juk'anikiwa (%.0f%%)"
 
 #  [es] "Batería del reproductor multimedia baja"
-#: plugins/power/csd-power-manager.c:1210
+#: plugins/power/csd-power-manager.c:1277
 msgid "Media player battery low"
 msgstr "Ist'awi/video lurayiri ukan ch'ama - pirwax juk'akiwa"
 
 #  [es] "El reproductor multimedia tiene poca batería (%.0f%%)"
-#: plugins/power/csd-power-manager.c:1213
+#: plugins/power/csd-power-manager.c:1280
 #, c-format
 msgid "Media player is low in power (%.0f%%)"
 msgstr "Ist'awi/video lurayiri ukan juk'a ch'ama - pirwaniwa (%.0f%%)"
 
 #  [es] "Batería de la tableta baja"
-#: plugins/power/csd-power-manager.c:1217
-#: plugins/power/csd-power-manager.c:1391
+#: plugins/power/csd-power-manager.c:1284
+#: plugins/power/csd-power-manager.c:1458
 msgid "Tablet battery low"
 msgstr "Tableta ukan ch'ama-pirwax juk'akiwa"
 
 #  [es] "La tableta tiene poca batería (%.0f%%)"
-#: plugins/power/csd-power-manager.c:1220
+#: plugins/power/csd-power-manager.c:1287
 #, c-format
 msgid "Tablet is low in power (%.0f%%)"
 msgstr "Tabletax juk'a ch'ama - pirwanikiwa (%.0f%%)"
 
 #  [es] "Batería del equipo conectado baja"
-#: plugins/power/csd-power-manager.c:1224
-#: plugins/power/csd-power-manager.c:1400
+#: plugins/power/csd-power-manager.c:1291
+#: plugins/power/csd-power-manager.c:1467
 msgid "Attached computer battery low"
 msgstr "Ch'ama-pirwax (batería) juk'akixiwa tukusiñapataki"
 
 #  [es] "El equipo conectado tiene poca batería (%.0f%%)"
-#: plugins/power/csd-power-manager.c:1227
+#: plugins/power/csd-power-manager.c:1294
 #, c-format
 msgid "Attached computer is low in power (%.0f%%)"
 msgstr "Ch'ama-pirwax (batería) juk'akixiwa tukusiñapataki (%.0f%%)"
 
 #  [es] "La batería está baja"
-#: plugins/power/csd-power-manager.c:1261
+#: plugins/power/csd-power-manager.c:1328
 msgid "Battery is low"
 msgstr "Ch'ama - pirwax juk'anikiwa"
 
 #  [es] "Batería muy baja"
-#: plugins/power/csd-power-manager.c:1303
+#: plugins/power/csd-power-manager.c:1370
 msgid "Battery critically low"
 msgstr "Ch'ama - pirwax sinti juk'anikiwa"
 
 #  [es] "Batería del portátil muy baja"
-#: plugins/power/csd-power-manager.c:1306
-#: plugins/power/csd-power-manager.c:1487
+#: plugins/power/csd-power-manager.c:1373
+#: plugins/power/csd-power-manager.c:1554
 msgid "Laptop battery critically low"
 msgstr "Laptop ukan ch'ama - pirwax wali juk'awa"
 
 #  [es] "Conecte el adaptador de corriente para evitar la pérdida de datos."
-#: plugins/power/csd-power-manager.c:1315
+#: plugins/power/csd-power-manager.c:1382
 msgid "Plug in your AC adapter to avoid losing data."
 msgstr "Jani yatiyawinak chhaqhtayañatakix electricidad ukar chikasim."
 
 #  [es] "El equipo se suspenderá muy pronto a menos que lo conecte."
-#: plugins/power/csd-power-manager.c:1319
+#: plugins/power/csd-power-manager.c:1386
 msgid "Computer will suspend very soon unless it is plugged in."
 msgstr ""
 "Kumputarurax jank'aki suyt'ani, jan ukjax electricidad ukar chikaskani."
 
 #  [es] "El equipo hibernará muy pronto a menos que lo conecte."
-#: plugins/power/csd-power-manager.c:1323
+#: plugins/power/csd-power-manager.c:1390
 msgid "Computer will hibernate very soon unless it is plugged in."
 msgstr ""
 "Kumputarurax juyphi pachana jank'aki ikini, jan ukjax electricidad ukar "
 "chikaskani."
 
 #  [es] "El equipo se apagará muy pronto a menos que lo conecte."
-#: plugins/power/csd-power-manager.c:1327
+#: plugins/power/csd-power-manager.c:1394
 msgid "Computer will shutdown very soon unless it is plugged in."
 msgstr ""
 "Kumputarurax jank'aki jiwt'ani, jan ukjax electricidad ukar chikaskani."
 
 #  [es] "Carga del SAI muy baja"
-#: plugins/power/csd-power-manager.c:1335
-#: plugins/power/csd-power-manager.c:1523
+#: plugins/power/csd-power-manager.c:1402
+#: plugins/power/csd-power-manager.c:1590
 msgid "UPS critically low"
 msgstr "Jan khuchhuqat ch'ama-pirwax (UPS) wali juk'awa"
 
 #  [es] ""
 #  [es] "Quedan aproximadamente %s de energía de reserva del SAI (%.0f%%). Conecte el "
 #  [es] "equipo a la red eléctrica para evitar la pérdida de datos."
-#: plugins/power/csd-power-manager.c:1341
+#: plugins/power/csd-power-manager.c:1408
 #, c-format
 msgid ""
 "Approximately %s of remaining UPS power (%.0f%%). Restore AC power to your "
@@ -576,7 +522,7 @@ msgstr ""
 "Utjaskiwa niya %s UPS ch'ama (%.0f%%). Chikasim eléctricidad ukaru, jan "
 "yatiyawinak chhaqtayañataki."
 
-#: plugins/power/csd-power-manager.c:1350
+#: plugins/power/csd-power-manager.c:1417
 msgid ""
 "Wireless mouse is very low in power. This device will soon stop functioning "
 "if not charged."
@@ -584,7 +530,7 @@ msgstr ""
 "Jan jiru ch'ankhamp achakux sinti juk'a ch'ama-pirwanikiwa. Aka achakux jan "
 "ch'ama-pirwa phuqhaskanix ukjaxa, jank'ak jiwt'ani."
 
-#: plugins/power/csd-power-manager.c:1357
+#: plugins/power/csd-power-manager.c:1424
 msgid ""
 "Wireless keyboard is very low in power. This device will soon stop "
 "functioning if not charged."
@@ -595,7 +541,7 @@ msgstr ""
 #  [es] ""
 #  [es] "Al PDA le queda muy poca batería (%.0f%%). Si no se carga este dispositivo, "
 #  [es] "dejará de funcionar muy pronto."
-#: plugins/power/csd-power-manager.c:1365
+#: plugins/power/csd-power-manager.c:1432
 #, c-format
 msgid ""
 "PDA is very low in power (%.0f%%). This device will soon stop functioning if "
@@ -607,7 +553,7 @@ msgstr ""
 #  [es] ""
 #  [es] "Al teléfono móvil le queda muy poca batería (%.0f%%). Si no se carga este "
 #  [es] "dispositivo, dejará de funcionar muy pronto."
-#: plugins/power/csd-power-manager.c:1375
+#: plugins/power/csd-power-manager.c:1442
 #, c-format
 msgid ""
 "Cell phone is very low in power (%.0f%%). This device will soon stop "
@@ -619,7 +565,7 @@ msgstr ""
 #  [es] ""
 #  [es] "Al reproductor multimedia le queda muy poca batería (%.0f%%). Si no se carga "
 #  [es] "este dispositivo, dejará de funcionar muy pronto."
-#: plugins/power/csd-power-manager.c:1385
+#: plugins/power/csd-power-manager.c:1452
 #, c-format
 msgid ""
 "Media player is very low in power (%.0f%%). This device will soon stop "
@@ -631,7 +577,7 @@ msgstr ""
 #  [es] ""
 #  [es] "A la tableta le queda muy poca batería (%.0f%%). Si no se carga este "
 #  [es] "dispositivo, dejará de funcionar muy pronto."
-#: plugins/power/csd-power-manager.c:1394
+#: plugins/power/csd-power-manager.c:1461
 #, c-format
 msgid ""
 "Tablet is very low in power (%.0f%%). This device will soon stop functioning "
@@ -643,7 +589,7 @@ msgstr ""
 #  [es] ""
 #  [es] "Al equipo conectado le queda muy poca batería (%.0f%%). Si no se carga este "
 #  [es] "dispositivo, dejará de funcionar muy pronto."
-#: plugins/power/csd-power-manager.c:1403
+#: plugins/power/csd-power-manager.c:1470
 #, c-format
 msgid ""
 "Attached computer is very low in power (%.0f%%). The device will soon "
@@ -653,16 +599,16 @@ msgstr ""
 "ukax jan phuqhatakinix, jank'ak jiwt'aniwa."
 
 #  [es] "La batería está muy baja"
-#: plugins/power/csd-power-manager.c:1440
-#: plugins/power/csd-power-manager.c:1450
-#: plugins/power/csd-power-manager.c:1586
+#: plugins/power/csd-power-manager.c:1507
+#: plugins/power/csd-power-manager.c:1517
+#: plugins/power/csd-power-manager.c:1653
 msgid "Battery is critically low"
 msgstr "Ch'ama - pirwax sinti juk'anikiwa"
 
 #  [es] ""
 #  [es] "La batería está por debajo de su nivel crítico. El equipo se apagará cuando "
 #  [es] "la batería se agote completamente."
-#: plugins/power/csd-power-manager.c:1495
+#: plugins/power/csd-power-manager.c:1562
 msgid ""
 "The battery is below the critical level and this computer will <b>power-"
 "off</b> when the battery becomes completely empty."
@@ -675,7 +621,7 @@ msgstr ""
 #  [es] "suspenderse.\n"
 #  [es] "<b>Nota:</b> se necesita un poco de batería para mantener el equipo en "
 #  [es] "estado de suspensión."
-#: plugins/power/csd-power-manager.c:1501
+#: plugins/power/csd-power-manager.c:1568
 msgid ""
 "The battery is below the critical level and this computer is about to "
 "suspend.\n"
@@ -688,7 +634,7 @@ msgstr ""
 #  [es] ""
 #  [es] "La batería está por debajo de su nivel crítico. El equipo está a punto de "
 #  [es] "hibernar."
-#: plugins/power/csd-power-manager.c:1508
+#: plugins/power/csd-power-manager.c:1575
 msgid ""
 "The battery is below the critical level and this computer is about to "
 "hibernate."
@@ -698,7 +644,7 @@ msgstr ""
 #  [es] ""
 #  [es] "La batería está por debajo de su nivel crítico. El equipo está a punto de "
 #  [es] "apagarse."
-#: plugins/power/csd-power-manager.c:1513
+#: plugins/power/csd-power-manager.c:1580
 msgid ""
 "The battery is below the critical level and this computer is about to "
 "shutdown."
@@ -707,7 +653,7 @@ msgstr "Ch'ama-pirwax sinti juk'akiwa. Kumputarurax jiwt'añjamak muni."
 #  [es] ""
 #  [es] "La carga del SAI está por debajo de su nivel crítico. El equipo se "
 #  [es] "<b>apagará</b> cuando la carga se agote completamente."
-#: plugins/power/csd-power-manager.c:1531
+#: plugins/power/csd-power-manager.c:1598
 msgid ""
 "UPS is below the critical level and this computer will <b>power-off</b> when "
 "the UPS becomes completely empty."
@@ -718,7 +664,7 @@ msgstr ""
 #  [es] ""
 #  [es] "La carga del SAI está por debajo de su nivel crítico. El equipo está a punto "
 #  [es] "de hibernar."
-#: plugins/power/csd-power-manager.c:1537
+#: plugins/power/csd-power-manager.c:1604
 msgid ""
 "UPS is below the critical level and this computer is about to hibernate."
 msgstr ""
@@ -727,29 +673,29 @@ msgstr ""
 #  [es] ""
 #  [es] "La carga del SAI está por debajo de su nivel crítico. El equipo está a punto "
 #  [es] "de apagarse."
-#: plugins/power/csd-power-manager.c:1542
+#: plugins/power/csd-power-manager.c:1609
 msgid ""
 "UPS is below the critical level and this computer is about to shutdown."
 msgstr "UPS ch'ama-pirwax sinti juk'akiwa. Kumputarurax jiwt'irjamawa."
 
 #  [es] "Se ha abierto la tapa"
-#: plugins/power/csd-power-manager.c:2138
+#: plugins/power/csd-power-manager.c:2023
 msgid "Lid has been opened"
 msgstr "Qhuphiñax jist'arasiwa"
 
 #  [es] "Se ha cerrado la tapa"
-#: plugins/power/csd-power-manager.c:2271
+#: plugins/power/csd-power-manager.c:2156
 msgid "Lid has been closed"
 msgstr "Qhuphiñax jist'antasiwa"
 
 #  [es] "Tiempo desconocido"
-#: plugins/power/gpm-common.c:47
+#: plugins/power/gpm-common.c:56
 msgid "Unknown time"
 msgstr "Jan uñt'at pacha"
 
 #  [es] msgstr[0] "%i minuto"
 #  [es] msgstr[1] "%i minutos"
-#: plugins/power/gpm-common.c:52
+#: plugins/power/gpm-common.c:61
 #, c-format
 msgid "%i minute"
 msgid_plural "%i minutes"
@@ -758,7 +704,7 @@ msgstr[1] "%i k'atanaka"
 
 #  [es] msgstr[0] "%i hora"
 #  [es] msgstr[1] "%i horas"
-#: plugins/power/gpm-common.c:62
+#: plugins/power/gpm-common.c:71
 #, c-format
 msgid "%i hour"
 msgid_plural "%i hours"
@@ -766,14 +712,14 @@ msgstr[0] "%i ura"
 msgstr[1] "%i uranaka"
 
 #  [es] "%i %s %i %s"
-#: plugins/power/gpm-common.c:68
+#: plugins/power/gpm-common.c:77
 #, c-format
 msgid "%i %s %i %s"
 msgstr "%i %s %i %s"
 
 #  [es] msgstr[0] "hora"
 #  [es] msgstr[1] "horas"
-#: plugins/power/gpm-common.c:69
+#: plugins/power/gpm-common.c:78
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "ura"
@@ -781,7 +727,7 @@ msgstr[1] "uranaka"
 
 #  [es] msgstr[0] "minuto"
 #  [es] msgstr[1] "minutos"
-#: plugins/power/gpm-common.c:70
+#: plugins/power/gpm-common.c:79
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "k'ata"
